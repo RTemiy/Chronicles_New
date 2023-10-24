@@ -1,0 +1,27 @@
+.menu-toolbar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  box-shadow: inset 2px 5px 3px -3px rgb(0 0 0 / 75%), -1px 0 2px 1px rgb(0 0 0 / 75%);
+}
+
+.menu-toolbar__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.menu-toolbar__item > img {
+  max-width: 50px;
+}
+
+.menu-toolbar__item > p {
+  font-size: var(--smalltext);
+}
