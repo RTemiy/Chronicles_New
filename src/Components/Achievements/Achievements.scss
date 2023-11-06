@@ -1,0 +1,76 @@
+@use "../Common/Buttons";
+@use "../Common/Container";
+@use "../Common/Animation";
+
+.achievements{
+  display: none;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+  margin: 0 auto;
+  color: white;
+  overflow: hidden;
+  overflow-y: visible;
+  height: 100vh;
+  @extend %show;
+}
+
+.achievements__amount{
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+.achievements__buttons{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.achievements__button{
+  padding: 10px;
+  border-radius: 25px;
+  font-size: var(--smalltext);
+  color: white;
+  @extend %button-tap;
+  @extend %styled-background;
+  @extend %styled-border;
+}
+
+.achievements__container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.achievement{
+  display: grid;
+  border-radius: 15px;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content min-content;
+  padding: 10px;
+  @extend %styled-border;
+  @extend %show;
+}
+
+.achievement:last-of-type{
+  margin-bottom: 150px;
+}
+
+.achievement__image{
+  max-width: 50px;
+  margin: 0 5px 0 0;
+  border-radius: 15px;
+}
+
+.achievement__title{
+  margin: auto 0 auto 5px;
+}
+
+.achievement__text{
+  grid-column: 1/-1;
+  border-top: 1px white solid;
+  padding: 10px 5px 0 5px;
+  margin: 10px 0 0 0;
+
+}

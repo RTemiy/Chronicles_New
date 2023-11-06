@@ -1,0 +1,55 @@
+@use "../Common/Animation";
+@use "../Common/Buttons";
+
+.slide{
+  display: none;
+  max-width: 400px;
+  margin: 0 auto;
+  align-items: start;
+  justify-items: center;
+  @extend %show;
+}
+
+.slide__image-container{
+  display: grid;
+  max-width: 400px;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+}
+
+.slide__image{
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 400px;
+}
+
+.slide__border{
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 400px;
+}
+
+.slide__text{
+  grid-column: 1;
+  grid-row: 2;
+  z-index: 2;
+}
+
+
+.slide__buttons{
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 2;
+}
+
+.slide__button{
+  grid-column: 1;
+  @extend %button-tap;
+
+}
+
+.slide__background{
+  grid-column: 1/-1;
+  grid-row: 1/4;
+}

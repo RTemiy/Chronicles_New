@@ -6,10 +6,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const WorkboxPlugin = require('workbox-webpack-plugin')
 
 module.exports = {
   entry: {
-    main: './src/index.ts'
+    app: './src/index.ts'
   },
   devtool: 'eval-source-map',
   output: {
@@ -47,14 +49,15 @@ module.exports = {
       }
     },
     {
-      test: /\.css$/,
+      test: /\.(scss|css)$/,
       use: [MiniCssExtractPlugin.loader, {
         loader: 'css-loader',
         options: {
           importLoaders: 1
         }
       },
-      'postcss-loader'
+      'postcss-loader',
+      'sass-loader'
       ]
     }
     ]
@@ -64,10 +67,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
+      favicon: './src/Images/UI/icon.png'
     }),
     new CleanWebpackPlugin(),
-    new MiniCssExtractPlugin()
-
+    new MiniCssExtractPlugin(),
+    new WorkboxPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true
+    })
   ]
 }

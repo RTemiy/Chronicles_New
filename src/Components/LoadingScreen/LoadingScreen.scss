@@ -1,0 +1,62 @@
+@use "../Common/Animation";
+
+.loading-screen {
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  justify-items: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  justify-content: center;
+  display: none;
+  overflow: hidden;
+  @extend %show;
+}
+
+.loading-screen__background-blurred-image{
+  grid-row: 1;
+  grid-column: 1;
+  filter: blur(8px);
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.loading-screen__background-image{
+  grid-row: 1;
+  grid-column: 1;
+  height: 100vh;
+  width: auto;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.loading-screen__percent{
+  margin-top: 50vh;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 3;
+}
+
+.loading-screen__continue-button{
+  margin-top: 55vh;
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 3;
+  display: none;
+  animation: blink 1s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    color: unset;
+  }
+  50% {
+    color: transparent;
+  }
+  100% {
+    color: unset;
+  }
+}

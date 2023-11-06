@@ -1,0 +1,47 @@
+@use "../Common/Animation";
+@use "../Common/Container";
+@use "../Common/Buttons";
+
+.settings{
+  display: none;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 400px;
+  color: white;
+  @extend %show
+}
+
+.settings__block{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px;
+  @extend %styled-background;
+  @extend %styled-border;
+}
+
+.settings__block:first-child{
+  border-radius: 15px 15px 0 0;
+}
+
+.settings__block:last-child{
+  border-radius: 0 0 15px 15px;
+}
+
+.settings__block:only-child{
+  border-radius: 15px;
+}
+
+.settings__container{
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.settings__block>p{
+  margin: 0 auto 0 0;
+}
+
+.settings__icon{
+  width: 75px;
+}

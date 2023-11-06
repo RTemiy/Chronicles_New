@@ -1,10 +1,10 @@
 import CContainer from '../../Classes/CContainer'
-import './Chapters.css'
+import './Chapters.scss'
 import { storiesManager, tabManagerMenu } from '../../index'
 import Parts, { renderParts } from '../Parts/Parts'
 import Stories from '../Stories/Stories'
 
-const Chapters = new CContainer('chapters show',
+const Chapters = new CContainer('chapters',
   `
   <button class="chapters__back-button"></button>
   <div class="chapters__container"></div>

@@ -1,0 +1,77 @@
+@use "../Common/Animation";
+@use "../Common/Container";
+@use "../Common/Buttons";
+
+.chapters {
+  max-width: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @extend %show;
+}
+
+.chapters__back-button {
+  top: 15px;
+  left: 15px;
+  border-radius: 10px;
+  width: 60px;
+  height: 40px;
+  padding: 10px;
+  position: fixed;
+  background-image: url(../../Images/UI/arrow.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(20, 56, 24, 0.8);
+  z-index: 2;
+  @extend %button-tap;
+  @extend %styled-border;
+}
+
+.chapter {
+  padding: 10px;
+  max-width: 235px;
+  border-radius: 50px;
+  @extend %button-tap;
+  @extend %styled-border;
+}
+
+.chapter:first-of-type{
+  margin-top: 25px;
+}
+
+.chapter:last-of-type{
+  margin-bottom: 125px;
+}
+
+.chapter__container{
+  z-index: 3;
+  display: grid;
+  align-items: center;
+  border-radius: 90px;
+  box-shadow: 0 0 10px black;
+}
+
+.chapter__image{
+  max-width: 235px;
+  z-index: 1;
+  border-radius: 90px;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.chapter__name{
+  color: rgb(117, 239, 255);
+  text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+  font-family: Impact, Charcoal, sans-serif;
+  text-decoration: overline;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 3;
+  text-align: center;
+}

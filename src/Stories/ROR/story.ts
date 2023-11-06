@@ -1,25 +1,20 @@
 import { storiesManager } from '../../index'
-import storyCover from '../../Images/Covers/ROR/Story_Cover.png'
-import chapter01 from '../../Images/ROR/Backgrounds/City_Street.png'
-import prologue from '../../Images/ROR/Persons/Mortimer.png'
-import part01 from '../../Images/ROR/Backgrounds/City_Gates.png'
 
 storiesManager.add({
   name: 'ROR',
-  image: storyCover,
+  image: require('../../Images/ROR/Covers/Story_Cover.png'),
   chapters: [{
     name: 'Глава 1',
-    image: chapter01,
+    image: require('../../Images/ROR/Backgrounds/City_Street.png'),
     parts: [{
       name: 'Пролог',
       code: 'Prologue',
-      image: prologue,
+      image: require('../../Images/ROR/Persons/Mortimer.png'),
       event: () => {}
-    },
-    {
+    }, {
       name: 'Часть 1',
       code: 'Part01',
-      image: part01,
+      image: require('../../Images/ROR/Backgrounds/City_Gates.png'),
       event: () => {}
     }]
   }]

@@ -8,6 +8,5 @@ export default class CContainer {
     elements.forEach(el => {
       this[el.name] = this.self.querySelector(el.selector)
     })
-    return this
   }
 }

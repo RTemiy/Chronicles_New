@@ -2,9 +2,9 @@ import type IStory from '../Types/IStory'
 
 export default class CStoriesManager {
   #stories: IStory[] = []
-  renderStories: any
+  render: any
   constructor (renderStories: any) {
-    this.renderStories = renderStories
+    this.render = renderStories
   }
 
   add (story: IStory): void {
@@ -67,7 +67,7 @@ export default class CStoriesManager {
     let result = ''
     this.#stories.forEach(story => {
       result += `
-      <img class="story styled-background styled-border" src="${story.image}">
+      <img class="story story-${story.name}" src="${story.image}">
       `
     })
     return result
@@ -79,13 +79,13 @@ export default class CStoriesManager {
       if (story.name === storyName) {
         story.chapters.forEach(chapter => {
           result += `
-        <div class="chapter styled-border styled-background">
-          <div class="chapter__container styled-border">
-              <img class="chapter__image" src="${chapter.image}">
-              <p class="chapter__name">${chapter.name}</p>
-          </div>
-        </div>
-      `
+                      <div class="chapter story-${story.name}">
+                        <div class="chapter__container">
+                            <img class="chapter__image" src="${chapter.image}">
+                            <p class="chapter__name">${chapter.name}</p>
+                        </div>
+                      </div>
+                    `
         })
       }
     })
@@ -100,13 +100,13 @@ export default class CStoriesManager {
           if (chapter.name === chapterName) {
             chapter.parts.forEach(part => {
               result += `
-                <div class="part styled-border styled-background">
-                  <div class="part__container styled-border">
-                    <img class="part__image" src="${part.image}">
-                    <p class="part__name">${part.name}</p>
-                  </div>
-                </div>
-              `
+                          <div class="part story-${story.name}">
+                            <div class="part__container">
+                              <img class="part__image" src="${part.image}">
+                              <p class="part__name">${part.name}</p>
+                            </div>
+                          </div>
+                        `
             })
           }
         })

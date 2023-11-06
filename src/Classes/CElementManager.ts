@@ -1,20 +1,35 @@
-export default class CWindowManager {
-  #windows: HTMLDivElement[] = []
-  constructor (...windows: HTMLDivElement[]) {
-    windows.forEach(window => {
-      this.#windows.push(window)
+export default class CElementManager {
+  #elements: HTMLElement[] = []
+  #customClass: string = ''
+  constructor (...elements: HTMLDivElement[]) {
+    elements.forEach(window => {
+      this.#elements.push(window)
     })
   }
 
-  open (tab: HTMLDivElement): void {
-    this.#windows.forEach(window => {
-      tab.isEqualNode(window) ? window.style.display = 'flex' : window.style.display = 'none'
+  open (targetElement: HTMLElement): void {
+    this.#elements.forEach(element => {
+      targetElement.isEqualNode(element) ? element.style.display = 'flex' : element.style.display = 'none'
     })
   }
 
   closeAll (): void {
-    this.#windows.forEach(window => {
+    this.#elements.forEach(window => {
       window.style.display = 'none'
+    })
+  }
+
+  setCustomClassToChange (className: string): void {
+    this.#customClass = className
+  }
+
+  setCustomClassOnlyTo (targetElement: HTMLElement): void {
+    this.#elements.forEach(element => {
+      if (targetElement.isEqualNode(element)) {
+        element.classList.add(this.#customClass)
+      } else {
+        element.classList.remove(this.#customClass)
+      }
     })
   }
 }
