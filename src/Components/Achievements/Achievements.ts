@@ -5,14 +5,17 @@ import CElementManager from '../../Classes/CElementManager'
 
 const Achievements = new CContainer('achievements',
   `
-<p class="achievements__amount"></p>
-<div class="achievements__buttons">
-  <button id="ab-immortals" type="button" class="achievements__button">Бессмертные</button>
-  <button id="ab-aurora" type="button" class="achievements__button">Аврора</button>
-  <button id="ab-aep" type="button" class="achievements__button">Аморе</button>
-  <button id="ab-ror" type="button" class="achievements__button">Время крыс</button>
+<p class="tab__title">Достижения</p>
+<div class="achievements_block">
+  <p class="achievements__amount"></p>
+  <div class="achievements__buttons">
+    <button id="ab-immortals" type="button" class="achievements__button">Бессмертные</button>
+    <button id="ab-aurora" type="button" class="achievements__button">Аврора</button>
+    <button id="ab-aep" type="button" class="achievements__button">Аморе</button>
+    <button id="ab-ror" type="button" class="achievements__button">Время крыс</button>
+  </div>
+  <div class="achievements__container"></div>
 </div>
-<div class="achievements__container"></div>
 `,
   { name: 'amount', selector: '.achievements__amount' },
   { name: 'container', selector: '.achievements__container' },

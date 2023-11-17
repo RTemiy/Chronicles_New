@@ -1,6 +1,5 @@
-@use "../Common/Buttons";
-@use "../Common/Container";
-@use "../Common/Animation";
+@use '../Common/Common';
+@import '../Common/Common';
 
 .parts {
   max-width: 400px;
@@ -8,9 +7,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: visible;
   @extend %show;
 }
 
@@ -21,7 +17,6 @@
   gap: 25px;
   overflow: hidden;
   overflow-y: scroll;
-  height: 100vh;
   z-index: 1;
 }
 
@@ -29,15 +24,15 @@
   top: 15px;
   left: 15px;
   border-radius: 10px;
-  width: 60px;
+  width: 40px;
   height: 40px;
   padding: 10px;
   position: fixed;
-  background-image: url(../../Images/UI/arrow.png);
+  background-image: url(../../Images/UI/icon_back.svg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgba(20, 56, 24, 0.8);
+  background-size: 25px;
+  background-color: Common.$additionalColor;
   z-index: 2;
   @extend %button-tap;
   @extend %styled-border;
@@ -46,7 +41,7 @@
 .part {
   padding: 10px;
   max-width: 235px;
-  border-radius: 50px;
+  @extend %styled-radius;
   @extend %button-tap;
   @extend %styled-border;
 }
@@ -63,7 +58,7 @@
   z-index: 3;
   display: grid;
   align-items: center;
-  border-radius: 90px;
+  @extend %styled-radius;
   box-shadow: 0 0 10px black;
   overflow: hidden;
 }
@@ -71,19 +66,20 @@
 .part__image{
   max-width: 235px;
   z-index: 1;
-  border-radius: 90px;
   grid-column: 1;
   grid-row: 1;
   background-color: rgba(0, 0, 0, 0.7);
 }
 
 .part__name{
-  color: rgb(117, 239, 255);
   text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
-  font-family: Impact, Charcoal, sans-serif;
-  text-decoration: overline;
+  font-size: var(--bigtext);
   grid-column: 1;
   grid-row: 1;
   z-index: 3;
   text-align: center;
+  align-self: end;
+  @extend %menuFont;
+  margin: 0 0 15px 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }

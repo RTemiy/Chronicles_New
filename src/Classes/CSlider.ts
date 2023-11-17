@@ -6,9 +6,13 @@ export default class CSlider {
   #touchEnd: number = 0
   #helperElements: HTMLElement[] = []
   #helperPos = 0
-  constructor (containerElement: HTMLElement, helperContainer: HTMLElement) {
+  readonly #elementClassName: string
+  readonly #helperClassName: string
+  constructor (containerElement: HTMLElement, helperContainer: HTMLElement, elementClassName: string, helperClassName: string) {
     this.#containerElement = containerElement
     this.#helperContainer = helperContainer
+    this.#elementClassName = elementClassName
+    this.#helperClassName = helperClassName
     this.#containerElements = this.#getContainerChildren(containerElement)
     this.#generateSwiperHelper()
     this.#addEventListeners()
@@ -19,7 +23,12 @@ export default class CSlider {
   #generateSwiperHelper (): void {
     for (let x = 0; x < this.#containerElements.length; x++) {
       const newElement = document.createElement('div')
-      newElement.classList.add('slider__check')
+      newElement.classList.add(this.#helperClassName)
+      newElement.addEventListener('click', () => {
+        this.#returnOriginalPosition()
+        this.#goToPosition(x)
+        this.#render()
+      })
       this.#helperContainer.appendChild(newElement)
       this.#helperElements.push(newElement)
     }
@@ -28,8 +37,8 @@ export default class CSlider {
   #changeActiveHelper (number: number): void {
     this.#helperPos += number
     this.#validateHelperPos()
-    this.#helperElements.forEach(el => { el.classList.remove('slider__check_active') })
-    this.#helperElements[this.#helperPos].classList.add('slider__check_active')
+    this.#helperElements.forEach(el => { el.classList.remove(this.#helperClassName + '_active') })
+    this.#helperElements[this.#helperPos].classList.add(this.#helperClassName + '_active')
   }
 
   #validateHelperPos (): void {
@@ -56,7 +65,12 @@ export default class CSlider {
 
   #render (): void {
     this.#containerElements.forEach((child, index) => {
-      child.setAttribute('style', `transform: translateX(${index * 3}%) translateY(-${index}%); z-index: ${-index};`)
+      child.setAttribute('style', `z-index: ${-index};`)
+      index === 0 && child.setAttribute('style', ' z-index: 1;')
+      index === 1 && child.setAttribute('style', 'transform: translateX(4%); z-index: 0;')
+      index === this.#containerElements.length - 1 && child.setAttribute('style', 'transform: translateX(-4%); z-index: 0;')
+      child.classList.add(this.#elementClassName + '_disabled')
+      index === 0 && child.classList.remove(this.#elementClassName + '_disabled')
     })
   }
 
@@ -84,13 +98,7 @@ export default class CSlider {
 
     this.#containerElement.addEventListener('touchend', evt => {
       this.#touchEnd = evt.changedTouches[0].clientX
-      if (this.#touchStart > this.#touchEnd + 30) {
-        this.#swipeLeft()
-        this.#render()
-      } else if (this.#touchStart < this.#touchEnd + 30) {
-        this.#swipeRight()
-        this.#render()
-      }
+      this.#checkDelta()
     })
 
     this.#containerElement.addEventListener('dragstart', evt => {
@@ -99,14 +107,19 @@ export default class CSlider {
 
     this.#containerElement.addEventListener('dragend', evt => {
       this.#touchEnd = evt.clientX
-      if (this.#touchStart > this.#touchEnd + 30) {
-        this.#swipeLeft()
-        this.#render()
-      } else if (this.#touchStart < this.#touchEnd + 30) {
-        this.#swipeRight()
-        this.#render()
-      }
+      this.#checkDelta()
     })
+  }
+
+  #checkDelta (): void {
+    const delta = this.#touchStart - this.#touchEnd
+    if (delta > 20) {
+      this.#swipeLeft()
+      this.#render()
+    } else if (delta < -20) {
+      this.#swipeRight()
+      this.#render()
+    }
   }
 
   #getContainerChildren (containerElement: HTMLElement): HTMLElement[] {
@@ -115,5 +128,17 @@ export default class CSlider {
       array.push(child)
     }
     return array
+  }
+
+  #returnOriginalPosition (): void {
+    while (this.#helperPos !== 0) {
+      this.#swipeLeft()
+    }
+  }
+
+  #goToPosition (index: number): void {
+    while (this.#helperPos !== index) {
+      this.#swipeRight()
+    }
   }
 }

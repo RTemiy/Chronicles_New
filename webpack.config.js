@@ -8,6 +8,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const WorkboxPlugin = require('workbox-webpack-plugin')
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
   entry: {
@@ -33,12 +35,18 @@ module.exports = {
       exclude: '/node_modules/'
     },
     { test: /\.tsx?$/, loader: 'ts-loader' },
-
     {
       test: /\.(png|svg|jpg|gif)$/,
       type: 'asset/resource',
       generator: {
         filename: 'images/[hash][ext]'
+      }
+    },
+    {
+      test: /\.mp3$/,
+      type: 'asset/resource',
+      generator: {
+        filename: 'sounds/[hash][ext]'
       }
     },
     {
@@ -72,9 +80,33 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),
+    new WebpackPwaManifest({
+      name: 'Chronicles | Твой выбор',
+      short_name: 'Chronicles',
+      description: 'Много вариативная визуальная новелла',
+      background_color: 'black',
+      crossorigin: 'use-credentials',
+      icons: [
+        {
+          src: path.resolve('src/Images/UI/icon.png'),
+          sizes: [96, 128, 192, 256, 384, 512]
+        }
+      ],
+      'theme-color': 'black',
+      lang: 'ru',
+      display: 'standalone',
+      related_applications: [{
+        platform: 'play',
+        url: 'https://play.google.com/store/apps/details?id=com.mva.chronicles'
+      }],
+      orientation: 'portrait',
+      start_url: '/Chronicles_New/',
+      scope: '/'
+    }),
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
-      skipWaiting: true
+      skipWaiting: true,
+      maximumFileSizeToCacheInBytes: 6000000
     })
   ]
 }

@@ -1,4 +1,5 @@
-@use "../Common/Buttons";
+@use '../Common/Common';
+@import '../Common/Common';
 
 .switch {
   display: inline-block;

@@ -1,15 +1,16 @@
 import CContainer from '../../Classes/CContainer'
 import './MenuToolbar.scss'
-import iconContinue from '../../Images/UI/icon_continue.png'
-import iconFavourites from '../../Images/UI/icon_favourites.png'
-import iconStories from '../../Images/UI/icon_stories.png'
-import iconSettings from '../../Images/UI/icon_settings.png'
-import iconAchievements from '../../Images/UI/icon_achievements.png'
+import iconContinue from '../../Images/UI/icon_continue.svg'
+import iconFavourites from '../../Images/UI/icon_favourites.svg'
+import iconStories from '../../Images/UI/icon_stories.svg'
+import iconSettings from '../../Images/UI/icon_settings.svg'
+import iconAchievements from '../../Images/UI/icon_achievements.svg'
 import Settings from '../Settings/Settings'
-import { achievementsManager, tabManagerMenu } from '../../index'
+import {achievementsManager, scenarioManager, soundManager, statsManager, tabManagerMenu} from '../../index'
 import Achievements from '../Achievements/Achievements'
 import Stories from '../Stories/Stories'
 import CElementManager from '../../Classes/CElementManager'
+import {Slide} from '../Slide/Slide';
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
@@ -60,6 +61,16 @@ MenuToolbar.achievementsButton.onclick = () => {
 MenuToolbar.storiesButton.onclick = () => {
   tabManagerMenu.open(Stories.self)
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.storiesButton)
+}
+
+localStorage.getItem('LastSave_ScenarioInfo') === null && MenuToolbar.continueButton.setAttribute('style', 'display: none')
+
+MenuToolbar.continueButton.onclick = () => {
+  MenuToolbar.self.style.display = 'none'
+  tabManagerMenu.closeAll()
+  Slide.self.style.display = 'grid'
+  scenarioManager.loadLastSave()
+  soundManager.play('music', localStorage.getItem('LastSave_SoundInfo')!)
 }
 
 export default MenuToolbar

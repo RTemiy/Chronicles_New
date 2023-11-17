@@ -1,12 +1,12 @@
-@import url(./Fonts/Fonts.css);
-@import url(./Components/Common/Container.scss);
-@import url(./Components/Common/Animation.scss);
-@import url(./Components/Common/Buttons.scss);
+@import url(Fonts/CourierNew.css);
+@import url(Fonts/CenturyGotic.css);
+@import url(Fonts/Impact.css);
+@import url(Fonts/Microsoft_YaHei.css);
 
 :root {
   --bigtext: 3.35vh;
-  --mediumtext: 2.15vh;
-  --smalltext: 1.9vh;
+  --mediumtext: 1.8vh;
+  --smalltext: 1.5vh;
   --tinytext: 1.3vh;
   --simplecolor: #f2daffed;
   --advancedcolor: rgba(248, 238, 255, 0.93);
@@ -18,17 +18,15 @@
 body {
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: black;
   background-image: url(./Images/UI/background.png);
-  font-family: var(--font);
+  scroll-behavior: smooth;
+  background-attachment: fixed;
   font-size: var(--mediumtext);
   font-weight: normal;
   -webkit-text-stroke: var(--stroke);
   display: block;
   letter-spacing: 0.5px;
   word-spacing: -1px;
-  color: var(--simplecolor);
-  text-shadow: -1px 2px 1px black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -83,4 +81,9 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(136, 136, 136, 0.9);
+}
+
+iframe
+{
+  display: none;
 }

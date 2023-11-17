@@ -5,8 +5,9 @@ import { storiesManager, tabManagerMenu } from '../../index'
 import Chapters, { renderChapters } from '../Chapters/Chapters'
 
 const Stories = new CContainer('stories', `
-  <div class="stories__container"></div>
-  <div class="stories__slider-checkbox"></div>
+<p class="tab__title">Истории</p>
+<div class="stories__container"></div>
+<div class="stories__slider-checkbox"></div>
 `,
 { name: 'storiesContainer', selector: '.stories__container' },
 { name: 'sliderCheckbox', selector: '.stories__slider-checkbox' }

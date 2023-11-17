@@ -1,11 +1,11 @@
 import type IAchievement from '../Types/IAchievement'
 import lock from '../Images/UI/Lock.png'
-import { type StoriesEn } from '../Utils/StoriesNames'
+import { type EStoriesEn } from '../Utils/EStoriesNames'
 
 export default class CAchievementsManager {
   #achievements: Record<string, IAchievement> = {}
-  readonly render: any
-  constructor (renderFunc: any) {
+  readonly render: () => void
+  constructor (renderFunc: () => void) {
     this.render = renderFunc
   }
 
@@ -29,7 +29,7 @@ export default class CAchievementsManager {
     return `${counterCompleted}/${counter}`
   }
 
-  unlock (story: StoriesEn, name: string): void {
+  unlock (story: EStoriesEn, name: string): void {
     this.#achievements[story + '_' + name].unlocked = true
     localStorage.setItem('Achievements_' + story + '_' + name, String(true))
   }

@@ -1,6 +1,10 @@
 export default interface IStory {
   name: string
   image: string
+  description: string
+  genre: string
+  mature?: boolean
+  status?: string
   chapters: IChapter[]
 }
 
@@ -14,5 +18,6 @@ export interface IPart {
   name: string
   code: string
   image: any
-  event: any
+  loadingImage: string
+  event: (storyName: string, chapterName: string, partName: string, code: string) => void
 }

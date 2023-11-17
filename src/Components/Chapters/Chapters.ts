@@ -6,8 +6,9 @@ import Stories from '../Stories/Stories'
 
 const Chapters = new CContainer('chapters',
   `
-  <button class="chapters__back-button"></button>
-  <div class="chapters__container"></div>
+<p class="tab__title">Главы</p>
+<button class="chapters__back-button"></button>
+<div class="chapters__container"></div>
 `,
   { name: 'backButton', selector: '.chapters__back-button' },
   { name: 'container', selector: '.chapters__container' }

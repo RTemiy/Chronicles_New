@@ -3,10 +3,13 @@ import './Settings.scss'
 import './Switch.scss'
 import GP from '../../Images/UI/gp.png'
 import TG from '../../Images/UI/tg.png'
+import { soundManager, tabManagerMenu } from '../../index'
+import { Credits } from '../Credits/Credits'
 
 const Settings = new CContainer(
   'settings',
 	`
+<p class="tab__title">Настройки</p>
 <div class="settings__container">
 	<div class="settings__block">
 		<p>Звук</p>
@@ -16,7 +19,7 @@ const Settings = new CContainer(
   	</label>
 	</div>
 	<div class="settings__block">
-		<p>Автоматически прятать подсказки</p>
+		<p>Прятать подсказки</p>
 		<label class="switch">
 	    <input type="checkbox" id="settings-aha"/>
 	    <div class="slider round"></div> 
@@ -28,8 +31,8 @@ const Settings = new CContainer(
 		<a>Поддержите нас</a>
 	</div>
 	<div class="settings__block">
-		<img class="settings__icon" src="${GP}">
-		<img class="settings__icon" src="${TG}">
+		<a target="_blank" rel="external" href="https://play.google.com/store/apps/details?id=com.mva.chronicles"><img class="settings__icon"  src="${GP}"></a>
+		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${TG}"></a>
 	</div>
 </div>
 <div class="settings__container">
@@ -42,18 +45,36 @@ const Settings = new CContainer(
 </div>
 <div class="settings__container">
 	<div class="settings__block">
-		<a>Помощь | Сотрудничество</a>
+		<a href="mailto:mvagamesofficial@gmail.com">Помощь | Сотрудничество</a>
+	</div>
+	<div class="settings__block">
+		<a id="creators-button">Создатели</a>
 	</div>
 </div>
-`, { name: 'checkBoxSound', selector: '#settings-sound' },
-	{ name: 'checkBoxAHA', selector: '#settings-aha' })
+<div class="settings__container">
+	<div class="settings__block">
+		<a href=".">Проверить обновление</a>
+	</div>
+	<div class="settings__block">
+		<a>Удалить все сохранения и настройки</a>
+	</div>
+</div>
+`,
+	{ name: 'checkBoxSound', selector: '#settings-sound' },
+	{ name: 'checkBoxAHA', selector: '#settings-aha' },
+	{ name: 'creatorsButton', selector: '#creators-button' })
 
 Settings.checkBoxSound.addEventListener('click', () => {
   localStorage.setItem('Settings_Sound', Settings.checkBoxSound.checked)
+  soundManager.setVolume(localStorage.getItem('Settings_Sound')!)
 })
 
 Settings.checkBoxAHA.addEventListener('click', () => {
   localStorage.setItem('Settings_AHA', Settings.checkBoxAHA.checked)
+})
+
+Settings.creatorsButton.addEventListener('click', () => {
+  tabManagerMenu.open(Credits.self)
 })
 
 function loadSettings (): void {

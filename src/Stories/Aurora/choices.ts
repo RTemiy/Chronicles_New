@@ -1,0 +1,1 @@
+import { statsManager } from '../../index'

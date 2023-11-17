@@ -1,24 +1,28 @@
-@use "../Common/Buttons";
-@use "../Common/Container";
-@use "../Common/Animation";
+@import '../Common/Common';
 
 .achievements{
   display: none;
   flex-direction: column;
   max-width: 400px;
+  margin: 0 auto;
+  @extend %menuFont;
+  @extend %show;
+}
+
+.achievements_block{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
   gap: 10px;
   margin: 0 auto;
-  color: white;
   overflow: hidden;
   overflow-y: visible;
-  height: 100vh;
-  @extend %show;
 }
 
 .achievements__amount{
   text-align: center;
-  padding: 10px;
-  border-radius: 0 0 10px 10px;
+  padding: 0 0 10px 0;
+  margin: 0;
 }
 
 .achievements__buttons{
@@ -29,12 +33,12 @@
 
 .achievements__button{
   padding: 10px;
-  border-radius: 25px;
-  font-size: var(--smalltext);
-  color: white;
+  font-size: var(--mediumtext);
   @extend %button-tap;
   @extend %styled-background;
   @extend %styled-border;
+  @extend %styled-radius;
+  @extend %menuFont;
 }
 
 .achievements__container{
@@ -45,22 +49,39 @@
 
 .achievement{
   display: grid;
-  border-radius: 15px;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content min-content;
   padding: 10px;
+  position: relative;
   @extend %styled-border;
   @extend %show;
+  @extend %styled-radius;
+}
+
+.achievement::before{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 0;
+  right: 0;
+  content: '';
+  width: 50px;
+  height: 50px;
+  box-shadow: inset 0 0 5px 1px rgb(0, 0, 0);
+  z-index: 3;
+  @extend %styled-radius;
 }
 
 .achievement:last-of-type{
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 
 .achievement__image{
-  max-width: 50px;
+  width: 50px;
+  height: 50px;
   margin: 0 5px 0 0;
-  border-radius: 15px;
+  @extend %styled-radius;
+  position: relative;
 }
 
 .achievement__title{
@@ -72,5 +93,4 @@
   border-top: 1px white solid;
   padding: 10px 5px 0 5px;
   margin: 10px 0 0 0;
-
 }

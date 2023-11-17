@@ -14,7 +14,7 @@ export const LoadingScreen = new CContainer('loading-screen',
   { name: 'continueButton', selector: '.loading-screen__continue-button' }
 )
 
-export const renderLoadingScreen = (backgroundImage: string, func: any): void => {
+export const renderLoadingScreen = (backgroundImage: string, func: () => void): void => {
   LoadingScreen.self.style.display = 'grid'
   LoadingScreen.backgroundBlurredImage.src = backgroundImage
   LoadingScreen.backgroundImage.src = backgroundImage

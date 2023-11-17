@@ -1,5 +1,4 @@
-@use '../Common/Container.scss';
-@use '../Common/Buttons.scss';
+@import '../Common/Common';
 
 .menu-toolbar{
   position: fixed;
@@ -9,7 +8,7 @@
   display: none;
   flex-direction: row;
   justify-content: space-evenly;
-  box-shadow: inset 2px 5px 3px -3px rgb(0 0 0 / 75%), -1px 0 2px 1px rgb(0 0 0 / 75%);
+  /*box-shadow: inset 2px 5px 3px -3px rgb(0 0 0 / 75%), -1px 0 2px 1px rgb(0 0 0 / 75%);*/
   z-index: 3;
   color: white;
   @extend %styled-background
@@ -22,11 +21,13 @@
   align-items: center;
   padding: 15px 0;
   gap: 10px;
-  @extend %button-tap
+  @extend %button-tap;
+  transition: filter .5s ease-in-out;
 }
 
 .menu-toolbar__item > img {
   max-width: 50px;
+  width: 45px;
 }
 
 .menu-toolbar__item > p {

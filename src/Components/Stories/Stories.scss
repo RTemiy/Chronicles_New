@@ -1,5 +1,4 @@
-@use "../Common/Animation";
-@use "../Common/Container";
+@import '../Common/Common';
 
 .stories{
   display: flex;
@@ -7,11 +6,10 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 85vh;
-  gap: 25px;
   overflow: hidden;
   position: relative;
-  @extend %show
+  @extend %show;
+  @extend %menuFont;
 }
 
 .stories__container{
@@ -19,18 +17,18 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 85vh;
+  height: 70vh;
 }
 
 .stories__slider-checkbox{
   display: flex;
   flex-direction: row;
-  gap: 5px;
+  margin: 30px;
 }
 
 .slider__check{
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   @extend %styled-background;
   border-radius: 50px;
   transition: all .5s ease-in-out;
@@ -38,36 +36,109 @@
 
 .slider__check_active{
   background-color: white;
+  transform: scale(1.5);
+  margin: 0 5px;
 }
 
 .story{
-  max-width: 370px;
+  max-width: 400px;
   width: 100vw;
-  border-radius: 15px;
-  padding: 10px;
+  height: 600px;
   z-index: 1;
   position: absolute;
   transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.story_disabled{
+  .story__button, .story__description, .story__genre, .story__status, .story__mature{
+    visibility: hidden;
+    opacity: 0;
+
+  }
+  .story__image-container{
+    .story__image{
+      box-shadow: none;
+      transition: all .5s ease-in-out;
+      border: 1px solid rgba(128, 128, 128, 0.1);
+    }
+  }
+}
+
+.story__button{
   @extend %styled-border;
+  @extend %styled-background;
+  @extend %styled-radius;
+  text-align: center;
+  max-width: 250px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: auto auto 15px auto;
+  color: white;
+  transition: all 0.5s ease-in-out;
 }
 
-
-.stories::-webkit-scrollbar{
-  width : 5px;
-  height: 10px;
+.story__image-container{
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.stories::-webkit-scrollbar-track {
-  background: rgba(0, 103, 1, 0.7);
-  border-radius: 10px;
+.story__image{
+  grid-column: 1;
+  grid-row: 1;
+  max-width: 225px;
+  margin: 0 auto;
+  @extend %styled-radius;
+  box-shadow: 0 0 5px white;
 }
 
-
-.stories::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 10px;
+.story__description{
+  text-align: center;
+  padding: 15px;
+  transition: all 0.5s ease-in-out;
 }
 
-.stories::-webkit-scrollbar-thumb:hover {
-  background: rgba(136, 136, 136, 0.9);
+.story__genre{
+  text-align: center;
+  padding: 2px 5px 0 10px;
+  font-size: var(--tinytext);
+  background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  align-self: end;
+  transition: all .5s ease-in-out;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.story__mature{
+  text-align: center;
+  margin: 10px 0 0 0;
+  padding: 3px 6px;
+  font-size: var(--tinytext);
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  align-self: start;
+  transition: all .5s ease-in-out;
+  background-color: red;
+  border-radius: 0 4px 4px 0;
+}
+
+.story__status{
+  text-align: center;
+  margin: 40px 0 0 0;
+  padding: 3px 6px;
+  color: black;
+  font-size: var(--tinytext);
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  align-self: start;
+  transition: all .5s ease-in-out;
+  background-color: white;
+  border-radius: 0 4px 4px 0;
 }
