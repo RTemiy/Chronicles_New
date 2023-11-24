@@ -1,4 +1,4 @@
-import { openProgressPart, scenarioManager } from '../../../index'
+import { achievementsManager, openProgress, scenarioManager, statsManager } from '../../../index'
 import { EStoriesEn } from '../../../Utils/EStoriesNames'
 
 scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог', '0', [
@@ -18,7 +18,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     <p>“Это не может быть реальностью!”
     <p>Я ощущала себя бестелесным существом, которое барахтается в просторах вселенной. Абсолютно беззащитна, будто бы любое дуновение скинет меня с возвышенности и моя жизнь оборвется.
 `,
-    buttons: [{ text: 'ГГ и Никола', func: () => { scenarioManager.beginScene(2) } }],
+    buttons: [{ text: '', func: () => { scenarioManager.beginScene(2, () => { statsManager.change({ story: EStoriesEn.Immortals, category: 'Person', id: 'Nicola', value: 1 }) }) } }],
     imageBack: require('../../../Images/Immortals/Backgrounds/Abstraction.png')
   },
   {
@@ -28,7 +28,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     `,
     buttons: [{ text: '', func: () => { scenarioManager.beginScene(3) } }],
     imageBack: require('../../../Images/Immortals/Persons/Stranger.png'),
-    message: 'Привет',
+    message: 'Добавил стат',
     music: require('../../../Sounds/Immortals/Chair.mp3')
   },
   {
@@ -38,7 +38,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       { text: 'Как меня зовут?', func: () => { scenarioManager.beginScene(0); scenarioManager.changeSceneButtonStatus(3, 1, true) } },
       { text: 'Сколько мне лет?', func: () => { scenarioManager.beginScene(0) }, isActive: false },
-      { text: 'Где я родилась?', func: () => { scenarioManager.beginScene(4) } },
+      { text: 'Где я родилась?', func: () => { scenarioManager.beginScene(4)} },
       { text: 'Я умерла?', func: () => { scenarioManager.beginScene(0); scenarioManager.resetSceneButtons(3) } }
     ],
     imageBack: require('../../../Images/Immortals/Persons/Stranger.png')
@@ -50,7 +50,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [{
       text: '',
       func: () => {
-        openProgressPart('Immortals', 'Глава 1', 'Часть 1', '0')
+        openProgress('Immortals', 'Глава 1', 'Часть 1', '0')
       }
     }],
     imageBack: require('../../../Images/Immortals/Persons/Cheryl.png'),

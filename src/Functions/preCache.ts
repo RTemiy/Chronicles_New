@@ -10,7 +10,7 @@ export default function preCacheImages (elementPercent: HTMLElement, endFunc: ()
     const img = new Image()
     img.onload = () => {
       allLoadedFilesAmount++
-      elementPercent.innerText = 'Загрузка: ' + String(allLoadedFilesAmount) + '/' + String(allImagesAmount + allSoundsAmount)
+      // elementPercent.innerText = 'Загрузка: ' + String(allLoadedFilesAmount) + '/' + String(allImagesAmount + allSoundsAmount)
       allLoadedFilesAmount === allImagesAmount + allSoundsAmount && endFunc()
     }
     img.src = allImages[allImagesKey]
@@ -21,7 +21,9 @@ export default function preCacheImages (elementPercent: HTMLElement, endFunc: ()
     const audio = new Audio(allSounds[allSoundsKey])
     audio.oncanplay = () => {
       allLoadedFilesAmount++
-      elementPercent.innerText = 'Загрузка: ' + String(allLoadedFilesAmount) + '/' + String(allImagesAmount + allSoundsAmount)
+      const percent = Math.ceil(allLoadedFilesAmount / (allImagesAmount + allSoundsAmount) * 100)
+      // elementPercent.innerText = 'Загрузка: ' + String(allLoadedFilesAmount) + '/' + String(allImagesAmount + allSoundsAmount)
+      elementPercent.innerText = 'Загрузка: ' + String(percent) + '%'
       allLoadedFilesAmount === allImagesAmount + allSoundsAmount && endFunc()
     }
     allSoundsAmount++

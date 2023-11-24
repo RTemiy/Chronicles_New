@@ -91,7 +91,7 @@
   grid-row: 1;
   max-width: 225px;
   margin: 0 auto;
-  @extend %styled-radius;
+  border-radius: 15px;
   box-shadow: 0 0 5px white;
 }
 

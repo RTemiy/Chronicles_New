@@ -1,7 +1,9 @@
 import CContainer from '../../Classes/CContainer'
 import './Slide.scss'
 import { type IButton } from '../../Types/IScene'
-import {soundManager} from '../../index';
+import { soundManager } from '../../index'
+import { Inventory, renderInventory } from '../Inventory/Inventory'
+import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 export const Slide = new CContainer('slide',
   `
@@ -26,6 +28,7 @@ export const Slide = new CContainer('slide',
     <div class="slide__message">
         <div class="slide__message-text"></div>
     </div>
+    <button type="button" class="slide__inventory-button"></button>
 `,
   { name: 'imageBack', selector: '.slide__imageBack' },
   { name: 'imageLeft', selector: '.slide__imageLeft' },
@@ -37,7 +40,8 @@ export const Slide = new CContainer('slide',
   { name: 'buttons', selector: '.slide__buttons' },
   { name: 'backgroundImage', selector: '.slide__background' },
   { name: 'message', selector: '.slide__message' },
-  { name: 'messageText', selector: '.slide__message-text' }
+  { name: 'messageText', selector: '.slide__message-text' },
+  { name: 'inventoryButton', selector: '.slide__inventory-button' }
 )
 
 export function changeSlideImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string): void {
@@ -109,10 +113,14 @@ export function setButtonValues (buttons: IButton[]): void {
   }
 }
 
-Slide.message.onclick = () => { Slide.message.style.display = 'none' }
+Slide.message.onclick = () => { Slide.message.style.display = 'none'; }
 
 export function slideMessage (text: string): void {
   soundManager.play('simple', require('../../Sounds/Common/Notification.mp3'))
   Slide.messageText.innerHTML = text
   Slide.message.style.display = 'flex'
+}
+
+Slide.inventoryButton.onclick = () => {
+  renderInventory(EStoriesEn.Immortals); Inventory.self.style.display = 'flex'
 }

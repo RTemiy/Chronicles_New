@@ -27,11 +27,10 @@ tabManagerMenu.open(Stories.self)
 export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
-export const scenarioManager = new CScenarioManager(statsManager)
+export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
+export const scenarioManager = new CScenarioManager(statsManager, soundManager)
 
 loadStories(EStoriesEn)
-
-export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
 
 renderLoadingScreen(require('./Images/UI/loadingscreen.png'), () => {})
 
@@ -47,7 +46,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
   }
 })
 
-export function openProgressPart (storyName: string, chapterName: string, partName: string, code: string): void {
+export function openProgress (storyName: string, chapterName: string, partName: string, code: string): void {
   statsManager.saveStats(false, storyName, chapterName, partName, code)
   Slide.self.style.display = 'none'
   MenuToolbar.self.style.display = 'flex'

@@ -1,4 +1,5 @@
 import type IStat from '../Types/IStat'
+import {EStoriesEn} from '../Utils/EStoriesNames';
 
 export default class CStatsManager {
   #stats: Record<string, IStat> = {}
@@ -72,5 +73,32 @@ export default class CStatsManager {
         }
       })
     }
+  }
+
+  getStatsHTML (story: EStoriesEn): { persons: string, items: string } {
+    let persons = ''
+    let items = ''
+    this.#forEach(stat => {
+      if (stat.story === story) {
+        if (stat.category === 'Person') {
+          persons += `
+                     <div class="inventory__person-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
+                     <img class="inventory__person-image" src="${stat.image}">
+                     <p class="inventory__person-value">${stat.value}</p>
+                     <p class="inventory__person-name">${stat.name}</p>
+                     </div>
+                     `
+        } if (stat.category === 'Item') {
+          items += `
+                     <div class="inventory__item-cell ${stat.show === 1 ? '' : 'inventory__disabled'}">
+                     <img class="inventory__item-image" src="${stat.image}">
+                     <p class="inventory__item-value">${stat.value}</p>
+                     <p class="inventory__item-name">${stat.name}</p>
+                     </div>
+                     `
+        }
+      }
+    })
+    return { persons, items }
   }
 }

@@ -36,7 +36,7 @@ export default class CSoundSystem {
       setTimeout(() => {
         this[type].pause()
         if (type !== 'menu') {
-          localStorage.setItem('LastSave_SoundInfo', path!)
+          type === 'music' && localStorage.setItem('LastSave_SoundInfo', path!)
           this.inMenu = false
           this[type] = new Audio(path)
           this[type].currentTime = 0

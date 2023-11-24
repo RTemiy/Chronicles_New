@@ -1,17 +1,19 @@
 import type IScene from '../Types/IScene'
 import type { IButton, ICondition } from '../Types/IScene'
 import { changeSlideImage, changeSlideText, setButtonValues, slideMessage } from '../Components/Slide/Slide'
-import { soundManager, statsManager } from '../index'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 import type CStatsManager from './CStatsManager'
+import type CSoundSystem from './CSoundSystem'
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
   #scenarios: Record<string, IScene[]> = {}
   readonly #statsManager: CStatsManager
+  readonly #soundManager: CSoundSystem
 
-  constructor (statsManager: CStatsManager) {
+  constructor (statsManager: CStatsManager, soundManager: CSoundSystem) {
     this.#statsManager = statsManager
+    this.#soundManager = soundManager
   }
 
   addScenario (storyName: EStoriesEn, chapterName: string, partName: string, code: string, scenario: IScene[]): void {
@@ -33,7 +35,11 @@ export default class CScenarioManager {
     this.beginScene(0)
   }
 
-  beginScene (sceneIndex: number): void {
+  getCurrentStory (): string {
+    return this.#currentScenarioName.split('_')[0]
+  }
+
+  beginScene (sceneIndex: number, func?: () => void): void {
     const scene = this.#getScenarioSceneByIndex(sceneIndex)
     this.#doBeforeBegin(scene.beforeBegin)
     this.#doCondition(scene.condition)
@@ -42,6 +48,7 @@ export default class CScenarioManager {
     setButtonValues(scene.buttons)
     scene.message !== undefined && slideMessage(scene.message)
     this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
+    func?.()
     this.#doLastSave(sceneIndex)
   }
 
@@ -54,9 +61,9 @@ export default class CScenarioManager {
   }
 
   #doSounds (sounds: { music: string | undefined, ambient: string | undefined, simple: string | undefined }): void {
-    sounds.music !== undefined && soundManager.play('music', sounds.music)
-    sounds.ambient !== undefined && soundManager.play('ambient', sounds.ambient)
-    sounds.simple !== undefined && soundManager.play('simple', sounds.simple)
+    sounds.music !== undefined && this.#soundManager.play('music', sounds.music)
+    sounds.ambient !== undefined && this.#soundManager.play('ambient', sounds.ambient)
+    sounds.simple !== undefined && this.#soundManager.play('simple', sounds.simple)
   }
 
   changeSceneProp (index: number, propName: string, value: any): void {
@@ -80,7 +87,7 @@ export default class CScenarioManager {
   }
 
   loadLastSave (): void {
-    statsManager.loadStats(true)
+    this.#statsManager.loadStats(true)
     const lastSaveInfoArray = localStorage.getItem('LastSave_ScenarioInfo')!.split('_')
     this.setCurrentScenarioName(lastSaveInfoArray[0], lastSaveInfoArray[1], lastSaveInfoArray[2], lastSaveInfoArray[3])
     this.beginScene(parseInt(lastSaveInfoArray[4]))
