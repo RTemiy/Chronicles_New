@@ -18,6 +18,7 @@ export default interface IScene {
   imageMiddle?: string
   imageRight?: string
   imageFront?: string
+  imageBorder?: string
   music?: string
   ambient?: string
   simple?: string

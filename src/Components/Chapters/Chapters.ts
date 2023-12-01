@@ -19,10 +19,10 @@ export const renderChapters = (storyName: string): void => {
   const chaptersElements = Chapters.container.querySelectorAll('.chapter')!
   chaptersElements.forEach(() => {
     storiesManager.getChapterNames(storyName).forEach((chapterName, index) => {
-      chaptersElements[index].addEventListener('click', () => {
+      chaptersElements[index].onclick = () => {
         renderParts(storyName, chapterName)
         tabManagerMenu.open(Parts.self)
-      })
+      }
     })
   })
 }

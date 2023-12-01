@@ -1,0 +1,42 @@
+@import '../Common/Common';
+
+.text-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  @extend %show;
+}
+
+.text-input__container{
+  @extend %styled-border;
+  @extend %styled-radius;
+  @extend %styled-background;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.text-input__message{
+  text-align: center;
+  color: white;
+}
+
+.text-input__input{
+
+}
+
+.text-input__button{
+  color: white;
+  @extend %button-tap;
+  @extend %styled-background;
+  @extend %styled-radius;
+  @extend %styled-border;
+  padding: 10px;
+}

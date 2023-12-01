@@ -17,10 +17,10 @@ export const renderStories = (): void => {
   Stories.storiesContainer.innerHTML = storiesManager.getStoriesHTML()
   const storyElements = Stories.storiesContainer.querySelectorAll('.story')!
   storiesManager.getStoriesNames().forEach((story, index) => {
-    storyElements[index].addEventListener('click', () => {
+    storyElements[index].onclick = () => {
       renderChapters(story)
       tabManagerMenu.open(Chapters.self)
-    })
+    }
   })
 }
 

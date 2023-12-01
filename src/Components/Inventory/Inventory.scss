@@ -44,6 +44,8 @@
   grid-column: 1;
   grid-row: 1;
   width: 150px;
+  height: 150px;
+  object-fit: cover;
   @extend %styled-radius;
   transition: transform .2s ease-in-out;
   &:active{
@@ -72,6 +74,8 @@
 
 .inventory__person-image{
   width: 65px;
+  height: 65px;
+  object-fit: cover;
   border-radius: 50px;
 }
 

@@ -1,5 +1,5 @@
 import type IStat from '../Types/IStat'
-import {EStoriesEn} from '../Utils/EStoriesNames';
+import { EStoriesEn } from '../Utils/EStoriesNames'
 
 export default class CStatsManager {
   #stats: Record<string, IStat> = {}
@@ -45,7 +45,7 @@ export default class CStatsManager {
     }
   }
 
-  #resetStats (): void {
+  resetStats (): void {
     this.#forEach((stat: IStat) => {
       stat.value = 0
       stat.show = 0
@@ -53,7 +53,7 @@ export default class CStatsManager {
   }
 
   loadStats (isLastSave: boolean, storyName?: string, chapterName?: string, partName?: string, code?: string): void {
-    this.#resetStats()
+    this.resetStats()
     if (isLastSave) {
       const scenarioName = localStorage.getItem('LastSave_ScenarioInfo')!
       const story = scenarioName.split('_')[0]

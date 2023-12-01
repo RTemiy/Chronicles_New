@@ -1,4 +1,4 @@
-import { scenarioManager, storiesManager } from '../../index'
+import {scenarioManager, statsManager, storiesManager} from '../../index'
 
 storiesManager.add({
   name: 'Immortals',
@@ -24,7 +24,10 @@ storiesManager.add({
       code: '0',
       image: require('../../Images/Immortals/Backgrounds/Lection.png'),
       loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
-      event: () => {}
+      event: (storyName: string, chapterName: string, partName: string, code: string) => {
+        scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code)
+        statsManager.loadStats(false, storyName, chapterName, partName, code)
+      }
     },
     {
       name: 'Часть 2',
@@ -64,4 +67,4 @@ storiesManager.add({
   }]
 })
 
-require('./scenarios/Test')
+require('./scenarios/Prologue')

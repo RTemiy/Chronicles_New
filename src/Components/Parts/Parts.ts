@@ -1,10 +1,11 @@
 import CContainer from '../../Classes/CContainer'
 import './Parts.scss'
-import { storiesManager, tabManagerMenu } from '../../index'
+import { statsManager, storiesManager, tabManagerMenu } from '../../index'
 import MenuToolbar from '../MenuToolbar/MenuToolbar'
 import Chapters from '../Chapters/Chapters'
 import { Slide } from '../Slide/Slide'
 import { LoadingScreen, renderLoadingScreen } from '../LoadingScreen/LoadingScreen'
+import {wasteBook} from '../Books/Books';
 
 const Parts = new CContainer(
   'parts',
@@ -25,21 +26,24 @@ export const renderParts = (storyName: string, chapterName: string): void => {
     storiesManager.getPartNames(storyName, chapterName).forEach((partName, index) => {
       const partUnlocked = localStorage.getItem(storyName + '_' + chapterName + '_' + partName + '_' + storiesManager.getPartProp(storyName, chapterName, partName, 'code') + '_Unlocked')
       const addListener = (): void => {
-        partElements[index].addEventListener('click', () => {
-          MenuToolbar.self.style.display = 'none'
-          tabManagerMenu.closeAll()
-          LoadingScreen.continueButton.style.display = 'none'
-          setTimeout(() => { LoadingScreen.continueButton.style.display = 'block' }, 3000)
-          renderLoadingScreen(storiesManager.getPartProp(storyName, chapterName, partName, 'loadingImage'), () => {
-            Slide.self.style.display = 'grid'
-            LoadingScreen.self.style.display = 'none'
-            storiesManager.getPartProp(storyName, chapterName, partName, 'event')(storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'))
+        partElements[index].onclick = () => {
+          wasteBook(() => {
+            MenuToolbar.self.style.display = 'none'
+            tabManagerMenu.closeAll()
+            LoadingScreen.continueButton.style.display = 'none'
+            setTimeout(() => { LoadingScreen.continueButton.style.display = 'block' }, 3000)
+            renderLoadingScreen(storiesManager.getPartProp(storyName, chapterName, partName, 'loadingImage'), () => {
+              Slide.self.style.display = 'grid'
+              LoadingScreen.self.style.display = 'none'
+              storiesManager.getPartProp(storyName, chapterName, partName, 'event')(storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'))
+            })
           })
-        })
+        }
       }
       if (partUnlocked !== null && partUnlocked === '1') {
         addListener()
       } else if (partData.index === 0 && index === 0) {
+        statsManager.resetStats()
         addListener()
       } else {
         partElements[index].style.filter = 'grayscale(100%)'

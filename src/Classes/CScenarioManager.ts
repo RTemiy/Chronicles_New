@@ -1,6 +1,5 @@
 import type IScene from '../Types/IScene'
 import type { IButton, ICondition } from '../Types/IScene'
-import { changeSlideImage, changeSlideText, setButtonValues, slideMessage } from '../Components/Slide/Slide'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 import type CStatsManager from './CStatsManager'
 import type CSoundSystem from './CSoundSystem'
@@ -10,10 +9,25 @@ export default class CScenarioManager {
   #scenarios: Record<string, IScene[]> = {}
   readonly #statsManager: CStatsManager
   readonly #soundManager: CSoundSystem
+  readonly #changeSlideImage
+  readonly #changeSlideText
+  readonly #setButtonValues
+  readonly #slideMessage
 
-  constructor (statsManager: CStatsManager, soundManager: CSoundSystem) {
+  constructor (
+    statsManager: CStatsManager,
+    soundManager: CSoundSystem,
+    changeSlideImage: (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, borderImage?: string) => void,
+    changeSlideText: (text: string) => void,
+    setButtonValues: (buttons: IButton[]) => void,
+    slideMessage: (text: string) => void
+  ) {
     this.#statsManager = statsManager
     this.#soundManager = soundManager
+    this.#changeSlideImage = changeSlideImage
+    this.#changeSlideText = changeSlideText
+    this.#setButtonValues = setButtonValues
+    this.#slideMessage = slideMessage
   }
 
   addScenario (storyName: EStoriesEn, chapterName: string, partName: string, code: string, scenario: IScene[]): void {
@@ -43,10 +57,10 @@ export default class CScenarioManager {
     const scene = this.#getScenarioSceneByIndex(sceneIndex)
     this.#doBeforeBegin(scene.beforeBegin)
     this.#doCondition(scene.condition)
-    changeSlideImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront)
-    changeSlideText(scene.text)
-    setButtonValues(scene.buttons)
-    scene.message !== undefined && slideMessage(scene.message)
+    this.#changeSlideImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
+    this.#changeSlideText(scene.text)
+    this.#setButtonValues(scene.buttons)
+    scene.message !== undefined && this.#slideMessage(scene.message)
     this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
     func?.()
     this.#doLastSave(sceneIndex)

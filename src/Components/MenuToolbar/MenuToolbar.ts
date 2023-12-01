@@ -6,11 +6,11 @@ import iconStories from '../../Images/UI/icon_stories.svg'
 import iconSettings from '../../Images/UI/icon_settings.svg'
 import iconAchievements from '../../Images/UI/icon_achievements.svg'
 import Settings from '../Settings/Settings'
-import {achievementsManager, scenarioManager, soundManager, statsManager, tabManagerMenu} from '../../index'
+import { achievementsManager, scenarioManager, soundManager, tabManagerMenu } from '../../index'
 import Achievements from '../Achievements/Achievements'
 import Stories from '../Stories/Stories'
 import CElementManager from '../../Classes/CElementManager'
-import {Slide} from '../Slide/Slide';
+import { Slide } from '../Slide/Slide'
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',

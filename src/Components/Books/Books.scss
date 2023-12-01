@@ -1,0 +1,41 @@
+@import "../Common/Common";
+
+.books{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
+  @extend %show;
+}
+
+.books__container{
+  display: flex;
+  flex-direction: row;
+}
+
+.books__icon{
+  height: 25px;
+  margin-right: 5px;
+}
+
+.books__text{
+  @extend %menuFont
+}
+
+.books__help{
+  position: absolute;
+  top: 25px;
+  right: 0;
+  text-align: right;
+  opacity: 0;
+  visibility: hidden;
+  @extend %menuFont;
+  transition: all .5s ease-in-out;
+}
+
+.books__container:hover{
+  .books__help{
+    opacity: 1;
+    visibility: visible;
+  }
+}

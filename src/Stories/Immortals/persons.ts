@@ -3,6 +3,16 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 statsManager.add({
   category: 'Person',
+  id: 'Hero',
+  name: '',
+  image: require('../../Images/Immortals/Persons/Hero.png'),
+  title: 'В последнее время происходит множество странных событий. Получится ли у меня справится?',
+  description: 'Про себя сложнее всего писать… Студентка, живу с мамой и папой, работаю, пытаясь обеспечить самостоятельную жизнь. ',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Person',
   id: 'Guide',
   name: 'Проводник',
   image: require('../../Images/Immortals/Persons/Stranger.png'),
