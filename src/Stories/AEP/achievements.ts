@@ -1,0 +1,1 @@
+import {achievementsManager} from '../../index'

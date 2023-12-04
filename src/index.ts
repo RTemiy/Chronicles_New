@@ -17,8 +17,12 @@ import CSoundSystem from './Classes/CSoundSystem'
 import { Credits } from './Components/Credits/Credits'
 import CStatsManager from './Classes/CStatsManager'
 import CScenarioManager from './Classes/CScenarioManager'
-import { changeSlideImage, changeSlideText, setButtonValues, Slide, slideMessage } from './Components/Slide/Slide'
 import { Books, startBooksTimer } from './Components/Books/Books'
+import CTimer from './Classes/CTimer'
+import CSlide from './Classes/CSlide'
+import { Slide } from './Components/Slide/Slide'
+import { Inventory, renderInventory } from './Components/Inventory/Inventory'
+import { animateBackForth } from './Functions/animateBackForth'
 
 require('./sevice-worker')
 
@@ -32,7 +36,9 @@ export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
 export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
-export const scenarioManager = new CScenarioManager(statsManager, soundManager, changeSlideImage, changeSlideText, setButtonValues, slideMessage)
+export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, animateBackForth, renderInventory)
+export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide)
+export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 
 loadStories(EStoriesEn)
 

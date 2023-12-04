@@ -121,4 +121,5 @@
   width: 45px;
   height: 45px;
   z-index: 5;
+  @extend %button-tap;
 }

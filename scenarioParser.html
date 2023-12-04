@@ -73,10 +73,11 @@
           '\n  {' +
           '\n    text: \n      `\n        $TEXT$\n      `, ' +
           '\n    buttons: [\n      {\n        text: \'\',\n        func: () => {\n          scenarioManager.beginScene($INDEXPLUS$) \n        }\n      }],' +
-          '\n    beforeBegin: () => {$ITEM$$STAT$\n      },' +
           '$MESSAGE$' +
           '$MUSIC$' +
           '$PICTUREFRONT$' +
+          '\n    stats: [$STAT$$ITEM$]' +
+          '\n    achievement: $ACHIEVEMENT$' +
           '\n    imageBack: require(\'../../../Images/$NAME$/-$PICTURE$-\')' +
           '  \n},'
 
@@ -88,6 +89,7 @@
         const allMusic = new Set();
         const allItems = new Set();
         const allStats = new Set();
+        const allAchievements = new Set();
 
         // Выводимый результат
         let result = ``;
@@ -117,8 +119,8 @@
 
               // Обязательно откатываем шаг назад т.к. ВЫРЕЗАЛИ элемент массива
               y-=1;
-            } else if (/! Персонаж:* /.test(scenes[name][x][y])) {
-              scenes[name][x][y] = scenes[name][x][y].replace(/! Персонаж:* /, '');
+            } else if (/! Передник:* /.test(scenes[name][x][y])) {
+              scenes[name][x][y] = scenes[name][x][y].replace(/! Передник:* /, '');
               // Добавляем название картинки в сэт
               allPictures.add(scenes[name][x][y]);
 
@@ -131,13 +133,19 @@
               // Заменяем ключевое слово на значение
               value = value.replaceAll('$MESSAGE$',`\n    message: '${scenes[name][x].splice(y,1)}',`);
               y-=1;
+            } else if (/! Достижение:* /.test(scenes[name][x][y])) {
+              scenes[name][x][y] = scenes[name][x][y].replace(/! Достижение:* /, '');
+              allAchievements.add(scenes[name][x][y]);
+              // Заменяем ключевое слово на значение
+              value = value.replaceAll('$ACHIEVEMENT$',`{story: EStoriesEn.${name}, name: '${scenes[name][x].splice(y,1)}'},`);
+              y-=1;
             } else if (/! Музыка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Музыка:* /, '');
 
               // Добавляем название музыки в сэт
               allMusic.add(scenes[name][x][y]);
 
-              value = value.replaceAll('$MUSIC$',`\n    music: require('../../../Sounds/$NAME$/=${scenes[name][x].splice(y,1)}='),`);
+              value = value.replaceAll('$MUSIC$',`\n    music: require('../../../Sounds/${name}/=${scenes[name][x].splice(y,1)}='),`);
               y-=1;
             } else if (/! Предмет:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Предмет:* /, '');
@@ -146,7 +154,7 @@
               word = word.join(' ');
               allItems.add(word);
               scenes[name][x][y] = '';
-              value = value.replaceAll('$ITEM$',`\n          statsManager.change({ story: EStoriesEn.${name}, value: ${itemAmount}, category: 'Item', id: '${word}' })`);
+              value = value.replaceAll('$ITEM$',`\n          { story: EStoriesEn.${name}, value: ${itemAmount}, category: 'Item', id: '${word}' },$ITEM$`);
               y-=1;
             } else if (/! Стат:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Стат:* /, '');
@@ -155,7 +163,7 @@
               word = word.join(' ');
               allStats.add(word);
               scenes[name][x][y] = '';
-              value = value.replaceAll('$STAT$',`\n          statsManager.change({ story: EStoriesEn.${name}, value: ${statAmount}, category: 'Person', id: '${word}' })`);
+              value = value.replaceAll('$STAT$',`\n          { story: EStoriesEn.${name}, value: ${statAmount}, category: 'Person', id: '${word}' },$STAT$`);
               y-=1;
             }
 
@@ -191,8 +199,7 @@
           value = value.replaceAll('$MESSAGE$','');
           value = value.replaceAll('$MUSIC$','');
           value = value.replaceAll('$PICTUREFRONT$','');
-          value = value.replaceAll('$PICTURELEFT$','');
-          value = value.replaceAll('$PICTURERIGHT$','');
+          value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
           value = value.replaceAll('\n    doBeforeBegin: () => {\n      },','');
 
           // Добавляем код слайда в строку
@@ -205,8 +212,7 @@
         const resultMusic = '// Музыка:' + JSON.stringify([...allMusic]) + '\n\n';
         const resultItems = '// Предметы:' + JSON.stringify([...allItems]) + '\n\n';
         const resultStats = '// Статы:' + JSON.stringify([...allStats]) + '\n\n';
-
-        console.log(allItems);
+        const resultAchievements = '// Достижения:' + JSON.stringify([...allAchievements]) + '\n\n';
 
         // Функция замены указанных названий картинок, музыки и тд на пути до файлов
         function setCodeNames(set, message, brackets = '', additional = '') {
@@ -217,8 +223,9 @@
         setCodeNames(allMusic, 'Укажите название музыки для', '=', '.mp3');
         setCodeNames(allItems, 'Укажите название предмета для');
         setCodeNames(allStats, 'Укажите название стата для');
+        setCodeNames(allAchievements, 'Укажите название достижения для');
 
-        result = resultImages + resultMusic + resultItems + resultStats + initConst + result + '])\n';
+        result = resultImages + resultMusic + resultItems + resultStats + resultAchievements + initConst + result + '])\n';
         // Возвращаем результат
         return result;
 

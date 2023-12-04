@@ -1,3 +1,6 @@
+import IStat from './IStat';
+import {EStoriesEn} from '../Utils/EStoriesNames';
+
 export interface IButton {
   func: () => void
   text: string
@@ -19,6 +22,8 @@ export default interface IScene {
   imageRight?: string
   imageFront?: string
   imageBorder?: string
+  stats?: IStat[]
+  achievement?: { story: EStoriesEn, name: string }
   music?: string
   ambient?: string
   simple?: string

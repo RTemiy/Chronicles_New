@@ -1,6 +1,6 @@
 @import '../Common/Common';
 
-$maxWidth: 350px;
+$maxWidth: 300px;
 $maxHeight: 700px;
 
 .slide{
@@ -11,9 +11,9 @@ $maxHeight: 700px;
   height: 100vh;
   width: 100vw;
   justify-items: center;
-  align-items: start;
   overflow: hidden;
   position: absolute;
+  grid-template-rows: repeat(3, min-content);
   @extend %show;
 }
 
@@ -24,6 +24,7 @@ $maxHeight: 700px;
   grid-row: 1;
   grid-column: 1;
   z-index: 2;
+  height: min-content;
 }
 
 .slide__imageMiddle{
@@ -70,13 +71,14 @@ $maxHeight: 700px;
   grid-row: 2;
   z-index: 2;
   color: white;
+  height: min-content;
   max-width: 330px;
   text-align: justify;
-  @extend %styled-border;
-  border-radius: 10px;
   overflow: hidden;
   backdrop-filter: blur(150px);
   padding: 20px;
+  margin-top: 10px;
+  align-self: start;
   @extend %show;
   p {
     margin-top: 10px;
@@ -86,26 +88,6 @@ $maxHeight: 700px;
   }
 }
 
-.slide__buttons{
-  margin-top: 15px;
-  grid-column: 1;
-  grid-row: 3;
-  z-index: 2;
-}
-
-.slide__button{
-  grid-column: 1;
-  color: white;
-  max-width: $maxWidth;
-  width: 100vw;
-  height: 40px;
-  filter: drop-shadow(5px 5px 3px black);
-  background-image: url("../../Images/UI/button.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  @extend %button-tap;
-}
-
 .slide__background{
   grid-column: 1;
   grid-row: 1/4;
@@ -113,65 +95,4 @@ $maxHeight: 700px;
   height: 100vh;
   margin: 0 auto;
   width: auto;
-}
-
-.slide__message {
-  @extend %show;
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 5;
-  top: 0;
-  left: 0;
-}
-
-.slide__message-text {
-  @extend %styled-background;
-  @extend %styled-radius;
-  @extend %styled-border;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: white;
-  padding: 25px;
-  min-width: 60%;
-  text-align: justify;
-}
-
-.slide__toolbar {
-  position: absolute;
-  bottom: 5px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.slide__inventory-button {
-  background-image: url("../../Images/UI/icon_bag.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 45px;
-  height: 45px;
-  z-index: 5;
-}
-
-.slide__previous-button{
-  background-image: url("../../Images/UI/icon_back.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 45px;
-  height: 45px;
-  z-index: 5;
-}
-
-.slide__exit-button{
-  background-image: url("../../Images/UI/icon_exit.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 45px;
-  height: 45px;
-  z-index: 5;
 }

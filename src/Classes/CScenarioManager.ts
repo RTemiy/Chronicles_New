@@ -3,31 +3,26 @@ import type { IButton, ICondition } from '../Types/IScene'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 import type CStatsManager from './CStatsManager'
 import type CSoundSystem from './CSoundSystem'
+import type CSlide from './CSlide'
+import type IStat from '../Types/IStat'
+import type CAchievementsManager from './CAchievementsManager';
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
   #scenarios: Record<string, IScene[]> = {}
   readonly #statsManager: CStatsManager
   readonly #soundManager: CSoundSystem
-  readonly #changeSlideImage
-  readonly #changeSlideText
-  readonly #setButtonValues
-  readonly #slideMessage
+  readonly #achievementManager: CAchievementsManager
 
   constructor (
     statsManager: CStatsManager,
     soundManager: CSoundSystem,
-    changeSlideImage: (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, borderImage?: string) => void,
-    changeSlideText: (text: string) => void,
-    setButtonValues: (buttons: IButton[]) => void,
-    slideMessage: (text: string) => void
+    achievementManager: CAchievementsManager,
+    private readonly slide: CSlide
   ) {
     this.#statsManager = statsManager
     this.#soundManager = soundManager
-    this.#changeSlideImage = changeSlideImage
-    this.#changeSlideText = changeSlideText
-    this.#setButtonValues = setButtonValues
-    this.#slideMessage = slideMessage
+    this.#achievementManager = achievementManager
   }
 
   addScenario (storyName: EStoriesEn, chapterName: string, partName: string, code: string, scenario: IScene[]): void {
@@ -57,10 +52,12 @@ export default class CScenarioManager {
     const scene = this.#getScenarioSceneByIndex(sceneIndex)
     this.#doBeforeBegin(scene.beforeBegin)
     this.#doCondition(scene.condition)
-    this.#changeSlideImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
-    this.#changeSlideText(scene.text)
-    this.#setButtonValues(scene.buttons)
-    scene.message !== undefined && this.#slideMessage(scene.message)
+    this.slide.changeImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
+    this.slide.changeText(scene.text)
+    this.slide.setButtonValues(scene.buttons)
+    scene.message !== undefined && this.slide.message(scene.message)
+    scene.stats !== undefined && this.#doStats(scene.stats)
+    scene.achievement !== undefined && this.#doAchievement(scene.achievement)
     this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
     func?.()
     this.#doLastSave(sceneIndex)
@@ -72,6 +69,16 @@ export default class CScenarioManager {
 
   #doCondition (condition: ICondition[] | undefined): void {
     if (condition !== undefined) condition.forEach(condition => { condition.condition() && condition.func() })
+  }
+
+  #doStats (stats: IStat[]): void {
+    stats.forEach(stat => {
+      this.#statsManager.change(stat)
+    })
+  }
+
+  #doAchievement (achievement: { story: EStoriesEn, name: string }): void {
+    this.#achievementManager.unlock(achievement.story, achievement.name)
   }
 
   #doSounds (sounds: { music: string | undefined, ambient: string | undefined, simple: string | undefined }): void {

@@ -1,0 +1,33 @@
+@import "../Common/Common";
+
+.slide__toolbar {
+  position: absolute;
+  bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+%slide__toolbar-button {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 45px;
+  height: 45px;
+  z-index: 5;
+  @extend %button-tap;
+}
+
+.slide__inventory-button {
+  background-image: url("../../Images/UI/icon_bag.svg");
+  @extend %slide__toolbar-button;
+}
+
+.slide__previous-button{
+  background-image: url("../../Images/UI/icon_previous.svg");
+  @extend %slide__toolbar-button;
+}
+
+.slide__exit-button{
+  background-image: url("../../Images/UI/icon_exit.svg");
+  @extend %slide__toolbar-button;
+}

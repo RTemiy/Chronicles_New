@@ -14,6 +14,8 @@
     "@typescript-eslint/no-floating-promises": "off",
     "no-tabs": "off",
     "@typescript-eslint/restrict-template-expressions": "off",
-    "no-new": "off"
+    "no-new": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/strict-boolean-expressions" : "off"
   }
 }

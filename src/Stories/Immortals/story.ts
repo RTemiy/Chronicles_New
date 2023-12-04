@@ -1,4 +1,4 @@
-import {scenarioManager, statsManager, storiesManager} from '../../index'
+import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'Immortals',
@@ -66,5 +66,3 @@ storiesManager.add({
     }]
   }]
 })
-
-require('./scenarios/Prologue')

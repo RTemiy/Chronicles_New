@@ -60,6 +60,8 @@
   align-items: center;
   @extend %styled-radius;
   box-shadow: 0 0 10px black;
+  width: 235px;
+  max-height: 235px;
   overflow: hidden;
 }
 
@@ -72,6 +74,8 @@
 }
 
 .part__name{
+  position: absolute;
+  width: 235px;
   text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
   font-size: var(--bigtext);
   grid-column: 1;

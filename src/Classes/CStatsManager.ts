@@ -24,6 +24,11 @@ export default class CStatsManager {
     }
   }
 
+  get (statInfo: IStat): number {
+    const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
+    return stat.value!
+  }
+
   saveStats (isLastSave: boolean, storyName: string, chapterName: string, partName: string, code?: string): void {
     this.#forEach((stat: IStat) => {
       if (stat.story === storyName) {

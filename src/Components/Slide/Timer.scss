@@ -1,0 +1,75 @@
+@import "../Common/Common";
+
+.pie {
+  font-size: 500%;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 25px;
+  border: 0.05em solid var(--color);
+  --color: #55cffd;
+  background-color: white;
+  display: none;
+  z-index: 6;
+  @extend %show;
+}
+
+.pie::before,
+.pie::after {
+  content: '';
+  width: 50%;
+  height: 100%;
+  border-radius: 0.5em 0 0 0.5em;
+  position: absolute;
+  left: 0;
+  transform-origin: center right;
+}
+
+.pie::before {
+  z-index: 1;
+  background-color: white;
+}
+
+.pie::after {
+  background-color: var(--color);
+}
+
+.pie::before,
+.pie::after {
+  animation-duration: var(--duration);
+  animation-iteration-count: infinite;
+}
+
+.pie::before {
+  animation-name: mask;
+  animation-timing-function: steps(1);
+}
+.pie::after {
+  animation-name: rotate;
+  animation-timing-function: linear;
+}
+
+@keyframes mask {
+  50%,
+  100% {
+    background-color: var(--color);
+    transform: rotate(0.5turn);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.pie__leftTime{
+  font-size: 50px;
+  left: 10px;
+  position: relative;
+  text-align: center;
+  top: 10px;
+  width: 60px;
+  z-index: 5;
+}

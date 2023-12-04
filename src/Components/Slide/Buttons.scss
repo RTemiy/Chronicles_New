@@ -1,0 +1,26 @@
+@import '../Common/Common';
+@import './Slide';
+
+.slide__buttons{
+  margin-top: 15px;
+  grid-column: 1;
+  grid-row: 3;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  gap: 10px;
+}
+
+.slide__button{
+  grid-column: 1;
+  color: white;
+  max-width: $maxWidth;
+  width: 100vw;
+  height: 40px;
+  @extend %styled-border;
+  @extend %button-tap;
+  @extend %show;
+  border-radius: 10px;
+  backdrop-filter: blur(150px);
+}
