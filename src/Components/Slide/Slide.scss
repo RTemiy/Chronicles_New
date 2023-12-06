@@ -1,8 +1,5 @@
 @import '../Common/Common';
 
-$maxWidth: 300px;
-$maxHeight: 700px;
-
 .slide{
   left: 0;
   top: 0;
@@ -14,55 +11,6 @@ $maxHeight: 700px;
   overflow: hidden;
   position: absolute;
   grid-template-rows: repeat(3, min-content);
-  @extend %show;
-}
-
-.slide__image-container{
-  display: grid;
-  max-width: $maxWidth;
-  max-height: $maxHeight;
-  grid-row: 1;
-  grid-column: 1;
-  z-index: 2;
-  height: min-content;
-}
-
-.slide__imageMiddle{
-  grid-column: 1;
-  grid-row: 1;
-  max-width: $maxWidth;
-  max-height: $maxHeight;
-}
-
-.slide__imageLeft{
-  grid-column: 1;
-  grid-row: 1;
-  max-width: $maxWidth;
-  max-height: $maxHeight;
-  transform: translateX(-25%);
-}
-
-.slide__imageRight{
-  grid-column: 1;
-  grid-row: 1;
-  max-width: $maxWidth;
-  max-height: $maxHeight;
-  transform: scaleX(-1) translateX(-25%);
-}
-
-.slide__imageFront{
-  grid-column: 1;
-  grid-row: 1;
-  max-width: $maxWidth;
-  max-height: $maxHeight;
-}
-
-.slide__border{
-  grid-column: 1;
-  grid-row: 1;
-  max-width: $maxWidth;
-  max-height: $maxHeight;
-  transform: scaleX(1.2);
   @extend %show;
 }
 

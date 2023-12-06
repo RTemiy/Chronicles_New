@@ -1,6 +1,7 @@
 import CContainer from '../../Classes/CContainer'
 
 import './Slide.scss'
+import './Images.scss'
 import './Buttons.scss'
 import './Message.scss'
 import './Toolbar.scss'

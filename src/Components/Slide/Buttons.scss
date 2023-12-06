@@ -15,8 +15,8 @@
 .slide__button{
   grid-column: 1;
   color: white;
-  max-width: $maxWidth;
-  width: 100vw;
+  max-width: 480px;
+  width: 90vw;
   height: 40px;
   @extend %styled-border;
   @extend %button-tap;

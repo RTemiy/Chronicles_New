@@ -26,7 +26,7 @@ export function askForInput (message: string, callback: (value: string) => void)
     TextInput.self.style.display = 'none'
   }
 }
-const validatorExp = /^[а-яА-ЯёЁ0-9]+$/
+const validatorExp = /^[а-яА-ЯёЁ]+$/
 
 TextInput.input.oninput = () => {
   validate()

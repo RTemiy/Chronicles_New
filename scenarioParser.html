@@ -76,7 +76,7 @@
           '$MESSAGE$' +
           '$MUSIC$' +
           '$PICTUREFRONT$' +
-          '\n    stats: [$STAT$$ITEM$]' +
+          '\n    stats: [$STAT$$ITEM$],' +
           '\n    achievement: $ACHIEVEMENT$' +
           '\n    imageBack: require(\'../../../Images/$NAME$/-$PICTURE$-\')' +
           '  \n},'
@@ -137,7 +137,7 @@
               scenes[name][x][y] = scenes[name][x][y].replace(/! Достижение:* /, '');
               allAchievements.add(scenes[name][x][y]);
               // Заменяем ключевое слово на значение
-              value = value.replaceAll('$ACHIEVEMENT$',`{story: EStoriesEn.${name}, name: '${scenes[name][x].splice(y,1)}'},`);
+              value = value.replaceAll('$ACHIEVEMENT$',`{ story: EStoriesEn.${name}, name: '${scenes[name][x].splice(y,1)}' },`);
               y-=1;
             } else if (/! Музыка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Музыка:* /, '');
@@ -154,7 +154,7 @@
               word = word.join(' ');
               allItems.add(word);
               scenes[name][x][y] = '';
-              value = value.replaceAll('$ITEM$',`\n          { story: EStoriesEn.${name}, value: ${itemAmount}, category: 'Item', id: '${word}' },$ITEM$`);
+              value = value.replaceAll('$ITEM$',`\n          { story: EStoriesEn.${name}, value: ${itemAmount}, category: 'Item', id: '&${word}&' },$ITEM$`);
               y-=1;
             } else if (/! Стат:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Стат:* /, '');
@@ -163,13 +163,7 @@
               word = word.join(' ');
               allStats.add(word);
               scenes[name][x][y] = '';
-              value = value.replaceAll('$STAT$',`\n          { story: EStoriesEn.${name}, value: ${statAmount}, category: 'Person', id: '${word}' },$STAT$`);
-              y-=1;
-            }
-
-            // При наличии ! в начале удаляем абзац
-            else if (scenes[name][x][y].startsWith('!')) {
-              scenes[name][x].splice(y,1);
+              value = value.replaceAll('$STAT$',`\n          { story: EStoriesEn.${name}, value: ${statAmount}, category: 'Person', id: '*${word}*' },$STAT$`);
               y-=1;
             }
 
@@ -199,6 +193,7 @@
           value = value.replaceAll('$MESSAGE$','');
           value = value.replaceAll('$MUSIC$','');
           value = value.replaceAll('$PICTUREFRONT$','');
+          value = value.replaceAll('\n    stats: [],','');
           value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
           value = value.replaceAll('\n    doBeforeBegin: () => {\n      },','');
 
@@ -221,8 +216,8 @@
 
         setCodeNames(allPictures, 'Укажите путь до картинки для', '-', '.png');
         setCodeNames(allMusic, 'Укажите название музыки для', '=', '.mp3');
-        setCodeNames(allItems, 'Укажите название предмета для');
-        setCodeNames(allStats, 'Укажите название стата для');
+        setCodeNames(allItems, 'Укажите название предмета для', '&');
+        setCodeNames(allStats, 'Укажите название стата для', '*');
         setCodeNames(allAchievements, 'Укажите название достижения для');
 
         result = resultImages + resultMusic + resultItems + resultStats + resultAchievements + initConst + result + '])\n';

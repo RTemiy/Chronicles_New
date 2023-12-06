@@ -11,7 +11,8 @@
   /*box-shadow: inset 2px 5px 3px -3px rgb(0 0 0 / 75%), -1px 0 2px 1px rgb(0 0 0 / 75%);*/
   z-index: 3;
   color: white;
-  @extend %styled-background
+  @extend %styled-background;
+  @extend %show;
 }
 
 .menu-toolbar__item{
