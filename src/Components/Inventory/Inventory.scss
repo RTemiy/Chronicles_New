@@ -19,98 +19,10 @@
   display: none;
 }
 
-.inventory__persons {
-  display: flex;
-  gap: 15px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  max-width: 400px;
-  padding: 10px;
-}
-
-.inventory__items {
-}
-
-.inventory__info-block {
-  max-width: 400px;
-  display: grid;
-  grid-template-rows: min-content auto;
-  grid-template-columns: min-content auto;
-  padding: 10px;
-}
-
-.inventory__info-image {
-  grid-column: 1;
-  grid-row: 1;
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  @extend %styled-radius;
-  transition: transform 0.2s ease-in-out;
-  &:active {
-    transform: scale(1.5);
-  }
-}
-
-.inventory__info-title {
-  grid-column: 2;
-  grid-row: 1;
-  color: white;
-  padding: 10px;
-}
-
-.inventory__info-description {
-  grid-column: span 2;
-  grid-row: 2;
-  color: white;
-  padding: 10px;
-}
-
-.inventory__person-cell {
-  overflow: visible;
-  position: relative;
-}
-
-.inventory__person-image {
-  width: 65px;
-  height: 65px;
-  object-fit: cover;
-  border-radius: 50px;
-}
-
-.inventory__person-value {
-  color: white;
-  position: absolute;
-  top: 50px;
-  left: 5px;
-}
-
-.inventory__person-name {
-  text-align: left;
-  color: white;
-  position: absolute;
-  top: 65px;
-  left: 15px;
-  font-size: var(--tinytext);
-}
-
-.inventory__item-cell {
-}
-
-.inventory__item-image {
-  width: 50px;
-}
-
-.inventory__item-value {
-}
-
-.inventory__item-name {
-}
-
 .inventory__close-button {
   position: absolute;
   top: 15px;
-  right: 0;
+  right: 15px;
   background-image: url('../../Images/UI/icon_cross.svg');
   background-repeat: no-repeat;
   background-size: cover;

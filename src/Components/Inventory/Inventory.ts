@@ -1,6 +1,9 @@
 import CContainer from '../../Classes/CContainer'
 import { type EStoriesEn } from '../../Utils/EStoriesNames'
 import './Inventory.scss'
+import './Info.scss'
+import './Persons.scss'
+import './Items.scss'
 import { statsManager } from '../../index'
 
 export const Inventory = new CContainer(

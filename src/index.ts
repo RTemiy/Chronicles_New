@@ -25,6 +25,7 @@ import { Inventory, renderInventory } from './Components/Inventory/Inventory'
 import { animateBackForth } from './Functions/animateBackForth'
 
 require('./sevice-worker')
+document.addEventListener('contextmenu', e => { e.preventDefault() })
 
 export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self)
 tabManagerMenu.addElementTo(Chapters.self, Books.self)

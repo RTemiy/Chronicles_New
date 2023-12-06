@@ -19,7 +19,7 @@ const MenuToolbar = new CContainer(
 	<img src="${iconContinue}">
 	<!--<p>Продолжить</p>-->
 </div>
-<div id="menu-toolbar_favourites" class="menu-toolbar__item">
+<div id="menu-toolbar_favourites" class="menu-toolbar__item" style='display: none'>
 	<img src="${iconFavourites}">
 	<!--<p>Фавориты</p>-->
 </div>

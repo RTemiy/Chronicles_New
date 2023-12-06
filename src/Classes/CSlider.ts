@@ -113,6 +113,7 @@ export default class CSlider {
       this.#checkDelta()
     })
 
+    /*
     this.#containerElement.addEventListener('dragstart', (evt) => {
       this.#touchStart = evt.clientX
     })
@@ -121,6 +122,7 @@ export default class CSlider {
       this.#touchEnd = evt.clientX
       this.#checkDelta()
     })
+    */
   }
 
   #checkDelta (): void {

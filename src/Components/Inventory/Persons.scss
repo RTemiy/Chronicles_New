@@ -1,0 +1,36 @@
+.inventory__persons {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 400px;
+  padding: 10px;
+}
+
+.inventory__person-cell {
+  overflow: visible;
+  position: relative;
+}
+
+.inventory__person-image {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.inventory__person-value {
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 5px;
+}
+
+.inventory__person-name {
+  text-align: left;
+  color: white;
+  position: absolute;
+  top: 65px;
+  left: 15px;
+  font-size: var(--tinytext);
+}
