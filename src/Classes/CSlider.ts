@@ -8,7 +8,12 @@ export default class CSlider {
   #helperPos = 0
   readonly #elementClassName: string
   readonly #helperClassName: string
-  constructor (containerElement: HTMLElement, helperContainer: HTMLElement, elementClassName: string, helperClassName: string) {
+  constructor (
+    containerElement: HTMLElement,
+    helperContainer: HTMLElement,
+    elementClassName: string,
+    helperClassName: string
+  ) {
     this.#containerElement = containerElement
     this.#helperContainer = helperContainer
     this.#elementClassName = elementClassName
@@ -37,8 +42,12 @@ export default class CSlider {
   #changeActiveHelper (number: number): void {
     this.#helperPos += number
     this.#validateHelperPos()
-    this.#helperElements.forEach(el => { el.classList.remove(this.#helperClassName + '_active') })
-    this.#helperElements[this.#helperPos].classList.add(this.#helperClassName + '_active')
+    this.#helperElements.forEach((el) => {
+      el.classList.remove(this.#helperClassName + '_active')
+    })
+    this.#helperElements[this.#helperPos].classList.add(
+      this.#helperClassName + '_active'
+    )
   }
 
   #validateHelperPos (): void {
@@ -67,15 +76,18 @@ export default class CSlider {
     this.#containerElements.forEach((child, index) => {
       child.setAttribute('style', `z-index: ${-index};`)
       index === 0 && child.setAttribute('style', ' z-index: 1;')
-      index === 1 && child.setAttribute('style', 'transform: translateX(4%); z-index: 0;')
-      index === this.#containerElements.length - 1 && child.setAttribute('style', 'transform: translateX(-4%); z-index: 0;')
+      index === 1 &&
+        child.setAttribute('style', 'transform: translateX(4%); z-index: 0;')
+      index === this.#containerElements.length - 1 &&
+        child.setAttribute('style', 'transform: translateX(-4%); z-index: 0;')
       child.classList.add(this.#elementClassName + '_disabled')
-      index === 0 && child.classList.remove(this.#elementClassName + '_disabled')
+      index === 0 &&
+        child.classList.remove(this.#elementClassName + '_disabled')
     })
   }
 
   #addEventListeners (): void {
-    this.#containerElement.addEventListener('touchstart', evt => {
+    this.#containerElement.addEventListener('touchstart', (evt) => {
       this.#touchStart = evt.changedTouches[0].clientX
     })
 
@@ -96,16 +108,16 @@ export default class CSlider {
       card.style.cssText = `transform: rotateY(${yRotation}deg) rotateX(${xRotation}deg);`
     }) */
 
-    this.#containerElement.addEventListener('touchend', evt => {
+    this.#containerElement.addEventListener('touchend', (evt) => {
       this.#touchEnd = evt.changedTouches[0].clientX
       this.#checkDelta()
     })
 
-    this.#containerElement.addEventListener('dragstart', evt => {
+    this.#containerElement.addEventListener('dragstart', (evt) => {
       this.#touchStart = evt.clientX
     })
 
-    this.#containerElement.addEventListener('dragend', evt => {
+    this.#containerElement.addEventListener('dragend', (evt) => {
       this.#touchEnd = evt.clientX
       this.#checkDelta()
     })

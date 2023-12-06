@@ -1,6 +1,6 @@
 @import '../Common/Common';
 
-.stories{
+.stories {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@
   @extend %menuFont;
 }
 
-.stories__container{
+.stories__container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,53 +20,56 @@
   height: 70vh;
 }
 
-.stories__slider-checkbox{
+.stories__slider-checkbox {
   display: flex;
   flex-direction: row;
   margin: 30px;
 }
 
-.slider__check{
+.slider__check {
   width: 10px;
   height: 10px;
   @extend %styled-background;
   border-radius: 50px;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.slider__check_active{
+.slider__check_active {
   background-color: white;
   transform: scale(1.5);
   margin: 0 5px;
 }
 
-.story{
+.story {
   max-width: 400px;
   width: 100vw;
   height: 600px;
   z-index: 1;
   position: absolute;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
 }
 
-.story_disabled{
-  .story__button, .story__description, .story__genre, .story__status, .story__mature{
+.story_disabled {
+  .story__button,
+  .story__description,
+  .story__genre,
+  .story__status,
+  .story__mature {
     visibility: hidden;
     opacity: 0;
-
   }
-  .story__image-container{
-    .story__image{
+  .story__image-container {
+    .story__image {
       box-shadow: none;
-      transition: all .5s ease-in-out;
+      transition: all 0.5s ease-in-out;
       border: 1px solid rgba(128, 128, 128, 0.1);
     }
   }
 }
 
-.story__button{
+.story__button {
   @extend %styled-border;
   @extend %styled-background;
   @extend %styled-radius;
@@ -79,14 +82,14 @@
   transition: all 0.5s ease-in-out;
 }
 
-.story__image-container{
+.story__image-container {
   display: grid;
   justify-items: center;
   align-items: center;
   justify-content: center;
 }
 
-.story__image{
+.story__image {
   grid-column: 1;
   grid-row: 1;
   max-width: 225px;
@@ -95,26 +98,30 @@
   box-shadow: 0 0 5px white;
 }
 
-.story__description{
+.story__description {
   text-align: center;
   padding: 15px;
   transition: all 0.5s ease-in-out;
 }
 
-.story__genre{
+.story__genre {
   text-align: center;
   padding: 2px 5px 0 10px;
   font-size: var(--tinytext);
-  background: linear-gradient(135deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
   grid-column: 1;
   grid-row: 1;
   justify-self: left;
   align-self: end;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.story__mature{
+.story__mature {
   text-align: center;
   margin: 10px 0 0 0;
   padding: 3px 6px;
@@ -123,12 +130,12 @@
   grid-row: 1;
   justify-self: left;
   align-self: start;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: red;
   border-radius: 0 4px 4px 0;
 }
 
-.story__status{
+.story__status {
   text-align: center;
   margin: 40px 0 0 0;
   padding: 3px 6px;
@@ -138,7 +145,7 @@
   grid-row: 1;
   justify-self: left;
   align-self: start;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   background-color: white;
   border-radius: 0 4px 4px 0;
 }

@@ -10,8 +10,8 @@
   --tinytext: 1.3vh;
   --simplecolor: #f2daffed;
   --advancedcolor: rgba(248, 238, 255, 0.93);
-  --activecolor : #ffedbf;
-  --font: "Times New Roman", Times, serif;
+  --activecolor: #ffedbf;
+  --font: 'Times New Roman', Times, serif;
   --stroke: 0px;
 }
 
@@ -31,8 +31,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
-  -ms-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern";
+  -ms-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern';
   padding: 0;
   margin: 0;
   /*animation: moving-background infinite 100s linear;*/
@@ -63,8 +63,8 @@ button {
   color: unset;
 }
 
-::-webkit-scrollbar{
-  width : 0;
+::-webkit-scrollbar {
+  width: 0;
   height: 0;
 }
 
@@ -72,7 +72,6 @@ button {
   background: rgba(0, 103, 1, 0.7);
   border-radius: 10px;
 }
-
 
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.5);
@@ -83,7 +82,6 @@ button {
   background: rgba(136, 136, 136, 0.9);
 }
 
-iframe
-{
+iframe {
   display: none;
 }

@@ -8,7 +8,7 @@ import { Credits } from '../Credits/Credits'
 
 const Settings = new CContainer(
   'settings',
-	`
+  `
 <p class="tab__title">Настройки</p>
 <div class="settings__container">
 	<div class="settings__block">
@@ -60,9 +60,10 @@ const Settings = new CContainer(
 	</div>
 </div>
 `,
-	{ name: 'checkBoxSound', selector: '#settings-sound' },
-	{ name: 'checkBoxAHA', selector: '#settings-aha' },
-	{ name: 'creatorsButton', selector: '#creators-button' })
+  { name: 'checkBoxSound', selector: '#settings-sound' },
+  { name: 'checkBoxAHA', selector: '#settings-aha' },
+  { name: 'creatorsButton', selector: '#creators-button' }
+)
 
 Settings.checkBoxSound.addEventListener('click', () => {
   localStorage.setItem('Settings_Sound', Settings.checkBoxSound.checked)
@@ -78,8 +79,10 @@ Settings.creatorsButton.addEventListener('click', () => {
 })
 
 function loadSettings (): void {
-  Settings.checkBoxSound.checked = localStorage.getItem('Settings_Sound') === 'true'
-  Settings.checkBoxAHA.checked = localStorage.getItem('Settings_AHA') === 'true'
+  Settings.checkBoxSound.checked =
+    localStorage.getItem('Settings_Sound') === 'true'
+  Settings.checkBoxAHA.checked =
+    localStorage.getItem('Settings_AHA') === 'true'
 }
 
 loadSettings()

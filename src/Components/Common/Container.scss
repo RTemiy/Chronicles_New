@@ -1,11 +1,15 @@
 @use './Colors';
 
 %styled-background {
-background: -webkit-linear-gradient(135deg, Colors.$mainColor, Colors.$additionalColor);
+  background: -webkit-linear-gradient(
+    135deg,
+    Colors.$mainColor,
+    Colors.$additionalColor
+  );
 }
 
 %styled-border {
-box-shadow: inset 0 0 5px 1px rgb(0 0 0 / 77%);
+  box-shadow: inset 0 0 5px 1px rgb(0 0 0 / 77%);
 }
 
 %styled-radius {

@@ -5,7 +5,7 @@ import type CStatsManager from './CStatsManager'
 import type CSoundSystem from './CSoundSystem'
 import type CSlide from './CSlide'
 import type IStat from '../Types/IStat'
-import type CAchievementsManager from './CAchievementsManager';
+import type CAchievementsManager from './CAchievementsManager'
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''

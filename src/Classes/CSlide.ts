@@ -14,13 +14,24 @@ export default class CSlide {
     private readonly storiesElement: HTMLElement,
     private readonly menuToolbarElement: HTMLElement,
     private readonly inventoryElement: HTMLElement,
-    private readonly animateFunc: (element: HTMLElement, className: string, duration: number) => void,
+    private readonly animateFunc: (
+      element: HTMLElement,
+      className: string,
+      duration: number
+    ) => void,
     private readonly renderInventory: (story: EStoriesEn) => void
   ) {
     this.addClicks()
   }
 
-  changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, borderImage?: string): void {
+  changeImage (
+    backImage?: string,
+    leftImage?: string,
+    middleImage?: string,
+    rightImage?: string,
+    frontImage?: string,
+    borderImage?: string
+  ): void {
     if (backImage !== undefined && backImage !== '') {
       this.slide.backgroundImage.src = backImage
     } else if (backImage === undefined) {
@@ -80,24 +91,27 @@ export default class CSlide {
   }
 
   private forEachButton (func: (button: HTMLElement) => void): void {
-    this.getButtonsArray().forEach(button => {
+    this.getButtonsArray().forEach((button) => {
       func(button)
     })
   }
 
   private resetButtonValues (): void {
-    this.slide.text.onclick = () => {
-    }
+    this.slide.text.onclick = () => {}
     this.forEachButton((button: HTMLElement) => {
-      button.onclick = () => {
-      }
+      button.onclick = () => {}
       button.style.display = 'none'
       button.innerText = ''
     })
   }
 
   message (text: string, noSound?: boolean): void {
-    if (noSound === false || noSound === undefined) this.soundManager.play('simple', require('../Sounds/Common/Notification.mp3'))
+    if (noSound === false || noSound === undefined) {
+      this.soundManager.play(
+        'simple',
+        require('../Sounds/Common/Notification.mp3')
+      )
+    }
     this.slide.messageText.innerHTML = text
     this.slide.message.style.display = 'flex'
   }
@@ -127,19 +141,26 @@ export default class CSlide {
       this.slide.backgroundImage.onclick = () => {}
       const buttonsArray = this.getButtonsArray()
       buttons.forEach((button, index) => {
-        buttonsArray[index].onclick = () => { buttons[index].func() }
-        if (buttons[index].isActive === undefined || buttons[index].isActive!) buttonsArray[index].style.display = 'block'
-        else buttonsArray[index].style.display = 'none'
+        buttonsArray[index].onclick = () => {
+          buttons[index].func()
+        }
+        if (buttons[index].isActive === undefined || buttons[index].isActive!) {
+          buttonsArray[index].style.display = 'block'
+        } else buttonsArray[index].style.display = 'none'
         buttonsArray[index].innerText = buttons[index].text
       })
     }
   }
 
   addClicks (): void {
-    this.slide.message.onclick = () => { this.slide.message.style.display = 'none' }
+    this.slide.message.onclick = () => {
+      this.slide.message.style.display = 'none'
+    }
 
     this.slide.previousSlideButton.onclick = () => {
-      if (this.previousSlideText.length >= 1) this.message(this.previousSlideText, true)
+      if (this.previousSlideText.length >= 1) {
+        this.message(this.previousSlideText, true)
+      }
     }
 
     this.slide.exitSlideButton.onclick = () => {
@@ -150,7 +171,9 @@ export default class CSlide {
     }
 
     this.slide.inventoryButton.onclick = () => {
-      this.renderInventory(EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]])
+      this.renderInventory(
+        EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]]
+      )
       this.inventoryElement.style.display = 'flex'
     }
   }

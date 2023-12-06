@@ -1,4 +1,4 @@
-@import "../Common/Common";
+@import '../Common/Common';
 
 $maxWidthWide: 300px;
 $maxHeightWide: 700px;
@@ -6,8 +6,7 @@ $maxHeightWide: 700px;
 $maxWidthShort: 200px;
 $maxHeightShort: 500px;
 
-
-.slide__image-container{
+.slide__image-container {
   display: grid;
   grid-row: 1;
   grid-column: 1;
@@ -15,29 +14,29 @@ $maxHeightShort: 500px;
   height: min-content;
 }
 
-.slide__imageMiddle{
+.slide__imageMiddle {
   grid-column: 1;
   grid-row: 1;
 }
 
-.slide__imageLeft{
+.slide__imageLeft {
   grid-column: 1;
   grid-row: 1;
   transform: translateX(-25%);
 }
 
-.slide__imageRight{
+.slide__imageRight {
   grid-column: 1;
   grid-row: 1;
   transform: scaleX(-1) translateX(-25%);
 }
 
-.slide__imageFront{
+.slide__imageFront {
   grid-column: 1;
   grid-row: 1;
 }
 
-.slide__border{
+.slide__border {
   grid-column: 1;
   grid-row: 1;
   transform: scaleX(1.5);
@@ -45,54 +44,54 @@ $maxHeightShort: 500px;
 }
 
 @media (max-width: 5000px) {
-  .slide__image-container{
+  .slide__image-container {
     max-width: $maxWidthWide;
     max-height: $maxHeightWide;
   }
-  .slide__imageMiddle{
+  .slide__imageMiddle {
     max-width: $maxWidthWide;
     max-height: $maxHeightWide;
   }
-  .slide__imageLeft{
+  .slide__imageLeft {
     max-width: $maxWidthWide;
     max-height: $maxHeightWide;
   }
-  .slide__imageRight{
+  .slide__imageRight {
     max-width: $maxWidthWide;
     max-height: $maxHeightWide;
   }
-  .slide__imageFront{
+  .slide__imageFront {
     max-width: $maxWidthWide;
     max-height: $maxHeightWide;
   }
-  .slide__border{
+  .slide__border {
     max-width: $maxWidthWide;
     max-height: $maxHeightWide;
   }
 }
 
 @media (max-width: 375px) {
-  .slide__image-container{
+  .slide__image-container {
     max-width: $maxWidthShort;
     max-height: $maxHeightShort;
   }
-  .slide__imageMiddle{
+  .slide__imageMiddle {
     max-width: $maxWidthShort;
     max-height: $maxHeightShort;
   }
-  .slide__imageLeft{
+  .slide__imageLeft {
     max-width: $maxWidthShort;
     max-height: $maxHeightShort;
   }
-  .slide__imageRight{
+  .slide__imageRight {
     max-width: $maxWidthShort;
     max-height: $maxHeightShort;
   }
-  .slide__imageFront{
+  .slide__imageFront {
     max-width: $maxWidthShort;
     max-height: $maxHeightShort;
   }
-  .slide__border{
+  .slide__border {
     max-width: $maxWidthShort;
     max-height: $maxHeightShort;
   }

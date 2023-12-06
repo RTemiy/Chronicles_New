@@ -1,8 +1,15 @@
 import importAllIDirectory from './importAllIDirectory'
 
-export default function preCacheImages (elementPercent: HTMLElement, endFunc: () => void): void {
-  const allImages = importAllIDirectory(require.context('../Images/', true, /\.(png|jpe?g|svg)$/))
-  const allSounds = importAllIDirectory(require.context('../Sounds/', true, /\.mp3$/))
+export default function preCacheImages (
+  elementPercent: HTMLElement,
+  endFunc: () => void
+): void {
+  const allImages = importAllIDirectory(
+    require.context('../Images/', true, /\.(png|jpe?g|svg)$/)
+  )
+  const allSounds = importAllIDirectory(
+    require.context('../Sounds/', true, /\.mp3$/)
+  )
   let allImagesAmount = 0
   let allSoundsAmount = 0
   let allLoadedFilesAmount = 0
@@ -21,7 +28,9 @@ export default function preCacheImages (elementPercent: HTMLElement, endFunc: ()
     const audio = new Audio(allSounds[allSoundsKey])
     audio.oncanplay = () => {
       allLoadedFilesAmount++
-      const percent = Math.ceil(allLoadedFilesAmount / (allImagesAmount + allSoundsAmount) * 100)
+      const percent = Math.ceil(
+        (allLoadedFilesAmount / (allImagesAmount + allSoundsAmount)) * 100
+      )
       // elementPercent.innerText = 'Загрузка: ' + String(allLoadedFilesAmount) + '/' + String(allImagesAmount + allSoundsAmount)
       elementPercent.innerText = 'Загрузка: ' + String(percent) + '%'
       allLoadedFilesAmount === allImagesAmount + allSoundsAmount && endFunc()

@@ -19,5 +19,10 @@ export interface IPart {
   code: string
   image: any
   loadingImage: string
-  event: (storyName: string, chapterName: string, partName: string, code: string) => void
+  event: (
+    storyName: string,
+    chapterName: string,
+    partName: string,
+    code: string
+  ) => void
 }

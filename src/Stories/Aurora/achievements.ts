@@ -1,1 +1,1 @@
-import {achievementsManager} from '../../index'
+import { achievementsManager } from '../../index'

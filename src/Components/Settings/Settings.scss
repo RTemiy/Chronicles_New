@@ -1,15 +1,15 @@
 @import '../Common/Common';
 
-.settings{
+.settings {
   display: none;
   flex-direction: column;
   margin: 0 auto;
   max-width: 400px;
   @extend %show;
-  @extend  %menuFont;
+  @extend %menuFont;
 }
 
-.settings__block{
+.settings__block {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
@@ -19,32 +19,32 @@
   @extend %styled-border;
 }
 
-.settings__block:first-child{
+.settings__block:first-child {
   border-radius: 4px 4px 0 0;
 }
 
-.settings__block:last-child{
+.settings__block:last-child {
   border-radius: 0 0 4px 4px;
 }
 
-.settings__block:only-child{
+.settings__block:only-child {
   border-radius: 4px;
 }
 
-.settings__container{
+.settings__container {
   overflow: hidden;
   margin-bottom: 10px;
 }
 
-.settings__container:last-of-type{
+.settings__container:last-of-type {
   margin-bottom: 90px;
 }
 
-.settings__block>p{
+.settings__block > p {
   margin: auto auto auto 0;
 }
 
-.settings__icon{
+.settings__icon {
   width: 75px;
   border-radius: 50px;
 }

@@ -152,7 +152,6 @@ achievementsManager.add({
   title: 'Наследие',
   text: 'Получить подарок от Николы',
   story: EStoriesEn.Immortals
-
 })
 
 achievementsManager.add({

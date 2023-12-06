@@ -1,6 +1,6 @@
 @import '../Common/Common';
 
-.achievements{
+.achievements {
   display: none;
   flex-direction: column;
   max-width: 400px;
@@ -9,7 +9,7 @@
   @extend %show;
 }
 
-.achievements_block{
+.achievements_block {
   display: flex;
   flex-direction: column;
   max-width: 400px;
@@ -19,19 +19,19 @@
   overflow-y: visible;
 }
 
-.achievements__amount{
+.achievements__amount {
   text-align: center;
   padding: 0 0 10px 0;
   margin: 0;
 }
 
-.achievements__buttons{
+.achievements__buttons {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.achievements__button{
+.achievements__button {
   padding: 10px;
   font-size: var(--mediumtext);
   @extend %button-tap;
@@ -41,13 +41,13 @@
   @extend %menuFont;
 }
 
-.achievements__container{
+.achievements__container {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.achievement{
+.achievement {
   display: grid;
   grid-template-columns: min-content 1fr;
   grid-template-rows: min-content min-content;
@@ -58,7 +58,7 @@
   @extend %styled-radius;
 }
 
-.achievement::before{
+.achievement::before {
   position: absolute;
   top: 10px;
   left: 10px;
@@ -72,11 +72,11 @@
   @extend %styled-radius;
 }
 
-.achievement:last-of-type{
+.achievement:last-of-type {
   margin-bottom: 90px;
 }
 
-.achievement__image{
+.achievement__image {
   width: 50px;
   height: 50px;
   margin: 0 5px 0 0;
@@ -84,11 +84,11 @@
   position: relative;
 }
 
-.achievement__title{
+.achievement__title {
   margin: auto 0 auto 5px;
 }
 
-.achievement__text{
+.achievement__text {
   grid-column: 1/-1;
   border-top: 1px white solid;
   padding: 10px 5px 0 5px;

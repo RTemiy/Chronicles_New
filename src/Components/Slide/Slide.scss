@@ -1,6 +1,6 @@
 @import '../Common/Common';
 
-.slide{
+.slide {
   left: 0;
   top: 0;
   display: none;
@@ -14,7 +14,7 @@
   @extend %show;
 }
 
-.slide__text{
+.slide__text {
   grid-column: 1;
   grid-row: 2;
   z-index: 2;
@@ -31,12 +31,12 @@
   p {
     margin-top: 10px;
   }
-  p:first-child{
+  p:first-child {
     margin-top: 0;
   }
 }
 
-.slide__background{
+.slide__background {
   grid-column: 1;
   grid-row: 1/4;
   position: absolute;

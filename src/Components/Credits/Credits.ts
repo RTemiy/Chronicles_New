@@ -1,7 +1,8 @@
 import CContainer from '../../Classes/CContainer'
 import './Credits.scss'
 
-export const Credits = new CContainer('credits',
+export const Credits = new CContainer(
+  'credits',
   `
 <h1 class="credits__title">Создатели</h1>
 <p class="credits__role">ГЛАВНЫЙ СЦЕНАРИСТ</p>
@@ -65,4 +66,5 @@ export const Credits = new CContainer('credits',
 <p class="credits__name">Мария</p>
 <p class="credits__name">Альбина</p>
 
-`)
+`
+)

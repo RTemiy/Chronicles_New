@@ -1,6 +1,6 @@
 @import '../Common/Common';
 
-.text-input{
+.text-input {
   position: absolute;
   top: 0;
   left: 0;
@@ -13,7 +13,7 @@
   @extend %show;
 }
 
-.text-input__container{
+.text-input__container {
   @extend %styled-border;
   @extend %styled-radius;
   @extend %styled-background;
@@ -23,16 +23,15 @@
   gap: 20px;
 }
 
-.text-input__message{
+.text-input__message {
   text-align: center;
   color: white;
 }
 
-.text-input__input{
-
+.text-input__input {
 }
 
-.text-input__button{
+.text-input__button {
   color: white;
   @extend %button-tap;
   @extend %styled-background;

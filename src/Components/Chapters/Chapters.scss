@@ -28,7 +28,7 @@
   @extend %styled-border;
 }
 
-.chapters__container{
+.chapters__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,15 +46,15 @@
   @extend %styled-border;
 }
 
-.chapter:first-of-type{
+.chapter:first-of-type {
   margin-top: 25px;
 }
 
-.chapter:last-of-type{
+.chapter:last-of-type {
   margin-bottom: 125px;
 }
 
-.chapter__container{
+.chapter__container {
   z-index: 3;
   display: grid;
   align-items: center;
@@ -65,7 +65,7 @@
   overflow: hidden;
 }
 
-.chapter__image{
+.chapter__image {
   width: 235px;
   z-index: 1;
   grid-column: 1;
@@ -74,11 +74,12 @@
   @extend %styled-radius;
 }
 
-
-.chapter__name{
+.chapter__name {
   position: absolute;
   width: 235px;
-  text-shadow: 0 0 15px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0);
+  text-shadow:
+    0 0 15px rgb(0, 0, 0),
+    0 0 10px rgb(0, 0, 0);
   font-size: var(--bigtext);
   grid-column: 1;
   grid-row: 1;

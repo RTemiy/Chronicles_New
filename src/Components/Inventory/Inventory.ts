@@ -3,7 +3,8 @@ import { type EStoriesEn } from '../../Utils/EStoriesNames'
 import './Inventory.scss'
 import { statsManager } from '../../index'
 
-export const Inventory = new CContainer('inventory',
+export const Inventory = new CContainer(
+  'inventory',
   `
   <div class="inventory__persons"></div>
   <div class="inventory__info-block">
@@ -26,20 +27,36 @@ export function renderInventory (story: EStoriesEn): void {
   const statsHTML = statsManager.getStatsHTML(story)
   Inventory.persons.innerHTML = statsHTML.persons
   Inventory.items.innerHTML = statsHTML.items
-  Inventory.persons.querySelectorAll('.inventory__person-cell').forEach((element: { onclick: () => void, getAttribute: (arg0: string) => any }) => {
-    element.onclick = () => {
-      Inventory.infoImage.src = element.getAttribute('data-image')
-      Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
-      Inventory.infoDescription.innerHTML = element.getAttribute('data-description')
-    }
-  })
-  Inventory.items.querySelectorAll('.inventory__items-cell').forEach((element: { onclick: () => void, getAttribute: (arg0: string) => any }) => {
-    element.onclick = () => {
-      Inventory.infoImage.src = element.getAttribute('data-image')
-      Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
-      Inventory.infoDescription.innerHTML = element.getAttribute('data-description')
-    }
-  })
+  Inventory.persons
+    .querySelectorAll('.inventory__person-cell')
+    .forEach(
+      (element: {
+        onclick: () => void
+        getAttribute: (arg0: string) => any
+      }) => {
+        element.onclick = () => {
+          Inventory.infoImage.src = element.getAttribute('data-image')
+          Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
+          Inventory.infoDescription.innerHTML =
+            element.getAttribute('data-description')
+        }
+      }
+    )
+  Inventory.items
+    .querySelectorAll('.inventory__items-cell')
+    .forEach(
+      (element: {
+        onclick: () => void
+        getAttribute: (arg0: string) => any
+      }) => {
+        element.onclick = () => {
+          Inventory.infoImage.src = element.getAttribute('data-image')
+          Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
+          Inventory.infoDescription.innerHTML =
+            element.getAttribute('data-description')
+        }
+      }
+    )
 }
 
 Inventory.closeInventoryButton.onclick = () => {

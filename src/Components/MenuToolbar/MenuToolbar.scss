@@ -1,6 +1,6 @@
 @import '../Common/Common';
 
-.menu-toolbar{
+.menu-toolbar {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -15,7 +15,7 @@
   @extend %show;
 }
 
-.menu-toolbar__item{
+.menu-toolbar__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,7 +23,7 @@
   padding: 15px 0;
   gap: 10px;
   @extend %button-tap;
-  transition: filter .5s ease-in-out;
+  transition: filter 0.5s ease-in-out;
 }
 
 .menu-toolbar__item > img {

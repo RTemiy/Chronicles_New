@@ -1,4 +1,4 @@
-import {scenarioManager, storiesManager} from '../../index'
+import { scenarioManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'FOF',

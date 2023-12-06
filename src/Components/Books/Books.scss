@@ -1,6 +1,6 @@
-@import "../Common/Common";
+@import '../Common/Common';
 
-.books{
+.books {
   position: fixed;
   top: 15px;
   right: 15px;
@@ -8,21 +8,21 @@
   @extend %show;
 }
 
-.books__container{
+.books__container {
   display: flex;
   flex-direction: row;
 }
 
-.books__icon{
+.books__icon {
   height: 25px;
   margin-right: 5px;
 }
 
-.books__text{
-  @extend %menuFont
+.books__text {
+  @extend %menuFont;
 }
 
-.books__help{
+.books__help {
   position: absolute;
   top: 25px;
   right: 0;
@@ -30,11 +30,11 @@
   opacity: 0;
   visibility: hidden;
   @extend %menuFont;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.books__container:hover{
-  .books__help{
+.books__container:hover {
+  .books__help {
     opacity: 1;
     visibility: visible;
   }

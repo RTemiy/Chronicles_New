@@ -1,5 +1,5 @@
-import IStat from './IStat';
-import {EStoriesEn} from '../Utils/EStoriesNames';
+import type IStat from './IStat'
+import { type EStoriesEn } from '../Utils/EStoriesNames'
 
 export interface IButton {
   func: () => void

@@ -1,5 +1,5 @@
 import type IStat from '../Types/IStat'
-import { EStoriesEn } from '../Utils/EStoriesNames'
+import { type EStoriesEn } from '../Utils/EStoriesNames'
 
 export default class CStatsManager {
   #stats: Record<string, IStat> = {}

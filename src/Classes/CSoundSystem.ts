@@ -3,7 +3,7 @@ export default class CSoundSystem {
   private music
   private simple
   private menu
-  private notificationSound
+  private readonly notificationSound
   private inMenu: boolean = true
 
   /**

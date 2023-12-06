@@ -5,7 +5,7 @@ import MenuToolbar from '../MenuToolbar/MenuToolbar'
 import Chapters from '../Chapters/Chapters'
 import { Slide } from '../Slide/Slide'
 import { LoadingScreen, renderLoadingScreen } from '../LoadingScreen/LoadingScreen'
-import {wasteBook} from '../Books/Books';
+import { wasteBook } from '../Books/Books'
 
 const Parts = new CContainer(
   'parts',
