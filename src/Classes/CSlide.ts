@@ -14,15 +14,9 @@ export default class CSlide {
     private readonly storiesElement: HTMLElement,
     private readonly menuToolbarElement: HTMLElement,
     private readonly inventoryElement: HTMLElement,
-    private readonly animateFunc: (
-      element: HTMLElement,
-      className: string,
-      duration: number
-    ) => void,
+    private readonly animateFunc: (element: HTMLElement, className: string, duration: number) => void,
     private readonly renderInventory: (story: EStoriesEn) => void
-  ) {
-    this.addClicks()
-  }
+  ) { this.addClicks() }
 
   changeImage (
     backImage?: string,
@@ -120,8 +114,10 @@ export default class CSlide {
     this.previousSlideText = this.slide.text.innerHTML
     this.slide.text.style.display = 'none'
     this.slide.text.innerHTML = '<p>' + text
+    const storyName = EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]]
     setTimeout(() => {
       this.slide.text.style.display = 'block'
+      this.slide.text.innerHTML = this.slide.text.innerHTML.replace('$Имя Игрока$', localStorage.getItem(`${storyName}_Name`))
     }, 10)
   }
 
