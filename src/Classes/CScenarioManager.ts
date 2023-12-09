@@ -39,9 +39,9 @@ export default class CScenarioManager {
     return this.#scenarios[this.#currentScenarioName][sceneIndex]
   }
 
-  setCurrentScenarioName (storyName: string, chapterName: string, partName: string, code: string): void {
+  setCurrentScenarioName (storyName: string, chapterName: string, partName: string, code: string, beginFromStart?: boolean): void {
     this.#currentScenarioName = storyName + '_' + chapterName + '_' + partName + '_' + code
-    this.beginScene(0)
+    beginFromStart && this.beginScene(0)
   }
 
   getCurrentStory (): string {
@@ -49,6 +49,7 @@ export default class CScenarioManager {
   }
 
   beginScene (sceneIndex: number, func?: () => void): void {
+    this.#doLastSave(sceneIndex)
     const scene = this.#getScenarioSceneByIndex(sceneIndex)
     this.#doBeforeBegin(scene.beforeBegin)
     this.#doCondition(scene.condition)
@@ -60,7 +61,6 @@ export default class CScenarioManager {
     scene.achievement !== undefined && this.#doAchievement(scene.achievement)
     this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
     func?.()
-    this.#doLastSave(sceneIndex)
   }
 
   #doBeforeBegin (beforeBegin: (() => void) | undefined): void {

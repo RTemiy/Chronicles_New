@@ -16,7 +16,7 @@ storiesManager.add({
       image: require('../../Images/FOF/Backgrounds/Football_Field.jpg'),
       loadingImage: require('../../Images/FOF/Covers/Prologue.jpg'),
       event: (storyName: string, chapterName: string, partName: string, code: string) => {
-        scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code)
+        scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
       }
     }]
   }]

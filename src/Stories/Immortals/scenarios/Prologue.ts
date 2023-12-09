@@ -1,4 +1,4 @@
-import { scenarioManager, slide, statsManager, timer } from '../../../index'
+import { scenarioManager, slide, timer } from '../../../index'
 import { EStoriesEn } from '../../../Utils/EStoriesNames'
 import { askForInput } from '../../../Components/TextInput/TextInput'
 
@@ -16,7 +16,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     text: `
     — Я проводник и пришел, чтобы напомнить о судьбе этого мира и почему твои решения определят его судьбу. Будь то спасение или уничтожение — выбор только за тобой. Полагаю, есть ряд вопросов, которые стоит обсудить. Задавай.
 `,
-    buttons: [{ text: '', func: () => { scenarioManager.beginScene(2); statsManager.change({ category: 'Person', id: 'Hero', story: EStoriesEn.Immortals, value: 0 }) } }],
+    buttons: [{ text: '', func: () => { scenarioManager.beginScene(2) } }],
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.png')
   },
   {
@@ -25,7 +25,16 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     <p>“Это не может быть реальностью!”
 `,
     buttons: [{ text: '', func: () => { scenarioManager.beginScene(3); timer.set(10, () => { slide.message('Провал') }) } }],
-    imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.png')
+    imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.png'),
+    stats: [
+      { category: 'Person', id: 'Hero', story: EStoriesEn.Immortals, value: 0 },
+      { category: 'Person', id: 'Guide', story: EStoriesEn.Immortals, value: 0 },
+      { category: 'Person', id: 'Robert', story: EStoriesEn.Immortals, value: 0 },
+      { category: 'Person', id: 'Nicola', story: EStoriesEn.Immortals, value: 0 },
+      { category: 'Person', id: 'Cheryl', story: EStoriesEn.Immortals, value: 0 },
+      { category: 'Person', id: 'Scarlett', story: EStoriesEn.Immortals, value: 0 },
+      { category: 'Person', id: 'Cheryl', story: EStoriesEn.Immortals, value: 0 }
+    ]
   },
   {
     text: `
@@ -73,9 +82,15 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     Из-под капюшона продолжала проглядывать ухмылка. Возникало ощущение, что собеседника забавляет этот вопрос.
     <p>— Тебя зовут $Имя Игрока$. И почему всем всегда так важно помнить свое имя…
 `,
-    buttons: [{ text: '', func: () => { scenarioManager.beginScene(0) } }],
+    buttons: [{ text: '', func: () => { scenarioManager.beginScene(8) } }],
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.png'),
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png')
+  },
+  {
+    text: `
+`,
+    buttons: [{ text: '', func: () => { scenarioManager.beginScene(0) } }],
+    imageBack: require('../../../Images/Immortals/Cards/RobertAdHero.jpg')
   }
 ])

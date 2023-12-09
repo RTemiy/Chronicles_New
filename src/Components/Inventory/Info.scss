@@ -6,6 +6,9 @@
   grid-template-rows: min-content auto;
   grid-template-columns: min-content auto;
   padding: 10px;
+  border-bottom: 1px white solid;
+  margin: 0 25px;
+  min-height: 280px;
 }
 
 .inventory__info-image {
@@ -14,11 +17,15 @@
   width: 150px;
   height: 150px;
   object-fit: cover;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(255,255,255,0.5) 100%);
   @extend %styled-radius;
+  @extend %show;
   transition: transform 0.2s ease-in-out;
   &:active {
     transform: scale(1.5);
   }
+  z-index: 5;
 }
 
 .inventory__info-title {
@@ -26,6 +33,7 @@
   grid-row: 1;
   color: white;
   padding: 10px;
+  @extend %show;
 }
 
 .inventory__info-description {
@@ -33,4 +41,7 @@
   grid-row: 2;
   color: white;
   padding: 10px;
+  margin-top: 10px;
+  border-top: 1px solid gray;
+  @extend %show;
 }

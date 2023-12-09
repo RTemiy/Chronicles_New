@@ -18,8 +18,7 @@ export const TextInput = new CContainer(
 
 export function askForInput (
   message: string,
-  callback: (value: string) => void
-): void {
+  callback: (value: string) => void): void {
   TextInput.message.innerText = message
   TextInput.input.value = ''
   TextInput.self.style.display = 'flex'
@@ -36,10 +35,7 @@ TextInput.input.oninput = () => {
 }
 
 function validate (): void {
-  if (
-    validatorExp.test(TextInput.input.value) &&
-    TextInput.input.value.length <= 15
-  ) {
+  if (validatorExp.test(TextInput.input.value) && TextInput.input.value.length <= 15) {
     TextInput.button.style.display = 'block'
   } else {
     TextInput.button.style.display = 'none'

@@ -115,7 +115,7 @@ export default class CSlide {
     this.slide.text.style.display = 'none'
     this.slide.text.innerHTML = '<p>' + text
     const storyName = EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]]
-    setTimeout(() => {
+    text.length >= 5 && setTimeout(() => {
       this.slide.text.style.display = 'block'
       this.slide.text.innerHTML = this.slide.text.innerHTML.replace('$Имя Игрока$', localStorage.getItem(`${storyName}_Name`))
     }, 10)

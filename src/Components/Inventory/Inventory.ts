@@ -30,6 +30,9 @@ export function renderInventory (story: EStoriesEn): void {
   const statsHTML = statsManager.getStatsHTML(story)
   Inventory.persons.innerHTML = statsHTML.persons
   Inventory.items.innerHTML = statsHTML.items
+  Inventory.infoImage.style.display = 'none'
+  Inventory.infoTitle.style.display = 'none'
+  Inventory.infoDescription.style.display = 'none'
   Inventory.persons
     .querySelectorAll('.inventory__person-cell')
     .forEach(
@@ -38,10 +41,17 @@ export function renderInventory (story: EStoriesEn): void {
         getAttribute: (arg0: string) => any
       }) => {
         element.onclick = () => {
-          Inventory.infoImage.src = element.getAttribute('data-image')
-          Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
-          Inventory.infoDescription.innerHTML =
-            element.getAttribute('data-description')
+          Inventory.infoImage.style.display = 'none'
+          Inventory.infoTitle.style.display = 'none'
+          Inventory.infoDescription.style.display = 'none'
+          setTimeout(() => {
+            Inventory.infoImage.src = element.getAttribute('data-image')
+            Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
+            Inventory.infoDescription.innerHTML = element.getAttribute('data-description')
+            Inventory.infoImage.style.display = 'flex'
+            Inventory.infoTitle.style.display = 'flex'
+            Inventory.infoDescription.style.display = 'flex'
+          }, 10)
         }
       }
     )

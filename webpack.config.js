@@ -74,7 +74,7 @@ module.exports = {
       }
     ]
   },
-  optimization: {
+  /*optimization: {
     minimizer: [
       '...',
       new ImageMinimizerPlugin({
@@ -112,7 +112,7 @@ module.exports = {
         }
       })
     ]
-  },
+  },*/
   resolve: {
     extensions: ['*', '.js', '.ts']
   },

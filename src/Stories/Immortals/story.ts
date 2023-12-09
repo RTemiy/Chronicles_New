@@ -18,18 +18,8 @@ storiesManager.add({
           code: '0',
           image: require('../../Images/Immortals/Backgrounds/Abstraction_Hero.png'),
           loadingImage: require('../../Images/Immortals/Covers/Prologue.png'),
-          event: (
-            storyName: string,
-            chapterName: string,
-            partName: string,
-            code: string
-          ) => {
-            scenarioManager.setCurrentScenarioName(
-              storyName,
-              chapterName,
-              partName,
-              code
-            )
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           }
         },
         {
@@ -37,25 +27,9 @@ storiesManager.add({
           code: '0',
           image: require('../../Images/Immortals/Backgrounds/Lection.png'),
           loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
-          event: (
-            storyName: string,
-            chapterName: string,
-            partName: string,
-            code: string
-          ) => {
-            scenarioManager.setCurrentScenarioName(
-              storyName,
-              chapterName,
-              partName,
-              code
-            )
-            statsManager.loadStats(
-              false,
-              storyName,
-              chapterName,
-              partName,
-              code
-            )
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
         },
         {
