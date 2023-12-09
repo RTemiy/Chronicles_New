@@ -1,15 +1,40 @@
 .inventory__items {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-width: 350px;
+  max-width: 400px;
+  overflow: scroll;
+  padding: 15px;
 }
 
 .inventory__item-cell {
+  overflow: visible;
+  position: relative;
 }
 
 .inventory__item-image {
-  width: 50px;
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .inventory__item-value {
+  color: white;
+  position: absolute;
+  top: 5px;
+  right: 5px;
 }
 
 .inventory__item-name {
+  position: absolute;
+  text-align: left;
+  bottom: 8px;
+  left: 5px;
+  color: white;
+  font-size: var(--tinytext);
 }

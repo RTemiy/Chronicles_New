@@ -95,9 +95,9 @@ export default class CStatsManager {
                      `
         } if (stat.category === 'Item') {
           items += `
-                     <div class="inventory__item-cell ${stat.show === 1 ? '' : 'inventory__disabled'}">
+                     <div class="inventory__item-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
                      <img class="inventory__item-image" src="${stat.image}">
-                     <p class="inventory__item-value">${stat.value}</p>
+                     <p class="inventory__item-value">${stat.value! > 1 ? stat.value : ''}</p>
                      <p class="inventory__item-name">${stat.name}</p>
                      </div>
                      `

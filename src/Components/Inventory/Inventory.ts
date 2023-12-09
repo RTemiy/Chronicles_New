@@ -56,17 +56,24 @@ export function renderInventory (story: EStoriesEn): void {
       }
     )
   Inventory.items
-    .querySelectorAll('.inventory__items-cell')
+    .querySelectorAll('.inventory__item-cell')
     .forEach(
       (element: {
         onclick: () => void
         getAttribute: (arg0: string) => any
       }) => {
         element.onclick = () => {
-          Inventory.infoImage.src = element.getAttribute('data-image')
-          Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
-          Inventory.infoDescription.innerHTML =
-            element.getAttribute('data-description')
+          Inventory.infoImage.style.display = 'none'
+          Inventory.infoTitle.style.display = 'none'
+          Inventory.infoDescription.style.display = 'none'
+          setTimeout(() => {
+            Inventory.infoImage.src = element.getAttribute('data-image')
+            Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
+            Inventory.infoDescription.innerHTML = element.getAttribute('data-description')
+            Inventory.infoImage.style.display = 'flex'
+            Inventory.infoTitle.style.display = 'flex'
+            Inventory.infoDescription.style.display = 'flex'
+          }, 10)
         }
       }
     )
