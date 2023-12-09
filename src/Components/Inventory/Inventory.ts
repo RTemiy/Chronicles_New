@@ -4,6 +4,8 @@ import './Inventory.scss'
 import './Info.scss'
 import './Persons.scss'
 import './Items.scss'
+import './Effects.scss'
+
 import { statsManager } from '../../index'
 
 export const Inventory = new CContainer(
@@ -16,10 +18,12 @@ export const Inventory = new CContainer(
     <p class="inventory__info-description"></p>
   </div>
   <div class="inventory__items"></div>
+  <div class="inventory__effects"></div>
   <button type="button" class="inventory__close-button"></button>
   `,
   { name: 'persons', selector: '.inventory__persons' },
   { name: 'items', selector: '.inventory__items' },
+  { name: 'effects', selector: '.inventory__effects' },
   { name: 'infoImage', selector: '.inventory__info-image' },
   { name: 'infoTitle', selector: '.inventory__info-title' },
   { name: 'infoDescription', selector: '.inventory__info-description' },
@@ -28,8 +32,11 @@ export const Inventory = new CContainer(
 
 export function renderInventory (story: EStoriesEn): void {
   const statsHTML = statsManager.getStatsHTML(story)
+
   Inventory.persons.innerHTML = statsHTML.persons
   Inventory.items.innerHTML = statsHTML.items
+  Inventory.effects.innerHTML = statsHTML.effects
+
   Inventory.infoImage.style.display = 'none'
   Inventory.infoTitle.style.display = 'none'
   Inventory.infoDescription.style.display = 'none'
@@ -57,6 +64,28 @@ export function renderInventory (story: EStoriesEn): void {
     )
   Inventory.items
     .querySelectorAll('.inventory__item-cell')
+    .forEach(
+      (element: {
+        onclick: () => void
+        getAttribute: (arg0: string) => any
+      }) => {
+        element.onclick = () => {
+          Inventory.infoImage.style.display = 'none'
+          Inventory.infoTitle.style.display = 'none'
+          Inventory.infoDescription.style.display = 'none'
+          setTimeout(() => {
+            Inventory.infoImage.src = element.getAttribute('data-image')
+            Inventory.infoTitle.innerHTML = element.getAttribute('data-title')
+            Inventory.infoDescription.innerHTML = element.getAttribute('data-description')
+            Inventory.infoImage.style.display = 'flex'
+            Inventory.infoTitle.style.display = 'flex'
+            Inventory.infoDescription.style.display = 'flex'
+          }, 10)
+        }
+      }
+    )
+  Inventory.effects
+    .querySelectorAll('.inventory__effect-cell')
     .forEach(
       (element: {
         onclick: () => void

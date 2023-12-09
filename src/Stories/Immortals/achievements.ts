@@ -276,7 +276,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'HiddenWorld',
-  image: require('../../Images/Immortals/Items/Key01.png'),
+  image: require('../../Images/Immortals/Items/Key.png'),
   title: '<accent>Спрятанный мир',
   text: '<accent>Найти применение неизвестному ключу',
   story: EStoriesEn.Immortals

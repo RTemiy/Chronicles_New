@@ -1,6 +1,6 @@
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 
-export type statCategory = 'Choice' | 'Person' | 'Item'
+export type statCategory = 'Choice' | 'Person' | 'Item' | 'Effect'
 
 export default interface IStat {
   story: EStoriesEn

@@ -74,6 +74,11 @@ export default class CScenarioManager {
   #doStats (stats: IStat[]): void {
     stats.forEach(stat => {
       this.#statsManager.change(stat)
+      if (stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
+        if (stat.silent === false || stat.silent === undefined) {
+          this.slide.alertInventory()
+        }
+      }
     })
   }
 

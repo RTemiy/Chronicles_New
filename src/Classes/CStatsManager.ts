@@ -19,7 +19,7 @@ export default class CStatsManager {
   change (statInfo: IStat): void {
     const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
     stat.value! += statInfo.value!
-    if (statInfo.silent === null || statInfo.silent === false || stat.category === 'Person' || stat.category === 'Item') {
+    if (statInfo.silent === null || statInfo.silent === false || stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
       stat.show = 1
     }
   }
@@ -80,9 +80,10 @@ export default class CStatsManager {
     }
   }
 
-  getStatsHTML (story: EStoriesEn): { persons: string, items: string } {
+  getStatsHTML (story: EStoriesEn): { persons: string, items: string, effects: string } {
     let persons = ''
     let items = ''
+    let effects = ''
     this.#forEach(stat => {
       if (stat.story === story) {
         if (stat.category === 'Person') {
@@ -102,8 +103,17 @@ export default class CStatsManager {
                      </div>
                      `
         }
+        if (stat.category === 'Effect') {
+          effects += `
+                     <div class="inventory__effect-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
+                     <img class="inventory__effect-image" src="${stat.image}">
+                     <p class="inventory__effect-value">${stat.value! > 1 ? stat.value : ''}</p>
+                     <p class="inventory__effect-name">${stat.name}</p>
+                     </div>
+                     `
+        }
       }
     })
-    return { persons, items }
+    return { persons, items, effects }
   }
 }

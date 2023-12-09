@@ -1,23 +1,25 @@
 @import "../Common/Common";
 
-.inventory__items {
+.inventory__effects {
   display: flex;
   gap: 15px;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   min-width: 80vw;
+  max-height: 100px;
   overflow: scroll;
   padding: 15px;
+  border-top: 1px solid white;
 }
 
-.inventory__item-cell {
+.inventory__effect-cell {
   overflow: visible;
   position: relative;
   @extend %button-tap;
 }
 
-.inventory__item-image {
+.inventory__effect-image {
   width: 65px;
   height: 65px;
   object-fit: cover;
@@ -26,18 +28,15 @@
   background: $inventoryCellBackground;
 }
 
-.inventory__item-value {
+.inventory__effect-value {
   color: white;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 50px;
+  left: 5px;
 }
 
-.inventory__item-name {
-  position: absolute;
-  text-align: left;
-  bottom: 8px;
-  left: 5px;
+.inventory__effect-name {
+  text-align: center;
   color: white;
   font-size: var(--tinytext);
 }

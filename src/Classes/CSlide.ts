@@ -167,10 +167,13 @@ export default class CSlide {
     }
 
     this.slide.inventoryButton.onclick = () => {
-      this.renderInventory(
-        EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]]
-      )
+      this.renderInventory(EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]])
       this.inventoryElement.style.display = 'flex'
+      this.slide.inventoryButton.classList.remove('pulsating-white')
     }
+  }
+
+  alertInventory (): void {
+    this.slide.inventoryButton.classList.add('pulsating-white')
   }
 }

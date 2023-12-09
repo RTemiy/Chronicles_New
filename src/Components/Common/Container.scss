@@ -1,11 +1,7 @@
 @use './Colors';
 
 %styled-background {
-  background: -webkit-linear-gradient(
-    135deg,
-    Colors.$mainColor,
-    Colors.$additionalColor
-  );
+  background: -webkit-linear-gradient(135deg, Colors.$mainColor, Colors.$additionalColor);
 }
 
 %styled-border {

@@ -9,6 +9,7 @@
   border-bottom: 1px white solid;
   margin: 0 25px;
   min-height: 280px;
+  min-width: 80vw;
 }
 
 .inventory__info-image {
@@ -18,7 +19,7 @@
   height: 150px;
   object-fit: cover;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(255,255,255,0.5) 100%);
+  background: $inventoryInfoBackground;
   @extend %styled-radius;
   @extend %show;
   transition: transform 0.2s ease-in-out;
