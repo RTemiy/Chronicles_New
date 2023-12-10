@@ -20,7 +20,7 @@ export const Inventory = new CContainer(
   <div class="inventory__persons"></div>
   <p class="inventory__block-title">Предметы</p>
   <div class="inventory__items"></div>
-  <p class="inventory__block-title">Прочее</p>
+  <p class="inventory__block-title">Дополнительное</p>
   <div class="inventory__effects"></div>
   <button type="button" class="inventory__close-button"></button>
   `,

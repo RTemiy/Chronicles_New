@@ -35,7 +35,7 @@ TextInput.input.oninput = () => {
 }
 
 function validate (): void {
-  if (validatorExp.test(TextInput.input.value) && TextInput.input.value.length <= 15) {
+  if (validatorExp.test(TextInput.input.value) && TextInput.input.value.length <= 15 && TextInput.input.value.length >= 2) {
     TextInput.button.style.display = 'block'
   } else {
     TextInput.button.style.display = 'none'

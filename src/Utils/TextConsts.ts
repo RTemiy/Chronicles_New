@@ -1,0 +1,3 @@
+const inventoryMessage = ''
+
+const previousSlideMessage = ''

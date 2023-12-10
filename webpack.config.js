@@ -74,7 +74,7 @@ module.exports = {
       }
     ]
   },
-  /*optimization: {
+  /* optimization: {
     minimizer: [
       '...',
       new ImageMinimizerPlugin({
@@ -112,14 +112,25 @@ module.exports = {
         }
       })
     ]
-  },*/
+  }, */
   resolve: {
     extensions: ['*', '.js', '.ts']
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'privacy_policy.html',
+      template: './src/privacy_policy.html',
+      chunks: ['policy']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'terms_conditions.html',
+      template: './src/terms_conditions.html',
+      chunks: ['terms']
+    }),
+    new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: './src/Images/UI/icon.png'
+      favicon: './src/Images/UI/icon.png',
+      chunks: ['app']
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin(),

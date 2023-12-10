@@ -23,6 +23,8 @@ import CSlide from './Classes/CSlide'
 import { Slide } from './Components/Slide/Slide'
 import { Inventory, renderInventory } from './Components/Inventory/Inventory'
 import { animateBackForth } from './Functions/animateBackForth'
+import { showPolicy } from './Components/Policy/Policy';
+import hideDisclaimer from './Components/Disclaimer/Disclaimer';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -43,6 +45,7 @@ export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 
 loadStories(EStoriesEn)
 
+hideDisclaimer()
 renderLoadingScreen(require('./Images/UI/loadingscreen.png'), () => {})
 
 preCacheImages(LoadingScreen.loadingPercent, () => {
@@ -53,6 +56,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
   LoadingScreen.self.onclick = () => {
     MenuToolbar.self.style.display = 'flex'
     LoadingScreen.self.style.display = 'none'
+    showPolicy()
     soundManager.play('menu')
   }
 })

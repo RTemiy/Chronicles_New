@@ -9,7 +9,7 @@ storiesManager.add({
   status: 'Новая история',
   chapters: [{
     name: 'Глава 1',
-    image: require('../../Images/FOF/Persons/Cassandra.jpg'),
+    image: require('../../Images/FOF/Persons/Cassandra.png'),
     parts: [{
       name: 'Пролог',
       code: '0',

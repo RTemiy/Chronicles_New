@@ -31,11 +31,15 @@ export default class CScenarioManager {
       const defaultButtons: IButton[] | undefined = []
       buttons.forEach(button => defaultButtons.push(Object.assign({}, button)))
       scene.buttonsDefault = defaultButtons
+      Object.freeze(scene.buttonsDefault)
     })
-    this.#scenarios[storyName + '_' + chapterName + '_' + partName + '_' + code] = scenario
+    this.#scenarios[storyName + '_' + chapterName + '_' + partName + '_' + code] = []
+    scenario.forEach(scene => {
+      this.#scenarios[storyName + '_' + chapterName + '_' + partName + '_' + code][scene.id] = scene
+    })
   }
 
-  #getScenarioSceneByIndex (sceneIndex: number): IScene {
+  #getSceneByIndex (sceneIndex: number): IScene {
     return this.#scenarios[this.#currentScenarioName][sceneIndex]
   }
 
@@ -50,7 +54,7 @@ export default class CScenarioManager {
 
   beginScene (sceneIndex: number, func?: () => void): void {
     this.#doLastSave(sceneIndex)
-    const scene = this.#getScenarioSceneByIndex(sceneIndex)
+    const scene = this.#getSceneByIndex(sceneIndex)
     this.#doBeforeBegin(scene.beforeBegin)
     this.#doCondition(scene.condition)
     this.slide.changeImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
@@ -93,17 +97,48 @@ export default class CScenarioManager {
   }
 
   changeSceneProp (index: number, propName: string, value: any): void {
-    const scene = this.#getScenarioSceneByIndex(index)
+    const scene = this.#getSceneByIndex(index)
     scene[propName] = value
   }
 
+  #getSceneButtonStatus (sceneIndex: number, buttonIndex: number): boolean {
+    const scene = this.#getSceneByIndex(sceneIndex)
+    if (scene.buttons[buttonIndex].isActive === undefined || scene.buttons[buttonIndex].isActive) {
+      return true
+    } else {
+      return false
+    }
+  }
+
   changeSceneButtonStatus (sceneIndex: number, buttonIndex: number, value: boolean): void {
-    const scene = this.#getScenarioSceneByIndex(sceneIndex)
+    const scene = this.#getSceneByIndex(sceneIndex)
     scene.buttons[buttonIndex].isActive = value
   }
 
+  manageDialog (sceneIndex: number, buttonIndexesToBeFalse: number[], buttonIndexesToMakeTrue: number[]): void {
+    let counter = 0
+    buttonIndexesToBeFalse.forEach(el => {
+      !this.#getSceneButtonStatus(sceneIndex, el) && counter++
+    })
+    if (counter === buttonIndexesToBeFalse.length) {
+      buttonIndexesToMakeTrue.forEach(el => {
+        this.changeSceneButtonStatus(sceneIndex, el, true)
+      })
+    }
+  }
+
   copySceneButtons (sceneIndex: number, targetSceneIndex: number): void {
-    this.#getScenarioSceneByIndex(sceneIndex).buttons = this.#getScenarioSceneByIndex(targetSceneIndex).buttons
+    const toCopyButtons = this.#getSceneByIndex(sceneIndex).buttons
+    const newButtons: IButton[] | undefined = []
+    toCopyButtons.forEach(button => newButtons.push(Object.assign({}, button)))
+    this.#getSceneByIndex(targetSceneIndex).buttons = newButtons
+  }
+
+  resetSceneButtons (sceneIndex: number): void {
+    const scene = this.#getSceneByIndex(sceneIndex)
+    const newButtons: IButton[] | undefined = []
+    scene.buttonsDefault!.forEach(button => newButtons.push(Object.assign({}, button)))
+    scene.buttons = newButtons
   }
 
   #doLastSave (sceneIndex: number): void {
@@ -117,10 +152,5 @@ export default class CScenarioManager {
     const lastSaveInfoArray = localStorage.getItem('LastSave_ScenarioInfo')!.split('_')
     this.setCurrentScenarioName(lastSaveInfoArray[0], lastSaveInfoArray[1], lastSaveInfoArray[2], lastSaveInfoArray[3])
     this.beginScene(parseInt(lastSaveInfoArray[4]))
-  }
-
-  resetSceneButtons (sceneIndex: number): void {
-    const scene = this.#getScenarioSceneByIndex(sceneIndex)
-    scene.buttons = scene.buttonsDefault!
   }
 }

@@ -69,8 +69,8 @@
 
         // Заготовка кода одного слайда
         const scenePrefab = '' +
-          '\n  // № $INDEX$' +
           '\n  {' +
+          '\n    id: $INDEX$,' +
           '\n    text: \n      `\n        $TEXT$\n      `, ' +
           '\n    buttons: [\n      {\n        text: \'\',\n        func: () => {\n          scenarioManager.beginScene($INDEXPLUS$) \n        }\n      }],' +
           '$MESSAGE$' +
@@ -119,8 +119,8 @@
 
               // Обязательно откатываем шаг назад т.к. ВЫРЕЗАЛИ элемент массива
               y-=1;
-            } else if (/! Передник:* /.test(scenes[name][x][y])) {
-              scenes[name][x][y] = scenes[name][x][y].replace(/! Передник:* /, '');
+            } else if (/! Объект:* /.test(scenes[name][x][y])) {
+              scenes[name][x][y] = scenes[name][x][y].replace(/! Объект:* /, '');
               // Добавляем название картинки в сэт
               allPictures.add(scenes[name][x][y]);
 

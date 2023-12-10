@@ -14,6 +14,7 @@ export interface ICondition {
 
 export default interface IScene {
   text: string
+  id: number
   buttons: IButton[]
   buttonsDefault?: IButton[]
   imageBack?: string
