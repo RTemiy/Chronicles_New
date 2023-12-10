@@ -1,15 +1,18 @@
 @import '../Common/Common';
 
 .inventory__info-block {
-  max-width: 400px;
   display: grid;
   grid-template-rows: min-content auto;
   grid-template-columns: min-content auto;
-  padding: 10px;
-  border-bottom: 1px white solid;
-  margin: 0 25px;
-  min-height: 280px;
-  min-width: 80vw;
+  padding: 10px 0 0 10px;
+  margin: 75px 25px 0 25px;
+  min-height: 290px;
+  max-height: 290px;
+  width: 100vw;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.3);
+  @extend %styled-border;
 }
 
 .inventory__info-image {
@@ -32,7 +35,7 @@
 .inventory__info-title {
   grid-column: 2;
   grid-row: 1;
-  color: white;
+  @extend %menuFont;
   padding: 10px;
   @extend %show;
 }
@@ -40,7 +43,7 @@
 .inventory__info-description {
   grid-column: span 2;
   grid-row: 2;
-  color: white;
+  @extend %menuFont;
   padding: 10px;
   margin-top: 10px;
   border-top: 1px solid gray;

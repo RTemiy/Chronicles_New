@@ -11,13 +11,16 @@ import { statsManager } from '../../index'
 export const Inventory = new CContainer(
   'inventory',
   `
-  <div class="inventory__persons"></div>
   <div class="inventory__info-block">
     <img class="inventory__info-image">
     <p class="inventory__info-title"></p>
     <p class="inventory__info-description"></p>
   </div>
+  <p class="inventory__block-title">Персонажи</p>
+  <div class="inventory__persons"></div>
+  <p class="inventory__block-title">Предметы</p>
   <div class="inventory__items"></div>
+  <p class="inventory__block-title">Прочее</p>
   <div class="inventory__effects"></div>
   <button type="button" class="inventory__close-button"></button>
   `,

@@ -1,22 +1,16 @@
 @import "../Common/Common";
 
 .inventory__effects {
-  display: flex;
-  gap: 15px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  min-width: 80vw;
-  max-height: 100px;
-  overflow: scroll;
-  padding: 15px;
-  border-top: 1px solid white;
+  @extend %inventory-container;
 }
 
 .inventory__effect-cell {
   overflow: visible;
   position: relative;
   @extend %button-tap;
+  &>.inventory__effect-image:hover{
+    outline: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }
 
 .inventory__effect-image {
@@ -29,14 +23,14 @@
 }
 
 .inventory__effect-value {
-  color: white;
   position: absolute;
   top: 50px;
   left: 5px;
+  @extend %menuFont;
 }
 
 .inventory__effect-name {
   text-align: center;
-  color: white;
+  @extend %menuFont;
   font-size: var(--tinytext);
 }

@@ -11,3 +11,19 @@
 %styled-radius {
   border-radius: 4px;
 }
+
+%inventory-container{
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100vw;
+  max-height: 100px;
+  overflow: scroll;
+  padding: 15px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.3);
+  @extend %styled-border;
+}

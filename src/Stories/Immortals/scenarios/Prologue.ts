@@ -29,10 +29,6 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     stats: [
       { category: 'Person', id: 'Hero', story: EStoriesEn.Immortals, value: 0 },
       { category: 'Person', id: 'Guide', story: EStoriesEn.Immortals, value: 0 },
-      { category: 'Person', id: 'Robert', story: EStoriesEn.Immortals, value: 0 },
-      { category: 'Person', id: 'Nicola', story: EStoriesEn.Immortals, value: 0 },
-      { category: 'Person', id: 'Cheryl', story: EStoriesEn.Immortals, value: 0 },
-      { category: 'Person', id: 'Scarlett', story: EStoriesEn.Immortals, value: 0 },
       { category: 'Person', id: 'Cheryl', story: EStoriesEn.Immortals, value: 0 },
       { category: 'Item', id: 'Key', story: EStoriesEn.Immortals, value: 1 },
       { category: 'Effect', id: 'BrokenHand', story: EStoriesEn.Immortals, value: 1 }
