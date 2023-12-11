@@ -1,6 +1,7 @@
 import type IAchievement from '../Types/IAchievement'
 import lock from '../Images/UI/Lock.png'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
+import { loadData, saveData } from '../Functions/localStorageManager'
 
 export default class CAchievementsManager {
   #achievements: Record<string, IAchievement> = {}
@@ -10,7 +11,7 @@ export default class CAchievementsManager {
   }
 
   add (achievement: IAchievement): void {
-    achievement.unlocked = localStorage.getItem('Achievements_' + achievement.story + '_' + achievement.name) === 'true'
+    achievement.unlocked = loadData(['Achievements', achievement.story, achievement.name]) === 'true'
     this.#achievements[achievement.story + '_' + achievement.name] = achievement
   }
 
@@ -31,7 +32,7 @@ export default class CAchievementsManager {
 
   unlock (story: EStoriesEn, name: string): void {
     this.#achievements[story + '_' + name].unlocked = true
-    localStorage.setItem('Achievements_' + story + '_' + name, String(true))
+    saveData(['Achievements', story, name], [true])
   }
 
   getAchievementsHTML (story?: string): string {

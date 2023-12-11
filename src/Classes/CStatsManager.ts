@@ -1,5 +1,6 @@
 import type IStat from '../Types/IStat'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
+import { loadData, saveData } from '../Functions/localStorageManager'
 
 export default class CStatsManager {
   #stats: Record<string, IStat> = {}
@@ -33,10 +34,10 @@ export default class CStatsManager {
     this.#forEach((stat: IStat) => {
       if (stat.story === storyName) {
         if (isLastSave && code === undefined) {
-          localStorage.setItem('LastSave' + '_' + stat.category + '_' + stat.id, String(stat.value) + '_' + String(stat.show))
+          saveData(['LastSave', stat.category, stat.id], [stat.value, stat.show])
         } else if (code !== undefined) {
-          localStorage.setItem(storyName + '_' + chapterName + '_' + partName + '_' + code + '_Unlocked', '1')
-          localStorage.setItem(storyName + '_' + chapterName + '_' + partName + '_' + code + '_' + stat.category + '_' + stat.id, String(stat.value) + '_' + String(stat.show))
+          saveData([storyName, chapterName, partName, code, 'Unlocked'], [1])
+          saveData([storyName, chapterName, partName, code, stat.category, stat.id], [stat.value, stat.show])
         }
       }
     })
@@ -60,11 +61,11 @@ export default class CStatsManager {
   loadStats (isLastSave: boolean, storyName?: string, chapterName?: string, partName?: string, code?: string): void {
     this.resetStats()
     if (isLastSave) {
-      const scenarioName = localStorage.getItem('LastSave_ScenarioInfo')!
+      const scenarioName = loadData(['LastSave', 'ScenarioInfo'])!
       const story = scenarioName.split('_')[0]
       this.#forEach((stat: IStat) => {
         if (stat.story === story) {
-          const valuesObject = this.#statParser(localStorage.getItem('LastSave_' + stat.category + '_' + stat.id)!)
+          const valuesObject = this.#statParser(loadData(['LastSave', stat.category, stat.id])!)
           stat.value = valuesObject.value
           stat.show = valuesObject.show
         }
@@ -72,7 +73,7 @@ export default class CStatsManager {
     } else if (storyName !== undefined && chapterName !== undefined && partName !== undefined && code !== undefined) {
       this.#forEach((stat: IStat) => {
         if (stat.story === storyName) {
-          const valuesObject = this.#statParser(localStorage.getItem(storyName + '_' + chapterName + '_' + partName + '_' + code + '_' + stat.category + '_' + stat.id)!)
+          const valuesObject = this.#statParser(loadData([storyName, chapterName, partName, code, stat.category, stat.id])!)
           stat.value = valuesObject.value
           stat.show = valuesObject.show
         }

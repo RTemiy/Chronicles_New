@@ -3,6 +3,7 @@ import type CElementManager from './CElementManager'
 import { EStoriesEn } from '../Utils/EStoriesNames'
 import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
+import { loadData } from '../Functions/localStorageManager'
 
 export default class CSlide {
   private previousSlideText = ''
@@ -114,10 +115,10 @@ export default class CSlide {
     this.previousSlideText = this.slide.text.innerHTML
     this.slide.text.style.display = 'none'
     this.slide.text.innerHTML = '<p>' + text
-    const storyName = EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]]
+    const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
     text.length >= 5 && setTimeout(() => {
       this.slide.text.style.display = 'block'
-      this.slide.text.innerHTML = this.slide.text.innerHTML.replace('$Имя Игрока$', localStorage.getItem(`${storyName}_Name`))
+      this.slide.text.innerHTML = this.slide.text.innerHTML.replace('$Имя Игрока$', loadData([`${storyName}_Name`]))
     }, 10)
   }
 
@@ -125,10 +126,10 @@ export default class CSlide {
     this.resetButtonValues()
     if (buttons.length <= 1) {
       this.slide.text.onclick = () => {
-        buttons[0].func()
+        buttons[0].func!()
       }
       this.slide.backgroundImage.onclick = () => {
-        buttons[0].func()
+        buttons[0].func!()
       }
       this.forEachButton((button: HTMLElement) => {
         button.style.display = 'none'
@@ -138,7 +139,7 @@ export default class CSlide {
       const buttonsArray = this.getButtonsArray()
       buttons.forEach((button, index) => {
         buttonsArray[index].onclick = () => {
-          buttons[index].func()
+          buttons[index].func!()
         }
         if (buttons[index].isActive === undefined || buttons[index].isActive!) {
           buttonsArray[index].style.display = 'block'
@@ -146,6 +147,20 @@ export default class CSlide {
         buttonsArray[index].innerText = buttons[index].text
       })
     }
+  }
+
+  showCutScene (image: string): void {
+    this.slide.cutScene.style.display = 'flex'
+    setTimeout(() => {
+      this.slide.cutScene.classList.add('cut-scene_show')
+      this.slide.cutSceneImage.src = image
+    }, 100)
+    setTimeout(() => {
+      this.slide.cutSceneContainer.style.display = 'flex'
+      setTimeout(() => {
+        this.slide.cutSceneContainer.classList.add('cut-scene__container_show')
+      }, 100)
+    }, 2000)
   }
 
   addClicks (): void {
@@ -167,9 +182,20 @@ export default class CSlide {
     }
 
     this.slide.inventoryButton.onclick = () => {
-      this.renderInventory(EStoriesEn[localStorage.getItem('LastSave_ScenarioInfo')!.split('_')[0]])
+      this.renderInventory(EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]])
       this.inventoryElement.style.display = 'flex'
       this.slide.inventoryButton.classList.remove('pulsating-white')
+    }
+
+    this.slide.cutSceneButton.onclick = () => {
+      this.slide.cutSceneContainer.classList.remove('cut-scene__container_show')
+      setTimeout(() => {
+        this.slide.cutSceneContainer.style.display = 'none'
+        this.slide.cutScene.classList.remove('cut-scene_show')
+      }, 1000)
+      setTimeout(() => {
+        this.slide.cutScene.style.display = 'none'
+      }, 3000)
     }
   }
 

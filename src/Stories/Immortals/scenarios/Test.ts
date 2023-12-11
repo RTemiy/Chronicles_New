@@ -1,6 +1,7 @@
-import { scenarioManager, slide, timer } from '../../../index'
+import { scenarioManager, statsManager } from '../../../index'
 import { EStoriesEn } from '../../../Utils/EStoriesNames'
 import { askForInput } from '../../../Components/TextInput/TextInput'
+import { previousSlideMessage } from '../../../Utils/TextConsts'
 
 scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог', '0', [
   {
@@ -12,9 +13,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(1)
-        }
+        goTo: 1
       }],
     music: require('../../../Sounds/Immortals/Guide.mp3'),
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.jpg')
@@ -29,11 +28,9 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(2)
-        }
+        goTo: 2
       }],
-    message: 'Внизу на панели нажмите на стрелочку, чтобы посмотреть текст предыдущего слайда',
+    message: previousSlideMessage,
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
@@ -43,7 +40,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     Я медленно открыла глаза. Первое время мозг не мог воспринять место, в котором я очутилась. Странные свечения, пустота… Вокруг неестественно парили камни, не поддаваясь никаким законам физики.
     <p>“Это не может быть реальностью!”
 `,
-    buttons: [{ text: '', func: () => { scenarioManager.beginScene(3); timer.set(10, () => { slide.message('Провал') }) } }],
+    buttons: [{ text: '', goTo: 3 }],
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.jpg'),
     stats: [
       { category: 'Person', id: 'Hero', story: EStoriesEn.Immortals, value: 0 },
@@ -61,8 +58,8 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     Я ощущала себя бестелесным существом, которое барахтается в просторах вселенной. Абсолютно беззащитна, будто бы любое дуновение скинет меня с возвышенности, и моя жизнь оборвется.  
 `,
     buttons: [
-      { text: 'Правильно', func: () => { scenarioManager.beginScene(4); timer.stop() } },
-      { text: 'Неправильно', func: () => { slide.message('О, нет! Выбери другой вариант!') } }
+      { text: 'Правильно', goTo: 4 },
+      { text: 'Неправильно', goTo: 3 }
     ],
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.jpg'),
     imageFront: require('../../../Images/Immortals/Persons/Hero.png'),
@@ -78,10 +75,16 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(5)
-        }
+        goTo: 5
       }],
+    condition: [{
+      condition: () => {
+        return statsManager.get({ id: 'Key', story: EStoriesEn.Immortals, category: 'Item' }) >= 2
+      },
+      func: () => {
+        scenarioManager.beginScene(22)
+      }
+    }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.jpg')
@@ -96,9 +99,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(6)
-        }
+        goTo: 6
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -114,7 +115,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => { askForInput('Как меня зовут?', (value) => { scenarioManager.beginScene(7); localStorage.setItem(EStoriesEn.Immortals + '_Name', value) }) }
+        goTo: 7
       }],
     imageFront: require('../../../Images/Immortals/Persons/Hero.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -130,10 +131,14 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(8)
-        }
+        goTo: 8
       }],
+    beforeBegin: () => {
+      askForInput('Как меня зовут?', (value) => {
+        scenarioManager.beginScene(7)
+        localStorage.setItem(EStoriesEn.Immortals + '_Name', value)
+      })
+    },
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.jpg')
@@ -148,9 +153,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(9)
-        }
+        goTo: 9
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -166,9 +169,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(10)
-        }
+        goTo: 10
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -184,9 +185,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(11)
-        }
+        goTo: 11
       }],
     imageFront: require('../../../Images/Immortals/Persons/Hero.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -202,9 +201,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(12)
-        }
+        goTo: 12
       }],
     imageFront: require('../../../Images/Immortals/Persons/Hero.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -223,30 +220,28 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
         func: () => {
           scenarioManager.changeSceneButtonStatus(12, 0, false)
           scenarioManager.manageDialog(12, [0, 1, 2], [3])
-          scenarioManager.beginScene(13)
-        }
+        },
+        goTo: 13
       },
       {
         text: 'Где я родилась?',
         func: () => {
           scenarioManager.changeSceneButtonStatus(12, 1, false)
           scenarioManager.manageDialog(12, [0, 1, 2], [3])
-          scenarioManager.beginScene(16)
-        }
+        },
+        goTo: 16
       },
       {
         text: 'Я умерла?',
         func: () => {
           scenarioManager.changeSceneButtonStatus(12, 2, false)
           scenarioManager.manageDialog(12, [0, 1, 2], [3])
-          scenarioManager.beginScene(19)
-        }
+        },
+        goTo: 19
       },
       {
         text: 'Продолжить',
-        func: () => {
-          scenarioManager.beginScene(22)
-        },
+        goTo: 22,
         isActive: false
       }
     ],
@@ -268,9 +263,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(14)
-        }
+        goTo: 14
       }],
     imageFront: require('../../../Images/Immortals/Persons/Hero.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -286,9 +279,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(15)
-        }
+        goTo: 15
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -303,8 +294,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
       `,
     buttons: [
       {
-        text: '',
-        func: () => {}
+        text: ''
       }],
     message: 'Серафим — высший ангельский чин, наиболее приближенный к Богу',
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
@@ -325,9 +315,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(17)
-        }
+        goTo: 17
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -343,9 +331,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(18)
-        }
+        goTo: 18
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -360,8 +346,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
       `,
     buttons: [
       {
-        text: '',
-        func: () => {}
+        text: ''
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -381,9 +366,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(20)
-        }
+        goTo: 20
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -399,9 +382,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(21)
-        }
+        goTo: 21
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -416,8 +397,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
       `,
     buttons: [
       {
-        text: '',
-        func: () => {}
+        text: ''
       }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
@@ -436,10 +416,9 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(0)
-        }
+        goTo: 0
       }],
+    cutScene: require('../../../Images/Immortals/CutScenes/RobertAndHero.jpg'),
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),
     imageBack: require('../../../Images/Immortals/Backgrounds/Guides_World.jpg')

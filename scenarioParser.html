@@ -72,14 +72,14 @@
           '\n  {' +
           '\n    id: $INDEX$,' +
           '\n    text: \n      `\n        $TEXT$\n      `, ' +
-          '\n    buttons: [\n      {\n        text: \'\',\n        func: () => {\n          scenarioManager.beginScene($INDEXPLUS$) \n        }\n      }],' +
+          '\n    buttons: [\n      {\n        text: \'\',\n        goTo: $INDEXPLUS$\n      }],' +
           '$MESSAGE$' +
           '$MUSIC$' +
           '$PICTUREFRONT$' +
           '\n    stats: [$STAT$$ITEM$],' +
           '\n    achievement: $ACHIEVEMENT$' +
           '\n    imageBack: require(\'../../../Images/$NAME$/-$PICTURE$-\')' +
-          '  \n},'
+          '  \n  },'
 
         // Отделяем каждый слайд если кол-во отступов 3+ и каждый абзац разделяем при кол-ве отступов 1
         scenes[name] = text.split(/\n\n\n+/g).map(slide => slide.split('\n'));
@@ -214,7 +214,7 @@
           set.forEach(element => result = result.replaceAll(`${brackets}${element}${brackets}`,  prompt(`${message} [ ${element} ] :`) + additional));
         }
 
-        setCodeNames(allPictures, 'Укажите путь до картинки для', '-', '.png');
+        setCodeNames(allPictures, 'Укажите путь до картинки для', '-');
         setCodeNames(allMusic, 'Укажите название музыки для', '=', '.mp3');
         setCodeNames(allItems, 'Укажите название предмета для', '&');
         setCodeNames(allStats, 'Укажите название стата для', '*');

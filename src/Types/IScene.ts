@@ -2,8 +2,9 @@ import type IStat from './IStat'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 
 export interface IButton {
-  func: () => void
+  func?: () => void
   text: string
+  goTo?: number
   isActive?: boolean
 }
 
@@ -30,5 +31,6 @@ export default interface IScene {
   simple?: string
   message?: string
   condition?: ICondition[]
+  cutScene?: string
   beforeBegin?: () => void
 }

@@ -11,6 +11,7 @@ import Achievements from '../Achievements/Achievements'
 import Stories from '../Stories/Stories'
 import CElementManager from '../../Classes/CElementManager'
 import { Slide } from '../Slide/Slide'
+import { loadData } from '../../Functions/localStorageManager';
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
@@ -63,14 +64,14 @@ MenuToolbar.storiesButton.onclick = () => {
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.storiesButton)
 }
 
-localStorage.getItem('LastSave_ScenarioInfo') === null && MenuToolbar.continueButton.setAttribute('style', 'display: none')
+loadData(['LastSave_ScenarioInfo']) === null && MenuToolbar.continueButton.setAttribute('style', 'display: none')
 
 MenuToolbar.continueButton.onclick = () => {
   MenuToolbar.self.style.display = 'none'
   tabManagerMenu.closeAll()
   Slide.self.style.display = 'grid'
   scenarioManager.loadLastSave()
-  soundManager.play('music', localStorage.getItem('LastSave_SoundInfo')!)
+  soundManager.play('music', loadData(['LastSave_SoundInfo'])!)
 }
 
 export default MenuToolbar

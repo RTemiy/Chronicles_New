@@ -6,6 +6,7 @@ import type CSoundSystem from './CSoundSystem'
 import type CSlide from './CSlide'
 import type IStat from '../Types/IStat'
 import type CAchievementsManager from './CAchievementsManager'
+import { loadData, saveData } from '../Functions/localStorageManager'
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -55,24 +56,37 @@ export default class CScenarioManager {
   beginScene (sceneIndex: number, func?: () => void): void {
     this.#doLastSave(sceneIndex)
     const scene = this.#getSceneByIndex(sceneIndex)
-    this.#doBeforeBegin(scene.beforeBegin)
-    this.#doCondition(scene.condition)
-    this.slide.changeImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
-    this.slide.changeText(scene.text)
-    this.slide.setButtonValues(scene.buttons)
-    scene.message !== undefined && this.slide.message(scene.message)
-    scene.stats !== undefined && this.#doStats(scene.stats)
-    scene.achievement !== undefined && this.#doAchievement(scene.achievement)
-    this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
-    func?.()
+    if (!this.#doCondition(scene.condition)) {
+      this.#doBeforeBegin(scene.beforeBegin)
+      this.slide.changeImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
+      this.slide.changeText(scene.text)
+      this.#setButtons(scene.buttons)
+      scene.message !== undefined && this.slide.message(scene.message)
+      scene.stats !== undefined && this.#doStats(scene.stats)
+      scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
+      scene.achievement !== undefined && this.#doAchievement(scene.achievement)
+      this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
+      func?.()
+    }
   }
 
   #doBeforeBegin (beforeBegin: (() => void) | undefined): void {
     beforeBegin?.()
   }
 
-  #doCondition (condition: ICondition[] | undefined): void {
-    if (condition !== undefined) condition.forEach(condition => { condition.condition() && condition.func() })
+  #doCondition (condition: ICondition[] | undefined): boolean {
+    let res = false
+    if (condition !== undefined) {
+      condition.forEach(condition => {
+        if (condition.condition()) {
+          condition.func()
+          res = true
+        }
+      })
+      return res
+    } else {
+      return false
+    }
   }
 
   #doStats (stats: IStat[]): void {
@@ -86,6 +100,17 @@ export default class CScenarioManager {
     })
   }
 
+  #setButtons (buttons: IButton[]): void {
+    buttons.forEach(el => {
+      const defaultFunc = el.func
+      el.func = () => {
+        el.goTo !== undefined && this.beginScene(el.goTo)
+        defaultFunc?.()
+      }
+    })
+    this.slide.setButtonValues(buttons)
+  }
+
   #doAchievement (achievement: { story: EStoriesEn, name: string }): void {
     this.#achievementManager.unlock(achievement.story, achievement.name)
   }
@@ -94,6 +119,10 @@ export default class CScenarioManager {
     sounds.music !== undefined && this.#soundManager.play('music', sounds.music)
     sounds.ambient !== undefined && this.#soundManager.play('ambient', sounds.ambient)
     sounds.simple !== undefined && this.#soundManager.play('simple', sounds.simple)
+  }
+
+  #doCutScene (image: string): void {
+    this.slide.showCutScene(image)
   }
 
   changeSceneProp (index: number, propName: string, value: any): void {
@@ -144,12 +173,12 @@ export default class CScenarioManager {
   #doLastSave (sceneIndex: number): void {
     const nameArray = this.#currentScenarioName.split('_')
     this.#statsManager.saveStats(true, nameArray[0], nameArray[1], nameArray[2])
-    localStorage.setItem('LastSave_ScenarioInfo', nameArray[0] + '_' + nameArray[1] + '_' + nameArray[2] + '_' + nameArray[3] + '_' + String(sceneIndex))
+    saveData(['LastSave_ScenarioInfo'], [nameArray[0], nameArray[1], nameArray[2], nameArray[3], sceneIndex])
   }
 
   loadLastSave (): void {
     this.#statsManager.loadStats(true)
-    const lastSaveInfoArray = localStorage.getItem('LastSave_ScenarioInfo')!.split('_')
+    const lastSaveInfoArray = loadData(['LastSave_ScenarioInfo'])!.split('_')
     this.setCurrentScenarioName(lastSaveInfoArray[0], lastSaveInfoArray[1], lastSaveInfoArray[2], lastSaveInfoArray[3])
     this.beginScene(parseInt(lastSaveInfoArray[4]))
   }

@@ -1,3 +1,5 @@
+import { loadData, saveData } from '../Functions/localStorageManager'
+
 export default class CSoundSystem {
   private ambient
   private music
@@ -36,7 +38,7 @@ export default class CSoundSystem {
       setTimeout(() => {
         this[type].pause()
         if (type !== 'menu') {
-          type === 'music' && localStorage.setItem('LastSave_SoundInfo', path!)
+          type === 'music' && saveData(['LastSave_SoundInfo'], [path!])
           this.inMenu = false
           this[type] = new Audio(path)
           this[type].currentTime = 0
@@ -50,7 +52,7 @@ export default class CSoundSystem {
           this.simple.pause()
           this.ambient.pause()
         }
-        this.setVolume(localStorage.getItem('Settings_Sound')!)
+        this.setVolume(loadData(['Settings_Sound'])!)
       }, 900)
     } catch (e) {
 

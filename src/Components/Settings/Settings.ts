@@ -5,6 +5,7 @@ import GP from '../../Images/UI/gp.png'
 import TG from '../../Images/UI/tg.png'
 import { soundManager, tabManagerMenu } from '../../index'
 import { Credits } from '../Credits/Credits'
+import { loadData, saveData } from '../../Functions/localStorageManager'
 
 const Settings = new CContainer(
   'settings',
@@ -66,12 +67,12 @@ const Settings = new CContainer(
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
-  localStorage.setItem('Settings_Sound', Settings.checkBoxSound.checked)
-  soundManager.setVolume(localStorage.getItem('Settings_Sound')!)
+  saveData(['Settings_Sound'], [Settings.checkBoxSound.checked])
+  soundManager.setVolume(loadData(['Settings_Sound'])!)
 })
 
 Settings.checkBoxAHA.addEventListener('click', () => {
-  localStorage.setItem('Settings_AHA', Settings.checkBoxAHA.checked)
+  saveData(['Settings_AHA'], [Settings.checkBoxAHA.checked])
 })
 
 Settings.creatorsButton.addEventListener('click', () => {
@@ -80,9 +81,9 @@ Settings.creatorsButton.addEventListener('click', () => {
 
 function loadSettings (): void {
   Settings.checkBoxSound.checked =
-    localStorage.getItem('Settings_Sound') === 'true'
+    loadData(['Settings_Sound']) === 'true'
   Settings.checkBoxAHA.checked =
-    localStorage.getItem('Settings_AHA') === 'true'
+    loadData(['Settings_AHA']) === 'true'
 }
 
 loadSettings()

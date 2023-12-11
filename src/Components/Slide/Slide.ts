@@ -6,6 +6,7 @@ import './Buttons.scss'
 import './Message.scss'
 import './Toolbar.scss'
 import './Timer.scss'
+import './CutScene.scss'
 
 export const Slide = new CContainer('slide',
   `
@@ -37,6 +38,12 @@ export const Slide = new CContainer('slide',
     <div class="pie" style="--duration: 10s;">
     <p class="pie__leftTime">0</p>
     </div>
+    <div class='cut-scene'>
+    	<div class='cut-scene__container'>
+    	<img class='cut-scene__image'/>
+    	<button class='cut-scene__button'>Продолжить</button>
+			</div>
+		</div>
 `,
   { name: 'imageLeft', selector: '.slide__imageLeft' },
   { name: 'imageMiddle', selector: '.slide__imageMiddle' },
@@ -52,5 +59,9 @@ export const Slide = new CContainer('slide',
   { name: 'previousSlideButton', selector: '.slide__previous-button' },
   { name: 'exitSlideButton', selector: '.slide__exit-button' },
   { name: 'timer', selector: '.pie' },
-  { name: 'timerLeft', selector: '.pie__leftTime' }
+  { name: 'timerLeft', selector: '.pie__leftTime' },
+  { name: 'cutScene', selector: '.cut-scene' },
+  { name: 'cutSceneContainer', selector: '.cut-scene__container' },
+  { name: 'cutSceneImage', selector: '.cut-scene__image' },
+  { name: 'cutSceneButton', selector: '.cut-scene__button' }
 )

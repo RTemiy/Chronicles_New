@@ -11,9 +11,7 @@ scenarioManager.addScenario(EStoriesEn.FOF, 'Глава 1', 'Пролог', '0',
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(1)
-        }
+        goTo: 1
       }
     ],
     imageBack: require('../../../Images/FOF/Backgrounds/School_Corridor.jpg'),
@@ -28,9 +26,7 @@ scenarioManager.addScenario(EStoriesEn.FOF, 'Глава 1', 'Пролог', '0',
     buttons: [
       {
         text: '',
-        func: () => {
-          scenarioManager.beginScene(0)
-        }
+        goTo: 0
       }
     ],
     imageBack: require('../../../Images/FOF/Backgrounds/School_Corridor.jpg'),

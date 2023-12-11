@@ -25,6 +25,7 @@ import { Inventory, renderInventory } from './Components/Inventory/Inventory'
 import { animateBackForth } from './Functions/animateBackForth'
 import { showPolicy } from './Components/Policy/Policy';
 import hideDisclaimer from './Components/Disclaimer/Disclaimer';
+import { saveData } from './Functions/localStorageManager';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })

@@ -1,5 +1,6 @@
 import CContainer from '../../Classes/CContainer'
 import './Policy.scss'
+import { loadData, saveData } from '../../Functions/localStorageManager'
 
 const Policy = new CContainer('policy',
 	`
@@ -14,13 +15,13 @@ const Policy = new CContainer('policy',
 export default Policy
 
 export function showPolicy (): void {
-  const isAccepted = localStorage.getItem('isPolicyAccepted') !== null && localStorage.getItem('isPolicyAccepted') !== 'false'
+  const isAccepted = loadData(['isPolicyAccepted']) !== null && loadData(['isPolicyAccepted']) !== 'false'
   if (!isAccepted) {
     Policy.self.style.display = 'flex'
   }
 }
 
 Policy.button.onclick = () => {
-  localStorage.setItem('isPolicyAccepted', 'true')
+  saveData(['isPolicyAccepted'], [true])
   Policy.self.style.display = 'none'
 }

@@ -27,7 +27,7 @@
   @extend %show;
   transition: transform 0.2s ease-in-out;
   &:active {
-    transform: scale(1.5);
+    transform: scale(1.5) translate(25px, 0);
   }
   z-index: 5;
 }

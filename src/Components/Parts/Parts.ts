@@ -6,6 +6,7 @@ import Chapters from '../Chapters/Chapters'
 import { Slide } from '../Slide/Slide'
 import { LoadingScreen, renderLoadingScreen } from '../LoadingScreen/LoadingScreen'
 import { wasteBook } from '../Books/Books'
+import { loadData } from '../../Functions/localStorageManager'
 
 const Parts = new CContainer(
   'parts',
@@ -24,7 +25,7 @@ export const renderParts = (storyName: string, chapterName: string): void => {
   const partElements = Parts.container.querySelectorAll('.part')
   partElements.forEach(() => {
     storiesManager.getPartNames(storyName, chapterName).forEach((partName, index) => {
-      const partUnlocked = localStorage.getItem(storyName + '_' + chapterName + '_' + partName + '_' + storiesManager.getPartProp(storyName, chapterName, partName, 'code') + '_Unlocked')
+      const partUnlocked = loadData([storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'), 'Unlocked'])
       const addListener = (): void => {
         partElements[index].onclick = () => {
           wasteBook(() => {
