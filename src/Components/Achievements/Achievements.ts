@@ -2,6 +2,7 @@ import CContainer from '../../Classes/CContainer'
 import './Achievements.scss'
 import { achievementsManager } from '../../index'
 import CElementManager from '../../Classes/CElementManager'
+import { EStoriesEn, EStoriesRu } from '../../Utils/EStoriesNames'
 
 const Achievements = new CContainer('achievements',
   `
@@ -9,20 +10,13 @@ const Achievements = new CContainer('achievements',
 <div class="achievements_block">
   <p class="achievements__amount"></p>
   <div class="achievements__buttons">
-    <button id="ab-immortals" type="button" class="achievements__button">Бессмертные</button>
-    <button id="ab-aurora" type="button" class="achievements__button">Аврора</button>
-    <button id="ab-aep" type="button" class="achievements__button">Аморе</button>
-    <button id="ab-ror" type="button" class="achievements__button">Время крыс</button>
   </div>
   <div class="achievements__container"></div>
 </div>
 `,
   { name: 'amount', selector: '.achievements__amount' },
   { name: 'container', selector: '.achievements__container' },
-  { name: 'buttonImmortals', selector: '#ab-immortals' },
-  { name: 'buttonAurora', selector: '#ab-aurora' },
-  { name: 'buttonAEP', selector: '#ab-aep' },
-  { name: 'buttonROR', selector: '#ab-ror' }
+  { name: 'buttonsContainer', selector: '.achievements__buttons' }
 )
 
 export const renderAchievements = (story?: string): void => {
@@ -30,28 +24,23 @@ export const renderAchievements = (story?: string): void => {
   Achievements.container.innerHTML = achievementsManager.getAchievementsHTML(story)
 }
 
-const achievementButtonsManager = new CElementManager(Achievements.buttonImmortals, Achievements.buttonAurora, Achievements.buttonAEP, Achievements.buttonROR)
-
-achievementButtonsManager.setCustomClassToChange('button-active')
-
-Achievements.buttonImmortals.onclick = () => {
-  renderAchievements('Immortals')
-  achievementButtonsManager.setCustomClassOnlyTo(Achievements.buttonImmortals)
+function renderAchievementsButtons (): void {
+  const storiesNames = Object.keys(EStoriesEn)
+  let result = ''
+  storiesNames.forEach(name => {
+    result += `<button id="ab-${name}" type="button" class="achievements__button">${EStoriesRu[name]}</button>`
+  })
+  Achievements.buttonsContainer.innerHTML = result
+  const allButtons = Achievements.buttonsContainer.querySelectorAll('.achievements__button')
+  const achievementButtonsManager = new CElementManager()
+  achievementButtonsManager.setCustomClassToChange('button-active')
+  storiesNames.forEach((name, index) => {
+    allButtons[index].onclick = () => {
+      renderAchievements(name)
+    }
+  })
 }
 
-Achievements.buttonAurora.onclick = () => {
-  renderAchievements('Aurora')
-  achievementButtonsManager.setCustomClassOnlyTo(Achievements.buttonAurora)
-}
-
-Achievements.buttonAEP.onclick = () => {
-  renderAchievements('AEP')
-  achievementButtonsManager.setCustomClassOnlyTo(Achievements.buttonAEP)
-}
-
-Achievements.buttonROR.onclick = () => {
-  renderAchievements('ROR')
-  achievementButtonsManager.setCustomClassOnlyTo(Achievements.buttonROR)
-}
+renderAchievementsButtons()
 
 export default Achievements

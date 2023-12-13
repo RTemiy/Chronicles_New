@@ -11,12 +11,12 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/Immortals/Persons/Stranger.png'),
+      image: require('../../Images/Immortals/Backgrounds/Tesla_Door.jpg'),
       parts: [
         {
           name: 'Пролог',
           code: '0',
-          image: require('../../Images/Immortals/Backgrounds/Abstraction_Hero.png'),
+          image: require('../../Images/Immortals/Backgrounds/Guides_World.jpg'),
           loadingImage: require('../../Images/Immortals/Covers/Prologue.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)

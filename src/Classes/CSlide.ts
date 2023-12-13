@@ -108,7 +108,7 @@ export default class CSlide {
       )
     }
     this.slide.messageText.innerHTML = text
-    this.slide.message.style.display = 'flex'
+    this.slide.message.classList.add('slide__message_show')
   }
 
   changeText (text: string): void {
@@ -149,6 +149,21 @@ export default class CSlide {
     }
   }
 
+  showAchievement (achievementInfo: { title: string, text: string, image: string }): void {
+    this.slide.achievement.style.display = 'flex'
+    this.slide.achievementTitle.innerText = achievementInfo.title
+    this.slide.achievementText.innerText = achievementInfo.text
+    this.slide.achievementImage.src = achievementInfo.image
+    this.slide.achievement.classList.remove('slide__achievement_hide')
+    setTimeout(() => {
+      this.slide.achievement.classList.add('slide__achievement_hide')
+    }, 4000)
+    setTimeout(() => {
+      this.slide.achievement.style.display = 'none'
+      this.slide.achievement.classList.remove('slide__achievement_hide')
+    }, 4500)
+  }
+
   showCutScene (image: string): void {
     this.slide.cutScene.style.display = 'flex'
     setTimeout(() => {
@@ -165,7 +180,7 @@ export default class CSlide {
 
   addClicks (): void {
     this.slide.message.onclick = () => {
-      this.slide.message.style.display = 'none'
+      this.slide.message.classList.remove('slide__message_show')
     }
 
     this.slide.previousSlideButton.onclick = () => {

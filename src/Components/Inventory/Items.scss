@@ -26,7 +26,6 @@
   position: absolute;
   top: 5px;
   right: 5px;
-  @extend %menuFont;
 }
 
 .inventory__item-name {
@@ -34,6 +33,5 @@
   text-align: left;
   bottom: 8px;
   left: 5px;
-  @extend %menuFont;
   font-size: var(--tinytext);
 }

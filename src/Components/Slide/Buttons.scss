@@ -15,12 +15,12 @@
 .slide__button {
   grid-column: 1;
   color: white;
-  max-width: 480px;
+  max-width: 400px;
   width: 90vw;
   height: 40px;
   @extend %styled-border;
   @extend %button-tap;
   @extend %show;
+  @extend %slide-container;
   border-radius: 10px;
-  backdrop-filter: blur(150px);
 }

@@ -26,11 +26,9 @@
   position: absolute;
   top: 50px;
   left: 5px;
-  @extend %menuFont;
 }
 
 .inventory__effect-name {
   text-align: center;
-  @extend %menuFont;
   font-size: var(--tinytext);
 }

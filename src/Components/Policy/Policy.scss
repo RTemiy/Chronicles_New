@@ -26,7 +26,6 @@
 }
 
 .policy__link{
-  @extend %menuFont;
   text-align: center;
   text-decoration: underline;
 }
@@ -35,7 +34,6 @@
   @extend %button-tap;
   @extend %styled-border;
   @extend %styled-background;
-  @extend %menuFont;
   font-size: large;
   padding: 15px;
 }

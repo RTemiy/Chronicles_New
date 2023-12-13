@@ -3,7 +3,7 @@ import { EStoriesEn } from '../../../Utils/EStoriesNames'
 import { askForInput } from '../../../Components/TextInput/TextInput'
 import { previousSlideMessage } from '../../../Utils/TextConsts'
 
-scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог', '0', [
+scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Тестинг', '0', [
   {
     id: 0,
     text:
@@ -81,9 +81,7 @@ scenarioManager.addScenario(EStoriesEn.Immortals, 'Глава 1', 'Пролог'
       condition: () => {
         return statsManager.get({ id: 'Key', story: EStoriesEn.Immortals, category: 'Item' }) >= 2
       },
-      func: () => {
-        scenarioManager.beginScene(22)
-      }
+      goTo: 22
     }],
     imageFront: require('../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../Images/UI/bottom_border.png'),

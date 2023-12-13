@@ -13,7 +13,6 @@
   display: none;
   overflow: hidden;
   @extend %show;
-  @extend %menuFont;
   z-index: 5;
 }
 

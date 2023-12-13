@@ -7,6 +7,7 @@ import './Message.scss'
 import './Toolbar.scss'
 import './Timer.scss'
 import './CutScene.scss'
+import './Achievement.scss'
 
 export const Slide = new CContainer('slide',
   `
@@ -38,6 +39,13 @@ export const Slide = new CContainer('slide',
     <div class="pie" style="--duration: 10s;">
     <p class="pie__leftTime">0</p>
     </div>
+    <div class='slide__achievement'>
+    	<div class="achievement">
+        <img class="achievement__image">
+        <p class="achievement__title"></p>
+        <p class="achievement__text"></p>
+      </div>
+		</div>
     <div class='cut-scene'>
     	<div class='cut-scene__container'>
     	<img class='cut-scene__image'/>
@@ -63,5 +71,9 @@ export const Slide = new CContainer('slide',
   { name: 'cutScene', selector: '.cut-scene' },
   { name: 'cutSceneContainer', selector: '.cut-scene__container' },
   { name: 'cutSceneImage', selector: '.cut-scene__image' },
-  { name: 'cutSceneButton', selector: '.cut-scene__button' }
+  { name: 'cutSceneButton', selector: '.cut-scene__button' },
+  { name: 'achievement', selector: '.slide__achievement' },
+  { name: 'achievementImage', selector: '.achievement__image' },
+  { name: 'achievementTitle', selector: '.achievement__title' },
+  { name: 'achievementText', selector: '.achievement__text' }
 )

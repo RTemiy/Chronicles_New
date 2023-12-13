@@ -34,16 +34,16 @@ export default class CElementManager {
     })
   }
 
-  setCustomClassToChange (className: string): void {
-    this.#customClass = className
-  }
-
   addElementTo (targetElement: HTMLElement, newElement: HTMLElement): void {
     this.#elements.forEach(elementsContainer => {
       if (targetElement.isEqualNode(elementsContainer.mainElement)) {
         elementsContainer.additionalElements.push(newElement)
       }
     })
+  }
+
+  setCustomClassToChange (className: string): void {
+    this.#customClass = className
   }
 
   setCustomClassOnlyTo (targetElement: HTMLElement): void {

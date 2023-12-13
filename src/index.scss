@@ -8,10 +8,10 @@
   --mediumtext: 1.8vh;
   --smalltext: 1.5vh;
   --tinytext: 1.3vh;
-  --simplecolor: #f2daffed;
+  --simplecolor: white;
   --advancedcolor: rgba(248, 238, 255, 0.93);
   --activecolor: #ffedbf;
-  --font: 'Times New Roman', Times, serif;
+  --font: 'Microsoft YaHei', sans-serif;
   --stroke: 0px;
 }
 
@@ -26,11 +26,13 @@ body {
   scroll-behavior: smooth;
   background-attachment: fixed;
   font-size: var(--mediumtext);
+  font-family: var(--font);
+  color: var(--simplecolor);
   font-weight: normal;
   -webkit-text-stroke: var(--stroke);
   display: block;
   letter-spacing: 0.5px;
-  word-spacing: -1px;
+  word-spacing: -3 px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;

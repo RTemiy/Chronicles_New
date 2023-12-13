@@ -7,6 +7,7 @@ import type CSlide from './CSlide'
 import type IStat from '../Types/IStat'
 import type CAchievementsManager from './CAchievementsManager'
 import { loadData, saveData } from '../Functions/localStorageManager'
+import { type TIMage } from '../Types/TImage'
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -50,7 +51,7 @@ export default class CScenarioManager {
   }
 
   getCurrentStory (): string {
-    return this.#currentScenarioName.split('_')[0]
+    return this.#currentScenarioName
   }
 
   beginScene (sceneIndex: number, func?: () => void): void {
@@ -58,7 +59,7 @@ export default class CScenarioManager {
     const scene = this.#getSceneByIndex(sceneIndex)
     if (!this.#doCondition(scene.condition)) {
       this.#doBeforeBegin(scene.beforeBegin)
-      this.slide.changeImage(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
+      this.#changeImages(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
       this.slide.changeText(scene.text)
       this.#setButtons(scene.buttons)
       scene.message !== undefined && this.slide.message(scene.message)
@@ -79,7 +80,7 @@ export default class CScenarioManager {
     if (condition !== undefined) {
       condition.forEach(condition => {
         if (condition.condition()) {
-          condition.func()
+          this.beginScene(condition.goTo)
           res = true
         }
       })
@@ -101,18 +102,33 @@ export default class CScenarioManager {
   }
 
   #setButtons (buttons: IButton[]): void {
+    const newButtons: IButton[] = []
     buttons.forEach(el => {
-      const defaultFunc = el.func
-      el.func = () => {
-        el.goTo !== undefined && this.beginScene(el.goTo)
-        defaultFunc?.()
-      }
+      newButtons.push({
+        text: el.text,
+        func: () => {
+          el.func?.()
+          el.goTo !== undefined && this.beginScene(el.goTo)
+        },
+        isActive: el.isActive,
+        goTo: el.goTo
+      })
     })
-    this.slide.setButtonValues(buttons)
+    this.slide.setButtonValues(newButtons)
   }
 
   #doAchievement (achievement: { story: EStoriesEn, name: string }): void {
-    this.#achievementManager.unlock(achievement.story, achievement.name)
+    this.slide.showAchievement(this.#achievementManager.unlock(achievement.story, achievement.name))
+  }
+
+  #changeImages (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: TIMage, borderImage?: string): void {
+    let front: any
+    if (frontImage !== undefined && typeof frontImage === 'function') {
+      front = frontImage()
+    } else if (frontImage !== undefined) {
+      front = frontImage
+    }
+    this.slide.changeImage(backImage, leftImage, middleImage, rightImage, front, borderImage)
   }
 
   #doSounds (sounds: { music: string | undefined, ambient: string | undefined, simple: string | undefined }): void {

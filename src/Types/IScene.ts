@@ -10,7 +10,7 @@ export interface IButton {
 
 export interface ICondition {
   condition: () => boolean
-  func: () => void
+  goTo: number
 }
 
 export default interface IScene {
@@ -22,7 +22,7 @@ export default interface IScene {
   imageLeft?: string
   imageMiddle?: string
   imageRight?: string
-  imageFront?: string
+  imageFront?: string | (() => string)
   imageBorder?: string
   stats?: IStat[]
   achievement?: { story: EStoriesEn, name: string }

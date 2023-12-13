@@ -30,14 +30,13 @@
 
 .cut-scene__image{
   border-radius: 25px;
-  box-shadow: 0 0 5px white;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
 }
 
 .cut-scene__button{
   @extend %button-tap;
   @extend %styled-background;
   @extend %styled-border;
-  @extend %menuFont;
   font-size: large;
   padding: 10px;
 }

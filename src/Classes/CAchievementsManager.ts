@@ -30,9 +30,15 @@ export default class CAchievementsManager {
     return `${counterCompleted}/${counter}`
   }
 
-  unlock (story: EStoriesEn, name: string): void {
-    this.#achievements[story + '_' + name].unlocked = true
+  unlock (story: EStoriesEn, name: string): { title: string, text: string, image: string } {
+    const achievement = this.#achievements[story + '_' + name]
+    achievement.unlocked = true
     saveData(['Achievements', story, name], [true])
+    return {
+      title: achievement.title,
+      text: achievement.text,
+      image: achievement.image
+    }
   }
 
   getAchievementsHTML (story?: string): string {

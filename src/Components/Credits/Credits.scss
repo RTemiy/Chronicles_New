@@ -4,7 +4,6 @@
   display: none;
   flex-direction: column;
   color: white;
-  @extend %menuFont;
   width: 100vw;
   height: 100%;
   animation: scrollDown linear 35s;

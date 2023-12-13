@@ -20,18 +20,20 @@
   z-index: 2;
   color: white;
   height: min-content;
-  max-width: 330px;
+  max-width: 300px;
   text-align: justify;
   overflow: hidden;
-  backdrop-filter: blur(150px);
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
   padding: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
   align-self: start;
   @extend %show;
+  @extend %styled-border;
+  @extend %slide-container;
+
+  hyphens: auto;
   p {
     margin-top: 10px;
+    hyphens: auto;
   }
   p:first-child {
     margin-top: 0;
