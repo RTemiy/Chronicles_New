@@ -1,0 +1,20 @@
+@import "../Common/Common";
+
+.slide__achievement{
+  position: absolute;
+  top: 25px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  @extend %slide-container;
+  transition: all .3s ease-in-out;
+  z-index: 10;
+  &>.achievement:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.slide__achievement_hide{
+  opacity: 0;
+  visibility: hidden;
+}
