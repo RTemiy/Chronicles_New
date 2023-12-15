@@ -14,32 +14,6 @@
   @extend %show;
 }
 
-.slide__text {
-  grid-column: 1;
-  grid-row: 2;
-  z-index: 2;
-  color: white;
-  height: min-content;
-  max-width: 300px;
-  text-align: justify;
-  overflow: hidden;
-  padding: 20px;
-  margin-top: 20px;
-  align-self: start;
-  @extend %show;
-  @extend %styled-border;
-  @extend %slide-container;
-
-  hyphens: auto;
-  p {
-    margin-top: 10px;
-    hyphens: auto;
-  }
-  p:first-child {
-    margin-top: 0;
-  }
-}
-
 .slide__background {
   grid-column: 1;
   grid-row: 1/4;

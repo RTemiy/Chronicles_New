@@ -75,7 +75,9 @@
           '\n    buttons: [\n      {\n        text: \'\',\n        goTo: $INDEXPLUS$\n      }],' +
           '$MESSAGE$' +
           '$MUSIC$' +
+          '$SPEAKER$' +
           '$PICTUREFRONT$' +
+          '$CUTSCENE$' +
           '\n    stats: [$STAT$$ITEM$],' +
           '\n    achievement: $ACHIEVEMENT$' +
           '\n    imageBack: require(\'../../../Images/$NAME$/-$PICTURE$-\')' +
@@ -133,6 +135,18 @@
               // Заменяем ключевое слово на значение
               value = value.replaceAll('$MESSAGE$',`\n    message: '${scenes[name][x].splice(y,1)}',`);
               y-=1;
+            } else if (/! Реплика:* /.test(scenes[name][x][y])) {
+                scenes[name][x][y] = scenes[name][x][y].replace(/! Реплика:* /, '');
+
+                // Заменяем ключевое слово на значение
+                value = value.replaceAll('$SPEAKER$',`\n    speaker: '${scenes[name][x].splice(y,1)}',`);
+                y-=1;
+            } else if (/! Кат-Сцена:* /.test(scenes[name][x][y])) {
+                scenes[name][x][y] = scenes[name][x][y].replace(/! Кат-Сцена:* /, '');
+
+                // Заменяем ключевое слово на значение
+                value = value.replaceAll('$CUTSCENE$',`\n    cutScene: require('../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
+                y-=1;
             } else if (/! Достижение:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Достижение:* /, '');
               allAchievements.add(scenes[name][x][y]);
@@ -192,6 +206,7 @@
           value = value.replaceAll('$STAT$','');
           value = value.replaceAll('$MESSAGE$','');
           value = value.replaceAll('$MUSIC$','');
+          value = value.replaceAll('$SPEAKER$','');
           value = value.replaceAll('$PICTUREFRONT$','');
           value = value.replaceAll('\n    stats: [],','');
           value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
@@ -202,7 +217,11 @@
         }
 
         // Добавляем уникальные имена картинок и музыки в начало кода всех слайдов (чтобы можно было потом проверить все ли заменилось)
-        const initConst = 'scenarioManager.addScenario(EStoriesEn.'+ name + ', \'Укажите главу\', \'Укажите часть\', \'0\', [';
+        const initConst = 'scenarioManager.addScenario({ ' +
+          'storyName: EStoriesEn.'  + prompt('Укажите название истории на английском') +
+          ', chapterName: \'' + prompt('Укажите название главы') +
+          '\', partName: \'' + prompt('Укажите название части') +
+          '\', code: \'' + prompt('Укажите код части') +'\' }, [';
         const resultImages = '// Картинки: ' + JSON.stringify([...allPictures]) + '\n\n';
         const resultMusic = '// Музыка:' + JSON.stringify([...allMusic]) + '\n\n';
         const resultItems = '// Предметы:' + JSON.stringify([...allItems]) + '\n\n';

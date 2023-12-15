@@ -11,7 +11,7 @@ import Achievements from '../Achievements/Achievements'
 import Stories from '../Stories/Stories'
 import CElementManager from '../../Classes/CElementManager'
 import { Slide } from '../Slide/Slide'
-import { loadData } from '../../Functions/localStorageManager';
+import { loadData } from '../../Functions/localStorageManager'
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',

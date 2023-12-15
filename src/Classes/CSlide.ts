@@ -76,8 +76,9 @@ export default class CSlide {
     if (borderImage !== undefined && borderImage !== '') {
       this.slide.border.src = borderImage
       this.slide.border.style.display = 'block'
+      this.slide.border.style.opacity = '1'
     } else if (borderImage === undefined) {
-      this.slide.border.src = require('../Images/UI/border_invisible.png')
+      this.slide.border.style.opacity = '0'
     }
   }
 
@@ -116,10 +117,22 @@ export default class CSlide {
     this.slide.text.style.display = 'none'
     this.slide.text.innerHTML = '<p>' + text
     const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
-    text.length >= 5 && setTimeout(() => {
+    text.length >= 8 && setTimeout(() => {
       this.slide.text.style.display = 'block'
       this.slide.text.innerHTML = this.slide.text.innerHTML.replace('$Имя Игрока$', loadData([`${storyName}_Name`]))
     }, 10)
+  }
+
+  changeSpeaker (speakerText: string | undefined): void {
+    this.slide.speaker.style.display = 'none'
+    if (speakerText !== undefined && speakerText !== '') {
+      this.slide.speaker.innerText = speakerText
+      setTimeout(() => {
+        this.slide.speaker.style.display = 'block'
+      }, 10)
+    } else {
+      this.slide.speaker.style.display = 'none'
+    }
   }
 
   setButtonValues (buttons: IButton[]): void {
@@ -164,11 +177,11 @@ export default class CSlide {
     }, 4500)
   }
 
-  showCutScene (image: string): void {
+  showCutScene (cutSceneInfo: { image: string, goTo: () => void }): void {
     this.slide.cutScene.style.display = 'flex'
     setTimeout(() => {
       this.slide.cutScene.classList.add('cut-scene_show')
-      this.slide.cutSceneImage.src = image
+      this.slide.cutSceneImage.src = cutSceneInfo.image
     }, 100)
     setTimeout(() => {
       this.slide.cutSceneContainer.style.display = 'flex'
@@ -176,6 +189,9 @@ export default class CSlide {
         this.slide.cutSceneContainer.classList.add('cut-scene__container_show')
       }, 100)
     }, 2000)
+    this.slide.cutSceneButton.onclick = () => {
+      cutSceneInfo.goTo()
+    }
   }
 
   addClicks (): void {
@@ -202,7 +218,7 @@ export default class CSlide {
       this.slide.inventoryButton.classList.remove('pulsating-white')
     }
 
-    this.slide.cutSceneButton.onclick = () => {
+    this.slide.cutSceneButton.addEventListener('click', () => {
       this.slide.cutSceneContainer.classList.remove('cut-scene__container_show')
       setTimeout(() => {
         this.slide.cutSceneContainer.style.display = 'none'
@@ -211,7 +227,7 @@ export default class CSlide {
       setTimeout(() => {
         this.slide.cutScene.style.display = 'none'
       }, 3000)
-    }
+    })
   }
 
   alertInventory (): void {

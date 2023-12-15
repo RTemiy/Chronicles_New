@@ -27,7 +27,9 @@ export default class CScenarioManager {
     this.#achievementManager = achievementManager
   }
 
-  addScenario (storyName: EStoriesEn, chapterName: string, partName: string, code: string, scenario: IScene[]): void {
+  addScenario (
+    scenarioInfo: { storyName: EStoriesEn, chapterName: string, partName: string, code: string },
+    scenario: IScene[]): void {
     scenario.forEach(scene => {
       const buttons = scene.buttons
       const defaultButtons: IButton[] | undefined = []
@@ -35,9 +37,9 @@ export default class CScenarioManager {
       scene.buttonsDefault = defaultButtons
       Object.freeze(scene.buttonsDefault)
     })
-    this.#scenarios[storyName + '_' + chapterName + '_' + partName + '_' + code] = []
+    this.#scenarios[scenarioInfo.storyName + '_' + scenarioInfo.chapterName + '_' + scenarioInfo.partName + '_' + scenarioInfo.code] = []
     scenario.forEach(scene => {
-      this.#scenarios[storyName + '_' + chapterName + '_' + partName + '_' + code][scene.id] = scene
+      this.#scenarios[scenarioInfo.storyName + '_' + scenarioInfo.chapterName + '_' + scenarioInfo.partName + '_' + scenarioInfo.code][scene.id] = scene
     })
   }
 
@@ -47,7 +49,9 @@ export default class CScenarioManager {
 
   setCurrentScenarioName (storyName: string, chapterName: string, partName: string, code: string, beginFromStart?: boolean): void {
     this.#currentScenarioName = storyName + '_' + chapterName + '_' + partName + '_' + code
-    beginFromStart && this.beginScene(0)
+    if (beginFromStart) {
+      this.beginScene(0)
+    }
   }
 
   getCurrentStory (): string {
@@ -62,6 +66,7 @@ export default class CScenarioManager {
       this.#changeImages(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
       this.slide.changeText(scene.text)
       this.#setButtons(scene.buttons)
+      this.slide.changeSpeaker(scene.speaker)
       scene.message !== undefined && this.slide.message(scene.message)
       scene.stats !== undefined && this.#doStats(scene.stats)
       scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
@@ -137,8 +142,8 @@ export default class CScenarioManager {
     sounds.simple !== undefined && this.#soundManager.play('simple', sounds.simple)
   }
 
-  #doCutScene (image: string): void {
-    this.slide.showCutScene(image)
+  #doCutScene (cutSceneInfo: { image: string, goTo: number }): void {
+    this.slide.showCutScene({ image: cutSceneInfo.image, goTo: () => { this.beginScene(cutSceneInfo.goTo) } })
   }
 
   changeSceneProp (index: number, propName: string, value: any): void {

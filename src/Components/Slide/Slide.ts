@@ -2,12 +2,14 @@ import CContainer from '../../Classes/CContainer'
 
 import './Slide.scss'
 import './Images.scss'
+import './Text.scss'
 import './Buttons.scss'
 import './Message.scss'
 import './Toolbar.scss'
 import './Timer.scss'
 import './CutScene.scss'
 import './Achievement.scss'
+import './Effects.scss'
 
 export const Slide = new CContainer('slide',
   `
@@ -18,7 +20,9 @@ export const Slide = new CContainer('slide',
         <img class="slide__imageFront"/>
         <img class="slide__border"/>
     </div>
-    <div class="slide__text">
+    <div class="slide__text-container">
+    	<p class="slide__speaker"></p>
+	    <div class="slide__text"></div>
     </div>
     <div class="slide__buttons">
         <button class="slide__button"></button>
@@ -75,5 +79,6 @@ export const Slide = new CContainer('slide',
   { name: 'achievement', selector: '.slide__achievement' },
   { name: 'achievementImage', selector: '.achievement__image' },
   { name: 'achievementTitle', selector: '.achievement__title' },
-  { name: 'achievementText', selector: '.achievement__text' }
+  { name: 'achievementText', selector: '.achievement__text' },
+  { name: 'speaker', selector: '.slide__speaker' }
 )

@@ -1,12 +1,13 @@
 import CContainer from '../../Classes/CContainer'
 import './Policy.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
+import { route } from '../../Utils/TextConsts'
 
 const Policy = new CContainer('policy',
 	`
 <div class='policy__container'>
-	<a class='policy__link' href="/privacy_policy.html" target="_blank">Политика конфиденциальности</a>
-	<a class='policy__link' href="/terms_conditions.html" target="_blank">Условия и положения</a>
+	<a class='policy__link' href="${route}/privacy_policy.html" target="_blank">Политика конфиденциальности</a>
+	<a class='policy__link' href="${route}/terms_conditions.html" target="_blank">Условия и положения</a>
 	<button class='policy__button' type='button'>Принять</button>
 </div>
 `,

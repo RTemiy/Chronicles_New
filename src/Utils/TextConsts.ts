@@ -4,4 +4,6 @@ const previousSlideMessage = 'Внизу на панели нажмите на �
 
 const firstChoiceMessage = 'Сейчас вы сделаете свой первый выбор. Некоторые из них меняют сюжет незначительно, другие же ведут к серьезным переменам. Но помните, только Вам решать, каким вы видите главного героя'
 
-export { inventoryMessage, previousSlideMessage, firstChoiceMessage }
+const route = window.location.pathname
+
+export { inventoryMessage, previousSlideMessage, firstChoiceMessage, route }

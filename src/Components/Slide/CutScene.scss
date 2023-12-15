@@ -24,7 +24,7 @@
   height: 80vh;
   flex-direction: column;
   filter: blur(15px);
-  gap: 15px;
+  gap: 45px;
   transition: all 1s ease-in-out;
 }
 
@@ -35,8 +35,9 @@
 
 .cut-scene__button{
   @extend %button-tap;
-  @extend %styled-background;
   @extend %styled-border;
+  @extend %styled-radius;
+  background-color: rgba(98, 98, 98, 0.5);
   font-size: large;
   padding: 10px;
 }

@@ -1,4 +1,4 @@
-import { storiesManager } from '../../index'
+import { scenarioManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'Aurora',
@@ -16,7 +16,9 @@ storiesManager.add({
           code: '0',
           image: require('../../Images/Aurora/Backgrounds/Writing.png'),
           loadingImage: require('../../Images/Aurora/Covers/Prologue.png'),
-          event: () => {}
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+          }
         },
         {
           name: 'Часть 1',

@@ -6,6 +6,7 @@ import TG from '../../Images/UI/tg.png'
 import { soundManager, tabManagerMenu } from '../../index'
 import { Credits } from '../Credits/Credits'
 import { loadData, saveData } from '../../Functions/localStorageManager'
+import { route } from '../../Utils/TextConsts'
 
 const Settings = new CContainer(
   'settings',
@@ -38,10 +39,10 @@ const Settings = new CContainer(
 </div>
 <div class="settings__container">
 	<div class="settings__block">
-		<a>Политика конфиденциальности</a>
+		<a href="${route}/privacy_policy.html" target="_blank">Политика конфиденциальности</a>
 	</div>
 	<div class="settings__block">
-		<a>Условия и положения</a>
+		<a href="${route}/terms_conditions.html" target="_blank">Условия и положения</a>
 	</div>
 </div>
 <div class="settings__container">
@@ -57,7 +58,7 @@ const Settings = new CContainer(
 		<a href=".">Проверить обновление</a>
 	</div>
 	<div class="settings__block">
-		<a>Удалить все сохранения и настройки</a>
+		<a onclick='localStorage.clear()' href='.' >Удалить все сохранения и настройки</a>
 	</div>
 </div>
 `,
