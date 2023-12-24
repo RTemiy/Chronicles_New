@@ -16,19 +16,22 @@ export default class CSlide {
     private readonly menuToolbarElement: HTMLElement,
     private readonly inventoryElement: HTMLElement,
     private readonly animateFunc: (element: HTMLElement, className: string, duration: number) => void,
-    private readonly renderInventory: (story: EStoriesEn) => void
+    private readonly renderInventory: (story: EStoriesEn) => void,
+    readonly showCutScene: (cutSceneInfo: { video: string, goTo: () => void }) => void
   ) { this.addClicks() }
 
-  changeImage (
-    backImage?: string,
-    leftImage?: string,
-    middleImage?: string,
-    rightImage?: string,
-    frontImage?: string,
-    borderImage?: string
-  ): void {
+  changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, borderImage?: string): void {
     if (backImage !== undefined && backImage !== '') {
-      this.slide.backgroundImage.src = backImage
+      if (!this.slide.backgroundImage.src.includes(backImage)) {
+        this.slide.backgroundImageHelper.src = this.slide.backgroundImage.src
+        this.slide.backgroundImageHelper.classList.remove('slide__background_hide')
+        setTimeout(() => {
+          this.slide.backgroundImage.src = backImage
+          this.slide.backgroundImageHelper.classList.add('slide__background_hide')
+        }, 500)
+      } else {
+        this.slide.backgroundImage.src = backImage
+      }
     } else if (backImage === undefined) {
       this.slide.backgroundImage.display = 'none'
       this.slide.backgroundImage.setAttribute('src', '')
@@ -115,7 +118,8 @@ export default class CSlide {
   changeText (text: string): void {
     this.previousSlideText = this.slide.text.innerHTML
     this.slide.text.style.display = 'none'
-    this.slide.text.innerHTML = '<p>' + text
+    const resultText = '<p>' + text
+    this.slide.text.innerHTML = resultText
     const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
     text.length >= 8 && setTimeout(() => {
       this.slide.text.style.display = 'block'
@@ -133,6 +137,11 @@ export default class CSlide {
     } else {
       this.slide.speaker.style.display = 'none'
     }
+  }
+
+  changeDarkSilhouette (status: boolean): void {
+    status && this.slide.imageFront.classList.add('image_silhouette')
+    !status && this.slide.imageFront.classList.remove('image_silhouette')
   }
 
   setButtonValues (buttons: IButton[]): void {
@@ -177,23 +186,6 @@ export default class CSlide {
     }, 4500)
   }
 
-  showCutScene (cutSceneInfo: { image: string, goTo: () => void }): void {
-    this.slide.cutScene.style.display = 'flex'
-    setTimeout(() => {
-      this.slide.cutScene.classList.add('cut-scene_show')
-      this.slide.cutSceneImage.src = cutSceneInfo.image
-    }, 100)
-    setTimeout(() => {
-      this.slide.cutSceneContainer.style.display = 'flex'
-      setTimeout(() => {
-        this.slide.cutSceneContainer.classList.add('cut-scene__container_show')
-      }, 100)
-    }, 2000)
-    this.slide.cutSceneButton.onclick = () => {
-      cutSceneInfo.goTo()
-    }
-  }
-
   addClicks (): void {
     this.slide.message.onclick = () => {
       this.slide.message.classList.remove('slide__message_show')
@@ -217,17 +209,6 @@ export default class CSlide {
       this.inventoryElement.style.display = 'flex'
       this.slide.inventoryButton.classList.remove('pulsating-white')
     }
-
-    this.slide.cutSceneButton.addEventListener('click', () => {
-      this.slide.cutSceneContainer.classList.remove('cut-scene__container_show')
-      setTimeout(() => {
-        this.slide.cutSceneContainer.style.display = 'none'
-        this.slide.cutScene.classList.remove('cut-scene_show')
-      }, 1000)
-      setTimeout(() => {
-        this.slide.cutScene.style.display = 'none'
-      }, 3000)
-    })
   }
 
   alertInventory (): void {

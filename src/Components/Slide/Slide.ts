@@ -7,9 +7,9 @@ import './Buttons.scss'
 import './Message.scss'
 import './Toolbar.scss'
 import './Timer.scss'
-import './CutScene.scss'
 import './Achievement.scss'
 import './Effects.scss'
+import { animateBackForth } from '../../Functions/animateBackForth'
 
 export const Slide = new CContainer('slide',
   `
@@ -18,7 +18,7 @@ export const Slide = new CContainer('slide',
         <img class="slide__imageMiddle"/>
         <img class="slide__imageRight"/>
         <img class="slide__imageFront"/>
-        <img class="slide__border"/>
+        <img class="slide__border" src="${require('../../Images/UI/border_invisible.png')}"/>
     </div>
     <div class="slide__text-container">
     	<p class="slide__speaker"></p>
@@ -31,7 +31,8 @@ export const Slide = new CContainer('slide',
         <button class="slide__button"></button>
         <button class="slide__button"></button>
     </div>
-    <img class="slide__background"/>
+    <img class="slide__background" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
+    <img class="slide__backgroundHelper src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}""/>
     <div class="slide__message">
         <div class="slide__message-text"></div>
     </div>
@@ -50,12 +51,6 @@ export const Slide = new CContainer('slide',
         <p class="achievement__text"></p>
       </div>
 		</div>
-    <div class='cut-scene'>
-    	<div class='cut-scene__container'>
-    	<img class='cut-scene__image'/>
-    	<button class='cut-scene__button'>Продолжить</button>
-			</div>
-		</div>
 `,
   { name: 'imageLeft', selector: '.slide__imageLeft' },
   { name: 'imageMiddle', selector: '.slide__imageMiddle' },
@@ -65,6 +60,7 @@ export const Slide = new CContainer('slide',
   { name: 'text', selector: '.slide__text' },
   { name: 'buttons', selector: '.slide__buttons' },
   { name: 'backgroundImage', selector: '.slide__background' },
+  { name: 'backgroundImageHelper', selector: '.slide__backgroundHelper' },
   { name: 'message', selector: '.slide__message' },
   { name: 'messageText', selector: '.slide__message-text' },
   { name: 'inventoryButton', selector: '.slide__inventory-button' },
@@ -73,12 +69,21 @@ export const Slide = new CContainer('slide',
   { name: 'timer', selector: '.pie' },
   { name: 'timerLeft', selector: '.pie__leftTime' },
   { name: 'cutScene', selector: '.cut-scene' },
-  { name: 'cutSceneContainer', selector: '.cut-scene__container' },
-  { name: 'cutSceneImage', selector: '.cut-scene__image' },
-  { name: 'cutSceneButton', selector: '.cut-scene__button' },
   { name: 'achievement', selector: '.slide__achievement' },
   { name: 'achievementImage', selector: '.achievement__image' },
   { name: 'achievementTitle', selector: '.achievement__title' },
   { name: 'achievementText', selector: '.achievement__text' },
   { name: 'speaker', selector: '.slide__speaker' }
 )
+
+export function whiteFlash (): void {
+  animateBackForth(Slide.self, 'slide_whiteFlash', 2000)
+}
+
+export function redPulsating (): void {
+  Slide.self.classList.toggle('slide_redPulseInfinite')
+}
+
+export function redFlash (): void {
+  animateBackForth(Slide.self, 'slide_redFlash', 2000)
+}

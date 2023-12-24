@@ -67,6 +67,7 @@ export default class CScenarioManager {
       this.slide.changeText(scene.text)
       this.#setButtons(scene.buttons)
       this.slide.changeSpeaker(scene.speaker)
+      this.#doDarkSilhouette(scene.darkSilhouette)
       scene.message !== undefined && this.slide.message(scene.message)
       scene.stats !== undefined && this.#doStats(scene.stats)
       scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
@@ -92,6 +93,14 @@ export default class CScenarioManager {
       return res
     } else {
       return false
+    }
+  }
+
+  #doDarkSilhouette (status: boolean | undefined): void {
+    if (status === true) {
+      this.slide.changeDarkSilhouette(true)
+    } else {
+      this.slide.changeDarkSilhouette(false)
     }
   }
 
@@ -142,8 +151,8 @@ export default class CScenarioManager {
     sounds.simple !== undefined && this.#soundManager.play('simple', sounds.simple)
   }
 
-  #doCutScene (cutSceneInfo: { image: string, goTo: number }): void {
-    this.slide.showCutScene({ image: cutSceneInfo.image, goTo: () => { this.beginScene(cutSceneInfo.goTo) } })
+  #doCutScene (cutSceneInfo: { video: string, goTo: number }): void {
+    this.slide.showCutScene({ video: cutSceneInfo.video, goTo: () => { this.beginScene(cutSceneInfo.goTo) } })
   }
 
   changeSceneProp (index: number, propName: string, value: any): void {

@@ -28,7 +28,7 @@ $maxHeightShort: 500px;
 
 .slide__imageLeft {
   @extend %imageDefaultValues;
-  transform: translateX(-25%);
+  transform: translateX(-15%);
 }
 
 .slide__imageRight {

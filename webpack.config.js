@@ -10,7 +10,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const WebpackPwaManifest = require('webpack-pwa-manifest')
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
+// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -42,6 +42,13 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: 'images/[hash][ext]'
+        }
+      },
+      {
+        test: /\.mp4$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'videos/[hash][ext]'
         }
       },
       {

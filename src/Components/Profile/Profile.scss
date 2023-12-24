@@ -1,0 +1,49 @@
+@import "../Common/Common";
+
+.profile{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  @extend %show;
+}
+
+.profile__container{
+  padding: 15px;
+  width: 90%;
+  max-width: 380px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius;
+}
+
+.profile__container:first-child{
+  align-items: center;
+  justify-content: center;
+}
+
+.profile__input{
+  color: white;
+  text-align: center;
+  font-size: large;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: transparent;
+  @extend %styled-radius;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile__button{
+  font-size: medium;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @extend %styled-border;
+  @extend %styled-radius;
+  @extend %button-tap;
+  @extend %styled-background;
+}

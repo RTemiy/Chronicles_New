@@ -8,12 +8,7 @@ export default class CSlider {
   #helperPos = 0
   readonly #elementClassName: string
   readonly #helperClassName: string
-  constructor (
-    containerElement: HTMLElement,
-    helperContainer: HTMLElement,
-    elementClassName: string,
-    helperClassName: string
-  ) {
+  constructor (containerElement: HTMLElement, helperContainer: HTMLElement, elementClassName: string, helperClassName: string, private readonly videoSelector: string) {
     this.#containerElement = containerElement
     this.#helperContainer = helperContainer
     this.#elementClassName = elementClassName
@@ -74,10 +69,12 @@ export default class CSlider {
 
   #render (): void {
     this.#containerElements.forEach((child, index) => {
+      const video = child.querySelector('.' + this.videoSelector)!
+      video.pause()
       child.setAttribute('style', `z-index: ${-index};`)
       index === 0 && child.setAttribute('style', ' z-index: 1;')
-      index === 1 &&
-        child.setAttribute('style', 'transform: translateX(4%); z-index: 0;')
+      index === 0 && video.play()
+      index === 1 && child.setAttribute('style', 'transform: translateX(4%); z-index: 0;')
       index === this.#containerElements.length - 1 &&
         child.setAttribute('style', 'transform: translateX(-4%); z-index: 0;')
       child.classList.add(this.#elementClassName + '_disabled')

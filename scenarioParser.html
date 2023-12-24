@@ -24,7 +24,6 @@
         background-color: var(--backgroundColor);
         color: var(--textColor);
       }
-
     </style>
 </head>
 <body style="background-color: var(--backgroundColor)">
@@ -32,7 +31,7 @@
     <button id="buttonMode">Переключить тему</button>
 </p>
 <p>
-    <input type="text" style="width: 20%; height: 5vh; background-color: var(--backgroundColor); color: var(--textColor);" placeholder="Введите код части" id="inputTextTitle"></input>
+    <input type="text" style="width: 20%; height: 5vh; background-color: var(--backgroundColor); color: var(--textColor);" placeholder="Введите код истории" id="inputTextTitle"></input>
 </p>
 <p>
     <textarea style="height: 20vh; " placeholder="Введите текст сценария" id="inputText"></textarea>
@@ -127,7 +126,7 @@
               allPictures.add(scenes[name][x][y]);
 
               // Заменяем ключевое слово на значение
-              value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../Images/UI/bottom_border.png\'),`);
+              value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../Images/$NAME$/UI/Border.png\'),`);
               y-=1;
             } else if (/! Табличка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Табличка:* /, '');
@@ -207,6 +206,7 @@
           value = value.replaceAll('$MESSAGE$','');
           value = value.replaceAll('$MUSIC$','');
           value = value.replaceAll('$SPEAKER$','');
+          value = value.replaceAll('$CUTSCENE$','');
           value = value.replaceAll('$PICTUREFRONT$','');
           value = value.replaceAll('\n    stats: [],','');
           value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');

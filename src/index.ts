@@ -23,14 +23,17 @@ import CSlide from './Classes/CSlide'
 import { Slide } from './Components/Slide/Slide'
 import { Inventory, renderInventory } from './Components/Inventory/Inventory'
 import { animateBackForth } from './Functions/animateBackForth'
-import { showPolicy } from './Components/Policy/Policy';
-import hideDisclaimer from './Components/Disclaimer/Disclaimer';
-import { saveData } from './Functions/localStorageManager';
+import { showPolicy } from './Components/Policy/Policy'
+import hideDisclaimer from './Components/Disclaimer/Disclaimer'
+import CWardrobe from './Classes/CWardrobe'
+import { showCutscene } from './Components/CutScene/CutScene'
+import { Wardrobe } from './Components/Wardrobe/Wardrobe'
+import { Profile } from './Components/Profile/Profile'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
 
-export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self)
+export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self, Profile.self)
 tabManagerMenu.addElementTo(Chapters.self, Books.self)
 tabManagerMenu.addElementTo(Stories.self, Books.self)
 tabManagerMenu.addElementTo(Parts.self, Books.self)
@@ -40,9 +43,10 @@ export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
 export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
-export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, animateBackForth, renderInventory)
+export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, animateBackForth, renderInventory, showCutscene)
 export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide)
 export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
+export const wardrobe = new CWardrobe(Wardrobe)
 
 loadStories(EStoriesEn)
 
@@ -51,7 +55,7 @@ renderLoadingScreen(require('./Images/UI/loadingscreen.png'), () => {})
 
 preCacheImages(LoadingScreen.loadingPercent, () => {
   storiesManager.render()
-  new CSlider(Stories.storiesContainer, Stories.sliderCheckbox, 'story', 'slider__check')
+  new CSlider(Stories.storiesContainer, Stories.sliderCheckbox, 'story', 'slider__check', 'story__image')
   LoadingScreen.continueButton.style.display = 'block'
   LoadingScreen.loadingPercent.style.display = 'none'
   LoadingScreen.self.onclick = () => {

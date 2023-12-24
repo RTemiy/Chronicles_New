@@ -1,5 +1,7 @@
 // Никаких нижних подчеркиваний!!!
 
+// Влияет на порядок историй и достижений
+
 export enum EStoriesEn {
   Immortals = 'Immortals',
   FOF = 'FOF',

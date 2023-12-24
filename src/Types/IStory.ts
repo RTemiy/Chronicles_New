@@ -1,6 +1,6 @@
 export default interface IStory {
   name: string
-  image: string
+  video: string
   description: string
   genre: string
   mature?: boolean

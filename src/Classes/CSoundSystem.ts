@@ -5,7 +5,6 @@ export default class CSoundSystem {
   private music
   private simple
   private menu
-  private readonly notificationSound
   private inMenu: boolean = true
 
   /**
@@ -14,19 +13,21 @@ export default class CSoundSystem {
    * @param notificationSound Путь до файла со звуком уведомления
    * @param menuSound Путь до файла с музыкой меню
    */
-
-  constructor (silenceSound: string, notificationSound: string, menuSound: string) {
+  constructor (silenceSound: string, private readonly notificationSound: string, menuSound: string) {
     this.ambient = new Audio(silenceSound)
     this.music = new Audio(silenceSound)
-    this.simple = new Audio(silenceSound)
+    this.simple = new Audio(notificationSound)
     this.menu = new Audio(menuSound)
     this.menu.loop = true
-    this.notificationSound = new Audio(notificationSound)
     this.#initPageVisibility()
   }
 
   play (type: 'ambient' | 'music' | 'simple' | 'menu', path?: string): void {
-    try {
+    if (type === 'simple') {
+      this[type] = new Audio(this.notificationSound)
+      this[type].play()
+      this.setVolume(loadData(['Settings_Sound'])!)
+    } else {
       const x = setInterval(() => {
         if (this[type].volume > 0.1) this[type].volume -= 0.1
       }, 100)
@@ -42,7 +43,7 @@ export default class CSoundSystem {
           this.inMenu = false
           this[type] = new Audio(path)
           this[type].currentTime = 0
-          this[type].loop = type !== 'simple'
+          this[type].loop = true
           this.menu.pause()
           this[type].play()
         } else {
@@ -54,8 +55,6 @@ export default class CSoundSystem {
         }
         this.setVolume(loadData(['Settings_Sound'])!)
       }, 900)
-    } catch (e) {
-
     }
   }
 

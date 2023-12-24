@@ -22,3 +22,19 @@
   margin: 0 auto;
   width: auto;
 }
+
+.slide__backgroundHelper {
+  grid-column: 1;
+  grid-row: 1/4;
+  position: absolute;
+  height: 100vh;
+  margin: 0 auto;
+  width: auto;
+  transition: all .5s ease-in-out;
+  pointer-events: none;
+}
+
+.slide__background_hide {
+  opacity: 0;
+  visibility: hidden;
+}

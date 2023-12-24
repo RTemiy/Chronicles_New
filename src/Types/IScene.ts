@@ -31,7 +31,8 @@ export default interface IScene {
   simple?: string
   message?: string
   condition?: ICondition[]
-  cutScene?: { image: string, goTo: number }
+  cutScene?: { video: string, goTo: number }
   beforeBegin?: () => void
   speaker?: string
+  darkSilhouette?: boolean
 }

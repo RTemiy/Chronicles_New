@@ -1,0 +1,90 @@
+@import "../Common/Common";
+
+%anim{
+  transition: all .5s ease-in-out;
+}
+
+.wardrobe{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 25%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(2, min-content);
+  @extend %show;
+  background-color: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(15px);
+  z-index: 11;
+}
+
+.wardrobe__left-button{
+  grid-column: 1;
+  grid-row: 1;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../Images/UI/icon_go-left.svg");
+  background-position: center;
+  background-size: cover;
+  align-self: center;
+  @extend %button-tap;
+}
+
+.wardrobe__image{
+  max-width: 280px;
+  grid-column: 2;
+  grid-row: 1;
+  @extend %anim;
+}
+
+.wardrobe__right-button{
+  grid-column: 3;
+  grid-row: 1;
+  width: 50px;
+  height: 50px;
+  background-image: url("../../Images/UI/icon_go-right.svg");
+  background-position: center;
+  background-size: cover;
+  align-self: center;
+  @extend %button-tap;
+}
+
+.wardrobe__title{
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: 600;
+  text-align: center;
+  justify-self: center;
+  align-self: flex-start;
+  @extend %anim;
+}
+
+.wardrobe__description{
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+  align-self: flex-start;
+  @extend %anim;
+}
+
+.wardrobe__confirm-button{
+  grid-column: 2;
+  grid-row: 2;
+  align-self: flex-start;
+  margin-top: 80px;
+  padding: 10px;
+  @extend %button-tap;
+  @extend %styled-border;
+  @extend %slide-container;
+  background-color: rgba(255, 255, 255, 0.18);
+  backdrop-filter: none;
+}
+
+.wardrobe__element_hide{
+  opacity: 0;
+  visibility: hidden;
+}

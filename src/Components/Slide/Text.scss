@@ -22,13 +22,13 @@
 
 .slide__text {
   color: white;
+  min-width: 285px;
   max-width: 300px;
-  text-align: justify;
+  text-align: left;
   padding: 20px;
   @extend %show;
   @extend %styled-border;
   @extend %slide-container;
-
   hyphens: auto;
   p {
     margin-top: 10px;

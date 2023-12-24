@@ -1,18 +1,36 @@
 import { saveEndProgress, scenarioManager } from '../../../index'
 import { EStoriesEn } from '../../../Utils/EStoriesNames'
+import { inventoryMessage, previousSlideMessage } from '../../../Utils/TextConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
     id: 0,
     text:
 			`
-        Моя дорогая Далия. Как у тебя дела? Ты все еще вспоминаешь меня? А наши беззаботные деньки, наполненные смехом и в одночасье тяжелым грузом бремени, что резко обрушилось на нас?
+        Моя дорогая Далия. Как у тебя дела? Ты все еще вспоминаешь меня? А наши беззаботные деньки, наполненные смехом? 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 50
+      }],
+    music: require('../../../Sounds/Aurora/Aurora.mp3'),
+    imageBorder: require('../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
+  },
+
+  {
+    id: 50,
+    text:
+      `
+        И как вся эта легкость в одночасье сменилась тяжелым грузом бремени…
       `,
     buttons: [
       {
         text: '',
         goTo: 1
       }],
+    message: previousSlideMessage,
     music: require('../../../Sounds/Aurora/Aurora.mp3'),
     imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
@@ -22,7 +40,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 1,
     text:
 			`
-        Знаешь, я все еще бережно храню подаренный тобой сборник стихов Эдгара Аллана По. Перечивая строки его произведений, каждый раз во мне откликаются те ощущения, что мы когда-то пережили.
+        Знаешь, я бережно храню подаренный тобой сборник стихов Эдгара Аллана По. Перечитывая строки его произведений, каждый раз во мне откликаются те ощущения, что мы когда-то пережили.
       `,
     buttons: [
       {
@@ -61,7 +79,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 4
       }],
-    message: 'Эдгар По — “Сон во сне”',
+    message: 'Эдгар По — «Сон во сне»',
     imageFront: require('../../../Images/Aurora/Items/Poe_Book.png'),
     imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
@@ -78,6 +96,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 5
       }],
+    imageFront: require('../../../Images/Aurora/Items/Poe_Book.png'),
+    imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
   },
 
@@ -92,6 +112,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 6
       }],
+    message: inventoryMessage,
     imageFront: require('../../../Images/Aurora/Persons/Aurora.png'),
     imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     stats: [
@@ -103,7 +124,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 6,
     text:
 			`
-        Сейчас, сидя на любимой скамейке, обдуваемая морскими ветрами, я переношу свою жизнь на бумагу. Свое прошлое, настоящее, те моменты, что мы прожили бок о бок. 
+        Сейчас, сидя на любимой скамейке, обдуваемая морскими ветрами, я переношу свою жизнь на бумагу. Свое прошлое, настоящее… Те моменты, что мы прожили, находясь рядом. 
       `,
     buttons: [
       {
@@ -133,7 +154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 8,
     text:
 			`
-        Милая Далия, я безмерно счастлива писать в этом дневнике. Местами может быть сумбурно, но я остаюсь верна себе. Как ты меня когда-то учила — быть собой и не стараться выстраивать образ человека, которым я не являюсь. 
+        Милая Далия, я безмерно счастлива писать в этом дневнике, местами спутано и сумбурно, но я остаюсь верна себе. Ведь ты меня когда-то учила — быть собой и не стараться примерять чужие образы.
       `,
     buttons: [
       {
@@ -182,14 +203,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       {
         text: ''
       }],
-    cutScene: { image: require('../../../Images/Aurora/Backgrounds/Bench.jpg'), goTo: 13 },
+    cutScene: { video: require('../../../Images/Aurora/Cutscenes/Prologue.mp4'), goTo: 13 },
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
   },
   {
     id: 13,
     text:
 			`
-        Твоя Аврора начинает свой рассказ. 
+        <i>Твоя Аврора начинает свой рассказ. 
       `,
     buttons: [
       {

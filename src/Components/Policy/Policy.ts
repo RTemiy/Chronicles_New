@@ -13,8 +13,6 @@ const Policy = new CContainer('policy',
 `,
 	{ name: 'button', selector: '.policy__button' })
 
-export default Policy
-
 export function showPolicy (): void {
   const isAccepted = loadData(['isPolicyAccepted']) !== null && loadData(['isPolicyAccepted']) !== 'false'
   if (!isAccepted) {
@@ -24,5 +22,7 @@ export function showPolicy (): void {
 
 Policy.button.onclick = () => {
   saveData(['isPolicyAccepted'], [true])
+  const now = new Date()
+  saveData(['Profile', 'FirstLaunch'], [String(now.getDate()) + '.' + String(now.getMonth()) + '.' + String(now.getFullYear())])
   Policy.self.style.display = 'none'
 }

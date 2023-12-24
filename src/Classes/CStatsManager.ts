@@ -108,7 +108,7 @@ export default class CStatsManager {
           effects += `
                      <div class="inventory__effect-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
                      <img class="inventory__effect-image" src="${stat.image}">
-                     <p class="inventory__effect-value">${stat.value! > 1 ? stat.value : ''}</p>
+                     <p class="inventory__effect-value">${stat.value}</p>
                      <p class="inventory__effect-name">${stat.name}</p>
                      </div>
                      `

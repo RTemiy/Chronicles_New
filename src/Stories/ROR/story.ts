@@ -2,7 +2,7 @@ import { storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'ROR',
-  image: require('../../Images/ROR/Covers/Story_Cover.png'),
+  video: require('../../Images/ROR/Covers/Story_Cover.mp4'),
   description:
     'Страну Крейс поразила страшная болезнь - чума. В условиях эпидемии Генрих работает контрабандистом, переправляя нуждающихся за границу. Однажды к нему обратилась группа беженцев. Начавшееся приключение перевернет не только судьбы героев, но и всей страны.',
   genre: 'Фэнтези, Приключение',
