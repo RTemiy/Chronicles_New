@@ -1,4 +1,4 @@
-import { saveEndProgress, scenarioManager, wardrobe } from '../../../index'
+import { saveEndProgress, scenarioManager } from '../../../index'
 import { EStoriesEn } from '../../../Utils/EStoriesNames'
 import { inventoryMessage, previousSlideMessage } from '../../../Utils/TextConsts'
 import { askForInput } from '../../../Components/TextInput/TextInput'
@@ -23,7 +23,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
 
   {
     id: 1,
-    beforeBegin: () => { wardrobe.showNewWardrobe(scenarioManager.getCurrentStory(), 'Hero') },
     text:
 			`
         — Я проводник и пришел, чтобы напомнить о судьбе этого мира и почему твои решения определят его судьбу. Будь то спасение или уничтожение — выбор только за тобой. Полагаю, есть ряд вопросов, которые стоит обсудить. Задавай.

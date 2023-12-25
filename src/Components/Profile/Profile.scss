@@ -1,5 +1,7 @@
 @import "../Common/Common";
 
+$profileBackground: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.4) 80%, rgba(0, 0, 0, 0.6) 100%);
+
 .profile{
   align-items: center;
   justify-content: center;
@@ -8,32 +10,130 @@
   @extend %show;
 }
 
-.profile__container{
+.profile__block{
+  position: relative;
+  display: flex;
+  flex-direction: column;
   padding: 15px;
   width: 90%;
   max-width: 380px;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
+  gap: 45px;
+  overflow: hidden;
   @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius;
+  z-index: 1;
+}
+
+.profile__category{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+  background-image: $profileBackground;
   @extend %styled-border;
   @extend %styled-radius;
 }
 
-.profile__container:first-child{
+.profile__container{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  & p{
+    text-shadow: 0 0 3px black, 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & img{
+      filter: drop-shadow(0 0 5px black);
+    }
+  }
+  & button {
+    text-shadow: 0 0 3px black, 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+  }
+}
+
+.profile__container-profile{
+  position: relative;
+  overflow: hidden;
   align-items: center;
   justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  background-image: $profileBackground;
+  @extend %styled-border;
+  @extend %styled-radius;
+}
+
+.profile__container:last-child{
+  & > .profile__input {
+    width: 50%;
+  }
+}
+
+.profile__block::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  content: '';
+  z-index: 3;
+  pointer-events: none;
+  @extend %styled-border;
+  @extend %styled-radius;
+}
+
+.profile__image{
+  width: 85px;
+  height: 85px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: 2px solid rgba(255, 255, 255, 0.25);
+  object-fit: cover;
+  background-image: $profileBackground;
+  filter: drop-shadow(0 0 5px black);
+  @extend %button-tap;
+  @extend %styled-radius;
+  z-index: 3;
+}
+
+.profile__edit-banner{
+  position: absolute;
+  padding: 5px;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  @extend %styled-border;
+  @extend %styled-radius;
+  border-radius: 0 0 0 10px;
+}
+
+.profile__banner{
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  /*mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgb(0, 0, 0) 15%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.8) 85%, rgba(0,0,0,1) 100%);*/
 }
 
 .profile__input{
   color: white;
   text-align: center;
   font-size: large;
-  margin: 0 auto;
   padding: 5px;
   background-color: transparent;
+  background-image: $profileBackground;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  filter: drop-shadow(0 0 5px black);
+  @extend %button-tap;
   @extend %styled-radius;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  z-index: 3;
 }
 
 .profile__button{
@@ -45,5 +145,5 @@
   @extend %styled-border;
   @extend %styled-radius;
   @extend %button-tap;
-  @extend %styled-background;
+  background-image: $profileBackground;
 }

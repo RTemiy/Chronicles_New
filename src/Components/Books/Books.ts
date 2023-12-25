@@ -16,16 +16,8 @@ export const Books = new CContainer(
   { name: 'help', selector: '.books__help' }
 )
 
-let clicks = 0
-Books.self.onclick = () => {
-  clicks++
-  if (clicks >= 10) {
-    addBook()
-    clicks = 0
-  }
-}
 
-function addBook (): void {
+export function addBook (): void {
   const booksAmount = parseInt(loadData(['Books_amount'])!)
   if (booksAmount >= 3) {
     saveData(['Books_amount'], [3])
@@ -39,6 +31,7 @@ function addBook (): void {
 export function wasteBook (approvedFunc: () => void): void {
   if (canWasteBooks()) {
     saveData(['Books_amount'], [parseInt(loadData(['Books_amount'])!) - 1])
+    saveData(['Profile', 'BooksWasted'], [parseInt(loadData(['Profile', 'BooksWasted'])!) + 1])
     approvedFunc()
   } else {
     showMessage(`Недостаточно<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')

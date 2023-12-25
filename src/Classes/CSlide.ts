@@ -130,7 +130,8 @@ export default class CSlide {
   changeSpeaker (speakerText: string | undefined): void {
     this.slide.speaker.style.display = 'none'
     if (speakerText !== undefined && speakerText !== '') {
-      this.slide.speaker.innerText = speakerText
+      const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
+      this.slide.speaker.innerText = speakerText.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
       setTimeout(() => {
         this.slide.speaker.style.display = 'block'
       }, 10)

@@ -551,7 +551,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 33,
     text:
       `
-        — Эй, извращенец!
+        Эй, извращенец!
       `,
     buttons: [
       {

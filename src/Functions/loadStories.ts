@@ -8,6 +8,8 @@ export default function (storiesNames: object): void {
     require('../Stories/' + story + '/items')
     require('../Stories/' + story + '/choices')
     require('../Stories/' + story + '/wardrobe')
+    require('../Stories/' + story + '/avatars')
+    require('../Stories/' + story + '/banners')
   })
   const allFiles = importAllIDirectory(
     require.context('../Stories', true, /\.ts$/)
@@ -19,7 +21,9 @@ export default function (storiesNames: object): void {
       !allFilesKey.includes('/persons') ||
       !allFilesKey.includes('/items') ||
       !allFilesKey.includes('/choices') ||
-      !allFilesKey.includes('/wardrobe')
+      !allFilesKey.includes('/wardrobe') ||
+      !allFilesKey.includes('/avatars') ||
+      !allFilesKey.includes('/banners')
     ) {
       require('../Stories/' + allFilesKey)
     }

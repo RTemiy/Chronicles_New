@@ -30,6 +30,7 @@ export const renderParts = (storyName: string, chapterName: string): void => {
         partElements[index].onclick = () => {
           wasteBook(() => {
             MenuToolbar.self.style.display = 'none'
+            MenuToolbar.continueButton.setAttribute('style', 'display: block')
             tabManagerMenu.closeAll()
             LoadingScreen.continueButton.style.display = 'none'
             setTimeout(() => { LoadingScreen.continueButton.style.display = 'block' }, 3000)

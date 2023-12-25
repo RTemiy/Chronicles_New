@@ -15,6 +15,11 @@ export default class CAchievementsManager {
     this.#achievements[achievement.story + '_' + achievement.name] = achievement
   }
 
+  isUnlocked (story: EStoriesEn, name: string): boolean {
+    const result = this.#achievements[story + '_' + name].unlocked
+    return !(!result || false)
+  }
+
   getAchievementsAmount (story?: string): string {
     let counter = 0
     let counterCompleted = 0
