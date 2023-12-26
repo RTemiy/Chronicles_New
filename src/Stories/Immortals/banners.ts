@@ -7,10 +7,5 @@ profileManager.addBanners([
     id: 'Immortals_Guides_World',
     image: require('../../Images/Immortals/Backgrounds/Guides_World.jpg'),
     condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'PrologueCompleted')
-  },
-  {
-    id: 'Immortals_Tesla_Door',
-    image: require('../../Images/Immortals/Backgrounds/Tesla_Door.jpg'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'PrologueCompleted')
   }
 ])

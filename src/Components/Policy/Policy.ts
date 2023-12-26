@@ -2,6 +2,7 @@ import CContainer from '../../Classes/CContainer'
 import './Policy.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
+import { showMessage } from '../MenuMessage/MenuMessage'
 
 const Policy = new CContainer('policy',
 	`
@@ -20,6 +21,10 @@ export function showPolicy (): void {
   }, 60000)
   if (!isAccepted) {
     Policy.self.style.display = 'flex'
+  }
+  if (!navigator.userAgent.includes('Chrome')) {
+    console.log(navigator.userAgent)
+    showMessage('При использовании браузеров кроме "Chrome" могут возникать ошибки в приложении!', 'Принять все риски и продолжить')
   }
 }
 

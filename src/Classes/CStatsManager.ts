@@ -65,17 +65,29 @@ export default class CStatsManager {
       const story = scenarioName.split('_')[0]
       this.#forEach((stat: IStat) => {
         if (stat.story === story) {
-          const valuesObject = this.#statParser(loadData(['LastSave', stat.category, stat.id])!)
-          stat.value = valuesObject.value
-          stat.show = valuesObject.show
+          const loadedValue = loadData(['LastSave', stat.category, stat.id])
+          if (loadedValue !== null) {
+            const valuesObject = this.#statParser(loadedValue)
+            stat.value = valuesObject.value
+            stat.show = valuesObject.show
+          } else {
+            stat.value = 0
+            stat.show = 0
+          }
         }
       })
     } else if (storyName !== undefined && chapterName !== undefined && partName !== undefined && code !== undefined) {
       this.#forEach((stat: IStat) => {
         if (stat.story === storyName) {
-          const valuesObject = this.#statParser(loadData([storyName, chapterName, partName, code, stat.category, stat.id])!)
-          stat.value = valuesObject.value
-          stat.show = valuesObject.show
+          const loadedValue = loadData([storyName, chapterName, partName, code, stat.category, stat.id])
+          if (loadedValue !== null) {
+            const valuesObject = this.#statParser(loadedValue)
+            stat.value = valuesObject.value
+            stat.show = valuesObject.show
+          } else {
+            stat.value = 0
+            stat.show = 0
+          }
         }
       })
     }
@@ -108,7 +120,7 @@ export default class CStatsManager {
           effects += `
                      <div class="inventory__effect-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
                      <img class="inventory__effect-image" src="${stat.image}">
-                     <p class="inventory__effect-value">${stat.value}</p>
+                     <p class="inventory__effect-value">${stat.value! > 1 ? stat.value : ''}</p>
                      <p class="inventory__effect-name">${stat.name}</p>
                      </div>
                      `

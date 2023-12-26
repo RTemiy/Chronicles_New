@@ -13,18 +13,33 @@
   z-index: 10;
 }
 
+.avatars__container{
+  padding: 5px;
+  margin: 0 15px;
+  overflow: hidden;
+  @extend %show;
+  @extend %styled-border;
+  @extend %styled-radius;
+  @extend %styled-background;
+}
+
 .avatars__block{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 15px;
+  max-width: 400px;
+  max-height: 300px;
+  overflow: scroll;
+  padding: 5px;
   gap: 3px;
-  margin: 0 15px;
-  @extend %show;
   @extend %styled-radius;
   @extend %styled-border;
-  @extend %styled-background;
+}
+
+.avatars__block::-webkit-scrollbar {
+  width: 5px;
+  right: 3px;
 }
 
 .avatar{

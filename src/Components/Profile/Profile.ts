@@ -6,6 +6,8 @@ import { achievementsManager, storiesManager, tabManagerMenu } from '../../index
 import Achievements from '../Achievements/Achievements'
 import CProfile from '../../Classes/CProfile'
 import { addBook } from '../Books/Books'
+import checkPromoCode from '../../Functions/checkPromoCode'
+import { showMessage } from '../MenuMessage/MenuMessage'
 
 export const Profile = new CContainer(
   'profile',
@@ -45,7 +47,9 @@ export const Profile = new CContainer(
 	</div>
 </div>
 <div class="avatars">
-	<div class="avatars__block"></div>
+  <div class="avatars__container">
+	  <div class="avatars__block"></div>
+	</div>
 </div>
 `,
 	{ name: 'name', selector: '.profile__input' },
@@ -69,8 +73,8 @@ export function renderProfile (): void {
   const partsInfo = storiesManager.getPartsInfo()
   Profile.completedParts.innerHTML = String(partsInfo.completedParts) + '/' + String(partsInfo.allParts)
   Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${require('../../Images/UI/icon_achievements.svg')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount()
-  Profile.avatar.src = profileManager.getAvatar()
-  Profile.banner.src = profileManager.getBanner()
+  profileManager.setCurrentAvatar()
+  profileManager.setCurrentBanner()
   Profile.spentTime.innerHTML = transformMinutes(parseInt(loadData(['Profile', 'TimeSpent'])!))
   Profile.wastedBooks.innerHTML = String(loadData(['Profile', 'BooksWasted'])!)
 }
@@ -111,6 +115,11 @@ Profile.wastedBooks.onclick = () => {
     addBook()
     clicks = 0
   }
+}
+
+Profile.promoButton.onclick = () => {
+  checkPromoCode(Profile.promoInput.value) ? showMessage('Промокод успешно применен', 'Принять') : showMessage('Такого промокода нет', 'Ок')
+  Profile.promoInput.value = ''
 }
 
 export const profileManager = new CProfile(Profile)

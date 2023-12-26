@@ -145,6 +145,11 @@ export default class CSlide {
     !status && this.slide.imageFront.classList.remove('image_silhouette')
   }
 
+  changeGhostSilhouette (status: boolean): void {
+    status && this.slide.imageFront.classList.add('image_ghost')
+    !status && this.slide.imageFront.classList.remove('image_ghost')
+  }
+
   setButtonValues (buttons: IButton[]): void {
     this.resetButtonValues()
     if (buttons.length <= 1) {

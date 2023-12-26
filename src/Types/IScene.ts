@@ -35,4 +35,5 @@ export default interface IScene {
   beforeBegin?: () => void
   speaker?: string
   darkSilhouette?: boolean
+  ghostSilhouette?: boolean
 }

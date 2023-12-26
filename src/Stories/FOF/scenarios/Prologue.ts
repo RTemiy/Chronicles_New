@@ -1544,6 +1544,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       `,
     buttons: [
       {
+        text: '',
+        goTo: 150
+      }],
+    speaker: 'Сара',
+    imageFront: require('../../../Images/FOF/Persons/Sarah.png'),
+    imageBorder: require('../../../Images/FOF/UI/Border.png'),
+    imageBack: require('../../../Images/FOF/Backgrounds/Locker_Room.jpg')
+  },
+
+  {
+    id: 150,
+    text:
+      `
+      «Понравилось ли мне то свидание с Дереком?»
+      `,
+    buttons: [
+      {
         text: 'Да, все было прекрасно',
         goTo: 97
       },
@@ -1551,8 +1568,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: 'Нет, свидание было ошибкой',
         goTo: 101
       }],
-    speaker: 'Сара',
-    imageFront: require('../../../Images/FOF/Persons/Sarah.png'),
+    speaker: 'Кассандра',
+    imageLeft: require('../../../Images/FOF/Persons/Cassandra_Cheerleader.png'),
     imageBorder: require('../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../Images/FOF/Backgrounds/Locker_Room.jpg')
   },

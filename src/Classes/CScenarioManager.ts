@@ -67,6 +67,7 @@ export default class CScenarioManager {
       this.slide.changeText(scene.text)
       this.#setButtons(scene.buttons)
       this.slide.changeSpeaker(scene.speaker)
+      this.#doGhostSilhouette(scene.ghostSilhouette)
       this.#doDarkSilhouette(scene.darkSilhouette)
       scene.message !== undefined && this.slide.message(scene.message)
       scene.stats !== undefined && this.#doStats(scene.stats)
@@ -101,6 +102,14 @@ export default class CScenarioManager {
       this.slide.changeDarkSilhouette(true)
     } else {
       this.slide.changeDarkSilhouette(false)
+    }
+  }
+
+  #doGhostSilhouette (status: boolean | undefined): void {
+    if (status === true) {
+      this.slide.changeGhostSilhouette(true)
+    } else {
+      this.slide.changeGhostSilhouette(false)
     }
   }
 

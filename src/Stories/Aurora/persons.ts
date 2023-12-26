@@ -10,3 +10,33 @@ statsManager.add({
   description: 'Интересно, какие еще сюрпризы преподнесет судьба? Получится ли у меня преодолеть все трудности?',
   story: EStoriesEn.Aurora
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Dad',
+  name: 'Папа',
+  image: require('../../Images/Aurora/Persons/Dad.png'),
+  title: 'Мой единственный родной человек.',
+  description: 'Ему пришлось нелегко: работа, потеря дорогих людей. Его состояние нестабильно — я должна сделать все, чтобы помочь ему.',
+  story: EStoriesEn.Aurora
+})
+
+statsManager.add({
+  category: 'Person',
+  id: 'Yan',
+  name: 'Ян',
+  image: require('../../Images/Aurora/Persons/Yan.png'),
+  title: 'Самый близкий друг для меня. Мой старший брат.',
+  description: 'Его загадочное исчезновение до сих пор отзывается болью у меня в сердце. Но я не собираюсь терять надежду.',
+  story: EStoriesEn.Aurora
+})
+
+statsManager.add({
+  category: 'Person',
+  id: 'Arthur',
+  name: 'Артур',
+  image: require('../../Images/Aurora/Persons/Arthur_Coat.png'),
+  title: 'Внук бывшего смотрителя маяка. Добрый и понимающий парень.',
+  description: 'Именно он был рядом в самые трудные моменты моей жизни. Я не понимаю, какие чувства испытываю к нему, но время все расставит на свои места.',
+  story: EStoriesEn.Aurora
+})

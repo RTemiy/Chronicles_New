@@ -1,8 +1,8 @@
-import { EStoriesEn } from '../../../Utils/EStoriesNames';
-import { saveEndProgress, scenarioManager } from '../../../index';
-import { firstChoiceMessage, previousSlideMessage } from '../../../Utils/TextConsts';
-import { askForInput } from '../../../Components/TextInput/TextInput';
-import { saveData } from '../../../Functions/localStorageManager';
+import { EStoriesEn } from '../../../Utils/EStoriesNames'
+import { saveEndProgress, scenarioManager } from '../../../index'
+import { firstChoiceMessage, previousSlideMessage } from '../../../Utils/TextConsts'
+import { askForInput } from '../../../Components/TextInput/TextInput'
+import { saveData } from '../../../Functions/localStorageManager'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {

@@ -1,4 +1,4 @@
-import { scenarioManager, storiesManager } from '../../index'
+import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'Aurora',
@@ -9,12 +9,12 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/Aurora/Backgrounds/Lighthouse.png'),
+      image: require('../../Images/Aurora/Backgrounds/Lighthouse.jpg'),
       parts: [
         {
           name: 'Пролог',
           code: '0',
-          image: require('../../Images/Aurora/Backgrounds/Writing.png'),
+          image: require('../../Images/Aurora/Covers/Aurora_Writing.png'),
           loadingImage: require('../../Images/Aurora/Covers/Prologue.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
@@ -23,30 +23,12 @@ storiesManager.add({
         {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Images/Aurora/Backgrounds/House_Inside.png'),
+          image: require('../../Images/Aurora/Covers/House_Inside.png'),
           loadingImage: require('../../Images/Aurora/Covers/Part01.png'),
-          event: () => {}
-        },
-        {
-          name: 'Часть 2',
-          code: '0',
-          image: require('../../Images/Aurora/Backgrounds/Univer.png'),
-          loadingImage: require('../../Images/Aurora/Covers/Part02.png'),
-          event: () => {}
-        },
-        {
-          name: 'Часть 3',
-          code: '0',
-          image: require('../../Images/Aurora/Backgrounds/SW_Streets.png'),
-          loadingImage: require('../../Images/Aurora/Covers/Part03.png'),
-          event: () => {}
-        },
-        {
-          name: 'Часть 4',
-          code: '0',
-          image: require('../../Images/Aurora/Backgrounds/Bakery.png'),
-          loadingImage: require('../../Images/Aurora/Covers/Part04.png'),
-          event: () => {}
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
         }
       ]
     }

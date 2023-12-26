@@ -1,7 +1,7 @@
 @import url(Fonts/CourierNew.css);
 @import url(Fonts/CenturyGotic.css);
 @import url(Fonts/Impact.css);
-@import url(Fonts/Microsoft_YaHei.css);
+@import url(Fonts/PT_Astra_Sans.css);
 
 :root {
   --bigtext: 3.35vh;
@@ -11,7 +11,7 @@
   --simplecolor: white;
   --advancedcolor: rgba(248, 238, 255, 0.93);
   --activecolor: #ffedbf;
-  --font: 'Microsoft YaHei', sans-serif;
+  --font: 'Main', sans-serif;
   --stroke: 0px;
 }
 
@@ -67,6 +67,7 @@ button {
   background: transparent;
   border: 0;
   color: unset;
+  font-family: var(--font);
 }
 
 ::-webkit-scrollbar {
@@ -75,7 +76,7 @@ button {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 103, 1, 0.7);
+  background: rgba(255, 255, 255, 0);
   border-radius: 10px;
 }
 

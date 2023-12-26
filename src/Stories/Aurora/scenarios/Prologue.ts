@@ -47,7 +47,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 2
       }],
-    imageFront: require('../../../Images/Aurora/Items/Poe_Book.png'),
+    imageFront: require('../../../Images/Aurora/Objects/Poe_Book.png'),
     imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
   },
@@ -63,7 +63,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 3
       }],
-    imageFront: require('../../../Images/Aurora/Items/Poe_Book.png'),
+    imageFront: require('../../../Images/Aurora/Objects/Poe_Book.png'),
     imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
   },
@@ -80,7 +80,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 4
       }],
     message: 'Эдгар По — «Сон во сне»',
-    imageFront: require('../../../Images/Aurora/Items/Poe_Book.png'),
+    imageFront: require('../../../Images/Aurora/Objects/Poe_Book.png'),
     imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
   },
@@ -96,7 +96,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 5
       }],
-    imageFront: require('../../../Images/Aurora/Items/Poe_Book.png'),
+    imageFront: require('../../../Images/Aurora/Objects/Poe_Book.png'),
     imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/Bench.jpg')
   },

@@ -6,6 +6,7 @@ interface IProfileElement {
   image: string
   condition: () => boolean
   id: string
+  style?: string
 }
 
 export default class CProfile {
@@ -30,7 +31,7 @@ export default class CProfile {
     let resultHTML = ''
     this.avatars.forEach(avatar => {
       resultHTML = resultHTML + `
-      <img class='avatar ${!avatar.condition() ? 'image_silhouette' : ''}' src='${avatar.image}'>
+      <img class='avatar ${!avatar.condition() ? 'image_silhouette' : ''}' src='${avatar.image}' style='${avatar.style}'>
       `
     })
     Profile.avatarsContainer.innerHTML = resultHTML
@@ -66,20 +67,22 @@ export default class CProfile {
   setAvatar (avatarId: string): void {
     const avatar = this.findAvatar(avatarId)
     Profile.avatar.src = avatar.image
+    Profile.avatar.setAttribute('style', `${avatar.style}`)
     saveData(['Profile', 'Avatar'], [avatarId])
   }
 
   setBanner (bannerId: string): void {
     const banner = this.findBanner(bannerId)
     Profile.banner.src = banner.image
+    Profile.banner.setAttribute('style', `${banner.style}`)
     saveData(['Profile', 'Banner'], [bannerId])
   }
 
-  getAvatar (): string {
-    return this.findAvatar(loadData(['Profile', 'Avatar'])!).image
+  setCurrentAvatar (): void {
+    this.setAvatar(loadData(['Profile', 'Avatar'])!)
   }
 
-  getBanner (): string {
-    return this.findBanner(loadData(['Profile', 'Banner'])!).image
+  setCurrentBanner (): void {
+    this.setBanner(loadData(['Profile', 'Banner'])!)
   }
 }

@@ -56,6 +56,10 @@
   filter: brightness(0);
 }
 
+.image_ghost{
+  opacity: .5;
+}
+
 @keyframes show-hide {
   0%{
     opacity: 0;

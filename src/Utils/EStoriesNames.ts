@@ -3,11 +3,11 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
-  Immortals = 'Immortals',
   FOF = 'FOF',
-  ROR = 'ROR',
   AEP = 'AEP',
+  ROR = 'ROR',
   Aurora = 'Aurora',
+  Immortals = 'Immortals',
 }
 
 export enum EStoriesRu {

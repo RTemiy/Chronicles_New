@@ -31,41 +31,6 @@ storiesManager.add({
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
-        },
-        {
-          name: 'Часть 2',
-          code: '0',
-          image: require('../../Images/Immortals/Backgrounds/NY.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part02.png'),
-          event: () => {}
-        },
-        {
-          name: 'Часть 3',
-          code: '0',
-          image: require('../../Images/Immortals/Backgrounds/Pompeii.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part03.png'),
-          event: () => {}
-        },
-        {
-          name: 'Часть 4',
-          code: '0',
-          image: require('../../Images/Immortals/Backgrounds/Ball.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part04.png'),
-          event: () => {}
-        },
-        {
-          name: 'Часть 5',
-          code: '0',
-          image: require('../../Images/Immortals/Backgrounds/Lake.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part05.png'),
-          event: () => {}
-        },
-        {
-          name: 'Часть 6',
-          code: '0',
-          image: require('../../Images/Immortals/Backgrounds/Camp_Morning.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part06.png'),
-          event: () => {}
         }
       ]
     }
