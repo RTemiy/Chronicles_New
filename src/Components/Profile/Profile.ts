@@ -48,6 +48,7 @@ export const Profile = new CContainer(
 </div>
 <div class="avatars">
   <div class="avatars__container">
+    <div class="avatars__info"></div>
 	  <div class="avatars__block"></div>
 	</div>
 </div>
@@ -62,6 +63,7 @@ export const Profile = new CContainer(
 	{ name: 'banner', selector: '.profile__banner' },
 	{ name: 'editBanner', selector: '.profile__edit-banner' },
 	{ name: 'avatars', selector: '.avatars' },
+	{ name: 'avatarsInfo', selector: '.avatars__info' },
 	{ name: 'avatarsContainer', selector: '.avatars__block' },
 	{ name: 'promoInput', selector: '#promoInput' },
 	{ name: 'promoButton', selector: '#promoButton' }

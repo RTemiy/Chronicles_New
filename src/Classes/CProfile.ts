@@ -29,6 +29,7 @@ export default class CProfile {
   showAvatars (): void {
     this.Profile.avatars.style.display = 'flex'
     let resultHTML = ''
+    let unlockedAmount = 0
     this.avatars.forEach(avatar => {
       resultHTML = resultHTML + `
       <img class='avatar ${!avatar.condition() ? 'image_silhouette' : ''}' src='${avatar.image}' style='${avatar.style}'>
@@ -37,13 +38,17 @@ export default class CProfile {
     Profile.avatarsContainer.innerHTML = resultHTML
     const avatarElements = Profile.avatarsContainer.querySelectorAll('.avatar')
     this.avatars.forEach((avatar, index) => {
-      avatar.condition() && (avatarElements[index].onclick = () => { this.setAvatar(avatar.id) })
+      avatar.condition() && (avatarElements[index].onclick = () => {
+        this.setAvatar(avatar.id)
+      }) && unlockedAmount++
     })
+    Profile.avatarsInfo.innerHTML = `Аватары: ${unlockedAmount}/${this.avatars.length}`
   }
 
   showBanners (): void {
     this.Profile.avatars.style.display = 'flex'
     let resultHTML = ''
+    let unlockedAmount = 0
     this.banners.forEach(banner => {
       resultHTML = resultHTML + `
       <img class='avatar ${!banner.condition() ? 'image_silhouette' : ''}' src='${banner.image}'>
@@ -52,8 +57,11 @@ export default class CProfile {
     Profile.avatarsContainer.innerHTML = resultHTML
     const avatarElements = Profile.avatarsContainer.querySelectorAll('.avatar')
     this.banners.forEach((banner, index) => {
-      banner.condition() && (avatarElements[index].onclick = () => { this.setBanner(banner.id) })
+      banner.condition() && (avatarElements[index].onclick = () => {
+        this.setBanner(banner.id)
+      }) && unlockedAmount++
     })
+    Profile.avatarsInfo.innerHTML = `Баннеры: ${unlockedAmount}/${this.banners.length}`
   }
 
   findAvatar (avatarId: string): IProfileElement {

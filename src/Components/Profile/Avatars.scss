@@ -37,6 +37,11 @@
   @extend %styled-border;
 }
 
+.avatars__info{
+  text-align: center;
+  padding: 5px 0 10px 0;
+}
+
 .avatars__block::-webkit-scrollbar {
   width: 5px;
   right: 3px;

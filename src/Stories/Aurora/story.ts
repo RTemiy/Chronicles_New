@@ -9,7 +9,7 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/Aurora/Backgrounds/Lighthouse.jpg'),
+      image: require('../../Images/Aurora/Backgrounds/Observation.jpg'),
       parts: [
         {
           name: 'Пролог',

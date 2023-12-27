@@ -15,5 +15,9 @@ const promoCodes = [
   {
     code: 'ghbdtngegcbr',
     func: () => { saveData(['Promo', 'ClownAvatar'], ['1']) }
+  },
+  {
+    code: 'demoBanner',
+    func: () => { saveData(['Promo', 'DemoBanner'], ['1']) }
   }
 ]

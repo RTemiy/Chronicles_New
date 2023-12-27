@@ -20,7 +20,7 @@ const Achievements = new CContainer('achievements',
 )
 
 export const renderAchievements = (story?: string): void => {
-  Achievements.amount.innerHTML = 'Получено достижений ' + achievementsManager.getAchievementsAmount(story)
+  Achievements.amount.innerHTML = 'Получено достижений: ' + achievementsManager.getAchievementsAmount(story)
   Achievements.container.innerHTML = achievementsManager.getAchievementsHTML(story)
 }
 

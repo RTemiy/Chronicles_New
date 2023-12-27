@@ -992,6 +992,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 65
       }],
     imageFront: require('../../../Images/Aurora/Persons/Classmate.png'),
+    imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/School.jpg')
   },
 
@@ -1007,6 +1008,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 66
       }],
     imageFront: require('../../../Images/Aurora/Persons/Classmate.png'),
+    imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/School.jpg')
   },
 
@@ -1022,6 +1024,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 67
       }],
     imageFront: require('../../../Images/Aurora/Persons/Classmate.png'),
+    imageBorder: require('../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../Images/Aurora/Backgrounds/School.jpg')
   },
 

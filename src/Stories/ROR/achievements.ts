@@ -3,7 +3,7 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 achievementsManager.add({
   name: 'PrologueCompleted',
-  image: require('../../Images/ROR/Backgrounds/City_Plague.png'),
+  image: require('../../Images/ROR/Backgrounds/Glaswer_Streets_Plague.jpg'),
   title: 'История болезни',
   text: 'С чего все начиналось...',
   story: EStoriesEn.ROR
