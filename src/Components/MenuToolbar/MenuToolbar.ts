@@ -34,6 +34,7 @@ const MenuToolbar = new CContainer(
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_user.svg')}">
 	<!--<p>Профиль</p>-->
+
 </div>
 `,
 	{ name: 'continueButton', selector: '#menu-toolbar_continue' },
@@ -52,12 +53,6 @@ MenuToolbar.settingsButton.onclick = () => {
   tabManagerMenu.open(Settings.self)
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.settingsButton)
 }
-
-/* MenuToolbar.achievementsButton.onclick = () => {
-  tabManagerMenu.open(Achievements.self)
-  achievementsManager.render()
-  toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.achievementsButton)
-} */
 
 MenuToolbar.storiesButton.onclick = () => {
   tabManagerMenu.open(Stories.self)

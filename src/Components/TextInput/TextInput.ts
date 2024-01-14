@@ -1,5 +1,6 @@
 import CContainer from '../../Classes/CContainer'
 import './TextInput.scss'
+import { sendActivity } from '../../Functions/GSAPI'
 
 export const TextInput = new CContainer(
   'text-input',
@@ -25,6 +26,7 @@ export function askForInput (
   validate()
   TextInput.button.onclick = () => {
     callback(TextInput.input.value)
+    sendActivity(`Устанавливает имя: ${TextInput.input.value}`)
     TextInput.self.style.display = 'none'
   }
 }

@@ -12,6 +12,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 15px;
+  margin-bottom: 85px;
   @extend %show;
 }
 
@@ -22,7 +23,7 @@
   padding: 15px;
   width: 90%;
   max-width: 380px;
-  gap: 45px;
+  gap: 25px;
   @extend %styled-background;
   @extend %styled-border;
   @extend %styled-radius;
@@ -37,6 +38,12 @@
   @extend %styled-profile-background;
   @extend %styled-border;
   @extend %styled-radius;
+}
+
+.profile__category-title{
+  text-shadow: 0 0 3px black, 0 0 3px black, 0 0 5px black, 0 0 10px black, 0 0 15px black;
+  padding: 0 0 3px 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .profile__container{
@@ -91,8 +98,8 @@
 .profile__image{
   min-width: 85px;
   min-height: 85px;
-  max-width: 85px;
-  max-height: 85px;
+  max-width: 100px;
+  max-height: 110px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   outline: 2px solid rgba(255, 255, 255, 0.25);
   object-fit: cover;

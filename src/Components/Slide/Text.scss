@@ -29,10 +29,10 @@
   @extend %show;
   @extend %styled-border;
   @extend %slide-container;
-  hyphens: auto;
+  /*hyphens: auto;*/
   p {
     margin-top: 10px;
-    hyphens: auto;
+    /*hyphens: auto;*/
   }
   p:first-child {
     margin-top: 0;

@@ -11,7 +11,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Sleeper',
-  image: require('../../Images/Immortals/Backgrounds/Room.png'),
+  image: require('../../Images/Immortals/Backgrounds/Hero_Room.jpg'),
   title: 'Соня',
   text: 'Проспать занятия',
   story: EStoriesEn.Immortals,
@@ -36,15 +36,15 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'RightAnswers',
-  image: require('../../Images/Immortals/Backgrounds/Lection.png'),
+  image: require('../../Images/Immortals/Backgrounds/Lection_Hall.jpg'),
   title: 'Всезнайка',
   text: 'Ответить правильно на вопрос Нэйтана на паре',
   story: EStoriesEn.Immortals
 })
 
 achievementsManager.add({
-  name: 'Part01Completed',
-  image: require('../../Images/Immortals/Backgrounds/Uni.png'),
+  name: 'Chapter01Part01Completed',
+  image: require('../../Images/Immortals/Backgrounds/University.jpg'),
   title: 'Знакомство',
   text: 'Пройти первую часть',
   story: EStoriesEn.Immortals

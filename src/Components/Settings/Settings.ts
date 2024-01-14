@@ -82,7 +82,7 @@ Settings.creatorsButton.addEventListener('click', () => {
 
 function loadSettings (): void {
   Settings.checkBoxSound.checked =
-    loadData(['Settings_Sound']) === 'true'
+    loadData(['Settings_Sound']) === 'true' || loadData(['Settings_Sound']) === null
   Settings.checkBoxAHA.checked =
     loadData(['Settings_AHA']) === 'true'
 }

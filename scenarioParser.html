@@ -77,9 +77,10 @@
           '$SPEAKER$' +
           '$PICTUREFRONT$' +
           '$CUTSCENE$' +
+          '$DARKS$' +
           '\n    stats: [$STAT$$ITEM$],' +
           '\n    achievement: $ACHIEVEMENT$' +
-          '\n    imageBack: require(\'../../../Images/$NAME$/-$PICTURE$-\')' +
+          '\n    imageBack: require(\'../../../../Images/$NAME$/-$PICTURE$-\')' +
           '  \n  },'
 
         // Отделяем каждый слайд если кол-во отступов 3+ и каждый абзац разделяем при кол-ве отступов 1
@@ -126,7 +127,7 @@
               allPictures.add(scenes[name][x][y]);
 
               // Заменяем ключевое слово на значение
-              value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../Images/$NAME$/UI/Border.png\'),`);
+              value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../../Images/$NAME$/UI/Border.png\'),`);
               y-=1;
             } else if (/! Табличка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Табличка:* /, '');
@@ -144,7 +145,7 @@
                 scenes[name][x][y] = scenes[name][x][y].replace(/! Кат-Сцена:* /, '');
 
                 // Заменяем ключевое слово на значение
-                value = value.replaceAll('$CUTSCENE$',`\n    cutScene: require('../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
+                value = value.replaceAll('$CUTSCENE$',`\n    cutScene: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
                 y-=1;
             } else if (/! Достижение:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Достижение:* /, '');
@@ -152,13 +153,18 @@
               // Заменяем ключевое слово на значение
               value = value.replaceAll('$ACHIEVEMENT$',`{ story: EStoriesEn.${name}, name: '${scenes[name][x].splice(y,1)}' },`);
               y-=1;
+            } else if (/! Силуэт* /.test(scenes[name][x][y])) {
+                scenes[name][x][y] = scenes[name][x][y].replace(/! Силуэт* /, '');
+                value = value.replaceAll('$DARKS$',`darkSilhouette: true,`);
+                scenes[name][x].splice(y,1)
+                y-=1;
             } else if (/! Музыка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Музыка:* /, '');
 
               // Добавляем название музыки в сэт
               allMusic.add(scenes[name][x][y]);
 
-              value = value.replaceAll('$MUSIC$',`\n    music: require('../../../Sounds/${name}/=${scenes[name][x].splice(y,1)}='),`);
+              value = value.replaceAll('$MUSIC$',`\n    music: require('../../../../Sounds/${name}/=${scenes[name][x].splice(y,1)}='),`);
               y-=1;
             } else if (/! Предмет:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Предмет:* /, '');
@@ -208,6 +214,7 @@
           value = value.replaceAll('$SPEAKER$','');
           value = value.replaceAll('$CUTSCENE$','');
           value = value.replaceAll('$PICTUREFRONT$','');
+            value = value.replaceAll('$DARKS$','');
           value = value.replaceAll('\n    stats: [],','');
           value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
           value = value.replaceAll('\n    doBeforeBegin: () => {\n      },','');

@@ -26,12 +26,14 @@
   position: absolute;
   top: 5px;
   right: 5px;
+  text-shadow: 0 0 5px black, 1px 1px 5px black;
 }
 
 .inventory__item-name {
   position: absolute;
   text-align: left;
-  bottom: 8px;
+  bottom: 35px;
+  text-shadow: 0 0 5px black, 1px 1px 5px black;
   left: 5px;
   font-size: var(--tinytext);
 }

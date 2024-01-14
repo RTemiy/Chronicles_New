@@ -27,7 +27,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'JoannePetHorse',
-  image: require('../../Images/ROR/Backgrounds/Horse_Face.png'),
+  image: require('../../Images/ROR/Objects/Horse.png'),
   title: 'Зоопарк на колесах',
   text: 'Дать Джоанне погладить коня',
   story: EStoriesEn.ROR
@@ -43,15 +43,15 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'PayOtto',
-  image: require('../../Images/ROR/Backgrounds/Moneybag.png'),
+  image: require('../../Images/ROR/Objects/Moneybag.png'),
   title: 'Великое расточительство',
   text: 'Заплатить Отто сто монет',
   story: EStoriesEn.ROR
 })
 
 achievementsManager.add({
-  name: 'Part01Completed',
-  image: require('../../Images/ROR/Backgrounds/City_Gates.png'),
+  name: 'Chapter01Part01Completed',
+  image: require('../../Images/ROR/Backgrounds/Glaswer_Gates.jpg'),
   title: 'В добрый путь',
   text: 'Завершить сборы',
   story: EStoriesEn.ROR

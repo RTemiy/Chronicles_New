@@ -1,6 +1,7 @@
 import type CContainer from './CContainer'
 import { Profile } from '../Components/Profile/Profile'
 import { loadData, saveData } from '../Functions/localStorageManager'
+import { sendActivity } from '../Functions/GSAPI'
 
 interface IProfileElement {
   image: string
@@ -76,6 +77,7 @@ export default class CProfile {
     const avatar = this.findAvatar(avatarId)
     Profile.avatar.src = avatar.image
     Profile.avatar.setAttribute('style', `${avatar.style}`)
+    loadData(['Profile', 'Avatar']) !== avatarId && sendActivity(`Установил баннер ${avatarId}`)
     saveData(['Profile', 'Avatar'], [avatarId])
   }
 
@@ -83,6 +85,7 @@ export default class CProfile {
     const banner = this.findBanner(bannerId)
     Profile.banner.src = banner.image
     Profile.banner.setAttribute('style', `${banner.style}`)
+    loadData(['Profile', 'Banner']) !== bannerId && sendActivity(`Установил аватар ${bannerId}`)
     saveData(['Profile', 'Banner'], [bannerId])
   }
 

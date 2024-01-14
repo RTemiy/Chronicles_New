@@ -53,6 +53,7 @@ export default class CStoriesManager {
     let completedParts = 0
     let uncompletedParts = 0
     this.#stories.forEach(story => {
+      allParts -= 2
       story.chapters.forEach(chapter => {
         chapter.parts.forEach(part => {
           loadData([story.name, chapter.name, part.name, part.code, 'Unlocked']) === '1' && completedParts++

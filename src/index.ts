@@ -43,10 +43,10 @@ export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
 export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
-export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, animateBackForth, renderInventory, showCutscene)
-export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide)
-export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 export const wardrobe = new CWardrobe(Wardrobe)
+export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, animateBackForth, renderInventory, showCutscene)
+export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, wardrobe)
+export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 
 loadStories(EStoriesEn)
 

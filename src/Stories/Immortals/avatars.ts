@@ -17,17 +17,17 @@ profileManager.addAvatars([
   {
     id: 'Immortals_Scarlett',
     image: require('../../Images/Immortals/Persons/Scarlett.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'Part01Completed')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'Chapter01Part01Completed')
   },
   {
     id: 'Immortals_Neitan',
     image: require('../../Images/Immortals/Persons/Neitan.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'Part01Completed')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'Chapter01Part01Completed')
   },
   {
     id: 'Immortals_Cheryl_Key',
     image: require('../../Images/Immortals/Items/Key.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'Part01Completed')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'Chapter01Part01Completed')
   },
   {
     id: 'Immortals_Cheryl',
@@ -36,11 +36,11 @@ profileManager.addAvatars([
   },
   {
     id: 'Immortals_Hero_Clown',
-    image: require('../../Images/Immortals/Persons/Hero_3.png'),
+    image: require('../../Images/Immortals/Persons/Hero_Clown.png'),
     style: `
         border: 0;
         outline: 0;
-        box-shadow: inset 0 0 5px 2px fuchsia, 0 0 5px 2px fuchsia; 
+        box-shadow: inset 0 0 5px fuchsia, 0 0 5px fuchsia; 
         background-image: radial-gradient(#fafafa 20%, transparent 20%);
         background-color: #e53935;
         background-position: 40px 40px;

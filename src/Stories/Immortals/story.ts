@@ -25,7 +25,17 @@ storiesManager.add({
         {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Images/Immortals/Backgrounds/Lection.png'),
+          image: require('../../Images/Immortals/Backgrounds/Lection_Hall.jpg'),
+          loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
+          name: 'Скоро',
+          code: '0',
+          image: require('../../Images/Immortals/Backgrounds/Lection_Hall.jpg'),
           loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)

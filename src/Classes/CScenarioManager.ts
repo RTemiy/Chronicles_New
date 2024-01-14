@@ -8,6 +8,7 @@ import type IStat from '../Types/IStat'
 import type CAchievementsManager from './CAchievementsManager'
 import { loadData, saveData } from '../Functions/localStorageManager'
 import { type TIMage } from '../Types/TImage'
+import CWardrobe from './CWardrobe';
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -20,7 +21,8 @@ export default class CScenarioManager {
     statsManager: CStatsManager,
     soundManager: CSoundSystem,
     achievementManager: CAchievementsManager,
-    private readonly slide: CSlide
+    private readonly slide: CSlide,
+    private readonly wardrobe: CWardrobe
   ) {
     this.#statsManager = statsManager
     this.#soundManager = soundManager
@@ -69,17 +71,23 @@ export default class CScenarioManager {
       this.slide.changeSpeaker(scene.speaker)
       this.#doGhostSilhouette(scene.ghostSilhouette)
       this.#doDarkSilhouette(scene.darkSilhouette)
+      this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
+      scene.wardrobe !== undefined && this.wardrobe.showNewWardrobe(scene.wardrobe.story, scene.wardrobe.personId, () => { this.beginScene(scene.wardrobe!.goTo) })
       scene.message !== undefined && this.slide.message(scene.message)
       scene.stats !== undefined && this.#doStats(scene.stats)
       scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
       scene.achievement !== undefined && this.#doAchievement(scene.achievement)
-      this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
+      this.#doAfterAll(scene.afterAll)
       func?.()
     }
   }
 
   #doBeforeBegin (beforeBegin: (() => void) | undefined): void {
     beforeBegin?.()
+  }
+
+  #doAfterAll (afterAll: (() => void) | undefined): void {
+    afterAll?.()
   }
 
   #doCondition (condition: ICondition[] | undefined): boolean {

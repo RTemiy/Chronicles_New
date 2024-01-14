@@ -1,4 +1,4 @@
-import { scenarioManager, storiesManager } from '../../index'
+import { scenarioManager, statsManager, storiesManager } from '../../index';
 
 storiesManager.add({
   name: 'ROR',
@@ -25,9 +25,22 @@ storiesManager.add({
         {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Images/ROR/Backgrounds/City_Gates.png'),
+          image: require('../../Images/ROR/Backgrounds/Glaswer_Gates.jpg'),
           loadingImage: require('../../Images/ROR/Covers/Part01.png'),
-          event: () => {}
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
+          name: 'Скоро',
+          code: '0',
+          image: require('../../Images/ROR/Backgrounds/Glaswer_Gates.jpg'),
+          loadingImage: require('../../Images/ROR/Covers/Part01.png'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
         }
       ]
     }

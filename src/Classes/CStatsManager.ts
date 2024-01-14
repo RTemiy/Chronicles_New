@@ -1,6 +1,7 @@
 import type IStat from '../Types/IStat'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 import { loadData, saveData } from '../Functions/localStorageManager'
+import { sendActivity } from '../Functions/GSAPI'
 
 export default class CStatsManager {
   #stats: Record<string, IStat> = {}
@@ -23,6 +24,7 @@ export default class CStatsManager {
     if (statInfo.silent === null || statInfo.silent === false || stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
       stat.show = 1
     }
+    sendActivity(`Выбирает ${stat.story} ${stat.id} ${stat.value}`)
   }
 
   get (statInfo: IStat): number {
@@ -109,7 +111,7 @@ export default class CStatsManager {
                      `
         } if (stat.category === 'Item') {
           items += `
-                     <div class="inventory__item-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
+                     <div class="inventory__item-cell ${stat.show === 1 && stat.value! > 0 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
                      <img class="inventory__item-image" src="${stat.image}">
                      <p class="inventory__item-value">${stat.value! > 1 ? stat.value : ''}</p>
                      <p class="inventory__item-name">${stat.name}</p>

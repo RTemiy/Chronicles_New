@@ -33,7 +33,9 @@ export default interface IScene {
   condition?: ICondition[]
   cutScene?: { video: string, goTo: number }
   beforeBegin?: () => void
+  afterAll?: () => void
   speaker?: string
   darkSilhouette?: boolean
   ghostSilhouette?: boolean
+  wardrobe?: { story: EStoriesEn, personId: string, goTo: number }
 }

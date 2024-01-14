@@ -12,7 +12,6 @@ export default class CWardrobe {
   private currentPerson = ''
 
   constructor (private readonly Wardrobe: CContainer) {
-    this.addListeners()
   }
 
   addPerson (personId: string, clothesInfo: IWardrobe[]): void {
@@ -23,15 +22,15 @@ export default class CWardrobe {
     return this.persons[personId][loadData([storyName, personId, 'Clothes'])!].image
   }
 
-  getAllClothes (personId: string): IWardrobe[] {
+  private getAllClothes (personId: string): IWardrobe[] {
     return this.persons[personId]
   }
 
-  saveCurrentClothes (storyName: string, personId: string, clothesCode: number): void {
+  private saveCurrentClothes (storyName: string, personId: string, clothesCode: number): void {
     saveData([storyName, personId, 'Clothes'], [clothesCode])
   }
 
-  showNewWardrobe (storyInfo: string, personId: string): void {
+  showNewWardrobe (storyInfo: string, personId: string, callback: () => void): void {
     this.currentIndex = parseInt(loadData([storyInfo, personId, 'Clothes'])!)
     isNaN(this.currentIndex) && (this.currentIndex = 0)
     this.currentStoryInfo = storyInfo
@@ -40,39 +39,45 @@ export default class CWardrobe {
     this.Wardrobe.image.src = this.currentClothes[this.currentIndex].image
     this.Wardrobe.title.innerHTML = this.currentClothes[this.currentIndex].title
     this.Wardrobe.description.innerHTML = this.currentClothes[this.currentIndex].description
-    this.Wardrobe.self.style.display = 'grid'
+    this.Wardrobe.self.style.display = 'flex'
+    this.addListeners(callback)
   }
 
-  turnTo (number: number): void {
+  private turnTo (number: number): void {
     this.currentIndex += number
     this.currentIndex < 0 && (this.currentIndex = this.currentClothes.length - 1)
     this.currentIndex > this.currentClothes.length - 1 && (this.currentIndex = 0)
-    animateBackForth(this.Wardrobe.image, 'wardrobe__element_hide', 500)
-    animateBackForth(this.Wardrobe.title, 'wardrobe__element_hide', 500)
-    animateBackForth(this.Wardrobe.description, 'wardrobe__element_hide', 500)
-    setTimeout(() => {
-      this.Wardrobe.image.src = this.currentClothes[this.currentIndex].image
-      this.Wardrobe.title.innerHTML = this.currentClothes[this.currentIndex].title
-      this.Wardrobe.description.innerHTML = this.currentClothes[this.currentIndex].description
-    }, 500)
+    if (!this.currentClothes[this.currentIndex].unlocked()) {
+      this.turnTo(1)
+    } else {
+      animateBackForth(this.Wardrobe.image, 'wardrobe__element_hide', 500)
+      animateBackForth(this.Wardrobe.title, 'wardrobe__element_hide', 500)
+      animateBackForth(this.Wardrobe.description, 'wardrobe__element_hide', 500)
+      setTimeout(() => {
+        this.Wardrobe.image.src = this.currentClothes[this.currentIndex].image
+        this.Wardrobe.title.innerHTML = this.currentClothes[this.currentIndex].title
+        this.Wardrobe.description.innerHTML = this.currentClothes[this.currentIndex].description
+      }, 500)
+    }
   }
 
-  chooseClothes (): void {
+  private chooseClothes (): void {
     this.Wardrobe.self.style.display = 'none'
     this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
   }
 
-  addListeners (): void {
-    this.Wardrobe.buttonLeft.addEventListener('click', () => {
+  private addListeners (callback: () => void): void {
+    this.Wardrobe.buttonLeft.onclick = () => {
       this.turnTo(-1)
-    })
+    }
 
-    this.Wardrobe.buttonRight.addEventListener('click', () => {
+    this.Wardrobe.buttonRight.onclick = () => {
       this.turnTo(1)
-    })
+    }
 
-    this.Wardrobe.buttonConfirm.addEventListener('click', () => {
+    this.Wardrobe.buttonConfirm.onclick = () => {
       this.chooseClothes()
-    })
+      callback()
+    }
   }
 }

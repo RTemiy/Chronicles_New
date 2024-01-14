@@ -31,16 +31,16 @@ profileManager.addAvatars([
   {
     id: 'Aurora_Dad',
     image: require('../../Images/Aurora/Persons/Dad.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Part01Completed')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Chapter01Part01Completed')
   },
   {
     id: 'Aurora_Arthur',
     image: require('../../Images/Aurora/Persons/Arthur.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Part01Completed')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Chapter01Part01Completed')
   },
   {
     id: 'Aurora_Yan',
     image: require('../../Images/Aurora/Persons/Yan.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Part01Completed')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Chapter01Part01Completed')
   }
 ])

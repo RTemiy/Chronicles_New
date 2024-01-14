@@ -3,6 +3,8 @@ import './Policy.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
 import { showMessage } from '../MenuMessage/MenuMessage'
+import { checkUser, sendActivity } from '../../Functions/GSAPI'
+import generateUserToken from '../../Functions/generateUserToken'
 
 const Policy = new CContainer('policy',
 	`
@@ -20,7 +22,14 @@ export function showPolicy (): void {
     saveData(['Profile', 'TimeSpent'], [parseInt(loadData(['Profile', 'TimeSpent'])!) + 1])
   }, 60000)
   if (!isAccepted) {
+    localStorage.clear()
     Policy.self.style.display = 'flex'
+  } else {
+    if (loadData(['Profile', 'ID']) === null) {
+      validateUser()
+    } else {
+      sendActivity('Запускает игру')
+    }
   }
   if (!navigator.userAgent.includes('Chrome')) {
     console.log(navigator.userAgent)
@@ -31,10 +40,23 @@ export function showPolicy (): void {
 Policy.button.onclick = () => {
   saveData(['isPolicyAccepted'], [true])
   const now = new Date()
-  saveData(['Profile', 'FirstLaunch'], [String(now.getDate()) + '.' + String(now.getMonth()) + '.' + String(now.getFullYear())])
+  saveData(['Profile', 'FirstLaunch'], [String(now.getDate()) + '.' + String(now.getMonth() + 1) + '.' + String(now.getFullYear())])
   saveData(['Profile', 'Avatar'], ['Default'])
   saveData(['Profile', 'Banner'], ['Default'])
   saveData(['Profile', 'TimeSpent'], [0])
   saveData(['Profile', 'BooksWasted'], [0])
   Policy.self.style.display = 'none'
+  validateUser()
+}
+
+function validateUser (): void {
+  const timer = setInterval(() => {
+    const user = generateUserToken()
+    checkUser(user).then((res: { userFound: string }) => {
+      if (res.userFound !== user) {
+        clearInterval(timer)
+        saveData(['Profile', 'ID'], [user])
+      }
+    })
+  }, 5000)
 }

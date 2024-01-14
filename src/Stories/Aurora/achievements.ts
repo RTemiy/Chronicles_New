@@ -34,7 +34,7 @@ achievementsManager.add({
 })
 
 achievementsManager.add({
-  name: 'Part01Completed',
+  name: 'Chapter01Part01Completed',
   image: require('../../Images/Aurora/Backgrounds/Lighthouse.jpg'),
   title: 'Новая жизнь',
   text: 'Отправьтесь с Авророй в неизвестное будущее',

@@ -9,7 +9,7 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/Aurora/Backgrounds/Observation.jpg'),
+      image: require('../../Images/Aurora/Covers/Aurora_Lighthouse.png'),
       parts: [
         {
           name: 'Пролог',
@@ -22,6 +22,16 @@ storiesManager.add({
         },
         {
           name: 'Часть 1',
+          code: '0',
+          image: require('../../Images/Aurora/Covers/House_Inside.png'),
+          loadingImage: require('../../Images/Aurora/Covers/Part01.png'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
+          name: 'Скоро',
           code: '0',
           image: require('../../Images/Aurora/Covers/House_Inside.png'),
           loadingImage: require('../../Images/Aurora/Covers/Part01.png'),

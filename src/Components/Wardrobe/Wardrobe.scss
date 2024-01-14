@@ -10,7 +10,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 25%;
   display: none;
   justify-content: center;
   align-items: center;
@@ -22,8 +21,17 @@
   z-index: 11;
 }
 
+.wardrobe__container{
+  grid-template-columns: repeat(3, min-content);
+  grid-template-rows: repeat(2, min-content);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 .wardrobe__left-button{
-  grid-column: 1;
+  grid-column: 2;
+  justify-self: left;
   grid-row: 1;
   width: 50px;
   height: 50px;
@@ -42,8 +50,9 @@
 }
 
 .wardrobe__right-button{
-  grid-column: 3;
+  grid-column: 2;
   grid-row: 1;
+  justify-self: right;
   width: 50px;
   height: 50px;
   background-image: url("../../Images/UI/icon_go-right.svg");

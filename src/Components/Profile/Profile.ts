@@ -1,6 +1,7 @@
 import CContainer from '../../Classes/CContainer'
 import './Profile.scss'
 import './Avatars.scss'
+import './Events.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { achievementsManager, storiesManager, tabManagerMenu } from '../../index'
 import Achievements from '../Achievements/Achievements'
@@ -8,6 +9,8 @@ import CProfile from '../../Classes/CProfile'
 import { addBook } from '../Books/Books'
 import checkPromoCode from '../../Functions/checkPromoCode'
 import { showMessage } from '../MenuMessage/MenuMessage'
+import { getEventsHTML } from './events'
+import { sendActivity } from '../../Functions/GSAPI'
 
 export const Profile = new CContainer(
   'profile',
@@ -21,6 +24,7 @@ export const Profile = new CContainer(
 		<img class="profile__edit-banner" src="${require('../../Images/UI/icon_paint.svg')}">
 	</div>
 	<div class="profile__category">
+	  <p class="profile__category-title">Общая статистика</p>
 		<div class="profile__container">
 			<p class="profile__text"><img class="books__icon" src="${require('../../Images/UI/icon_exit.svg')}"/> Первый запуск:</p>
 			<p id="firstLaunch" class="profile__text"></p>
@@ -40,6 +44,10 @@ export const Profile = new CContainer(
 	</div>
 	<div class="profile__container">
 		<button id="achievementsButton" class="profile__button" type="button"></button>
+	</div>
+	<div class="profile__category">
+	  <p class="profile__category-title">Награды за события</p>
+	  <div class="profile__events"></div>
 	</div>
 	<div class="profile__container">
 		<input id="promoInput" class="profile__input" type="text" placeholder="Введите промокод"/>
@@ -65,6 +73,7 @@ export const Profile = new CContainer(
 	{ name: 'avatars', selector: '.avatars' },
 	{ name: 'avatarsInfo', selector: '.avatars__info' },
 	{ name: 'avatarsContainer', selector: '.avatars__block' },
+	{ name: 'events', selector: '.profile__events' },
 	{ name: 'promoInput', selector: '#promoInput' },
 	{ name: 'promoButton', selector: '#promoButton' }
 )
@@ -79,6 +88,7 @@ export function renderProfile (): void {
   profileManager.setCurrentBanner()
   Profile.spentTime.innerHTML = transformMinutes(parseInt(loadData(['Profile', 'TimeSpent'])!))
   Profile.wastedBooks.innerHTML = String(loadData(['Profile', 'BooksWasted'])!)
+  Profile.events.innerHTML = getEventsHTML()
 }
 
 function transformMinutes (minutes: number): string {
@@ -95,6 +105,10 @@ function transformMinutes (minutes: number): string {
 
 Profile.name.oninput = () => {
   saveData(['Profile', 'Name'], [Profile.name.value])
+}
+
+Profile.name.onblur = () => {
+  sendActivity(`Установил имя ${Profile.name.value}`)
 }
 
 Profile.achievementsButton.onclick = () => {
