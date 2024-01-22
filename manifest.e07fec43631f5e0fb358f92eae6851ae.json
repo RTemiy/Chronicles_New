@@ -38,6 +38,7 @@
   "start_url": "/Chronicles_New/",
   "description": "Много вариативная визуальная новелла",
   "background_color": "black",
+  "theme_color": "#007769",
   "theme-color": "black",
   "lang": "ru",
   "related_applications": [
