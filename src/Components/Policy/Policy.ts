@@ -31,10 +31,6 @@ export function showPolicy (): void {
       sendActivity('Запускает игру')
     }
   }
-  if (!navigator.userAgent.includes('Chrome')) {
-    console.log(navigator.userAgent)
-    showMessage('При использовании браузеров кроме "Chrome" могут возникать ошибки в приложении!', 'Принять все риски и продолжить')
-  }
 }
 
 Policy.button.onclick = () => {

@@ -8,3 +8,19 @@ achievementsManager.add({
   text: 'Конец или начало?',
   story: EStoriesEn.FOF
 })
+
+achievementsManager.add({
+  name: 'CaptainsGirlfriend',
+  image: require('../../Images/FOF/Persons/Derek.png'),
+  title: 'Девушка капитана',
+  text: 'Сохраните отношения с Дереком',
+  story: EStoriesEn.FOF
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part01Completed',
+  image: require('../../Images/FOF/Backgrounds/Darkness.jpg'),
+  title: 'Туманное будущее',
+  text: 'Чужое тело',
+  story: EStoriesEn.FOF
+})

@@ -16,6 +16,15 @@
   @extend %show;
 }
 
+.inventory__title{
+  font-size: var(--bigtext);
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px black;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
 .inventory__disabled {
   display: none;
 }

@@ -8,7 +8,9 @@ import type IStat from '../Types/IStat'
 import type CAchievementsManager from './CAchievementsManager'
 import { loadData, saveData } from '../Functions/localStorageManager'
 import { type TIMage } from '../Types/TImage'
-import CWardrobe from './CWardrobe';
+import type CWardrobe from './CWardrobe'
+import { getChoice } from '../Functions/5Choices'
+import { setCurrentSlideId } from '../Components/Slide/Slide'
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -62,6 +64,7 @@ export default class CScenarioManager {
 
   beginScene (sceneIndex: number, func?: () => void): void {
     this.#doLastSave(sceneIndex)
+    setCurrentSlideId(sceneIndex)
     const scene = this.#getSceneByIndex(sceneIndex)
     if (!this.#doCondition(scene.condition)) {
       this.#doBeforeBegin(scene.beforeBegin)
@@ -208,6 +211,14 @@ export default class CScenarioManager {
     const newButtons: IButton[] | undefined = []
     toCopyButtons.forEach(button => newButtons.push(Object.assign({}, button)))
     this.#getSceneByIndex(targetSceneIndex).buttons = newButtons
+  }
+
+  loadChoices (sceneIndex: number): void {
+    this.#getSceneByIndex(sceneIndex).buttons.forEach((button, index, array) => {
+      if (index !== array.length - 1) {
+        button.isActive = getChoice(index)
+      }
+    })
   }
 
   resetSceneButtons (sceneIndex: number): void {

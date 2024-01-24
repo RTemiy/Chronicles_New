@@ -6,8 +6,8 @@ statsManager.add({
   id: 'ChooseWriter',
   name: 'Писатель',
   title: 'Писатель',
-  description: '',
-  image: require('../../Images/Aurora/Objects/Book.png'),
+  description: 'Ты не можешь жить без книг и собственных фантазий о будущих историях',
+  image: require('../../Images/Aurora/Effects/Writer.svg'),
   story: EStoriesEn.Aurora
 })
 
@@ -15,38 +15,38 @@ statsManager.add({
   category: 'Effect',
   name: 'Художник',
   title: 'Художник',
-  description: '',
+  description: 'Тебе нравится рисовать и запечатлевать любимые образы на холсте.',
   id: 'ChooseArtist',
-  image: require('../../Images/Aurora/Objects/Album.png'),
+  image: require('../../Images/Aurora/Effects/Artist.svg'),
   story: EStoriesEn.Aurora
 })
 
 statsManager.add({
   category: 'Effect',
-  name: 'Меломан',
-  title: 'Меломан',
-  description: '',
+  name: 'Музыкант',
+  title: 'Музыкант',
+  description: 'Ты грезишь о воплощении самых лиричных и задорных мелодий.',
   id: 'ChooseMusician',
-  image: require('../../Images/Aurora/Objects/Walkman.png'),
+  image: require('../../Images/Aurora/Effects/Musician.svg'),
   story: EStoriesEn.Aurora
 })
 
 statsManager.add({
   category: 'Effect',
-  name: 'Прагматичная',
-  title: 'Прагматичная',
-  description: '',
+  name: 'Прагматик',
+  title: 'Прагматик',
+  description: 'Тобой правят логика и разум.',
   id: 'BePragmatic',
-  image: require('../../Images/UI/icon_settings.svg'),
+  image: require('../../Images/Aurora/Effects/Pragmatic.svg'),
   story: EStoriesEn.Aurora
 })
 
 statsManager.add({
   category: 'Effect',
-  name: 'Романтичная',
+  name: 'Романтик',
   id: 'BeRomantic',
-  title: 'Романтичная',
-  description: '',
-  image: require('../../Images/UI/icon_favourites.svg'),
+  title: 'Романтик',
+  description: 'Тобой правят чувства и эмоции.',
+  image: require('../../Images/Aurora/Effects/Romantic.svg'),
   story: EStoriesEn.Aurora
 })

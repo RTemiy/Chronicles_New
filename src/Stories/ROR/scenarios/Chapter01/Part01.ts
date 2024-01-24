@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { firstChoiceMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage, inventoryMessage } from '../../../../Utils/TextConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
@@ -138,7 +138,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 8
       }],
-    stats: [{ story: EStoriesEn.ROR, value: +1, category: 'Item', id: 'Bag' }],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
@@ -178,8 +177,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    stats: [
-      { story: EStoriesEn.ROR, value: -1, category: 'Item', id: 'Bag' }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
   },
 
@@ -196,6 +193,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    message: inventoryMessage,
     stats: [
       { story: EStoriesEn.ROR, value: +1, category: 'Item', id: 'Knife' },
       { story: EStoriesEn.ROR, value: +10, category: 'Item', id: 'Sugar' }],
@@ -234,24 +232,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     ],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    achievement: { story: EStoriesEn.ROR, name: 'SaveOld' },
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
   },
   {
     id: 12,
     text:
       `
-        Однако, вопрос с едой все еще остается открытым. И времени посетить таверну не было.  Впрочем, я бы и не рисковал есть или пить что-то в заведениях Гласвера даже в лучшие времена.  
+        Однако, вопрос с едой все еще остается открытым. И времени посетить таверну не было. Впрочем, я бы и не рисковал есть или пить что-то в заведениях Гласвера даже в лучшие времена.  
       `,
     buttons: [
       {
         text: '',
         goTo: 151
       }],
+    message: inventoryMessage,
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: +1, category: 'Item', id: 'Knife' },
+      { story: EStoriesEn.ROR, value: +1, category: 'Item', id: 'Bag' },
       { story: EStoriesEn.ROR, value: +10, category: 'Item', id: 'Sugar' }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
   },
@@ -270,7 +269,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     ],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    achievement: { story: EStoriesEn.ROR, name: 'SaveOld' },
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
   },
   {
@@ -650,7 +648,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 161
+        goTo: 200
       }],
     simple: require('../../../../Sounds/ROR/Money.mp3'),
     imageFront: require('../../../../Images/ROR/Objects/Moneybag.png'),
@@ -659,7 +657,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
   },
 
   {
-    id: 161,
+    id: 200,
     text:
       `
         — На месте пересчитаю, — я принял увесистый мешок с монетами и перевел взгляд на туманный город. 
@@ -857,8 +855,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    stats: [
-      { story: EStoriesEn.ROR, value: 0, category: 'Person', id: 'Martha' }],
+    stats: [{ story: EStoriesEn.ROR, value: 0, category: 'Person', id: 'Martha' }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
@@ -2320,14 +2317,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 178
+        goTo: 201
       }],
     music: require('../../../../Sounds/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
-    id: 178,
+    id: 201,
     text:
       `
         «Хотя ... какое мне дело. Нужно выбираться из этого города. Бэйнхевен ждет впереди».
@@ -2810,14 +2807,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 138,
     text:
       `
-        — Извини, Отто. Сам как-нибудь разберусь.<p>Отто лишь развел руками и тихо проговорил:<p>— Как знаешь. Мое дело предложить.
+        — Извини, Отто. Сам как-нибудь разберусь.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 220
+      }],
+    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
+  },
+
+  {
+    id: 220,
+    text:
+      `
+        Отто лишь развел руками и тихо проговорил:<p>— Как знаешь. Мое дело предложить.
       `,
     buttons: [
       {
         text: '',
         goTo: 139
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageFront: require('../../../../Images/ROR/Persons/Otto.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
   },
@@ -2858,14 +2871,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 141,
     text:
       `
-        — Там не вылезешь, если только не станешь худой как скелет, — парировал я.<p>— Да. Если не знать нужные ходы. И у меня есть определенные подозрения насчет этого места. Уже давно возникали. Думаю, пришла пора исследовать это место и облегчить стражникам работу.
+        — Там не вылезешь, если только не станешь худой как скелет, — парировал я.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 221
+      }],
+    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
+  },
+
+  {
+    id: 221,
+    text:
+      `
+        — Да. Если не знать нужные ходы. И у меня есть определенные подозрения насчет этого места. Уже давно возникали. Думаю, пришла пора исследовать это место и облегчить стражникам работу.
       `,
     buttons: [
       {
         text: '',
         goTo: 142
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageFront: require('../../../../Images/ROR/Persons/Mortimer_Mask.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
   },
@@ -2874,14 +2903,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 142,
     text:
       `
-        — Что? Я не нанимался в детективы. <p>— Боюсь, сейчас у нас нет выбора. 
+        — Что? Я не нанимался в детективы.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 222
+      }],
+    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
+  },
+
+  {
+    id: 222,
+    text:
+      `
+        — Боюсь, сейчас у нас нет выбора. 
       `,
     buttons: [
       {
         text: '',
         goTo: 143
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageFront: require('../../../../Images/ROR/Persons/Mortimer_Mask.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
   },

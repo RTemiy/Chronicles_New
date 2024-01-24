@@ -4,10 +4,10 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 statsManager.add({
   category: 'Item',
   id: 'Money',
-  name: 'Монеты',
+  name: 'Деньги',
   image: require('../../Images/ROR/Items/Money.png'),
-  title: 'Сбережения',
-  description: '',
+  title: 'Небольшой мешок для хранения денег',
+  description: 'Сбережения, что помогут выжить в нашем приключении.',
   story: EStoriesEn.ROR
 })
 
@@ -16,8 +16,8 @@ statsManager.add({
   id: 'Bag',
   name: 'Рюкзак',
   image: require('../../Images/ROR/Items/Bag_With_Hole.png'),
-  title: 'Дырявый рюкзак',
-  description: '',
+  title: 'Походный потрепанный рюкзак с несколькими небольшими дырками',
+  description: 'Я решил оставить его. Он еще может мне пригодиться.',
   story: EStoriesEn.ROR
 })
 
@@ -26,8 +26,8 @@ statsManager.add({
   id: 'Knife',
   name: 'Нож',
   image: require('../../Images/ROR/Items/Knife.png'),
-  title: 'Нож',
-  description: '',
+  title: 'Крупный нож из восточной стали',
+  description: 'Практичное оружие, которое досталось мне от отца. Без него я не путешествую.',
   story: EStoriesEn.ROR
 })
 
@@ -36,7 +36,7 @@ statsManager.add({
   id: 'Sugar',
   name: 'Сахар',
   image: require('../../Images/ROR/Items/Sugar.png'),
-  title: 'Кубики сахара',
-  description: '',
+  title: 'Заморский десерт, спрессованный в кубик',
+  description: 'Небольшое количество лакомств для лошадей.',
   story: EStoriesEn.ROR
 })

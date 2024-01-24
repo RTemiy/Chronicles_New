@@ -108,10 +108,7 @@ export default class CSlide {
 
   message (text: string, noSound?: boolean): void {
     if (noSound === false || noSound === undefined) {
-      this.soundManager.play(
-        'simple',
-        require('../Sounds/Common/Notification.mp3')
-      )
+      this.soundManager.play('simple', require('../Sounds/Common/Notification.mp3'))
     }
     this.slide.messageText.innerHTML = text
     this.slide.message.classList.add('slide__message_show')

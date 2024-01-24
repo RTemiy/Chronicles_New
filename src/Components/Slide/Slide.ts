@@ -9,10 +9,17 @@ import './Toolbar.scss'
 import './Timer.scss'
 import './Achievement.scss'
 import './Effects.scss'
+import './Console.scss'
 import { animateBackForth } from '../../Functions/animateBackForth'
+import { doCommand } from '../../Functions/console';
 
 export const Slide = new CContainer('slide',
   `
+    <div class="console">
+      <input class="console__input" type="text">
+      <p class="console__slide-id"></p>
+    </div>
+    
     <div class="slide__image-container">
         <img class="slide__imageLeft"/>
         <img class="slide__imageMiddle"/>
@@ -52,6 +59,9 @@ export const Slide = new CContainer('slide',
       </div>
 		</div>
 `,
+  { name: 'console', selector: '.console' },
+  { name: 'consoleInput', selector: '.console__input' },
+  { name: 'consoleSlideId', selector: '.console__slide-id' },
   { name: 'imageLeft', selector: '.slide__imageLeft' },
   { name: 'imageMiddle', selector: '.slide__imageMiddle' },
   { name: 'imageRight', selector: '.slide__imageRight' },
@@ -80,10 +90,25 @@ export function whiteFlash (): void {
   animateBackForth(Slide.self, 'slide_whiteFlash', 2000)
 }
 
+export function blackFlash (): void {
+  animateBackForth(Slide.self, 'slide_blackFlash', 2000)
+}
+
 export function redPulsating (): void {
   Slide.self.classList.toggle('slide_redPulseInfinite')
 }
 
 export function redFlash (): void {
   animateBackForth(Slide.self, 'slide_redFlash', 2000)
+}
+
+Slide.consoleInput.addEventListener('keypress', (evt: { key: string, value: string }) => {
+  if (evt.key === 'Enter') {
+    doCommand(Slide.consoleInput.value)
+    Slide.consoleInput.value = ''
+  }
+})
+
+export function setCurrentSlideId (id: number): void {
+  Slide.consoleSlideId.innerText = id
 }

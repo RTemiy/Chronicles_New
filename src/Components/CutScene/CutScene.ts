@@ -7,7 +7,7 @@ export const CutScene = new CContainer('cut-scene',
     	<video autoplay muted loop class='cut-scene__image'>
     	  <source src="" id="cutSceneSource" type="video/mp4"><source/>
       </video>
-    	<button class='cut-scene__button'>Продолжить</button>
+    	<button class='cut-scene__button'></button>
 			</div>
 `,
 	{ name: 'container', selector: '.cut-scene__container' },

@@ -37,5 +37,25 @@ profileManager.addBanners([
     id: 'FOF_Facade',
     image: require('../../Images/FOF/Backgrounds/House_Facade.jpg'),
     condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'PrologueCompleted')
+  },
+  {
+    id: 'FOF_Hospital_Room',
+    image: require('../../Images/FOF/Backgrounds/Hospital_Room.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'Chapter01Part01Completed')
+  },
+  {
+    id: 'FOF_Darkness',
+    image: require('../../Images/FOF/Backgrounds/Darkness.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'Chapter01Part01Completed')
+  },
+  {
+    id: 'FOF_Fitness',
+    image: require('../../Images/FOF/Backgrounds/Fitness.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'Chapter01Part01Completed')
+  },
+  {
+    id: 'FOF_Abigail_Room',
+    image: require('../../Images/FOF/Backgrounds/Abigail_Room.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'Chapter01Part01Completed')
   }
 ])

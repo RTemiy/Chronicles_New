@@ -1,12 +1,13 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
+import { previousSlideMessage } from '../../../../Utils/TextConsts';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
     id: 0,
     text:
       `
-        Дневник доктора Мортимера Дракена. Не смотреть, не трогать и тем более - Не открывать!
+        <i>Дневник доктора Мортимера Дракена. Не смотреть, не трогать и тем более - Не открывать!
       `,
     buttons: [
       {
@@ -29,6 +30,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
+    message: previousSlideMessage,
     imageBack: require('../../../../Images/ROR/Backgrounds/Table_Candle.jpg')
   },
 

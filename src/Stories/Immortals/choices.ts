@@ -25,7 +25,7 @@ statsManager.add({
   name: 'Учеба',
   image: require('../../Images/Immortals/Items/Study.png'),
   title: 'Успеваемость в университете',
-  description: 'Вопреки обстоятельствам не стоит забрасывать учебу, ведь от этого зависит мое будущее',
+  description: 'Вопреки обстоятельствам не стоит забрасывать учебу, ведь от этого зависит мое будущее.',
   story: EStoriesEn.Immortals
 })
 

@@ -73,5 +73,4 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   tabManagerMenu.open(Stories.self)
   soundManager.play('menu')
 }
-
 startBooksTimer()

@@ -2,7 +2,7 @@ import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { askForInput } from '../../../../Components/TextInput/TextInput'
 import { saveData } from '../../../../Functions/localStorageManager'
-import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/TextConsts';
+import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/TextConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -652,7 +652,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 39,
     text:
       `
-        Я кивнула, немного поежившись. Я вдруг смогла почувствовать… холод?  Или это были ощущения, которые я когда-то переживала? Мой загадочный собеседник заметил это и сказал.
+        Я кивнула, немного поежившись. Я вдруг смогла почувствовать… холод?  Или это были ощущения, которые я когда-то переживала? Мой загадочный собеседник заметил это и сказал:
       `,
     buttons: [
       {

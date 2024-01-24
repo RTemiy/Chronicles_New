@@ -22,5 +22,20 @@ profileManager.addAvatars([
     id: 'FOF_Sarah',
     image: require('../../Images/FOF/Persons/Sarah.png'),
     condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'PrologueCompleted')
+  },
+  {
+    id: 'FOF_Duke',
+    image: require('../../Images/FOF/Persons/Duke.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'Chapter01Part01Completed')
+  },
+  {
+    id: 'FOF_Aunt',
+    image: require('../../Images/FOF/Persons/Aunt.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'Chapter01Part01Completed')
+  },
+  {
+    id: 'FOF_Christopher',
+    image: require('../../Images/FOF/Persons/Christopher.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.FOF, 'Chapter01Part01Completed')
   }
 ])

@@ -21,8 +21,10 @@ export default class CStatsManager {
   change (statInfo: IStat): void {
     const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
     stat.value! += statInfo.value!
-    if (statInfo.silent === null || statInfo.silent === false || stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
-      stat.show = 1
+    if (stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
+      if (statInfo.silent !== true) {
+        stat.show = 1
+      }
     }
     sendActivity(`Выбирает ${stat.story} ${stat.id} ${stat.value}`)
   }

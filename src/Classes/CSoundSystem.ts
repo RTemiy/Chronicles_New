@@ -24,7 +24,7 @@ export default class CSoundSystem {
 
   play (type: 'ambient' | 'music' | 'simple' | 'menu', path?: string): void {
     if (type === 'simple') {
-      this[type] = new Audio(this.notificationSound)
+      this[type] = new Audio(path)
       this[type].play()
       this.setVolume(loadData(['Settings_Sound'])!)
     } else {

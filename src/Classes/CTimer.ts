@@ -36,6 +36,7 @@ export default class CTimer {
     clearTimeout(this.timeout)
     clearInterval(this.interval)
     this.soundManager.stop('ambient')
+    this.soundManager.play('ambient', require('../Sounds/Common/Silence.mp3'))
     this.timerElement.style.display = 'none'
   }
 }

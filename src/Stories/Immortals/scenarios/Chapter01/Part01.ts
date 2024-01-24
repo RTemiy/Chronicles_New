@@ -391,7 +391,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Cheryl.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Taxi.jpg')
   },
 
@@ -410,7 +410,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Telephone.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Taxi.jpg')
   },
 
@@ -461,7 +461,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Telephone.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Taxi.jpg')
   },
 
@@ -1292,7 +1292,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     message: 'Не со всеми персонажами отношения выстраиваются благодаря положительным статам. Читайте внимательно подсказки и сюжет, чтобы выйти на нужный вам уровень взаимоотношений',
     imageFront: require('../../../../Images/Immortals/Persons/Cheryl.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    stats: [{ story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Cheryl' }],
+    stats: [{ story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Bus.jpg')
   },
 
@@ -1311,7 +1311,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Telephone.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Bus.jpg')
   },
 
@@ -1362,7 +1362,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Telephone.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Bus.jpg')
   },
 
@@ -2204,7 +2204,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Cheryl.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Father_Car.jpg')
   },
 
@@ -2223,7 +2223,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Telephone.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Father_Car.jpg')
   },
 
@@ -2274,7 +2274,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Telephone.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Cheryl' }],
+      { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Cheryl', silent: true }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Father_Car.jpg')
   },
 
@@ -2987,6 +2987,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 195
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero') },
+    imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Lection_Hall.jpg')
   },
 

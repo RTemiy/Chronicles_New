@@ -11,6 +11,7 @@ import { statsManager } from '../../index'
 export const Inventory = new CContainer(
   'inventory',
   `
+  <p class="inventory__title">Инвентарь</p>
   <div class="inventory__info-block">
     <img class="inventory__info-image">
     <p class="inventory__info-title"></p>

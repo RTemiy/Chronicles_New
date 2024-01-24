@@ -7,17 +7,17 @@ statsManager.add({
   name: 'Тетрадки',
   image: require('../../Images/Immortals/Items/Notebook.png'),
   title: 'Домашнее задание',
-  description: 'Мне чудом удалось вспомнить и взять работу для пары профессора Нэйтана',
+  description: 'Мне чудом удалось вспомнить и взять работу для пары профессора Нэйтана.',
   story: EStoriesEn.Immortals
 })
 
 statsManager.add({
   category: 'Item',
   id: 'Money',
-  name: 'Кошелек',
+  name: 'Деньги',
   image: require('../../Images/Immortals/Items/Money.png'),
-  title: 'Все мои сбережения в одном месте',
-  description: '',
+  title: 'Кошелек',
+  description: 'Мои денежные сбережения, которые я могу потратить на себя или на близких.',
   story: EStoriesEn.Immortals
 })
 

@@ -11,6 +11,7 @@ import checkPromoCode from '../../Functions/checkPromoCode'
 import { showMessage } from '../MenuMessage/MenuMessage'
 import { getEventsHTML } from './events'
 import { sendActivity } from '../../Functions/GSAPI'
+import { Slide } from '../Slide/Slide';
 
 export const Profile = new CContainer(
   'profile',
@@ -130,6 +131,7 @@ Profile.wastedBooks.onclick = () => {
   if (clicks >= 10) {
     addBook()
     clicks = 0
+    Slide.console.classList.add('console_activated')
   }
 }
 

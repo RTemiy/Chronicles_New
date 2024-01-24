@@ -89,6 +89,7 @@
   @extend %button-tap;
   @extend %styled-border;
   @extend %slide-container;
+  @extend %anim;
   background-color: rgba(255, 255, 255, 0.18);
   backdrop-filter: none;
 }

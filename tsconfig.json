@@ -9,6 +9,8 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "target": "ES6",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "allowJs": true,
+    "checkJs": false
   }
 }

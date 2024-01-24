@@ -3,6 +3,7 @@ import type IWardrobe from '../Types/IWardrobe'
 import type CContainer from './CContainer'
 import { wardrobe } from '../index'
 import { animateBackForth } from '../Functions/animateBackForth'
+import { showAd } from '../Functions/advertisement'
 
 export default class CWardrobe {
   private persons: Record<string, IWardrobe[]> = {}
@@ -62,8 +63,10 @@ export default class CWardrobe {
   }
 
   private chooseClothes (): void {
-    this.Wardrobe.self.style.display = 'none'
-    this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
+    showAd(this.currentClothes[this.currentIndex].cost, () => {
+      this.Wardrobe.self.style.display = 'none'
+      this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
+    })
   }
 
   private addListeners (callback: () => void): void {

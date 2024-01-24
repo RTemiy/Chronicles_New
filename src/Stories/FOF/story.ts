@@ -23,8 +23,8 @@ storiesManager.add({
       {
         name: 'Часть 1',
         code: '0',
-        image: require('../../Images/FOF/Backgrounds/Football_Field.jpg'),
-        loadingImage: require('../../Images/FOF/Covers/Prologue.jpg'),
+        image: require('../../Images/FOF/Backgrounds/Darkness.jpg'),
+        loadingImage: require('../../Images/FOF/Covers/Part01.jpg'),
         event: (storyName: string, chapterName: string, partName: string, code: string) => {
           scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           statsManager.loadStats(false, storyName, chapterName, partName, code)
@@ -33,7 +33,7 @@ storiesManager.add({
       {
         name: 'Скоро',
         code: '0',
-        image: require('../../Images/FOF/Backgrounds/Football_Field.jpg'),
+        image: require('../../Images/FOF/Backgrounds/Abigail_Room.jpg'),
         loadingImage: require('../../Images/FOF/Covers/Prologue.jpg'),
         event: (storyName: string, chapterName: string, partName: string, code: string) => {
           scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)

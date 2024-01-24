@@ -8,6 +8,7 @@ import { LoadingScreen, renderLoadingScreen } from '../LoadingScreen/LoadingScre
 import { wasteBook } from '../Books/Books'
 import { loadData } from '../../Functions/localStorageManager'
 import { sendActivity } from '../../Functions/GSAPI'
+import { showAd } from '../../Functions/advertisement'
 
 const Parts = new CContainer(
   'parts',
@@ -29,17 +30,19 @@ export const renderParts = (storyName: string, chapterName: string): void => {
       const partUnlocked = loadData([storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'), 'Unlocked'])
       const addListener = (): void => {
         partElements[index].onclick = () => {
-          wasteBook(() => {
-            MenuToolbar.self.style.display = 'none'
-            MenuToolbar.continueButton.setAttribute('style', 'display: block')
-            tabManagerMenu.closeAll()
-            LoadingScreen.continueButton.style.display = 'none'
-            setTimeout(() => { LoadingScreen.continueButton.style.display = 'block' }, 3000)
-            sendActivity(`Начинает ${storyName}: ${chapterName} ${partName}`)
-            storiesManager.getPartProp(storyName, chapterName, partName, 'event')(storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'))
-            renderLoadingScreen(storiesManager.getPartProp(storyName, chapterName, partName, 'loadingImage'), () => {
-              Slide.self.style.display = 'grid'
-              LoadingScreen.self.style.display = 'none'
+          showAd('short', () => {
+            wasteBook(() => {
+              MenuToolbar.self.style.display = 'none'
+              MenuToolbar.continueButton.setAttribute('style', 'display: block')
+              tabManagerMenu.closeAll()
+              LoadingScreen.continueButton.style.display = 'none'
+              setTimeout(() => { LoadingScreen.continueButton.style.display = 'block' }, 3000)
+              sendActivity(`Начинает ${storyName}: ${chapterName} ${partName}`)
+              storiesManager.getPartProp(storyName, chapterName, partName, 'event')(storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'))
+              renderLoadingScreen(storiesManager.getPartProp(storyName, chapterName, partName, 'loadingImage'), () => {
+                Slide.self.style.display = 'grid'
+                LoadingScreen.self.style.display = 'none'
+              })
             })
           })
         }

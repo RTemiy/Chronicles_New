@@ -1,7 +1,7 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { redFlash, whiteFlash } from '../../../../Components/Slide/Slide'
-import { firstChoiceMessage, previousSlideMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/TextConsts';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -203,6 +203,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
+    message: inventoryMessage,
     speaker: 'Дерек',
     imageFront: require('../../../../Images/FOF/Persons/Derek.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -255,6 +256,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
+    message: inventoryMessage,
     speaker: 'Дерек',
     imageFront: require('../../../../Images/FOF/Persons/Derek.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -307,6 +309,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
+    message: inventoryMessage,
     speaker: 'Дерек',
     imageFront: require('../../../../Images/FOF/Persons/Derek.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -1156,7 +1159,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 72,
     text:
       `
-        Это слишком нагло с твоей стороны, Дерек. Может, ты и хорош собой, но не настолько, чтобы я исполняла твои похотливые прихоти.
+        Это слишком нагло с твоей стороны, Дерек. Может, ты и хорош собой, но не настолько, чтобы я исполняла твои похотливые желания.
       `,
     buttons: [
       {
@@ -1789,7 +1792,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 110,
     text:
       `
-        Моя личная жизнь — не достояние общественности. И, к тому же, кто способен променять Королеву на серую мышь? 
+        Моя личная жизнь — не достояние общественности. И, к тому же, кто способен променять королеву на серую мышь? 
       `,
     buttons: [
       {

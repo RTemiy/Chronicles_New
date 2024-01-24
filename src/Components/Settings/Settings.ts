@@ -7,6 +7,8 @@ import { soundManager, tabManagerMenu } from '../../index'
 import { Credits } from '../Credits/Credits'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
+import { showMessage } from '../MenuMessage/MenuMessage'
+import { showAd } from '../../Functions/advertisement'
 
 const Settings = new CContainer(
   'settings',
@@ -52,6 +54,9 @@ const Settings = new CContainer(
 	<div class="settings__block">
 		<a id="creators-button">Создатели</a>
 	</div>
+	<div class="settings__block">
+		<a id="support-button">Поддержать просмотром рекламы 🎁</a>
+	</div>
 </div>
 <div class="settings__container">
 	<div class="settings__block">
@@ -64,7 +69,8 @@ const Settings = new CContainer(
 `,
   { name: 'checkBoxSound', selector: '#settings-sound' },
   { name: 'checkBoxAHA', selector: '#settings-aha' },
-  { name: 'creatorsButton', selector: '#creators-button' }
+  { name: 'creatorsButton', selector: '#creators-button' },
+  { name: 'supportButton', selector: '#support-button' }
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
@@ -85,6 +91,12 @@ function loadSettings (): void {
     loadData(['Settings_Sound']) === 'true' || loadData(['Settings_Sound']) === null
   Settings.checkBoxAHA.checked =
     loadData(['Settings_AHA']) === 'true'
+}
+
+Settings.supportButton.onclick = () => {
+  showAd('long', () => {
+    showMessage('Спасибо за поддержку <i> Chronicles', 'Принять')
+  })
 }
 
 loadSettings()

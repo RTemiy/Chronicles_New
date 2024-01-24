@@ -146,7 +146,8 @@ module.exports = {
       short_name: 'Chronicles',
       description: 'Много вариативная визуальная новелла',
       background_color: 'black',
-      crossorigin: 'use-credentials',
+      theme_color: '#007769',
+      crossorigin: 'anonymous',
       icons: [
         {
           src: path.resolve('src/Images/UI/icon.png'),

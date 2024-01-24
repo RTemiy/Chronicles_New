@@ -24,7 +24,10 @@
 
 .inventory__item-value {
   position: absolute;
-  top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 2px;
   right: 5px;
   text-shadow: 0 0 5px black, 1px 1px 5px black;
 }

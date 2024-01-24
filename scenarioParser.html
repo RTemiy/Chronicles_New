@@ -153,8 +153,8 @@
               // Заменяем ключевое слово на значение
               value = value.replaceAll('$ACHIEVEMENT$',`{ story: EStoriesEn.${name}, name: '${scenes[name][x].splice(y,1)}' },`);
               y-=1;
-            } else if (/! Силуэт* /.test(scenes[name][x][y])) {
-                scenes[name][x][y] = scenes[name][x][y].replace(/! Силуэт* /, '');
+            } else if (/! Силуэт/.test(scenes[name][x][y])) {
+                scenes[name][x][y] = scenes[name][x][y].replace(/! Силуэт/, '');
                 value = value.replaceAll('$DARKS$',`darkSilhouette: true,`);
                 scenes[name][x].splice(y,1)
                 y-=1;
