@@ -35,7 +35,7 @@
   "short_name": "Chronicles",
   "orientation": "portrait",
   "display": "standalone",
-  "start_url": "/Chronicles_New/",
+  "start_url": ".",
   "description": "Много вариативная визуальная новелла",
   "background_color": "black",
   "theme_color": "#007769",
@@ -47,21 +47,6 @@
       "url": "https://play.google.com/store/apps/details?id=com.mva.chronicles"
     }
   ],
-  "scope": "/",
-  "screenshots": [
-    {
-      "src": "C:\\Users\\RTemiy\\Desktop\\Chronicles\\Chronicles_New\\src\\Images\\UI\\icon.png",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
-      "form_factor": "wide",
-      "label": "Main menu"
-    },
-    {
-      "src": "C:\\Users\\RTemiy\\Desktop\\Chronicles\\Chronicles_New\\src\\Images\\UI\\icon.png",
-      "sizes": "1280x720",
-      "type": "image/jpeg",
-      "form_factor": "wide",
-      "label": "Profile"
-    }
-  ]
+  "id": "/Chronicles_New/",
+  "scope": "/"
 }
