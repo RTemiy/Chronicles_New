@@ -6,6 +6,7 @@ storiesManager.add({
   description:
     'Когда-то вампиры считались мифом, однако нашей героине во время поисков своего брата, пришлось столкнуться с монстрами лицом к лицу. Теперь она невольно втянута в противостояние вампиров и людей, где ей предстоит распутать не один клубок тайн.',
   genre: 'Драма, Вампиры',
+  status: 'Обновление',
   chapters: [
     {
       name: 'Глава 1',
@@ -33,7 +34,7 @@ storiesManager.add({
         {
           name: 'Скоро',
           code: '0',
-          image: require('../../Images/Aurora/Covers/House_Inside.png'),
+          image: require('../../Images/UI/background.png'),
           loadingImage: require('../../Images/Aurora/Covers/Part01.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)

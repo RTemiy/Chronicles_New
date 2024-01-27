@@ -5,9 +5,9 @@
 export enum EStoriesEn {
   FOF = 'FOF',
   AEP = 'AEP',
-  ROR = 'ROR',
-  Aurora = 'Aurora',
   Immortals = 'Immortals',
+  Aurora = 'Aurora',
+  ROR = 'ROR',
 }
 
 export enum EStoriesRu {

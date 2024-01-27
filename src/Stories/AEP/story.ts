@@ -11,7 +11,7 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/AEP/Backgrounds/Col.jpg'),
+      image: require('../../Images/AEP/Backgrounds/University.jpg'),
       parts: [
         {
           name: 'Пролог',
@@ -25,7 +25,7 @@ storiesManager.add({
         {
           name: 'Скоро',
           code: '0',
-          image: require('../../Images/AEP/Backgrounds/Col.jpg'),
+          image: require('../../Images/UI/background.png'),
           loadingImage: require('../../Images/AEP/Covers/Prologue.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)

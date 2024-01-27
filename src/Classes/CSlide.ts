@@ -17,7 +17,7 @@ export default class CSlide {
     private readonly inventoryElement: HTMLElement,
     private readonly animateFunc: (element: HTMLElement, className: string, duration: number) => void,
     private readonly renderInventory: (story: EStoriesEn) => void,
-    readonly showCutScene: (cutSceneInfo: { video: string, goTo: () => void }) => void,
+    readonly showCutScene: (cutSceneInfo: { video: string, goTo: () => void }) => void
   ) {
     this.addClicks()
   }

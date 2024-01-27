@@ -9,12 +9,12 @@ storiesManager.add({
   status: 'Новая история',
   chapters: [{
     name: 'Глава 1',
-    image: require('../../Images/FOF/Backgrounds/School_Corridor.jpg'),
+    image: require('../../Images/FOF/Backgrounds/Night_Streets.jpg'),
     parts: [
       {
         name: 'Пролог',
         code: '0',
-        image: require('../../Images/FOF/Backgrounds/Locker_Room.jpg'),
+        image: require('../../Images/FOF/Backgrounds/Gym.jpg'),
         loadingImage: require('../../Images/FOF/Covers/Prologue.jpg'),
         event: (storyName: string, chapterName: string, partName: string, code: string) => {
           scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
@@ -23,7 +23,7 @@ storiesManager.add({
       {
         name: 'Часть 1',
         code: '0',
-        image: require('../../Images/FOF/Backgrounds/Darkness.jpg'),
+        image: require('../../Images/FOF/Covers/Cover_Part01.jpg'),
         loadingImage: require('../../Images/FOF/Covers/Part01.jpg'),
         event: (storyName: string, chapterName: string, partName: string, code: string) => {
           scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
@@ -33,8 +33,8 @@ storiesManager.add({
       {
         name: 'Скоро',
         code: '0',
-        image: require('../../Images/FOF/Backgrounds/Abigail_Room.jpg'),
-        loadingImage: require('../../Images/FOF/Covers/Prologue.jpg'),
+        image: require('../../Images/UI/background.png'),
+        loadingImage: require('../../Images/FOF/Covers/Part01.jpg'),
         event: (storyName: string, chapterName: string, partName: string, code: string) => {
           scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           statsManager.loadStats(false, storyName, chapterName, partName, code)

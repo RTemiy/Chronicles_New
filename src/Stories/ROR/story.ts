@@ -1,4 +1,4 @@
-import { scenarioManager, statsManager, storiesManager } from '../../index';
+import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'ROR',
@@ -7,7 +7,7 @@ storiesManager.add({
     'Страну Крейс поразила страшная болезнь - чума. В условиях эпидемии Генрих работает контрабандистом, переправляя нуждающихся за границу. Однажды к нему обратилась группа беженцев. Начавшееся приключение перевернет не только судьбы героев, но и всей страны.',
   genre: 'Фэнтези, Приключение',
   mature: true,
-  status: 'Новая часть',
+  status: 'Обновление',
   chapters: [
     {
       name: 'Глава 1',
@@ -35,7 +35,7 @@ storiesManager.add({
         {
           name: 'Скоро',
           code: '0',
-          image: require('../../Images/ROR/Backgrounds/Glaswer_Gates.jpg'),
+          image: require('../../Images/UI/background.png'),
           loadingImage: require('../../Images/ROR/Covers/Part01.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)

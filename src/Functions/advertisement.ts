@@ -7,30 +7,47 @@ type ad = 'short' | 'medium' | 'long'
 
 export function showAd (type: ad, onAccepted: () => void): void {
   let resCode = ''
-  switch (type) {
-    case 'short':
-      resCode = 'R-A-5361625-3'
-      break
-    case 'medium':
-      resCode = 'R-A-5361625-1'
-      break
-    case 'long':
-      resCode = 'R-A-5361625-2'
-      break
+  let platform = ''
+  if (Ya.Context.AdvManager.getPlatform() === 'desktop') {
+    platform = 'desktop'
+    switch (type) {
+      case 'short':
+        resCode = 'R-A-5361625-4'
+        break
+      case 'medium':
+        resCode = 'R-A-5361625-5'
+        break
+      case 'long':
+        resCode = 'R-A-5361625-6'
+        break
+    }
+  } else {
+    platform = 'touch'
+    switch (type) {
+      case 'short':
+        resCode = 'R-A-5361625-3'
+        break
+      case 'medium':
+        resCode = 'R-A-5361625-1'
+        break
+      case 'long':
+        resCode = 'R-A-5361625-2'
+        break
+    }
   }
 
-/*  window.yaContextCb.push(() => {
+  window.yaContextCb.push(() => {
     Ya.Context.AdvManager.render({
       blockId: resCode,
       type: 'rewarded',
-      platform: 'touch',
+      platform,
       onRewarded: (isRewarded: boolean) => {
-        if (isRewarded) {*/
+        if (isRewarded) {
           onAccepted()
-/*        } else {
+        } else {
           showMessage('Вы прервали просмотр рекламы', 'Принять')
         }
       }
     })
-  })*/
+  })
 }

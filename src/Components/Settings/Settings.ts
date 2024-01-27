@@ -1,8 +1,6 @@
 import CContainer from '../../Classes/CContainer'
 import './Settings.scss'
 import './Switch.scss'
-import GP from '../../Images/UI/gp.png'
-import TG from '../../Images/UI/tg.png'
 import { soundManager, tabManagerMenu } from '../../index'
 import { Credits } from '../Credits/Credits'
 import { loadData, saveData } from '../../Functions/localStorageManager'
@@ -35,8 +33,14 @@ const Settings = new CContainer(
 		<a>Поддержите нас</a>
 	</div>
 	<div class="settings__block">
-		<a target="_blank" rel="external" href="https://play.google.com/store/apps/details?id=com.mva.chronicles"><img class="settings__icon"  src="${GP}"></a>
-		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${TG}"></a>
+		<a target="_blank" rel="external" id="support-button"><img class="settings__icon"  src="${require('../../Images/UI/icon_ad.png')}"></a>
+		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Images/UI/icon_tg.png')}"></a>
+	</div>
+	<div class="settings__block">
+		<a id="req-01">Тинькофф</a>
+	</div>
+	<div class="settings__block">
+		<a id="req-02">Сбербанк</a>
 	</div>
 </div>
 <div class="settings__container">
@@ -54,9 +58,6 @@ const Settings = new CContainer(
 	<div class="settings__block">
 		<a id="creators-button">Создатели</a>
 	</div>
-	<div class="settings__block">
-		<a id="support-button">Поддержать просмотром рекламы 🎁</a>
-	</div>
 </div>
 <div class="settings__container">
 	<div class="settings__block">
@@ -70,7 +71,9 @@ const Settings = new CContainer(
   { name: 'checkBoxSound', selector: '#settings-sound' },
   { name: 'checkBoxAHA', selector: '#settings-aha' },
   { name: 'creatorsButton', selector: '#creators-button' },
-  { name: 'supportButton', selector: '#support-button' }
+  { name: 'supportButton', selector: '#support-button' },
+  { name: 'req01', selector: '#req-01' },
+  { name: 'req02', selector: '#req-02' }
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
@@ -95,7 +98,19 @@ function loadSettings (): void {
 
 Settings.supportButton.onclick = () => {
   showAd('long', () => {
-    showMessage('Спасибо за поддержку <i> Chronicles', 'Принять')
+    showMessage('Спасибо за поддержку Chronicles', 'Принять')
+  })
+}
+
+Settings.req01.onclick = () => {
+  navigator.clipboard.writeText('5536910026463614').then(() => {
+    showMessage('Реквизиты успешно скопированы!', 'Принять')
+  })
+}
+
+Settings.req02.onclick = () => {
+  navigator.clipboard.writeText('4276380119142763').then(() => {
+    showMessage('Реквизиты успешно скопированы!', 'Принять')
   })
 }
 

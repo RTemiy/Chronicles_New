@@ -145,3 +145,13 @@
   background-color: white;
   border-radius: 0 4px 4px 0;
 }
+
+@media (max-height: 840px) {
+
+  .story{
+    height: 450px;
+  }
+  .story__image{
+    height: 350px;
+  }
+}

@@ -147,7 +147,7 @@ module.exports = {
       description: 'Много вариативная визуальная новелла',
       background_color: 'black',
       theme_color: '#007769',
-      crossorigin: 'anonymous',
+      crossorigin: 'use-credentials',
       icons: [
         {
           src: path.resolve('src/Images/UI/icon.png'),
@@ -164,7 +164,7 @@ module.exports = {
         }
       ],
       orientation: 'portrait',
-      start_url: '/Chronicles_New/',
+      id: '/',
       scope: '/'
     }),
     new WorkboxPlugin.GenerateSW({

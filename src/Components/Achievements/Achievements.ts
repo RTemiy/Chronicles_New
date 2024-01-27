@@ -1,12 +1,14 @@
 import CContainer from '../../Classes/CContainer'
 import './Achievements.scss'
-import { achievementsManager } from '../../index'
+import { achievementsManager, tabManagerMenu } from '../../index'
 import CElementManager from '../../Classes/CElementManager'
 import { EStoriesEn, EStoriesRu } from '../../Utils/EStoriesNames'
+import { Profile } from '../Profile/Profile'
 
 const Achievements = new CContainer('achievements',
   `
 <p class="tab__title">Достижения</p>
+<button class="achievements__back-button"></button>
 <div class="achievements_block">
   <p class="achievements__amount"></p>
   <div class="achievements__buttons">
@@ -16,7 +18,8 @@ const Achievements = new CContainer('achievements',
 `,
   { name: 'amount', selector: '.achievements__amount' },
   { name: 'container', selector: '.achievements__container' },
-  { name: 'buttonsContainer', selector: '.achievements__buttons' }
+  { name: 'buttonsContainer', selector: '.achievements__buttons' },
+  { name: 'backButton', selector: '.achievements__back-button' }
 )
 
 export const renderAchievements = (story?: string): void => {
@@ -39,6 +42,10 @@ function renderAchievementsButtons (): void {
       renderAchievements(name)
     }
   })
+}
+
+Achievements.backButton.onclick = () => {
+  tabManagerMenu.open(Profile.self)
 }
 
 renderAchievementsButtons()

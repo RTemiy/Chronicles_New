@@ -3,7 +3,13 @@
 .profile__events{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
+}
+
+.profile__events::-webkit-scrollbar {
+  width: 5px;
 }
 
 .profile__event{

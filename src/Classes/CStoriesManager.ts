@@ -89,7 +89,7 @@ export default class CStoriesManager {
       result += `
       <div class="story">
         <div class="story__image-container">
-            <video autoplay muted loop preload='auto' class="story__image"><source src="${story.video}" type="video/mp4"/></video>
+            <video autoplay muted loop class="story__image"><source src="${story.video}" type="video/mp4"/></video>
             ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
             <p class="story__genre">${story.genre}</p>

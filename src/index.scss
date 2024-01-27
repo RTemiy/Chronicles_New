@@ -16,6 +16,10 @@ img{
   -webkit-user-drag: none;
 }
 
+a{
+  cursor: default;
+}
+
 body {
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);

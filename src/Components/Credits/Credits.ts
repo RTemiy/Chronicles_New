@@ -28,7 +28,7 @@ export const Credits = new CContainer(
 <h2 class="credits__subtitle">Время крыс</h2>
 
 <p class="credits__role">АВТОР СЦЕНАРИЯ</p>
-<p class="credits__name">Сергей</p>
+<p class="credits__name">Dipfiros</p>
 
 <p class="credits__role">РЕДАКТОР</p>
 <p class="credits__name">Мария Мармажова</p>
@@ -64,6 +64,5 @@ export const Credits = new CContainer(
 <h2 class="credits__subtitle">Прочее</h2>
 <p class="credits__role">СООСНОВАТЕЛЬ</p>
 <p class="credits__name">Вероника</p>
-
 `
 )

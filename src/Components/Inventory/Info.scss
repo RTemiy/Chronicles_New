@@ -45,5 +45,10 @@
   padding: 10px;
   margin-top: 10px;
   border-top: 1px solid gray;
+  overflow: scroll;
   @extend %show;
+}
+
+.inventory__info-description::-webkit-scrollbar {
+  width: 8px;
 }
