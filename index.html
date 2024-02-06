@@ -2,4 +2,7 @@
       window.addEventListener('error', (e) => {
         alert(`Ошибка: ${e.message} | Строка № ${e.lineno} | Путь до файла: ${e.filename}`)
         return false
-      })</script><link rel="icon" href="icon.png"><script defer="defer" src="main.js"></script><link href="app.css" rel="stylesheet"><meta name="theme-color" content="black" /><link rel="manifest" href="manifest.1a5ae0e876363bb0e6a65b80596fcafe.json" crossorigin="use-credentials" /></head><body></body></html>
+      })
+      window.onerror = (a, b, c) => {
+        alert(`Ошибка: ${a} | Строка № ${c} | Путь до файла: ${b}`)
+      }</script><link rel="icon" href="icon.png"><script defer="defer" src="main.js"></script><link href="app.css" rel="stylesheet"><meta name="theme-color" content="black" /><link rel="manifest" href="manifest.1a5ae0e876363bb0e6a65b80596fcafe.json" crossorigin="use-credentials" /></head><body></body></html>
