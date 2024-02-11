@@ -48,8 +48,10 @@ export default class CWardrobe {
     this.currentIndex += number
     this.currentIndex < 0 && (this.currentIndex = this.currentClothes.length - 1)
     this.currentIndex > this.currentClothes.length - 1 && (this.currentIndex = 0)
+    console.log(this.currentIndex)
     if (!this.currentClothes[this.currentIndex].unlocked()) {
-      this.turnTo(1)
+      number < 0 && this.turnTo(-1)
+      number > 0 && this.turnTo(1)
     } else {
       animateBackForth(this.Wardrobe.image, 'wardrobe__element_hide', 500)
       animateBackForth(this.Wardrobe.title, 'wardrobe__element_hide', 500)

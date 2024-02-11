@@ -2919,7 +2919,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 222,
     text:
       `
-        — Боюсь, сейчас у нас нет выбора. 
+        — Боюсь, сейчас у нас нет выбора.
       `,
     buttons: [
       {

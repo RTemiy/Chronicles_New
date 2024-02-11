@@ -70,6 +70,7 @@
   grid-template-rows: min-content min-content;
   padding: 10px;
   margin: 10px;
+  max-width: 380px;
   position: relative;
   overflow: hidden;
   @extend %styled-border;
@@ -114,4 +115,5 @@
   padding: 10px 5px 0 5px;
   margin: 10px 0 0 0;
   width: 80vw;
+  max-width: 360px;
 }

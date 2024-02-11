@@ -2,7 +2,7 @@ import CContainer from '../../Classes/CContainer'
 import './Achievements.scss'
 import { achievementsManager, tabManagerMenu } from '../../index'
 import CElementManager from '../../Classes/CElementManager'
-import { EStoriesEn, EStoriesRu } from '../../Utils/EStoriesNames'
+import { EStoriesAvailable, EStoriesEn, EStoriesRu } from '../../Utils/EStoriesNames';
 import { Profile } from '../Profile/Profile'
 
 const Achievements = new CContainer('achievements',
@@ -31,15 +31,19 @@ function renderAchievementsButtons (): void {
   const storiesNames = Object.keys(EStoriesEn)
   let result = ''
   storiesNames.forEach(name => {
-    result += `<button id="ab-${name}" type="button" class="achievements__button">${EStoriesRu[name]}</button>`
+    EStoriesAvailable[name] === 1 && (result += `<button id="ab-${name}" type="button" class="achievements__button">${EStoriesRu[name]}</button>`)
   })
   Achievements.buttonsContainer.innerHTML = result
   const allButtons = Achievements.buttonsContainer.querySelectorAll('.achievements__button')
   const achievementButtonsManager = new CElementManager()
   achievementButtonsManager.setCustomClassToChange('button-active')
-  storiesNames.forEach((name, index) => {
-    allButtons[index].onclick = () => {
-      renderAchievements(name)
+  let index = 0
+  storiesNames.forEach((name) => {
+    if (EStoriesAvailable[name] === 1) {
+      allButtons[index].onclick = () => {
+        renderAchievements(name)
+      }
+      index++
     }
   })
 }

@@ -6,7 +6,8 @@ import { showMessage } from '../Components/MenuMessage/MenuMessage'
 type ad = 'short' | 'medium' | 'long'
 
 export function showAd (type: ad, onAccepted: () => void): void {
-  let resCode = ''
+  !window.navigator.onLine && showMessage('Отсутствует подключение к интернету!', 'Принять')
+/*  let resCode = ''
   let platform = ''
   if (Ya.Context.AdvManager.getPlatform() === 'desktop') {
     platform = 'desktop'
@@ -42,12 +43,12 @@ export function showAd (type: ad, onAccepted: () => void): void {
       type: 'rewarded',
       platform,
       onRewarded: (isRewarded: boolean) => {
-        if (isRewarded) {
+        if (isRewarded) {*/
           onAccepted()
-        } else {
+/*        } else {
           showMessage('Вы прервали просмотр рекламы', 'Принять')
         }
       }
     })
-  })
+  })*/
 }

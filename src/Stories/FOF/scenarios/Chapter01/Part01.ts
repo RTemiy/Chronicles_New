@@ -1173,7 +1173,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: 'Вспомнить ощущение собственного превосходства',
-        goTo: 344
+        goTo: 344,
+        gift: true
       },
       {
         text: 'Не вспоминать',
@@ -1830,7 +1831,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: 'Вспомнить последний ужин с тетей',
-        goTo: 108
+        goTo: 108,
+        gift: true
       },
       {
         text: 'Не вспоминать',

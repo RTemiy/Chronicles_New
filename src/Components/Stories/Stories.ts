@@ -3,16 +3,18 @@ import './Stories.scss'
 import '../Common/StoriesStyles.scss'
 import { storiesManager, tabManagerMenu } from '../../index'
 import Chapters, { renderChapters } from '../Chapters/Chapters'
+import { showMessage } from '../MenuMessage/MenuMessage'
 
 const Stories = new CContainer(
   'stories',
   `
-<p class="tab__title">Истории</p>
+<p class="tab__title">Истории<img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"/></p>
 <div class="stories__container"></div>
 <div class="stories__slider-checkbox"></div>
 `,
   { name: 'storiesContainer', selector: '.stories__container' },
-  { name: 'sliderCheckbox', selector: '.stories__slider-checkbox' }
+  { name: 'sliderCheckbox', selector: '.stories__slider-checkbox' },
+  { name: 'infoButton', selector: '.icon_span' }
 )
 
 export const renderStories = (): void => {
@@ -24,6 +26,15 @@ export const renderStories = (): void => {
       tabManagerMenu.open(Chapters.self)
     }
   })
+}
+
+Stories.infoButton.onclick = () => {
+  showMessage(`
+  <p>Когда вы начинаете новую часть, тратится одна книжка.
+  <p>Книжки возобновляются каждые 2 часа, нажмите на иконку книжки в правом верхнем углу и узнайте сколько времени осталось.
+  <p>Максимальное количество — 3.
+  
+`, 'Принять')
 }
 
 export default Stories

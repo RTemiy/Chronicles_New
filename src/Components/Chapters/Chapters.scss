@@ -55,6 +55,7 @@
 }
 
 .chapter__container {
+  position: relative;
   z-index: 3;
   display: grid;
   align-items: center;
@@ -75,7 +76,7 @@
 }
 
 .chapter__name {
-  position: absolute;
+  position: relative;
   width: 235px;
   text-shadow:
     0 0 15px rgb(0, 0, 0),
@@ -85,8 +86,8 @@
   grid-row: 1;
   z-index: 3;
   text-align: center;
-  align-self: end;
-  margin: 0 0 15px 0;
+  bottom: 15px;
+  left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(5px);
 }

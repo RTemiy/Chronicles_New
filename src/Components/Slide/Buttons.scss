@@ -18,9 +18,15 @@
   max-width: 400px;
   width: 90vw;
   height: 40px;
+  display: flex;
   @extend %styled-border;
   @extend %button-tap;
   @extend %show;
   @extend %slide-container;
   border-radius: 10px;
+  p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

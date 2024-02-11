@@ -1,0 +1,71 @@
+@import "../Common/Common";
+
+.debugger{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  margin: auto;
+  z-index: 100;
+  @extend %show;
+}
+
+.debugger__close-button{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  background-image: url("../../Images/UI/icon_cross.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.debugger__window{
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  gap: 15px;
+  padding: 10px 3px 10px 10px;
+  width: 100vw;
+  height: 100vh;
+  max-width: 450px;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius;
+}
+
+.debugger__window::-webkit-scrollbar {
+  width: 7px;
+}
+
+.debugger__slide{
+  padding: 5px;
+  @extend %styled-border;
+  @extend %styled-radius;
+}
+
+.debugger__slide-id{
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.debugger__slide-text{
+  padding: 5px;
+}
+
+.debugger__buttons{
+  padding-top: 5px;
+  gap: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.debugger__button{
+  padding: 5px;
+}

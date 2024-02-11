@@ -61,8 +61,22 @@ export const Credits = new CContainer(
 <p class="credits__name">Альбина</p>
 <p class="credits__name">Артемий Голубятников</p>
 
+<h2 class="credits__subtitle">Непредсказуемая любовь</h2>
+
+<p class="credits__role">АВТОР СЦЕНАРИЯ</p>
+<p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Альбина</p>
+
+<p class="credits__role">РЕДАКТОР</p>
+<p class="credits__name">Мария Мармажова</p>
+
+<p class="credits__role">АРТЫ</p>
+<p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Альбина</p>
+
 <h2 class="credits__subtitle">Прочее</h2>
 <p class="credits__role">СООСНОВАТЕЛЬ</p>
 <p class="credits__name">Вероника</p>
+<img class="credits__image" src="${require('../../Images/UI/MVA.png')}">
 `
 )

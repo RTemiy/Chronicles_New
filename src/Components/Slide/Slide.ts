@@ -11,7 +11,7 @@ import './Achievement.scss'
 import './Effects.scss'
 import './Console.scss'
 import { animateBackForth } from '../../Functions/animateBackForth'
-import { doCommand } from '../../Functions/console';
+import { doCommand } from '../../Functions/console'
 
 export const Slide = new CContainer('slide',
   `
@@ -95,7 +95,11 @@ export function blackFlash (): void {
 }
 
 export function redPulsating (): void {
-  Slide.self.classList.toggle('slide_redPulseInfinite')
+  Slide.self.classList.add('slide_redPulseInfinite')
+}
+
+export function redPulsatingStop (): void {
+  Slide.self.classList.remove('slide_redPulseInfinite')
 }
 
 export function redFlash (): void {

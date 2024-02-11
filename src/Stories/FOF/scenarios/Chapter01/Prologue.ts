@@ -1,7 +1,7 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { redFlash, whiteFlash } from '../../../../Components/Slide/Slide'
-import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/TextConsts';
+import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/TextConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -154,7 +154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: 'Выложусь на все двести',
-        goTo: 11
+        goTo: 11,
       },
       {
         text: 'Выложусь точно на сто',
@@ -520,7 +520,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: 'Рассказать, погрузившись в приятные воспоминания',
-        goTo: 32
+        goTo: 32,
+        gift: true
       },
       {
         text: 'Не рассказывать',

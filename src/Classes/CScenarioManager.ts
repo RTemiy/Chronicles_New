@@ -145,7 +145,8 @@ export default class CScenarioManager {
           el.goTo !== undefined && this.beginScene(el.goTo)
         },
         isActive: el.isActive,
-        goTo: el.goTo
+        goTo: el.goTo,
+        gift: el.gift
       })
     })
     this.slide.setButtonValues(newButtons)
@@ -232,6 +233,10 @@ export default class CScenarioManager {
     const nameArray = this.#currentScenarioName.split('_')
     this.#statsManager.saveStats(true, nameArray[0], nameArray[1], nameArray[2])
     saveData(['LastSave_ScenarioInfo'], [nameArray[0], nameArray[1], nameArray[2], nameArray[3], sceneIndex])
+  }
+
+  getAllScenarioSlides (): IScene[] {
+    return this.#scenarios[this.#currentScenarioName]
   }
 
   loadLastSave (): void {

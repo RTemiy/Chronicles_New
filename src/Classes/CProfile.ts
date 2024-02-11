@@ -33,7 +33,7 @@ export default class CProfile {
     let unlockedAmount = 0
     this.avatars.forEach(avatar => {
       resultHTML = resultHTML + `
-      <img class='avatar ${!avatar.condition() ? 'image_silhouette' : ''}' src='${avatar.image}' style='${avatar.style}'>
+      <img class='avatar ${!avatar.condition() ? 'hidden-element' : ''}' src='${avatar.image}' style='${avatar.style}'>
       `
     })
     Profile.avatarsContainer.innerHTML = resultHTML
@@ -52,7 +52,7 @@ export default class CProfile {
     let unlockedAmount = 0
     this.banners.forEach(banner => {
       resultHTML = resultHTML + `
-      <img class='avatar ${!banner.condition() ? 'image_silhouette' : ''}' src='${banner.image}'>
+      <img class='avatar ${!banner.condition() ? 'hidden-element' : ''}' src='${banner.image}'>
       `
     })
     Profile.avatarsContainer.innerHTML = resultHTML

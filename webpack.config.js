@@ -14,7 +14,7 @@ const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
   entry: {
-    app: './src/index.ts'
+    app: ['./src/index.ts']
   },
   devtool: 'eval-source-map',
   output: {
@@ -81,45 +81,6 @@ module.exports = {
       }
     ]
   },
-  /* optimization: {
-    minimizer: [
-      '...',
-      new ImageMinimizerPlugin({
-        minimizer: {
-          implementation: ImageMinimizerPlugin.imageminMinify,
-          options: {
-            plugins: [
-              ['gifsicle', { interlaced: true }],
-              ['jpegtran', { progressive: true }],
-              ['optipng', { optimizationLevel: 5 }],
-              [
-                'svgo',
-                {
-                  plugins: [
-                    {
-                      name: 'preset-default',
-                      params: {
-                        overrides: {
-                          removeViewBox: false,
-                          addAttributesToSVGElement: {
-                            params: {
-                              attributes: [
-                                { xmlns: 'http://www.w3.org/2000/svg' }
-                              ]
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        }
-      })
-    ]
-  }, */
   resolve: {
     extensions: ['*', '.js', '.ts']
   },
@@ -164,13 +125,13 @@ module.exports = {
         }
       ],
       orientation: 'portrait',
-      id: '/',
+      id: '/Chronicles_New/',
       scope: '/'
     }),
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,
-      maximumFileSizeToCacheInBytes: 10000000
+      maximumFileSizeToCacheInBytes: 100000000
     })
   ]
 }

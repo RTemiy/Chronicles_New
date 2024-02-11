@@ -115,6 +115,7 @@
   transition: all 0.5s ease-in-out;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0 0 0 10px;
+  z-index: 5;
 }
 
 .story__mature {
@@ -129,6 +130,7 @@
   transition: all 0.5s ease-in-out;
   background-color: red;
   border-radius: 0 4px 4px 0;
+  z-index: 5;
 }
 
 .story__status {
@@ -144,6 +146,7 @@
   transition: all 0.5s ease-in-out;
   background-color: white;
   border-radius: 0 4px 4px 0;
+  z-index: 5;
 }
 
 @media (max-height: 840px) {

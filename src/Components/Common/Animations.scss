@@ -73,3 +73,11 @@
     filter: drop-shadow(0 0 5px white);
   }
 }
+
+.debris{
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  z-index: 15;
+  user-select: none;
+}

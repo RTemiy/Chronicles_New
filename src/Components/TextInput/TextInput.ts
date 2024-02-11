@@ -20,7 +20,7 @@ export const TextInput = new CContainer(
 export function askForInput (
   message: string,
   callback: (value: string) => void): void {
-  TextInput.message.innerText = message
+  TextInput.message.innerHTML = message + '<p>(Только русские буквы без специальных знаков и пробелов)'
   TextInput.input.value = ''
   TextInput.self.style.display = 'flex'
   validate()

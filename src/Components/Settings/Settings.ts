@@ -5,8 +5,10 @@ import { soundManager, tabManagerMenu } from '../../index'
 import { Credits } from '../Credits/Credits'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
-import { showMessage } from '../MenuMessage/MenuMessage'
+import { MenuMessage, showMessage } from '../MenuMessage/MenuMessage'
 import { showAd } from '../../Functions/advertisement'
+import makeExplosion from '../../Functions/explosion'
+import downloadProgress from '../../Functions/downloadProgress';
 
 const Settings = new CContainer(
   'settings',
@@ -61,6 +63,15 @@ const Settings = new CContainer(
 </div>
 <div class="settings__container">
 	<div class="settings__block">
+		<a id="downloadFile">Скачать сохранение</a>
+	</div>
+	<div class="settings__block">
+	  <a id="uploadFile">Установить сохранение</a>
+		<input id="uploadInput" style='display: none' type="file"/>
+	</div>
+</div>
+<div class="settings__container">
+	<div class="settings__block">
 		<a href=".">Проверить обновление</a>
 	</div>
 	<div class="settings__block">
@@ -73,7 +84,10 @@ const Settings = new CContainer(
   { name: 'creatorsButton', selector: '#creators-button' },
   { name: 'supportButton', selector: '#support-button' },
   { name: 'req01', selector: '#req-01' },
-  { name: 'req02', selector: '#req-02' }
+  { name: 'req02', selector: '#req-02' },
+  { name: 'downloadButton', selector: '#downloadFile' },
+  { name: 'uploadButton', selector: '#uploadFile' },
+  { name: 'uploadInput', selector: '#uploadInput' }
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
@@ -98,6 +112,7 @@ function loadSettings (): void {
 
 Settings.supportButton.onclick = () => {
   showAd('long', () => {
+    makeExplosion(MenuMessage.self, [`<img src="${require('../../Images/UI/icon_achievements.svg')}" class="icon_span"/>`])
     showMessage('Спасибо за поддержку Chronicles', 'Принять')
   })
 }
@@ -113,6 +128,30 @@ Settings.req02.onclick = () => {
     showMessage('Реквизиты успешно скопированы!', 'Принять')
   })
 }
+
+Settings.downloadButton.onclick = () => {
+  downloadProgress()
+}
+
+function readFile (): void {
+  const reader = new FileReader()
+  reader.readAsText(Settings.uploadInput.files[0])
+  reader.onload = () => {
+    const SV = JSON.parse(String(reader.result))
+    for (const prop in SV) {
+      localStorage.setItem(prop, SV[prop])
+    }
+    location.reload()
+  }
+}
+
+Settings.uploadButton.addEventListener('click', () => {
+  Settings.uploadInput.click()
+})
+
+Settings.uploadInput.addEventListener('change', () => {
+  readFile()
+})
 
 loadSettings()
 

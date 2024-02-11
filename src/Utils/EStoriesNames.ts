@@ -3,6 +3,7 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
+  UL = 'UL',
   FOF = 'FOF',
   AEP = 'AEP',
   Immortals = 'Immortals',
@@ -16,4 +17,14 @@ export enum EStoriesRu {
   ROR = 'Время крыс',
   AEP = 'Amore e passione',
   Aurora = 'Аврора',
+  UL = 'Непредсказуемая любовь'
+}
+
+export enum EStoriesAvailable {
+  UL = 1,
+  ROR = 1,
+  FOF = 1,
+  AEP = 1,
+  Immortals = 1,
+  Aurora = 1,
 }

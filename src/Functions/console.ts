@@ -1,5 +1,6 @@
 import { scenarioManager, statsManager } from '../index'
 import { EStoriesEn } from '../Utils/EStoriesNames'
+import showDebugger from '../Components/Debugger/Debugger'
 
 export function doCommand (input: string): void {
   const commands = input.split(' ')
@@ -16,6 +17,9 @@ export function doCommand (input: string): void {
           id: command[2],
           value: parseInt(command[3])
         })
+        break
+      case 'debugger':
+        showDebugger()
         break
     }
   })

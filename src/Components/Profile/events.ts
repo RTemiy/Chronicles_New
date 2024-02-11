@@ -4,7 +4,7 @@ export const events = [
   {
     title: 'Выпуск глобального обновления 2024',
     code: '2024_Global_Update',
-    achieve: true
+    achieve: false
   },
   {
     title: 'День всех влюблённых 2024',

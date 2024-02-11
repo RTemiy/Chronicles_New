@@ -1,6 +1,6 @@
 import type IAchievement from '../Types/IAchievement'
 import lock from '../Images/UI/Lock.png'
-import { type EStoriesEn } from '../Utils/EStoriesNames'
+import { EStoriesAvailable, type EStoriesEn } from '../Utils/EStoriesNames';
 import { loadData, saveData } from '../Functions/localStorageManager'
 import { sendActivity } from '../Functions/GSAPI';
 
@@ -26,11 +26,11 @@ export default class CAchievementsManager {
     let counterCompleted = 0
     for (const prop in this.#achievements) {
       if (story != null) {
-        this.#achievements[prop].story === story && counter++
-        this.#achievements[prop].story === story && (Boolean(this.#achievements[prop].unlocked)) && counterCompleted++
+        this.#achievements[prop].story === story && EStoriesAvailable[this.#achievements[prop].story] === 1 && counter++
+        this.#achievements[prop].story === story && EStoriesAvailable[this.#achievements[prop].story] === 1 && (Boolean(this.#achievements[prop].unlocked)) && counterCompleted++
       } else {
-        counter++
-        (Boolean(this.#achievements[prop].unlocked)) && counterCompleted++
+        EStoriesAvailable[this.#achievements[prop].story] === 1 && counter++
+        EStoriesAvailable[this.#achievements[prop].story] === 1 && (Boolean(this.#achievements[prop].unlocked)) && counterCompleted++
       }
     }
     return `${counterCompleted}/${counter}`
@@ -52,13 +52,13 @@ export default class CAchievementsManager {
     let render = ''
     for (const prop in this.#achievements) {
       if (typeof story === 'undefined' || this.#achievements[prop].story === story) {
-        render += `
+        EStoriesAvailable[this.#achievements[prop].story] === 1 && (render += `
       <div class="achievement  story-${this.#achievements[prop].story}">
         <img class="achievement__image" src="${this.#achievements[prop].unlocked ? this.#achievements[prop].image : lock}">
         <p class="achievement__title">${this.#achievements[prop].title}</p>
         <p class="achievement__text">${this.#achievements[prop].text}</p>
       </div>
-      `
+      `)
       }
     }
     return render

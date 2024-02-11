@@ -16,6 +16,19 @@
   @extend %show;
 }
 
+.profile__screenshot{
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  @extend %styled-border;
+  @extend %styled-radius;
+  border-radius: 0 0 0 10px;
+  width: 20px;
+  height: 20px;
+  @extend %button-tap;
+}
+
 .profile__block{
   position: relative;
   display: flex;

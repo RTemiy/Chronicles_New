@@ -51,6 +51,7 @@ export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 loadStories(EStoriesEn)
 
 hideDisclaimer()
+
 renderLoadingScreen(require('./Images/UI/loadingscreen.png'), () => {})
 
 preCacheImages(LoadingScreen.loadingPercent, () => {
@@ -73,4 +74,5 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   tabManagerMenu.open(Stories.self)
   soundManager.play('menu')
 }
+
 startBooksTimer()

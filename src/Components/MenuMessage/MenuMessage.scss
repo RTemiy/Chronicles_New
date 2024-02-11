@@ -21,6 +21,7 @@
   flex-direction: column;
   gap: 15px;
   margin: 0 15px;
+  max-width: 400px;
   @extend %styled-background;
   @extend %styled-radius;
   @extend %styled-border;
@@ -28,8 +29,15 @@
 
 .menu-message__text{
   display: flex;
+  flex-direction: column;
+  gap: 5px;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  text-align: left;
+  p{
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .menu-message__button{

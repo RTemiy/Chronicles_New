@@ -12,5 +12,11 @@ profileManager.addBanners([
     image: require('../../Images/UI/loadingscreen.png'),
     style: 'box-shadow: 0 0 15px 5px #007769',
     condition: () => loadData(['Promo', 'DemoBanner']) === '1'
+  },
+  {
+    id: 'Promo_Competition_2024_February_14_Banner',
+    image: require('../../Images/Events/2024_February_14_Banner.jpg'),
+    style: 'box-shadow: 0 0 15px pink; border: 0;',
+    condition: () => loadData(['Promo', 'Competition', '2024', 'February', '14']) === '1'
   }
 ])

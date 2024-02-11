@@ -3,6 +3,7 @@ import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { askForInput } from '../../../../Components/TextInput/TextInput'
 import { saveData } from '../../../../Functions/localStorageManager'
 import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/TextConsts'
+import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -423,7 +424,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 25,
     text:
       `
-        Фигура в плаще развела руками и проговорила:<p>— В Обычном городе, в обычном доме, в обычной семье. К чему это? Ты уже нафантазировала себе, что ты дочь серафима? Или, быть может, принцесса?
+        Фигура в плаще развела руками и проговорила:<p>— В обычном городе, в обычном доме, в обычной семье. К чему это? Ты уже нафантазировала себе, что ты дочь серафима? Или, быть может, принцесса?
       `,
     buttons: [
       {
@@ -798,6 +799,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 48
       }],
+    beforeBegin: whiteFlash,
     imageFront: require('../../../../Images/Immortals/Persons/Guide.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Tesla_Door.jpg')

@@ -4,6 +4,7 @@ import { EStoriesEn } from '../Utils/EStoriesNames'
 import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
+import { showAd } from '../Functions/advertisement';
 
 export default class CSlide {
   private previousSlideText = ''
@@ -36,7 +37,7 @@ export default class CSlide {
       }
     } else if (backImage === undefined) {
       this.slide.backgroundImage.display = 'none'
-      this.slide.backgroundImage.setAttribute('src', '')
+      this.slide.backgroundImage.setAttribute('src', require('../Images/UI/Transparent.png'))
     }
     if (leftImage !== undefined && leftImage !== '') {
       if (!this.slide.imageLeft.src.includes(leftImage)) {
@@ -46,7 +47,7 @@ export default class CSlide {
       this.slide.imageLeft.style.display = 'block'
     } else if (leftImage === undefined) {
       this.slide.imageLeft.display = 'none'
-      this.slide.imageLeft.setAttribute('src', '')
+      this.slide.imageLeft.setAttribute('src', require('../Images/UI/Transparent.png'))
     }
     if (middleImage !== undefined && middleImage !== '') {
       if (!this.slide.imageMiddle.src.includes(middleImage)) {
@@ -56,7 +57,7 @@ export default class CSlide {
       this.slide.imageMiddle.style.display = 'block'
     } else if (middleImage === undefined) {
       this.slide.imageMiddle.display = 'none'
-      this.slide.imageMiddle.setAttribute('src', '')
+      this.slide.imageMiddle.setAttribute('src', require('../Images/UI/Transparent.png'))
     }
     if (rightImage !== undefined && rightImage !== '') {
       if (!this.slide.imageRight.src.includes(rightImage)) {
@@ -66,7 +67,7 @@ export default class CSlide {
       this.slide.imageRight.style.display = 'block'
     } else if (rightImage === undefined) {
       this.slide.imageRight.display = 'none'
-      this.slide.imageRight.setAttribute('src', '')
+      this.slide.imageRight.setAttribute('src', require('../Images/UI/Transparent.png'))
     }
     if (frontImage !== undefined && frontImage !== '') {
       if (!this.slide.imageFront.src.includes(frontImage)) {
@@ -76,7 +77,7 @@ export default class CSlide {
       this.slide.imageFront.style.display = 'block'
     } else if (frontImage === undefined) {
       this.slide.imageFront.display = 'none'
-      this.slide.imageFront.setAttribute('src', '')
+      this.slide.imageFront.setAttribute('src', require('../Images/UI/Transparent.png'))
     }
     if (borderImage !== undefined && borderImage !== '') {
       this.slide.border.src = borderImage
@@ -165,13 +166,25 @@ export default class CSlide {
       this.slide.backgroundImage.onclick = () => {}
       const buttonsArray = this.getButtonsArray()
       buttons.forEach((button, index) => {
-        buttonsArray[index].onclick = () => {
-          buttons[index].func!()
+        if (!buttons[index].gift) {
+          buttonsArray[index].innerText = buttons[index].text
+          buttonsArray[index].onclick = () => {
+            buttons[index].func!()
+          }
+        } else {
+          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span"/></p>`
+          buttonsArray[index].onclick = () => {
+            showAd('medium', () => {
+              buttons[index].func!()
+            })
+          }
         }
         if (buttons[index].isActive === undefined || buttons[index].isActive!) {
-          buttonsArray[index].style.display = 'block'
-        } else buttonsArray[index].style.display = 'none'
-        buttonsArray[index].innerText = buttons[index].text
+          buttonsArray[index].style.display = 'inline'
+        } else {
+          buttonsArray[index].style.display = 'none'
+          buttonsArray[index].innerText = buttons[index].text
+        }
       })
     }
   }

@@ -19,5 +19,9 @@ const promoCodes = [
   {
     code: 'demoBanner',
     func: () => { saveData(['Promo', 'DemoBanner'], ['1']) }
+  },
+  {
+    code: 'qly52axc',
+    func: () => { saveData(['Promo', 'Competition', '2024', 'February', '14'], ['1']) }
   }
 ]

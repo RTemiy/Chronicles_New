@@ -1,5 +1,6 @@
 import type IStory from '../Types/IStory'
 import { loadData } from '../Functions/localStorageManager'
+import { EStoriesAvailable } from '../Utils/EStoriesNames'
 
 export default class CStoriesManager {
   #stories: IStory[] = []
@@ -15,7 +16,7 @@ export default class CStoriesManager {
   getStoriesNames (): string[] {
     const res: string[] = []
     this.#stories.forEach(story => {
-      res.push(story.name)
+      EStoriesAvailable[story.name] === 1 && res.push(story.name)
     })
     return res
   }
@@ -48,21 +49,18 @@ export default class CStoriesManager {
     return res
   }
 
-  getPartsInfo (): { allParts: number, completedParts: number, uncompletedParts: number } {
-    let allParts = 0
-    let completedParts = 0
-    let uncompletedParts = 0
+  getPartsInfo (): { allStories: number, beginnedStories: number } {
+    let allStories = 0
+    let beginnedStories = 0
     this.#stories.forEach(story => {
-      allParts -= 2
+      allStories++
       story.chapters.forEach(chapter => {
-        chapter.parts.forEach(part => {
-          loadData([story.name, chapter.name, part.name, part.code, 'Unlocked']) === '1' && completedParts++
-          allParts++
-        })
+        chapter.parts.find(part => {
+          return loadData([story.name, chapter.name, part.name, part.code, 'Unlocked']) === '1'
+        }) && beginnedStories++
       })
     })
-    uncompletedParts = allParts - completedParts
-    return { allParts, completedParts, uncompletedParts }
+    return { allStories, beginnedStories }
   }
 
   getPartProp (storyName: string, chapterName: string, partName: string, prop: string): any {
@@ -86,10 +84,10 @@ export default class CStoriesManager {
   getStoriesHTML (): string {
     let result = ''
     this.#stories.forEach(story => {
-      result += `
+      EStoriesAvailable[story.name] === 1 && (result += `
       <div class="story">
         <div class="story__image-container">
-            <video autoplay muted loop class="story__image"><source src="${story.video}" type="video/mp4"/></video>
+            <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
             ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
             <p class="story__genre">${story.genre}</p>
@@ -98,7 +96,7 @@ export default class CStoriesManager {
         <p class="story__button">Читать</p>
       </div>
       
-      `
+      `)
     })
     return result
   }
