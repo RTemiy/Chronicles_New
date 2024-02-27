@@ -35,11 +35,11 @@ function nowTime (): string {
 }
 
 export function sendActivity (action: string): void {
-  post({
+  /*post({
     method: 'activity',
     date: nowDate(),
     time: nowTime(),
     id: loadData(['Profile', 'ID']),
     action
-  })
+  })*/
 }

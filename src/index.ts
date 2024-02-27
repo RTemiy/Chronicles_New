@@ -29,6 +29,7 @@ import CWardrobe from './Classes/CWardrobe'
 import { showCutscene } from './Components/CutScene/CutScene'
 import { Wardrobe } from './Components/Wardrobe/Wardrobe'
 import { Profile } from './Components/Profile/Profile'
+import { showRate } from './Components/Rate/Rate'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -73,6 +74,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   MenuToolbar.self.style.display = 'flex'
   tabManagerMenu.open(Stories.self)
   soundManager.play('menu')
+  showRate(storyName + chapterName + partName + code)
 }
 
 startBooksTimer()

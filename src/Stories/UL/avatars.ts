@@ -22,5 +22,10 @@ profileManager.addAvatars([
     id: 'UL_David',
     image: require('../../Images/UL/Persons/David_Casual.png'),
     condition: () => achievementsManager.isUnlocked(EStoriesEn.UL, 'Part01Completed')
+  },
+  {
+    id: 'UL_Paul',
+    image: require('../../Images/UL/Persons/Paul_Casual.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.UL, 'Part02Completed')
   }
 ])

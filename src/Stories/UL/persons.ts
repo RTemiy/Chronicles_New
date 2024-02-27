@@ -24,10 +24,10 @@ statsManager.add({
 statsManager.add({
   category: 'Person',
   id: 'Doctor',
-  name: 'Доктор',
-  image: require('../../Images/UL/Persons/David_Casual.png'),
-  title: 'Доктор',
-  description: 'Доктор',
+  name: 'Джозеф',
+  image: require('../../Images/UL/Persons/Doctor_Casual.png'),
+  title: 'Мой лечащий врач.',
+  description: 'Заботливый мужчина, который проявляет ко мне чуть больше внимания, чем положено врачу. Испытывает ли он ко мне чувства?',
   story: EStoriesEn.UL
 })
 
@@ -35,8 +35,8 @@ statsManager.add({
   category: 'Person',
   id: 'Paul',
   name: 'Пол',
-  image: require('../../Images/UL/Persons/David_Casual.png'),
-  title: 'Пол',
-  description: 'Пол',
+  image: require('../../Images/UL/Persons/Paul_Casual.png'),
+  title: 'Ласковый незнакомец, утверждающий, что он мой парень.',
+  description: 'Порой слишком ревнивый, смотрит на меня любящими глазами. Но почему он не торопился найти меня?',
   story: EStoriesEn.UL
 })

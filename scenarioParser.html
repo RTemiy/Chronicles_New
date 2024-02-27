@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Chronicles Scenario Parser</title>
-    <style >
+    <style>
       :root {
         --backgroundColor: #1f1f1f;
         --textColor: #a8a8a8;
@@ -44,7 +44,6 @@
 </p>
 <p>
     <script>
-
       // Присваиваем константам элементы документов с которыми будем взаимодействовать
       const inputTitle = document.querySelector('#inputTextTitle');
       const input = document.querySelector('#inputText');
@@ -59,13 +58,10 @@
       buttonDo.onclick = () => {
         out.value = makeScene(inputTitle.value, input.value);
       }
-
       // Функция создания кода из текста сценария
       function makeScene(name,text){
-
         // Объект со всеми сценами
         const scenes = {};
-
         // Заготовка кода одного слайда
         const scenePrefab = '' +
           '\n  {' +
@@ -74,6 +70,7 @@
           '\n    buttons: [\n      {\n        text: \'\',\n        goTo: $INDEXPLUS$\n      }],' +
           '$MESSAGE$' +
           '$MUSIC$' +
+          '$AMBIENT$' +
           '$SPEAKER$' +
           '$PICTUREFRONT$' +
           '$CUTSCENE$' +
@@ -82,68 +79,54 @@
           '\n    achievement: $ACHIEVEMENT$' +
           '\n    imageBack: require(\'../../../../Images/$NAME$/-$PICTURE$-\')' +
           '  \n  },'
-
         // Отделяем каждый слайд если кол-во отступов 3+ и каждый абзац разделяем при кол-ве отступов 1
         scenes[name] = text.split(/\n\n\n+/g).map(slide => slide.split('\n'));
-
         // Сэты с уникальными названиями
         const allPictures = new Set();
         const allMusic = new Set();
         const allItems = new Set();
         const allStats = new Set();
         const allAchievements = new Set();
-
         // Выводимый результат
         let result = ``;
-
         // Кэшируем последнюю используемую картинку
         let picture = '';
-
         // Проходимся по всем созданным слайдам
         for(let x = 0; x<scenes[name].length;x++){
-
           // Копируем заготовку кода одного слайда
           let value = scenePrefab.slice();
-
           // Проходимся по всем абзацам в слайде
           for(let y =0; y<scenes[name][x].length;y++){
 
             // В зависимости от наличия ключевого слова делаем действие
             if(/! Фон:* /.test(scenes[name][x][y])) {
-
               // Заменяем картинку пустой строкой
               scenes[name][x][y] = scenes[name][x][y].replace(/! Фон:* /, '');
               // Добавляем название картинки в сэт
               allPictures.add(scenes[name][x][y]);
-
               // Вырезаем и кешируем значение картинки
               picture = scenes[name][x].splice(y,1);
-
               // Обязательно откатываем шаг назад т.к. ВЫРЕЗАЛИ элемент массива
               y-=1;
             } else if (/! Объект:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Объект:* /, '');
               // Добавляем название картинки в сэт
               allPictures.add(scenes[name][x][y]);
-
               // Заменяем ключевое слово на значение
               value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../../Images/$NAME$/UI/Border.png\'),`);
               y-=1;
             } else if (/! Табличка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Табличка:* /, '');
-
               // Заменяем ключевое слово на значение
               value = value.replaceAll('$MESSAGE$',`\n    message: '${scenes[name][x].splice(y,1)}',`);
               y-=1;
             } else if (/! Реплика:* /.test(scenes[name][x][y])) {
                 scenes[name][x][y] = scenes[name][x][y].replace(/! Реплика:* /, '');
-
                 // Заменяем ключевое слово на значение
                 value = value.replaceAll('$SPEAKER$',`\n    speaker: '${scenes[name][x].splice(y,1)}',`);
                 y-=1;
             } else if (/! Кат-Сцена:* /.test(scenes[name][x][y])) {
                 scenes[name][x][y] = scenes[name][x][y].replace(/! Кат-Сцена:* /, '');
-
                 // Заменяем ключевое слово на значение
                 value = value.replaceAll('$CUTSCENE$',`\n    cutScene: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
                 y-=1;
@@ -160,13 +143,18 @@
                 y-=1;
             } else if (/! Музыка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Музыка:* /, '');
-
               // Добавляем название музыки в сэт
               allMusic.add(scenes[name][x][y]);
-
               value = value.replaceAll('$MUSIC$',`\n    music: require('../../../../Sounds/${name}/=${scenes[name][x].splice(y,1)}='),`);
               y-=1;
-            } else if (/! Предмет:* /.test(scenes[name][x][y])) {
+            } else if (/! Эмбиент:* /.test(scenes[name][x][y])) {
+                scenes[name][x][y] = scenes[name][x][y].replace(/! Эмбиент:* /, '');
+                // Добавляем название музыки в сэт
+                allMusic.add(scenes[name][x][y]);
+                value = value.replaceAll('$AMBIENT$',`\n    ambient: require('../../../../Sounds/${name}/=${scenes[name][x].splice(y,1)}='),`);
+                y-=1;
+            }
+            else if (/! Предмет:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Предмет:* /, '');
               let word = scenes[name][x][y].split(' ');
               const itemAmount = word.pop();
@@ -192,33 +180,29 @@
               y-=1;
             }
           }
-
           // Соединяем абзацы при помощи <p>
           scenes[name][x] = scenes[name][x].join('<p>');
-
           // Удаляем <p> в начале
           if (scenes[name][x].startsWith('<p>')) scenes[name][x] = scenes[name][x].replace('<p>', '');
-
           // Заменяем ключевые слова на значения
           value = value.replaceAll('$NAME$',name);
           value = value.replaceAll('$PICTURE$', picture);
           value = value.replaceAll('$INDEX$', x + '');
           value = value.replaceAll('$INDEXPLUS$', x + 1 + '');
           value = value.replaceAll('$TEXT$', `${scenes[name][x]}`);
-
           // Удаляем ключевые слова, если не использовались
           value = value.replaceAll('$ITEM$','');
           value = value.replaceAll('$STAT$','');
           value = value.replaceAll('$MESSAGE$','');
           value = value.replaceAll('$MUSIC$','');
+          value = value.replaceAll('$AMBIENT$','');
           value = value.replaceAll('$SPEAKER$','');
           value = value.replaceAll('$CUTSCENE$','');
           value = value.replaceAll('$PICTUREFRONT$','');
-            value = value.replaceAll('$DARKS$','');
+          value = value.replaceAll('$DARKS$','');
           value = value.replaceAll('\n    stats: [],','');
           value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
           value = value.replaceAll('\n    doBeforeBegin: () => {\n      },','');
-
           // Добавляем код слайда в строку
           result += value + '\n';
         }
@@ -251,7 +235,6 @@
         return result;
 
       }
-
     </script>
 
 </body>

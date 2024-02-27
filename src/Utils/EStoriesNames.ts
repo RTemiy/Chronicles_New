@@ -21,7 +21,7 @@ export enum EStoriesRu {
 }
 
 export enum EStoriesAvailable {
-  UL = 1,
+  UL = 0,
   ROR = 1,
   FOF = 1,
   AEP = 1,

@@ -1,0 +1,84 @@
+@import '../Common/Common';
+
+.rate{
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(15px);
+  align-items: center;
+  justify-content: center;
+  @extend %show;
+  z-index: 25;
+}
+
+.rate__container{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 15px;
+  margin: 0 25px;
+  width: 90vw;
+  max-width: 450px;
+  @extend %styled-radius;
+  @extend %styled-background;
+  @extend %styled-border;
+}
+
+.rate__title{
+  text-align: center;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.rate__input{
+  font-family: var(--font);
+  padding: 10px;
+  @extend %styled-radius;
+  @extend %styled-border;
+  height: 75px;
+}
+
+.rate__stars{
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.rate__star{
+  width: 35px;
+  height: 35px;
+  background-image: url('../../Images/UI/icon_star.svg');
+  background-size: cover;
+}
+
+.rate__star_active{
+  background-image: url('../../Images/UI/icon_star_active.svg');
+}
+
+.rate__buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.rate__button{
+  min-width: 125px;
+  width: 20%;
+  height: 35px;
+  @extend %styled-border;
+  @extend %styled-radius;
+  @extend %button-tap;
+  @extend %show;
+  padding: 5px;
+}
+

@@ -1,5 +1,6 @@
 import CContainer from '../../Classes/CContainer'
 import './Stories.scss'
+import './Slider.scss'
 import '../Common/StoriesStyles.scss'
 import { storiesManager, tabManagerMenu } from '../../index'
 import Chapters, { renderChapters } from '../Chapters/Chapters'

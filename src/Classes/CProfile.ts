@@ -77,7 +77,7 @@ export default class CProfile {
     const avatar = this.findAvatar(avatarId)
     Profile.avatar.src = avatar.image
     Profile.avatar.setAttribute('style', `${avatar.style}`)
-    loadData(['Profile', 'Avatar']) !== avatarId && sendActivity(`Установил баннер ${avatarId}`)
+    loadData(['Profile', 'Avatar']) !== avatarId && sendActivity(`Установил аватар ${avatarId}`)
     saveData(['Profile', 'Avatar'], [avatarId])
   }
 
@@ -85,7 +85,7 @@ export default class CProfile {
     const banner = this.findBanner(bannerId)
     Profile.banner.src = banner.image
     Profile.banner.setAttribute('style', `${banner.style}`)
-    loadData(['Profile', 'Banner']) !== bannerId && sendActivity(`Установил аватар ${bannerId}`)
+    loadData(['Profile', 'Banner']) !== bannerId && sendActivity(`Установил баннер ${bannerId}`)
     saveData(['Profile', 'Banner'], [bannerId])
   }
 

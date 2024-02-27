@@ -1,0 +1,164 @@
+@import '../Common/Common';
+
+.case-simulator{
+  position: absolute;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.75);
+  @extend %show;
+  z-index: 15;
+}
+
+.case-simulator__close-button {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background-image: url('../../Images/UI/icon_cross.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+  z-index: 5;
+  @extend %button-tap;
+}
+
+.case-simulator__container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-simulator__cases{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 10px;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %show;
+}
+
+.case-simulator__case-cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 160px;
+  height: 180px;
+  &>img{
+    width: 75px;
+  }
+  &>p{
+    width: 150px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 10px;
+  }
+  @extend %button-tap;
+  @extend %styled-border;
+}
+
+.case-simulator__caseItems{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 15px;
+  overflow: scroll;
+  gap: 15px;
+  @extend %styled-radius;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %show;
+}
+
+.case-simulator__caseItem{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 150px;
+  height: 200px;
+  padding: 5px;
+  @extend %styled-border;
+  &>img{
+    max-width: 100px;
+    object-fit: scale-down;
+  }
+}
+
+.case-simulator__caseItem-rarity{
+  margin: 5px 0 auto 0;
+  font-weight: 800;
+  font-size: var(--smalltext);
+  padding: 5px 0;
+  border-top: 1px solid  white;
+  border-bottom: 1px solid  white;
+}
+
+.case-simulator__caseItem-name{
+  margin: auto 0 5px 0;
+  font-weight: 800;
+  font-size: var(--smalltext);
+}
+
+.case-simulator__choose-button{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 15px white;
+  font-weight: 800;
+  font-size: var(--bigtext);
+  text-align: center;
+  border-radius: 0 0 15px 15px ;
+  @extend %styled-border;
+  @extend %styled-background;
+  @extend %button-tap;
+  @extend %show;
+}
+
+.case-simulator__back-button{
+  display: none;
+  top: 15px;
+  left: 15px;
+  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+  padding: 10px;
+  position: fixed;
+  background-image: url(../../Images/UI/icon_back.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35px;
+  z-index: 2;
+  @extend %button-tap;
+  @extend %show;
+}
+
+.case-simulator__caseItemsRoll{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @extend %show;
+
+  &>img{
+    max-width: 90%;
+    filter: drop-shadow(0 0 10px white);
+  }
+  &>p{
+    font-weight: 800;
+    padding-top: 10px;
+    font-size: var(--bigtext);
+  }
+
+}

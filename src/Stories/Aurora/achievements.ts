@@ -40,3 +40,19 @@ achievementsManager.add({
   text: 'Отправьтесь с Авророй в неизвестное будущее',
   story: EStoriesEn.Aurora
 })
+
+achievementsManager.add({
+  name: 'MusicLover',
+  image: require('../../Images/Aurora/Backgrounds/Suburbs.jpg'),
+  title: 'Меломан',
+  text: 'Выберите музыку по вкусу',
+  story: EStoriesEn.Aurora
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part02Completed',
+  image: require('../../Images/Aurora/Backgrounds/University_Hall.jpg'),
+  title: 'Студенческие будни',
+  text: 'Завершите вторую часть интересной встречей',
+  story: EStoriesEn.Aurora
+})

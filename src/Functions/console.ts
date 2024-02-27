@@ -1,6 +1,8 @@
 import { scenarioManager, statsManager } from '../index'
 import { EStoriesEn } from '../Utils/EStoriesNames'
 import showDebugger from '../Components/Debugger/Debugger'
+import { beginMiniGameMemory } from '../Components/MiniGameMemory/MiniGameMemory'
+import { showCaseSimulator } from '../Components/CaseSimulator/CaseSimulator';
 
 export function doCommand (input: string): void {
   const commands = input.split(' ')
@@ -20,6 +22,12 @@ export function doCommand (input: string): void {
         break
       case 'debugger':
         showDebugger()
+        break
+      case 'MiniGameMemory':
+        beginMiniGameMemory({ roundsInARowToWin: 3, beginningPathAmount: 3, lives: 3 })
+        break
+      case 'CaseSimulator':
+        showCaseSimulator()
         break
     }
   })

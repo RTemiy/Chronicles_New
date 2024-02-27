@@ -56,3 +56,43 @@ achievementsManager.add({
   text: 'Завершить сборы',
   story: EStoriesEn.ROR
 })
+
+achievementsManager.add({
+  name: 'NoMortimerHelp',
+  image: require('../../Images/ROR/Backgrounds/Chapel.jpg'),
+  title: 'Не подведите свои желания',
+  text: 'Пройти в часовню без помощи Мортимера',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'BestMiniGame',
+  image: require('../../Images/ROR/Backgrounds/Stone_Hatch.jpg'),
+  title: 'Глаз-алмаз',
+  text: 'Победить в мини-игре с первого раза',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'KillStranger',
+  image: require('../../Images/ROR/Backgrounds/Bunkplace.jpg'),
+  title: 'И часовню тоже я',
+  text: 'Убить незнакомца и облегчить участь больных',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'BuyPerfume',
+  image: require('../../Images/ROR/Items/Perfume.png'),
+  title: 'Подарок для прекрасных дам',
+  text: 'Купить у Хьюго духи',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part02Completed',
+  image: require('../../Images/ROR/Backgrounds/Chapel_Body_Fire.jpg'),
+  title: 'Добро пожаловать на бал',
+  text: 'Переживите ночь в Гласвере',
+  story: EStoriesEn.ROR
+})

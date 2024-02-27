@@ -40,3 +40,23 @@ statsManager.add({
   description: 'Небольшое количество лакомств для лошадей.',
   story: EStoriesEn.ROR
 })
+
+statsManager.add({
+  category: 'Item',
+  id: 'Letter01',
+  name: 'Письмо',
+  image: require('../../Images/ROR/Items/Envelope.png'),
+  title: 'Таинственное приглашение',
+  description: 'Полное описание: Конверт, в котором рассказывается о собрании странных незнакомцев.',
+  story: EStoriesEn.ROR
+})
+
+statsManager.add({
+  category: 'Item',
+  id: 'Perfume',
+  name: 'Флакон',
+  image: require('../../Images/ROR/Items/Perfume.png'),
+  title: 'Синяя склянка чарующего запаха',
+  description: 'Полное описание: Форма и содержимое вызывает вопросы. Правильно ли я поступил, купив этот предмет?',
+  story: EStoriesEn.ROR
+})

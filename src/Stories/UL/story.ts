@@ -20,10 +20,20 @@ storiesManager.add({
         }
       },
       {
-        name: 'Скоро',
+        name: 'Часть 2',
         code: '0',
-        image: require('../../Images/UI/background.png'),
-        loadingImage: require('../../Images/FOF/Covers/Part01.jpg'),
+        image: require('../../Images/UL/Backgrounds/Big_House.jpg'),
+        loadingImage: require('../../Images/UL/Covers/Part02_LS.png'),
+        event: (storyName: string, chapterName: string, partName: string, code: string) => {
+          scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+          statsManager.loadStats(false, storyName, chapterName, partName, code)
+        }
+      },
+      {
+        name: 'Часть 3',
+        code: '0',
+        image: require('../../Images/UL/Backgrounds/Garden.jpg'),
+        loadingImage: require('../../Images/UL/Covers/Part03_LS.png'),
         event: (storyName: string, chapterName: string, partName: string, code: string) => {
           scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           statsManager.loadStats(false, storyName, chapterName, partName, code)

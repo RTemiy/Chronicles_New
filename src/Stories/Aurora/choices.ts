@@ -50,3 +50,13 @@ statsManager.add({
   image: require('../../Images/Aurora/Effects/Romantic.svg'),
   story: EStoriesEn.Aurora
 })
+
+statsManager.add({
+  category: 'Effect',
+  name: 'Дух Авроры',
+  id: 'Spirit',
+  title: '',
+  description: '',
+  image: require('../../Images/Aurora/Effects/Spirit.svg'),
+  story: EStoriesEn.Aurora
+})

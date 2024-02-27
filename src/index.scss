@@ -93,3 +93,9 @@ button {
 iframe {
   display: none;
 }
+
+.no-select{
+  user-select: none;
+  pointer-events: none;
+
+}
