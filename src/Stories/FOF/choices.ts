@@ -48,3 +48,9 @@ statsManager.add({
   id: 'WhoAreYou',
   story: EStoriesEn.FOF
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'SeeHouse',
+  story: EStoriesEn.FOF
+})

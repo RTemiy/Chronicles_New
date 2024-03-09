@@ -75,6 +75,7 @@
           '$PICTUREFRONT$' +
           '$CUTSCENE$' +
           '$DARKS$' +
+          '$GHOSTS$' +
           '\n    stats: [$STAT$$ITEM$],' +
           '\n    achievement: $ACHIEVEMENT$' +
           '\n    imageBack: require(\'../../../../Images/$NAME$/-$PICTURE$-\')' +
@@ -141,6 +142,11 @@
                 value = value.replaceAll('$DARKS$',`darkSilhouette: true,`);
                 scenes[name][x].splice(y,1)
                 y-=1;
+            } else if (/! Призрак/.test(scenes[name][x][y])) {
+                scenes[name][x][y] = scenes[name][x][y].replace(/! Призрак/, '');
+                value = value.replaceAll('$GHOSTS$',`ghostSilhouette: true,`);
+                scenes[name][x].splice(y,1)
+                y-=1;
             } else if (/! Музыка:* /.test(scenes[name][x][y])) {
               scenes[name][x][y] = scenes[name][x][y].replace(/! Музыка:* /, '');
               // Добавляем название музыки в сэт
@@ -200,6 +206,7 @@
           value = value.replaceAll('$CUTSCENE$','');
           value = value.replaceAll('$PICTUREFRONT$','');
           value = value.replaceAll('$DARKS$','');
+            value = value.replaceAll('$GHOSTS$','');
           value = value.replaceAll('\n    stats: [],','');
           value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
           value = value.replaceAll('\n    doBeforeBegin: () => {\n      },','');

@@ -32,6 +32,16 @@ storiesManager.add({
           }
         },
         {
+          name: 'Часть 2',
+          code: '0',
+          image: require('../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg'),
+          loadingImage: require('../../Images/Immortals/Covers/Part02.png'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
           name: 'Скоро',
           code: '0',
           image: require('../../Images/UI/background.png'),

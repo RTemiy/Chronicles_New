@@ -1,9 +1,9 @@
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 
-/* export type statCategory = 'Choice' | 'Person' | 'Item' | 'Effect' */
+export type statCategory = 'Choice' | 'Person' | 'Item' | 'Effect'
 
 export default interface IStat {
-  story: EStoriesEn
+  story?: EStoriesEn | string
   category: string
   id: string
   silent?: boolean

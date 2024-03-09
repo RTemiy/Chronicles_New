@@ -62,6 +62,10 @@ export default class CScenarioManager {
     return this.#currentScenarioName
   }
 
+  getCurrentStoryName (): string {
+    return this.#currentScenarioName.split('_')[0]
+  }
+
   beginScene (sceneIndex: number, func?: () => void): void {
     this.#doLastSave(sceneIndex)
     setCurrentSlideId(sceneIndex)
@@ -97,10 +101,12 @@ export default class CScenarioManager {
     let res = false
     if (condition !== undefined) {
       condition.forEach(condition => {
-        if (condition.condition()) {
-          this.beginScene(condition.goTo)
-          res = true
-        }
+        setTimeout(() => {
+          if (condition.condition()) {
+            this.beginScene(condition.goTo)
+            res = true
+          }
+        }, 0)
       })
       return res
     } else {
@@ -126,6 +132,7 @@ export default class CScenarioManager {
 
   #doStats (stats: IStat[]): void {
     stats.forEach(stat => {
+      stat.story = this.getCurrentStoryName()
       this.#statsManager.change(stat)
       if (stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
         if (stat.silent === false || stat.silent === undefined) {

@@ -1,7 +1,7 @@
-import { achievementsManager, saveEndProgress, scenarioManager, statsManager } from '../../../../index'
-import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { beginMiniGameMemory } from '../../../../Components/MiniGameMemory/MiniGameMemory'
-import { redFlash } from '../../../../Components/Slide/Slide'
+import { achievementsManager, saveEndProgress, scenarioManager, statsManager } from '../../../../index';
+import { EStoriesEn } from '../../../../Utils/EStoriesNames';
+import { beginMiniGameMemory } from '../../../../Components/MiniGameMemory/MiniGameMemory';
+import { redFlash } from '../../../../Components/Slide/Slide';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глава 1', partName: 'Часть 2', code: '0' }, [
   {
@@ -17,12 +17,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
+          console.log(statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }))
           return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) < 100
         },
         goTo: 1
       },
       {
         condition: () => {
+          console.log(statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }))
           return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) >= 100
         },
         goTo: 75
@@ -2923,6 +2925,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     imageFront: require('../../../../Images/ROR/Persons/Stranger_Scared.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    stats: [{ story: EStoriesEn.ROR, category: 'Choice', id: 'KillStranger', value: +1 }],
     achievement: { story: EStoriesEn.ROR, name: 'KillStranger' },
     imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Body.jpg')
   },

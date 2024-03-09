@@ -49,3 +49,51 @@ achievementsManager.add({
   text: 'Пройти первую часть',
   story: EStoriesEn.Immortals
 })
+
+achievementsManager.add({
+  name: 'KnowledgeIsTheBest',
+  image: require('../../Images/Immortals/Items/Study.png'),
+  title: 'Знания — сила!',
+  text: 'Использовать свои знания, чтобы задать дополнительный вопрос Тесле',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'Shock',
+  image: require('../../Images/Immortals/Persons/Nicola.png'),
+  title: 'Шок',
+  text: 'Шокировать Теслу',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'CrazyGirl',
+  image: require('../../Images/Immortals/Backgrounds/NY_1885.jpg'),
+  title: 'Сумасшедшая',
+  text: 'Убежать от Теслы',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'Unknown',
+  image: require('../../Images/Immortals/Persons/Monster.png'),
+  title: 'Нечто',
+  text: 'Впервые увидеть монстра',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'WantToBelieve',
+  image: require('../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg'),
+  title: 'Хочу верить',
+  text: 'Рассказать Шерил правду',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part02Completed',
+  image: require('../../Images/Immortals/Backgrounds/NY_1885_Old_Lady_Flat.jpg'),
+  title: 'Путешественница',
+  text: 'Пройти вторую часть',
+  story: EStoriesEn.Immortals
+})

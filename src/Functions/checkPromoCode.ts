@@ -1,4 +1,4 @@
-import { saveData } from './localStorageManager'
+import { promoCodes } from '../Utils/promoCodes'
 
 export default function checkPromoCode (code: string): boolean {
   let result = false
@@ -10,18 +10,3 @@ export default function checkPromoCode (code: string): boolean {
   })
   return result
 }
-
-const promoCodes = [
-  {
-    code: 'ghbdtngegcbr',
-    func: () => { saveData(['Promo', 'ClownAvatar'], ['1']) }
-  },
-  {
-    code: 'demoBanner',
-    func: () => { saveData(['Promo', 'DemoBanner'], ['1']) }
-  },
-  {
-    code: 'qly52axc',
-    func: () => { saveData(['Promo', 'Competition', '2024', 'February', '14'], ['1']) }
-  }
-]

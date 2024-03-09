@@ -84,7 +84,6 @@
 }
 
 .story__genre {
-  text-align: center;
   padding: 2px 5px 0 10px;
   font-size: var(--tinytext);
   background: linear-gradient(135deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
@@ -96,6 +95,8 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0 0 0 10px;
   z-index: 5;
+  width: 210px;
+  text-align: left;
 }
 
 .story__mature {

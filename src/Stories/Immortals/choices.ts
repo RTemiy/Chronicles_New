@@ -20,6 +20,48 @@ statsManager.add({
 })
 
 statsManager.add({
+  category: 'Choice',
+  id: 'TakeSerious',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'DontBelieve',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'RunAwayFromNicola',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'TurnToSide',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'HelpFromLeon',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'TakeCigarette',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'TellCherylTheTruth',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
   category: 'Effect',
   id: 'Study',
   name: 'Учеба',
@@ -31,9 +73,29 @@ statsManager.add({
 
 statsManager.add({
   category: 'Effect',
+  id: 'SupportNicola',
+  name: 'Помощь',
+  image: require('../../Images/Immortals/Effects/addiction.svg'),
+  title: '',
+  description: '',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Effect',
+  id: 'Family',
+  name: 'Семья',
+  image: require('../../Images/Immortals/Effects/family.svg'),
+  title: '',
+  description: '',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Effect',
   id: 'BrokenHand',
   name: 'Перелом',
-  image: require('../../Images/Immortals/Effects/BrokenHand.png'),
+  image: require('../../Images/Immortals/Effects/bone.svg'),
   title: 'Перелом руки',
   description: 'И что мне делать дальше?',
   story: EStoriesEn.Immortals
