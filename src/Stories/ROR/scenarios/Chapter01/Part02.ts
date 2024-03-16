@@ -1,7 +1,7 @@
-import { achievementsManager, saveEndProgress, scenarioManager, statsManager } from '../../../../index';
-import { EStoriesEn } from '../../../../Utils/EStoriesNames';
-import { beginMiniGameMemory } from '../../../../Components/MiniGameMemory/MiniGameMemory';
-import { redFlash } from '../../../../Components/Slide/Slide';
+import { achievementsManager, saveEndProgress, scenarioManager, statsManager } from '../../../../index'
+import { EStoriesEn } from '../../../../Utils/EStoriesNames'
+import { beginMiniGameMemory } from '../../../../Components/MiniGameMemory/MiniGameMemory'
+import { redFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глава 1', partName: 'Часть 2', code: '0' }, [
   {
@@ -3191,7 +3191,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Fire.jpg')
+    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel.jpg')
   },
 
   {
@@ -3205,7 +3205,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 207
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Fire.jpg')
+    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel.jpg')
   },
 
   {
@@ -3221,7 +3221,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Fire.jpg')
+    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel.jpg')
   },
 
   {
@@ -3235,7 +3235,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 209
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Fire.jpg')
+    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel.jpg')
   },
 
   {
@@ -4126,7 +4126,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 267
+        goTo: 268
       }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night_Carete.jpg')
   },

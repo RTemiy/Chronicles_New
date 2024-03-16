@@ -15,7 +15,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 1
       }],
     music: require('../../../../Sounds/FOF/Main.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Morning.jpg')
   },
 
   {
@@ -29,10 +29,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    darkSilhouette: true,
+    speaker: 'Кассандра',
+    imageFront: require('../../../../Images/FOF/Persons/Cassandra_T-shirt.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Morning.jpg')
   },
 
   {
@@ -46,7 +47,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Morning.jpg')
   },
 
   {
@@ -60,10 +61,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    darkSilhouette: true,
+    speaker: 'Кассандра',
+    imageFront: require('../../../../Images/FOF/Persons/Cassandra_T-shirt.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Morning.jpg')
   },
 
   {
@@ -77,10 +79,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    darkSilhouette: true,
+    speaker: 'Кассандра',
+    imageFront: require('../../../../Images/FOF/Persons/Cassandra_T-shirt.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Morning.jpg')
   },
 
   {
@@ -94,7 +97,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Morning.jpg')
   },
 
   {
@@ -2154,7 +2157,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 126
       }],
-    simple: require('../../../../Sounds/FOF/Lesson.mp3'),
+    music: require('../../../../Sounds/FOF/Lesson.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Classroom.jpg')
   },
 
@@ -2315,7 +2318,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 136
       }],
-    simple: require('../../../../Sounds/FOF/Whisper.mp3'),
+    music: require('../../../../Sounds/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -2526,18 +2529,34 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 148,
     text:
       `
-        «Пытается быть мной, но у нее не выйдет».<p>Включив музыкальный центр, я начала повторять ранее изученные движения. 
+        «Пытается быть мной, но у нее не выйдет».
       `,
     buttons: [
       {
         text: '',
-        goTo: 149
+        goTo: 300
       }],
     music: require('../../../../Sounds/FOF/Show.mp3'),
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     stats: [{ story: EStoriesEn.FOF, value: -1, category: 'Effect', id: 'Respect' }],
+    imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
+  },
+
+  {
+    id: 300,
+    text:
+      `
+        Включив музыкальный центр, я начала повторять ранее изученные движения. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 149
+      }],
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
+    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -3290,7 +3309,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 194,
     text:
       `
-        «Неужели, пока я в коме, ему позволено развлекаться с другими? Как он мог так поступить с нами?»<p> Это был больной удар под дых. Грудь сковала обида, я не могла вдохнуть, видя то, что Дерек не отталкивает мою соперницу.
+        «Неужели, пока я в коме, ему позволено развлекаться с другими? Как он мог так поступить с нами?»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 301
+      }],
+    speaker: 'Эбигейл',
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
+    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Images/FOF/Backgrounds/Football_Field.jpg')
+  },
+
+  {
+    id: 301,
+    text:
+      `
+        Это был больной удар под дых. Грудь сковала обида, я не могла вдохнуть, видя то, что Дерек не отталкивает мою соперницу.
       `,
     buttons: [
       {
@@ -4318,6 +4354,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 253
       }],
+    music: require('../../../../Sounds/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Women_Toilet.jpg')
   },
 

@@ -1,5 +1,5 @@
 import { loadData } from './localStorageManager'
-import { devMode } from '../Utils/technicalConsts';
+import { devMode } from '../Utils/technicalConsts'
 
 const link = 'https://script.google.com/macros/s/AKfycbx6FKE359t7FuyPyy6S0bLjVD3g6LzL0vmO8XpDeUlrL8n0_3g_I1Y_wSR2HBPX0Jth/exec'
 
@@ -36,7 +36,7 @@ function nowTime (): string {
 }
 
 export function sendActivity (action: string): void {
-  devMode && post({
+  !devMode && post({
     method: 'activity',
     date: nowDate(),
     time: nowTime(),

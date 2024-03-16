@@ -4,15 +4,15 @@ import CContainer from '../../Classes/CContainer'
 const MiniGameMemory = new CContainer(
   'mini-game-memory',
   `
-  <div class="mini-game-memory__container">
-    <button class="mini-game-memory__button" style="background-color: red"></button>
-    <button class="mini-game-memory__button" style="background-color: purple"></button>
-    <button class="mini-game-memory__button" style="background-color: darkgreen"></button>
-    <button class="mini-game-memory__button" style="background-color: darkslateblue"></button>
+  <div class='mini-game-memory__container'>
+    <button class='mini-game-memory__button' style='background-color: red'></button>
+    <button class='mini-game-memory__button' style='background-color: purple'></button>
+    <button class='mini-game-memory__button' style='background-color: darkgreen'></button>
+    <button class='mini-game-memory__button' style='background-color: yellow'></button>
   </div>
-  <div class="mini-game-memory__info-container">
-    <p class="mini-game-memory__lives-info"></p>
-    <p class="mini-game-memory__wins-info"></p>
+  <div class='mini-game-memory__info-container'>
+    <p class='mini-game-memory__lives-info'></p>
+    <p class='mini-game-memory__wins-info'></p>
   </div>
   `,
   { name: 'lives', selector: '.mini-game-memory__lives-info' },

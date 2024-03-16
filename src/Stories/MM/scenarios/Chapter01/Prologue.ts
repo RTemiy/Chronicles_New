@@ -731,20 +731,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 47
-      }],
-    imageBack: require('../../../../Images/MM/Backgrounds/Dark_Entrance.jpg')
-  },
-
-  {
-    id: 47,
-    text:
-      `
-        ! Кат-сцена: Девушка держит в руках лист записки, с написанным на нем текстом 
-      `,
-    buttons: [
-      {
-        text: '',
         goTo: 48
       }],
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Entrance.jpg')
