@@ -28,6 +28,15 @@
 			font-size: 15px;
 		}
 
+		button:disabled{
+			color: #b2b2b2;
+			cursor: no-drop;
+		}
+
+    button:disabled:hover{
+      background-color: transparent;
+    }
+
 		label{
 			margin: 5px 0 5px 0;
 			padding: 0 0 2px 5px;
@@ -248,16 +257,16 @@
 		<button class="toolbar-category-opener">Сценарий</button>
 		<div class="toolbar-category">
 			<button id="uploadButton" class="toolbar-category-button">Открыть</button>
-			<button id="downloadButton" class="toolbar-category-button">Сохранить</button>
+			<button id="downloadButton" class="toolbar-category-button" disabled>Сохранить</button>
 			<button id="transformButton" class="toolbar-category-button">Трансформировать</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Правка</button>
 		<div class="toolbar-category">
-			<button id="findSlideButton" class="toolbar-category-button">Найти слайд</button>
-			<button id="replaceButton" class="toolbar-category-button">Заменить</button>
-			<button id="addSlideButton" class="toolbar-category-button">Добавить слайд</button>
+			<button id="findSlideButton" class="toolbar-category-button" disabled>Найти слайд</button>
+			<button id="replaceButton" class="toolbar-category-button" disabled>Заменить</button>
+			<button id="addSlideButton" class="toolbar-category-button" disabled>Добавить слайд</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
@@ -354,6 +363,7 @@
       FR.onload = () => {
         currentFile = FR.result
 				makeStructure()
+        enableButtons()
       }
     }
 
@@ -366,6 +376,7 @@
 			makeStructure()
       transformWindow.style.opacity = '0'
       transformWindow.style.visibility = 'hidden'
+			enableButtons()
     }
 
     transformButton.onclick = () => {
@@ -489,6 +500,13 @@
 
 		currentFile = result
 	}
+
+  function enableButtons() {
+    downloadButton.disabled = false
+    addSlideButton.disabled = false
+    replaceButton.disabled = false
+    findSlideButton.disabled = false
+  }
 
   function initDictionary() {
     dictionary.set('id', 'Номер слайда')
