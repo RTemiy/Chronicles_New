@@ -5,12 +5,15 @@
 	<title>Chronicles Editor</title>
 	<link rel="icon" type="image/png" href="./src/Images/UI/editor_icon.png" />
 	<style>
-		button{
+		button, a{
 			border: 0;
 			padding: 10px;
 			margin: 0;
 			cursor: pointer;
 			border-radius: 15px;
+			text-decoration: none;
+			font-family: Arial;
+			font-size: 15px;
 		}
 
 		label{
@@ -86,7 +89,7 @@
 
 		.toolbar-category{
 			position: absolute;
-			top: 35px;
+			top: 37px;
 			left: 0;
 			display: flex;
 			flex-direction: column;
@@ -225,6 +228,15 @@
 		<div class="toolbar-category">
 			<button id="addSlideButton" class="toolbar-category-button">Добавить слайд</button>
 			<button id="replaceButton" class="toolbar-category-button">Заменить</button>
+		</div>
+	</div>
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Инфо</button>
+		<div class="toolbar-category">
+			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button">Гугл диск</a>
+			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button">Релиз</a>
+			<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button">Бета</a>
+			<a target='_blank' href="https://t.me/RTemiy" class="toolbar-category-button">Создатель</a>
 		</div>
 	</div>
 </div>
