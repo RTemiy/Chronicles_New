@@ -95,6 +95,7 @@
       background-color: gray;
 			padding: 5px;
 			border-radius: 0 0 15px 15px;
+			min-width: 200px;
       box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
 		}
 
@@ -222,6 +223,7 @@
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Правка</button>
 		<div class="toolbar-category">
+			<button id="addSlideButton" class="toolbar-category-button">Добавить слайд</button>
 			<button id="replaceButton" class="toolbar-category-button">Заменить</button>
 		</div>
 	</div>
@@ -238,6 +240,9 @@
 			<label for="partName">Название части</label><input id="partName" type="text"></div>
 		<div class="storyInfo-block">
 			<label for="partCode">Код части</label><input id="partCode" type="text">
+		</div>
+		<div class="storyInfo-block">
+			<label for="slidesAmount">Количество слайдов</label><input id="slidesAmount" disabled type="number">
 		</div>
 	</div>
 	<div class="slides">
@@ -262,6 +267,7 @@
 	const uploadInput = document.querySelector('#uploadInput')
 	const downloadButton = document.querySelector('#downloadButton')
   const transformButton = document.querySelector('#transformButton')
+  const addSlideButton = document.querySelector('#addSlideButton')
   const replaceButton = document.querySelector('#replaceButton')
   const makeReplaceButton = document.querySelector('#makeReplaceButton')
 
@@ -274,6 +280,7 @@
   const chapterName = document.querySelector('#chapterName')
   const partName = document.querySelector('#partName')
   const partCode = document.querySelector('#partCode')
+  const slidesAmount = document.querySelector('#slidesAmount')
 	const whatToReplace = document.querySelector('#whatToReplace')
   const ToWhatToReplace = document.querySelector('#ToWhatToReplace')
 	const slidesField = document.querySelector('.slides')
@@ -332,6 +339,30 @@
       replaceWindow.style.opacity = '0'
       replaceWindow.style.visibility = 'hidden'
 		}
+
+    addSlideButton.onclick = () => {
+      const newSlide = document.createElement('textarea')
+			newSlide.value =
+				`  {
+    Номер слайда: УКАЖИТЕ НОМЕР СЛАЙДА,
+    Текст:
+      \`
+        ВВЕДИТЕ ТЕКСТ СЛАЙДА
+      \`,
+    Кнопки слайда: [
+      {
+        Текст: '',
+        Переход на слайд: УКАЖИТЕ НОМЕР СЛАЙДА ДЛЯ ПЕРЕХОДА
+      }],
+    Фон: УКАЖИТЕ ФОН СЛАЙДА
+  },
+
+`
+			newSlide.classList.add('slide')
+      slidesField.appendChild(newSlide)
+      newSlide.style.height = '5px'
+      newSlide.style.height = newSlide.scrollHeight + 'px'
+		}
   }
 
   function saveFile(text) {
@@ -366,9 +397,11 @@
       <textarea class="slide">${slide}</textarea>
       `
       slidesField.innerHTML = result
+      slidesAmount.value = '0'
       slidesField.querySelectorAll('.slide').forEach(slide => {
         slide.style.height = '5px'
 				slide.style.height = slide.scrollHeight + 'px'
+        slidesAmount.value = parseInt(slidesAmount.value) + 1
 			})
     })
 	}
