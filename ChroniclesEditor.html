@@ -5,6 +5,10 @@
 	<title>Chronicles Editor</title>
 	<link rel="icon" type="image/png" href="./src/Images/UI/editor_icon.png" />
 	<style>
+		html{
+      scroll-behavior: smooth;
+		}
+
 		body{
       background-size: 40px 40px;
       background-image:
@@ -12,6 +16,7 @@
               linear-gradient(to bottom, grey 1px, transparent 1px);
 			background-attachment: fixed;
 		}
+
 		button, a{
 			border: 0;
 			padding: 10px;
@@ -199,6 +204,22 @@
 			box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
 		}
 
+		.returnButton{
+			position: fixed;
+			right: 15px;
+			bottom: 15px;
+			border-radius: 50px;
+			width: 50px;
+			height: 50px;
+			font-weight: 800;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 50px;
+			background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+		}
+
     ::-webkit-scrollbar {
       width: 10px;
       height: 0;
@@ -234,16 +255,17 @@
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Правка</button>
 		<div class="toolbar-category">
-			<button id="addSlideButton" class="toolbar-category-button">Добавить слайд</button>
+			<button id="findSlideButton" class="toolbar-category-button">Найти слайд</button>
 			<button id="replaceButton" class="toolbar-category-button">Заменить</button>
+			<button id="addSlideButton" class="toolbar-category-button">Добавить слайд</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Инфо</button>
 		<div class="toolbar-category">
-			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button">Гугл диск</a>
-			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button">Релиз</a>
 			<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button">Бета</a>
+			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button">Релиз</a>
+			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button">Гугл диск</a>
 			<a target='_blank' href="https://t.me/RTemiy" class="toolbar-category-button">Создатель</a>
 		</div>
 	</div>
@@ -277,6 +299,15 @@
 	</div>
 </div>
 
+<div id="findWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="slideNumberToFind">Номер слайда:</label><input id="slideNumberToFind" type="number">
+		<button id="doFindButton">Найти</button>
+	</div>
+</div>
+
+<a href="#" class="returnButton">🔝</a>
+
 <div class="toTransformScenarioWindow">
 	<textarea id="scenarioToTransform" placeholder="Вставьте текст сценария"></textarea>
 </div>
@@ -290,12 +321,16 @@
   const addSlideButton = document.querySelector('#addSlideButton')
   const replaceButton = document.querySelector('#replaceButton')
   const makeReplaceButton = document.querySelector('#makeReplaceButton')
+  const findSlideButton = document.querySelector('#findSlideButton')
+  const doFindButton = document.querySelector('#doFindButton')
 
 	const transformWindow = document.querySelector('.toTransformScenarioWindow')
   const replaceWindow = document.querySelector('#replaceWindow')
+  const findWindow = document.querySelector('#findWindow')
 
 	const storyInfo = document.querySelector('.storyInfo')
 	const transformInput = document.querySelector('#scenarioToTransform')
+  const slideNumberToFind = document.querySelector('#slideNumberToFind')
 	const storyCode = document.querySelector('#storyCode')
   const chapterName = document.querySelector('#chapterName')
   const partName = document.querySelector('#partName')
@@ -383,6 +418,18 @@
       newSlide.style.height = '5px'
       newSlide.style.height = newSlide.scrollHeight + 'px'
 		}
+
+    findSlideButton.onclick = () => {
+      slideNumberToFind.value = ''
+      findWindow.style.opacity = '1'
+      findWindow.style.visibility = 'visible'
+		}
+
+    doFindButton.onclick = () => {
+      findWindow.style.opacity = '0'
+      findWindow.style.visibility = 'hidden'
+      window.location.href = `#slide_${slideNumberToFind.value}`
+		}
   }
 
   function saveFile(text) {
@@ -409,19 +456,22 @@
 		slides.shift()
     slidesField.innerHTML = ''
     let result = ''
+    slidesAmount.value = '0'
     slides.forEach(slide => {
       for (const [key, value] of dictionary) {
         slide = slide.replaceAll(`${key}:`, `${value}:`)
       }
+
       result+=`
-      <textarea class="slide">${slide}</textarea>
+      <textarea id="slide_${parseInt(slidesAmount.value)}" class="slide">${slide}</textarea>
       `
       slidesField.innerHTML = result
-      slidesAmount.value = '0'
+      slidesAmount.value = parseInt(slidesAmount.value) + 1
+
       slidesField.querySelectorAll('.slide').forEach(slide => {
         slide.style.height = '5px'
 				slide.style.height = slide.scrollHeight + 'px'
-        slidesAmount.value = parseInt(slidesAmount.value) + 1
+
 			})
     })
 	}
