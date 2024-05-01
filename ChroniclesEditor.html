@@ -493,7 +493,7 @@
     slidesAmount.value = '0'
     slides.forEach(slide => {
       for (const [key, value] of dictionary) {
-        slide = slide.replaceAll(`${key}:`, `${value}:`)
+        slide = slide.replaceAll(`${key}`, `${value}`)
       }
 
       result+=`
@@ -516,7 +516,7 @@
 		const slides = document.querySelectorAll('.slide')
 		slides.forEach(slide => {
       for (const [key, value] of dictionary) {
-        slide.value = slide.value.replaceAll(`${value}:`, `${key}:`)
+        slide.value = slide.value.replaceAll(`${value}`, `${key}`)
       }
       result+=slide.value
 		})
@@ -532,23 +532,24 @@
   }
 
   function initDictionary() {
-    dictionary.set('id', 'Номер слайда')
-    dictionary.set('text', 'Текст')
-    dictionary.set('buttons', 'Кнопки слайда')
-    dictionary.set('gift', 'Выбор за рекламу')
-    dictionary.set('goTo', 'Переход на слайд')
-    dictionary.set('func', 'Сопутствующее действие')
-    dictionary.set('speaker', 'Реплика')
-    dictionary.set('message', 'Табличка')
-    dictionary.set('music', 'Музыка')
-    dictionary.set('ambient', 'Эмбиент')
-    dictionary.set('beforeBegin', 'Перед началом слайда')
-    dictionary.set('stats', 'Добавить статы')
-    dictionary.set('condition', 'Условие')
-    dictionary.set('imageFront', 'Объект')
-    dictionary.set('imageBorder', 'Рамка')
-    dictionary.set('imageBack', 'Фон')
-    dictionary.set('achievement', 'Достижение')
+    dictionary.set('id:', '- Идентификатор:')
+    dictionary.set('text:', '- Текст:')
+    dictionary.set('buttons:', '- Кнопки слайда:')
+    dictionary.set('gift:', '- Выбор за рекламу:')
+    dictionary.set('goTo:', '- Переход на слайд:')
+    dictionary.set('func:', '- Сопутствующее действие:')
+    dictionary.set('speaker:', '- Реплика:')
+    dictionary.set('message:', '- Табличка:')
+    dictionary.set('music:', '- Музыка:')
+    dictionary.set('ambient:', '- Эмбиент:')
+    dictionary.set('beforeBegin:', '- Перед началом слайда:')
+    dictionary.set('stats:', '- Добавить статы:')
+    dictionary.set('condition:', '- Условие:')
+    dictionary.set('imageFront:', '- Объект:')
+    dictionary.set('imageBorder:', '- Рамка:')
+    dictionary.set('imageBack:', '- Фон:')
+    dictionary.set('achievement:', '- Достижение:')
+    dictionary.set('require(', 'путь до файла(')
   }
 
   function makeScenario(name, text){
