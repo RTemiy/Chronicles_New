@@ -1,5 +1,6 @@
 import './MiniGameMemory.scss'
 import CContainer from '../../Classes/CContainer'
+import { showAd } from '../../Functions/advertisement'
 
 const MiniGameMemory = new CContainer(
   'mini-game-memory',
@@ -14,8 +15,10 @@ const MiniGameMemory = new CContainer(
     <p class='mini-game-memory__lives-info'></p>
     <p class='mini-game-memory__wins-info'></p>
   </div>
+  <button class='mini-game-memory__skip-button'>Пропустить за рекламу</button>
   `,
   { name: 'lives', selector: '.mini-game-memory__lives-info' },
+  { name: 'skipButton', selector: '.mini-game-memory__skip-button' },
   { name: 'wins', selector: '.mini-game-memory__wins-info' })
 
 let currentPath: any[] = []
@@ -145,4 +148,11 @@ function incorrectButtonClick (): void {
   setTimeout(showPath, 1000)
   updateInfo()
   checkScore()
+}
+
+MiniGameMemory.skipButton.onclick = () => {
+  showAd('medium', () => {
+    doEndgame()
+    MiniGameMemory.self.style.display = 'none'
+  })
 }

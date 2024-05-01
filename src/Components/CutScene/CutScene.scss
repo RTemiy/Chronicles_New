@@ -36,7 +36,6 @@
 }
 
 .cut-scene__button{
-  @extend %button-tap;
   position: absolute;
   bottom: 25px;
   right: 25px;
@@ -47,6 +46,7 @@
   transform: rotate(180deg);
   width: 50px;
   height: 50px;
+  transition: none;
 }
 
 .cut-scene__container_show{

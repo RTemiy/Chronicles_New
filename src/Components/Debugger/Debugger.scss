@@ -69,3 +69,17 @@
 .debugger__button{
   padding: 5px;
 }
+
+.debugger__stat {
+  padding: 5px;
+  @extend %styled-border;
+  @extend %styled-radius;
+}
+
+.debugger__stat-text {
+  padding: 5px;
+}
+
+.debugger__stat-text:nth-child(2){
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}

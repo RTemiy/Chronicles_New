@@ -91,7 +91,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Chapter01Part02Completed',
-  image: require('../../Images/ROR/Backgrounds/Chapel_Body_Fire.jpg'),
+  image: require('../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg'),
   title: 'Добро пожаловать на бал',
   text: 'Переживите ночь в Гласвере',
   story: EStoriesEn.ROR

@@ -4,7 +4,7 @@ import { EStoriesEn } from '../Utils/EStoriesNames'
 import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
-import { showAd } from '../Functions/advertisement';
+import { showAd } from '../Functions/advertisement'
 
 export default class CSlide {
   private previousSlideText = ''
@@ -116,7 +116,7 @@ export default class CSlide {
   }
 
   changeText (text: string): void {
-    this.previousSlideText = this.slide.text.innerHTML
+    this.slide.text.innerText.replace(/\s/g, '').length >= 1 && (this.previousSlideText = this.slide.text.innerHTML)
     this.slide.text.style.display = 'none'
     const resultText = '<p>' + text
     this.slide.text.innerHTML = resultText

@@ -1,6 +1,7 @@
 import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
+import { choiceDone, getChoice, resetChoices } from '../../../../Functions/5Choices'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глава 1', partName: 'Часть 2', code: '0' }, [
   {
@@ -273,7 +274,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 14
       }],
     beforeBegin: whiteFlash,
-    message: 'путь Перемен ',
+    message: 'Путь перемен',
     music: require('../../../../Sounds/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
@@ -306,7 +307,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    message: 'путь Постоянства',
+    message: 'Путь постоянства',
     music: require('../../../../Sounds/FOF/Main.mp3'),
     beforeBegin: whiteFlash,
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
@@ -1450,9 +1451,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
   {
     id: 84,
     text:
-      `
-        
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -2118,7 +2117,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/School_Corridor.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/School_Corridor.jpg'),
+    beforeBegin: () => {
+      resetChoices()
+    }
   },
 
   {
@@ -2130,20 +2132,34 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: 'Идти на урок',
-        goTo: 125
+        goTo: 125,
+        func: () => {
+          choiceDone(0)
+        }
       },
       {
         text: 'Идти в зал',
-        goTo: 135
+        goTo: 135,
+        func: () => {
+          choiceDone(1)
+        }
       },
       {
         text: 'Навестить Дерека',
-        goTo: 180
+        goTo: 180,
+        func: () => {
+          choiceDone(2)
+        }
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/School_Corridor.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/School_Corridor.jpg'),
+    beforeBegin: () => {
+      scenarioManager.changeSceneButtonStatus(124, 0, getChoice(0))
+      scenarioManager.changeSceneButtonStatus(124, 1, getChoice(1))
+      scenarioManager.changeSceneButtonStatus(124, 2, getChoice(2))
+    }
   },
 
   {
@@ -2287,6 +2303,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 134
       }],
     speaker: 'Ученица 1',
+    music: require('../../../../Sounds/Common/Silence.mp3'),
     imageFront: require('../../../../Images/FOF/Persons/Girl_Classmate_01.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     darkSilhouette: true,
@@ -2555,7 +2572,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 149
       }],
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
@@ -2701,12 +2717,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 158
       }],
     message: 'Похоже, девушки еще долго будут сплетничать о том, кто ты такая',
-    music: require('../../../../Sounds/FOF/Whisper.mp3'),
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    stats: [
-      { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Respect' }],
+    stats: [{ story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Respect' }],
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -2871,7 +2885,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 168
       }],
-    speaker: 'Школьница 1',
+    speaker: 'Болельщица 1',
     imageFront: require('../../../../Images/FOF/Persons/Girl_Classmate_01.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     darkSilhouette: true,
@@ -2889,7 +2903,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 169
       }],
-    speaker: 'Школьница 2',
+    speaker: 'Болельщица 2',
     imageFront: require('../../../../Images/FOF/Persons/Girl_Classmate_02.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     darkSilhouette: true,
@@ -3112,7 +3126,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 183
       }],
-    simple: require('../../../../Sounds/FOF/FootballField.mp3'),
+    music: require('../../../../Sounds/FOF/FootballField.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Football_Field.jpg')
   },
 
@@ -3127,6 +3141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 184
       }],
+    music: require('../../../../Sounds/FOF/FootballField.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Football_Field.jpg')
   },
 
@@ -3350,7 +3365,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 196
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Sounds/FOF/Sad.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/School_Corridor.jpg')
   },
 
@@ -3868,7 +3883,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 226
       }],
-    message: 'Твое самообладание приятно удивляет. Ник рад, что ты рассуждаешь спокойно',
+    message: 'Твое самообладание приятно удивляет. Ник ценит твою искренность',
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -4260,8 +4275,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 248
       }],
-    speaker: 'Ник',
-    imageFront: require('../../../../Images/FOF/Persons/Nick.png'),
+    speaker: 'Эбигейл',
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Women_Toilet.jpg')
   },

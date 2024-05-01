@@ -7,6 +7,7 @@ storiesManager.add({
     'Волею судьбы студентка была втянута в распри богов и бессмертных. Вам предстоит распутать множество тайн, встречаться с реальными историческими личностями, менять ход истории и понять: так ли прекрасна вечная жизнь?',
   genre: 'Романтика, Фантастика',
   mature: true,
+  status: 'Новая часть',
   chapters: [
     {
       name: 'Глава 1',
@@ -34,7 +35,7 @@ storiesManager.add({
         {
           name: 'Часть 2',
           code: '0',
-          image: require('../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg'),
+          image: require('../../Images/Immortals/Backgrounds/NY_1885.jpg'),
           loadingImage: require('../../Images/Immortals/Covers/Part02.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)

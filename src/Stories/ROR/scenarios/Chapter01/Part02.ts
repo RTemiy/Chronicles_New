@@ -1,4 +1,4 @@
-import { achievementsManager, saveEndProgress, scenarioManager, statsManager } from '../../../../index'
+import { achievementsManager, saveEndProgress, scenarioManager, statsManager, timer } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { beginMiniGameMemory } from '../../../../Components/MiniGameMemory/MiniGameMemory'
 import { redFlash } from '../../../../Components/Slide/Slide'
@@ -828,6 +828,20 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     buttons: [
       {
         text: '',
+        goTo: 400
+      }],
+    imageBack: require('../../../../Images/ROR/Backgrounds/Chapel.jpg')
+  },
+
+  {
+    id: 400,
+    text:
+      `
+        Охранник продолжал стоять с невозмутимым лицом. Внимательно осмотрев его пудовые кулаки, стало очевидным, что надавить на него не получиться.
+      `,
+    buttons: [
+      {
+        text: '',
         goTo: 53
       }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Chapel.jpg')
@@ -837,7 +851,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 53,
     text:
       `
-        Охранник продолжал стоять с невозмутимым лицом. Внимательно осмотрев его пудовые кулаки, стало очевидным, что надавить на него не получиться. Но тут, пользуясь непонятным мне самому наитием, я прокашлялся и проговорил:
+        Но тут, пользуясь непонятным мне самому наитием, я прокашлялся и проговорил:
       `,
     buttons: [
       {
@@ -1294,6 +1308,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 84
       }],
+    message: 'После этого слайда следует мини-игра «память». Сначала в определенном порядке подсвечиваются элементы, после нажмите на эти элементы в том же порядке. После трех проигрышей игра начнется заново и взаимоотношения с определенным персонажем ухудшатся..',
     imageBack: require('../../../../Images/ROR/Backgrounds/Stone_Hatch.jpg')
   },
 
@@ -2838,7 +2853,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 183,
     text:
       `
-        «Простой служащий ведь... может, удастся решить все мирно?» 
+        «Простой служащий ведь... может, удасться решить все мирно?» 
       `,
     buttons: [
       {
@@ -2903,12 +2918,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     buttons: [
       {
         text: 'Убить незнакомца',
-        goTo: 188
+        goTo: 188,
+        func: () => {
+          timer.stop()
+        }
       },
       {
         text: 'Броситься наутек',
-        goTo: 205
+        goTo: 205,
+        func: () => {
+          timer.stop()
+        }
       }],
+    beforeBegin: () => {
+      timer.set(7, () => { scenarioManager.beginScene(205) })
+    },
     imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Body.jpg')
   },
 
@@ -3419,7 +3443,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 221,
     text:
       `
-        Это был неказистый, сутулый и худощавый человек, одетый в простецкую одежду путешественника. На вид около тридцати лет. Спокойной наружности, с короткими черными волосами, немного взвинченными на висках.
+        Это был неказистый, сутулый и худощавый человек, одетый в одежду путешественника. На вид около тридцати лет. Спокойной наружности, с короткими коричневыми волосами, немного взвинченными на висках.
       `,
     buttons: [
       {
@@ -5319,13 +5343,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) < 100
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Letter01' }) >= 1
         },
         goTo: 343
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) >= 100
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Letter01' }) <= 0
         },
         goTo: 347
       }
@@ -5764,14 +5788,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 371,
     text:
       `
-        — Виг, я буду защищать Марту. Даю слово, что с ней ничего не случится.<p> <p>Виг на это только сильнее нахмурился и наставил на меня два пальца, как бы демонстрируя, что проследит за этим. 
+        — Виг, я буду защищать Марту. Даю слово, что с ней ничего не случится.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 510
+      }],
+    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+  },
+
+  {
+    id: 510,
+    text:
+      `
+        Виг на это только сильнее нахмурился и наставил на меня два пальца, как бы демонстрируя, что проследит за этим. 
       `,
     buttons: [
       {
         text: '',
         goTo: 372
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
+    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
@@ -5873,3 +5913,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   }
 ])
+

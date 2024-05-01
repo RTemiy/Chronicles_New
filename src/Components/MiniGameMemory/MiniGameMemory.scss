@@ -73,3 +73,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.mini-game-memory__skip-button{
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  height: 50px;
+  padding: 15px;
+  @extend %styled-border;
+  @extend  %styled-background;
+  @extend %styled-radius;
+}

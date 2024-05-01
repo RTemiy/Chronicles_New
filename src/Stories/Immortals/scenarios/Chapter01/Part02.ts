@@ -665,7 +665,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) < 3
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) < 4
         },
         goTo: 64
       }],
@@ -746,6 +746,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => {
           choiceDone(0)
           scenarioManager.changeSceneButtonStatus(47, 0, getChoice(0))
+          scenarioManager.changeSceneButtonStatus(47, 4, true)
           if (askedAmount(4)) {
             choiceDone(0)
             choiceDone(1)
@@ -760,6 +761,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => {
           choiceDone(1)
           scenarioManager.changeSceneButtonStatus(47, 1, getChoice(1))
+          scenarioManager.changeSceneButtonStatus(47, 4, true)
           if (askedAmount(4)) {
             choiceDone(0)
             choiceDone(1)
@@ -774,6 +776,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => {
           choiceDone(2)
           scenarioManager.changeSceneButtonStatus(47, 2, getChoice(2))
+          scenarioManager.changeSceneButtonStatus(47, 4, true)
           if (askedAmount(4)) {
             choiceDone(0)
             choiceDone(1)
@@ -788,6 +791,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => {
           choiceDone(3)
           scenarioManager.changeSceneButtonStatus(47, 3, getChoice(3))
+          scenarioManager.changeSceneButtonStatus(47, 4, true)
           if (askedAmount(4)) {
             choiceDone(0)
             choiceDone(1)
@@ -1139,6 +1143,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => {
           choiceDone(0)
           scenarioManager.changeSceneButtonStatus(67, 0, getChoice(0))
+          scenarioManager.changeSceneButtonStatus(67, 3, true)
           if (askedAmount(3)) {
             choiceDone(0)
             choiceDone(1)
@@ -1152,6 +1157,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => {
           choiceDone(1)
           scenarioManager.changeSceneButtonStatus(67, 1, getChoice(1))
+          scenarioManager.changeSceneButtonStatus(67, 3, true)
           if (askedAmount(3)) {
             choiceDone(0)
             choiceDone(1)
@@ -1165,6 +1171,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => {
           choiceDone(2)
           scenarioManager.changeSceneButtonStatus(67, 2, getChoice(2))
+          scenarioManager.changeSceneButtonStatus(67, 3, true)
           if (askedAmount(3)) {
             choiceDone(0)
             choiceDone(1)
@@ -2111,6 +2118,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 127
       }],
+    imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
+    imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
   },
 
@@ -2125,7 +2134,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 128
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
   },
 
   {
@@ -2140,8 +2149,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 129
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
-    imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg'),
+    imageBorder: require('../../../../Images/Immortals/UI/Border.png')
   },
 
   {
@@ -2502,7 +2511,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 153
       }],
     ambient: require('../../../../Sounds/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg')
   },
 
   {
@@ -2516,7 +2525,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 154
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg')
   },
 
   {
@@ -2530,7 +2539,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 155
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg')
   },
 
   {
@@ -2544,7 +2553,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 156
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg')
   },
 
   {
@@ -2649,7 +2658,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 163
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
   {
@@ -2663,7 +2672,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 164
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
   {
@@ -2678,7 +2687,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 165
       }],
     message: 'По другому пути героиня могла узнать больше о личности Николы',
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
   {
@@ -2692,7 +2701,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 166
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
   {
@@ -2706,7 +2715,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 167
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
   {
@@ -2897,7 +2906,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 180
       }],
     ambient: require('../../../../Sounds/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
   {
@@ -2911,7 +2920,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 181
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
   {
@@ -3067,7 +3076,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 192
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3081,7 +3090,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 193
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3095,7 +3104,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 194
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3109,7 +3118,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 195
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3123,7 +3132,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 196
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3139,7 +3148,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3153,7 +3162,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 198
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3167,7 +3176,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 199
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3183,7 +3192,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3197,7 +3206,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 201
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3211,7 +3220,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 202
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3225,7 +3234,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 203
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3242,7 +3251,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     music: require('../../../../Sounds/Immortals/Monster.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3259,7 +3268,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     achievement: { story: EStoriesEn.Immortals, name: 'Unknown' },
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3273,7 +3282,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 206
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3287,7 +3296,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 207
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3301,7 +3310,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 208
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Outside.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
   },
 
   {
@@ -3823,7 +3832,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 239
       }],
-    music: require('../../../../Sounds/Immortals/Neitan.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Med.jpg')
   },
 
@@ -3999,19 +4007,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: '',
-        goTo: 251
+        text: ''
       }],
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'DontBelieve' }) === 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 1
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'DontBelieve' }) === 1
         },
         goTo: 251
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TakeSerious' }) === 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 0
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 1
+        },
+        goTo: 251
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TakeSerious' }) === 1
+        },
+        goTo: 254
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'RunAwayFromNicola' }) === 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 0
         },
         goTo: 254
       }
@@ -4106,11 +4125,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: 'Приобнимая за талию, помог дойти до машины',
+        text: 'Приобнял за талию',
         goTo: 257
       },
       {
-        text: 'Придерживая за локоть, помог дойти до машины',
+        text: 'Придержал за локоть',
         goTo: 265
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Med.jpg')
@@ -4127,6 +4146,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 258
       }],
+    music: require('../../../../Sounds/Immortals/Neitan.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Corridor.jpg')
   },
 
@@ -4315,7 +4335,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 270,
     text:
       `
-        Я назвала ему свой адрес и он медленно тронулся, выезжая на дорогу. Заиграла тихая мелодия, располагая ко сну.
+        Я назвала ему свой адрес и он медленно тронулся, выезжая на дорогу. Заиграла легкая мелодия, располагая ко сну.
       `,
     buttons: [
       {
@@ -4401,13 +4421,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) >= 4
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'WakeUp' }) >= 1
         },
         goTo: 276
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) < 4
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'WakeUp' }) < 1
         },
         goTo: 282
       }
@@ -4826,7 +4846,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 303
       }],
-    music: require('../../../../Sounds/Immortals/Leon.mp3'),
     stats: [{ story: EStoriesEn.Immortals, category: 'Choice', id: 'HelpFromLeon', value: +1 }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Med.jpg')
   },
@@ -5019,19 +5038,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: '',
-        goTo: 316
+        text: ''
       }],
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'DontBelieve' }) === 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 1
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'DontBelieve' }) === 1
         },
         goTo: 316
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TakeSerious' }) === 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 0
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 1
+        },
+        goTo: 316
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TakeSerious' }) === 1
+        },
+        goTo: 319
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'RunAwayFromNicola' }) === 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) === 0
         },
         goTo: 319
       }
@@ -5147,6 +5177,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 323
       }],
+    music: require('../../../../Sounds/Immortals/Leon.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Corridor.jpg')
   },
 
@@ -5330,7 +5361,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: 'Не брать сигарету',
         goTo: 340
       }],
-    message: 'Данный выбор определит привычку героини на всю историю',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Neitan_Car.jpg')
   },
 
@@ -5345,7 +5375,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 336
       }],
-    stats: [{ story: EStoriesEn.Immortals, category: 'Choice', id: 'TakeCigarette', value: +1 }],
+    stats: [
+      { story: EStoriesEn.Immortals, category: 'Choice', id: 'TakeCigarette', value: +1 },
+      { story: EStoriesEn.Immortals, category: 'Effect', id: 'Addiction', value: +1 }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Neitan_Car.jpg')
   },
 
@@ -5374,7 +5406,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 338
       }],
-    simple: require('../../../../Sounds/FOF/Cry.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Neitan_Car.jpg')
   },
 
@@ -5794,7 +5825,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 363,
     text:
       `
-        Мне стало немного обидно от того, что он совсем не хотел делиться со мной хотя бы крохами своей повседневной жизни и неожиданно для себя я выпалила: 
+        Стало немного обидно от того, что он совсем не хотел делиться со мной хотя бы крохами своей повседневной жизни и неожиданно для себя я выпалила: 
       `,
     buttons: [
       {
@@ -6110,7 +6141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 383,
     text:
       `
-        — Я не думаю, что меня будет сложно удивить, учитывая, насколько насыщенно протекает моя жизнь, — она натянула рукав своей рубашки, чтобы скрыть синяки. 
+        — Я не думаю, что меня будет сложно удивить, учитывая, насколько насыщенно протекает моя жизнь, — она натянула рукав своей футболки, чтобы скрыть синяки. 
       `,
     buttons: [
       {
@@ -6518,7 +6549,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
-
+  // @MARK
   {
     id: 410,
     text:
@@ -6539,13 +6570,19 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'DontBelieve' }) >= 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) >= 1
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'DontBelieve' }) >= 1
         },
         goTo: 415
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) <= 0
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) >= 1
+        },
+        goTo: 415
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'RunAwayFromNicola' }) >= 1 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TurnToSide' }) <= 0
         },
         goTo: 419
       }
@@ -6589,7 +6626,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 413,
     text:
       `
-        <i>«Словно, впервые слышит об этой встрече, да и меня видит впервые. После, мы немного пообщались о моем досуге и двинулись в сторону квартиры писателям. 
+        <i>«Словно, впервые слышит об этой встрече, да и меня видит впервые. После, мы немного пообщались о моем досуге и двинулись в сторону квартиры писателя. 
       `,
     buttons: [
       {
@@ -6754,6 +6791,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 424
       }],
+    stats: [{ category: 'Choice', id: 'TwoChoices', value: 2 }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
 
@@ -6791,6 +6829,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 426
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: -1, category: 'Choice', id: 'TwoChoices' },
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'SpendTimeWithFamily' }
+    ],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
 
@@ -6943,7 +6985,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Ваша семья становится крепче',
     imageFront: require('../../../../Images/Immortals/Objects/Nonopoly.png'),
@@ -6957,7 +6999,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 436,
     text:
       `
-        Мы несколько часов разговаривали о всяких мелочах в жизни. Мама с папой попивали вино и, казалось, были умиротворенными. 
+        Мы несколько часов разговаривали о всяких мелочах. Мама с папой попивали вино и, казалось, были умиротворенными. 
       `,
     buttons: [
       {
@@ -7032,11 +7074,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Ваша семья становится крепче',
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Family' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Effect', id: 'Family' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom.jpg')
   },
 
@@ -7077,7 +7119,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Ваша семья становится крепче',
     stats: [
@@ -7096,6 +7138,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 446
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: -1, category: 'Choice', id: 'TwoChoices' },
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'SpendTimeHomework' }
+    ],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
 
@@ -7108,7 +7154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Вы прилежная ученица',
     stats: [
@@ -7127,6 +7173,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 448
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: -1, category: 'Choice', id: 'TwoChoices' }
+    ],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
 
@@ -7153,6 +7202,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: 'Шерил',
         goTo: 475
       }],
+    beforeBegin: () => {
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'WriteLeon' }) >= 1 && scenarioManager.changeSceneButtonStatus(448, 0, false)
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'WriteNeitan' }) >= 1 && scenarioManager.changeSceneButtonStatus(448, 1, false)
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'WriteScarlett' }) >= 1 && scenarioManager.changeSceneButtonStatus(448, 2, false)
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'WriteCheryl' }) >= 1 && scenarioManager.changeSceneButtonStatus(448, 3, false)
+    },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
 
@@ -7194,6 +7249,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 453
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'WriteLeon' }
+    ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
@@ -7210,6 +7268,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 453
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'WriteLeon' }
+    ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
@@ -7240,7 +7301,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Леон рад был поговорить с вами',
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
@@ -7289,6 +7350,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 459
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'WriteNeitan' }
+    ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
@@ -7305,6 +7369,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 459
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'WriteNeitan' }
+    ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
@@ -7335,7 +7402,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Нэйтан рад вас наставлять',
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
@@ -7356,6 +7423,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 462
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'WriteScarlett' }
+    ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
@@ -7529,7 +7599,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Скарлетт дорожит вашей дружбой',
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
@@ -7548,7 +7618,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Вы со Скарлетт не такие уж и близкие подруги',
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
@@ -7583,7 +7653,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Скарлетт чудесно провела время',
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
@@ -7604,6 +7674,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 476
       }],
+    stats: [
+      { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'WriteCheryl' }
+    ],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
 
@@ -7632,7 +7705,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 509
       }],
     message: 'Шерил всегда рада вашей компании ',
     imageFront: require('../../../../Images/Immortals/Objects/Computergame.png'),
@@ -7655,6 +7728,58 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         }
       }],
     achievement: { story: EStoriesEn.Immortals, name: 'Chapter01Part02Completed' },
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+  },
+
+  {
+    id: 509,
+    text:
+      `
+        Условие
+      `,
+    buttons: [
+      {
+        text: ''
+      }],
+    condition: [{
+      condition: () => {
+        return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TwoChoices' }) < 1
+      },
+      goTo: 478
+    },
+    {
+      condition: () => {
+        return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'TwoChoices' }) > 0
+      },
+      goTo: 510
+    }],
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+  },
+
+  {
+    id: 510,
+    text:
+      `
+        Чем бы я ещё хотела заняться?
+      `,
+    buttons: [
+      {
+        text: 'Спуститься к родителям',
+        goTo: 425
+      },
+      {
+        text: 'Позаниматься',
+        goTo: 445
+      },
+      {
+        text: 'Написать кому-нибудь',
+        goTo: 447
+      }],
+    beforeBegin: () => {
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'SpendTimeWithFamily' }) >= 1 && scenarioManager.changeSceneButtonStatus(510, 0, false)
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'SpendTimeHomework' }) >= 1 && scenarioManager.changeSceneButtonStatus(510, 1, false)
+    },
+    message: 'У вас осталось 1 действие',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   }
 ])

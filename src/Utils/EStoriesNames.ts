@@ -9,6 +9,7 @@ export enum EStoriesEn {
   ROR = 'ROR',
   AEP = 'AEP',
   FOF = 'FOF',
+  ISML = 'ISML',
   //
   UL = 'UL',
 }
@@ -20,7 +21,8 @@ export enum EStoriesRu {
   AEP = 'Amore e passione',
   Aurora = 'Аврора',
   UL = 'Непредсказуемая любовь',
-  MM = 'Memento mori'
+  MM = 'Memento mori',
+  ISML = 'В поисках исчезнувшего света'
 }
 
 export enum EStoriesAvailable {
@@ -30,5 +32,6 @@ export enum EStoriesAvailable {
   AEP = 1,
   Immortals = 1,
   Aurora = 1,
-  MM = 1
+  MM = 1,
+  ISML = 1
 }

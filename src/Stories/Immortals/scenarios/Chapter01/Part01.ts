@@ -3322,6 +3322,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 211
       }],
+    beforeBegin: () => { timer.stop() },
     imageFront: require('../../../../Images/Immortals/Persons/Neitan.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Lection_Hall.jpg')
@@ -3329,7 +3330,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
 
   {
     id: 211,
-    beforeBegin: () => { timer.stop() },
     text:
   `
         — Нет, это был Александр Флеминг. В 1928 году он обнаружил воздействие плесени на бактерии. И лишь к 1943-му лекарство стали широко использовать в медицинских учреждениях. Но ты все равно молодец, за смелость, я не буду снижать оценку. 

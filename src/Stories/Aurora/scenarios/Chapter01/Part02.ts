@@ -384,9 +384,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
   {
     id: 25,
     text:
-      `
-        
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -1450,9 +1448,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
   {
     id: 260,
     text:
-      `
-       
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -1603,9 +1599,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
   {
     id: 99,
     text:
-      `
-        
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -1673,7 +1667,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 103,
     text:
       `
-        Ничего не делается просто так в этом мире. Мой старший брат Ян всегда учил, что нельзя так просто полагаться на людей. Нужно лучше узнавать их. 
+        Мой старший брат Ян всегда учил, что нельзя так просто полагаться на людей. Нужно лучше узнавать их. 
       `,
     buttons: [
       {
@@ -2240,8 +2234,19 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     buttons: [
       {
         text: '',
-        goTo: 141
+        goTo: 301
       }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Flower_Glade.jpg')
+  },
+
+  {
+    id: 301,
+    text: '',
+    buttons: [
+      {
+        text: ''
+      }],
+    cutScene: { video: require('../../../../Images/Aurora/Cutscenes/Flowerfield.mp4'), goTo: 141 },
     imageBack: require('../../../../Images/Aurora/Backgrounds/Flower_Glade.jpg')
   },
 
@@ -3195,9 +3200,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
   {
     id: 204,
     text:
-      `
-        
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -3688,7 +3691,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 235,
     text:
       `
-        Холл представлял собой большое пространство с широкой лестницей посередине. Первые секунды мною даже завладел страх потеряться в таком большом и неизведанном месте. 
+        Холл представлял собой большое пространство с широкой лестницей посередине. Первые секунды мною даже завладел страх потеряться в этом неизведанном месте. 
       `,
     buttons: [
       {
@@ -3743,9 +3746,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
   {
     id: 262,
     text:
-      `
-       
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -3771,7 +3772,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 239,
     text:
       `
-        Моему счастью не было предела. Я словно оказалась в месте, о котором так долго мечтала. <p>Окруженная книгами, я чувствовала себя живой и по-настоящему в своей тарелке. Когда-нибудь я обязательно хотела оказаться тем самым автором, чья книга могла бы находиться среди этих великолепных работ. 
+        Моему счастью не было предела. Я словно оказалась в месте, о котором так долго мечтала.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 300
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Library.jpg')
+  },
+
+  {
+    id: 300,
+    text:
+      `
+        Окруженная книгами, я чувствовала себя живой и по-настоящему в своей тарелке. Когда-нибудь я обязательно хотела оказаться тем самым автором, чья книга могла бы находиться среди этих великолепных работ. 
       `,
     buttons: [
       {

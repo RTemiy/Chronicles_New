@@ -11,7 +11,7 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/MM/Backgrounds/Dark_Entrance.jpg'),
+      image: require('../../Images/MM/Covers/Chapter01.jpg'),
       parts: [
         {
           name: 'Пролог',
@@ -20,6 +20,16 @@ storiesManager.add({
           loadingImage: require('../../Images/MM/Covers/Prologue.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+          }
+        },
+        {
+          name: 'Часть 1',
+          code: '0',
+          image: require('../../Images/MM/Backgrounds/Watchroom.jpg'),
+          loadingImage: require('../../Images/MM/Covers/Part01.jpg'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
         },
         {

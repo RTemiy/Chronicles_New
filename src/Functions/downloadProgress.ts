@@ -1,4 +1,4 @@
-import { loadData } from './localStorageManager';
+import { loadData } from './localStorageManager'
 
 export default function downloadProgress (): void {
   const a = document.createElement('a')

@@ -362,6 +362,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 18
       }],
+    stats: [{ story: EStoriesEn.ROR, value: 0, category: 'Person', id: 'Ditrich' }],
     imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
@@ -486,7 +487,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 26
+        goTo: 210
       }],
     imageFront: require('../../../../Images/ROR/Persons/Mortimer_Mask.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
@@ -494,7 +495,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
   },
 
   {
-    id: 26,
+    id: 210,
     text:
       `
         — Вы сэр Гарнер? — послышался приглушенный высокий голос из-под маски.
@@ -618,7 +619,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 157
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
   },
@@ -1000,8 +1001,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    stats: [
-      { story: EStoriesEn.ROR, value: 0, category: 'Person', id: 'Vig' }],
+    stats: [{ story: EStoriesEn.ROR, value: 0, category: 'Person', id: 'Vig' }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
@@ -1016,6 +1016,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 48
       }],
+    stats: [{ story: EStoriesEn.ROR, value: 0, category: 'Person', id: 'Joanne' }],
     imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
@@ -2398,7 +2399,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 117
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageFront: require('../../../../Images/ROR/Persons/Otto.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
   },
@@ -2414,7 +2415,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 118
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
+    imageFront: require('../../../../Images/ROR/Persons/Otto.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
   },
@@ -2656,6 +2657,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 132
       }],
+    achievement: { story: EStoriesEn.ROR, name: 'PayOtto' },
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Gates.jpg')
   },
 

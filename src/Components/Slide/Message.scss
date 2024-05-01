@@ -31,10 +31,6 @@
   max-width: 350px;
   text-align: center;
   margin: 0 15vw 30vh 15vw;
-  hyphens: auto;
-  &>p{
-    hyphens: auto;
-  }
   /*&:before{
     @extend %styled-border;
     @extend %slide-container;

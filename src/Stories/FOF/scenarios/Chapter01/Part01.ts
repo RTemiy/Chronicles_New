@@ -263,9 +263,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
   {
     id: 340,
     text:
-      `
-
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -276,14 +274,15 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 15
       },
       {
-        condition: () => statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) >= 1,
+        condition: () => statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) < 3 && statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) > 0,
         goTo: 19
       },
       {
         condition: () => statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) >= 3,
         goTo: 23
       }
-    ]
+    ],
+    imageBack: require('../../../../Images/FOF/Backgrounds/Hospital_Room.jpg')
   },
 
   {
@@ -3333,7 +3332,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 193
       }],
-    speaker: '...',
+    speaker: 'Незнакомец',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
@@ -4683,6 +4682,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 276
       }],
     speaker: 'Эбигейл',
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 

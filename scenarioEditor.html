@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Chronicles Scenario Editor</title>
+	<link rel="icon" type="image/png" href="./src/Images/UI/editor_icon.png" />
+	<style>
+		button{
+			border: 0;
+			padding: 10px;
+			margin: 0;
+			cursor: pointer;
+			border-radius: 15px;
+		}
+
+		label{
+			margin: 5px 0 5px 0;
+			padding: 0 0 2px 5px;
+			border-bottom: 1px solid gray;
+		}
+
+		input{
+			border: 0;
+			border-radius: 15px;
+			max-width: 250px;
+			padding: 5px;
+		}
+
+		textarea{
+      border: 1px solid #757575;
+      border-radius: 15px;
+			padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+		}
+
+		#uploadInput{
+			display: none;
+		}
+
+    #scenarioToTransform{
+      width: 250px;
+			height: 250px;
+		}
+
+		.toolbar-menu{
+			position: fixed;
+			display: flex;
+			flex-direction: row;
+			justify-content: left;
+			left: 0;
+			right: 0;
+			top: 0;
+			max-height: 25px;
+			background-color: gray;
+			padding: 5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+		}
+
+		.toolbar-button{
+		}
+
+    .toolbar-button:hover>.toolbar-category{
+			opacity: 1;
+			visibility: visible;
+    }
+
+		.toolbar-category-opener{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+			margin: 0;
+      border-radius: 15px;
+			height: 25px;
+			color: white;
+			position: relative;
+			background-color: transparent;
+		}
+
+    .toolbar-category-opener:hover{
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .toolbar-category:hover{
+      opacity: 1;
+      visibility: visible;
+    }
+
+		.toolbar-category{
+			position: relative;
+			top: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			visibility: hidden;
+			opacity: 0;
+      background-color: gray;
+			padding: 5px;
+			border-radius: 0 0 15px 15px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+		}
+
+		.toolbar-category-button{
+			text-align: left;
+      border-radius: 15px;
+			background-color: transparent;
+      color: white;
+		}
+
+    .toolbar-category-button:hover{
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+		.blueprint{
+			padding: 30px 0;
+		}
+
+		.storyInfo{
+			opacity: 0;
+			visibility: hidden;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			border-radius: 15px;
+			padding: 10px;
+			max-width: fit-content;
+			gap: 10px;
+		}
+
+		.storyInfo-block{
+			display: flex;
+			flex-direction: column;
+			background-color: rgba(0, 0, 0, 0.15);
+			border-radius: 15px;
+			padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+		}
+
+		.slides{
+			margin: 10px 0 0 0;
+			gap: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.slide{
+			height: 350px;
+		}
+
+		.toTransformScenarioWindow{
+			position: absolute;
+			display: flex;
+			opacity: 0;
+			visibility: hidden;
+			align-items: center;
+			justify-content: center;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba(0, 0, 0, 0.2);
+			transition: all .5s ease-in-out;
+		}
+
+		.fullscreenWindow{
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: all .5s ease-in-out;
+		}
+
+		.fullscreenBlock{
+      display: flex;
+			flex-direction: column;
+      align-items: center;
+			gap: 10px;
+			padding: 10px;
+      justify-content: center;
+      background-color: rgb(217, 217, 217);
+			border-radius: 15px;
+			box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+		}
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 0;
+			background-color: gray;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: gray;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: white;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+	</style>
+</head>
+<body>
+<div class="toolbar-menu">
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Сценарий</button>
+		<div class="toolbar-category">
+			<button id="uploadButton" class="toolbar-category-button">Открыть</button>
+			<button id="downloadButton" class="toolbar-category-button">Сохранить</button>
+			<button id="transformButton" class="toolbar-category-button">Трансформировать</button>
+		</div>
+	</div>
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Правка</button>
+		<div class="toolbar-category">
+			<button id="replaceButton" class="toolbar-category-button">Заменить</button>
+		</div>
+	</div>
+</div>
+
+<div class="blueprint">
+	<div class="storyInfo">
+		<div class="storyInfo-block">
+			<label for="storyCode">Код истории</label><input id="storyCode" type="text">
+		</div>
+		<div class="storyInfo-block">
+			<label for="chapterName">Название главы</label><input id="chapterName" type="text"></div>
+		<div class="storyInfo-block">
+			<label for="partName">Название части</label><input id="partName" type="text"></div>
+		<div class="storyInfo-block">
+			<label for="partCode">Код части</label><input id="partCode" type="text">
+		</div>
+	</div>
+	<div class="slides">
+	</div>
+</div>
+
+<div id="replaceWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="whatToReplace">Заменить:</label><input id="whatToReplace" placeholder="Введите текст" type="text">
+		<label for="ToWhatToReplace">На:</label><input id="ToWhatToReplace" placeholder="Введите текст" type="text">
+		<button id="makeReplaceButton">Заменить всё</button>
+	</div>
+</div>
+
+<div class="toTransformScenarioWindow">
+	<textarea id="scenarioToTransform" placeholder="Вставьте текст сценария"></textarea>
+</div>
+
+<input id="uploadInput" type="file">
+<script>
+	const uploadButton = document.querySelector('#uploadButton')
+	const uploadInput = document.querySelector('#uploadInput')
+	const downloadButton = document.querySelector('#downloadButton')
+  const transformButton = document.querySelector('#transformButton')
+  const replaceButton = document.querySelector('#replaceButton')
+  const makeReplaceButton = document.querySelector('#makeReplaceButton')
+
+	const transformWindow = document.querySelector('.toTransformScenarioWindow')
+  const replaceWindow = document.querySelector('#replaceWindow')
+
+	const storyInfo = document.querySelector('.storyInfo')
+	const transformInput = document.querySelector('#scenarioToTransform')
+	const storyCode = document.querySelector('#storyCode')
+  const chapterName = document.querySelector('#chapterName')
+  const partName = document.querySelector('#partName')
+  const partCode = document.querySelector('#partCode')
+	const whatToReplace = document.querySelector('#whatToReplace')
+  const ToWhatToReplace = document.querySelector('#ToWhatToReplace')
+	const slidesField = document.querySelector('.slides')
+
+  const dictionary = new Map()
+
+  let currentFile = ''
+
+	addListeners()
+	initDictionary()
+
+	function addListeners() {
+    uploadInput.onchange = () => {
+      const FR = new FileReader()
+      FR.readAsText(uploadInput.files[uploadInput.files.length-1])
+      FR.onload = () => {
+        currentFile = FR.result
+				makeStructure()
+      }
+    }
+
+    uploadButton.onclick = () => {
+      uploadInput.click()
+    }
+
+    transformInput.onchange = () => {
+      currentFile = makeScenario(prompt('Укажите код истории'), transformInput.value)
+			makeStructure()
+      transformWindow.style.opacity = '0'
+      transformWindow.style.visibility = 'hidden'
+    }
+
+    transformButton.onclick = () => {
+      transformInput.value = ''
+      transformWindow.style.opacity = '1'
+			transformWindow.style.visibility = 'visible'
+		}
+
+    downloadButton.onclick = () => {
+      saveFromEditor()
+      saveFile(currentFile)
+    }
+
+    replaceButton.onclick = () => {
+      whatToReplace.value = ''
+      ToWhatToReplace.value = ''
+      replaceWindow.style.opacity = '1'
+      replaceWindow.style.visibility = 'visible'
+		}
+
+    makeReplaceButton.onclick = () => {
+      const slides = document.querySelectorAll('.slide')
+			slides.forEach(slide => {
+        slide.value = slide.value.replaceAll(whatToReplace.value, ToWhatToReplace.value)
+			})
+      replaceWindow.style.opacity = '0'
+      replaceWindow.style.visibility = 'hidden'
+		}
+  }
+
+  function saveFile(text) {
+    const a = document.createElement('a')
+    const file = new Blob([text], { type: 'application/text' })
+    a.href = URL.createObjectURL(file)
+    a.innerText = 'Скачать'
+    a.download = `${prompt('Введите название файла')}.ts`
+    a.click()
+  }
+
+  function makeStructure () {
+    const storyData = currentFile.match(/scenarioManager.addScenario\({ [\s\S]* }, \[/)[0].match(/{ [\s\S]* }/)[0]
+    storyCode.value = storyData.match(/storyName: [\s\S]*, /)[0].split(': ')[1].split(',')[0]
+    chapterName.value = storyData.match(/chapterName: [\s\S]*, /)[0].split(': ')[1].split(',')[0]
+    partName.value = storyData.match(/partName: [\s\S]*, /)[0].split(': ')[1].split(',')[0]
+    partCode.value = storyData.match(/code: [\s\S]* }/)[0].split(': ')[1].split('}')[0]
+		let slides = currentFile.split('  {\n    id: ')
+		slides.forEach((slide,index) => {
+      slides[index] = '  {\n    id: ' + slides[index]
+		})
+    storyInfo.style.opacity = '1'
+    storyInfo.style.visibility = 'visible'
+		slides.shift()
+    slidesField.innerHTML = ''
+    let result = ''
+    slides.forEach(slide => {
+      for (const [key, value] of dictionary) {
+        slide = slide.replaceAll(`${key}:`, `${value}:`)
+      }
+      result+=`
+      <textarea class="slide">${slide}</textarea>
+      `
+      slidesField.innerHTML = result
+    })
+	}
+
+  function saveFromEditor () {
+    const fileBeginning = currentFile.split('scenarioManager.addScenario({')[0]
+    let result = `${fileBeginning}scenarioManager.addScenario({ storyName: ${storyCode.value}, chapterName: ${chapterName.value}, partName: ${partName.value}, code: ${partCode.value}}, [\n`
+		const slides = document.querySelectorAll('.slide')
+		slides.forEach(slide => {
+      for (const [key, value] of dictionary) {
+        slide.value = slide.value.replaceAll(`${value}:`, `${key}:`)
+      }
+      result+=slide.value
+		})
+
+		currentFile = result
+	}
+
+  function initDictionary() {
+    dictionary.set('id', 'Номер слайда')
+    dictionary.set('text', 'Текст')
+    dictionary.set('buttons', 'Кнопки слайда')
+    dictionary.set('gift', 'Выбор за рекламу')
+    dictionary.set('goTo', 'Переход на слайд')
+    dictionary.set('func', 'Сопутствующее действие')
+    dictionary.set('message', 'Табличка')
+    dictionary.set('music', 'Музыка')
+    dictionary.set('ambient', 'Эмбиент')
+    dictionary.set('beforeBegin', 'Перед началом слайда')
+    dictionary.set('stats', 'Добавить статы')
+    dictionary.set('condition', 'Условие')
+    dictionary.set('imageFront', 'Объект')
+    dictionary.set('imageBorder', 'Рамка')
+    dictionary.set('imageBack', 'Фон')
+    dictionary.set('achievement', 'Достижение')
+  }
+
+  function makeScenario(name, text){
+    // Объект со всеми сценами
+    const scenes = {};
+    // Заготовка кода одного слайда
+    const scenePrefab = '' +
+      '\n  {' +
+      '\n    id: $INDEX$,' +
+      '\n    text: \n      `\n        $TEXT$\n      `, ' +
+      '\n    buttons: [\n      {\n        text: \'\',\n        goTo: $INDEXPLUS$\n      }],' +
+      '$MESSAGE$' +
+      '$MUSIC$' +
+      '$AMBIENT$' +
+      '$SPEAKER$' +
+      '$PICTUREFRONT$' +
+      '$CUTSCENE$' +
+      '$DARKS$' +
+      '$GHOSTS$' +
+      '\n    stats: [$STAT$$ITEM$$PERSON$],' +
+      '\n    achievement: $ACHIEVEMENT$' +
+      '\n    imageBack: require(\'../../../../Images/$NAME$/-$PICTURE$-\')' +
+      '  \n  },'
+    // Отделяем каждый слайд если кол-во отступов 3+ и каждый абзац разделяем при кол-ве отступов 1
+    scenes[name] = text.split(/\n\n\n+/g).map(slide => slide.split('\n'));
+    // Сэты с уникальными названиями
+    const allPictures = new Set();
+    const allMusic = new Set();
+    const allItems = new Set();
+    const allStats = new Set();
+    const allPersons = new Set();
+    const allAchievements = new Set();
+    // Выводимый результат
+    let result = ``;
+    // Кэшируем последнюю используемую картинку
+    let picture = '';
+    // Проходимся по всем созданным слайдам
+    for(let x = 0; x<scenes[name].length;x++){
+      // Копируем заготовку кода одного слайда
+      let value = scenePrefab.slice();
+      // Проходимся по всем абзацам в слайде
+      for(let y =0; y<scenes[name][x].length;y++){
+
+        // В зависимости от наличия ключевого слова делаем действие
+        if(/! Фон:* /.test(scenes[name][x][y])) {
+          // Заменяем картинку пустой строкой
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Фон:* /, '');
+          // Добавляем название картинки в сэт
+          allPictures.add(scenes[name][x][y]);
+          // Вырезаем и кешируем значение картинки
+          picture = scenes[name][x].splice(y,1);
+          // Обязательно откатываем шаг назад т.к. ВЫРЕЗАЛИ элемент массива
+          y-=1;
+        } else if (/! Объект:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Объект:* /, '');
+          // Добавляем название картинки в сэт
+          allPictures.add(scenes[name][x][y]);
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../../Images/$NAME$/UI/Border.png\'),`);
+          y-=1;
+        } else if (/! Табличка:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Табличка:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$MESSAGE$',`\n    message: '${scenes[name][x].splice(y,1)}',`);
+          y-=1;
+        } else if (/! Реплика:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Реплика:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$SPEAKER$',`\n    speaker: '${scenes[name][x].splice(y,1)}',`);
+          y-=1;
+        } else if (/! Кат-Сцена:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Кат-Сцена:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$CUTSCENE$',`\n    cutScene: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
+          y-=1;
+        } else if (/! Достижение:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Достижение:* /, '');
+          allAchievements.add(scenes[name][x][y]);
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$ACHIEVEMENT$',`{ story: EStoriesEn.${name}, name: '${scenes[name][x].splice(y,1)}' },`);
+          y-=1;
+        } else if (/! Силуэт/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Силуэт/, '');
+          value = value.replaceAll('$DARKS$',`darkSilhouette: true,`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Призрак/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Призрак/, '');
+          value = value.replaceAll('$GHOSTS$',`ghostSilhouette: true,`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Музыка:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Музыка:* /, '');
+          // Добавляем название музыки в сэт
+          allMusic.add(scenes[name][x][y]);
+          value = value.replaceAll('$MUSIC$',`\n    music: require('../../../../Sounds/${name}/=${scenes[name][x].splice(y,1)}='),`);
+          y-=1;
+        } else if (/! Эмбиент:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Эмбиент:* /, '');
+          // Добавляем название музыки в сэт
+          allMusic.add(scenes[name][x][y]);
+          value = value.replaceAll('$AMBIENT$',`\n    ambient: require('../../../../Sounds/${name}/=${scenes[name][x].splice(y,1)}='),`);
+          y-=1;
+        }
+        else if (/! Предмет:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Предмет:* /, '');
+          let word = scenes[name][x][y].split(' ');
+          const itemAmount = word.pop();
+          word = word.join(' ');
+          allItems.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$ITEM$',`\n          { story: EStoriesEn.${name}, value: ${itemAmount}, category: 'Item', id: '&${word}&' },$ITEM$`);
+          y-=1;
+        } else if (/! Стат:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Стат:* /, '');
+          let word = scenes[name][x][y].split(' ');
+          const statAmount = word.pop();
+          word = word.join(' ');
+          allStats.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$STAT$',`\n          { story: EStoriesEn.${name}, value: ${statAmount}, category: 'Effect', id: '*${word}*' },$STAT$`);
+          y-=1;
+        }
+        else if (/! Персонаж:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Персонаж:* /, '');
+          let word = scenes[name][x][y].split(' ');
+          const statAmount = word.pop();
+          word = word.join(' ');
+          allPersons.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$PERSON$',`\n          { story: EStoriesEn.${name}, value: ${statAmount}, category: 'Person', id: '*${word}*' },$STAT$`);
+          y-=1;
+        }
+
+        // Удаление пустого абзаца
+        else if(scenes[name][x][y]===''){
+          scenes[name][x].splice(y,1);
+          y-=1;
+        }
+      }
+      // Соединяем абзацы при помощи <p>
+      scenes[name][x] = scenes[name][x].join('<p>');
+      // Удаляем <p> в начале
+      if (scenes[name][x].startsWith('<p>')) scenes[name][x] = scenes[name][x].replace('<p>', '');
+      // Заменяем ключевые слова на значения
+      value = value.replaceAll('$NAME$',name);
+      value = value.replaceAll('$PICTURE$', picture);
+      value = value.replaceAll('$INDEX$', x + '');
+      value = value.replaceAll('$INDEXPLUS$', x + 1 + '');
+      value = value.replaceAll('$TEXT$', `${scenes[name][x]}`);
+      // Удаляем ключевые слова, если не использовались
+      value = value.replaceAll('$ITEM$','');
+      value = value.replaceAll('$STAT$','');
+      value = value.replaceAll('$PERSON$','');
+      value = value.replaceAll('$MESSAGE$','');
+      value = value.replaceAll('$MUSIC$','');
+      value = value.replaceAll('$AMBIENT$','');
+      value = value.replaceAll('$SPEAKER$','');
+      value = value.replaceAll('$CUTSCENE$','');
+      value = value.replaceAll('$PICTUREFRONT$','');
+      value = value.replaceAll('$DARKS$','');
+      value = value.replaceAll('$GHOSTS$','');
+      value = value.replaceAll('\n    stats: [],','');
+      value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
+      value = value.replaceAll('\n    doBeforeBegin: () => {\n      },','');
+      // Добавляем код слайда в строку
+      result += value + '\n';
+    }
+
+    // Добавляем уникальные имена картинок и музыки в начало кода всех слайдов (чтобы можно было потом проверить все ли заменилось)
+    const initConst = 'scenarioManager.addScenario({ ' +
+      'storyName: EStoriesEn.'  + prompt('Укажите название истории на английском') +
+      ', chapterName: \'' + prompt('Укажите название главы') +
+      '\', partName: \'' + prompt('Укажите название части') +
+      '\', code: \'' + prompt('Укажите код части') +'\' }, [';
+    const resultImages = '// Картинки: ' + JSON.stringify([...allPictures]) + '\n\n';
+    const resultMusic = '// Музыка:' + JSON.stringify([...allMusic]) + '\n\n';
+    const resultItems = '// Предметы:' + JSON.stringify([...allItems]) + '\n\n';
+    const resultStats = '// Статы:' + JSON.stringify([...allStats]) + '\n\n';
+    const resultPersons = '// Персонажи:' + JSON.stringify([...allPersons]) + '\n\n';
+    const resultAchievements = '// Достижения:' + JSON.stringify([...allAchievements]) + '\n\n';
+
+    // Функция замены указанных названий картинок, музыки и тд на пути до файлов
+    function setCodeNames(set, message, brackets = '', additional = '') {
+      set.forEach(element => result = result.replaceAll(`${brackets}${element}${brackets}`,  prompt(`${message} [ ${element} ] :`) + additional));
+    }
+
+    setCodeNames(allPictures, 'Укажите путь до картинки для', '-');
+    setCodeNames(allMusic, 'Укажите название музыки для', '=', '.mp3');
+    setCodeNames(allItems, 'Укажите название предмета для', '&');
+    setCodeNames(allStats, 'Укажите название стата для', '*');
+    setCodeNames(allPersons, 'Укажите название персонажа для', '*');
+    setCodeNames(allAchievements, 'Укажите название достижения для');
+
+    result = resultImages + resultMusic + resultPersons + resultItems + resultStats + resultAchievements + initConst + result + '])\n';
+    // Возвращаем результат
+    return result;
+  }
+
+</script>
+</body>
+</html>

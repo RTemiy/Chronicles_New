@@ -154,7 +154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: 'Выложусь на все двести',
-        goTo: 11,
+        goTo: 11
       },
       {
         text: 'Выложусь точно на сто',
@@ -441,7 +441,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 27
       }],
     speaker: 'Эйприл',
-    imageFront: require('../../../../Images/FOF/Persons/April.png'),
+    imageFront: require('../../../../Images/FOF/Persons/April_Form.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Locker_Room.jpg')
   },
@@ -506,7 +506,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 31
       }],
     speaker: 'Эйприл',
-    imageFront: require('../../../../Images/FOF/Persons/April.png'),
+    imageFront: require('../../../../Images/FOF/Persons/April_Form.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Locker_Room.jpg')
   },
@@ -627,8 +627,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
   {
     id: 38,
     text:
-      `
-      `,
+      '',
     buttons: [
       {
         text: ''
@@ -1378,7 +1377,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 86
       }],
     speaker: 'Эйприл',
-    imageFront: require('../../../../Images/FOF/Persons/April.png'),
+    imageFront: require('../../../../Images/FOF/Persons/April_Form.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Locker_Room.jpg')
   },

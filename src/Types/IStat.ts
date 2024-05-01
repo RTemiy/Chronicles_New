@@ -14,4 +14,5 @@ export default interface IStat {
   description?: string
   value?: number
   show?: number
+  showValue?: boolean
 }

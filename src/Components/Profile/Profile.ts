@@ -15,6 +15,7 @@ import { Slide } from '../Slide/Slide'
 import saveScreenshot from '../../Functions/screenshot'
 import makeExplosion from '../../Functions/explosion'
 import { transformMinutes } from '../../Functions/transformMinutes'
+import { devMode } from '../../Utils/technicalConsts';
 
 export const Profile = new CContainer(
   'profile',
@@ -121,7 +122,7 @@ Profile.editBanner.onclick = () => {
 
 let clicks = 0
 Profile.wastedBooks.onclick = () => {
-  clicks++
+  devMode && clicks++
   if (clicks >= 10) {
     addBook()
     clicks = 0

@@ -1005,9 +1005,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     buttons: [
       {
         text: '',
-        goTo: 66
+        goTo: 202
       }],
     imageFront: require('../../../../Images/Aurora/Persons/Classmate.png'),
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+  },
+
+  {
+    id: 202,
+    text:
+      `
+        — А можно послушать?
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 66
+      }],
+    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
   },
@@ -1016,7 +1032,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 66,
     text:
       `
-        — А можно послушать? <p>— Конечно! Я и забыл, что у тебя нет денег, — он протянул мне плеер и наушники. 
+        — Конечно! Я и забыл, что у тебя нет денег, — он протянул мне плеер и наушники. 
       `,
     buttons: [
       {

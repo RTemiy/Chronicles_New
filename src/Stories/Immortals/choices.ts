@@ -22,24 +22,28 @@ statsManager.add({
 statsManager.add({
   category: 'Choice',
   id: 'TakeSerious',
+  idDescription: 'Выбор "Отнестись серьезно"',
   story: EStoriesEn.Immortals
 })
 
 statsManager.add({
   category: 'Choice',
   id: 'DontBelieve',
+  idDescription: 'Выбор "Не верить в происходящее"',
   story: EStoriesEn.Immortals
 })
 
 statsManager.add({
   category: 'Choice',
   id: 'RunAwayFromNicola',
+  idDescription: 'Выбор "Убежать"',
   story: EStoriesEn.Immortals
 })
 
 statsManager.add({
   category: 'Choice',
   id: 'TurnToSide',
+  idDescription: 'Выбор "Убежать в переулок"',
   story: EStoriesEn.Immortals
 })
 
@@ -62,41 +66,43 @@ statsManager.add({
 })
 
 statsManager.add({
-  category: 'Effect',
-  id: 'Study',
-  name: 'Учеба',
-  image: require('../../Images/Immortals/Items/Study.png'),
-  title: 'Успеваемость в университете',
-  description: 'Вопреки обстоятельствам не стоит забрасывать учебу, ведь от этого зависит мое будущее.',
+  category: 'Choice',
+  id: 'TwoChoices',
   story: EStoriesEn.Immortals
 })
 
 statsManager.add({
-  category: 'Effect',
-  id: 'SupportNicola',
-  name: 'Помощь',
-  image: require('../../Images/Immortals/Effects/addiction.svg'),
-  title: '',
-  description: '',
+  category: 'Choice',
+  id: 'SpendTimeWithFamily',
   story: EStoriesEn.Immortals
 })
 
 statsManager.add({
-  category: 'Effect',
-  id: 'Family',
-  name: 'Семья',
-  image: require('../../Images/Immortals/Effects/family.svg'),
-  title: '',
-  description: '',
+  category: 'Choice',
+  id: 'SpendTimeHomework',
   story: EStoriesEn.Immortals
 })
 
 statsManager.add({
-  category: 'Effect',
-  id: 'BrokenHand',
-  name: 'Перелом',
-  image: require('../../Images/Immortals/Effects/bone.svg'),
-  title: 'Перелом руки',
-  description: 'И что мне делать дальше?',
+  category: 'Choice',
+  id: 'WriteLeon',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'WriteNeitan',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'WriteScarlett',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'WriteCheryl',
   story: EStoriesEn.Immortals
 })

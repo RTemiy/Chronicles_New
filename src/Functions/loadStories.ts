@@ -6,6 +6,7 @@ export default function (storiesNames: object): void {
     require('../Stories/' + story + '/achievements')
     require('../Stories/' + story + '/persons')
     require('../Stories/' + story + '/items')
+    require('../Stories/' + story + '/effects')
     require('../Stories/' + story + '/choices')
     require('../Stories/' + story + '/wardrobe')
     require('../Stories/' + story + '/avatars')

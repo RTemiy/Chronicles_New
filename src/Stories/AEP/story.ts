@@ -1,4 +1,4 @@
-import { scenarioManager, storiesManager } from '../../index';
+import { scenarioManager, statsManager, storiesManager } from '../../index';
 
 storiesManager.add({
   name: 'AEP',
@@ -7,6 +7,7 @@ storiesManager.add({
     'Всего нужен миг, чтобы спокойная жизнь превратилась в хаос. Главная героиня попадает в водоворот интриг, страсти и криминала в самом сердце Италии. Опасность и предательства поджидают на каждом углу. Игра началась!',
   genre: 'Повседневность, Эротика',
   mature: true,
+  status: 'Новая часть',
   chapters: [
     {
       name: 'Глава 1',
@@ -19,6 +20,16 @@ storiesManager.add({
           loadingImage: require('../../Images/AEP/Covers/Prologue.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+          }
+        },
+        {
+          name: 'Часть 1',
+          code: '0',
+          image: require('../../Images/AEP/Backgrounds/Penthouse_Party.jpg'),
+          loadingImage: require('../../Images/AEP/Covers/Part01.jpg'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
         },
         {

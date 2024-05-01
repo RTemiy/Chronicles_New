@@ -34,6 +34,14 @@ export default class CStatsManager {
     return stat.value!
   }
 
+  getAllStoryStats (storyName: string): IStat[] {
+    const allStoryStats = []
+    for (const stat in this.#stats) {
+      this.#stats[stat].story === storyName && allStoryStats.push(this.#stats[stat])
+    }
+    return allStoryStats
+  }
+
   saveStats (isLastSave: boolean, storyName: string, chapterName: string, partName: string, code?: string): void {
     this.#forEach((stat: IStat) => {
       if (stat.story === storyName) {
@@ -124,7 +132,7 @@ export default class CStatsManager {
           effects += `
                      <div class="inventory__effect-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
                      <img class="inventory__effect-image" src="${stat.image}">
-                     <p class="inventory__effect-value">${stat.value! > 1 ? stat.value : ''}</p>
+                     <p class="inventory__effect-value">${stat.showValue === false ? '' : stat.value}</p>
                      <p class="inventory__effect-name">${stat.name}</p>
                      </div>
                      `

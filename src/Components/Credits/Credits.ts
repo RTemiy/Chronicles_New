@@ -48,6 +48,7 @@ export const Credits = new CContainer(
 <p class="credits__role">АРТЫ</p>
 <p class="credits__name">Артемий Голубятников</p>
 <p class="credits__name">Мария Мармажова</p>
+
 <h2 class="credits__subtitle">Осколки чужой судьбы</h2>
 
 <p class="credits__role">АВТОР СЦЕНАРИЯ</p>
@@ -60,6 +61,28 @@ export const Credits = new CContainer(
 <p class="credits__name">Мария Мармажова</p>
 <p class="credits__name">Альбина</p>
 <p class="credits__name">Артемий Голубятников</p>
+
+<h2 class="credits__subtitle">Memento mori</h2>
+
+<p class="credits__role">АВТОР СЦЕНАРИЯ</p>
+<p class="credits__name">Диана Щербак</p>
+
+<p class="credits__role">РЕДАКТОР</p>
+<p class="credits__name">Мария Мармажова</p>
+
+<p class="credits__role">АРТЫ</p>
+<p class="credits__name">Мария Мармажова</p>
+
+<h2 class="credits__subtitle">В поисках исчезнувшего света</h2>
+
+<p class="credits__role">АВТОР СЦЕНАРИЯ</p>
+<p class="credits__name">Алиса</p>
+
+<p class="credits__role">РЕДАКТОР</p>
+<p class="credits__name">Мария Мармажова</p>
+
+<p class="credits__role">АРТЫ</p>
+<p class="credits__name">@MARK</p>
 
 <h2 class="credits__subtitle">Непредсказуемая любовь</h2>
 
@@ -74,9 +97,14 @@ export const Credits = new CContainer(
 <p class="credits__name">Мария Мармажова</p>
 <p class="credits__name">Альбина</p>
 
+<h2 class="credits__subtitle">Тестирование</h2>
+<p class="credits__name">Анастасия Кобзева</p>
+
 <h2 class="credits__subtitle">Прочее</h2>
 <p class="credits__role">СООСНОВАТЕЛЬ</p>
 <p class="credits__name">Вероника</p>
+
 <img class="credits__image" src="${require('../../Images/UI/MVA.png')}">
+
 `
 )

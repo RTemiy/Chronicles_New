@@ -621,6 +621,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 40
       }],
+    message: 'По мере продвижения истории вы будете сталкиваться с предметами, которые пригодятся в расследовании. Найденные улики будут помещены в инвентарь',
+    stats: [
+      { story: EStoriesEn.MM, value: 1, category: 'Item', id: 'BurntMessage' }],
     imageFront: require('../../../../Images/MM/Objects/Burnt_Letter.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Entrance.jpg')
@@ -662,7 +665,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 42,
     text:
       `
-        <i>(Уже неделю вы, Маргарита, проходили с единственной брошью и так и не заметили пропажи), постарайтесь рыть в этом же месте и найдете… 
+        <i>(Уже неделю вы, Маргарита, проходили с единственным украшением и так и не заметили пропажи), постарайтесь рыть в этом же месте и найдете…  
       `,
     buttons: [
       {
@@ -678,7 +681,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 43,
     text:
       `
-        <i>Нет, к сожалению, не клад, но кое-что не менее занимательное – труп известного бизнесмена. 
+        <i>Нет, к сожалению, не клад, но кое-что не менее занимательное — труп известного бизнесмена. 
       `,
     buttons: [
       {
@@ -694,7 +697,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 44,
     text:
       `
-        <i>И помните – убийцей может оказаться любой человек, окружающий вас. Не доверяй никому.
+        <i>И помните — убийцей может оказаться любой человек, окружающий вас. Не доверяй никому.
       `,
     buttons: [
       {
@@ -747,7 +750,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 49
       }],
-    music: require('../../../../Sounds/MM/Fast.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Flat_Stairs.jpg')
   },
 
