@@ -3,7 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Chronicles Editor</title>
-	<link rel="icon" type="image/png" href="./src/Images/UI/editor_icon.png" />
+	<link rel="icon" type="image/png" href="./src/Images/UI/editor/editor_icon.png" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+	/>
 	<style>
 		html{
       scroll-behavior: smooth;
@@ -29,7 +33,7 @@
 		}
 
 		button:disabled{
-			color: #b2b2b2;
+			filter: brightness(70%);
 			cursor: no-drop;
 		}
 
@@ -125,6 +129,9 @@
 		}
 
 		.toolbar-category-button{
+			display: flex;
+			align-items: center;
+			justify-content: left;
 			text-align: left;
       border-radius: 15px;
 			background-color: transparent;
@@ -229,6 +236,12 @@
       box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
 		}
 
+		.span_icon{
+			width: 25px;
+			height: 25px;
+			margin: 0 10px 0 0;
+		}
+
     ::-webkit-scrollbar {
       width: 10px;
       height: 0;
@@ -256,17 +269,17 @@
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Сценарий</button>
 		<div class="toolbar-category">
-			<button id="uploadButton" class="toolbar-category-button">Открыть</button>
-			<button id="downloadButton" class="toolbar-category-button" disabled>Сохранить</button>
-			<button id="transformButton" class="toolbar-category-button">Парсинг</button>
+			<button id="uploadButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_open.svg"/>Открыть</button>
+			<button id="downloadButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_save.svg"/>Сохранить</button>
+			<button id="transformButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_parse.svg"/>Парсинг</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Правка</button>
 		<div class="toolbar-category">
-			<button id="findSlideButton" class="toolbar-category-button" disabled>Найти слайд</button>
-			<button id="replaceButton" class="toolbar-category-button" disabled>Заменить</button>
-			<button id="addSlideButton" class="toolbar-category-button" disabled>Добавить слайд</button>
+			<button id="findSlideButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_find.svg"/>Найти слайд</button>
+			<button id="replaceButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_replace.svg"/>Заменить</button>
+			<button id="addSlideButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_add.svg"/>Добавить слайд</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
