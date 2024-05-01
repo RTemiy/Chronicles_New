@@ -407,8 +407,17 @@
 
   let currentFile = ''
 
-	addListeners()
-	initDictionary()
+onStart()
+
+	function onStart() {
+    addListeners()
+    initDictionary()
+		loadFromLocalStorage()
+  }
+
+  function loadFromLocalStorage() {
+    localStorage.getItem('UIColor') && cssVariables.style.setProperty('--main-editor-color', `${localStorage.getItem('UIColor')}`)
+  }
 
 	function addListeners() {
     uploadInput.onchange = () => {
@@ -502,9 +511,11 @@
 		}
 
     gammaColor.oninput = () => {
-      cssVariables.style.setProperty('--main-editor-color', `${hexToRgb(gammaColor.value)}`)
+      const rgbColor = hexToRgb(gammaColor.value)
+      cssVariables.style.setProperty('--main-editor-color', `${rgbColor}`)
       gammaWindow.style.opacity = '0'
       gammaWindow.style.visibility = 'hidden'
+			localStorage.setItem('UIColor', rgbColor)
 		}
   }
 
