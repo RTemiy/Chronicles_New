@@ -57,6 +57,7 @@
 		}
 
 		.toolbar-button{
+			position: relative;
 		}
 
     .toolbar-button:hover>.toolbar-category{
@@ -73,7 +74,6 @@
       border-radius: 15px;
 			height: 25px;
 			color: white;
-			position: relative;
 			background-color: transparent;
 		}
 
@@ -87,8 +87,8 @@
     }
 
 		.toolbar-category{
-			position: relative;
-			top: 0;
+			position: absolute;
+			top: 25px;
 			left: 0;
 			display: flex;
 			flex-direction: column;
@@ -97,7 +97,7 @@
       background-color: gray;
 			padding: 5px;
 			border-radius: 0 0 15px 15px;
-      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+      box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
 		}
 
 		.toolbar-category-button{
@@ -144,7 +144,7 @@
 		}
 
 		.slide{
-			height: 350px;
+
 		}
 
 		.toTransformScenarioWindow{
@@ -368,6 +368,10 @@
       <textarea class="slide">${slide}</textarea>
       `
       slidesField.innerHTML = result
+      slidesField.querySelectorAll('.slide').forEach(slide => {
+        slide.style.height = '5px'
+				slide.style.height = slide.scrollHeight + 'px'
+			})
     })
 	}
 
