@@ -236,6 +236,11 @@
       box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
 		}
 
+		.returnButton>img{
+			width: 60px;
+			height: 60px;
+    }
+
 		.span_icon{
 			width: 25px;
 			height: 25px;
@@ -285,10 +290,10 @@
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Инфо</button>
 		<div class="toolbar-category">
-			<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button">Бета</a>
-			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button">Релиз</a>
-			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button">Гугл диск</a>
-			<a target='_blank' href="https://t.me/RTemiy" class="toolbar-category-button">Создатель</a>
+			<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_beta.svg"/>Бета</a>
+			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_release.svg"/>Релиз</a>
+			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_google.svg"/>Гугл диск</a>
+			<a target='_blank' href="https://t.me/RTemiy" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_author.svg"/>Создатель</a>
 		</div>
 	</div>
 </div>
@@ -328,7 +333,7 @@
 	</div>
 </div>
 
-<a href="#" class="returnButton">🔝</a>
+<a href="#" class="returnButton"><img src="./src/Images/UI/editor/editor_up.svg"/></a>
 
 <div class="toTransformScenarioWindow">
 	<textarea id="scenarioToTransform" placeholder="Вставьте текст сценария"></textarea>
