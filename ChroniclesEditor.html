@@ -9,6 +9,9 @@
 		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
 	/>
 	<style>
+		:root{
+			--main-editor-color: 128, 128, 128;
+		}
 		* {
       font-family: SansSerif, sans-serif;
       font-size: 18px;
@@ -21,8 +24,8 @@
 		body{
       background-size: 40px 40px;
       background-image:
-              linear-gradient(to right, grey 1px, transparent 1px),
-              linear-gradient(to bottom, grey 1px, transparent 1px);
+              linear-gradient(to right, rgba(var(--main-editor-color), 1) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(var(--main-editor-color), 1) 1px, transparent 1px);
 			background-attachment: fixed;
 		}
 
@@ -48,7 +51,7 @@
 		label{
 			margin: 5px 0 5px 0;
 			padding: 0 0 2px 5px;
-			border-bottom: 1px solid gray;
+			border-bottom: 1px solid rgba(var(--main-editor-color), 1);
 		}
 
 		input{
@@ -56,7 +59,7 @@
 			border-radius: 15px;
 			max-width: 250px;
 			padding: 5px;
-			background-color: #d9d9d9;
+			background-color: rgba(var(--main-editor-color), 0.2);
 		}
 
 		textarea{
@@ -83,7 +86,7 @@
 			left: 0;
 			right: 0;
 			top: 0;
-			background-color: gray;
+			background-color: rgba(var(--main-editor-color), 1);
 			padding: 5px;
       box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
 		}
@@ -100,7 +103,7 @@
 		.toolbar-category-opener{
 			display: flex;
 			align-items: center;
-			justify-content: center;
+			justify-content: left;
 			text-align: center;
 			margin: 0;
       border-radius: 15px;
@@ -110,6 +113,17 @@
 
     .toolbar-category-opener:hover{
       background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .toolbar-category-opener:hover .toolbar-category{
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .toolbar-category:hover .toolbar-category{
+      opacity: 1;
+			visibility: visible;
+			left: 100%;
+			top: 0;
     }
 
     .toolbar-category:hover{
@@ -125,9 +139,9 @@
 			flex-direction: column;
 			visibility: hidden;
 			opacity: 0;
-      background-color: gray;
+      background-color: rgba(var(--main-editor-color), 1);
 			padding: 5px;
-			border-radius: 0 0 15px 15px;
+			border-radius: 15px;
 			min-width: 200px;
       box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
 			transition: all .2s ease-in-out;
@@ -255,18 +269,18 @@
     ::-webkit-scrollbar {
       width: 10px;
       height: 0;
-			background-color: gray;
+			background-color: rgba(var(--main-editor-color), 1);
       box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
     }
 
     ::-webkit-scrollbar-track {
-      background: gray;
-      border-radius: 10px;
+      background: rgba(var(--main-editor-color), 1);
+      border-radius: 15px;
     }
 
     ::-webkit-scrollbar-thumb {
       background: white;
-      border-radius: 10px;
+      border-radius: 15px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
@@ -279,9 +293,9 @@
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Сценарий</button>
 		<div class="toolbar-category">
+			<button id="transformButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_parse.svg"/>Парсинг</button>
 			<button id="uploadButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_open.svg"/>Открыть</button>
 			<button id="downloadButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_save.svg"/>Сохранить</button>
-			<button id="transformButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_parse.svg"/>Парсинг</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
@@ -293,12 +307,18 @@
 		</div>
 	</div>
 	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Настройки</button>
+		<div class="toolbar-category">
+			<button class="toolbar-category-button" id="gammaButton"><img class="span_icon" src="./src/Images/UI/editor/editor_paint.svg"/>Гамма</button>
+		</div>
+	</div>
+	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Инфо</button>
 		<div class="toolbar-category">
-			<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_beta.svg"/>Бета</a>
-			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_release.svg"/>Релиз</a>
-			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_google.svg"/>Гугл диск</a>
-			<a target='_blank' href="https://t.me/RTemiy" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_author.svg"/>Создатель</a>
+				<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_beta.svg"/>Бета</a>
+				<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_release.svg"/>Релиз</a>
+				<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_google.svg"/>Гугл диск</a>
+				<a target='_blank' href="https://t.me/RTemiy" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_author.svg"/>Создатель</a>
 		</div>
 	</div>
 </div>
@@ -338,6 +358,12 @@
 	</div>
 </div>
 
+<div id="gammaWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="gammaInput">Выберите цвет:</label><input id="gammaInput" type="color">
+	</div>
+</div>
+
 <a href="#" class="returnButton"><img src="./src/Images/UI/editor/editor_up.svg"/></a>
 
 <div class="toTransformScenarioWindow">
@@ -346,6 +372,8 @@
 
 <input id="uploadInput" type="file">
 <script>
+	const cssVariables = document.querySelector(':root')
+
 	const uploadButton = document.querySelector('#uploadButton')
 	const uploadInput = document.querySelector('#uploadInput')
 	const downloadButton = document.querySelector('#downloadButton')
@@ -355,10 +383,12 @@
   const makeReplaceButton = document.querySelector('#makeReplaceButton')
   const findSlideButton = document.querySelector('#findSlideButton')
   const doFindButton = document.querySelector('#doFindButton')
+  const gammaButton = document.querySelector('#gammaButton')
 
 	const transformWindow = document.querySelector('.toTransformScenarioWindow')
   const replaceWindow = document.querySelector('#replaceWindow')
   const findWindow = document.querySelector('#findWindow')
+  const gammaWindow = document.querySelector('#gammaWindow')
 
 	const storyInfo = document.querySelector('.storyInfo')
 	const transformInput = document.querySelector('#scenarioToTransform')
@@ -368,6 +398,7 @@
   const partName = document.querySelector('#partName')
   const partCode = document.querySelector('#partCode')
   const slidesAmount = document.querySelector('#slidesAmount')
+  const gammaColor = document.querySelector('#gammaInput')
 	const whatToReplace = document.querySelector('#whatToReplace')
   const ToWhatToReplace = document.querySelector('#ToWhatToReplace')
 	const slidesField = document.querySelector('.slides')
@@ -463,6 +494,17 @@
       findWindow.style.opacity = '0'
       findWindow.style.visibility = 'hidden'
       window.location.href = `#slide_${slideNumberToFind.value}`
+		}
+
+    gammaButton.onclick = () => {
+      gammaWindow.style.opacity = '1'
+      gammaWindow.style.visibility = 'visible'
+		}
+
+    gammaColor.oninput = () => {
+      cssVariables.style.setProperty('--main-editor-color', `${hexToRgb(gammaColor.value)}`)
+      gammaWindow.style.opacity = '0'
+      gammaWindow.style.visibility = 'hidden'
 		}
   }
 
@@ -747,6 +789,11 @@
     result = resultImages + resultMusic + resultPersons + resultItems + resultStats + resultAchievements + initConst + result + '])\n';
     // Возвращаем результат
     return result;
+  }
+
+  function hexToRgb(hex) {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}`
   }
 
 </script>
