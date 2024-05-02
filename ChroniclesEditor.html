@@ -449,8 +449,7 @@ onStart()
 		}
 
     downloadButton.onclick = () => {
-      saveFromEditor()
-      saveFile(currentFile)
+      saveFile(saveFromEditor())
     }
 
     replaceButton.onclick = () => {
@@ -568,13 +567,12 @@ onStart()
     let result = `${fileBeginning}scenarioManager.addScenario({ storyName: ${storyCode.value}, chapterName: ${chapterName.value}, partName: ${partName.value}, code: ${partCode.value}}, [\n`
 		const slides = document.querySelectorAll('.slide')
 		slides.forEach(slide => {
-      for (const [key, value] of dictionary) {
-        slide.value = slide.value.replaceAll(`${value}`, `${key}`)
-      }
       result+=slide.value
 		})
-
-		currentFile = result
+    for (const [key, value] of dictionary) {
+      result = result.replaceAll(`${value}`, `${key}`)
+    }
+		return result
 	}
 
   function enableButtons() {
