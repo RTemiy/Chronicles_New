@@ -66,6 +66,7 @@
       border: 1px solid #757575;
       border-radius: 15px;
 			padding: 10px;
+			background-color: rgba(var(--main-editor-color));
       box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
 		}
 
@@ -297,6 +298,7 @@
 			<button id="transformButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_parse.svg"/>Парсинг</button>
 			<button id="uploadButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_open.svg"/>Открыть</button>
 			<button id="downloadButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_save.svg"/>Сохранить</button>
+			<button id="recentButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_recent.svg"/>Последний</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
@@ -385,6 +387,7 @@
   const findSlideButton = document.querySelector('#findSlideButton')
   const doFindButton = document.querySelector('#doFindButton')
   const gammaButton = document.querySelector('#gammaButton')
+  const recentButton = document.querySelector('#recentButton')
 
 	const transformWindow = document.querySelector('.toTransformScenarioWindow')
   const replaceWindow = document.querySelector('#replaceWindow')
@@ -418,9 +421,11 @@ onStart()
 
   function loadFromLocalStorage() {
     localStorage.getItem('UIColor') && cssVariables.style.setProperty('--main-editor-color', `${localStorage.getItem('UIColor')}`)
+		localStorage.getItem('recentFile') && (recentButton.disabled = false)
   }
 
 	function addListeners() {
+
     uploadInput.onchange = () => {
       const FR = new FileReader()
       FR.readAsText(uploadInput.files[uploadInput.files.length-1])
@@ -517,6 +522,12 @@ onStart()
       gammaWindow.style.visibility = 'hidden'
 			localStorage.setItem('UIColor', rgbColor)
 		}
+
+    recentButton.onclick = () => {
+      currentFile = localStorage.getItem('recentFile')
+			enableButtons()
+			makeStructure()
+		}
   }
 
   function saveFile(text) {
@@ -561,6 +572,7 @@ onStart()
 
 			})
     })
+    setInterval(saveRecent, 30000)
 	}
 
   function saveFromEditor () {
@@ -805,6 +817,10 @@ onStart()
     const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     return `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}`
   }
+
+	function saveRecent () {
+    localStorage.setItem("recentFile", saveFromEditor())
+	}
 
 </script>
 </body>
