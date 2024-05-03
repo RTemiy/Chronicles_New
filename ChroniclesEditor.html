@@ -325,7 +325,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="blueprint">
 	<div class="storyInfo">
 		<div class="storyInfo-block">
@@ -345,7 +344,6 @@
 	<div class="slides">
 	</div>
 </div>
-
 <div id="replaceWindow" class="fullscreenWindow">
 	<div class="fullscreenBlock">
 		<label for="whatToReplace">Заменить:</label><input id="whatToReplace" placeholder="Введите текст" type="text">
@@ -353,20 +351,17 @@
 		<button id="makeReplaceButton">Заменить всё</button>
 	</div>
 </div>
-
 <div id="findWindow" class="fullscreenWindow">
 	<div class="fullscreenBlock">
 		<label for="slideNumberToFind">Номер слайда:</label><input id="slideNumberToFind" type="number">
 		<button id="doFindButton">Найти</button>
 	</div>
 </div>
-
 <div id="gammaWindow" class="fullscreenWindow">
 	<div class="fullscreenBlock">
 		<label for="gammaInput">Выберите цвет:</label><input id="gammaInput" type="color">
 	</div>
 </div>
-
 <div id="showWindow" class="fullscreenWindow">
 	<div class="fullscreenBlock">
 		<label for="showInput">Введите путь до файла:</label><input id="showInput" type="text">
@@ -547,10 +542,13 @@ onStart()
     showInput.onchange = () => {
       showWindow.style.opacity = '0'
       showWindow.style.visibility = 'hidden'
-      window.open(`https://raw.githubusercontent.com/RTemiy/Chronicles_New/master/src/${showInput.value}`, '_blank');
+      openGHRawFile(showInput.value)
 		}
-
   }
+
+  function openGHRawFile (path) {
+    window.open(`https://raw.githubusercontent.com/RTemiy/Chronicles_New/master/src/${path}`, '_blank');
+	}
 
   function saveFile(text) {
     const a = document.createElement('a')
@@ -591,6 +589,13 @@ onStart()
       slidesField.querySelectorAll('.slide').forEach(slide => {
         slide.style.height = '5px'
 				slide.style.height = slide.scrollHeight + 'px'
+				slide.oncontextmenu = (e) => {
+          e.preventDefault()
+					const allImagePathsslide = slide.value.match(/\('..\/..\/..\/..\/([^\s]+)\/([^\s]+)\/([^\s]+)\/([^\s]+)/g)
+					allImagePathsslide.forEach(path => {
+            openGHRawFile(path.replaceAll(`('../../../../`,'').replaceAll(`')`,'').replaceAll(`,`,''))
+					})
+				}
 
 			})
     })
