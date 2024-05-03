@@ -267,6 +267,19 @@
 			margin: 0 10px 0 0;
 		}
 
+		.context-menu{
+			position: fixed;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(var(--main-editor-color), 1);
+      padding: 5px;
+      border-radius: 15px;
+			gap: 5px;
+      min-width: 200px;
+      box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
+      transition: all .2s ease-in-out;
+		}
+
     ::-webkit-scrollbar {
       width: 10px;
       height: 0;
@@ -591,9 +604,21 @@ onStart()
 				slide.style.height = slide.scrollHeight + 'px'
 				slide.oncontextmenu = (e) => {
           e.preventDefault()
-					const allImagePathsslide = slide.value.match(/\('..\/..\/..\/..\/([^\s]+)\/([^\s]+)\/([^\s]+)\/([^\s]+)/g)
-					allImagePathsslide.forEach(path => {
-            openGHRawFile(path.replaceAll(`('../../../../`,'').replaceAll(`')`,'').replaceAll(`,`,''))
+          const contextMenu = document.createElement('div')
+					contextMenu.classList.add('context-menu')
+					contextMenu.style.left = `${e.clientX}px`
+          contextMenu.style.top = `${e.clientY}px`
+					document.body.appendChild(contextMenu)
+					const allImagePathsSlide = slide.value.match(/\('..\/..\/..\/..\/([^\s]+)\/([^\s]+)\/([^\s]+)\/([^\s]+)/g)
+          contextMenu.onmouseleave = () => {
+            contextMenu.remove()
+          }
+					allImagePathsSlide.forEach(path => {
+            const contextButton = document.createElement('button')
+						contextButton.classList.add('toolbar-category-button')
+						contextButton.innerHTML = `${path.split('/')[7].replaceAll(`')`,'').replaceAll(`,`,'')}`
+						contextButton.onclick = () => { openGHRawFile(path.replaceAll(`('../../../../`,'').replaceAll(`')`,'').replaceAll(`,`,''))}
+            contextMenu.appendChild(contextButton)
 					})
 				}
 
