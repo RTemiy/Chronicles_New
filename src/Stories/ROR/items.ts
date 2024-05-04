@@ -60,3 +60,13 @@ statsManager.add({
   description: 'Форма и содержимое вызывает вопросы. Правильно ли я поступил, купив этот предмет?',
   story: EStoriesEn.ROR
 })
+
+statsManager.add({
+  category: 'Item',
+  id: 'Antihangover',
+  name: 'Зелье',
+  image: require('../../Images/ROR/Objects/Antihangover.png'),
+  title: 'Зелье от похмелья',
+  description: '???',
+  story: EStoriesEn.ROR
+})

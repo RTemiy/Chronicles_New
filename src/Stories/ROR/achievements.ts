@@ -96,3 +96,35 @@ achievementsManager.add({
   text: 'Переживите ночь в Гласвере',
   story: EStoriesEn.ROR
 })
+
+achievementsManager.add({
+  name: 'ThreatWig',
+  image: require('../../Images/ROR/Persons/Vig.png'),
+  title: 'Воспитатель года',
+  text: 'Поставить Вига на место',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'BuyMarthaDress',
+  image: require('../../Images/ROR/Persons/Martha_Dress.png'),
+  title: 'Меценат',
+  text: 'Купить Марте платье',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'SilenceLover',
+  image: require('../../Images/ROR/Persons/Jack.png'),
+  title: 'Ценитель тишины',
+  text: 'Попросить Джека больше не играть в повозке',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part03Completed',
+  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  title: 'Шоу начинается',
+  text: 'Попадите на праздник аристократов',
+  story: EStoriesEn.ROR
+})

@@ -331,6 +331,40 @@
 		</div>
 	</div>
 	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Шаблоны</button>
+		<div class="toolbar-category">
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Музыка]: файл(\'../../../../Sounds/КОД ИСТОРИИ/НАЗВАНИЕ.mp3\'),')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_music.svg"/>Музыка
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText(' [Условие]: [\n'+
+'      {\n'+
+'        [Условие]: () => {\n'+
+'          return statsManager.get({ story: EStoriesEn.КОД ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
+'        },\n'+
+'        [Переход на слайд]: НОМЕР СЛАЙДА\n'+
+'      },\n'+
+'      {\n'+
+'        [Условие]: () => {\n'+
+'          return statsManager.get({ story: EStoriesEn.КОД ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
+'        },\n'+
+'        [Переход на слайд]: НОМЕР СЛАЙДА\n'+
+'      }\n'+
+'    ],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_condition.svg"/>Условие
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_stat.svg"/>Стат
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_achievement.svg"/>Достижение
+			</button>
+		</div>
+	</div>
+	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Настройки</button>
 		<div class="toolbar-category">
 			<button class="toolbar-category-button" id="gammaButton"><img class="span_icon" src="./src/Images/UI/editor/editor_paint.svg"/>Оформление <input id="gammaInput" type="color" value="#f6b73c"></button>
@@ -415,7 +449,6 @@
   const showButton = document.querySelector('#showButton')
   const moveButton = document.querySelector('#moveButton')
   const doMoveButton = document.querySelector('#doMoveButton')
-
 
 	const transformWindow = document.querySelector('.toTransformScenarioWindow')
   const replaceWindow = document.querySelector('#replaceWindow')
@@ -590,6 +623,7 @@ onStart()
       moveWindow.style.opacity = '0'
       moveWindow.style.visibility = 'hidden'
 		}
+
   }
 
   function openGHRawFile (path) {
@@ -681,11 +715,9 @@ onStart()
 	}
 
   function enableButtons() {
-    downloadButton.disabled = false
-    addSlideButton.disabled = false
-    replaceButton.disabled = false
-    findSlideButton.disabled = false
-    moveButton.disabled = false
+    document.querySelectorAll('.toolbar-category-button').forEach(button => {
+      button.disabled = false
+		})
   }
 
   function makeScenario(name, text){

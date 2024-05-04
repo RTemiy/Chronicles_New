@@ -3,13 +3,13 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
-  MM = 'MM',
+  ISML = 'ISML',
   Immortals = 'Immortals',
   Aurora = 'Aurora',
   ROR = 'ROR',
   AEP = 'AEP',
   FOF = 'FOF',
-  ISML = 'ISML',
+  MM = 'MM',
   //
   UL = 'UL',
 }

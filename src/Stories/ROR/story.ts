@@ -42,6 +42,16 @@ storiesManager.add({
           }
         },
         {
+          name: 'Часть 3',
+          code: '0',
+          image: require('../../Images/ROR/Backgrounds/Tavern.jpg'),
+          loadingImage: require('../../Images/ROR/Covers/Part03.jpg'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
           name: 'Скоро',
           code: '0',
           image: require('../../Images/UI/background.png'),
