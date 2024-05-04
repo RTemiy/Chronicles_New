@@ -344,18 +344,18 @@
 				<img class="span_icon" src="./src/Images/UI/editor/editor_stat.svg"/>Стат
 			</button>
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText(' [Условие]: [\n'+
+							onclick="navigator.clipboard.writeText('    [Условие]: [\n'+
 '      {\n'+
 '        [Условие]: () => {\n'+
-'          return statsManager.get({ story: EStoriesEn.КОД ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
+'          return statsManager.get({ story: EStoriesEn.КОД_ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
 '        },\n'+
-'        [Переход на слайд]: НОМЕР СЛАЙДА\n'+
+'        [Переход на слайд]: НОМЕР_СЛАЙДА\n'+
 '      },\n'+
 '      {\n'+
 '        [Условие]: () => {\n'+
-'          return statsManager.get({ story: EStoriesEn.КОД ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
+'          return statsManager.get({ story: EStoriesEn.КОД_ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
 '        },\n'+
-'        [Переход на слайд]: НОМЕР СЛАЙДА\n'+
+'        [Переход на слайд]: НОМЕР_СЛАЙДА\n'+
 '      }\n'+
 '    ],')">
 				<img class="span_icon" src="./src/Images/UI/editor/editor_condition.svg"/>Условие
@@ -364,10 +364,14 @@
 							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
 				<img class="span_icon" src="./src/Images/UI/editor/editor_achievement.svg"/>Достижение
 			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Перед началом слайда]: СОБЫТИЕ,')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_before.svg"/>Престарт
+			</button>
 			<hr/>
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText('    [Музыка | Эмбиент]: файл(\'../../../../Sounds/КОД ИСТОРИИ/НАЗВАНИЕ.mp3\'),')">
-				<img class="span_icon" src="./src/Images/UI/editor/editor_music.svg"/>Музыка
+							onclick="navigator.clipboard.writeText('    [Музыка | Эмбиент]: файл(\'../../../../Sounds/КОД_ИСТОРИИ/НАЗВАНИЕ.mp3\'),')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_music.svg"/>Музыка | Эмбиент
 			</button>
 			<button class="toolbar-category-button" disabled
 							onclick="navigator.clipboard.writeText('    [Музыка | Эмбиент]: файл(\'../../../../Sounds/Common/Silence.mp3\'),')">
@@ -375,14 +379,18 @@
 			</button>
 			<hr/>
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText('    [Кат-сцена]: { [Видео]: файл(\'../../../../Images/КОД ИСТОРИИ/CutScenes/НАЗВАНИЕ.mp4\'), [Переход на слайд]: НОМЕР СЛАЙДА },')">
+							onclick="navigator.clipboard.writeText('    [Кат-сцена]: { [Видео]: файл(\'../../../../Images/КОД_ИСТОРИИ/CutScenes/НАЗВАНИЕ.mp4\'), [Переход на слайд]: НОМЕР_СЛАЙДА },')">
 				<img class="span_icon" src="./src/Images/UI/editor/editor_cutscene.svg"/>Кат-сцена
 			</button>
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText('    [Гардероб]: { story: EStoriesEn.КОД ИСТОРИИ, personId: \'ИДЕНТИФИКАТОР\', [Переход на слайд]: НОМЕР СЛАЙДА },')">
+							onclick="navigator.clipboard.writeText('    [Гардероб]: { story: EStoriesEn.КОД_ИСТОРИИ, personId: \'ИДЕНТИФИКАТОР\', [Переход на слайд]: НОМЕР_СЛАЙДА },')">
 				<img class="span_icon" src="./src/Images/UI/editor/editor_wardrobe.svg"/>Гардероб
 			</button>
 			<hr/>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Реплика]: \'НАЗВАНИЕ\',')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_speaker.svg"/>Реплика
+			</button>
 			<button class="toolbar-category-button" disabled
 							onclick="navigator.clipboard.writeText('    [Силуэт]: true,')">
 				<img class="span_icon" src="./src/Images/UI/editor/editor_code.svg"/>Силуэт
@@ -572,20 +580,19 @@ onStart()
       const newSlide = document.createElement('textarea')
 			newSlide.value =
 				`  {
-    Номер слайда: УКАЖИТЕ НОМЕР СЛАЙДА,
-    Текст:
+    [Идентификатор]: НОМЕР_СЛАЙДА,
+    [Текст]:
       \`
-        ВВЕДИТЕ ТЕКСТ СЛАЙДА
+        ТЕКСТ_СЛАЙДА
       \`,
-    Кнопки слайда: [
+    [Кнопки слайда]: [
       {
-        Текст: '',
-        Переход на слайд: УКАЖИТЕ НОМЕР СЛАЙДА ДЛЯ ПЕРЕХОДА
+        [Текст]: '',
+        [Переход на слайд]: НОМЕР_СЛАЙДА
       }],
-    Фон: УКАЖИТЕ ФОН СЛАЙДА
-  },
-
-`
+    [Фон]: файл('../../../../Images/КОД_ИСТОРИИ/Backgrounds/НАЗВАНИЕ.jpg')
+  }
+])`
 			newSlide.classList.add('slide')
       slidesField.appendChild(newSlide)
       newSlide.style.height = '5px'
@@ -918,7 +925,7 @@ onStart()
 
     // Добавляем уникальные имена картинок и музыки в начало кода всех слайдов (чтобы можно было потом проверить все ли заменилось)
     const initConst = 'scenarioManager.addScenario({ ' +
-      'storyName: EStoriesEn.'  + prompt('Укажите название истории на английском') +
+      'storyName: EStoriesEn.'  + prompt('Укажите код истории') +
       ', chapterName: \'' + prompt('Укажите название главы') +
       '\', partName: \'' + prompt('Укажите название части') +
       '\', code: \'' + prompt('Укажите код части') +'\' }, [';

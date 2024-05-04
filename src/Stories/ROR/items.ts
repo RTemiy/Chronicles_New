@@ -67,6 +67,6 @@ statsManager.add({
   name: 'Зелье',
   image: require('../../Images/ROR/Objects/Antihangover.png'),
   title: 'Зелье от похмелья',
-  description: '???',
+  description: 'Неприятно пахнущее средство, используемое для выветривания похмелья. ',
   story: EStoriesEn.ROR
 })
