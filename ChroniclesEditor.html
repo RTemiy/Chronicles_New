@@ -73,6 +73,14 @@
 			display: none;
 		}
 
+    #gammaInput{
+			justify-self: right;
+			width: 25px;
+			height: 25px;
+			padding: 0;
+			margin: 0 0 0 auto;
+		}
+
     #scenarioToTransform{
       width: 250px;
 			height: 250px;
@@ -143,7 +151,7 @@
       background-color: rgba(var(--main-editor-color), 1);
 			padding: 5px;
 			border-radius: 0 0 15px 15px;
-			min-width: 200px;
+			min-width: 250px;
       box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
 			transition: all .2s ease-in-out;
 		}
@@ -317,20 +325,21 @@
 		<button class="toolbar-category-opener">Правка</button>
 		<div class="toolbar-category">
 			<button id="findSlideButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_find.svg"/>Найти слайд</button>
-			<button id="replaceButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_replace.svg"/>Заменить</button>
+			<button id="moveButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_move.svg"/>Переместить слайд</button>
+			<button id="replaceButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_replace.svg"/>Заменить всё</button>
 			<button id="addSlideButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_add.svg"/>Добавить слайд</button>
 		</div>
 	</div>
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Настройки</button>
 		<div class="toolbar-category">
-			<button class="toolbar-category-button" id="gammaButton"><img class="span_icon" src="./src/Images/UI/editor/editor_paint.svg"/>Гамма</button>
+			<button class="toolbar-category-button" id="gammaButton"><img class="span_icon" src="./src/Images/UI/editor/editor_paint.svg"/>Оформление <input id="gammaInput" type="color" value="#f6b73c"></button>
 		</div>
 	</div>
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Инфо</button>
 		<div class="toolbar-category">
-			<button class="toolbar-category-button" id="showButton"><img class="span_icon" src="./src/Images/UI/editor/editor_show.svg"/>Файл</button>
+			<button class="toolbar-category-button" id="showButton"><img class="span_icon" src="./src/Images/UI/editor/editor_show.svg"/>Посмотреть файл</button>
 			<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_beta.svg"/>Бета</a>
 			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_release.svg"/>Релиз</a>
 			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_google.svg"/>Гугл диск</a>
@@ -370,14 +379,16 @@
 		<button id="doFindButton">Найти</button>
 	</div>
 </div>
-<div id="gammaWindow" class="fullscreenWindow">
-	<div class="fullscreenBlock">
-		<label for="gammaInput">Выберите цвет:</label><input id="gammaInput" type="color">
-	</div>
-</div>
 <div id="showWindow" class="fullscreenWindow">
 	<div class="fullscreenBlock">
 		<label for="showInput">Введите путь до файла:</label><input id="showInput" type="text">
+	</div>
+</div>
+<div id="moveWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="showInput">Переместить слайд №:</label><input id="moveWhatInput" type="number">
+		<label for="showInput">После слайда №:</label><input id="moveWhereInput" type="number">
+		<button id="doMoveButton">Переместить</button>
 	</div>
 </div>
 
@@ -400,15 +411,17 @@
   const makeReplaceButton = document.querySelector('#makeReplaceButton')
   const findSlideButton = document.querySelector('#findSlideButton')
   const doFindButton = document.querySelector('#doFindButton')
-  const gammaButton = document.querySelector('#gammaButton')
   const recentButton = document.querySelector('#recentButton')
   const showButton = document.querySelector('#showButton')
+  const moveButton = document.querySelector('#moveButton')
+  const doMoveButton = document.querySelector('#doMoveButton')
+
 
 	const transformWindow = document.querySelector('.toTransformScenarioWindow')
   const replaceWindow = document.querySelector('#replaceWindow')
   const findWindow = document.querySelector('#findWindow')
-  const gammaWindow = document.querySelector('#gammaWindow')
   const showWindow = document.querySelector('#showWindow')
+  const moveWindow = document.querySelector('#moveWindow')
 
 	const storyInfo = document.querySelector('.storyInfo')
 	const transformInput = document.querySelector('#scenarioToTransform')
@@ -423,6 +436,8 @@
 	const whatToReplace = document.querySelector('#whatToReplace')
   const ToWhatToReplace = document.querySelector('#ToWhatToReplace')
 	const slidesField = document.querySelector('.slides')
+  const moveWhatInput = document.querySelector('#moveWhatInput')
+  const moveWhereInput = document.querySelector('#moveWhereInput')
 
   const dictionary = new Map()
 
@@ -527,16 +542,9 @@ onStart()
       window.location.href = `#slide_${slideNumberToFind.value}`
 		}
 
-    gammaButton.onclick = () => {
-      gammaWindow.style.opacity = '1'
-      gammaWindow.style.visibility = 'visible'
-		}
-
     gammaColor.oninput = () => {
       const rgbColor = hexToRgb(gammaColor.value)
       cssVariables.style.setProperty('--main-editor-color', `${rgbColor}`)
-      gammaWindow.style.opacity = '0'
-      gammaWindow.style.visibility = 'hidden'
 			localStorage.setItem('UIColor', rgbColor)
 		}
 
@@ -556,6 +564,31 @@ onStart()
       showWindow.style.opacity = '0'
       showWindow.style.visibility = 'hidden'
       openGHRawFile(showInput.value)
+		}
+
+    moveButton.onclick = () => {
+      moveWindow.style.opacity = '1'
+      moveWindow.style.visibility = 'visible'
+      moveWhatInput.value = ''
+      moveWhereInput.value = ''
+		}
+
+    doMoveButton.onclick = () => {
+      let allSlides = Array.from(slidesField.querySelectorAll('.slide'))
+			let whatIndex = 0
+			let whereIndex = 0
+			allSlides.forEach((slide, index) => {
+        slide.id.split('_')[1] === moveWhatInput.value && (whatIndex = index)
+        slide.id.split('_')[1] === moveWhereInput.value && (whereIndex = index)
+			})
+			allSlides.splice(whereIndex, 0, allSlides.splice(whatIndex, 1)[0])
+      slidesField.innerHTML = ''
+			allSlides.forEach(slide => {
+          slidesField.appendChild(slide)
+
+			})
+      moveWindow.style.opacity = '0'
+      moveWindow.style.visibility = 'hidden'
 		}
   }
 
@@ -589,15 +622,18 @@ onStart()
     let result = ''
     slidesAmount.value = '0'
     slides.forEach(slide => {
-      for (const [key, value] of dictionary) {
-        slide = slide.replaceAll(`${key}`, `${value}`)
-      }
 
       result+=`
-      <textarea id="slide_${parseInt(slidesAmount.value)}" class="slide">${slide}</textarea>
+      <textarea id="slide_${slide.match(/id: [-0-9]+/)[0].split(' ')[1]}" class="slide">${slide}</textarea>
       `
-      slidesField.innerHTML = result
       slidesAmount.value = parseInt(slidesAmount.value) + 1
+    })
+
+    for (const [key, value] of dictionary) {
+      result = result.replaceAll(`${key}`, `${value}`)
+    }
+
+    slidesField.innerHTML = result
 
       slidesField.querySelectorAll('.slide').forEach(slide => {
         slide.style.height = '5px'
@@ -613,17 +649,21 @@ onStart()
           contextMenu.onmouseleave = () => {
             contextMenu.remove()
           }
+          allImagePathsSlide === null && contextMenu.remove()
+          (allImagePathsSlide[0].includes('Border') && allImagePathsSlide.length <= 1) && contextMenu.remove()
+
 					allImagePathsSlide.forEach(path => {
-            const contextButton = document.createElement('button')
-						contextButton.classList.add('toolbar-category-button')
-						contextButton.innerHTML = `${path.split('/')[7].replaceAll(`')`,'').replaceAll(`,`,'')}`
-						contextButton.onclick = () => { openGHRawFile(path.replaceAll(`('../../../../`,'').replaceAll(`')`,'').replaceAll(`,`,''))}
-            contextMenu.appendChild(contextButton)
+            if (!path.includes('Border')) {
+              const contextButton = document.createElement('button')
+              contextButton.classList.add('toolbar-category-button')
+              contextButton.innerHTML = `${path.split('/')[7].replaceAll(`')`,'').replaceAll(`,`,'')}`
+              contextButton.onclick = () => { openGHRawFile(path.replaceAll(`('../../../../`,'').replaceAll(`')`,'').replaceAll(`,`,''))}
+              contextMenu.appendChild(contextButton)
+						}
 					})
 				}
 
 			})
-    })
     setInterval(saveRecent, 30000)
 	}
 
@@ -645,27 +685,7 @@ onStart()
     addSlideButton.disabled = false
     replaceButton.disabled = false
     findSlideButton.disabled = false
-  }
-
-  function initDictionary() {
-    dictionary.set('id:', '- Идентификатор:')
-    dictionary.set('text:', '- Текст:')
-    dictionary.set('buttons:', '- Кнопки слайда:')
-    dictionary.set('gift:', '- Выбор за рекламу:')
-    dictionary.set('goTo:', '- Переход на слайд:')
-    dictionary.set('func:', '- Сопутствующее действие:')
-    dictionary.set('speaker:', '- Реплика:')
-    dictionary.set('message:', '- Табличка:')
-    dictionary.set('music:', '- Музыка:')
-    dictionary.set('ambient:', '- Эмбиент:')
-    dictionary.set('beforeBegin:', '- Перед началом слайда:')
-    dictionary.set('stats:', '- Добавить статы:')
-    dictionary.set('condition:', '- Условие:')
-    dictionary.set('imageFront:', '- Объект:')
-    dictionary.set('imageBorder:', '- Рамка:')
-    dictionary.set('imageBack:', '- Фон:')
-    dictionary.set('achievement:', '- Достижение:')
-    dictionary.set('require(', 'путь до файла(')
+    moveButton.disabled = false
   }
 
   function makeScenario(name, text){
@@ -873,6 +893,33 @@ onStart()
 	function saveRecent () {
     localStorage.setItem("recentFile", saveFromEditor())
 	}
+
+  function initDictionary() {
+    dictionary.set('id:', '[Идентификатор]:')
+    dictionary.set('text:', '[Текст]:')
+    dictionary.set('buttons:', '[Кнопки слайда]:')
+    dictionary.set('gift:', '[Выбор за рекламу]:')
+    dictionary.set('goTo:', '[Переход на слайд]:')
+    dictionary.set('func:', '[Событие при нажатии]:')
+    dictionary.set('speaker:', '[Реплика]:')
+    dictionary.set('message:', '[Табличка]:')
+    dictionary.set('music:', '[Музыка]:')
+    dictionary.set('ambient:', '[Эмбиент]:')
+    dictionary.set('beforeBegin:', '[Перед началом слайда]:')
+    dictionary.set('stats:', '[Добавить статы]:')
+    dictionary.set('condition:', '[Условие]:')
+    dictionary.set('imageFront:', '[Объект]:')
+    dictionary.set('imageLeft:', '[Объект слева]:')
+    dictionary.set('imageBorder:', '[Рамка]:')
+    dictionary.set('imageBack:', '[Фон]:')
+    dictionary.set('darkSilhouette:', '[Чёрный силуэт]:')
+    dictionary.set('ghostSilhouette:', '[Призрачный персонаж]:')
+    dictionary.set('achievement:', '[Достижение]:')
+    dictionary.set('cutScene:', '[Кат-сцена]:')
+    dictionary.set('video:', '[Видео]:')
+    dictionary.set('saveEndProgress(', 'сохранение в следующую часть(')
+    dictionary.set('require(', 'файл(')
+  }
 
 </script>
 </body>
