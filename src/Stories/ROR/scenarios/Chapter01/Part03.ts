@@ -4751,8 +4751,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     message: 'Дитрих благодарен вам, что вы встали на его сторону. Джек обиделся на ваше решение',
     imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    stats: [
-      { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Ditrich' }],
+    stats: [{ story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Ditrich' }],
+    achievement: { story: EStoriesEn.ROR, name: 'SilenceLover' },
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 

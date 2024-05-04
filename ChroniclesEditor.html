@@ -11,10 +11,11 @@
 	<style>
 		:root{
 			--main-editor-color: 128, 128, 128;
+			--main-font-size: 18px
 		}
 		* {
       font-family: SansSerif, sans-serif;
-      font-size: 18px;
+      font-size: var(--main-font-size);
 		}
 
 		html{
@@ -85,6 +86,13 @@
 			height: 25px;
 			padding: 0;
 			margin: 0 0 0 auto;
+		}
+
+		#fontSizeInput{
+			background-color: white;
+			color: black;
+			width: 50px;
+      margin: 0 0 0 auto;
 		}
 
     #scenarioToTransform{
@@ -175,6 +183,10 @@
     .toolbar-category-button:hover{
       background-color: rgba(0, 0, 0, 0.15);
     }
+
+    .toolbar-category-button> input{
+
+		}
 
 		.blueprint{
 			padding: 50px 0;
@@ -404,7 +416,8 @@
 	<div class="toolbar-button">
 		<button class="toolbar-category-opener">Настройки</button>
 		<div class="toolbar-category">
-			<button class="toolbar-category-button" id="gammaButton"><img class="span_icon" src="./src/Images/UI/editor/editor_paint.svg"/>Оформление <input id="gammaInput" type="color" value="#f6b73c"></button>
+			<button class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_paint.svg"/>Оформление <input id="gammaInput" type="color" value="#f6b73c"></button>
+			<button class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_font.svg"/>Шрифт<input id="fontSizeInput" type="number" value="20"></button>
 		</div>
 	</div>
 	<div class="toolbar-button">
@@ -508,6 +521,7 @@
 	const slidesField = document.querySelector('.slides')
   const moveWhatInput = document.querySelector('#moveWhatInput')
   const moveWhereInput = document.querySelector('#moveWhereInput')
+  const fontSizeInput = document.querySelector('#fontSizeInput')
 
   const dictionary = new Map()
 
@@ -524,6 +538,12 @@ onStart()
   function loadFromLocalStorage() {
     localStorage.getItem('UIColor') && cssVariables.style.setProperty('--main-editor-color', `${localStorage.getItem('UIColor')}`)
 		localStorage.getItem('recentFile') && (recentButton.disabled = false)
+
+    if (localStorage.getItem('fontSize')){
+      cssVariables.style.setProperty('--main-font-size', `${localStorage.getItem('fontSize')}px`)
+			fontSizeInput.value = localStorage.getItem('fontSize')
+		}
+
   }
 
 	function addListeners() {
@@ -660,6 +680,10 @@ onStart()
       moveWindow.style.visibility = 'hidden'
 		}
 
+    fontSizeInput.oninput = () => {
+      cssVariables.style.setProperty('--main-font-size', `${fontSizeInput.value}px`)
+      localStorage.setItem('fontSize', fontSizeInput.value)
+		}
   }
 
   function openGHRawFile (path) {
