@@ -69,6 +69,12 @@
       box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
 		}
 
+		hr{
+			width: 90%;
+			border: none;
+			border-top: 1px solid rgba(255, 255, 255, 0.2);
+		}
+
 		#uploadInput{
 			display: none;
 		}
@@ -334,8 +340,8 @@
 		<button class="toolbar-category-opener">Шаблоны</button>
 		<div class="toolbar-category">
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText('    [Музыка]: файл(\'../../../../Sounds/КОД ИСТОРИИ/НАЗВАНИЕ.mp3\'),')">
-				<img class="span_icon" src="./src/Images/UI/editor/editor_music.svg"/>Музыка
+							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_stat.svg"/>Стат
 			</button>
 			<button class="toolbar-category-button" disabled
 							onclick="navigator.clipboard.writeText(' [Условие]: [\n'+
@@ -356,11 +362,34 @@
 			</button>
 			<button class="toolbar-category-button" disabled
 							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
-				<img class="span_icon" src="./src/Images/UI/editor/editor_stat.svg"/>Стат
+				<img class="span_icon" src="./src/Images/UI/editor/editor_achievement.svg"/>Достижение
+			</button>
+			<hr/>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Музыка | Эмбиент]: файл(\'../../../../Sounds/КОД ИСТОРИИ/НАЗВАНИЕ.mp3\'),')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_music.svg"/>Музыка
 			</button>
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
-				<img class="span_icon" src="./src/Images/UI/editor/editor_achievement.svg"/>Достижение
+							onclick="navigator.clipboard.writeText('    [Музыка | Эмбиент]: файл(\'../../../../Sounds/Common/Silence.mp3\'),')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_cross.svg"/>Беззвучно
+			</button>
+			<hr/>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Кат-сцена]: { [Видео]: файл(\'../../../../Images/КОД ИСТОРИИ/CutScenes/НАЗВАНИЕ.mp4\'), [Переход на слайд]: НОМЕР СЛАЙДА },')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_cutscene.svg"/>Кат-сцена
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Гардероб]: { story: EStoriesEn.КОД ИСТОРИИ, personId: \'ИДЕНТИФИКАТОР\', [Переход на слайд]: НОМЕР СЛАЙДА },')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_wardrobe.svg"/>Гардероб
+			</button>
+			<hr/>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Силуэт]: true,')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_code.svg"/>Силуэт
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Призрак]: true,')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_code.svg"/>Призрак
 			</button>
 		</div>
 	</div>
@@ -944,11 +973,12 @@ onStart()
     dictionary.set('imageLeft:', '[Объект слева]:')
     dictionary.set('imageBorder:', '[Рамка]:')
     dictionary.set('imageBack:', '[Фон]:')
-    dictionary.set('darkSilhouette:', '[Чёрный силуэт]:')
-    dictionary.set('ghostSilhouette:', '[Призрачный персонаж]:')
+    dictionary.set('darkSilhouette:', '[Силуэт]:')
+    dictionary.set('ghostSilhouette:', '[Призрак]:')
     dictionary.set('achievement:', '[Достижение]:')
     dictionary.set('cutScene:', '[Кат-сцена]:')
     dictionary.set('video:', '[Видео]:')
+    dictionary.set('wardrobe:', '[Гардероб]:')
     dictionary.set('saveEndProgress(', 'сохранение в следующую часть(')
     dictionary.set('require(', 'файл(')
   }
