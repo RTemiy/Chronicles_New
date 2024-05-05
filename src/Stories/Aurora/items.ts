@@ -10,3 +10,13 @@ statsManager.add({
   image: require('../../Images/Aurora/Items/Trial_Pass.png'),
   story: EStoriesEn.Aurora
 })
+
+statsManager.add({
+  category: 'Item',
+  name: 'Фото',
+  id: 'MotherPhoto',
+  title: 'Потерянная фотография',
+  description: 'Возможно, это обронил Калеб? На ней изображена красивая девушка и подпись: «Моя семья»',
+  image: require('../../Images/Aurora/Items/Mother_Photo.png'),
+  story: EStoriesEn.Aurora
+})

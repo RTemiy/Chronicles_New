@@ -40,3 +40,23 @@ statsManager.add({
   description: 'Именно он был рядом в самые трудные моменты моей жизни. Я не понимаю, какие чувства испытываю к нему, но время все расставит на свои места.',
   story: EStoriesEn.Aurora
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Dalia',
+  name: 'Далия',
+  image: require('../../Images/Aurora/Persons/Dalia.png'),
+  title: 'Заводная девушка, привнесшая хаос в мою жизнь с первой нашей встречи.',
+  description: 'Открытая и располагающая к себе особа, которая, кажется, берет от жизни все. В свое время, именно она побудила меня начать вести дневник.',
+  story: EStoriesEn.Aurora
+})
+
+statsManager.add({
+  category: 'Person',
+  id: 'Kaleb',
+  name: 'Калеб',
+  image: require('../../Images/Aurora/Persons/Kaleb.png'),
+  title: 'Наглый и самовлюбленный студент, с которым я столкнулась в библиотеке. ',
+  description: 'Его происхождение окутано тайной, что мне предстоит выяснить. Кем же он окажется по итогу: надежным соратником в моем путешествии или злейшим врагом?',
+  story: EStoriesEn.Aurora
+})
