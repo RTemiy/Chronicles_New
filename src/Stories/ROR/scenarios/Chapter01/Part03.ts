@@ -4,20 +4,6 @@ import { redFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глава 1', partName: 'Часть 3', code: '0' }, [
   {
-    id: 1,
-    text:
-      `
-        Страшно уставшая Джоанна начала сильнее замерзать. Марта пыталась ее успокоить, согревая объятиями, но дрожь никуда не уходила. 
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 2
-      }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
-  },
-
-  {
     id: 0,
     text:
       `
@@ -29,6 +15,20 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 1
       }],
     music: require('../../../../Sounds/ROR/City.mp3'),
+    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+  },
+
+  {
+    id: 1,
+    text:
+      `
+        Страшно уставшая Джоанна начала сильнее замерзать. Марта пыталась ее успокоить, согревая объятиями, но дрожь никуда не уходила. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 2
+      }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -1854,7 +1854,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Vig' }],
+      { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Vig' },
+      { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Martha' }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -2603,7 +2604,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 163,
     text:
       `
-        Монахиня коротко кивнула, после чего сопроводила Джоанну на их место сна. Что-то прошептав ей на ухо, она погладила ее по макушке и отправилась за ширму
+        Монахиня коротко кивнула, после чего сопроводила Джоанну на их место сна. Что-то прошептав ей на ухо, она погладила ее по макушке и отправилась за ширму.
       `,
     buttons: [
       {
@@ -3539,7 +3540,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 224,
     text:
       `
-        Марта наглядно продемонстрировала, как ее руки физически не достают до разных концов раскрытого платья, чтобы затем их нормально закрепить друг с другом. Я почесал затылок, проговорив
+        Марта наглядно продемонстрировала, как ее руки физически не достают до разных концов раскрытого платья, чтобы затем их нормально закрепить друг с другом. Я почесал затылок, проговорив:
       `,
     buttons: [
       {
@@ -4645,7 +4646,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     id: 293,
     text:
       `
-        С одной стороны, алхимик был прав, нечего было барду заниматься своей музыкой здесь, особенно, если это мешает пассажирам С другой — этот алкоголик слишком много себе позволял, и мне не терпелось преподать ему урок.
+        С одной стороны, алхимик был прав, нечего было барду заниматься своей музыкой здесь, особенно, если это мешает пассажирам. С другой — этот алкоголик слишком много себе позволял, и мне не терпелось преподать ему урок.
       `,
     buttons: [
       {
@@ -4767,13 +4768,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Ditrich' }) === 1
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Ditrich' }) >= 1
         },
         goTo: 301
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Ditrich' }) !== 1
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Ditrich' }) <= 0
         },
         goTo: 323
       }
@@ -5338,13 +5339,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Martha' }) === 2
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Martha' }) >= 2
         },
         goTo: 337
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Martha' }) !== 2
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Person', id: 'Martha' }) <= 2
         },
         goTo: 347
       }

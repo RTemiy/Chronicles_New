@@ -1,24 +1,10 @@
-import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
+import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { musicPlayer } from '../../../../Functions/musicPlayer'
 import { loadData } from '../../../../Functions/localStorageManager'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Глава 1', partName: 'Часть 3', code: '0' }, [
-  {
-    id: 1,
-    text:
-      `
-        Небо переливалось самыми разнообразными красками, словно некий безумный художник выплеснул на полотно все самые яркие цвета, надеясь в этом хаосе почерпнуть вдохновение. 
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 2
-      }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Dawn.jpg')
-  },
-
   {
     id: 0,
     text:
@@ -36,6 +22,20 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
   },
 
   {
+    id: 1,
+    text:
+      `
+        Небо переливалось самыми разнообразными красками, словно некий безумный художник выплеснул на полотно все самые яркие цвета, надеясь в этом хаосе почерпнуть вдохновение. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 2
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Dawn.jpg')
+  },
+
+  {
     id: 2,
     text:
       `
@@ -44,7 +44,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     buttons: [
       {
         text: '',
-        goTo: 3
+        goTo: 4
       }],
     imageFront: require('../../../../Images/Aurora/Persons/Aurora.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
@@ -90,7 +90,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 7
       }],
-    ambient: require('../../../../Sounds/Common/Silince.mp3'),
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Dawn.jpg')
   },
 
@@ -558,6 +558,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: 'Подыграть Калебу',
         goTo: 50
       }],
+    beforeBegin: () => {
+      timer.set(7, () => { scenarioManager.beginScene(37) })
+    },
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bookshelves.jpg')
   },
 
@@ -572,6 +575,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 38
       }],
+    beforeBegin: timer.stop,
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bookshelves.jpg')
   },
 
@@ -768,6 +772,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 51
       }],
+    beforeBegin: timer.stop,
     stats: [{ value: 1, category: 'Choice', id: 'HelpKaleb' }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bookshelves.jpg')
   },
@@ -3562,6 +3567,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 230
       }],
+    music: require('../../../../Sounds/Aurora/Church.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Church.jpg')
   },
 

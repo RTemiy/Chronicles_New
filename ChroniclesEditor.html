@@ -360,6 +360,15 @@
 				<img class="span_icon" src="./src/Images/UI/editor/editor_stat.svg"/>Стат
 			</button>
 			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_achievement.svg"/>Достижение
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Перед началом слайда]: СОБЫТИЕ,')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_before.svg"/>Престарт
+			</button>
+			<hr>
+			<button class="toolbar-category-button" disabled
 							onclick="navigator.clipboard.writeText('    [Условие]: [\n'+
 '      {\n'+
 '        [Условие]: () => {\n'+
@@ -377,12 +386,12 @@
 				<img class="span_icon" src="./src/Images/UI/editor/editor_condition.svg"/>Условие
 			</button>
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
-				<img class="span_icon" src="./src/Images/UI/editor/editor_achievement.svg"/>Достижение
+							onclick="navigator.clipboard.writeText('      установить таймер(ВРЕМЯ_ТАЙМЕРА, () => { scenarioManager.beginScene(НОМЕР_СЛАЙДА) })')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_timer.svg"/>Таймер
 			</button>
 			<button class="toolbar-category-button" disabled
-							onclick="navigator.clipboard.writeText('    [Перед началом слайда]: СОБЫТИЕ,')">
-				<img class="span_icon" src="./src/Images/UI/editor/editor_before.svg"/>Престарт
+							onclick="navigator.clipboard.writeText('остановить таймер()')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_timer-stop.svg"/>Таймер стоп
 			</button>
 			<hr/>
 			<button class="toolbar-category-button" disabled
@@ -1005,6 +1014,8 @@ onStart()
     dictionary.set('ambient:', '[Эмбиент]:')
     dictionary.set('beforeBegin:', '[Перед началом слайда]:')
     dictionary.set('stats:', '[Добавить статы]:')
+    dictionary.set('timer.set(', 'установить таймер(')
+    dictionary.set('timer.stop(', 'остановить таймер(')
     dictionary.set('condition:', '[Условие]:')
     dictionary.set('imageFront:', '[Объект]:')
     dictionary.set('imageLeft:', '[Объект слева]:')

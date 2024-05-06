@@ -6241,7 +6241,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 381
       }],
     stats: [{ story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'CallMiguel' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6259,7 +6259,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     imageFront: require('../../../../Images/AEP/Persons/Miguel.png'),
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6277,7 +6277,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
 
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6295,7 +6295,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     imageFront: require('../../../../Images/AEP/Persons/Miguel.png'),
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6313,7 +6313,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
 
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6331,7 +6331,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     imageFront: require('../../../../Images/AEP/Persons/Miguel.png'),
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6349,7 +6349,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
 
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6367,7 +6367,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
 
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
