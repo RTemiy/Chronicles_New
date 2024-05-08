@@ -38,5 +38,6 @@ export default interface IScene {
   speaker?: string
   darkSilhouette?: boolean
   ghostSilhouette?: boolean
+  parallax?: string
   wardrobe?: { story: EStoriesEn, personId: string, goTo: number }
 }

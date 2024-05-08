@@ -434,6 +434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 29
       }],
+    stats: [{ story: EStoriesEn.Aurora, value: 0, category: 'Person', id: 'Dalia' }],
     imageFront: require('../../../../Images/Aurora/Persons/Dalia.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bookshelves.jpg')
@@ -575,7 +576,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 38
       }],
-    beforeBegin: timer.stop,
+    beforeBegin: () => { timer.stop() },
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bookshelves.jpg')
   },
 
@@ -772,7 +773,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 51
       }],
-    beforeBegin: timer.stop,
+    beforeBegin: () => { timer.stop() },
     stats: [{ value: 1, category: 'Choice', id: 'HelpKaleb' }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bookshelves.jpg')
   },
@@ -2461,7 +2462,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         condition: () => {
           return statsManager.get({ story: EStoriesEn.Aurora, category: 'Effect', id: 'ChooseArtist' }) >= 1
         },
-        goTo: 161
+        goTo: 160
       },
       {
         condition: () => {
@@ -2819,14 +2820,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 181,
     text:
       `
-        — Мне нравится писать. Небольшие рассказы или стихи. Специального образования у меня нет, но мне помогает отвлечься от всяких плохих мыслей.<p> <p>— Ого, интересное совпадение, — Далия показала пальцем на Калеба. — Ему тоже нравится нечто подобное. 
+        — Мне нравится писать. Небольшие рассказы или стихи. Специального образования у меня нет, но мне помогает отвлечься от всяких плохих мыслей.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 400
+      }],
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_City') },
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Bus_Inside.jpg')
+  },
+
+  {
+    id: 400,
+    text:
+      `
+        — Ого, интересное совпадение, — Далия показала пальцем на Калеба. — Ему тоже нравится нечто подобное. 
       `,
     buttons: [
       {
         text: '',
         goTo: 182
       }],
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_City') },
+    imageFront: require('../../../../Images/Aurora/Persons/Dalia.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bus_Inside.jpg')
   },

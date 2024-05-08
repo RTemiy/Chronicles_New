@@ -73,6 +73,7 @@ export default class CScenarioManager {
     if (!this.#doCondition(scene.condition)) {
       this.#doBeforeBegin(scene.beforeBegin)
       this.#changeImages(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
+      this.#doParallax(scene.parallax)
       this.slide.changeText(scene.text)
       this.#setButtons(scene.buttons)
       this.slide.changeSpeaker(scene.speaker)
@@ -128,6 +129,10 @@ export default class CScenarioManager {
     } else {
       this.slide.changeGhostSilhouette(false)
     }
+  }
+
+  #doParallax (side: string | undefined): void {
+    this.slide.parallax(side)
   }
 
   #doStats (stats: IStat[]): void {

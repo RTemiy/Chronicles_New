@@ -404,6 +404,10 @@
 			</button>
 			<hr/>
 			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Параллакс]: \'Лево | Право\',')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_parallax.svg"/>Параллакс
+			</button>
+			<button class="toolbar-category-button" disabled
 							onclick="navigator.clipboard.writeText('    [Кат-сцена]: { [Видео]: файл(\'../../../../Images/КОД_ИСТОРИИ/CutScenes/НАЗВАНИЕ.mp4\'), [Переход на слайд]: НОМЕР_СЛАЙДА },')">
 				<img class="span_icon" src="./src/Images/UI/editor/editor_cutscene.svg"/>Кат-сцена
 			</button>
@@ -808,6 +812,8 @@ onStart()
       '$AMBIENT$' +
       '$SPEAKER$' +
       '$PICTUREFRONT$' +
+      '$PARALLAXL$' +
+      '$PARALLAXR$' +
       '$CUTSCENE$' +
       '$DARKS$' +
       '$GHOSTS$' +
@@ -878,7 +884,18 @@ onStart()
           value = value.replaceAll('$DARKS$',`darkSilhouette: true,`);
           scenes[name][x].splice(y,1)
           y-=1;
-        } else if (/! Призрак/.test(scenes[name][x][y])) {
+        } else if (/! Параллакс: Лево/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Параллакс: Лево/, '');
+          value = value.replaceAll('$PARALLAXL$',`\n    parallax: 'left',`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Параллакс: Право/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Параллакс: Право/, '');
+          value = value.replaceAll('$PARALLAXR$',`\n    parallax: 'right',`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        }
+        else if (/! Призрак/.test(scenes[name][x][y])) {
           scenes[name][x][y] = scenes[name][x][y].replace(/! Призрак/, '');
           value = value.replaceAll('$GHOSTS$',`ghostSilhouette: true,`);
           scenes[name][x].splice(y,1)
@@ -954,6 +971,8 @@ onStart()
       value = value.replaceAll('$PICTUREFRONT$','');
       value = value.replaceAll('$DARKS$','');
       value = value.replaceAll('$GHOSTS$','');
+      value = value.replaceAll('$PARALLAXL$','');
+      value = value.replaceAll('$PARALLAXR$','');
       value = value.replaceAll('\n    stats: [],','');
       value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
       value = value.replaceAll('\n    doBeforeBegin: () => {\n      },','');
@@ -1023,6 +1042,9 @@ onStart()
     dictionary.set('imageBack:', '[Фон]:')
     dictionary.set('darkSilhouette:', '[Силуэт]:')
     dictionary.set('ghostSilhouette:', '[Призрак]:')
+    dictionary.set('parallax:', '[Параллакс]:')
+    dictionary.set('\'left\'', '\'Лево\'')
+    dictionary.set('\'right\'', '\'Право\'')
     dictionary.set('achievement:', '[Достижение]:')
     dictionary.set('cutScene:', '[Кат-сцена]:')
     dictionary.set('video:', '[Видео]:')

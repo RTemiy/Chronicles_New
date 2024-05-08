@@ -4081,13 +4081,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) < 20
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Letter01' }) <= 0
         },
         goTo: 400
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) >= 20
+          return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Letter01' }) >= 1
         },
         goTo: 259
       }

@@ -115,6 +115,14 @@ export default class CSlide {
     this.slide.message.classList.add('slide__message_show')
   }
 
+  parallax (side: string | undefined): void {
+    console.log(this.slide.backgroundImage)
+    this.slide.backgroundImage.classList.remove('parallaxLeft')
+    this.slide.backgroundImage.classList.remove('parallaxRight')
+    side === 'left' && this.slide.backgroundImage.classList.add('parallaxLeft')
+    side === 'right' && this.slide.backgroundImage.classList.add('parallaxRight')
+  }
+
   changeText (text: string): void {
     this.slide.text.innerText.replace(/\s/g, '').length >= 1 && (this.previousSlideText = this.slide.text.innerHTML)
     this.slide.text.style.display = 'none'
