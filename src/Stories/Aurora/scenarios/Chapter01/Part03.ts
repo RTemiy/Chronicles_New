@@ -3223,6 +3223,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 206
       }],
+    parallax: 'left',
     music: require('../../../../Sounds/Aurora/City.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/City_Fountain.jpg')
   },
@@ -4190,7 +4191,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     buttons: [
       {
         text: '',
-        goTo: 267
+        goTo: 370
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_City') },
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
@@ -4198,7 +4199,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
   },
 
   {
-    id: 267,
+    id: 370,
     text:
       `
         Когда мы вернулись, Калеб сидел на бортике фонтана, пребывая в глубоких раздумьях. Он даже не посмотрел в нашу сторону, когда мы подошли к нему, лишь сказал: 
@@ -4454,6 +4455,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 284
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/Aurora/Backgrounds/City_Fountain.jpg')
   },
 
@@ -4468,6 +4470,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 285
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/Aurora/Items/Mother_Photo.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/City_Fountain.jpg')
@@ -4484,6 +4487,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 286
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/Aurora/Items/Mother_Photo.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/City_Fountain.jpg')
@@ -4500,6 +4504,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 287
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/Aurora/Items/Mother_Photo.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     stats: [

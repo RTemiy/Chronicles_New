@@ -929,6 +929,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 61
       }],
+    parallax: 'Right',
     imageFront: require('../../../../Images/Aurora/Objects/Book.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Observation.jpg')

@@ -15,7 +15,7 @@ import { Slide } from '../Slide/Slide'
 import saveScreenshot from '../../Functions/screenshot'
 import makeExplosion from '../../Functions/explosion'
 import { transformMinutes } from '../../Functions/transformMinutes'
-import { devMode } from '../../Utils/technicalConsts';
+import { devMode } from '../../Utils/technicalConsts'
 
 export const Profile = new CContainer(
   'profile',
@@ -120,15 +120,14 @@ Profile.editBanner.onclick = () => {
   profileManager.showBanners()
 }
 
-let clicks = 0
-Profile.wastedBooks.onclick = () => {
-  devMode && clicks++
-  if (clicks >= 10) {
-    addBook()
-    clicks = 0
-    makeExplosion(Profile.wastedBooks, [`<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`], 1.2, 10, 25, 10)
-    Slide.console.classList.add('console_activated')
-  }
+devMode && enableConsole()
+
+function enableConsole (): void {
+  addBook()
+  addBook()
+  addBook()
+  makeExplosion(Profile.wastedBooks, [`<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`], 1.2, 10, 25, 10)
+  Slide.console.classList.add('console_activated')
 }
 
 Profile.promoButton.onclick = () => {

@@ -764,6 +764,53 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
+        goTo: 55
+      }],
+    imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')
+  },
+
+  {
+    id: 55,
+    text:
+      `
+        — Откройся мне полностью, моя радость. 
+
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 56
+      }],
+    speaker: 'Тень',
+    imageFront: require('../../../../Images/ISML/Persons/Shadow.png'),
+    imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')
+  },
+
+  {
+    id: 56,
+    text:
+      `
+        — Я единственный кто поймет тебя и поддержит.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 57
+      }],
+    speaker: 'Тень',
+    imageFront: require('../../../../Images/ISML/Persons/Shadow.png'),
+    imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')
+  },
+
+  {
+    id: 57,
+    text:
+      `
+        Вытягивая все, что дорого оставляя лишь пустоту, пока не станешь лишь тенью самой себя.
+      `,
+    buttons: [
+      {
+        text: '',
         goTo: 52
       }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')

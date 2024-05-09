@@ -40,7 +40,8 @@
 
 .part {
   padding: 10px;
-  max-width: 235px;
+  width: 235px;
+  height: 235px;
   @extend %styled-radius;
   @extend %button-tap;
   @extend %styled-border;
@@ -67,7 +68,10 @@
 }
 
 .part__image {
-  max-width: 235px;
+  width: 235px;
+  height: 235px;
+  object-fit: cover;
+  object-position: center;
   z-index: 1;
   grid-column: 1;
   grid-row: 1;

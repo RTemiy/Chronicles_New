@@ -40,3 +40,27 @@ achievementsManager.add({
   text: 'Прощание всегда болезненно',
   story: EStoriesEn.FOF
 })
+
+achievementsManager.add({
+  name: 'DarkPast',
+  image: require('../../Images/FOF/Persons/Cassandra_Shirt.png'),
+  title: 'Темное прошлое',
+  text: 'Узнай становление Кассандры как лидера',
+  story: EStoriesEn.FOF
+})
+
+achievementsManager.add({
+  name: 'VirginTouch',
+  image: require('../../Images/FOF/Persons/Christopher.png'),
+  title: 'Невинные касания',
+  text: 'Начало необычных чувств к Крису',
+  story: EStoriesEn.FOF
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part03Completed',
+  image: require('../../Images/FOF/Backgrounds/Forest.jpg'),
+  title: 'Начало долгого путешествия',
+  text: 'В путь!',
+  story: EStoriesEn.FOF
+})

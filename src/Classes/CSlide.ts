@@ -116,11 +116,10 @@ export default class CSlide {
   }
 
   parallax (side: string | undefined): void {
-    console.log(this.slide.backgroundImage)
     this.slide.backgroundImage.classList.remove('parallaxLeft')
     this.slide.backgroundImage.classList.remove('parallaxRight')
-    side === 'left' && this.slide.backgroundImage.classList.add('parallaxLeft')
-    side === 'right' && this.slide.backgroundImage.classList.add('parallaxRight')
+    side?.toUpperCase() === 'left'.toUpperCase() && this.slide.backgroundImage.classList.add('parallaxLeft')
+    side?.toUpperCase() === 'right'.toUpperCase() && this.slide.backgroundImage.classList.add('parallaxRight')
   }
 
   changeText (text: string): void {

@@ -66,6 +66,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Hero' }],
+    parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
@@ -80,6 +81,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 5
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/Immortals/Persons/Hero.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
@@ -96,6 +98,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 6
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/Immortals/Persons/Hero.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')

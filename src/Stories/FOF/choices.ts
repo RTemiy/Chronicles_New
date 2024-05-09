@@ -24,3 +24,10 @@ statsManager.add({
   id: 'SeeHouse',
   story: EStoriesEn.FOF
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'TellAboutNick',
+  idDescription: 'Рассказать чем занималась с Ником',
+  story: EStoriesEn.FOF
+})

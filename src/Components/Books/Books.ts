@@ -2,6 +2,7 @@ import CContainer from '../../Classes/CContainer'
 import './Books.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { showMessage } from '../MenuMessage/MenuMessage'
+import { devMode } from '../../Utils/technicalConsts';
 
 export const Books = new CContainer(
   'books',
@@ -16,11 +17,10 @@ export const Books = new CContainer(
   { name: 'help', selector: '.books__help' }
 )
 
-
 export function addBook (): void {
   const booksAmount = parseInt(loadData(['Books_amount'])!)
   if (booksAmount >= 3) {
-    saveData(['Books_amount'], [3])
+    devMode && saveData(['Books_amount'], [1000])
   } else {
     showMessage(`Вы получили<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
     saveData(['Books_amount'], [booksAmount + 1])
