@@ -3,6 +3,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 storiesManager.add({
   name: 'MM',
   video: require('../../Images/MM/Covers/Story_Cover.mp4'),
+  title: require('../../Images/MM/Covers/Title.png'),
   description:
     'Успешный детектив по имени Маргарита обнаруживает в своем доме таинственную записку, раскрывающую убийство богатого бизнесмена. Она принимает вызов, погружаясь в тернии запутанного следствия. Как не стать пешкой в играх разума и понять, кто является ключом к разгадке?',
   genre: 'Детектив, Психологическая драма, Триллер',

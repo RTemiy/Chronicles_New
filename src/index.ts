@@ -30,6 +30,7 @@ import { showCutscene } from './Components/CutScene/CutScene'
 import { Wardrobe } from './Components/Wardrobe/Wardrobe'
 import { Profile } from './Components/Profile/Profile'
 import { showRate } from './Components/Rate/Rate'
+import { checkURL } from './Functions/checkURL'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -65,6 +66,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
     LoadingScreen.self.style.display = 'none'
     showPolicy()
     soundManager.play('menu')
+    checkURL()
   }
 })
 

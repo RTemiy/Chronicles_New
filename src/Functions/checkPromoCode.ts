@@ -1,6 +1,7 @@
 import { promoCodes } from '../Utils/promoCodes'
+import { showMessage } from '../Components/MenuMessage/MenuMessage';
 
-export default function checkPromoCode (code: string): boolean {
+export default function checkPromoCode (code: string): void {
   let result = false
   promoCodes.forEach(el => {
     if (el.code === code) {
@@ -8,5 +9,5 @@ export default function checkPromoCode (code: string): boolean {
       result = true
     }
   })
-  return result
+  result ? showMessage('Промокод успешно применен', 'Принять') : showMessage('Такого промокода нет', 'Ок')
 }

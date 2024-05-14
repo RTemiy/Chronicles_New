@@ -92,8 +92,11 @@ export default class CStoriesManager {
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
             <p class="story__genre">${story.genre}</p>
         </div>
-        <p class="story__description">${story.description}</p>
-        <p class="story__button">Читать</p>
+        <div class="story__info-container">
+          <img class="story__title" src="${story.title}">
+          <p class="story__description">${story.description}</p>
+          <p class="story__button">Читать</p>
+        </div>
       </div>
       
       `)

@@ -131,7 +131,7 @@ function enableConsole (): void {
 }
 
 Profile.promoButton.onclick = () => {
-  checkPromoCode(Profile.promoInput.value) ? showMessage('Промокод успешно применен', 'Принять') : showMessage('Такого промокода нет', 'Ок')
+  checkPromoCode(Profile.promoInput.value)
   Profile.promoInput.value = ''
 }
 

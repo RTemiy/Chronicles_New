@@ -74,9 +74,9 @@ export default class CSlider {
       child.setAttribute('style', `z-index: ${-index};`)
       index === 0 && child.setAttribute('style', ' z-index: 1;')
       index === 0 && video.play()
-      index === 1 && child.setAttribute('style', 'transform: translateX(4%); z-index: 0;')
+      index === 1 && child.setAttribute('style', 'transform: translateX(8%); z-index: 0;')
       index === this.#containerElements.length - 1 &&
-        child.setAttribute('style', 'transform: translateX(-4%); z-index: 0;')
+        child.setAttribute('style', 'transform: translateX(-8%); z-index: 0;')
       child.classList.add(this.#elementClassName + '_disabled')
       index === 0 &&
         child.classList.remove(this.#elementClassName + '_disabled')
