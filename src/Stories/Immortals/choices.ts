@@ -106,3 +106,45 @@ statsManager.add({
   id: 'WriteCheryl',
   story: EStoriesEn.Immortals
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'GoLeftGuidesWorld',
+  idDescription: 'Пойти налево в мире проводника',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'InviteCheryl',
+  idDescription: 'Пригласить Шерил на вечеринку',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'FollowScarlett',
+  idDescription: 'Последовать после вечеринки за Скарлетт',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'HugLeon',
+  idDescription: 'Обнять Леона',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'GiveCherylMoney',
+  idDescription: 'Одолжить денег Шерил',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'AttackMonster',
+  idDescription: 'Атаковать Монстра',
+  story: EStoriesEn.Immortals
+})

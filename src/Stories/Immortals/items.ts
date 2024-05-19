@@ -30,3 +30,13 @@ statsManager.add({
   description: 'Я нашла его на сиденье после переписки с Шерил, наверное кто-то забыл. Этот ключ переливается необычным синим оттенком. Интересно, что он открывает...',
   story: EStoriesEn.Immortals
 })
+
+statsManager.add({
+  category: 'Item',
+  id: 'Knife',
+  name: 'Нож',
+  image: require('../../Images/Immortals/Items/Knife.png'),
+  title: 'Нож,найденный во время заточения',
+  description: 'Может помочь выжить, защитить от опасностей. Но он напоминает о пережитом ужасе. Нужно ли мне такое орудие?',
+  story: EStoriesEn.Immortals
+})

@@ -97,3 +97,51 @@ achievementsManager.add({
   text: 'Пройти вторую часть',
   story: EStoriesEn.Immortals
 })
+
+achievementsManager.add({
+  name: 'EverythingForFriends',
+  image: require('../../Images/Immortals/Objects/Rolls.png'),
+  title: 'Всё ради друзей',
+  text: 'Потратить самое большое количество денег на еду',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'BestDancer',
+  image: require('../../Images/Immortals/Backgrounds/Livingroom_Disco.jpg'),
+  title: 'Кто тут самый пластичный?',
+  text: 'Победить Скарлетт в танцах',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'CarryItCarefully',
+  image: require('../../Images/Immortals/Items/Knife.png'),
+  title: 'Носи его осторожно',
+  text: 'Получить нож',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'AttackMonster',
+  image: require('../../Images/Immortals/Persons/Monster.png'),
+  title: 'Ужасные последствия',
+  text: 'Вступить в открытое столкновение с монстром',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'EvilBeauty',
+  image: require('../../Images/Immortals/Persons/Antagonist_Mask.png'),
+  title: 'Красивое зло',
+  text: 'Познакомиться с виновником "торжества"',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part03Completed',
+  image: require('../../Images/Immortals/Backgrounds/Chair_Room.jpg'),
+  title: 'Затишье перед бурей',
+  text: 'Пройти третью часть',
+  story: EStoriesEn.Immortals
+})

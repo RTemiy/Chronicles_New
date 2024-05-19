@@ -648,6 +648,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     speaker: 'Ник',
     imageFront: require('../../../../Images/FOF/Persons/Nick.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    ghostSilhouette: true,
     imageBack: require('../../../../Images/FOF/Backgrounds/Forest.jpg')
   },
 
@@ -1852,8 +1853,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 110
       }],
-    speaker: 'Кассандра',
-    imageFront: require('../../../../Images/FOF/Persons/Cassandra_Shirt.png'),
+    speaker: 'Джессика',
+    imageFront: require('../../../../Images/FOF/Persons/Jessica.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
@@ -1942,6 +1943,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 116
       }],
+    music: require('../../../../Sounds/FOF/Forest.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   },
 
@@ -1976,6 +1978,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     speaker: 'Ник',
     imageFront: require('../../../../Images/FOF/Persons/Nick.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    ghostSilhouette: true,
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   },
 
@@ -2191,12 +2194,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 131,
     text:
       `
-        Я не могла просто сидеть и слушать звуки леса, мне нужно было двигаться.<p> <p>Птицы, лес, ветер ну и что? Что здесь особенного?
+        Я не могла просто сидеть и слушать звуки леса, мне нужно было двигаться.
       `,
     buttons: [
       {
         text: '',
-        goTo: 132
+        goTo: 247
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
@@ -2218,6 +2221,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     speaker: 'Ник',
     imageFront: require('../../../../Images/FOF/Persons/Nick.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    ghostSilhouette: true,
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   },
 
@@ -2816,6 +2820,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 171
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/FOF/Backgrounds/Facade_Far.jpg')
   },
 
@@ -2837,7 +2842,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 172,
     text:
       `
-        Ощущая себя еще более паршиво, чем после школы, я направилась в дом.<p>Приведя себя в более менее нормальный вид, я услышала шаги.
+        Ощущая себя еще более паршиво, чем после школы, я направилась в дом, где в ванне, на первом этаже, привела себя в нормальный вид.
       `,
     buttons: [
       {
@@ -4050,5 +4055,22 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     achievement: { story: EStoriesEn.FOF, name: 'Chapter01Part03Completed' },
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
+  },
+
+  {
+    id: 247,
+    text:
+      `
+        Птицы, лес, ветер ну и что? Что здесь особенного?
+       `,
+    buttons: [
+      {
+        text: '',
+        goTo: 132
+      }],
+    speaker: 'Эбигейл',
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
+    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   }
 ])
