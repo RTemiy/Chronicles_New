@@ -115,7 +115,7 @@ export default class CStatsManager {
           persons += `
                      <div class="inventory__person-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
                      <img class="inventory__person-image" src="${stat.image}">
-                     <p class="inventory__person-value">${stat.value}</p>
+                     <p class="inventory__person-value">${stat.showValue === false ? '' : stat.value}</p>
                      <p class="inventory__person-name">${stat.name}</p>
                      </div>
                      `

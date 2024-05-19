@@ -1276,6 +1276,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 84
       }],
+    ambient: require('../../../../Sounds/Immortals/Rain.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Pompei_Square_Rain.jpg')
   },
 
@@ -1362,6 +1363,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     beforeBegin: whiteFlash,
     music: require('../../../../Sounds/Immortals/Guide.mp3'),
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World_Another.jpg')
   },
 
@@ -6219,7 +6221,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 417
       }],
     message: '<i> Нью-Йорк 1885 год',
-    music: require('../../../../Sounds/Immortals/Chair.mp3'),
+    music: require('../../../../Sounds/Immortals/ChairThinking.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6941,9 +6943,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: 'Притвориться связанной',
         goTo: 492
       }],
+    beforeBegin: () => { timer.set(7, () => { scenarioManager.beginScene(492) }) },
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
+    music: require('../../../../Sounds/Immortals/ChairStress.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6958,6 +6962,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 466
       }],
+    beforeBegin: () => { timer.stop() },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6972,6 +6977,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 467
       }],
+    simple: require('../../../../Sounds/Immortals/MonsterScream.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6990,6 +6996,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: 'Атаковать существо в горло',
         goTo: 476
       }],
+    beforeBegin: () => { timer.set(7, () => { scenarioManager.beginScene(468) }) },
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
@@ -7006,6 +7013,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 469
       }],
+    beforeBegin: () => { timer.stop() },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -7124,6 +7132,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 477
       }],
+    beforeBegin: () => { timer.stop() },
     stats: [{ value: 1, category: 'Choice', id: 'AttackMonster' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
@@ -7154,6 +7163,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 479
       }],
+    simple: require('../../../../Sounds/Immortals/MonsterScream.mp3'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
@@ -7362,6 +7372,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     message: 'К сожалению, не всегда надо бросаться в атаку… Вы сильно ранены! ',
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
+    stats: [{ value: 1, category: 'Effect', id: 'BrokenHand' }],
     achievement: { story: EStoriesEn.Immortals, name: 'AttackMonster' },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
@@ -7377,6 +7388,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 493
       }],
+    beforeBegin: () => { timer.stop() },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -7560,7 +7572,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       },
       {
         text: 'Продолжить',
-        goTo: 515
+        goTo: 515,
+        isActive: false
       }],
     beforeBegin: () => {
       scenarioManager.resetSceneButtons(503)
@@ -7607,6 +7620,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 507
       }],
+    ghostSilhouette: true,
     imageFront: require('../../../../Images/Immortals/Persons/Leon.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
@@ -7654,6 +7668,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 510
       }],
+    ghostSilhouette: true,
     imageFront: require('../../../../Images/Immortals/Persons/Neitan.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
@@ -7701,6 +7716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 513
       }],
+    ghostSilhouette: true,
     imageFront: require('../../../../Images/Immortals/Persons/Cheryl.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
@@ -7717,6 +7733,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 514
       }],
+    ghostSilhouette: true,
     imageFront: require('../../../../Images/Immortals/Persons/Scarlett.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
@@ -7781,6 +7798,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 518
       }],
+    music: require('../../../../Sounds/Immortals/ChairStress.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',

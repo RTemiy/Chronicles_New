@@ -8,6 +8,7 @@ statsManager.add({
   image: require('../../Images/Immortals/Persons/Hero.png'),
   title: 'В последнее время происходит множество странных событий. Получится ли у меня справиться?',
   description: 'Про себя сложнее всего писать… Студентка, живу с мамой и папой, работаю, пытаясь обеспечить самостоятельную жизнь.',
+  showValue: false,
   story: EStoriesEn.Immortals
 })
 
@@ -53,21 +54,21 @@ statsManager.add({
 
 statsManager.add({
   category: 'Person',
-  id: 'Nicola',
-  name: 'Никола',
-  image: require('../../Images/Immortals/Persons/Nicola.png'),
-  title: 'Это он? Великий ученый? Я не схожу с ума?',
-  description: 'Инженер и учёный-физик, изобретатель в области электротехники и радиотехники. «Я не тружусь более для настоящего, я тружусь для будущего».',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Person',
   id: 'Leon',
   name: 'Леон',
   image: require('../../Images/Immortals/Persons/Leon.png'),
   title: 'Мы снова общаемся с ним, как в старые добрые времена…',
   description: 'Мой хороший друг, одногруппник, брат профессора Нэйтана. Леон всегда был очень заботлив и внимателен к окружающим. У него большие планы на жизнь, которые он хочет воплотить в ближайшее время.',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Person',
+  id: 'Nicola',
+  name: 'Никола',
+  image: require('../../Images/Immortals/Persons/Nicola.png'),
+  title: 'Это он? Великий ученый? Я не схожу с ума?',
+  description: 'Инженер и учёный-физик, изобретатель в области электротехники и радиотехники. «Я не тружусь более для настоящего, я тружусь для будущего».',
   story: EStoriesEn.Immortals
 })
 

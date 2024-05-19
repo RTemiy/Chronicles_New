@@ -3,6 +3,17 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 statsManager.add({
   category: 'Effect',
+  id: 'BrokenHand',
+  name: 'Перелом',
+  image: require('../../Images/Immortals/Effects/bone.svg'),
+  title: 'Сломанная рука руки',
+  description: 'Ранение, которое я получила после стычки с монстром при похищении.',
+  showValue: false,
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Effect',
   id: 'Study',
   name: 'Учеба',
   image: require('../../Images/UI/icon_stories.svg'),
@@ -38,15 +49,5 @@ statsManager.add({
   image: require('../../Images/Immortals/Effects/family.svg'),
   title: 'Семья',
   description: 'Во всем этом хаосе важно не забывать о самых близких людях и помочь им сохранить любовь.',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Effect',
-  id: 'BrokenHand',
-  name: 'Перелом',
-  image: require('../../Images/Immortals/Effects/bone.svg'),
-  title: 'Перелом руки',
-  description: 'И что мне делать дальше?',
   story: EStoriesEn.Immortals
 })
