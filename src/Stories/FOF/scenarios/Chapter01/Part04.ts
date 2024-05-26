@@ -303,7 +303,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 19,
     text:
       `
-        «Но если я и дальше продолжу истязать себя, то заполучу пару психических заболеваний, а это влечет за собой неприятные последствия.
+        «Но если я и дальше продолжу истязать себя, то заполучу пару психических заболеваний, а это влечет за собой неприятные последствия».
       `,
     buttons: [
       {
@@ -641,7 +641,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 40,
     text:
       `
-        «Какая разница, что на мне надето, когда в моей жизни столько всего происходит?» <p> <p>Придавать значение моему образу сейчас — бессмысленно, ведь это все равно ничего не изменит.
+        «Какая разница, что на мне надето, когда в моей жизни столько всего происходит?»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 270
+      }],
+    speaker: 'Эбигейл',
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+  },
+
+  {
+    id: 270,
+    text:
+      `
+        Придавать значение моему образу сейчас — бессмысленно, ведь это все равно ничего не изменит.
       `,
     buttons: [
       {
@@ -1717,7 +1734,22 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 105,
     text:
       `
-        Так я ощущала себя Кассандрой. Можно было позволить телу снова чувствовать ритм и танцевать.<p> <p>Здесь музыка играла особенно громко, и мне ничего не мешало подстраиваться под ее темп.
+        Так я ощущала себя Кассандрой. Можно было позволить телу снова чувствовать ритм и танцевать.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 260
+      }],
+    parallax: 'right',
+    imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
+  },
+
+  {
+    id: 260,
+    text:
+      `
+        Здесь музыка играла особенно громко, и мне ничего не мешало подстраиваться под ее темп.
       `,
     buttons: [
       {
@@ -2878,7 +2910,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       scenarioManager.changeSceneButtonStatus(177, 0, getChoice(0))
       scenarioManager.changeSceneButtonStatus(177, 1, getChoice(1))
       scenarioManager.changeSceneButtonStatus(177, 2, getChoice(2))
-      scenarioManager.changeSceneButtonStatus(177, 3, getChoice(2))
+      scenarioManager.changeSceneButtonStatus(177, 3, getChoice(3))
     },
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -3013,7 +3045,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: ''
+        text: '',
+        goTo: 185
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -3390,15 +3423,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 208,
     text:
       `
-        Мужик с силой ударил меня по щеке, отчего я упала на холодный грязный пол.<p>Ударившись о стену, я приложила руки к голове, боясь потерять сознание.
+        Мужик с силой ударил меня по щеке, отчего я упала на холодный грязный пол.
       `,
     buttons: [
       {
         text: '',
-        goTo: 209
+        goTo: 261
       }],
     beforeBegin: redFlash,
     music: require('../../../../Sounds/FOF/Noise.mp3'),
+    imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')
+  },
+
+  {
+    id: 261,
+    text:
+      `
+        Ударившись о стену, я приложила руки к голове, боясь потерять сознание.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 250
+      }],
+    beforeBegin: redFlash,
     imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')
   },
 
@@ -3823,7 +3871,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 242
       }],
     music: require('../../../../Sounds/FOF/Club.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
   {
@@ -3837,7 +3885,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 243
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
   {
@@ -3854,7 +3902,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
   {
@@ -3868,7 +3916,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 245
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
   {
@@ -3886,6 +3934,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     simple: require('../../../../Sounds/FOF/Heartbeat.mp3'),
     achievement: { story: EStoriesEn.FOF, name: 'Chapter01Part04Completed' },
-    imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')
+    imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   }
 ])
