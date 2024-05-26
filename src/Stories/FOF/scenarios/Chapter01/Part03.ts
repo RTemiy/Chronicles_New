@@ -2909,7 +2909,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 177
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Corridor.jpg')
   },
@@ -2961,7 +2961,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 183
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Corridor.jpg')
   },
@@ -2996,7 +2996,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 182
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Corridor.jpg')
   },
@@ -3030,7 +3030,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 184
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Corridor.jpg')
   },
@@ -3078,7 +3078,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 187
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Corridor.jpg')
   },
@@ -3154,7 +3154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 192
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Corridor.jpg')
   },
@@ -3171,7 +3171,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 193
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Corridor.jpg')
   },
@@ -3249,7 +3249,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 198
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3280,7 +3280,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 200
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3332,7 +3332,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 208
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3350,7 +3350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Кристофер оценил твое упорство',
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Respect' }],
@@ -3432,7 +3432,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Похоже, Кристофер привлекает тебя',
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Person', id: 'Christopher' }],
@@ -3512,7 +3512,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 214
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3605,7 +3605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 220
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3653,7 +3653,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 223
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3696,7 +3696,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 225
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3713,7 +3713,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 226
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Attractive.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3827,7 +3827,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 234
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Pendant.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3844,7 +3844,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 235
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Pendant.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
@@ -3861,7 +3861,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 236
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Pendant.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },

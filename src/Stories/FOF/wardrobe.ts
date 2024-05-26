@@ -22,3 +22,42 @@ wardrobe.addPerson('Abigeil', [{
   unlocked: () => { return true }
 }
 ])
+
+wardrobe.addPerson('Abigeil_Club', [{
+  image: require('../../Images/FOF/Persons/Abigeil_Desire.png'),
+  title: 'Страсть',
+  description: 'Красное соблазнительное платье. (короткая реклама)',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/FOF/Persons/Abigeil_Brilliance.png'),
+  title: 'Яркость',
+  description: 'Сочетание красного и золотого смотрится интересно. (средняя реклама)',
+  cost: 'medium',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/FOF/Persons/Abigeil_Delicacy.png'),
+  title: 'Изысканность',
+  description: 'Маленькое черное платье. Что может быть лучше? (длинная реклама)',
+  cost: 'long',
+  unlocked: () => { return true }
+}
+])
+
+wardrobe.addPerson('Chris_Club', [{
+  image: require('../../Images/FOF/Persons/Christopher_Leather.png'),
+  title: 'Кожанка',
+  description: 'Выглядит отлично. (короткая реклама)',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/FOF/Persons/Christopher.png'),
+  title: 'Футболка',
+  description: 'Подчеркивает его рельеф. Ничего лишнего. (длинная реклама)',
+  cost: 'long',
+  unlocked: () => { return true }
+}
+])

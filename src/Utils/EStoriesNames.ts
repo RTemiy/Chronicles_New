@@ -26,12 +26,13 @@ export enum EStoriesRu {
 }
 
 export enum EStoriesAvailable {
-  UL = 0,
   ROR = 1,
   FOF = 1,
   AEP = 1,
   Immortals = 1,
   Aurora = 1,
   MM = 1,
-  ISML = 1
+  ISML = 1,
+
+  UL = 1,
 }

@@ -4427,7 +4427,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'WakeUp' }) < 1
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'WakeUp' }) <= 0
         },
         goTo: 282
       }

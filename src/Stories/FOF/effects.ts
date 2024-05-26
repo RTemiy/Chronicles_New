@@ -30,3 +30,13 @@ statsManager.add({
   description: 'Стат перемены делает героиню более гибкой, она легко справляется с поворотами судьбы.',
   story: EStoriesEn.FOF
 })
+
+statsManager.add({
+  category: 'Effect',
+  id: 'Power',
+  name: 'Сила',
+  image: require('../../Images/FOF/Effects/Power.svg'),
+  title: 'Сила',
+  description: 'Стат сила определяет, готова ли героиня исполнить свою часть сделки и использовать магию.',
+  story: EStoriesEn.FOF
+})

@@ -1,4 +1,4 @@
-import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index';
+import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { redFlash, whiteFlash } from '../../../../Components/Slide/Slide'
 
@@ -241,7 +241,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 18
+        goTo: 26
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
@@ -260,7 +260,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 19
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Flowerfield.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -279,7 +279,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 22
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Flowerfield.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -296,7 +296,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Flowerfield.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -311,7 +311,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 26
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Flowerfield.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -645,12 +645,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 43,
     text:
       `
-        Проводник ничего мне не ответил. Краем глаза я заметила лишь его улыбку.<p> <p>«Мне кажется, он рад, что я начинаю спокойнее воспринимать его «туманные» высказывания. Может, это шаг к взаимопониманию между нами?»  
+        Проводник ничего мне не ответил. Краем глаза я заметила лишь его улыбку. 
       `,
     buttons: [
       {
         text: '',
-        goTo: 44
+        goTo: 569
       }],
     message: 'Общение с вами приятно проводнику',
     imageFront: require('../../../../Images/Immortals/Persons/Guide.png'),
@@ -1993,7 +1993,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 127,
     text:
       `
-        Я получила удовольствие от игры и задумалась о своем положение. 
+        Я получила удовольствие от игры и задумалась о своем положении. 
       `,
     buttons: [
       {
@@ -2730,7 +2730,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     message: 'Ваши друзья обрадовались вкусной еде!',
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' },
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Leon' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Kitchen.jpg')
   },
 
@@ -2749,7 +2750,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Rolls.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' },
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Leon' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Kitchen.jpg')
   },
 
@@ -2959,7 +2961,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     message: 'Ваши друзья обрадовались вкусной еде!',
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' },
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Leon' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Kitchen.jpg')
   },
 
@@ -2978,7 +2981,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Pizza.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' },
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Leon' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Kitchen.jpg')
   },
 
@@ -3771,7 +3775,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 276
+        goTo: 292
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom_Disco.jpg')
   },
@@ -4003,7 +4007,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     message: 'Отношения с друзьями улучшились',
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' },
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Leon' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom_Disco.jpg')
   },
 
@@ -5922,7 +5927,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 397,
     text:
       `
-        Перед тем как уснуть, я слышала крики из дома Шерил
+        Перед тем как уснуть, я слышала крики из дома Шерил.
       `,
     buttons: [
       {
@@ -6033,7 +6038,15 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'GiveCherylMoney' }) >= 1 || statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'HugLeon' }) <= 0 || statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'FollowScarlett' }) <= 0
+          if (statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'GiveCherylMoney' }) >= 1) {
+            return true
+          } else {
+            return statsManager.get({
+              story: EStoriesEn.Immortals,
+              category: 'Choice',
+              id: 'HugLeon'
+            }) <= 0 && statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'FollowScarlett' }) <= 0
+          }
         },
         goTo: 413
       }
@@ -8443,7 +8456,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       },
       {
         text: 'Вниз',
-        goTo: 246
+        goTo: 570
       },
       {
         text: 'Влево',
@@ -8454,7 +8467,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
   },
 
   {
-    id: 246,
+    id: 570,
     text:
       `
         Я тотчас присела и выполнила правильную комбинацию движений. Скарлетт замешкалась, а вероятность моей победы все возрастала. 
@@ -8624,7 +8637,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     message: 'Отношения с друзьями улучшились',
     stats: [
-      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' },
+      { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Leon' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom_Disco.jpg')
+  },
+  {
+    id: 569,
+    text:
+      `
+       «Мне кажется, он рад, что я начинаю спокойнее воспринимать его «туманные» высказывания. Может, это шаг к взаимопониманию между нами?»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 44
+      }],
+    imageFront: require('../../../../Images/Immortals/Persons/Guide.png'),
+    imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World_Another.jpg')
   }
 ])

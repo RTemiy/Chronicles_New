@@ -64,3 +64,19 @@ achievementsManager.add({
   text: 'В путь!',
   story: EStoriesEn.FOF
 })
+
+achievementsManager.add({
+  name: 'CocktailQueen',
+  image: require('../../Images/FOF/Objects/Cocktail_03.png'),
+  title: 'Коктейльная королева',
+  text: 'Выпей три коктейля в клубе',
+  story: EStoriesEn.FOF
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part04Completed',
+  image: require('../../Images/FOF/Backgrounds/Club.jpg'),
+  title: 'Тусовщица',
+  text: 'Посети клуб',
+  story: EStoriesEn.FOF
+})

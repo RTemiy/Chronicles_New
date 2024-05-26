@@ -31,3 +31,17 @@ statsManager.add({
   idDescription: 'Рассказать чем занималась с Ником',
   story: EStoriesEn.FOF
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'DrinkAtClub',
+  idDescription: 'Выпить в клубе',
+  story: EStoriesEn.FOF
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'MissNickAtClub',
+  idDescription: 'Скучать по Нику в клубе',
+  story: EStoriesEn.FOF
+})
