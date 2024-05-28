@@ -3444,7 +3444,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 250
+        goTo: 209
       }],
     beforeBegin: redFlash,
     imageBack: require('../../../../Images/FOF/Backgrounds/Club_Toilet.jpg')

@@ -667,6 +667,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 45
       }],
+    ambient: require('../../../../Sounds/ISML/Whisper.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')
   },
 
@@ -709,7 +710,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 48
       }],
-    ambient: require('../../../../Sounds/ISML/Whisper.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')
   },
 
@@ -746,20 +746,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     text:
       `
         Подстерегая на каждом углу разрушенного разума.
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 51
-      }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')
-  },
-
-  {
-    id: 51,
-    text:
-      `
-        Вытягивая все, что дорого оставляя лишь пустоту, пока не станешь лишь тенью самой себя.
       `,
     buttons: [
       {
