@@ -2202,8 +2202,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 247
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   },
 
@@ -2835,6 +2833,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 172
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/FOF/Backgrounds/Facade_Far.jpg')
   },
 
@@ -2849,6 +2848,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 173
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/FOF/Backgrounds/Facade_Far.jpg')
   },
 

@@ -2,7 +2,6 @@ import CContainer from '../../Classes/CContainer'
 import './Policy.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
-import { showMessage } from '../MenuMessage/MenuMessage'
 import { checkUser, sendActivity } from '../../Functions/GSAPI'
 import generateUserToken from '../../Functions/generateUserToken'
 

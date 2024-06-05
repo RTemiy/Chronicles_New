@@ -598,6 +598,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 32
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -612,6 +613,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 33
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -627,6 +629,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 34
       }],
     speaker: 'Эбигейл',
+    parallax: 'left',
     imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
@@ -643,6 +646,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 35
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -657,6 +661,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 36
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -672,6 +677,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 37
       }],
     speaker: 'Эбигейл',
+    parallax: 'left',
     imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')

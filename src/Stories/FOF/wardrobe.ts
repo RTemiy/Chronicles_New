@@ -41,7 +41,7 @@ wardrobe.addPerson('Abigeil_Club', [
   {
     image: require('../../Images/FOF/Persons/Abigeil_Delicacy.png'),
     title: 'Изысканность',
-    description: 'Маленькое черное платье. Что может быть лучше? (длинная реклама)',
+    description: 'Маленькое черное платье. Что может быть лучше?',
     cost: 'long',
     unlocked: () => { return true }
   }
