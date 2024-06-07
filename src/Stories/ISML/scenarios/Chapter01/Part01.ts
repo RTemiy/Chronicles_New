@@ -132,7 +132,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 8
       }],
     beforeBegin: whiteFlash,
-    ambient: require('../../../../Sounds/ISML/Music_Guitar.mp3'),
+    music: require('../../../../Sounds/ISML/Music_Guitar.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Tabletop.jpg')
   },
 
@@ -345,6 +345,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 22
       }],
     parallax: 'left',
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -2256,7 +2257,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 142,
     text:
       `
-        Окружение начало терять контуры, как когда в кино камера фокусируется только на главном герое, оставляя все остальное в приятном размытии, создавая эффект бокэ. 
+        Окружение начало терять контуры, как когда в кино камера фокусируется только на главном герое, оставляя все остальное в приятном размытии, создавая эффект боке. 
       `,
     buttons: [
       {
@@ -2316,7 +2317,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 146
+        goTo: 145
       }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Night_Streets.jpg')
   },
@@ -3069,7 +3070,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 194,
     text:
       `
-        <i> Глава 1; Топографическая анатомия головы
+        <i> Глава 1. Топографическая анатомия головы.
       `,
     buttons: [
       {
@@ -3552,7 +3553,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 227,
     text:
       `
-        В конце концов, удобная поза, позволяющая максимально расслабиться, была найдена, 
+        В конце концов, удобная поза, позволяющая максимально расслабиться, была найдена. 
       `,
     buttons: [
       {
@@ -4067,7 +4068,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 262,
     text:
       `
-         «Не прикасайтесь»!
+         «Не прикасайтесь!»
       `,
     buttons: [
       {
