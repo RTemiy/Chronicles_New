@@ -25,7 +25,7 @@ statsManager.add({
   category: 'Item',
   id: 'Phone',
   name: 'Телефон',
-  image: require('../../Images/ISML/Items/Cigarettes.png'),
+  image: require('../../Images/ISML/Items/Phone.png'),
   title: 'Для связи с друзьями и родственниками.',
   description: 'Полезная вещь, чтобы скоротать время.',
   story: EStoriesEn.ISML

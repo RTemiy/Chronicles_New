@@ -1,7 +1,15 @@
-import { scenarioManager, wardrobe } from '../../../../index'
+import {
+  achievementsManager,
+  saveEndProgress,
+  scenarioManager,
+  soundManager,
+  statsManager,
+  wardrobe
+} from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { musicPlayer } from '../../../../Functions/musicPlayer';
-import { loadData } from '../../../../Functions/localStorageManager';
+import { musicPlayer } from '../../../../Functions/musicPlayer'
+import { loadData, saveData } from '../../../../Functions/localStorageManager'
+import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
@@ -116,13 +124,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 7,
     text:
       `
-        ! Спецэффект: Белая вспышка <p>Мысли были о друзьях, с которыми мы проводили много времени, слоняясь по городу и довольствуясь общением друг с другом.
+        Мысли были о друзьях, с которыми мы проводили много времени, слоняясь по городу и довольствуясь общением друг с другом.
       `,
     buttons: [
       {
         text: '',
         goTo: 8
       }],
+    beforeBegin: whiteFlash,
     ambient: require('../../../../Sounds/ISML/Music_Guitar.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Tabletop.jpg')
   },
@@ -269,14 +278,15 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 17,
     text:
       `
-        ! Выключить эмбиент<p>! Спецэффект: Белая вспышка<p>Музыкальные звуки, обволакивающие теплым покрывалом тех эмоций, внезапно оборвались. 
+        Музыкальные звуки, обволакивающие теплым покрывалом тех эмоций, внезапно оборвались. 
       `,
     buttons: [
       {
         text: '',
         goTo: 18
       }],
-    music: require('../../../../Sounds/ISML/Main.mp3'),
+    beforeBegin: whiteFlash,
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -312,13 +322,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 20,
     text:
       `
-        ! Звук: Аплодисменты<p>Толпа восторженно провожала их возгласами благодарности, заполняя улицу звуками аплодисментов, пока я медленно продолжила свой путь к намеченной встрече.
+        Толпа восторженно провожала их возгласами благодарности, заполняя улицу звуками аплодисментов, пока я медленно продолжила свой путь к намеченной встрече.
       `,
     buttons: [
       {
         text: '',
         goTo: 21
       }],
+    simple: require('../../../../Sounds/ISML/Applause.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -341,15 +352,40 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 22,
     text:
       `
-        ! Начало выбора: Я любила электронную музыку  /  Я любила K-pop  /  Я любила рок (перед тем как сделать выбор, игрок может прослушать все доступные варианты и сделать выбор)<p>! Звук: Щелчок<p>! Выключить эмбиент: Шум города<p>Из сумки я извлекла наушники, надев их на голову, мгновенно отключившись от шума вокруг.
+        Из сумки я достала наушники, надев их на голову, мгновенно отключившись от шума вокруг.
       `,
     buttons: [
       {
-        text: '',
+        text: 'Я любила электронную музыку',
+        func: () => {
+          soundManager.play('music', musicPlayer.FavouriteNinaSong01)
+          saveData(['ISML', 'Favourite', 'Music'], ['01'])
+          saveData(['Achievement'], ['ChooseElectro'])
+        },
         goTo: 23
-      }],
+      },
+      {
+        text: 'Я любила K-pop',
+        func: () => {
+          soundManager.play('music', musicPlayer.FavouriteNinaSong02)
+          saveData(['ISML', 'Favourite', 'Music'], ['02'])
+          saveData(['Achievement'], ['ChooseKpop'])
+        },
+        goTo: 23
+      },
+      {
+        text: 'Я любила рок',
+        func: () => {
+          soundManager.play('music', musicPlayer.FavouriteNinaSong03)
+          saveData(['ISML', 'Favourite', 'Music'], ['03'])
+          saveData(['Achievement'], ['ChooseRock'])
+        },
+        goTo: 23
+      }
+    ],
     message: 'Получен предмет: наушники',
     parallax: 'left',
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     stats: [
       { story: EStoriesEn.ISML, value: 1, category: 'Item', id: 'Headphones' }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
@@ -359,47 +395,39 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 23,
     text:
       `
-        ! Выбор: Я любила электронную музыку
+        Из сумки я извлекла наушники, надев их на голову, мгновенно отключившись от шума вокруг.
       `,
     buttons: [
       {
-        text: '',
-        goTo: 24
-      }],
-    music: require('../../../../Sounds/ISML/Drumnbase.mp3'),
-    achievement: { story: EStoriesEn.ISML, name: 'ChooseElectro' },
-    imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
-  },
-
-  {
-    id: 24,
-    text:
-      `
-        ! Выбор: Я любила K-pop.
-      `,
-    buttons: [
+        text: 'Я любила электронную музыку',
+        func: () => {
+          soundManager.play('music', musicPlayer.FavouriteNinaSong01)
+          saveData(['ISML', 'Favourite', 'Music'], ['01'])
+          saveData(['Achievement'], ['ChooseElectro'])
+        }
+      },
       {
-        text: '',
-        goTo: 25
-      }],
-    music: require('../../../../Sounds/ISML/Kpop.mp3'),
-    achievement: { story: EStoriesEn.ISML, name: 'ChooseKpop' },
-    imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
-  },
-
-  {
-    id: 25,
-    text:
-      `
-        ! Выбор: Я любила рок
-      `,
-    buttons: [
+        text: 'Я любила K-pop',
+        func: () => {
+          soundManager.play('music', musicPlayer.FavouriteNinaSong02)
+          saveData(['ISML', 'Favourite', 'Music'], ['02'])
+          saveData(['Achievement'], ['ChooseKpop'])
+        }
+      },
       {
-        text: '',
+        text: 'Я любила рок',
+        func: () => {
+          soundManager.play('music', musicPlayer.FavouriteNinaSong03)
+          saveData(['ISML', 'Favourite', 'Music'], ['03'])
+          saveData(['Achievement'], ['ChooseRock'])
+        }
+      },
+      {
+        text: 'Выбрать прослушиваемую',
         goTo: 26
-      }],
-    music: require('../../../../Sounds/ISML/Rock.mp3'),
-    achievement: { story: EStoriesEn.ISML, name: 'ChooseRock' },
+      }
+    ],
+    parallax: 'left',
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -407,7 +435,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 26,
     text:
       `
-        Далее<p>Погрузившись с головой в музыку, я почувствовала, как мелодии становились неотъемлемой частью внутреннего мира.
+        Погрузившись с головой в музыку, я почувствовала, как мелодии становились неотъемлемой частью внутреннего мира.
       `,
     buttons: [
       {
@@ -415,6 +443,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 27
       }],
     parallax: 'left',
+    beforeBegin: () => {
+      achievementsManager.unlock(EStoriesEn.ISML, loadData(['Achievement'])!)
+    },
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -452,12 +483,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 29,
     text:
       `
-        ! Начало выбора: Я достала сигарету и закурила / Я начала стучать по бедру в такт музыки<p>Сердце билось в унисон с ритмом музыки.
+        Сердце билось в унисон с ритмом музыки.
       `,
     buttons: [
       {
-        text: '',
+        text: 'Я достала сигарету и закурила',
         goTo: 30
+      },
+      {
+        text: 'Я начала стучать по бедру в такт музыки',
+        goTo: 34
       }],
     message: 'Сейчас вы сделаете свой первый выбор. Некоторые из них меняют сюжет незначительно, другие же ведут к серьезным переменам. Но помните, только Вам решать, какой вы видите свою главную героиню',
     parallax: 'left',
@@ -468,7 +503,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 30,
     text:
       `
-        ! Выбор: Я достала сигарету и закурила.<p>Это было мгновение отдыха и удовольствия. 
+        Это было мгновение отдыха и удовольствия. 
       `,
     buttons: [
       {
@@ -521,7 +556,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 34
+        goTo: 38
       }],
     parallax: 'left',
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
@@ -531,7 +566,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 34,
     text:
       `
-        ! Выбор:  Я начала стучать по бедру в такт музыки.<p>Под влиянием мелодий я почувствовала, как все внутри меня превращается в настоящий концерт, где каждая мысль и каждое ощущение, становятся нотами моей собственной симфонии. 
+        Под влиянием мелодий я почувствовала, как все внутри меня превращается в настоящий концерт, где каждая мысль и каждое ощущение, становятся нотами моей собственной симфонии. 
       `,
     buttons: [
       {
@@ -591,7 +626,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 38,
     text:
       `
-        Далее<p>Наконец, добравшись до места встречи с Марком, я переступила через порог, открыв холодную кованую дверь. 
+        Наконец, добравшись до места встречи с Марком, я переступила через порог, открыв холодную кованую дверь. 
       `,
     buttons: [
       {
@@ -1309,12 +1344,17 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 84,
     text:
       `
-        ! Начало выбора: Я окунулась в воспоминание (за рекламу)  /  Остаться в реальности <p>— Помнишь, как мы встретились?
+        — Помнишь, как мы встретились?
       `,
     buttons: [
       {
-        text: '',
-        goTo: 85
+        text: 'Я окунулась в воспоминание',
+        goTo: 85,
+        gift: true
+      },
+      {
+        text: 'Остаться в реальности',
+        goTo: 112
       }],
     speaker: 'Марк',
     imageFront: require('../../../../Images/ISML/Persons/Mark.png'),
@@ -1326,7 +1366,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 85,
     text:
       `
-        ! Выбор: Я окунулась в воспоминание (за рекламу)<p>Я улыбнулась, окунувшись в воспоминание.
+        Я улыбнулась, окунувшись в воспоминание.
       `,
     buttons: [
       {
@@ -1357,13 +1397,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 87,
     text:
       `
-        ! Спецэффект: Белая вспышка <p>То был первый год учебы. Я искала нужные материалы, чтобы подготовиться к зачету, но мое спокойствие было нарушено.
+        То был первый год учебы. Я искала нужные материалы, чтобы подготовиться к зачету, но мое спокойствие было нарушено.
       `,
     buttons: [
       {
         text: '',
         goTo: 88
       }],
+    beforeBegin: whiteFlash,
     imageBack: require('../../../../Images/ISML/Backgrounds/Library.jpg')
   },
 
@@ -1371,13 +1412,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 88,
     text:
       `
-        ! Звук: Падение книг в библиотеке<p>Симпатичный парень споткнулся об мою сумку и выронил все книги, которые он нес.
+        Симпатичный парень споткнулся об мою сумку и выронил все книги, которые он нес.
       `,
     buttons: [
       {
         text: '',
         goTo: 89
       }],
+    simple: require('../../../../Sounds/ISML/Books_Falling.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Library.jpg')
   },
 
@@ -1436,13 +1478,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 92,
     text:
       `
-         Объект: Нина<p>— Это мелочи.
+         — Это мелочи.
       `,
     buttons: [
       {
         text: '',
         goTo: 93
       }],
+    imageFront: require('../../../../Images/ISML/Persons/Nina.png'),
     speaker: 'Нина',
     imageBack: require('../../../../Images/ISML/Backgrounds/Library.jpg')
   },
@@ -1499,7 +1542,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 96,
     text:
       `
-         Объект: Нина<p>— Приятно познакомиться, Нина.
+         — Приятно познакомиться, Нина.
       `,
     buttons: [
       {
@@ -1507,6 +1550,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 97
       }],
     speaker: 'Нина',
+    imageFront: require('../../../../Images/ISML/Persons/Nina.png'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Library.jpg')
   },
 
@@ -1531,13 +1575,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 98,
     text:
       `
-        ! Спецэффект: Белая вспышка<p>Марк неловко потеребил волосы, пока я заливалась смехом.
+        Марк неловко потеребил волосы, пока я заливалась смехом.
       `,
     buttons: [
       {
         text: '',
         goTo: 99
       }],
+    beforeBegin: whiteFlash,
     imageBack: require('../../../../Images/ISML/Backgrounds/Night_Streets.jpg')
   },
 
@@ -1745,7 +1790,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 112
+        goTo: 114
       }],
     speaker: 'Марк',
     imageFront: require('../../../../Images/ISML/Persons/Mark.png'),
@@ -1757,7 +1802,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 112,
     text:
       `
-        ! Выбор: Остаться в реальности<p>— Ты споткнулся об мою сумку в библиотеке и уронил все свои книги. Это было очень смешно!
+        — Ты споткнулся об мою сумку в библиотеке и уронил все свои книги. Это было очень смешно!
       `,
     buttons: [
       {
@@ -1791,7 +1836,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 114,
     text:
       `
-        Далее<p>Прогулка привела нас к небольшому парку, где мы нашли уютную скамейку у пруда.
+        Прогулка привела нас к небольшому парку, где мы нашли уютную скамейку у пруда.
       `,
     buttons: [
       {
@@ -2140,7 +2185,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 137,
     text:
       `
-        ! Выключить музыку: Основная тема<p>Пройдя немного, достала наушники и надела их, включив музыку. 
+        Пройдя немного, достала наушники и надела их, включив музыку. 
       `,
     buttons: [
       {
@@ -2239,13 +2284,39 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
   {
     id: 144,
     text:
-      `
-        ! Начало условия: Я достала сигарету и закурила<p> <p>! Условие: Я достала сигарету и закурила<p>В кармане джинс нащупала пачку сигарет, достав одну медленно стала вдыхать.
-      `,
+      '',
     buttons: [
       {
         text: '',
         goTo: 145
+      }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.ISML, category: 'Item', id: 'Cigarettes' }) >= 1
+        },
+        goTo: 290
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.ISML, category: 'Item', id: 'Cigarettes' }) <= 0
+        },
+        goTo: 146
+      }
+    ],
+    imageBack: require('../../../../Images/ISML/Backgrounds/Night_Streets.jpg')
+  },
+
+  {
+    id: 290,
+    text:
+      `
+         В кармане джинс нащупала пачку сигарет, достав одну медленно стала вдыхать.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 146
       }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Night_Streets.jpg')
   },
@@ -2268,7 +2339,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 146,
     text:
       `
-        Далее<p>Каждый аккорд, каждая нота казались знакомыми и одновременно невероятно новыми. 
+        Каждый аккорд, каждая нота казались знакомыми и одновременно невероятно новыми. 
       `,
     buttons: [
       {
@@ -2296,7 +2367,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 148,
     text:
       `
-        ! Выключить музыку<p>Открыв дверь и войдя в квартиру я механически сняла куртку и бросила сумку на диван. 
+        Открыв дверь и войдя в квартиру я механически сняла куртку и бросила сумку на диван. 
       `,
     buttons: [
       {
@@ -2690,12 +2761,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 174,
     text:
       `
-        ! Начало выбора: Я очень обрадовалась его сообщению  /  Не хочу сейчас отвечать<p>— Надеюсь, дошла домой без приключений. Скоро увидимся. М. 
+        — Надеюсь, дошла домой без приключений. Скоро увидимся. М. 
       `,
     buttons: [
       {
-        text: '',
+        text: 'Я очень обрадовалась его сообщению',
         goTo: 175
+      },
+      {
+        text: 'Не хочу сейчас отвечать',
+        goTo: 181
       }],
     speaker: 'Марк',
     imageFront: require('../../../../Images/ISML/Persons/Mark.png'),
@@ -2708,7 +2783,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 175,
     text:
       `
-        ! Выбор: Я очень обрадовалась его сообщению <p>Довольная улыбка сразу расползлась по лицу.
+        Довольная улыбка сразу расползлась по лицу.
       `,
     buttons: [
       {
@@ -2797,7 +2872,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 181
+        goTo: 182
       }],
     speaker: 'Нина',
     imageFront: require('../../../../Images/ISML/Persons/Nina_Purple.png'),
@@ -2809,7 +2884,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 181,
     text:
       `
-        ! Выбор: Не хочу сейчас отвечать <p>Настроения не было, тем более мы и так провели весь день вместе.
+        Настроения не было, тем более мы и так провели весь день вместе.
       `,
     buttons: [
       {
@@ -2823,7 +2898,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 182,
     text:
       `
-        Далее<p>Я убрала телефон, возвращаясь к потаенным мыслям.
+        Я убрала телефон, возвращаясь к потаенным мыслям.
       `,
     buttons: [
       {
@@ -3177,13 +3252,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 207,
     text:
       `
-        ! Выключить эмбиент<p>Казалось, что теперь, когда тело расслабилось, а ум отстранился, получится сразу уснуть.
+        Казалось, что теперь, когда тело расслабилось, а ум отстранился, получится сразу уснуть.
       `,
     buttons: [
       {
         text: '',
         goTo: 208
       }],
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Night.jpg')
   },
 
@@ -3281,12 +3357,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 214,
     text:
       `
-        ! Начало выбора: Решила погрузиться в воспоминания  /  Вспомнила, чему меня учили на медитации <p>И чтобы точно уснуть я…
+        И чтобы точно уснуть я…
       `,
     buttons: [
       {
-        text: '',
+        text: 'Решила погрузиться в воспоминания',
         goTo: 215
+      },
+      {
+        text: 'Вспомнила, чему меня учили на медитации',
+        goTo: 227
       }],
     message: 'Следующие выборы повлияют на характер героини. По пути безысходности она станет более пессимистичной, тогда как по пути света ее характер будет отличаться верой в лучшее',
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Night.jpg')
@@ -3296,7 +3376,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 215,
     text:
       `
-        ! Выбор: Решила погрузиться в воспоминания<p>Я старалась отогнать навязчивые мысли, но чем сильнее пыталась, тем глубже они проникали в сознание, раскрашивая тьму за закрытыми веками мрачными красками тревоги. 
+        Я старалась отогнать навязчивые мысли, но чем сильнее пыталась, тем глубже они проникали в сознание, раскрашивая тьму за закрытыми веками мрачными красками тревоги. 
       `,
     buttons: [
       {
@@ -3463,7 +3543,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 227
+        goTo: 237
       }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Night.jpg')
   },
@@ -3472,7 +3552,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 227,
     text:
       `
-        ! Выбор: Вспомнила, чему меня учили на медитации <p>В конце концов, удобная поза, позволяющая максимально расслабиться, была найдена, 
+        В конце концов, удобная поза, позволяющая максимально расслабиться, была найдена, 
       `,
     buttons: [
       {
@@ -3620,13 +3700,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 237,
     text:
       `
-        Далее <p>! Звук: Будильник<p>Рассвет едва пробивался сквозь плотные занавески, когда жестокий звон будильника разорвал тишину комнаты.
+        Рассвет едва пробивался сквозь плотные занавески, когда жестокий звон будильника разорвал тишину комнаты.
       `,
     buttons: [
       {
         text: '',
         goTo: 238
       }],
+    simple: require('../../../../Sounds/ISML/Alarm.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Day.jpg')
   },
 
@@ -3719,13 +3800,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 244,
     text:
       `
-        ! Выключить эмбиент Душ<p>Я подготовила себе пару вещей.
+        Я подготовила себе пару вещей.
       `,
     buttons: [
       {
         text: '',
         goTo: 245
       }],
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Day.jpg')
   },
 
@@ -3733,13 +3815,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 245,
     text:
       `
-        ! Гардероб: Нина (переодетая) 
       `,
     buttons: [
       {
         text: '',
         goTo: 246
       }],
+    wardrobe: { story: EStoriesEn.ISML, personId: 'Nina', goTo: 246 },
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Day.jpg')
   },
 
@@ -3877,13 +3959,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 255,
     text:
       `
-        ! Звук: Скрип поезда<p>Музыкальные ноты смешивались со скрипом останавливающегося поезда, каждый толчок вагона напоминал о невозможности уйти от сюда. 
+        Музыкальные ноты смешивались со скрипом останавливающегося поезда, каждый толчок вагона напоминал о невозможности уйти от сюда. 
       `,
     buttons: [
       {
         text: '',
         goTo: 256
       }],
+    simple: require('../../../../Sounds/ISML/Wagon_Stop.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Metro.jpg')
   },
 
@@ -4020,23 +4103,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 265
-      }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/Metro.jpg')
-  },
-
-  {
-    id: 265,
-    text:
-      `
-        
-      `,
-    buttons: [
-      {
-        text: '',
         goTo: 266
       }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/Morning_Streets.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Metro.jpg')
   },
 
   {
@@ -4099,7 +4168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 270,
     text:
       `
-        ! Выключить музыку<p>Поднявшись по ступеням, быстро зашла в раздевалку, чтобы переодеться в лабораторную одежду. 
+        Поднявшись по ступеням, быстро зашла в раздевалку, чтобы переодеться в лабораторную одежду. 
       `,
     buttons: [
       {
@@ -4293,7 +4362,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 283
+        func: () => {
+          saveEndProgress('ISML', 'Глава 1', 'Часть 2', '0')
+        }
       }],
     achievement: { story: EStoriesEn.ISML, name: 'Chapter01Part01Completed' },
     imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')

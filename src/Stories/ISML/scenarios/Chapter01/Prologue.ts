@@ -623,6 +623,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 42
       }],
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room.jpg')
   },
 
@@ -651,7 +652,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 44
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     beforeBegin: blackFlash,
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Demons.jpg')
   },
