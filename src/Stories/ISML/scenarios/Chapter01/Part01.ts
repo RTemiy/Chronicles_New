@@ -329,7 +329,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 21
       }],
-    simple: require('../../../../Sounds/ISML/Applause.mp3'),
+    ambient: require('../../../../Sounds/ISML/Applause.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -386,7 +386,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     ],
     message: 'Получен предмет: наушники',
     parallax: 'left',
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     stats: [
       { story: EStoriesEn.ISML, value: 1, category: 'Item', id: 'Headphones' }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')

@@ -16,8 +16,8 @@ const Rate = new CContainer('rate',
     <button class="rate__star"></button>
   </div>
   <div class="rate__buttons">
-    <button class="rate__send rate__button">Отправить</button>
     <button class="rate__close rate__button">Закрыть</button>
+    <button class="rate__send rate__button">Отправить</button>
   </div>
 </div>
 `,

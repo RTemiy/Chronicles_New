@@ -14,6 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
+    parallax: 'right',
     music: require('../../../../Sounds/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
@@ -29,6 +30,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -59,6 +61,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -207,6 +210,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -2823,6 +2827,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 178
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
   },
 
@@ -2837,6 +2842,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 179
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/ROR/Persons/Damien.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
@@ -3233,6 +3239,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 204
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
   },
 

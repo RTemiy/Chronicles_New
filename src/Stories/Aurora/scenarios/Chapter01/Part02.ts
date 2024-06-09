@@ -2764,6 +2764,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 176
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
   },
 
@@ -2824,6 +2825,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 180
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
   },
 
@@ -2838,6 +2840,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 181
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
@@ -2854,6 +2857,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 182
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
@@ -2886,6 +2890,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 184
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
   },
 
@@ -2900,6 +2905,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 185
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
   },
 
@@ -2914,6 +2920,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 186
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
   },
 
@@ -2928,6 +2935,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 187
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')

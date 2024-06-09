@@ -4304,6 +4304,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 278
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -4320,6 +4321,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 279
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -4334,6 +4336,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 280
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -4350,6 +4353,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 281
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -4366,6 +4370,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 282
       }],
+    parallax: 'right',
     imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')

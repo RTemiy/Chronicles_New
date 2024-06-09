@@ -395,7 +395,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 26,
     text:
       `
-        Нет. Она бежала сломя голову через весь зал, даже вопреки возгласам рассерженной библиотекарши. <p> <p><s> Черты лица как у модели. Живая, бодрая. С растрепанными волосами.  
+        Нет. Она бежала сломя голову через весь зал, даже вопреки возгласам рассерженной библиотекарши.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 420
+      }],
+    imageFront: require('../../../../Images/Aurora/Persons/Dalia.png'),
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Bookshelves.jpg')
+  },
+
+  {
+    id: 420,
+    text:
+      `
+        <s> Черты лица как у модели. Живая, бодрая. С растрепанными волосами.  
       `,
     buttons: [
       {
@@ -5101,7 +5117,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 325
       }],
-    music: musicPlayer[`AuroraDaily${loadData(['Aurora', 'Daily', 'Music'])}`],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Car.jpg')
   },
 

@@ -6445,7 +6445,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 431
       }],
-    parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6571,6 +6570,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     beforeBegin: () => { timer.set(5, () => { scenarioManager.beginScene(438) }) },
     parallax: 'left',
+    imageFront: require('../../../../Images/Immortals/Items/Knife.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6614,6 +6614,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 439
       }],
     parallax: 'left',
+    imageFront: require('../../../../Images/Immortals/Items/Knife.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
   {
@@ -7914,7 +7915,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 524,
     text:
       `
-        — Подготовь пробирку, чудик, — он обращался к монстру. — Знаю, с тобой обращаются ужасно, но так надо. Иначе ты не научишься покоряться. 
+        — Подготовь пробирку, чудик, — он отдал приказ монстру. — Знаю, с тобой обращаются ужасно, но так надо. Иначе ты не научишься покоряться. 
       `,
     buttons: [
       {
