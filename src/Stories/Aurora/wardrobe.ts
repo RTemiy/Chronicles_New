@@ -1,4 +1,5 @@
 import { wardrobe } from '../../index'
+import { loadData } from '../../Functions/localStorageManager'
 
 wardrobe.addPerson('Aurora_City', [{
   image: require('../../Images/Aurora/Persons/Aurora_Dog.png'),
@@ -20,5 +21,12 @@ wardrobe.addPerson('Aurora_City', [{
   description: 'Тобой правит элегантность',
   cost: 'long',
   unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Aurora/Persons/Aurora_Dress.png'),
+  title: '<p style="color: lawngreen">Цветочная',
+  description: 'Предпочитаешь свежесть и легкость',
+  cost: 'short',
+  unlocked: () => { return loadData(['Promo', 'RepostVKCompetition']) === '1' }
 }
 ])

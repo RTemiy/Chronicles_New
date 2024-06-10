@@ -14,7 +14,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    parallax: 'right',
     music: require('../../../../Sounds/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
@@ -45,6 +44,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -61,7 +61,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    parallax: 'right',
+    parallax: 'left',
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -76,6 +76,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -92,6 +93,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -108,6 +110,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 7
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -148,6 +151,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 9
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')

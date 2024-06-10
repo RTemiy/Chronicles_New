@@ -850,7 +850,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
@@ -867,7 +866,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 42
       }],
-    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     stats: [{ story: EStoriesEn.ROR, value: 0, category: 'Person', id: 'Martha' }],
@@ -885,7 +883,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 43
       }],
-    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
@@ -902,7 +899,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 160
       }],
-    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
@@ -919,7 +915,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 44
       }],
-    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
@@ -936,7 +931,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')

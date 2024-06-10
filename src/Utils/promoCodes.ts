@@ -8,6 +8,10 @@ export const promoCodes = [
   {
     code: 'demoBanner',
     func: () => { saveData(['Promo', 'DemoBanner'], ['1']) }
+  },
+  {
+    code: 'gjtlbntkmrjyrehcfhtgjcnjd',
+    func: () => { saveData(['Promo', 'RepostVKCompetition'], ['1']) }
   }
   /* {
     code: 'qly52axc',
