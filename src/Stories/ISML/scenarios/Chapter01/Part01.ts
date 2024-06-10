@@ -2449,6 +2449,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 155
       }],
+    simple: require('../../../../Sounds/ISML/Loading_Computer.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Night.jpg')
   },
 
