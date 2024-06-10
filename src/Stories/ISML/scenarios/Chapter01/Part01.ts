@@ -2660,6 +2660,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 169
       }],
+
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room_Dry_Night.jpg')
   },
 
