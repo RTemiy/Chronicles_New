@@ -3254,6 +3254,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 205
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
@@ -3270,6 +3271,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 206
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
   },
 
@@ -3284,6 +3286,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 207
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
   },
 
@@ -3298,6 +3301,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 208
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
@@ -3314,6 +3318,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 209
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
@@ -3330,6 +3335,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 210
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
   },
 
@@ -3344,6 +3350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 211
       }],
+    parallax: 'left',
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')

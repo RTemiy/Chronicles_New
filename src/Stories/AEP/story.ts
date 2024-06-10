@@ -1,4 +1,4 @@
-import { scenarioManager, statsManager, storiesManager } from '../../index';
+import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'AEP',
@@ -8,7 +8,6 @@ storiesManager.add({
     'Всего нужен миг, чтобы спокойная жизнь превратилась в хаос. Главная героиня попадает в водоворот интриг, страсти и криминала в самом сердце Италии. Опасность и предательства поджидают на каждом углу. Игра началась!',
   genre: 'Повседневность, Эротика',
   mature: true,
-  status: 'Новая часть',
   chapters: [
     {
       name: 'Глава 1',

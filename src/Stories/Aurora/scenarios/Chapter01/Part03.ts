@@ -5583,7 +5583,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 365
       }],
-    music: musicPlayer[`AuroraDaily${loadData(['Aurora', 'Daily', 'Music'])}`],
+/*    music: musicPlayer[`AuroraDaily${loadData(['Aurora', 'Daily', 'Music'])}`],*/
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
 

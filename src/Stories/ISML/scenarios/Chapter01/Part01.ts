@@ -117,6 +117,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 7
       }],
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -286,7 +287,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 18
       }],
     beforeBegin: whiteFlash,
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Sounds/ISML/City_Sounds.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -329,7 +330,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 21
       }],
-    ambient: require('../../../../Sounds/ISML/Applause.mp3'),
+    simple: require('../../../../Sounds/ISML/Applause.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -345,7 +346,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 22
       }],
     parallax: 'left',
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
 
@@ -386,6 +386,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     ],
     message: 'Получен предмет: наушники',
     parallax: 'left',
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     stats: [
       { story: EStoriesEn.ISML, value: 1, category: 'Item', id: 'Headphones' }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
@@ -1349,7 +1350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     buttons: [
       {
         text: 'Я окунулась в воспоминание',
-        goTo: 85,
+        goTo: 86,
         gift: true
       },
       {
@@ -1359,20 +1360,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     speaker: 'Марк',
     imageFront: require('../../../../Images/ISML/Persons/Mark.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/Night_Streets.jpg')
-  },
-
-  {
-    id: 85,
-    text:
-      `
-        Я улыбнулась, окунувшись в воспоминание.
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 86
-      }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Night_Streets.jpg')
   },
 
