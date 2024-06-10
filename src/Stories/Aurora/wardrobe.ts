@@ -23,7 +23,7 @@ wardrobe.addPerson('Aurora_City', [{
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Aurora/Persons/Aurora_Dress.png'),
+  image: require('../../Images/Aurora/Persons/Aurora_Green_Dress.png'),
   title: '<p style="color: lawngreen">Цветочная',
   description: 'Предпочитаешь свежесть и легкость',
   cost: 'short',
