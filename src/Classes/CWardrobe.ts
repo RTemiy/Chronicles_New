@@ -23,6 +23,10 @@ export default class CWardrobe {
     return this.persons[personId][loadData([storyName, personId, 'Clothes'])!].image
   }
 
+  getCurrentClothesImageTitle (storyName: string, personId: string): string {
+    return this.persons[personId][loadData([storyName, personId, 'Clothes'])!].title
+  }
+
   private getAllClothes (personId: string): IWardrobe[] {
     return this.persons[personId]
   }

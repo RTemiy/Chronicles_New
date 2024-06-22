@@ -36,7 +36,17 @@ statsManager.add({
   id: 'Jonathan',
   name: 'Джонатан',
   image: require('../../Images/MM/Persons/Jonathan.png'),
-  title: 'Сын убитого бизнесмена Томаса Брауна. ',
+  title: 'Сын убитого бизнесмена Томаса Брауна.',
   description: 'Еще одна загадка в этом деле. Кто же ты такой, Джонатан? Какие тайны скрываешь? Впервые не могу понять человека… Теряю сноровку?',
+  story: EStoriesEn.MM
+})
+
+statsManager.add({
+  category: 'Person',
+  id: 'Benjamin',
+  name: 'Бенджамин',
+  image: require('../../Images/MM/Persons/Benjamin.png'),
+  title: 'Сейчас — почетный офицер ЦРУ США, ранее — один из моих наставников.',
+  description: 'Прошлое, которое связывает нас, тяготит. С Беном у меня сложились не самые лучшие взаимоотношения, а с обидой и неприязнью, что я к нему испытываю, предстоит поработать.',
   story: EStoriesEn.MM
 })

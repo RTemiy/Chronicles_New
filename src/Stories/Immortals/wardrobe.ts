@@ -30,3 +30,26 @@ wardrobe.addPerson('Hero', [{
   unlocked: () => { return loadData(['Promo', 'ClownAvatar']) === '1' }
 }
 ])
+
+wardrobe.addPerson('Katarina_Ball', [{
+  image: require('../../Images/Immortals/Persons/Katarina_LowCost.png'),
+  title: 'Неопытная леди',
+  description: 'Нет смысла прихорашиваться ради дурацкого приема',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Immortals/Persons/Katarina_MediumCost.png'),
+  title: 'Уважаемая дама',
+  description: 'Милое платье, вписывающееся в атмосферу вечера',
+  cost: 'medium',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Immortals/Persons/Katarina_HighCost.png'),
+  title: 'Аристократка',
+  description: 'Роскошный наряд достойный «жены» Роберта',
+  cost: 'long',
+  unlocked: () => { return true }
+}
+])

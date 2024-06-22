@@ -1792,7 +1792,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     parallax: 'left',
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Shift' },
-      { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Constancy' }],
+      { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Constancy' },
+      { story: EStoriesEn.FOF, value: +1, category: 'Choice', id: 'SipAtClub' }],
     imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 

@@ -41,6 +41,13 @@ statsManager.add({
 
 statsManager.add({
   category: 'Choice',
+  id: 'SipAtClub',
+  idDescription: 'Сделать глоток в клубе',
+  story: EStoriesEn.FOF
+})
+
+statsManager.add({
+  category: 'Choice',
   id: 'MissNickAtClub',
   idDescription: 'Скучать по Нику в клубе',
   story: EStoriesEn.FOF

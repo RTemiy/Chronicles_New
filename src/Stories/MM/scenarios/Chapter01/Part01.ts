@@ -363,6 +363,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 23
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
   },
 
@@ -377,6 +378,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 24
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
   },
 
@@ -392,6 +394,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 25
       }],
     speaker: 'Маргарита',
+    parallax: 'left',
     imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
@@ -470,6 +473,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 30
       }],
+    parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
   },
 

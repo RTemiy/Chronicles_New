@@ -24,3 +24,43 @@ achievementsManager.add({
   text: 'Побеседовать с не самым приятным подозреваемым',
   story: EStoriesEn.MM
 })
+
+achievementsManager.add({
+  name: 'JudasInOffice',
+  image: require('../../Images/MM/Persons/Margo_Pajamas.png'),
+  title: 'Иуда в офисе',
+  text: 'Кто прячется под маской предателя?',
+  story: EStoriesEn.MM
+})
+
+achievementsManager.add({
+  name: 'FathersAndSons',
+  image: require('../../Images/MM/Persons/Margo_Pajamas.png'),
+  title: 'Отцы и дети',
+  text: 'Неразрешимая вражда родных людей',
+  story: EStoriesEn.MM
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part02Completed',
+  image: require('../../Images/MM/Persons/Margo_Pajamas.png'),
+  title: 'Ночная художница',
+  text: 'Позволить себе отдохнуть, рисуя на стекле',
+  story: EStoriesEn.MM
+})
+
+achievementsManager.add({
+  name: 'PastMeeting',
+  image: require('../../Images/MM/Persons/Margo_Pajamas.png'),
+  title: 'Встреча с прошлым',
+  text: 'Неожиданный визит знакомого человека',
+  story: EStoriesEn.MM
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part03Completed',
+  image: require('../../Images/MM/Persons/Margo_Pajamas.png'),
+  title: 'Нарушительница границ',
+  text: 'Проникнуть в чужие владения во имя благородной цели',
+  story: EStoriesEn.MM
+})

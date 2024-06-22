@@ -40,3 +40,13 @@ statsManager.add({
   description: 'Может помочь выжить, защитить от опасностей. Но он напоминает о пережитом ужасе. Нужно ли мне такое орудие?',
   story: EStoriesEn.Immortals
 })
+
+statsManager.add({
+  category: 'Item',
+  id: 'Nicola_Cross',
+  name: 'Крестик',
+  image: require('../../Images/Immortals/Items/Golden_Cross.png'),
+  title: 'Тесла подарил мне ценную вещь',
+  description: 'Его вера в лучшее придает силы. Я благодарна за оказанное доверие и внимание.',
+  story: EStoriesEn.Immortals
+})
