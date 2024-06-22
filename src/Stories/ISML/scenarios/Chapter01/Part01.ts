@@ -2162,7 +2162,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 137
       }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Night_Pound.jpg')
@@ -3881,7 +3882,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 251
       }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Kitchen.jpg')

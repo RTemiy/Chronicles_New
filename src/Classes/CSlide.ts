@@ -159,7 +159,7 @@ export default class CSlide {
 
   setButtonValues (buttons: IButton[]): void {
     this.resetButtonValues()
-    if (buttons.length <= 1) {
+    if (buttons.length <= 1 && !buttons[0].gift) {
       this.slide.text.onclick = () => {
         buttons[0].func!()
       }

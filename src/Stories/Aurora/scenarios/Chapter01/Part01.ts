@@ -1192,7 +1192,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 77
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')

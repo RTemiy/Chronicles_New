@@ -1811,7 +1811,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 107
       }],
     speaker: 'Незнакомец',
@@ -3221,7 +3222,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 186
       }],
     imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')

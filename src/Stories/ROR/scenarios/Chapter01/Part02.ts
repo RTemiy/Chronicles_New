@@ -3315,7 +3315,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 213
       }],
     music: require('../../../../Sounds/ROR/City.mp3'),
@@ -5418,7 +5419,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 348
       }],
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),

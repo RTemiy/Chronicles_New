@@ -1896,7 +1896,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 123
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/University_Outside.jpg')
@@ -4517,7 +4518,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 287
       }],
     parallax: 'right',

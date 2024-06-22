@@ -1297,7 +1297,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 79
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
@@ -4804,7 +4805,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 295
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')

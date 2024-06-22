@@ -3489,7 +3489,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 218
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Med.jpg')
@@ -6774,7 +6775,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 423
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')

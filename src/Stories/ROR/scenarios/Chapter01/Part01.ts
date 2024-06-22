@@ -1106,7 +1106,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 53
       }],
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),

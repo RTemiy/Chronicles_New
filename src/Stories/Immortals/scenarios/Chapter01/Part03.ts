@@ -1358,7 +1358,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 90
       }],
     beforeBegin: whiteFlash,
@@ -6008,7 +6009,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 403
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom.jpg')

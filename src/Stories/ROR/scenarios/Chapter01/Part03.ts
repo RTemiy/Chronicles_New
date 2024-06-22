@@ -2406,7 +2406,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 150
       }],
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -4150,7 +4151,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 261
       }],
     music: require('../../../../Sounds/ROR/Jack_Theme.mp3'),

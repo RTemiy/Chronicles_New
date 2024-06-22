@@ -2899,7 +2899,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 186
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Neitan.png'),
