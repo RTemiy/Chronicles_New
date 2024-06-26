@@ -1,5 +1,5 @@
-import { saveEndProgress, scenarioManager, wardrobe } from '../../../../index';
-import { EStoriesEn } from '../../../../Utils/EStoriesNames';
+import { saveEndProgress, scenarioManager, wardrobe } from '../../../../index'
+import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава 1', partName: 'Часть 3', code: '0' }, [
   {
