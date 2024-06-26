@@ -2866,7 +2866,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 179,
     text:
       `
-        — Спасибо…<p>Но, развернувшись, продолжила идти в одиночку. Все же место и обстоятельства не подходили под подобные беседы.
+        — Спасибо…
       `,
     buttons: [
       {
@@ -3405,5 +3405,17 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     parallax: 'right',
     achievement: { story: EStoriesEn.MM, name: 'Chapter01Part03Completed' },
     imageBack: require('../../../../Images/MM/Backgrounds/Countryhouse.jpg')
-  }
-])
+  },
+  {
+    id: 213,
+    text:
+      `
+        Но, развернувшись, продолжила идти в одиночку. Все же место и обстоятельства не подходили под подобные беседы.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 180
+      }],
+    imageBack: require('../../../../Images/MM/Backgrounds/Funeral.jpg')
+  }])

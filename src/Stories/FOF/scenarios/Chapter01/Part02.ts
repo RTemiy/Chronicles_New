@@ -257,8 +257,47 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
           return statsManager.get({ story: EStoriesEn.FOF, category: 'Effect', id: 'Shift' }) < statsManager.get({ story: EStoriesEn.FOF, category: 'Effect', id: 'Constancy' })
         },
         goTo: 15
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.FOF, category: 'Effect', id: 'Shift' }) === statsManager.get({ story: EStoriesEn.FOF, category: 'Effect', id: 'Constancy' })
+        },
+        goTo: 310
       }
     ],
+    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+  },
+
+  {
+    id: 310,
+    text:
+      `
+        У меня были спутанные мысли, ведь я не верила в реальность происходящего.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 311
+      }],
+    beforeBegin: whiteFlash,
+    music: require('../../../../Sounds/FOF/Main.mp3'),
+    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+  },
+
+  {
+    id: 311,
+    text:
+      `
+        «Как все это может быть правдой? С одной стороны, перемены мне нравятся, но с другой — я очень напугана. И что есть реальность? Что есть моя жизнь?»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 17
+      }],
+    speaker: 'Эбигейл',
+    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
+    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -1247,13 +1286,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) >= 3
+          return statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) >= 4
         },
         goTo: 72
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) < 3
+          return statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) < 4
         },
         goTo: 76
       }
