@@ -145,3 +145,43 @@ achievementsManager.add({
   text: 'Пройти третью часть',
   story: EStoriesEn.Immortals
 })
+
+achievementsManager.add({
+  name: 'Hereditary',
+  image: require('../../Images/Immortals/Items/Golden_Cross.png'),
+  title: 'Наследие',
+  text: 'Получить подарок от Николы',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'IKnew',
+  image: require('../../Images/Immortals/Persons/Robert.png'),
+  title: 'Я так и знала!',
+  text: 'Угадать, чем занимается Роберт',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'KeepKnife',
+  image: require('../../Images/Immortals/Items/Knife.png'),
+  title: 'Лишним не будет',
+  text: 'Оставить при себе первое оружие',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'LoveEvil',
+  image: require('../../Images/Immortals/Persons/Antagonist_Mask.png'),
+  title: 'Змей искуситель',
+  text: 'Поддаться на соблазн злодея',
+  story: EStoriesEn.Immortals
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part04Completed',
+  image: require('../../Images/Immortals/Backgrounds/Chair_Room.jpg'),
+  title: 'Званый вечер',
+  text: 'Пройти четвёртую часть',
+  story: EStoriesEn.Immortals
+})

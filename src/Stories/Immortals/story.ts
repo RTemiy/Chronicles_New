@@ -54,6 +54,16 @@ storiesManager.add({
           }
         },
         {
+          name: 'Часть 4',
+          code: '0',
+          image: require('../../Images/Immortals/Backgrounds/Ball_Hall.jpg'),
+          loadingImage: require('../../Images/Immortals/Covers/Part04.png'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
           name: 'Скоро',
           code: '0',
           image: require('../../Images/UI/background.png'),

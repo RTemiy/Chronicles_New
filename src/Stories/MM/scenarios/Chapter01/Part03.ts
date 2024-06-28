@@ -2871,7 +2871,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 180
+        goTo: 213
       }],
     speaker: 'Маргарита',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.MM, 'Margo_Black_Dress') },
