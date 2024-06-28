@@ -371,17 +371,17 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
       `,
     buttons: [
       {
-        text: '<i>Кто-то слил информацию. У нас завелась крыса?',
+        text: 'Кто-то слил информацию. У нас завелась крыса?',
         goTo: 25,
         func: () => { timer.stop() }
       },
       {
-        text: '<i>Пока рано делать выводы',
+        text: 'Пока рано делать выводы',
         goTo: 33,
         func: () => { timer.stop() }
       },
       {
-        text: '<i> Неужели Джонатан замешан в преступлении?',
+        text: 'Неужели Джонатан замешан в преступлении?',
         goTo: 34,
         func: () => { timer.stop() }
       }],
