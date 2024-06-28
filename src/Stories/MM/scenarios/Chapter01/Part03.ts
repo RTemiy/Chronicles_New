@@ -2226,7 +2226,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 139
       }],
     speaker: 'Маргарита',

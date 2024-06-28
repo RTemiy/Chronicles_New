@@ -1,4 +1,4 @@
-import { saveEndProgress, scenarioManager } from '../../../../index'
+import { saveEndProgress, scenarioManager, wardrobe } from '../../../../index';
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Глава 1', partName: 'Часть 4', code: '0' }, [
@@ -33,7 +33,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 2
       }],
-    imageFront: require('../../../../Images/Immortals/Persons/Dctor_S.png'),
+    imageFront: require('../../../../Images/Immortals/Persons/Doctor_S.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     darkSilhouette: true,
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
@@ -133,14 +133,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 8,
     text:
       `
-        ! Картинка: Больница Нью-Йорк 1885 г.<p>Яркие светлые стены, жесткая кушетка и размытый силуэт. Увидев, что я очнулась, мужской голос проговорил:
+        Яркие светлые стены, жесткая кушетка и размытый силуэт. Увидев, что я очнулась, мужской голос проговорил:
       `,
     buttons: [
       {
         text: '',
         goTo: 9
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -157,7 +157,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -173,7 +173,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -187,7 +187,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 12
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -201,7 +201,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 13
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -218,7 +218,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -232,7 +232,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 15
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -246,7 +246,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 16
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -263,7 +263,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -280,7 +280,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -294,7 +294,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 19
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -308,7 +308,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 20
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -325,7 +325,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -339,7 +339,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 22
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -355,7 +355,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -371,7 +371,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -387,7 +387,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -401,7 +401,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 26
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -417,7 +417,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -449,7 +449,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -463,7 +463,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 30
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -479,7 +479,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -493,7 +493,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 32
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -507,7 +507,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 33
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -523,7 +523,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -539,7 +539,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -553,7 +553,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 36
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -567,7 +567,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 37
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -583,7 +583,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -599,7 +599,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -615,7 +615,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -631,7 +631,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -647,7 +647,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -661,7 +661,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 43
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -675,7 +675,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 44
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -689,7 +689,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 45
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -705,7 +705,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -721,7 +721,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -737,7 +737,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -753,7 +753,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -769,7 +769,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -785,7 +785,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -799,7 +799,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 52
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -813,7 +813,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 53
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -827,7 +827,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 54
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -841,7 +841,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 55
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -855,7 +855,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 56
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -869,7 +869,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -885,7 +885,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -899,7 +899,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -915,7 +915,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -931,7 +931,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -950,7 +950,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Item', id: 'Nicola_Cross' }],
     achievement: { story: EStoriesEn.Immortals, name: 'Hereditary' },
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -966,7 +966,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -982,7 +982,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -999,7 +999,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     message: 'Благодаря хорошим отношениям с Теслой, вы узнаете его лучше',
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1013,7 +1013,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 66
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1029,7 +1029,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1045,7 +1045,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1065,7 +1065,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Effect', id: 'Study' },
       { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Nicola' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1081,7 +1081,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Nicola.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1095,7 +1095,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 71
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1109,7 +1109,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 72
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1123,7 +1123,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 73
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1137,7 +1137,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 74
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1153,7 +1153,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1169,7 +1169,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1185,7 +1185,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -1199,7 +1199,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 78
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
+    imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
   {
@@ -2911,7 +2911,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 185
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Robert_Katarina_Room.jpg')
   },
@@ -2941,7 +2941,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 187
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Robert_Katarina_Room.jpg')
   },
@@ -3014,7 +3014,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 192
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
@@ -3044,7 +3044,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 194
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
@@ -3089,7 +3089,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 197
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -3151,7 +3151,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 201
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -3168,7 +3168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 202
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -3230,7 +3230,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 206
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -3263,7 +3263,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 208
       }],
     message: 'Вы можете выбрать только один вариант, чтобы скоротать время',
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -3309,7 +3309,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 211
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3384,7 +3384,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 216
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3446,7 +3446,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 220
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3490,7 +3490,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 223
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3536,7 +3536,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 226
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3582,7 +3582,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 229
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3631,7 +3631,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 232
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3708,7 +3708,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 237
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3740,7 +3740,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 239
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -3799,7 +3799,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 243
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -3863,7 +3863,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 247
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -3999,7 +3999,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 256
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
@@ -4015,7 +4015,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 257
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
@@ -4120,7 +4120,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 264
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
@@ -4136,7 +4136,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 265
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
@@ -4184,7 +4184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 268
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -4201,7 +4201,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 269
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -4250,7 +4250,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 272
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -4267,7 +4267,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 273
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -4284,7 +4284,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 274
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -4318,7 +4318,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 276
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -4350,7 +4350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 278
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4411,7 +4411,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 282
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4442,7 +4442,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 284
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4504,7 +4504,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 288
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4571,7 +4571,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 292
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4622,7 +4622,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 295
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4656,7 +4656,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 297
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4769,7 +4769,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 304
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4820,7 +4820,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 307
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4854,7 +4854,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 309
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4871,7 +4871,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 310
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4935,7 +4935,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 314
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4982,7 +4982,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 317
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5093,7 +5093,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 324
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5189,7 +5189,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 330
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5283,7 +5283,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 336
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5413,7 +5413,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 344
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5477,7 +5477,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 348
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5620,7 +5620,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 357
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5716,7 +5716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 363
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5810,7 +5810,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 369
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5939,7 +5939,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 377
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -5986,7 +5986,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 380
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -6037,7 +6037,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 383
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -6087,7 +6087,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 386
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -6105,7 +6105,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 387
       }],
     music: require('../../../../Sounds/Immortals/Ball.mp3'),
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -6167,7 +6167,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 391
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6216,7 +6216,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 394
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6282,7 +6282,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 398
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6313,7 +6313,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 400
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6330,7 +6330,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 401
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6364,7 +6364,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 403
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6414,7 +6414,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 406
       }],
     message: 'Ваши знания помогают Тесле избавиться от зависимости',
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     stats: [
@@ -6434,7 +6434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 407
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6451,7 +6451,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 408
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6483,7 +6483,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 410
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6517,7 +6517,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 412
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6608,7 +6608,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 418
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
@@ -6754,7 +6754,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 427
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6788,7 +6788,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 429
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -6968,7 +6968,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 440
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -7064,7 +7064,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 446
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
@@ -7160,7 +7160,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 452
       }],
-    imageFront: require('../../../../Images/Immortals/KATARINA_DRESSED'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')

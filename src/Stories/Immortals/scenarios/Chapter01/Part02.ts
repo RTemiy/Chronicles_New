@@ -7726,7 +7726,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       {
         text: '',
         func: () => {
-          saveEndProgress('Immortals', 'Глава 1', 'Часть 3', '0')
+          saveEndProgress('Immortals', 'Глава 1', 'Часть 3', '1')
         }
       }],
     achievement: { story: EStoriesEn.Immortals, name: 'Chapter01Part02Completed' },
