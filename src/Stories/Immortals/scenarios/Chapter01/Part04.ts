@@ -2,7 +2,7 @@ import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from 
 import { EStoriesEn } from '../../../../Utils/EStoriesNames';
 import { redFlash, whiteFlash } from '../../../../Components/Slide/Slide';
 
-scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Глава 1', partName: 'Часть 4', code: '0' }, [
+scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Глава 1', partName: 'Часть 4', code: '1' }, [
   {
     id: 0,
     text:
@@ -612,7 +612,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: ''
       }],
     beforeBegin: () => {
-      scenarioManager.copySceneButtons(24, 31)
+      scenarioManager.copySceneButtons(24, 36)
     },
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
@@ -692,7 +692,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: ''
       }],
     beforeBegin: () => {
-      scenarioManager.copySceneButtons(24, 31)
+      scenarioManager.copySceneButtons(24, 41)
     },
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),

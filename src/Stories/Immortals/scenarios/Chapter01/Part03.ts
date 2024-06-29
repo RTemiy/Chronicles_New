@@ -8285,7 +8285,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       {
         text: '',
         func: () => {
-          saveEndProgress('Immortals', 'Глава 1', 'Часть 4', '0')
+          saveEndProgress('Immortals', 'Глава 1', 'Часть 4', '1')
         }
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
