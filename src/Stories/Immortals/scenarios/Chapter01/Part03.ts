@@ -6417,6 +6417,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 429
       }],
+    stats: [{ story: EStoriesEn.Immortals, value: +1, category: 'Choice', id: 'TryToEscape' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 

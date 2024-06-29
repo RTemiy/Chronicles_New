@@ -144,7 +144,63 @@ statsManager.add({
 
 statsManager.add({
   category: 'Choice',
+  id: 'TryToEscape',
+  idDescription: 'Попытаться сбежать',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
   id: 'AttackMonster',
   idDescription: 'Атаковать Монстра',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'GoToTerrace',
+  idDescription: 'Пойти на террасу',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'WaitRobert',
+  idDescription: 'Дождаться Роберта',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'WalkGarden',
+  idDescription: 'Прогуляться по саду',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'DanceWithRobert',
+  idDescription: 'Приняла преложение',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'LeaveGarden',
+  idDescription: 'Покинуть сад',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'ResistAlexander',
+  idDescription: 'Противостоять',
+  story: EStoriesEn.Immortals
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'PushAlexander',
+  idDescription: 'Оттолкнуть',
   story: EStoriesEn.Immortals
 })
