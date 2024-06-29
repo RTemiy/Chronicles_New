@@ -1,6 +1,7 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { blackFlash } from '../../../../Components/Slide/Slide'
+import { previousSlideMessage } from '../../../../Utils/TextConsts';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -29,6 +30,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 2
       }],
+    message: previousSlideMessage,
     imageBack: require('../../../../Images/ISML/Backgrounds/Hero_Room.jpg')
   },
 

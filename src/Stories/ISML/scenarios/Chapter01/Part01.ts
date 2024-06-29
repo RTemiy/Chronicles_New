@@ -10,6 +10,7 @@ import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { musicPlayer } from '../../../../Functions/musicPlayer'
 import { loadData, saveData } from '../../../../Functions/localStorageManager'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
+import { firstChoiceMessage, inventoryMessage } from '../../../../Utils/TextConsts';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
@@ -384,7 +385,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 23
       }
     ],
-    message: 'Получен предмет: наушники',
+    message: inventoryMessage,
     parallax: 'left',
     ambient: require('../../../../Sounds/Common/Silence.mp3'),
     stats: [
@@ -495,7 +496,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: 'Я начала стучать по бедру в такт музыки',
         goTo: 34
       }],
-    message: 'Сейчас вы сделаете свой первый выбор. Некоторые из них меняют сюжет незначительно, другие же ведут к серьезным переменам. Но помните, только Вам решать, какой вы видите свою главную героиню',
+    message: firstChoiceMessage,
     parallax: 'left',
     imageBack: require('../../../../Images/ISML/Backgrounds/Street_Musicians.jpg')
   },
