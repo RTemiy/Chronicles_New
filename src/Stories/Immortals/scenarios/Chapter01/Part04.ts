@@ -1,6 +1,6 @@
-import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index';
-import { EStoriesEn } from '../../../../Utils/EStoriesNames';
-import { redFlash, whiteFlash } from '../../../../Components/Slide/Slide';
+import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
+import { EStoriesEn } from '../../../../Utils/EStoriesNames'
+import { redFlash, whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Глава 1', partName: 'Часть 4', code: '1' }, [
   {
@@ -1752,7 +1752,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         func: () => { timer.stop() }
       }],
     beforeBegin: () => {
-      timer.set(5, () => { scenarioManager.beginScene(108)})
+      timer.set(5, () => { scenarioManager.beginScene(108) })
     },
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
