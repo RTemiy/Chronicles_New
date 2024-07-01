@@ -1419,12 +1419,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 87,
     text:
       `
-        Роберт не удивился, напротив, он слегка улыбнулся, будто бы давно ожидая этого жеста.<p>  <p>Он положил руку мне на талию, не отвлекаясь от чтения утренней газеты. Его объятие было довольно сухим, тем не менее, рядом с ним я чувствовала себя спокойно.<p> <p>Я не испытывала иллюзий, ведь возникало ощущение, что все эти прикосновения он делал машинально, не вкладывая особый смысл.
+        Роберт не удивился, напротив, он слегка улыбнулся, будто бы давно ожидая этого жеста.
       `,
     buttons: [
       {
         text: '',
-        goTo: 88
+        goTo: 514
       }],
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
@@ -1725,27 +1725,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 107,
     text:
       `
-        — Но зачем…? — в голове будто бы сам собой пришел нужный ответ. <p>— Ты…
-      `,
+        — Но зачем…? — в голове будто бы сам собой пришел нужный ответ.
+     `,
     buttons: [
       {
-        text: 'Занимаешься опасным бизнесом',
-        goTo: 108,
-        func: () => { timer.stop() }
-      },
-      {
-        text: 'Выслеживаешь монстров',
-        goTo: 109,
-        func: () => { timer.stop() }
-      },
-      {
-        text: 'Работаешь в полиции',
-        goTo: 112,
-        func: () => { timer.stop() }
+        text: '',
+        goTo: 516
       }],
-    beforeBegin: () => {
-      timer.set(5, () => { scenarioManager.beginScene(108) })
-    },
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
@@ -4684,16 +4670,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 288,
     text:
       `
-        Я подошла к человеку, и каково было мое удивление, когда ко мне повернулся тот самый ублюдок, который похитил меня и издевался.<p> <p>На нем была та же маска, выражение лица довольное понурое. На секунду мне показалось, что я вижу слезу на его щеке.<p> <p>Мужчина резко открыл глаза, увидев меня он расплылся в хитрой улыбке. Я же принялась бежать, однако похититель был проворнее. 
+        Я подошла к человеку, и каково было мое удивление, когда ко мне повернулся тот самый ублюдок, который похитил меня и издевался.
       `,
     buttons: [
       {
         text: '',
-        goTo: 289
+        goTo: 512
       }],
     music: require('../../../../Sounds/Immortals/Antagonist.mp3'),
-    imageFront: require('../../../../Images/Immortals/Persons/Antagonist_Smoking.png'),
-    imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
   },
@@ -8231,5 +8215,91 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
+  },
+  {
+    id: 512,
+    text:
+      `
+        На нем была та же маска, выражение лица довольное понурое. На секунду мне показалось, что я вижу слезу на его щеке.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 513
+      }],
+    music: require('../../../../Sounds/Immortals/Antagonist.mp3'),
+    imageFront: require('../../../../Images/Immortals/Persons/Antagonist_Smoking.png'),
+    imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
+    parallax: 'left',
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
+  },
+  {
+    id: 513,
+    text:
+      `
+        Мужчина резко открыл глаза, увидев меня он расплылся в хитрой улыбке. Я же принялась бежать, однако похититель был проворнее. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 289
+      }],
+    music: require('../../../../Sounds/Immortals/Antagonist.mp3'),
+    parallax: 'left',
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
+  },
+  {
+    id: 514,
+    text:
+      `
+        Он положил руку мне на талию, не отвлекаясь от чтения утренней газеты. Его объятие было довольно сухим, тем не менее, рядом с ним я чувствовала себя спокойно.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 515
+      }],
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Carete.jpg')
+  }, {
+    id: 515,
+    text:
+      `
+        Я не испытывала иллюзий, ведь возникало ощущение, что все эти прикосновения он делал машинально, не вкладывая особый смысл.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 88
+      }],
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Carete.jpg')
+  }, {
+    id: 516,
+    text:
+      `
+       — Ты…
+      `,
+    buttons: [
+      {
+        text: 'Занимаешься опасным бизнесом',
+        goTo: 108,
+        func: () => { timer.stop() }
+      },
+      {
+        text: 'Выслеживаешь монстров',
+        goTo: 109,
+        func: () => { timer.stop() }
+      },
+      {
+        text: 'Работаешь в полиции',
+        goTo: 112,
+        func: () => { timer.stop() }
+      }],
+    beforeBegin: () => {
+      timer.set(5, () => { scenarioManager.beginScene(108) })
+    },
+    imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
+    imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
+    parallax: 'right',
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Robert_Katarina_Room.jpg')
   }
 ])
