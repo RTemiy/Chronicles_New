@@ -8272,6 +8272,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 547
       }],
+    stats: [{ story: EStoriesEn.Immortals, value: -1, category: 'Item', id: 'Knife' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
