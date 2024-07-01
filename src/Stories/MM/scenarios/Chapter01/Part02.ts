@@ -1665,7 +1665,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
       }],
     beforeBegin: whiteFlash,
     message: 'За десять часов до убийства Томаса Брауна',
-    music: require('../../../../Sounds/MM/Calm.mp3'),
+    music: require('../../../../Sounds/MM/Spring.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Morning_Park.jpg')
   },
 
@@ -2191,7 +2191,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 138
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/MM/Boss.mp3'),
+    music: require('../../../../Sounds/MM/Calm.mp3'),
     ambient: require('../../../../Sounds/MM/Clock_Ticking.mp3'),
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),

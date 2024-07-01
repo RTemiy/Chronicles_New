@@ -13,7 +13,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/MM/Boss.mp3'),
+    music: require('../../../../Sounds/MM/Calm.mp3'),
     speaker: 'Ведущая',
     imageFront: require('../../../../Images/MM/Objects/TV.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
