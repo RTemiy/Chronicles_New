@@ -8233,6 +8233,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
   },
+
+
   {
     id: 513,
     text:
@@ -8248,6 +8250,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
   },
+
   {
     id: 514,
     text:
@@ -8260,7 +8263,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         goTo: 515
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Carete.jpg')
-  }, {
+  },
+
+  {
     id: 515,
     text:
       `
@@ -8272,7 +8277,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         goTo: 88
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Carete.jpg')
-  }, {
+  },
+
+  {
     id: 516,
     text:
       `
