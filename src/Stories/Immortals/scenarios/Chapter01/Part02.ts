@@ -7161,6 +7161,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     message: 'Вы прилежная ученица',
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Effect', id: 'Study' }],
+    afterAll: () => {
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) > 4 && statsManager.change({ story: EStoriesEn.Immortals, value: -1, category: 'Effect', id: 'Study' })
+    },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
   },
 

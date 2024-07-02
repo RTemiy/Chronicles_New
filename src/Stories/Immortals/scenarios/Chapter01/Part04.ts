@@ -6463,7 +6463,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) === 5
+          return statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) >= 5
         },
         goTo: 399
       },
