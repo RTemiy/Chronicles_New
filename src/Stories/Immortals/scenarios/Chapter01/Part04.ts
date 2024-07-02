@@ -2952,7 +2952,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     buttons: [
       {
         text: '',
-        goTo: 181
+        goTo: 182
       }],
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Robert_Katarina_Room.jpg')
