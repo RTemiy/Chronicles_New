@@ -1144,6 +1144,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Effect', id: 'Study' },
       { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Nicola' }],
+    afterAll: () => {
+      statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) > 5 && statsManager.change({ story: EStoriesEn.Immortals, value: -1, category: 'Effect', id: 'Study' })
+    },
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
   },
 
