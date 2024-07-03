@@ -4164,10 +4164,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     buttons: [
       {
         text: '',
-        goTo: 257
+        goTo: 550
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
+  },
+
+  {
+    id: 550,
+    text:
+      '',
+    buttons: [
+      {
+        text: '',
+        goTo: 257
+      }],
+    cutScene: { video: require('../../../../Images/Immortals/CutScenes/Ball.mp4'), goTo: 257 },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -4286,10 +4299,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     buttons: [
       {
         text: '',
-        goTo: 265
+        goTo: 551
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
+    imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
+  },
+
+  {
+    id: 551,
+    text:
+      '',
+    buttons: [
+      {
+        text: '',
+        goTo: 265
+      }],
+    cutScene: { video: require('../../../../Images/Immortals/CutScenes/Ball.mp4'), goTo: 265 },
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
