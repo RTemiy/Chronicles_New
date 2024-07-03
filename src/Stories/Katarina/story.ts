@@ -15,7 +15,7 @@ storiesManager.add({
       image: require('../../Images/Katarina/Backgrounds/Theatre_Scene.jpg'),
       parts: [
         {
-          name: 'Часть 2',
+          name: 'Часть 1',
           code: '0',
           image: require('../../Images/Katarina/Backgrounds/NY.jpg'),
           loadingImage: require('../../Images/Katarina/Covers/Prologue_LS.png'),
