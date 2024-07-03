@@ -10,7 +10,7 @@ import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { musicPlayer } from '../../../../Functions/musicPlayer'
 import { loadData, saveData } from '../../../../Functions/localStorageManager'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
-import { firstChoiceMessage, inventoryMessage } from '../../../../Utils/TextConsts';
+import { firstChoiceMessage, inventoryMessage } from '../../../../Utils/TextConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
