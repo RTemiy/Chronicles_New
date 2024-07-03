@@ -15,7 +15,7 @@ storiesManager.add({
       image: require('../../Images/Katarina/Backgrounds/Theatre_Scene.jpg'),
       parts: [
         {
-          name: 'Пролог',
+          name: 'Часть 2',
           code: '0',
           image: require('../../Images/Katarina/Backgrounds/NY.jpg'),
           loadingImage: require('../../Images/Katarina/Covers/Prologue_LS.png'),
@@ -24,7 +24,7 @@ storiesManager.add({
           }
         },
         /*{
-          name: 'Часть 1',
+          name: 'Часть 2',
           code: '0',
           image: require('../../Images/Immortals/Backgrounds/Lection_Hall.jpg'),
           loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
