@@ -8109,7 +8109,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     buttons: [
       {
         text: '',
-        goTo: 233
+        goTo: 240
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Terrace.jpg')
   },
@@ -8224,7 +8224,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     id: 505,
     text:
       `
-        «А если ему нужна помощь? Я не могу его здесь просто бросить.»
+        «А если ему нужна помощь? Я не могу его здесь просто бросить».
       `,
     buttons: [
       {
