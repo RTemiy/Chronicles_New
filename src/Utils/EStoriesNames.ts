@@ -3,6 +3,7 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
+  Katarina = 'Katarina',
   Immortals = 'Immortals',
   FOF = 'FOF',
   MM = 'MM',
@@ -22,7 +23,8 @@ export enum EStoriesRu {
   Aurora = 'Аврора',
   UL = 'Непредсказуемая любовь',
   MM = 'Memento mori',
-  ISML = 'В поисках исчезнувшего света'
+  ISML = 'В поисках исчезнувшего света',
+  Katarina = 'Катарина'
 }
 
 export enum EStoriesAvailable {
@@ -34,5 +36,6 @@ export enum EStoriesAvailable {
   MM = 1,
   ISML = 1,
 
+  Katarina = 1,
   UL = 0,
 }
