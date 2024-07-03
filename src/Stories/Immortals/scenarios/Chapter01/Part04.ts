@@ -4091,6 +4091,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 252
       }],
+    music: require('../../../../Sounds/Immortals/Ball_Calm.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -4198,6 +4199,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 259
       }],
+    music: require('../../../../Sounds/Immortals/Ball_Fast.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -4386,6 +4388,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         goTo: 271
       }],
     parallax: 'left',
+    music: require('../../../../Sounds/Immortals/Ball.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
