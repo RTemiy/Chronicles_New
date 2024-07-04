@@ -36,6 +36,6 @@ export enum EStoriesAvailable {
   MM = 1,
   ISML = 1,
 
-  Katarina = 1,
+  Katarina = 0,
   UL = 0,
 }
