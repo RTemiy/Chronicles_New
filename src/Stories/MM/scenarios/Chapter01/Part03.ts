@@ -3242,7 +3242,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 203
       }],
     message: 'Полчаса спустя',
-    music: require('../../../../Sounds/MM/Sad_Stress.mp3'),
+    music: require('../../../../Sounds/MM/Mysterious.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Countryhouse.jpg')
   },
 

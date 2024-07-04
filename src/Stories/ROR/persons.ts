@@ -4,9 +4,9 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 statsManager.add({
   category: 'Person',
   id: 'Henrich',
-  name: 'Генрих Гарнер',
+  name: 'Генрих',
   image: require('../../Images/ROR/Persons/Henrich.png'),
-  title: 'Я объездил множество мест этой богом забытой страны. Казалось, повидал уже всё.',
+  title: 'Генрих Гарнер. Я объездил множество мест этой богом забытой страны. Казалось, повидал уже всё.',
   description: 'Надеюсь, что в новом приключении так оно и останется.',
   story: EStoriesEn.ROR
 })
@@ -14,9 +14,9 @@ statsManager.add({
 statsManager.add({
   category: 'Person',
   id: 'Mortimer',
-  name: 'Мортимер Дракен',
+  name: 'Мортимер',
   image: require('../../Images/ROR/Persons/Mortimer.png'),
-  title: 'Пожилой доктор, один из первых, кто нанял меня для поездки к восточным границам.',
+  title: 'Мортимер Дракен. Пожилой доктор, один из первых, кто нанял меня для поездки к восточным границам.',
   description: 'Спокойный и рассудительный, однако почему-то рядом с ним я ощущаю некую тревогу.',
   story: EStoriesEn.ROR
 })
@@ -24,9 +24,9 @@ statsManager.add({
 statsManager.add({
   category: 'Person',
   id: 'Martha',
-  name: 'Марта Тиссен',
+  name: 'Марта',
   image: require('../../Images/ROR/Persons/Martha.png'),
-  title: 'Монахиня из монастыря Святого Бернарда, что близ Гласвера. Воспитательница Вига и Джоанны.',
+  title: 'Марта Тиссен. Монахиня из монастыря Святого Бернарда, что близ Гласвера. Воспитательница Вига и Джоанны.',
   description: 'Типичная святоша, готовая упасть в обморок только от одного ругательства. Хотя бы платит исправно. Да и глазу есть за что зацепиться.',
   story: EStoriesEn.ROR
 })
@@ -34,9 +34,9 @@ statsManager.add({
 statsManager.add({
   category: 'Person',
   id: 'Ditrich',
-  name: 'Дитрих Гросс',
+  name: 'Дитрих',
   image: require('../../Images/ROR/Persons/Ditrich.png'),
-  title: 'Ассистент доктора Мортимера, пьяница и угрюмый тип.',
+  title: 'Дитрих Гросс. Ассистент доктора Мортимера, пьяница и угрюмый тип.',
   description: 'Лучше избегать с ним общения. Мало того, что от него несет перегаром, так он еще и постоянно хамит.',
   story: EStoriesEn.ROR
 })
@@ -64,9 +64,9 @@ statsManager.add({
 statsManager.add({
   category: 'Person',
   id: 'Jack',
-  name: 'Джек Рейнер',
+  name: 'Джек',
   image: require('../../Images/ROR/Persons/Jack.png'),
-  title: 'Молодой бард, скрывающийся от закона. Готов был отдать все деньги за возможность побыстрее уехать из Гласвера.',
+  title: 'Джек Рейнер. Молодой бард, скрывающийся от закона. Готов был отдать все деньги за возможность побыстрее уехать из Гласвера.',
   description: 'Ветреный и беспокойный юноша, как и все барды, явно не умеет держать язык за зубами, о чем потом жалеет.',
   story: EStoriesEn.ROR
 })

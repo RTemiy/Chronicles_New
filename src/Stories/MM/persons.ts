@@ -4,9 +4,9 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 statsManager.add({
   category: 'Person',
   id: 'Dylan',
-  name: 'Дилан Чейз',
+  name: 'Дилан',
   image: require('../../Images/MM/Persons/Dylan.png'),
-  title: 'Смышленый детектив.',
+  title: 'Дилан Чейз. Смышленый детектив.',
   description: 'Совместная работа сделала нас неплохими напарниками, готовыми помочь друг другу в трудные минуты.',
   story: EStoriesEn.MM
 })
@@ -14,9 +14,9 @@ statsManager.add({
 statsManager.add({
   category: 'Person',
   id: 'Arthur',
-  name: 'Артур Нильсен',
+  name: 'Артур',
   image: require('../../Images/MM/Persons/Arthur.png'),
-  title: 'Начальник детективного отдела Илинга.',
+  title: 'Артур Нильсен. Начальник детективного отдела Илинга.',
   description: 'Пример моего подражания. Прекрасный учитель и наставник. Получить от него похвалу то еще достижение.',
   story: EStoriesEn.MM
 })
