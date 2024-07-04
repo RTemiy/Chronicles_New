@@ -180,7 +180,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Chapter01Part04Completed',
-  image: require('../../Images/Immortals/Backgrounds/Chair_Room.jpg'),
+  image: require('../../Images/Immortals/Backgrounds/Ball_Hall.jpg'),
   title: 'Званый вечер',
   text: 'Пройти четвёртую часть',
   story: EStoriesEn.Immortals

@@ -86,7 +86,7 @@ statsManager.add({
   category: 'Person',
   id: 'Alexander',
   name: 'Александр',
-  image: require('../../Images/Immortals/Persons/Antagonist.png'),
+  image: require('../../Images/Immortals/Persons/Antagonist_Mask.png'),
   title: 'Странный мужчина, который одержим Катариной.',
   description: 'Я ничего о нем не знаю. Он определенно внушает страх, но я не могу избавиться от чувства заинтересованности. Мне хочется докопаться до его мотивов. Что я найду в общении с ним? Ответы или только боль?',
   story: EStoriesEn.Immortals
