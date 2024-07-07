@@ -8,7 +8,7 @@ import { route } from '../../Utils/TextConsts'
 import { MenuMessage, showMessage } from '../MenuMessage/MenuMessage'
 import { showAd } from '../../Functions/advertisement'
 import makeExplosion from '../../Functions/explosion'
-import downloadProgress from '../../Functions/downloadProgress';
+import downloadProgress from '../../Functions/downloadProgress'
 
 const Settings = new CContainer(
   'settings',
@@ -40,7 +40,7 @@ const Settings = new CContainer(
 		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Images/UI/icon_tg.png')}"></a>
 	</div>
 	<div class="settings__block">
-		<a id="req-01">Тинькофф</a>
+		<a id="req-01">Т-Банк</a>
 	</div>
 	<div class="settings__block">
 		<a id="req-02">Сбербанк</a>
