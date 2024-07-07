@@ -30,3 +30,26 @@ wardrobe.addPerson('Aurora_City', [{
   unlocked: () => { return loadData(['Promo', 'RepostVKCompetition']) === '1' }
 }
 ])
+
+wardrobe.addPerson('Aurora_Part04', [{
+  image: require('../../Images/Aurora/Persons/Aurora_Purple_Sweater.png'),
+  title: 'Простота',
+  description: 'Ты не хочешь думать над образом',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Aurora/Persons/Aurora_Dress.png'),
+  title: 'Строгость',
+  description: 'Тебе нравится легкость',
+  cost: 'medium',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Aurora/Persons/Aurora_Checkered.png'),
+  title: 'Милота',
+  description: 'Ты даришь этому миру яркость',
+  cost: 'long',
+  unlocked: () => { return true }
+}
+])

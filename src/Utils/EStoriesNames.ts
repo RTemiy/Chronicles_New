@@ -4,13 +4,14 @@
 
 export enum EStoriesEn {
   Katarina = 'Katarina',
+  Aurora = 'Aurora',
+  AEP = 'AEP',
+  ISML = 'ISML',
   Immortals = 'Immortals',
   FOF = 'FOF',
   MM = 'MM',
-  Aurora = 'Aurora',
   ROR = 'ROR',
-  AEP = 'AEP',
-  ISML = 'ISML',
+
   //
   UL = 'UL',
 }
@@ -36,6 +37,6 @@ export enum EStoriesAvailable {
   MM = 1,
   ISML = 1,
 
-  Katarina = 0,
+  Katarina = 1,
   UL = 0,
 }

@@ -1043,7 +1043,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 66
       }],
     message: 'Допросная комната',
-    music: require('../../../../Sounds/MM/Sad_Stress.mp3'),
+    music: require('../../../../Sounds/MM/Mysterious.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Interrogation_Room.jpg')
   },
 

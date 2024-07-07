@@ -88,3 +88,27 @@ achievementsManager.add({
   text: 'Завершите третью часть в мире сновидений',
   story: EStoriesEn.Aurora
 })
+
+achievementsManager.add({
+  name: 'WorkWorkWork',
+  image: require('../../Images/Aurora/Backgrounds/Bakery.jpg'),
+  title: 'Мир Труд Май',
+  text: 'Устройтесь на работу к Эцио',
+  story: EStoriesEn.Aurora
+})
+
+achievementsManager.add({
+  name: 'MyArthur',
+  image: require('../../Images/Aurora/Persons/Arthur.png'),
+  title: 'Мой Артур',
+  text: 'Получите от Артура неожиданное заявление',
+  story: EStoriesEn.Aurora
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part04Completed',
+  image: require('../../Images/Aurora/Backgrounds/Lighthouse.jpg'),
+  title: 'Папа',
+  text: 'Завершите четвертую часть печальными известиями',
+  story: EStoriesEn.Aurora
+})

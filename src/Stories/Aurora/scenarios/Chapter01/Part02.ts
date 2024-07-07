@@ -1814,7 +1814,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 113
       }],
-    music: require('../../../../Sounds/Aurora/Romantic.mp3'),
+    music: require('../../../../Sounds/Aurora/Romantic_Man.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Forest.jpg')
   },
 

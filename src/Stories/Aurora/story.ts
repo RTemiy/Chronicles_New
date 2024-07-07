@@ -7,6 +7,7 @@ storiesManager.add({
   description:
     'Когда-то вампиры считались мифом, однако нашей героине во время поисков своего брата, пришлось столкнуться с монстрами лицом к лицу. Теперь она невольно втянута в противостояние вампиров и людей, где ей предстоит распутать не один клубок тайн.',
   genre: 'Драма, Вампиры',
+  status: 'Новая часть',
   chapters: [
     {
       name: 'Глава 1',
@@ -46,6 +47,16 @@ storiesManager.add({
           code: '0',
           image: require('../../Images/Aurora/Backgrounds/Church.jpg'),
           loadingImage: require('../../Images/Aurora/Covers/Part03.png'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
+          name: 'Часть 4',
+          code: '0',
+          image: require('../../Images/Aurora/Backgrounds/Bakery.jpg'),
+          loadingImage: require('../../Images/Aurora/Covers/Part04.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)

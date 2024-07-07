@@ -60,3 +60,13 @@ statsManager.add({
   description: 'Его происхождение окутано тайной, что мне предстоит выяснить. Кем же он окажется по итогу: надежным соратником в моем путешествии или злейшим врагом?',
   story: EStoriesEn.Aurora
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Ezio',
+  name: 'Эцио',
+  image: require('../../Images/Aurora/Persons/Ezio.png'),
+  title: 'Милый итальянец, который владеет пекарней. ',
+  description: 'Мы стали общаться ближе, благодаря моему решению устроиться к нему на работу. У него золотые руки и доброе сердце.',
+  story: EStoriesEn.Aurora
+})
