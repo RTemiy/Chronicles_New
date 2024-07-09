@@ -13,6 +13,7 @@ export function showAd (type: ad, onAccepted: () => void): void {
   } else {
     let resCode = ''
     let platform = ''
+    !Ya.Context.AdvManager.getPlatform() && showMessage('По какой-то причине реклама отключена! Попробуйте отключить AdBlock', 'Принять')
     if (Ya.Context.AdvManager.getPlatform() === 'desktop') {
       platform = 'desktop'
       switch (type) {

@@ -25,12 +25,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 1,
     text:
       `
-        Веяло холодом, сыростью. Я словно находилась в бескрайнем море, чувствуя, как вода касается каждой частички моего тела.<p> <p>Это вполне могло быть правдой, ведь я видела перед собой маяк. Точнее его размытые очертания, которые проглядывались сквозь пелену. 
+        Веяло холодом, сыростью. Я словно находилась в бескрайнем море, чувствуя, как вода касается каждой частички моего тела.
       `,
     buttons: [
       {
         text: '',
-        goTo: 2
+        goTo: 397
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse_Night_Blur.jpg')
   },
@@ -53,7 +53,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 3,
     text:
       `
-        Но что я должна была вспомнить?<p> 
+        Но что я должна была вспомнить? 
       `,
     buttons: [
       {
@@ -277,12 +277,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 18,
     text:
       `
-        Я резко проснулась, когда первые лучи солнца лениво проглядывали сквозь шторы, проникая в мою комнату.<p> <p>Меня трясло. Тело охватывала неизвестная жажда, будто бы я сейчас могла залпом выпить несколько бутылок воды. 
+        Я резко проснулась, когда первые лучи солнца лениво проглядывали сквозь шторы, проникая в мою комнату.
       `,
     buttons: [
       {
         text: '',
-        goTo: 19
+        goTo: 398
       }],
     beforeBegin: whiteFlash,
     message: '<i> Вы вернулись в воспоминания ',
@@ -365,12 +365,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 24,
     text:
       `
-        Моя тревога усиливалась и перетекала в злость, которую я выплескивала, проклиная чертову связь.<p> <p>Чтобы хоть как-то сбросить напряжение, я решила принять горячую ванну в надежде, что процедура поможет прийти в себя.
+        Моя тревога усиливалась и перетекала в злость, которую я выплескивала, проклиная чертову связь.
       `,
     buttons: [
       {
         text: '',
-        goTo: 25
+        goTo: 399
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -522,7 +522,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 35,
     text:
       `
-        Спустившись на кухню, я села за стол и засмотрелась в окно, откуда открывался неплохой вид на парк
+        Спустившись на кухню, я села за стол и засмотрелась в окно, откуда открывался неплохой вид на парк.
       `,
     buttons: [
       {
@@ -566,12 +566,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 38,
     text:
       `
-        Есть или пить совершенно не хотелось. К тому же помимо странного сна, я вспоминала о вчерашнем довольно грубом поведении Артура.<p>  <p>Я понимала, что могут быть разные причины этого и более того, он никогда не давал повода сомневаться в себе и в своих чувствах. 
+        Есть или пить совершенно не хотелось. К тому же помимо странного сна, я вспоминала о вчерашнем довольно грубом поведении Артура.
       `,
     buttons: [
       {
         text: '',
-        goTo: 39
+        goTo: 400
       }],
     parallax: 'right',
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
@@ -956,15 +956,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 62,
     text:
       `
-        Перед выходом Артур остановился и произнес:<p> <p>— Аврора, я должен перед тобой извиниться за свое вчерашнее поведение. Я не знаю, что на меня нашло, но обещаю — такого больше не повторится.
+        Перед выходом Артур остановился и произнес:
       `,
     buttons: [
       {
         text: '',
-        goTo: 63
+        goTo: 401
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
   },
 
@@ -1086,15 +1084,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 70,
     text:
       `
-        С легким сердцем я выдохнула и на время отпустила ситуацию.<p> <p>— Спасибо, Артур, — улыбнулась я. — Это правда важно для меня. Уверена, от этого наши взаимоотношения станут только крепче. 
+        С легким сердцем я выдохнула и на время отпустила ситуацию.
       `,
     buttons: [
       {
         text: '',
-        goTo: 71
+        goTo: 402
       }],
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
   },
 
@@ -1286,12 +1282,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 83,
     text:
       `
-        — Выкупив библиотеку, он немедленно переделал ее под пекарню. Сначала продавал простой хлеб, затем расширился, вводя все больше позиций в меню.<p> <p>— Хм, — я начала анализировать историю. — Кажется, что в этом нет ничего супер-интересного. Беглец, который начал строить бизнес. 
+        — Выкупив библиотеку, он немедленно переделал ее под пекарню. Сначала продавал простой хлеб, затем расширился, вводя все больше позиций в меню.
       `,
     buttons: [
       {
         text: '',
-        goTo: 84
+        goTo: 403
       }],
     imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
@@ -1701,12 +1697,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 108,
     text:
       `
-        — Рад, что ты оценила.<p> <p>За увлекательной беседой мы незаметно подошли к той самой пекарне.
+        — Рад, что ты оценила.
       `,
     buttons: [
       {
         text: '',
-        goTo: 109
+        goTo: 404
       }],
     imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
@@ -2117,15 +2113,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 133,
     text:
       `
-        Так и не решив, чем мне хочется позавтракать, я робко подошла к Артуру и дернула его за рукав.<p> <p>— Не могу определиться, — пробурчала я, надеясь, что парень сможет мне помочь. 
+        Так и не решив, чем мне хочется позавтракать, я робко подошла к Артуру и дернула его за рукав.
       `,
     buttons: [
       {
         text: '',
-        goTo: 134
+        goTo: 405
       }],
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bakery.jpg')
   },
 
@@ -2167,12 +2161,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 136,
     text:
       `
-        После того, как сложнейший выбор был сделан, я и Артур подошли к Эцио, чтобы оплатить заказ.<p> <p>Рассматривая внутреннее убранство помещения, я обратила внимание на стену и висевший на ней плакат о том, что в пекарню требуется сотрудник. 
+        После того, как сложнейший выбор был сделан, я и Артур подошли к Эцио, чтобы оплатить заказ.
       `,
     buttons: [
       {
         text: '',
-        goTo: 137
+        goTo: 406
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bakery.jpg')
   },
@@ -2279,15 +2273,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 143,
     text:
       `
-        Парни с удивлением посмотрели на меня.<p> <p>— Аврора, — сказал Артур. — Я уже говорил, что тебе не обязательно работать… 
+        Парни с удивлением посмотрели на меня.
       `,
     buttons: [
       {
         text: '',
-        goTo: 144
+        goTo: 407
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bakery.jpg')
   },
 
@@ -2551,16 +2543,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 160,
     text:
       `
-        Я аккуратно вложила свою руку в его крепкую ладонь.<p> <p>— Куда мы пойдём? — улыбка не спадала с моего лица. 
+        Я аккуратно вложила свою руку в его крепкую ладонь.
       `,
     buttons: [
       {
         text: '',
-        goTo: 161
+        goTo: 408
       }],
     music: require('../../../../Sounds/Aurora/Romantic_Man.mp3'),
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
   },
 
@@ -2670,12 +2660,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 168,
     text:
       `
-        Сердце забилось быстрее, ладони потели, а сказанные слова приобретали какой-то особенный смысл в моем сознании.<p> <p>Что это за чувство? Почему Артур кажется мне каким-то другим сегодня? 
+        Сердце забилось быстрее, ладони потели, а сказанные слова приобретали какой-то особенный смысл в моем сознании.
       `,
     buttons: [
       {
         text: '',
-        goTo: 169
+        goTo: 409
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Alley.jpg')
   },
@@ -2684,7 +2674,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 169,
     text:
       `
-        Он начал приближаться ко мне, все больше сокращая дистанцию. Но я не отступила. Не испугалась. Ведь это все тот же Артур. MyArthur. 
+        Он начал приближаться ко мне, все больше сокращая дистанцию. Но я не отступила. Не испугалась. Ведь это все тот же Артур. Мой Артур. 
       `,
     buttons: [
       {
@@ -2698,12 +2688,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 170,
     text:
       `
-        Его рука потянулась к моей щеке, он нежно коснулся её, а затем заключил меня в крепкие объятия.<p> <p>Я растворилась в этом закономерном ощущении близости, уткнувшись носом в его плечо. Мы простояли так несколько минут, безмолвно слушая завывания ветра и совершенно игнорируя шум проходящих мимо людей. 
+        Его рука потянулась к моей щеке, он нежно коснулся её, а затем заключил меня в крепкие объятия.
       `,
     buttons: [
       {
         text: '',
-        goTo: 171
+        goTo: 410
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Alley.jpg')
   },
@@ -3090,7 +3080,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 196,
     text:
       `
-        Далее <p>Когда мы вернулись домой, то принялись разбирать вкусности, купленные в пекарне Эцио. 
+        Когда мы вернулись домой, то принялись разбирать вкусности, купленные в пекарне Эцио. 
       `,
     buttons: [
       {
@@ -3224,12 +3214,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 204,
     text:
       `
-        Вернувшись в комнату с легким сердцем, я начала усиленно заниматься подготовкой к предстоящему экзамену.<p> <p>День прошел быстро и без каких-либо происшествий. Отдыхая в кровати, я размышляла о том, как же счастлива и какие прекрасные люди меня окружают. 
+        Вернувшись в комнату с легким сердцем, я начала усиленно заниматься подготовкой к предстоящему экзамену.
       `,
     buttons: [
       {
         text: '',
-        goTo: 205
+        goTo: 411
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3963,12 +3953,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 250,
     text:
       `
-        Ночь прошла для меня в кошмарах, которые оборачивались в сильные душевные муки.<p> <p>На следующее утро я проснулась полностью разбитая, но с четким осознанием того, что я должна сразу пойти к почтовому ящику и там непременно будет весточка от папы. 
+        Ночь прошла для меня в кошмарах, которые оборачивались в сильные душевные муки.
       `,
     buttons: [
       {
         text: '',
-        goTo: 251
+        goTo: 412
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -4179,16 +4169,15 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 263,
     text:
       `
-        — Дома.<p> <p>— Я немедленно выезжаю, пожалуйста, дождись меня и главное никуда не уходи.  
+        — Дома.
       `,
     buttons: [
       {
         text: '',
-        goTo: 264
+        goTo: 413
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    darkSilhouette: true,
     imageBack: require('../../../../Images/Aurora/Backgrounds/Flat_Post.jpg')
   },
 
@@ -4908,12 +4897,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 309,
     text:
       `
-        Только выйдя из машины, я рванула в сторону дома и тут же обнаружила, что дверь заперта.<p> <p>Лишь только шум волн избавлял от гнетущей тишины, которая нависла надо мной. 
+        Только выйдя из машины, я рванула в сторону дома и тут же обнаружила, что дверь заперта.
       `,
     buttons: [
       {
         text: '',
-        goTo: 310
+        goTo: 414
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
@@ -4952,12 +4941,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 312,
     text:
       `
-        — Где он еще может быть? На самом маяке?<p> <p>Я тут же последовала его рекомендациям и, подбежав к башне, начала отчаянно стучать по металлической двери. И вдруг услышала мужской голос: 
+        — Где он еще может быть? На самом маяке?
       `,
     buttons: [
       {
         text: '',
-        goTo: 313
+        goTo: 415
       }],
     imageFront: require('../../../../Images/Aurora/Persons/Kaleb.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
@@ -5172,12 +5161,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 326,
     text:
       `
-        — Еду.<p> <p>Он оборвал звонок, оставив меня наедине с открытым пустым ящиком, который так сильно бросался в глаза. 
+        — Еду.
       `,
     buttons: [
       {
         text: '',
-        goTo: 327
+        goTo: 416
       }],
     imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
@@ -5404,12 +5393,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 340,
     text:
       `
-        Через несколько часов езды мы приехали на место. На маяк. У меня не было времени даже поностальгировать о месте, в котором я провела столько времени. <p> <p>Выйдя из машины, я не раздумывая рванула в сторону дома и тут же обнаружила, что дверь заперта. 
+        Через несколько часов езды мы приехали на место. На маяк. У меня не было времени даже поностальгировать о месте, в котором я провела столько времени.
       `,
     buttons: [
       {
         text: '',
-        goTo: 341
+        goTo: 417
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
@@ -5645,17 +5634,15 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 356,
     text:
       `
-        В ответ я услышала добродушный голос итальянца, который сразу же спросил, как прошел мой экзамен и все ли со мной хорошо.<p> <p>— Эцио, ты можешь приехать? — спросила я холодным тоном. 
+        В ответ я услышала добродушный голос итальянца, который сразу же спросил, как прошел мой экзамен и все ли со мной хорошо.
       `,
     buttons: [
       {
         text: '',
-        goTo: 357
+        goTo: 418
       }],
     stats: [
       { story: EStoriesEn.Aurora, value: +1, category: 'Choice', id: 'CallEzio' }],
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Flat_Post.jpg')
   },
 
@@ -6053,12 +6040,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 381,
     text:
       `
-        Через несколько часов езды мы приехали на место. На маяк. У меня не было времени даже поностальгировать о месте, в котором я провела столько времени. <p> <p>Выйдя из машины, я не раздумывая рванула в сторону дома и тут же обнаружила, что дверь заперта. 
+        Через несколько часов езды мы приехали на место. На маяк. У меня не было времени даже поностальгировать о месте, в котором я провела столько времени.
       `,
     buttons: [
       {
         text: '',
-        goTo: 382
+        goTo: 419
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
@@ -6287,6 +6274,349 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         }
       }],
     achievement: { story: EStoriesEn.Aurora, name: 'Chapter01Part04Completed' },
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+  },
+  {
+    id: 397,
+    text:
+      `
+        Это вполне могло быть правдой, ведь я видела перед собой маяк. Точнее его размытые очертания, которые проглядывались сквозь пелену. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 2
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse_Night_Blur.jpg')
+  },
+
+  {
+    id: 398,
+    text:
+      `
+        Меня трясло. Тело охватывала неизвестная жажда, будто бы я сейчас могла залпом выпить несколько бутылок воды. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 19
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
+  },
+
+  {
+    id: 399,
+    text:
+      `
+        Чтобы хоть как-то сбросить напряжение, я решила принять горячую ванну в надежде, что процедура поможет прийти в себя.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 25
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
+  },
+
+  {
+    id: 400,
+    text:
+      `
+        Я понимала, что могут быть разные причины этого и более того, он никогда не давал повода сомневаться в себе и в своих чувствах. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 39
+      }],
+    parallax: 'right',
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
+  },
+
+  {
+    id: 401,
+    text:
+      `
+        — Аврора, я должен перед тобой извиниться за свое вчерашнее поведение. Я не знаю, что на меня нашло, но обещаю — такого больше не повторится.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 63
+      }],
+    imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
+  },
+
+  {
+    id: 402,
+    text:
+      `
+        — Спасибо, Артур, — улыбнулась я. — Это правда важно для меня. Уверена, от этого наши взаимоотношения станут только крепче. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 71
+      }],
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
+  },
+
+  {
+    id: 403,
+    text:
+      `
+       — Хм, — я начала анализировать историю. — Кажется, что в этом нет ничего супер-интересного. Беглец, который начал строить бизнес. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 84
+      }],
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
+  },
+
+  {
+    id: 404,
+    text:
+      `
+        За увлекательной беседой мы незаметно подошли к той самой пекарне.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 109
+      }],
+    parallax: 'right',
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
+  },
+
+  {
+    id: 405,
+    text:
+      `
+        — Не могу определиться, — пробурчала я, надеясь, что парень сможет мне помочь. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 134
+      }],
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Bakery.jpg')
+  },
+
+  {
+    id: 406,
+    text:
+      `
+        Рассматривая внутреннее убранство помещения, я обратила внимание на стену и висевший на ней плакат о том, что в пекарню требуется сотрудник. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 137
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Bakery.jpg')
+  },
+
+  {
+    id: 407,
+    text:
+      `
+        — Аврора, — сказал Артур. — Я уже говорил, что тебе не обязательно работать… 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 144
+      }],
+    imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Bakery.jpg')
+  },
+
+  {
+    id: 408,
+    text:
+      `
+        — Куда мы пойдём? — улыбка не спадала с моего лица. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 161
+      }],
+    music: require('../../../../Sounds/Aurora/Romantic_Man.mp3'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
+  },
+
+  {
+    id: 409,
+    text:
+      `
+        Что это за чувство? Почему Артур кажется мне каким-то другим сегодня? 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 169
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Alley.jpg')
+  },
+
+  {
+    id: 410,
+    text:
+      `
+        Я растворилась в этом закономерном ощущении близости, уткнувшись носом в его плечо. Мы простояли так несколько минут, безмолвно слушая завывания ветра и совершенно игнорируя шум проходящих мимо людей. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 171
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Alley.jpg')
+  },
+
+  {
+    id: 411,
+    text:
+      `
+        День прошел быстро и без каких-либо происшествий. Отдыхая в кровати, я размышляла о том, как же счастлива и какие прекрасные люди меня окружают. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 205
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
+  },
+
+  {
+    id: 412,
+    text:
+      `
+        На следующее утро я проснулась полностью разбитая, но с четким осознанием того, что я должна сразу пойти к почтовому ящику и там непременно будет весточка от папы. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 251
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
+  },
+
+  {
+    id: 413,
+    text:
+      `
+        — Я немедленно выезжаю, пожалуйста, дождись меня и главное никуда не уходи.  
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 264
+      }],
+    imageFront: require('../../../../Images/Aurora/Persons/Dalia.png'),
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    darkSilhouette: true,
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Flat_Post.jpg')
+  },
+
+  {
+    id: 414,
+    text:
+      `
+        Лишь только шум волн избавлял от гнетущей тишины, которая нависла надо мной. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 310
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+  },
+
+  {
+    id: 415,
+    text:
+      `
+        Я тут же последовала его рекомендациям и, подбежав к башне, начала отчаянно стучать по металлической двери. И вдруг услышала мужской голос: 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 313
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+  },
+
+  {
+    id: 416,
+    text:
+      `
+       Он оборвал звонок, оставив меня наедине с открытым пустым ящиком, который так сильно бросался в глаза. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 327
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Flat_Post.jpg')
+  },
+
+  {
+    id: 417,
+    text:
+      `
+        Выйдя из машины, я не раздумывая рванула в сторону дома и тут же обнаружила, что дверь заперта. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 341
+      }],
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+  },
+
+  {
+    id: 418,
+    text:
+      `
+        — Эцио, ты можешь приехать? — спросила я холодным тоном. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 357
+      }],
+    stats: [
+      { story: EStoriesEn.Aurora, value: +1, category: 'Choice', id: 'CallEzio' }],
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
+    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Flat_Post.jpg')
+  },
+
+  {
+    id: 419,
+    text:
+      `
+        Выйдя из машины, я не раздумывая рванула в сторону дома и тут же обнаружила, что дверь заперта. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 382
+      }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
   }
 ])

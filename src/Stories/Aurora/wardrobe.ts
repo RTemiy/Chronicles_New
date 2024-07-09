@@ -39,7 +39,7 @@ wardrobe.addPerson('Aurora_Part04', [{
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Aurora/Persons/Aurora_Dress.png'),
+  image: require('../../Images/Aurora/Persons/Aurora_Suit.png'),
   title: 'Строгость',
   description: 'Тебе нравится легкость',
   cost: 'medium',
