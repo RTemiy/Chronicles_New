@@ -70,3 +70,13 @@ statsManager.add({
   description: 'Наивная хулиганка, думающая, что все будет по ее правилам. Мы еще посмотрим, к чему приведет эта борьба.',
   story: EStoriesEn.AEP
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Leonardo',
+  name: 'Леонардо',
+  image: require('../../Images/AEP/Persons/Leonardo.png'),
+  title: '',
+  description: '',
+  story: EStoriesEn.AEP
+})

@@ -58,6 +58,12 @@ statsManager.add({
 
 statsManager.add({
   category: 'Choice',
+  id: 'DrinkAtParty',
+  story: EStoriesEn.AEP
+})
+
+statsManager.add({
+  category: 'Choice',
   id: 'CallMiguel',
   story: EStoriesEn.AEP
 })
@@ -65,5 +71,13 @@ statsManager.add({
 statsManager.add({
   category: 'Choice',
   id: 'LoveViktor',
+  idDescription: 'Рассматривать Маттео как любовный интерес (я хз почему назвал изначально так этот стат)',
+  story: EStoriesEn.AEP
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'MatteoIsSexy',
+  idDescription: 'Маттео казался сексуальным',
   story: EStoriesEn.AEP
 })

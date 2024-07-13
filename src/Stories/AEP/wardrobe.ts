@@ -23,3 +23,27 @@ wardrobe.addPerson('AEP_Hero', [
     unlocked: () => { return true }
   }
 ])
+
+wardrobe.addPerson('AEP_Hero_Part_2', [
+  {
+    image: require('../../Images/AEP/Persons/Hero_Low_P2.png'),
+    title: 'Бабушкин кошмар',
+    description: 'Серость и обыкновенность. Она это ненавидит.',
+    cost: 'short',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/AEP/Persons/Hero_Medium_P2.png'),
+    title: 'Бабушкино равнодушие',
+    description: 'Джинса ей не нравится. Но она признает, что мне идет.',
+    cost: 'medium',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/AEP/Persons/Hero_High_P2.png'),
+    title: 'Бабушкина гордость',
+    description: 'Она подарила мне на день рождения. Выглядит очень даже.',
+    cost: 'long',
+    unlocked: () => { return true }
+  }
+])

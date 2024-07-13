@@ -102,12 +102,12 @@ export default class CScenarioManager {
     let res = false
     if (condition !== undefined) {
       condition.forEach(condition => {
-        setTimeout(() => {
+        /*!res &&*/ (setTimeout(() => {
           if (condition.condition()) {
             this.beginScene(condition.goTo)
             res = true
           }
-        }, 0)
+        }, 0))
       })
       return res
     } else {

@@ -1,5 +1,6 @@
 import CContainer from '../../Classes/CContainer'
 import './Disclaimer.scss'
+import { devMode } from '../../Utils/technicalConsts'
 
 const Disclaimer = new CContainer('disclaimer',
 	`
@@ -9,6 +10,7 @@ const Disclaimer = new CContainer('disclaimer',
 	`)
 
 export default function hideDisclaimer (): void {
+  devMode && (Disclaimer.self.style.display = 'none')
   setTimeout(() => {
     Disclaimer.self.classList.add('disclaimer_hide')
   }, 5000)

@@ -45,6 +45,30 @@ achievementsManager.add({
   name: 'Chapter01Part01Completed',
   image: require('../../Images/AEP/Backgrounds/Cafe_Evening.jpg'),
   title: 'Только начало',
-  text: 'Проживите сумасшедший день ',
+  text: 'Проживите сумасшедший день',
+  story: EStoriesEn.AEP
+})
+
+achievementsManager.add({
+  name: 'CrimeAndPunishment',
+  image: require('../../Images/AEP/Backgrounds/Cafe_Evening.jpg'),
+  title: 'Наказание и смирение',
+  text: 'Удовлетворите профессора во время наказания',
+  story: EStoriesEn.AEP
+})
+
+achievementsManager.add({
+  name: 'Blackmail',
+  image: require('../../Images/AEP/Backgrounds/Cafe_Evening.jpg'),
+  title: 'Шантаж',
+  text: 'Узнайте грязные тайны университета',
+  story: EStoriesEn.AEP
+})
+
+achievementsManager.add({
+  name: 'Chapter02Part01Completed',
+  image: require('../../Images/AEP/Backgrounds/Cafe_Evening.jpg'),
+  title: 'Тебя же это не касается?',
+  text: 'Поддайтесь желаниям и сделайте Мэтта счастливее',
   story: EStoriesEn.AEP
 })
