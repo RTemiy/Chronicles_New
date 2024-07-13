@@ -622,7 +622,8 @@ onStart()
     addSlideButton.onclick = () => {
       const newSlide = document.createElement('textarea')
 			newSlide.value =
-				`  {
+				`
+				  {
     [Идентификатор]: НОМЕР_СЛАЙДА,
     [Текст]:
       \`
@@ -635,7 +636,7 @@ onStart()
       }],
     [Фон]: файл('../../../../Images/КОД_ИСТОРИИ/Backgrounds/НАЗВАНИЕ.jpg')
   }
-])`
+`
 			newSlide.classList.add('slide')
       slidesField.appendChild(newSlide)
       newSlide.style.height = '5px'
