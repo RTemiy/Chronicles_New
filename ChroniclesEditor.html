@@ -822,6 +822,7 @@ onStart()
       '$PARALLAXR$' +
       '$CUTSCENE$' +
       '$DARKS$' +
+      '$CUTSCENE$' +
       '$GHOSTS$' +
       '\n    stats: [$STAT$$ITEM$$PERSON$],' +
       '\n    achievement: $ACHIEVEMENT$' +
@@ -852,7 +853,7 @@ onStart()
           // Заменяем картинку пустой строкой
           scenes[name][x][y] = scenes[name][x][y].replace(/! Фон:* /, '');
           // Добавляем название картинки в сэт
-          allPictures.add(scenes[name][x][y]);
+          allPictures.add(scenes[name][x][y].trim().toUpperCase());
           // Вырезаем и кешируем значение картинки
           picture = scenes[name][x].splice(y,1);
           // Обязательно откатываем шаг назад т.к. ВЫРЕЗАЛИ элемент массива
@@ -860,7 +861,7 @@ onStart()
         } else if (/! Объект:* /.test(scenes[name][x][y])) {
           scenes[name][x][y] = scenes[name][x][y].replace(/! Объект:* /, '');
           // Добавляем название картинки в сэт
-          allPictures.add(scenes[name][x][y]);
+          allPictures.add(scenes[name][x][y].trim().toUpperCase());
           // Заменяем ключевое слово на значение
           value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../../Images/$NAME$/UI/Border.png\'),`);
           y-=1;
@@ -877,7 +878,7 @@ onStart()
         } else if (/! Кат-Сцена:* /.test(scenes[name][x][y])) {
           scenes[name][x][y] = scenes[name][x][y].replace(/! Кат-Сцена:* /, '');
           // Заменяем ключевое слово на значение
-          value = value.replaceAll('$CUTSCENE$',`\n    cutScene: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
+          value = value.replaceAll('$CUTSCENE$',`\n    cutScene: {video: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-.mp4') goTo: $INDEXPLUS$,}`);
           y-=1;
         } else if (/! Достижение:* /.test(scenes[name][x][y])) {
           scenes[name][x][y] = scenes[name][x][y].replace(/! Достижение:* /, '');
