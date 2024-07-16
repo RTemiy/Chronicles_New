@@ -1,6 +1,6 @@
-import { EStoriesEn } from '../../../../Utils/EStoriesNames';
-import { scenarioManager, statsManager, wardrobe } from '../../../../index';
-import { whiteFlash } from '../../../../Components/Slide/Slide';
+import { EStoriesEn } from '../../../../Utils/EStoriesNames'
+import { scenarioManager, statsManager, wardrobe } from '../../../../index'
+import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глава 1', partName: 'Часть 2', code: '0' }, [
   {
@@ -416,7 +416,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         },
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'UniArchitecture' }) === 0
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'UniArchitecture' }) === 1
           },
           goTo: 70
         }
@@ -1652,7 +1652,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         },
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'UniArchitecture' }) === 0
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'UniArchitecture' }) === 1
           },
           goTo: 187
         }
@@ -2164,7 +2164,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 235
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
@@ -2234,7 +2234,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 133,
     text:
       `
-        Здесь было слишком тихо: я слышала, как ручка преподавателя двигалась по бумаге. От этого мне стало не по себе. Бесшумно сев, я ожидала указаний
+        Здесь было слишком тихо: я слышала, как ручка преподавателя двигалась по бумаге. От этого мне стало не по себе. Бесшумно сев, я ожидала указаний.
       `,
     buttons: [
       {
@@ -4508,7 +4508,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 272,
     text:
       `
-        Закончив выполнять задание, я положила листок на стол и покинула аудиторию. Впереди оставалось не так много свободного времени, и я размышляла, чем же можно заняться
+        Закончив выполнять задание, я положила листок на стол и покинула аудиторию. Впереди оставалось не так много свободного времени, и я размышляла, чем же можно заняться.
       `,
     buttons: [
       {

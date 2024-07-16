@@ -6207,7 +6207,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 410
       }
     ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Matt_Room.jpg')
+    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
