@@ -2413,7 +2413,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     music: require('../../../../Sounds/AEP/Ero.mp3'),
     speaker: '$Имя Игрока$',
     stats: [
-      { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'MatteoIsSexy' }],
+      { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'MatteoIsSexy' },
+      { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'SexCounter' }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
@@ -4623,18 +4624,32 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
   {
     id: 279,
     text:
-      `
-        ! Начало условия: “Сексуальным” (у нас идут в параллель условия, то есть игрок может отсосать Маттео, но при этом в первой части пойти / не пойти на вечеринку. 
-        Предлагаю, чтобы первым условием проверялось наличие этого выбора. Если у игрока есть выбор, то соответствующая сцена, которая по окончанию приводит к общему итогу всего шантажа: Мэтт прижал меня к колонне и приблизился к губам. Я ощущала его свежее дыхание, руку, что скользила по шее.<p>Если данного условия нет, то проверяется наличие ! Начало условия: “Согласиться пойти на вечеринку” / “Отказаться пойти на вечеринку”) Если это нереализуемо, то придется отказаться от этой ветки шантажа. Или у вас есть другие идеи, как это построить?<p>— Думал, ты прилежная ученица, но такое…
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 280
+        text: ''
       }],
-    speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    condition:
+      [
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'MatteoIsSexy' }) === 1
+          },
+          goTo: 286
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'GoToParty' }) === 1
+          },
+          goTo: 287
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'GoToParty' }) === 0
+          },
+          goTo: 303
+        }
+      ],
     parallax: 'right',
     imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
@@ -4732,7 +4747,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 286
+        goTo: 307
       }],
     speaker: 'Мэтт',
     imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
@@ -4745,13 +4760,17 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 286,
     text:
       `
-        Далее<p>! Начало условия: “Согласиться пойти на вечеринку” / “Отказаться пойти на вечеринку”
+        — Думал, ты прилежная ученица, но такое…
       `,
     buttons: [
       {
         text: '',
-        goTo: 287
+        goTo: 280
       }],
+    speaker: 'Мэтт',
+    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    parallax: 'right',
     imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
@@ -4759,7 +4778,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 287,
     text:
       `
-        ! Условие: “Согласиться пойти на вечеринку”<p>— Думаешь, я не знаю, как ты любишь отрываться?
+        — Думаешь, я не знаю, как ты любишь отрываться?
       `,
     buttons: [
       {
@@ -4794,14 +4813,32 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
   {
     id: 289,
     text:
-      `
-        ! Начало условия: “Выпить много” / “Выпить мало” или “Не пить”
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 290
+        text: ''
       }],
+    condition:
+      [
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'DrinkAtParty' }) === 2
+          },
+          goTo: 290
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'DrinkAtParty' }) === 1
+          },
+          goTo: 299
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'DrinkAtParty' }) === 0
+          },
+          goTo: 303
+        }
+      ],
     imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
@@ -4809,7 +4846,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 290,
     text:
       `
-        ! Условие: “Выпить много”<p>— Как ты прыгаешь в постель к первому встречному.
+        — Как ты прыгаешь в постель к первому встречному.
       `,
     buttons: [
       {
@@ -4943,7 +4980,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 299
+        goTo: 307
       }],
     speaker: 'Мэтт',
     imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
@@ -4956,7 +4993,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 299,
     text:
       `
-        ! Условие: “Выпить мало” или “Не пить”<p>— Такие, как ты, строят из себя невинных, а на деле не пренебрегают веществами.
+        — Такие, как ты, строят из себя невинных, а на деле не пренебрегают веществами.
       `,
     buttons: [
       {
@@ -5015,7 +5052,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 303
+        goTo: 307
       }],
     speaker: 'Мэтт',
     imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
@@ -5028,7 +5065,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 303,
     text:
       `
-        Далее<p>! Условие: “Отказаться пойти на вечеринку”<p>— Такие как ты, строят из себя невинных, а на деле не пренебрегают веществами.
+        — Такие как ты, строят из себя невинных, а на деле не пренебрегают веществами.
       `,
     buttons: [
       {
@@ -5100,7 +5137,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 307,
     text:
       `
-        Далее<p>Мэтт прижал меня к колонне и приблизился к губам. Я ощущала его свежее дыхание, руку, что скользила по шее.
+        Мэтт прижал меня к колонне и приблизился к губам. Я ощущала его свежее дыхание, руку, что скользила по шее.
       `,
     buttons: [
       {
@@ -5250,12 +5287,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 316,
     text:
       `
-        ! Начало выбора: Подчиниться / Сопротивляться (запомнить выбор)<p>«Что же мне делать?»
+        «Что же мне делать?»
       `,
     buttons: [
       {
-        text: '',
+        text: 'Подчиниться',
         goTo: 317
+      },
+      {
+        text: 'Сопротивляться',
+        goTo: 361
       }],
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
@@ -5268,7 +5309,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 317,
     text:
       `
-        ! Выбор: Подчиниться<p>Я испугалась, не могла, не хотела. Тело не слушалось.
+        Я испугалась, не могла, не хотела. Тело не слушалось.
       `,
     buttons: [
       {
@@ -5422,12 +5463,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 327,
     text:
       `
-        ! Начало выбора: Нравилось / Было омерзительно (запомнить выбор)<p>Я поймала себя на мысли, что мне это…
+        Я поймала себя на мысли, что мне это…
       `,
     buttons: [
       {
-        text: '',
+        text: 'Нравилось',
         goTo: 328
+      },
+      {
+        text: 'Было омерзительно',
+        goTo: 352
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
   },
@@ -5436,13 +5481,15 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 328,
     text:
       `
-        ! Выбор: Нравилось<p>Безумие овладевало разумом.
+        Безумие овладевало разумом.
       `,
     buttons: [
       {
         text: '',
         goTo: 329
       }],
+    stats: [
+      { story: EStoriesEn.AEP, value: 1, category: 'Choice', id: 'LikeMadMatt' }],
     music: require('../../../../Sounds/AEP/Ero.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
   },
@@ -5799,7 +5846,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 352
+        goTo: 372
       }],
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
@@ -5812,7 +5859,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 352,
     text:
       `
-        ! Выбор: Было омерзительно<p>Страшно, невыносимо холодно. 
+        Страшно, невыносимо холодно. 
       `,
     buttons: [
       {
@@ -5945,7 +5992,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 361
+        goTo: 372
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
   },
@@ -5954,7 +6001,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 361,
     text:
       `
-        Далее<p>! Выбор: Сопротивляться<p>— Я никуда с тобой не пойду! 
+        — Я никуда с тобой не пойду! 
       `,
     buttons: [
       {
@@ -6137,7 +6184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 372,
     text:
       `
-        Далее<p>Новый день казался безумнее предыдущего. 
+        Новый день казался безумнее предыдущего. 
       `,
     buttons: [
       {
@@ -6369,12 +6416,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 386,
     text:
       `
-        ! Начало выбора: Вполне / Никогда не приму действительность<p>«Только вот устраивает ли меня такое положение?»
+        «Только вот устраивает ли меня такое положение?»
       `,
     buttons: [
       {
-        text: '',
+        text: 'Вполне',
         goTo: 387
+      },
+      {
+        text: 'Никогда не приму действительность',
+        goTo: 389
       }],
     speaker: '$Имя Игрока$',
     imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
@@ -6386,7 +6437,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 387,
     text:
       `
-        ! Выбор: Вполне<p>«Университет должен был стать началом новой жизни».
+        «Университет должен был стать началом новой жизни».
       `,
     buttons: [
       {
@@ -6408,7 +6459,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 389
+        goTo: 391
       }],
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' }],
@@ -6419,7 +6470,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 389,
     text:
       `
-        ! Выбор: Никогда не приму действительность<p>«Blackmail, эта озабоченность…»
+        «Blackmail, эта озабоченность…»
       `,
     buttons: [
       {
@@ -6455,7 +6506,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 391,
     text:
       `
-        Далее<p>За это время и в учебе произошли перемены.
+        За это время и в учебе произошли перемены.
       `,
     buttons: [
       {
@@ -6468,14 +6519,32 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
   {
     id: 392,
     text:
-      `
-        ! Начало условия: (считать) Низкая карма / Средняя карма / Высокая карма
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 393
+        text: ''
       }],
+    condition:
+      [
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) >= 5
+          },
+          goTo: 393
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) >= 3
+          },
+          goTo: 395
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) <= 0
+          },
+          goTo: 397
+        }
+      ],
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
@@ -6483,7 +6552,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 393,
     text:
       `
-        ! Условие: Низкая карма<p>«А вот с ней все далеко не гладко».
+        «А вот с ней все далеко не гладко».
       `,
     buttons: [
       {
@@ -6505,7 +6574,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 395
+        goTo: 399
       }],
     message: 'Из-за низкой кармы, вы предпочитаете заниматься другими делами',
     speaker: '$Имя Игрока$',
@@ -6518,7 +6587,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 395,
     text:
       `
-        ! Условие: Средняя карма<p>«А вот с ней все довольно неплохо».
+        «А вот с ней все довольно неплохо».
       `,
     buttons: [
       {
@@ -6540,7 +6609,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 397
+        goTo: 399
       }],
     message: 'Из-за средней кармы, вы успеваете уделять учебе достаточно времени',
     speaker: '$Имя Игрока$',
@@ -6553,7 +6622,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 397,
     text:
       `
-        ! Условие: Высокая карма<p>«А вот с ней все отлично».
+        «А вот с ней все отлично».
       `,
     buttons: [
       {
@@ -6588,7 +6657,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 399,
     text:
       `
-        Далее<p>Я встала с кровати и сладко потянулась, ведь встала вовремя.
+        Я встала с кровати и сладко потянулась, ведь встала вовремя.
       `,
     buttons: [
       {
@@ -6790,14 +6859,26 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
   {
     id: 412,
     text:
-      `
-        ! Начало условия: Если у игрока есть визитка Мигеля / Если у игрока нет визитки Мигеля
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 413
+        text: ''
       }],
+    condition:
+      [
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Item', id: 'Taxi_Card' }) === 1
+          },
+          goTo: 413
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Item', id: 'Taxi_Card' }) === 0
+          },
+          goTo: 424
+        }
+      ],
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
@@ -6805,7 +6886,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 413,
     text:
       `
-        ! Условие: Если у игрока есть визитка Мигеля<p>Пришло смс от Мигеля. Он интересовался, как я себя чувствую и пожелал удачи в учебе.
+        Пришло смс от Мигеля. Он интересовался, как я себя чувствую и пожелал удачи в учебе.
       `,
     buttons: [
       {
@@ -6864,13 +6945,18 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 417,
     text:
       `
-        ! Начало выбора: Согласиться / Отказаться (запомнить выбор)<p>«Хочу ли я продолжать общение? Позволю ему приехать?»
+        «Хочу ли я продолжать общение? Позволю ему приехать?»
       `,
     buttons: [
       {
-        text: '',
+        text: 'Согласиться',
         goTo: 418
-      }],
+      },
+      {
+        text: 'Отказаться',
+        goTo: 421
+      }
+    ],
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
@@ -6881,7 +6967,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 418,
     text:
       `
-        ! Выбор: Согласиться<p>«Он действительно хороший парень. Пусть наша связь и началась так резко, но может быть этой мой шанс закончить кошмар?»
+        «Он действительно хороший парень. Пусть наша связь и началась так резко, но может быть этой мой шанс закончить кошмар?»
       `,
     buttons: [
       {
@@ -6890,6 +6976,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    stats: [
+      { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'MeetMiguel' }],
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
@@ -6917,7 +7005,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 421
+        goTo: 427
       }],
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
@@ -6931,7 +7019,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 421,
     text:
       `
-        ! Выбор: Отказаться<p>«Вряд ли он отстанет после одного отказа. Да и не было настроения с ним видеться».
+        «Вряд ли он отстанет после одного отказа. Да и не было настроения с ним видеться».
       `,
     buttons: [
       {
@@ -6967,7 +7055,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 424
+        goTo: 427
       }],
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
@@ -6981,7 +7069,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 424,
     text:
       `
-        Далее<p>! Условие: Если у игрока нет визитки Мигеля<p>Пришла рассылка от назойливой рекламы.
+        Пришла рассылка от назойливой рекламы.
       `,
     buttons: [
       {
@@ -7026,7 +7114,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 427,
     text:
       `
-        Далее<p>Я вздрогнула, услышав гудок машины рядом с нашим домой.
+        Я вздрогнула, услышав гудок машины рядом с нашим домой.
       `,
     buttons: [
       {

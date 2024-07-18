@@ -78,6 +78,27 @@ statsManager.add({
 statsManager.add({
   category: 'Choice',
   id: 'MatteoIsSexy',
-  idDescription: 'Маттео казался сексуальным',
+  idDescription: 'МИНЕТ',
+  story: EStoriesEn.AEP
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'RefuseMatt',
+  idDescription: 'Сопротивляться Мэтту',
+  story: EStoriesEn.AEP
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'LikeMadMatt',
+  idDescription: 'Нравилось',
+  story: EStoriesEn.AEP
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'MeetMiguel',
+  idDescription: 'Встретиться с Мигелем после занятий',
   story: EStoriesEn.AEP
 })
