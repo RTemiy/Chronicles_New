@@ -6528,19 +6528,19 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       [
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) >= 5
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) >= 4
           },
           goTo: 393
         },
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) >= 3
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) >= -3
           },
           goTo: 395
         },
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) <= 0
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) <= -4
           },
           goTo: 397
         }
