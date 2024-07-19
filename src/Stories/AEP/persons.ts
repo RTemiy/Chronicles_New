@@ -73,6 +73,16 @@ statsManager.add({
 
 statsManager.add({
   category: 'Person',
+  id: 'John',
+  name: 'Джон',
+  image: require('../../Images/AEP/Persons/John.png'),
+  title: 'Сокурсник, с которым мне удалось поладить и подружиться.',
+  description: 'Он часто пьет успокоительные и беспокоится без повода. Но все равно обаятельный и добрый. Хочется верить — мы с ним никогда не поссоримся.',
+  story: EStoriesEn.AEP
+})
+
+statsManager.add({
+  category: 'Person',
   id: 'Leonardo',
   name: 'Леонардо',
   image: require('../../Images/AEP/Persons/Leonardo.png'),

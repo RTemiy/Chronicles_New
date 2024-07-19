@@ -1,5 +1,5 @@
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { scenarioManager, statsManager, wardrobe } from '../../../../index'
+import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глава 1', partName: 'Часть 2', code: '0' }, [
@@ -5703,20 +5703,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 343
-      }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
-  },
-
-  {
-    id: 343,
-    text:
-      `
-        ! Кат-сцена: ?
-      `,
-    buttons: [
-      {
-        text: '',
         goTo: 344
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
@@ -6530,7 +6516,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           condition: () => {
             return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) >= 4
           },
-          goTo: 393
+          goTo: 397
         },
         {
           condition: () => {
@@ -6542,7 +6528,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           condition: () => {
             return statsManager.get({ story: EStoriesEn.AEP, category: 'Effect', id: 'Karma' }) <= -4
           },
-          goTo: 397
+          goTo: 393
         }
       ],
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
@@ -7647,7 +7633,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 461
+        func: () => {
+          saveEndProgress('AEP', 'Глава 1', 'Часть 3', '0')
+        }
       }],
     achievement: { story: EStoriesEn.AEP, name: 'Chapter02Part01Completed' },
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
