@@ -102,18 +102,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
             return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'DrinkAtParty' }) === 1
           },
           goTo: 8
-        },
+        },       
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'DrinkAtParty' }) === 0
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'GoToParty' }) === 0
           },
-          goTo: 9
+          goTo: 12
         },
         {
           condition: () => {
             return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'CallMiguel' }) === 1
           },
           goTo: 11
+        },
+        {
+          condition: () => {
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'DrinkAtParty' }) === 0
+          },
+          goTo: 9
         },
         {
           condition: () => {
@@ -3009,7 +3015,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 187
+        goTo: 235
       }],
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Matteo' }],
@@ -3745,7 +3751,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 227
+        goTo: 229
       }],
     speaker: 'Изабелла',
     imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
@@ -5755,7 +5761,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' },
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Matt' },
       { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
@@ -6113,7 +6118,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' },
       { story: EStoriesEn.AEP, value: -1, category: 'Person', id: 'Matt' },
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
@@ -6456,7 +6460,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 389,
     text:
       `
-        «Blackmail, эта озабоченность…»
+        «Шантаж, эта озабоченность…»
       `,
     buttons: [
       {
