@@ -6002,6 +6002,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     music: require('../../../../Sounds/AEP/Daily.mp3'),
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    stats: [
+      { story: EStoriesEn.AEP, value: 1, category: 'Choice', id: 'RefuseMatt' }],
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
   },

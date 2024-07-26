@@ -5104,7 +5104,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 323
       }],
     stats: [
-      { story: EStoriesEn.Aurora, value: +1, category: 'Choice', id: 'CallKaleb' }],
+      { story: EStoriesEn.Aurora, value: +1, category: 'Choice', id: 'CallArthur' }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Flat_Post.jpg')
   },
 

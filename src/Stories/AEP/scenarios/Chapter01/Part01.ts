@@ -3533,7 +3533,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 217
       }],
     stats: [
-      { story: EStoriesEn.AEP, value: 0, category: 'Person', id: 'Isabella' }],
+      { story: EStoriesEn.AEP, value: 0, category: 'Person', id: 'Isabelle' }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 

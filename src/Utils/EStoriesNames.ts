@@ -3,7 +3,7 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
-  Katarina = 'Katarina',
+  UA = 'UA',
   Aurora = 'Aurora',
   AEP = 'AEP',
   ISML = 'ISML',
@@ -14,6 +14,7 @@ export enum EStoriesEn {
 
   //
   UL = 'UL',
+  Katarina = 'Katarina',
 }
 
 export enum EStoriesRu {
@@ -25,7 +26,8 @@ export enum EStoriesRu {
   UL = 'Непредсказуемая любовь',
   MM = 'Memento mori',
   ISML = 'В поисках исчезнувшего света',
-  Katarina = 'Катарина'
+  Katarina = 'Катарина',
+  UA = 'Арена юнитов'
 }
 
 export enum EStoriesAvailable {
@@ -36,6 +38,7 @@ export enum EStoriesAvailable {
   Aurora = 1,
   MM = 1,
   ISML = 1,
+  UA = 1,
 
   Katarina = 1,
   UL = 0,

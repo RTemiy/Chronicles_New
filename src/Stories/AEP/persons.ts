@@ -56,7 +56,7 @@ statsManager.add({
   id: 'Isabelle',
   name: 'Изабелла',
   image: require('../../Images/AEP/Persons/Isabella.png'),
-  title: 'Преподаватель иностранного дела и архитектуры.',
+  title: 'Преподаватель инженерного дела и архитектуры.',
   description: 'Она точно не простая штучка. Хочет казаться прилежной учительницей, но все разрушает этот хитренький взгляд.',
   story: EStoriesEn.AEP
 })
