@@ -42,6 +42,7 @@ Policy.button.onclick = () => {
   saveData(['Profile', 'BooksWasted'], [0])
   Policy.self.style.display = 'none'
   validateUser()
+  sendActivity('Подтверждает ПК')
 }
 
 function validateUser (): void {

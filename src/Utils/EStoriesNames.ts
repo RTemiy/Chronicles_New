@@ -40,6 +40,6 @@ export enum EStoriesAvailable {
   ISML = 1,
   UA = 1,
 
-  Katarina = 1,
+  Katarina = 0,
   UL = 0,
 }

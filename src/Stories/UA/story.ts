@@ -18,7 +18,7 @@ storiesManager.add({
           name: 'Пролог',
           code: '0',
           image: require('../../Images/UA/Backgrounds/Nova_Beginning.jpg'),
-          loadingImage: require('../../Images/Immortals/Covers/Prologue.png'),
+          loadingImage: require('../../Images/UA/Covers/Prologue_LS.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           }
