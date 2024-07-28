@@ -2810,10 +2810,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 169
+        goTo: 470
       }],
     speaker: 'Маттео',
     imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+  },
+
+  {
+    id: 470,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    cutScene: { video: require('../../../../Images/AEP/CutScenes/Matteo and Hero.mp4'), goTo: 169 },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },

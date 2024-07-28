@@ -941,7 +941,7 @@ onStart()
         }
         else if (/! Персонаж:* /.test(scenes[name][x][y])) {
           scenes[name][x][y] = scenes[name][x][y].replace(/! Персонаж:* /, '');
-          let word = scenes[name][x][y].trim().toUpperCase()на.split(' ');
+          let word = scenes[name][x][y].trim().toUpperCase().split(' ');
           const statAmount = word.pop();
           word = word.join(' ');
           allPersons.add(word);

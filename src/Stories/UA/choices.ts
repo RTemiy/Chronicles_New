@@ -1,8 +1,14 @@
 import { statsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
-/*statsManager.add({
+statsManager.add({
   category: 'Choice',
-  id: 'WakeUp',
-  story: EStoriesEn.Immortals
-})*/
+  id: 'ComeToDoor',
+  story: EStoriesEn.UA
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'Obey',
+  story: EStoriesEn.UA
+})

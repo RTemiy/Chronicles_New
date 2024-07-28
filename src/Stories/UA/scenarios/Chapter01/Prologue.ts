@@ -1,5 +1,6 @@
-import { scenarioManager } from '../../../../index'
+import { saveEndProgress, scenarioManager, statsManager } from '../../../../index';
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
+import { redFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -279,13 +280,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 18,
     text:
       `
-        ! Звук: Выстрел<p>Услышав первый хлопок, она подскочила на матрасе.
+        Услышав первый хлопок, она подскочила на матрасе.
       `,
     buttons: [
       {
         text: '',
         goTo: 19
       }],
+    simple: require('../../../../Sounds/UA/1Shot.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -293,13 +295,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 19,
     text:
       `
-        ! Звук: 3 выстрела<p>«Оружие. Стреляют. Коридор. Трижды».
+        «Оружие. Стреляют. Коридор. Трижды».
       `,
     buttons: [
       {
         text: '',
         goTo: 20
       }],
+    simple: require('../../../../Sounds/UA/3Shots.mp3'),
     music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
@@ -339,13 +342,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 22,
     text:
       `
-        ! Звук: 5 выстрелов<p>«Еще пять выстрелов. Ближе».
+        «Еще пять выстрелов. Ближе».
       `,
     buttons: [
       {
         text: '',
         goTo: 23
       }],
+    simple: require('../../../../Sounds/UA/5Shots.mp3'),
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -356,13 +360,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 23,
     text:
       `
-        ! Звук: Топот<p>«Ругань. Топот — слышу двоих. Упало тело. Неужели Надзиратель?!» 
+        «Ругань. Топот — слышу двоих. Упало тело. Неужели Надзиратель?!» 
       `,
     buttons: [
       {
         text: '',
         goTo: 24
       }],
+    simple: require('../../../../Sounds/UA/BodySounds.mp3'),
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -469,12 +474,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 30,
     text:
       `
-        ! Начало выбора: Подойти к двери / Занять выгодную позицию (Запомнить выбор)<p>Что делать?
+        Что делать?
       `,
     buttons: [
       {
-        text: '',
+        text: 'Подойти к двери',
         goTo: 31
+      },
+      {
+        text: 'Занять выгодную позицию',
+        goTo: 38
       }],
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
@@ -486,13 +495,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 31,
     text:
       `
-        ! Выбор: Подойти к двери<p>Делать свое положение еще более уязвимым означало сдаться без боя.
+        Делать свое положение еще более уязвимым означало сдаться без боя.
       `,
     buttons: [
       {
         text: '',
         goTo: 32
       }],
+    stats: [{ story: EStoriesEn.UA, category: 'Choice', id: 'ComeToDoor', value: 1 }],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -578,7 +588,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 38
+        goTo: 44
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
@@ -587,7 +597,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 38,
     text:
       `
-        ! Выбор: Занять выгодную позицию<p>Занять выгодную позицию здесь было невозможно. Элементом неожиданности могло послужить только падение с потолка. Но до него не добраться.
+        Занять выгодную позицию здесь было невозможно. Элементом неожиданности могло послужить только падение с потолка. Но до него не добраться.
       `,
     buttons: [
       {
@@ -647,20 +657,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     text:
       `
         Арматура холодила руки. Пульс, сначала шедший ровно, внезапно ускорился. Красный флажок, означающий, что сейчас нужно отстаивать свою жизнь. Или быть убитой.
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 43
-      }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
-  },
-
-  {
-    id: 43,
-    text:
-      `
-        Далее
       `,
     buttons: [
       {
@@ -780,14 +776,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   {
     id: 51,
     text:
-      `
-        ! Начало условия: Подойти к двери / Занять выгодную позицию
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 52
+        text: ''
       }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'ComeToDoor' }) >= 1
+        },
+        goTo: 52
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'ComeToDoor' }) <= 0
+        },
+        goTo: 56
+      }
+    ],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -795,7 +802,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 52,
     text:
       `
-        ! Условие: Подойти к двери<p>Девушка впилась взглядом в человека с оружием. Нездоровый цвет лица, нервно бегающие глаза, влажный от пота лоб и шея. 
+        Девушка впилась взглядом в человека с оружием. Нездоровый цвет лица, нервно бегающие глаза, влажный от пота лоб и шея. 
       `,
     buttons: [
       {
@@ -845,7 +852,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 56
+        goTo: 57
       }],
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
@@ -857,7 +864,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 56,
     text:
       `
-        ! Условие: Занять выгодную позицию<p>Девушка впилась взглядом в человека с оружием. Нездоровый цвет лица, нервно бегающие глаза, влажный от пота лоб и шея. Наверное, так выглядят люди, вышедшие первый раз на задание?
+        Девушка впилась взглядом в человека с оружием. Нездоровый цвет лица, нервно бегающие глаза, влажный от пота лоб и шея. Наверное, так выглядят люди, вышедшие первый раз на задание?
       `,
     buttons: [
       {
@@ -871,7 +878,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 57,
     text:
       `
-        Далее<p>«Какая-то банда смогла напасть на дом Отреченных? На самое защищенное место, как говорил Лагард? Не верю».
+        «Какая-то банда смогла напасть на дом Отреченных? На самое защищенное место, как говорил Лагард? Не верю».
       `,
     buttons: [
       {
@@ -933,12 +940,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 61,
     text:
       `
-        ! Начало выбора: Подчиниться / Сопротивляться (Запомнить выбор)<p>«Оптимальным вариантом будет…»
+        «Оптимальным вариантом будет…»
       `,
     buttons: [
       {
-        text: '',
+        text: 'Подчиниться',
         goTo: 62
+      },
+      {
+        text: 'Сопротивляться',
+        goTo: 64
       }],
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
@@ -950,13 +961,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 62,
     text:
       `
-        ! Выбор: Подчиниться<p>Девушка с явным нежеланием расцепила пальцы и выпустила арматуру. Не убивают, значит, нужна. А лезть под пули без шанса узнать, что с Лагардом — глупо. Защита Хозяина важнее. Либо отмщение за его смерть.
+        Девушка с явным нежеланием расцепила пальцы и выпустила арматуру. Не убивают, значит, нужна. А лезть под пули без шанса узнать, что с Лагардом — глупо. Защита Хозяина важнее. Либо отмщение за его смерть.
       `,
     buttons: [
       {
         text: '',
         goTo: 63
       }],
+    stats: [{ story: EStoriesEn.UA, category: 'Choice', id: 'Obey', value: 1 }],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -969,7 +981,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 64
+        goTo: 97
       }],
     speaker: 'Цель №1',
     imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
@@ -981,7 +993,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 64,
     text:
       `
-        ! Выбор: Сопротивляться (Запомнить выбор)<p>Действовать надо было быстро.
+        Действовать надо было быстро.
       `,
     buttons: [
       {
@@ -1271,13 +1283,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 83,
     text:
       `
-        ! Спецэффект: Красная вспышка<p>Пистолет выстрелил.
+        Пистолет выстрелил.
       `,
     buttons: [
       {
         text: '',
         goTo: 84
       }],
+    beforeBegin: redFlash,
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1293,7 +1306,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 85
       }],
     stats: [
-      { story: EStoriesEn.UA, value: -10, category: 'Effect', id: 'Health' }],
+      { story: EStoriesEn.UA, value: 90, category: 'Effect', id: 'Health' }],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1469,25 +1482,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 97
+        goTo: 98
       }],
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
-  },
-
-  {
-    id: 97,
-    text:
-      `
-        Далее
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 98
-      }],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1526,13 +1525,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 100,
     text:
       `
-        ! Звук: Выстрел<p>Один взмах ресницами и кожу под ребрами обожгло болью.
+        Один взмах ресницами и кожу под ребрами обожгло болью.
       `,
     buttons: [
       {
         text: '',
         goTo: 101
       }],
+    simple: require('../../../../Sounds/UA/1Shot.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1584,14 +1584,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   {
     id: 104,
     text:
-      `
-        ! Начало условия: выбор «Сопротивляться» 
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 105
+        text: ''
       }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) >= 1
+        },
+        goTo: 107
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) <= 0
+        },
+        goTo: 105
+      }
+    ],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1599,7 +1610,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 105,
     text:
       `
-        ! Условие: Сопротивляться<p>Ты в нее выстрелил? Сказано же было, не портить товар, идиот!
+        Ты в нее выстрелил? Сказано же было, не портить товар, идиот!
       `,
     buttons: [
       {
@@ -1630,7 +1641,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 107,
     text:
       `
-        Далее<p>«Надо сопротивляться. Надо пытаться…».
+        «Надо сопротивляться. Надо пытаться…».
       `,
     buttons: [
       {
@@ -1675,14 +1686,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   {
     id: 110,
     text:
-      `
-        ! Начало условия: Сопротивляться / Подчиниться
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 111
+        text: ''
       }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) >= 1
+        },
+        goTo: 116
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) <= 0
+        },
+        goTo: 111
+      }
+    ],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -1690,7 +1712,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 111,
     text:
       `
-        ! Условие: Сопротивляться<p>Простреленное плечо отозвалось вспышкой боли. Плотная корка крови треснула от удара, заново смачивая ссохшуюся ткань на ране.
+        Простреленное плечо отозвалось вспышкой боли. Плотная корка крови треснула от удара, заново смачивая ссохшуюся ткань на ране.
       `,
     buttons: [
       {
@@ -1740,21 +1762,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 115
-      }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
-  },
-
-  {
-    id: 115,
-    text:
-      `
-        ! Условие: Подчиниться
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 116
+        goTo: 118
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -1764,20 +1772,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     text:
       `
         Не получилось. Сведенные за спиной руки перекроило судорогой. Ноги, будто онемевшие, подогнулись и опрокинули EVE-13C обратно на пол. 
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 117
-      }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
-  },
-
-  {
-    id: 117,
-    text:
-      `
-        Далее
       `,
     buttons: [
       {
@@ -1930,14 +1924,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   {
     id: 127,
     text:
-      `
-        ! Начало условия: выбор «Сопротивляться« / выбор «Подчиниться»
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 128
+        text: ''
       }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) >= 1
+        },
+        goTo: 128
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) <= 0
+        },
+        goTo: 129
+      }
+    ],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -1945,12 +1950,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 128,
     text:
       `
-        ! Условие: Подчиниться<p>Эти твари положили троих моих парней! Либо плати за каждую голову сверху, либо…
+        Эти твари положили троих моих парней! Либо плати за каждую голову сверху, либо…
       `,
     buttons: [
       {
         text: '',
-        goTo: 129
+        goTo: 130
       }],
     speaker: 'Раздраженный мужчина',
     imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
@@ -1962,7 +1967,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 129,
     text:
       `
-        ! Условие: Сопротивляться<p>Эти твари положили троих моих парней! Одна съехавшая вообще прокусила ему горло! Плати сверху еще, и это не обсуждается!
+        Эти твари положили троих моих парней! Одна съехавшая вообще прокусила ему горло! Плати сверху еще, и это не обсуждается!
       `,
     buttons: [
       {
@@ -1979,7 +1984,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 130,
     text:
       `
-        Далее<p>Неизвестный брызгал слюной. Кричал так, что вздулись вены на лбу и шее. Потрясая пистолетом, почти кидался на стоящего рядом с ним. 
+        Неизвестный брызгал слюной. Кричал так, что вздулись вены на лбу и шее. Потрясая пистолетом, почти кидался на стоящего рядом с ним. 
       `,
     buttons: [
       {
@@ -2401,12 +2406,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 157,
     text:
       `
-        ! Начало выбора: Избавиться быстро / Дать волю эмоциям<p>Как обезвредить цель?
+        Как обезвредить цель?
       `,
     buttons: [
       {
-        text: '',
+        text: 'Избавиться быстро',
         goTo: 158
+      },
+      {
+        text: 'Дать волю эмоциям',
+        goTo: 163
       }],
     message: 'Статы Киллер и Мясник влияют на предпочитаемый героиней способ убийства. Киллер связан с быстрыми и тихими обезвреживаниями противника, когда как Мясник с более кровавыми и эмоциональными способами зачистки.',
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
@@ -2416,7 +2425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 158,
     text:
       `
-        ! Выбор: Избавиться быстро<p>EVE-13C подлетела к ближайшему противнику, уже подстреленному шальной пулей, и быстрым движением воткнула лезвие в сонную артерию.
+        EVE-13C подлетела к ближайшему противнику, уже подстреленному шальной пулей, и быстрым движением воткнула лезвие в сонную артерию.
       `,
     buttons: [
       {
@@ -2481,7 +2490,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 163
+        goTo: 185
       }],
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
@@ -2493,7 +2502,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 163,
     text:
       `
-        ! Выбор: Дать волю эмоциям<p>Наметанный глаз сразу же выцепил в раздоре боя знакомого бандита. Цель №1 хваталась за подстреленный бок, с трудом отползая назад от эпицентра.
+        Наметанный глаз сразу же выцепил в раздоре боя знакомого бандита. Цель №1 хваталась за подстреленный бок, с трудом отползая назад от эпицентра.
       `,
     buttons: [
       {
@@ -2522,14 +2531,26 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   {
     id: 165,
     text:
-      `
-        ! Начало условия: выбор «Сопротивляться» / выбор «Подчиниться»
-      `,
+      '',
     buttons: [
       {
         text: '',
         goTo: 166
       }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) >= 1
+        },
+        goTo: 167
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) <= 0
+        },
+        goTo: 166
+      }
+    ],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -2537,12 +2558,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 166,
     text:
       `
-        ! Условие: Сопротивляться<p>Принцип «око за око» трансформировался в доме Отреченных и превратился в «жизнь за рану». Противников нужно добивать, чем Солдат и планировала заняться.
+        Принцип «око за око» трансформировался в доме Отреченных и превратился в «жизнь за рану». Противников нужно добивать, чем Солдат и планировала заняться.
       `,
     buttons: [
       {
         text: '',
-        goTo: 167
+        goTo: 169
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -2551,12 +2572,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 167,
     text:
       `
-        ! Условие: Подчиниться<p>Бандит с трудом дышал. Болевые спазмы сковывали легкие, сквозь плотно сжатые зубы сочилась кровавая слюна.
+        Бандит с трудом дышал. Болевые спазмы сковывали легкие, сквозь плотно сжатые зубы сочилась кровавая слюна.
       `,
     buttons: [
       {
         text: '',
-        goTo: 168
+        goTo: 169
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -2564,14 +2585,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   {
     id: 168,
     text:
-      `
-        Далее 
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 169
+        text: ''
       }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) >= 1
+        },
+        goTo: 171
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) <= 0
+        },
+        goTo: 170
+      }
+    ],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -2584,7 +2616,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 170
+        goTo: 168
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -2593,12 +2625,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 170,
     text:
       `
-        ! Начало условия: выбор «Сопротивляться» / выбор «Подчиниться»<p> <p>! Условие: Сопротивляться<p>В помеченной арматурой руке лежал пистолет. Он попытался им воспользоваться, но EVE-13C реагировала быстрее. Пяткой влетела в слабые кости запястья, придавливая и прокручивая, упивалась сдавленными стонами.
+        В помеченной арматурой руке лежал пистолет. Он попытался им воспользоваться, но EVE-13C реагировала быстрее. Пяткой влетела в слабые кости запястья, придавливая и прокручивая, упивалась сдавленными стонами.
       `,
     buttons: [
       {
         text: '',
-        goTo: 171
+        goTo: 173
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -2607,21 +2639,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 171,
     text:
       `
-        ! Условие: Подчиниться<p>Цель №1 попыталась воспользоваться пистолетом. Солдат коленом прижала руку, всем весом надавливая и слушая треск хилых костей.
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 172
-      }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
-  },
-
-  {
-    id: 172,
-    text:
-      `
-        Далее
+        Цель №1 попыталась воспользоваться пистолетом. Солдат коленом прижала руку, всем весом надавливая и слушая треск хилых костей.
       `,
     buttons: [
       {
@@ -2648,14 +2666,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   {
     id: 174,
     text:
-      `
-        ! Начало условия: выбор «Сопротивляться» / выбор «Подчиниться»
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 175
+        text: ''
       }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) >= 1
+        },
+        goTo: 177
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) <= 0
+        },
+        goTo: 175
+      }
+    ],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -2663,7 +2692,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 175,
     text:
       `
-        ! Условие: Сопротивляться<p>На сладкое она оставила себе горло. Следы ее зубов покрылись коркой, потемнели, и нарушать их целостность ей не хотелось. 
+        На сладкое она оставила себе горло. Следы ее зубов покрылись коркой, потемнели, и нарушать их целостность ей не хотелось. 
       `,
     buttons: [
       {
@@ -2682,7 +2711,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 177
+        goTo: 180
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -2691,7 +2720,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 177,
     text:
       `
-        ! Условие: Подчиниться<p>Последним было горло. Ярко-красная линия опоясала кожу под кадыком.
+        Последним было горло. Ярко-красная линия опоясала кожу под кадыком.
       `,
     buttons: [
       {
@@ -2706,20 +2735,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     text:
       `
         Кровавая черта петли разошлась в стороны, извергая из себя теплую жидкость. Руки омыло из артерии, согрело и конечности, и душу.
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 179
-      }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
-  },
-
-  {
-    id: 179,
-    text:
-      `
-        Далее
       `,
     buttons: [
       {
@@ -2919,12 +2934,16 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 192,
     text:
       `
-        ! Начало выбора: Ты видел его тело? / Кто его убил? (все вопросы можно задать)<p>Надо выяснить всю информацию.
+        Надо выяснить всю информацию.
       `,
     buttons: [
       {
-        text: '',
+        text: 'Ты видел его тело?',
         goTo: 193
+      },
+      {
+        text: 'Кто его убил?',
+        goTo: 194
       }],
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
@@ -2936,12 +2955,34 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 193,
     text:
       `
-        ! Выбор: Ты видел его тело?<p>Я видел, как его избивали. Потом оттащили на кухню. Три выстрела и вышло оттуда только двое.
+        Я видел, как его избивали. Потом оттащили на кухню. Три выстрела и вышло оттуда только двое.
+      `,
+    buttons: [
+      {
+        text: 'Ты видел его тело?',
+        goTo: 193,
+        isActive: false
+      },
+      {
+        text: 'Кто его убил?',
+        goTo: 250
+      }],
+    speaker: 'ZAYNE-3C',
+    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+  },
+
+  {
+    id: 250,
+    text:
+      `
+        Те, кто это сделал, уже мертвы. Лично выпустил им кишки наружу.
       `,
     buttons: [
       {
         text: '',
-        goTo: 194
+        goTo: 195
       }],
     speaker: 'ZAYNE-3C',
     imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
@@ -2953,7 +2994,29 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 194,
     text:
       `
-        ! Выбор: Кто его убил?<p>Те, кто это сделал, уже мертвы. Лично выпустил им кишки наружу.
+        Те, кто это сделал, уже мертвы. Лично выпустил им кишки наружу.
+      `,
+    buttons: [
+      {
+        text: 'Ты видел его тело?',
+        goTo: 251
+      },
+      {
+        text: 'Кто его убил?',
+        goTo: 193,
+        isActive: false
+      }],
+    speaker: 'ZAYNE-3C',
+    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+  },
+
+  {
+    id: 251,
+    text:
+      `
+        Я видел, как его избивали. Потом оттащили на кухню. Три выстрела и вышло оттуда только двое.
       `,
     buttons: [
       {
@@ -2970,7 +3033,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 195,
     text:
       `
-        Далее<p>Стоящий рядом Солдат словно прочитал ее замешательство. Поморщился, отражая ее душевный раздрай в кривой гримасе, и прижал пальцы к виску.
+        Стоящий рядом Солдат словно прочитал ее замешательство. Поморщился, отражая ее душевный раздрай в кривой гримасе, и прижал пальцы к виску.
       `,
     buttons: [
       {
@@ -3043,10 +3106,37 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
   },
 
   {
+    id: 252,
+    text:
+      '',
+    buttons: [
+      {
+        text: '',
+        goTo: 201
+      }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) >= 1
+        },
+        goTo: 201
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'Obey' }) <= 0
+        },
+        goTo: 200
+      }
+    ],
+    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+  },
+
+  {
     id: 200,
     text:
       `
-        ! Начало условия: выбор «Сопротивляться»<p> <p>! Условие: Сопротивляться<p>«По крайней мере, я пока что могу стоять на ногах. Но с плечом нужно что-то делать».
+        «По крайней мере, я пока что могу стоять на ногах. Но с плечом нужно что-то делать».
       `,
     buttons: [
       {
@@ -3063,12 +3153,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 201,
     text:
       `
-        Далее<p>Она, обхватив себя руками, нырнула в темноту следом за ZAYNE-3C.<p>Навстречу нежеланной, но навязанной свободе. К границе города, который Лагард называл «Нова».
+        Она, обхватив себя руками, нырнула в темноту следом за ZAYNE-3C.<p>Навстречу нежеланной, но навязанной свободе. К границе города, который Лагард называл «Нова».
       `,
     buttons: [
       {
         text: '',
-        goTo: 202
+        func: () => {
+          saveEndProgress('UA', 'Глава 1', 'Часть 1', '0')
+        }
       }],
     achievement: { story: EStoriesEn.UA, name: 'PrologueCompleted' },
     imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
