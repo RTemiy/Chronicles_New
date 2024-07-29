@@ -1,4 +1,4 @@
-import { saveEndProgress, scenarioManager, statsManager } from '../../../../index';
+import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { redFlash } from '../../../../Components/Slide/Slide'
 
@@ -287,6 +287,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 19
       }],
+    stats: [{ story: EStoriesEn.UA, value: 100, category: 'Effect', id: 'Health' }],
     simple: require('../../../../Sounds/UA/1Shot.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
@@ -385,7 +386,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 25
       }],
-    parallax: 'right',
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -400,7 +400,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 26
       }],
-    parallax: 'left',
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -981,7 +980,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 97
+        goTo: 98
       }],
     speaker: 'Цель №1',
     imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
@@ -1305,8 +1304,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 85
       }],
-    stats: [
-      { story: EStoriesEn.UA, value: 90, category: 'Effect', id: 'Health' }],
+    stats: [{ story: EStoriesEn.UA, value: -10, category: 'Effect', id: 'Health' }],
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -2360,12 +2358,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 154,
     text:
       `
-        Сейчас.<p>И будто по его команде под потолок взвились хлопки выстрелов; воздух наполнился запахом пороха и секунду спустя — смрадом смерти.
+        Сейчас.
       `,
     buttons: [
       {
         text: '',
-        goTo: 155
+        goTo: 202
       }],
     music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
     speaker: 'ZAYNE-3C',
@@ -2798,27 +2796,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 184
+        goTo: 185
       }],
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Item', id: 'Pistol' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
-  },
-
-  {
-    id: 184,
-    text:
-      `
-        Далее
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 185
-      }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -3153,7 +3137,35 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 201,
     text:
       `
-        Она, обхватив себя руками, нырнула в темноту следом за ZAYNE-3C.<p>Навстречу нежеланной, но навязанной свободе. К границе города, который Лагард называл «Нова».
+        Она, обхватив себя руками, нырнула в темноту следом за ZAYNE-3C.
+       `,
+    buttons: [
+      {
+        text: '',
+        goTo: 203
+      }],
+    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+  },
+  {
+    id: 202,
+    text:
+      `
+        И будто по его команде под потолок взвились хлопки выстрелов; воздух наполнился запахом пороха и секунду спустя — смрадом смерти.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 155
+      }],
+    music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
+    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+  },
+
+  {
+    id: 203,
+    text:
+      `
+        Навстречу нежеланной, но навязанной свободе. К границе города, который Лагард называл «Нова».
       `,
     buttons: [
       {
