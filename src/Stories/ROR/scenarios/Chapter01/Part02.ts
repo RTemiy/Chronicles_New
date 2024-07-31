@@ -17,14 +17,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
-          console.log(statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }))
           return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) < 100
         },
         goTo: 1
       },
       {
         condition: () => {
-          console.log(statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }))
           return statsManager.get({ story: EStoriesEn.ROR, category: 'Item', id: 'Money' }) >= 100
         },
         goTo: 75

@@ -45,7 +45,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       {
         text: '',
         func: () => {
-          askForInput('Как меня зовут?', (value) => {
+          askForInput('Как меня зовут?', 'Введите текст', (value) => {
             scenarioManager.beginScene(3)
             saveData([EStoriesEn.AEP, 'Name'], [value])
           })

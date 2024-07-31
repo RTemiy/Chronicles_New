@@ -162,7 +162,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       {
         text: '',
         func: () => {
-          askForInput('Как меня зовут?', (value) => {
+          askForInput('Как меня зовут?', 'Введите текст', (value) => {
             scenarioManager.beginScene(11)
             saveData([EStoriesEn.Immortals, 'Name'], [value])
           })
