@@ -6163,7 +6163,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 377
+        goTo: 413
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Penthouse_Party.jpg')
   },

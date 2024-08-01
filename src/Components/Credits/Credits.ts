@@ -15,16 +15,16 @@ export const Credits = new CContainer(
 <p class="credits__name">Мария Мармажова</p>
 
 <p class="credits__role">АРТЫ</p>
-<p class="credits__name">Артемий Голубятников</p>
 <p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Артемий Голубятников</p>
 <h2 class="credits__subtitle">Аврора</h2>
 
 <p class="credits__role">АВТОР СЦЕНАРИЯ</p>
 <p class="credits__name">Мария Мармажова</p>
 
 <p class="credits__role">АРТЫ</p>
-<p class="credits__name">Артемий Голубятников</p>
 <p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Артемий Голубятников</p>
 <h2 class="credits__subtitle">Время крыс</h2>
 
 <p class="credits__role">АВТОР СЦЕНАРИЯ</p>
@@ -34,20 +34,21 @@ export const Credits = new CContainer(
 <p class="credits__name">Мария Мармажова</p>
 
 <p class="credits__role">АРТЫ</p>
-<p class="credits__name">Артемий Голубятников</p>
 <p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Артемий Голубятников</p>
 
 <h2 class="credits__subtitle">Amore e passione</h2>
 
 <p class="credits__role">АВТОР СЦЕНАРИЯ</p>
 <p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Альбина</p>
 
 <p class="credits__role">РЕДАКТОР</p>
 <p class="credits__name">Альбина</p>
 
 <p class="credits__role">АРТЫ</p>
-<p class="credits__name">Артемий Голубятников</p>
 <p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Альбина</p>
 
 <h2 class="credits__subtitle">Осколки чужой судьбы</h2>
 
@@ -58,9 +59,7 @@ export const Credits = new CContainer(
 <p class="credits__name">Мария Мармажова</p>
 
 <p class="credits__role">АРТЫ</p>
-<p class="credits__name">Мария Мармажова</p>
 <p class="credits__name">Альбина</p>
-<p class="credits__name">Артемий Голубятников</p>
 
 <h2 class="credits__subtitle">Memento mori</h2>
 
@@ -82,7 +81,20 @@ export const Credits = new CContainer(
 <p class="credits__name">Мария Мармажова</p>
 
 <p class="credits__role">АРТЫ</p>
-<p class="credits__name">@MARK</p>
+<p class="credits__name">Алиса</p>
+<p class="credits__name">Мария Мармажова</p>
+
+<h2 class="credits__subtitle">Арена юнитов</h2>
+
+<p class="credits__role">АВТОР СЦЕНАРИЯ</p>
+<p class="credits__name">Linn</p>
+
+<p class="credits__role">РЕДАКТОР</p>
+<p class="credits__name">Мария Мармажова</p>
+
+<p class="credits__role">АРТЫ</p>
+<p class="credits__name">Мария Мармажова</p>
+<p class="credits__name">Linn</p>
 
 <h2 class="credits__subtitle">Непредсказуемая любовь</h2>
 

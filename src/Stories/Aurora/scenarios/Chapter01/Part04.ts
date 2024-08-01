@@ -3142,6 +3142,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
             return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'RefuseArthur' }) <= 0
           },
           goTo: 200
+       },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Person', id: 'Arthur' }) <= 2
+        },
+        goTo: 202
         }
       ],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
