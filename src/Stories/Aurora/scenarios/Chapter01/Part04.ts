@@ -3133,21 +3133,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       [
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'RefuseArthur' }) >= 1
+            return statsManager.get({ story: EStoriesEn.Aurora, category: 'Person', id: 'Arthur' }) <= 2
           },
           goTo: 202
         },
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'RefuseArthur' }) <= 0
+            return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'RefuseArthur' }) >= 1
           },
-          goTo: 200
+          goTo: 202
        },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Person', id: 'Arthur' }) <= 2
+          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'RefuseArthur' }) <= 0
         },
-        goTo: 202
+        goTo: 200
         }
       ],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Livingroom.jpg')
