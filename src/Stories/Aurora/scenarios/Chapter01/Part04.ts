@@ -5238,7 +5238,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       [
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.Aurora, category: 'Person', id: 'Arthue' }) <= 2
+            return statsManager.get({ story: EStoriesEn.Aurora, category: 'Person', id: 'Arthur' }) <= 2
           },
           goTo: 332
         },
