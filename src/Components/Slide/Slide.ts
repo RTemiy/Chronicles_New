@@ -94,6 +94,10 @@ export function blackFlash (): void {
   animateBackForth(Slide.self, 'slide_blackFlash', 2000)
 }
 
+export function purpleFlash (): void {
+  animateBackForth(Slide.self, 'slide_purpleFlash', 2000)
+}
+
 export function redPulsating (): void {
   Slide.self.classList.add('slide_redPulseInfinite')
 }

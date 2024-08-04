@@ -20,3 +20,13 @@ statsManager.add({
   description: 'С кем я еще могу поделиться тяжестью на душе, как не с ней? Она всегда рядом и готова поддержать. Надеюсь, нашу дружбу ничего не пошатнет.',
   story: EStoriesEn.ISML
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'AS',
+  name: 'Александр',
+  image: require('../../Images/ISML/Persons/AS_Nowadays.png'),
+  title: 'Новый преподаватель по анатомии.',
+  description: 'Заменив профессора Виктора Юрьевича, который оказался в больнице, он мгновенно привлек мое внимание. Посмотрим, чем это может обернуться.',
+  story: EStoriesEn.ISML
+})
