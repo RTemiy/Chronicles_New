@@ -6,5 +6,6 @@ export default interface IAchievement {
   title: string
   text: string
   image: string
+  completion?: string
   unlocked?: boolean
 }

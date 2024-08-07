@@ -103,6 +103,7 @@
   @extend %styled-radius;
   object-position: top;
   object-fit: cover;
+  grid-row: 1/2;
 }
 
 .achievement__title {
@@ -116,4 +117,14 @@
   margin: 10px 0 0 0;
   width: 80vw;
   max-width: 360px;
+}
+
+.achievement__completion {
+  grid-column: 1/-1;
+  border-top: 1px white solid;
+  padding: 10px 5px 0 5px;
+  margin: 10px 0 0 0;
+  width: 80vw;
+  max-width: 360px;
+  font-size: var(--tinytext);
 }

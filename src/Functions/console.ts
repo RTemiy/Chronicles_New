@@ -1,8 +1,9 @@
-import { scenarioManager, statsManager } from '../index'
+import { achievementsManager, scenarioManager, statsManager } from '../index';
 import { EStoriesEn } from '../Utils/EStoriesNames'
 import showDebugger from '../Components/Debugger/Debugger'
 import { beginMiniGameMemory } from '../Components/MiniGameMemory/MiniGameMemory'
 import { showCaseSimulator } from '../Components/CaseSimulator/CaseSimulator';
+import { tsv2array } from './tsv2array'
 
 export function doCommand (input: string): void {
   const commands = input.split(' ')
@@ -28,6 +29,13 @@ export function doCommand (input: string): void {
         break
       case 'CaseSimulator':
         showCaseSimulator()
+        break
+      case 'AchievementsList':
+        achievementsManager.downloadCSV()
+        break
+      case 't2a':
+        commands.shift()
+        console.log(tsv2array(commands.join('\n')))
         break
     }
   })

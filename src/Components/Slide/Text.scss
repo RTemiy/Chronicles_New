@@ -26,6 +26,7 @@
   max-width: 300px;
   text-align: left;
   padding: 20px;
+  line-height: calc(1.8vh*1.2);
   @extend %show;
   @extend %styled-border;
   @extend %slide-container;

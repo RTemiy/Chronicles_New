@@ -11,6 +11,7 @@ $maxHeightShort: 583px;
   grid-row: 1;
   filter: drop-shadow(5px -2px 5px black);
   transition: opacity 0.5s ease-in-out;
+  image-rendering: smooth;
 }
 
 .slide__image-container {

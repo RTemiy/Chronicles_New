@@ -1,12 +1,13 @@
 import type IAchievement from '../Types/IAchievement'
 import lock from '../Images/UI/Lock.png'
-import { EStoriesAvailable, type EStoriesEn } from '../Utils/EStoriesNames';
+import { EStoriesAvailable, type EStoriesEn } from '../Utils/EStoriesNames'
 import { loadData, saveData } from '../Functions/localStorageManager'
-import { sendActivity } from '../Functions/GSAPI';
+import { sendActivity } from '../Functions/GSAPI'
 
 export default class CAchievementsManager {
   #achievements: Record<string, IAchievement> = {}
   readonly render: () => void
+  private csv: string = ''
   constructor (renderFunc: () => void) {
     this.render = renderFunc
   }
@@ -14,6 +15,19 @@ export default class CAchievementsManager {
   add (achievement: IAchievement): void {
     achievement.unlocked = loadData(['Achievements', achievement.story, achievement.name]) === 'true'
     this.#achievements[achievement.story + '_' + achievement.name] = achievement
+    this.csv += `${achievement.story},${achievement.name},${achievement.title}\n`
+  }
+
+  downloadCSV (): void {
+    let csv = ''
+    for (const achievementsKey in this.#achievements) {
+      csv += `${this.#achievements[achievementsKey].story},${this.#achievements[achievementsKey].name},${this.#achievements[achievementsKey].title}\n`
+    }
+    const a = document.createElement('a')
+    const file = new Blob([csv], { type: 'text/csv' })
+    a.href = URL.createObjectURL(file)
+    a.download = 'achievementsList.csv'
+    a.click()
   }
 
   isUnlocked (story: EStoriesEn, name: string): boolean {
@@ -48,6 +62,12 @@ export default class CAchievementsManager {
     }
   }
 
+  updateAchievementsInfo (data: string[][]): void {
+    data.forEach(a => {
+      this.#achievements[`${a[0]}_${a[1]}`].completion = a[2]
+    })
+  }
+
   getAchievementsHTML (story?: string): string {
     let render = ''
     for (const prop in this.#achievements) {
@@ -57,6 +77,7 @@ export default class CAchievementsManager {
         <img class="achievement__image" src="${this.#achievements[prop].unlocked ? this.#achievements[prop].image : lock}">
         <p class="achievement__title">${this.#achievements[prop].title}</p>
         <p class="achievement__text">${this.#achievements[prop].text}</p>
+        ${this.#achievements[prop].completion !== undefined && this.#achievements[prop].completion !== '0,0%' ? `<p class="achievement__completion">Это достижение есть у ${this.#achievements[prop].completion} игроков</p>` : ''}
       </div>
       `)
       }

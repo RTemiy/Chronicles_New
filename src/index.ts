@@ -31,6 +31,7 @@ import { Wardrobe } from './Components/Wardrobe/Wardrobe'
 import { Profile } from './Components/Profile/Profile'
 import { showRate } from './Components/Rate/Rate'
 import { checkURL } from './Functions/checkURL'
+import { achievementsData } from './Utils/achievementsData';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -55,6 +56,8 @@ loadStories(EStoriesEn)
 hideDisclaimer()
 
 renderLoadingScreen(require('./Images/UI/loadingscreen.png'), () => {})
+
+achievementsManager.updateAchievementsInfo(achievementsData)
 
 preCacheImages(LoadingScreen.loadingPercent, () => {
   storiesManager.render()

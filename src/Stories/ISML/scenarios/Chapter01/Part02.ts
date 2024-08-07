@@ -2159,14 +2159,31 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 134,
     text:
       `
-        — Передо мной лежало не просто тело, а чей-то бывший мир, чьи-то воспоминания и эмоции. Человеческая жизнь столь хрупка, что одно неверное движение может стать фатальным.<p>— Смирнов, подойдите, — произнес профессор, указывая на меня. 
+        — Передо мной лежало не просто тело, а чей-то бывший мир, чьи-то воспоминания и эмоции. Человеческая жизнь столь хрупка, что одно неверное движение может стать фатальным.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 300
+      }],
+    beforeBegin: whiteFlash,
+    speaker: 'Александр Сергеевич',
+    imageFront: require('../../../../Images/ISML/Persons/AS_Nowadays.png'),
+    imageBorder: require('../../../../Images/ISML/UI/Border.png'),
+    imageBack: require('../../../../Images/ISML/Backgrounds/Morgue.jpg')
+  },
+
+  {
+    id: 300,
+    text:
+      `
+        — Смирнов, подойдите, — произнес профессор, указывая на меня. 
       `,
     buttons: [
       {
         text: '',
         goTo: 135
       }],
-    beforeBegin: whiteFlash,
     speaker: 'Александр Сергеевич',
     imageFront: require('../../../../Images/ISML/Persons/AS_Nowadays.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
@@ -2228,7 +2245,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 138,
     text:
       `
-        Я подошел ближе, взял скальпель и, пытаясь сосредоточиться, начал делать разрез. В этот момент я подумал о том, как важно каждое движение. Ведь в будущем, на настоящих операциях, от этого будет зависеть чья-то жизнь.<p>Рука предательски дернулась. Я допустил ошибку — скальпель соскользнул, и я повредил важный сосуд.
+        Я подошел ближе, взял скальпель и, пытаясь сосредоточиться, начал делать разрез. В этот момент я подумал о том, как важно каждое движение. Ведь в будущем, на настоящих операциях, от этого будет зависеть чья-то жизнь.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 301
+      }],
+    imageFront: require('../../../../Images/ISML/Objects/Scalpel.png'),
+    imageBorder: require('../../../../Images/ISML/UI/Border.png'),
+    imageBack: require('../../../../Images/ISML/Backgrounds/Morgue.jpg')
+  },
+
+  {
+    id: 301,
+    text:
+      `
+        Рука предательски дернулась. Я допустил ошибку — скальпель соскользнул, и я повредил важный сосуд.
       `,
     buttons: [
       {
@@ -2402,7 +2435,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 149,
     text:
       `
-        — Ты переживаешь, потому что тебе не все равно, и это хорошо.<p> <p>— Но не позволяй этой ошибке сломать тебя. Этот Петр Григорьевич настоящий черствый и злобный хрыч. Нашел из-за чего расстраиваться. А еще это был труп, а не живой человек.
+        — Ты переживаешь, потому что тебе не все равно, и это хорошо.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 302
+      }],
+    speaker: 'Андрей',
+    imageFront: require('../../../../Images/ISML/Persons/Andrey.png'),
+    imageBorder: require('../../../../Images/ISML/UI/Border.png'),
+    imageBack: require('../../../../Images/ISML/Backgrounds/Morgue.jpg')
+  },
+
+  {
+    id: 302,
+    text:
+      `
+        — Но не позволяй этой ошибке сломать тебя. Этот Петр Григорьевич настоящий черствый и злобный хрыч. Нашел из-за чего расстраиваться. А еще это был труп, а не живой человек.
       `,
     buttons: [
       {
@@ -3248,7 +3298,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: 'Ты не прав, меня обидели и разозлили',
         goTo: 216
       }],
-    message: 'Сейчас вы решите, какой хотите видеть Нину. По пути лисы героиня героиня более сдержанная, может контролировать свой гнев, а по пути льва она ведет себя более вспыльчиво, ей труднее владеть эмоциями',
+    message: 'Сейчас вы решите, какой хотите видеть Нину. По пути лисы героиня более сдержанная, может контролировать свой гнев, а по пути льва она ведет себя более вспыльчиво, ей труднее владеть эмоциями',
     speaker: 'Марк',
     imageFront: require('../../../../Images/ISML/Persons/Mark.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
@@ -3822,7 +3872,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 233,
     text:
       `
-        «Просто расслабься.» 
+        «Просто расслабься».
       `,
     buttons: [
       {
