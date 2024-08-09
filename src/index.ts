@@ -31,7 +31,9 @@ import { Wardrobe } from './Components/Wardrobe/Wardrobe'
 import { Profile } from './Components/Profile/Profile'
 import { showRate } from './Components/Rate/Rate'
 import { checkURL } from './Functions/checkURL'
-import { achievementsData } from './Utils/achievementsData';
+import { achievementsData } from './Utils/achievementsData'
+import { Journal, renderJournal } from './Components/Journal/Journal'
+import CJournal from './Classes/CJournal'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -47,9 +49,10 @@ export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
 export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
 export const wardrobe = new CWardrobe(Wardrobe)
-export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, animateBackForth, renderInventory, showCutscene)
+export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, animateBackForth, renderInventory, renderJournal, showCutscene)
 export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, wardrobe)
 export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
+export const journal = new CJournal()
 
 loadStories(EStoriesEn)
 

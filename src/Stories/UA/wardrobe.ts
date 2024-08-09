@@ -1,32 +1,24 @@
 import { wardrobe } from '../../index'
-import { loadData } from '../../Functions/localStorageManager'
 
-/*wardrobe.addPerson('Hero', [{
-  image: require('../../Images/Immortals/Persons/Hero.png'),
-  title: 'Удобная кофта',
-  description: 'Просто и со вкусом. В черном всегда чувствуешь себя увереннее',
+wardrobe.addPerson('UA_Eve', [{
+  image: require('../../Images/UA/Persons/Eve_Poor_skin.png'),
+  title: 'Относительно чистое',
+  description: 'Выглядит практичным. И пятен крови за волосами совсем не видно.',
   cost: 'short',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Immortals/Persons/Hero_Shirt.png'),
-  title: 'Вечная классика',
-  description: 'Любимая рубашка, которая прошла со мной через огонь и воду',
+  image: require('../../Images/UA/Persons/Eve_Medium_skin.png'),
+  title: 'Байкерский прикид',
+  description: 'Железо, молнии, кожа — так в Нове ходят все.',
   cost: 'medium',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Immortals/Persons/Hero_Purple.png'),
-  title: 'Милый свитер',
-  description: 'Нет ничего лучше и красивее вещи твоего любимого цвета',
+  image: require('../../Images/UA/Persons/Eve_Rich_skin.png'),
+  title: 'Кожаный экстаз',
+  description: 'Больше поводов заглянуть в декольте — больше денег с самоуверенных идиотов.',
   cost: 'long',
   unlocked: () => { return true }
-},
-{
-  image: require('../../Images/Immortals/Persons/Hero_Clown.png'),
-  title: '<p style="color: fuchsia">Клоун',
-  description: 'Иногда я провожу праздники с Шерил, это своеобразное хобби',
-  cost: 'short',
-  unlocked: () => { return loadData(['Promo', 'ClownAvatar']) === '1' }
 }
-])*/
+])

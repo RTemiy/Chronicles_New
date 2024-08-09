@@ -29,6 +29,11 @@
   @extend %slide__toolbar-button;
 }
 
+.slide__journal-button{
+  background-image: url("../../Images/UI/icon_journal.svg");
+  @extend %slide__toolbar-button;
+}
+
 .slide__previous-button{
   background-image: url("../../Images/UI/icon_previous.svg");
   @extend %slide__toolbar-button;

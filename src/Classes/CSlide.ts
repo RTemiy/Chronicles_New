@@ -16,8 +16,10 @@ export default class CSlide {
     private readonly storiesElement: HTMLElement,
     private readonly menuToolbarElement: HTMLElement,
     private readonly inventoryElement: HTMLElement,
+    private readonly journalElement: HTMLElement,
     private readonly animateFunc: (element: HTMLElement, className: string, duration: number) => void,
     private readonly renderInventory: (story: EStoriesEn) => void,
+    private readonly renderJournal: () => void,
     readonly showCutScene: (cutSceneInfo: { video: string, goTo: () => void }) => void
   ) {
     this.addClicks()
@@ -227,6 +229,11 @@ export default class CSlide {
       this.slide.self.style.display = 'none'
       this.menuToolbarElement.style.display = 'flex'
       this.soundManager.play('menu')
+    }
+
+    this.slide.journalButton.onclick = () => {
+      this.renderJournal()
+      this.journalElement.style.display = 'flex'
     }
 
     this.slide.inventoryButton.onclick = () => {

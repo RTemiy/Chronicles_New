@@ -73,7 +73,7 @@ function showAdBook (): void {
 }
 
 function hideAdBook (): void {
-  Books.books.style.display = 'block'
+  Books.books.style.display = 'flex'
   Books.adBook.style.display = 'none'
 }
 

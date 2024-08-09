@@ -2,7 +2,7 @@ import { type EStoriesEn } from '../Utils/EStoriesNames'
 
 export default interface IStat {
   story?: EStoriesEn | string
-  category: 'Choice' | 'Person' | 'Item' | 'Effect' | Omit<string, 'Choice' | 'Person' | 'Item' | 'Effect'>
+  category: string
   id: string
   silent?: boolean
   idDescription?: string

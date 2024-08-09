@@ -1,0 +1,82 @@
+@import '../Common/Common';
+
+.journal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+  z-index: 10;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  @extend %show;
+}
+
+.journal__title{
+  font-size: 38px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px black;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+}
+
+.journal__block{
+  border-top: 1px solid white;
+  box-shadow: inset 0 7px 9px -7px rgba(0, 0, 0, 0.7);
+  overflow: scroll;
+  margin: 75px 25px 0 25px;
+}
+
+.journal__block::-webkit-scrollbar {
+  width: 8px;
+}
+
+.journal__part{
+  margin-bottom: 15px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 15px 0 15px 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  min-width: 100vw;
+  @extend %styled-border;
+}
+
+.journal__subtitle{
+  padding: 5px;
+  font-size: var(--bigtext);
+}
+
+.journal__part > p{
+  font-style: italic;
+  padding: 10px 10px 0 10px;
+}
+
+.journal__text{
+  font-style: italic;
+  padding: 0 10px;
+}
+
+
+.inventory__disabled {
+  display: none;
+}
+
+.journal__close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-image: url('../../Images/UI/icon_cross.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45px;
+  height: 45px;
+  z-index: 5;
+  @extend %button-tap;
+}

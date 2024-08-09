@@ -45,6 +45,7 @@ export const Slide = new CContainer('slide',
     </div>
     <div class="slide__toolbar">
         <button type="button" class="slide__inventory-button"></button>
+        <button type="button" class="slide__journal-button"></button>
         <button type="button" class="slide__previous-button"></button>
         <button type="button" class="slide__exit-button"></button>
     </div>
@@ -74,6 +75,7 @@ export const Slide = new CContainer('slide',
   { name: 'message', selector: '.slide__message' },
   { name: 'messageText', selector: '.slide__message-text' },
   { name: 'inventoryButton', selector: '.slide__inventory-button' },
+  { name: 'journalButton', selector: '.slide__journal-button' },
   { name: 'previousSlideButton', selector: '.slide__previous-button' },
   { name: 'exitSlideButton', selector: '.slide__exit-button' },
   { name: 'timer', selector: '.pie' },

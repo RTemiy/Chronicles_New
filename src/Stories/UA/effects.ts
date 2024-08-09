@@ -33,3 +33,14 @@ statsManager.add({
   showValue: true,
   story: EStoriesEn.UA
 })
+
+statsManager.add({
+  category: 'Effect',
+  id: 'Humanity',
+  name: 'Человечность',
+  image: require('../../Images/UA/Effects/Humanity.svg'),
+  title: 'Кто ты? Человек или Машина?',
+  description: 'Осторожнее. Иногда быть Человеком больно. А оставаться Машиной слишком холодно и одиноко.',
+  showValue: true,
+  story: EStoriesEn.UA
+})
