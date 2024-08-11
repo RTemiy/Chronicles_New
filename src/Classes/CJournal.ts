@@ -11,7 +11,6 @@ export default class CJournal {
   getHTML (story: EStoriesEn, chapter: number, part: number): string {
     let result = ''
     this.#pages.forEach(page => {
-      console.log(story, chapter, part)
       if (page.story === story && page.chapter <= chapter && page.part < part) {
         result +=
           `

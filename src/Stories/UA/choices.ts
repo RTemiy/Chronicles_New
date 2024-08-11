@@ -12,3 +12,24 @@ statsManager.add({
   id: 'Obey',
   story: EStoriesEn.UA
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'ChooseTarget',
+  idDescription: 'Выбрать цель',
+  story: EStoriesEn.UA
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'Obey_Command',
+  idDescription: 'Подчиниться приказу',
+  story: EStoriesEn.UA
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'Body',
+  idDescription: 'Тело',
+  story: EStoriesEn.UA
+})

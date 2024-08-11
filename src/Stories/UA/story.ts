@@ -23,16 +23,16 @@ storiesManager.add({
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           }
         },
-        /*{
+        {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Images/UA/Backgrounds/Lection_Hall.jpg'),
-          loadingImage: require('../../Images/UA/Covers/Part01.png'),
+          image: require('../../Images/UA/Backgrounds/Nova_Street.jpg'),
+          loadingImage: require('../../Images/UA/Covers/Part01_LS.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
-        },*/
+        },
         {
           name: 'Скоро',
           code: '0',

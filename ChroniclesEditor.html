@@ -851,17 +851,17 @@ onStart()
         // В зависимости от наличия ключевого слова делаем действие
         if(/! Фон:* /.test(scenes[name][x][y])) {
           // Заменяем картинку пустой строкой
-          scenes[name][x][y] = scenes[name][x][y].replace(/! Фон:* /, '');
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Фон:* /, '').trim().toUpperCase();
           // Добавляем название картинки в сэт
-          allPictures.add(scenes[name][x][y].trim().toUpperCase());
+          allPictures.add(scenes[name][x][y]);
           // Вырезаем и кешируем значение картинки
           picture = scenes[name][x].splice(y,1);
           // Обязательно откатываем шаг назад т.к. ВЫРЕЗАЛИ элемент массива
           y-=1;
         } else if (/! Объект:* /.test(scenes[name][x][y])) {
-          scenes[name][x][y] = scenes[name][x][y].replace(/! Объект:* /, '');
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Объект:* /, '').trim().toUpperCase();
           // Добавляем название картинки в сэт
-          allPictures.add(scenes[name][x][y].trim().toUpperCase());
+          allPictures.add(scenes[name][x][y]);
           // Заменяем ключевое слово на значение
           value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../../Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../../Images/$NAME$/UI/Border.png\'),`);
           y-=1;
@@ -921,8 +921,8 @@ onStart()
           y-=1;
         }
         else if (/! Предмет:* /.test(scenes[name][x][y])) {
-          scenes[name][x][y] = scenes[name][x][y].replace(/! Предмет:* /, '');
-          let word = scenes[name][x][y].trim().toUpperCase().split(' ');
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Предмет:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
           const itemAmount = word.pop();
           word = word.join(' ');
           allItems.add(word);
@@ -930,8 +930,8 @@ onStart()
           value = value.replaceAll('$ITEM$',`\n          { story: EStoriesEn.${name}, value: ${itemAmount}, category: 'Item', id: '&${word}&' },$ITEM$`);
           y-=1;
         } else if (/! Стат:* /.test(scenes[name][x][y])) {
-          scenes[name][x][y] = scenes[name][x][y].replace(/! Стат:* /, '');
-          let word = scenes[name][x][y].trim().toUpperCase().split(' ');
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Стат:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
           const statAmount = word.pop();
           word = word.join(' ');
           allStats.add(word);
@@ -940,8 +940,8 @@ onStart()
           y-=1;
         }
         else if (/! Персонаж:* /.test(scenes[name][x][y])) {
-          scenes[name][x][y] = scenes[name][x][y].replace(/! Персонаж:* /, '');
-          let word = scenes[name][x][y].trim().toUpperCase().split(' ');
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Персонаж:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
           const statAmount = word.pop();
           word = word.join(' ');
           allPersons.add(word);
