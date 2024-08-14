@@ -48,15 +48,19 @@
   @extend %styled-border;
 }
 
-.journal__subtitle{
-  padding: 5px;
-  font-size: var(--bigtext);
-}
-
 .journal__part > p{
   font-style: italic;
   padding: 10px 10px 0 10px;
 }
+
+.journal__subtitle{
+  margin: 0;
+  padding: 5px;
+  font-style: normal;
+  font-size: var(--bigtext);
+}
+
+
 
 .journal__text{
   font-style: italic;

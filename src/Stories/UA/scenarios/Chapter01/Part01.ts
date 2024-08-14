@@ -895,20 +895,33 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: 'Начать с Цели №1 (Наблюдатель)',
-        goTo: 57
+        goTo: 57,
+        func: () => {
+          timer.stop()
+        }
       },
       {
         text: 'Начать с Цели №2 (Подстрекатель)',
-        goTo: 60
+        goTo: 60,
+        func: () => {
+          timer.stop()
+        }
       },
       {
         text: 'Начать с Цели №3 (Сигнальщик)',
-        goTo: 70
+        goTo: 70,
+        func: () => {
+          timer.stop()
+        }
       },
       {
         text: 'Начать с Цели №4 (Главарь)',
-        goTo: 84
+        goTo: 84,
+        func: () => {
+          timer.stop()
+        }
       }],
+    beforeBegin: () => { timer.set(8, () => { scenarioManager.beginScene(70) }) },
     imageBack: require('../../../../Images/UA/Backgrounds/Nova_Street.jpg')
   },
 

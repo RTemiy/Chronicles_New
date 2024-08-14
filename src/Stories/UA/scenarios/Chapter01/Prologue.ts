@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { redFlash } from '../../../../Components/Slide/Slide'
+import { blackFlash, redFlash } from '../../../../Components/Slide/Slide';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -60,6 +60,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 4
       }],
     speaker: 'EVE-13C',
+    stats: [{ story: EStoriesEn.UA, value: 0, category: 'Person', id: 'Eve' }],
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
@@ -1275,6 +1276,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    simple: require('../../../../Sounds/UA/1Shot.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1663,6 +1665,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 109
       }],
+    beforeBegin: blackFlash,
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1677,6 +1680,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 110
       }],
+    beforeBegin: blackFlash,
     music: require('../../../../Sounds/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -1717,6 +1721,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 112
       }],
+    beforeBegin: redFlash,
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -1955,6 +1960,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 130
       }],
+    parallax: 'right',
     speaker: 'Раздраженный мужчина',
     imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -1973,6 +1979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 130
       }],
     speaker: 'Раздраженный мужчина',
+    parallax: 'right',
     imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
@@ -2290,6 +2297,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 150
       }],
+    parallax: 'right',
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Item', id: 'Neck' }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
@@ -2306,6 +2314,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 151
       }],
+    parallax: 'right',
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -2321,6 +2330,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 152
       }],
     speaker: 'Соракс',
+    parallax: 'right',
     imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
@@ -3157,6 +3167,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 155
       }],
+    simple: require('../../../../Sounds/UA/5Shots.mp3'),
     music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },

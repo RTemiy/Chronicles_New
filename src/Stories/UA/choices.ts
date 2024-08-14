@@ -22,7 +22,7 @@ statsManager.add({
 
 statsManager.add({
   category: 'Choice',
-  id: 'Obey_Command',
+  id: 'ObeyCommand',
   idDescription: 'Подчиниться приказу',
   story: EStoriesEn.UA
 })

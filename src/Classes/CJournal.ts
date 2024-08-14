@@ -15,12 +15,13 @@ export default class CJournal {
         result +=
           `
         <div class="journal__part">
-          <p class="journal__subtitle">Глава ${page.chapter} ${page.part === 0 ? 'Пролог' : `Часть ${page.part}`}</p>
+          <h3 class="journal__subtitle">Глава ${page.chapter} ${page.part === 0 ? 'Пролог' : `Часть ${page.part}`}</h3>
           <p class="journal__text">${page.text}</p>
         </div>
           `
       }
     })
+    result === '' && (result = '<div class="journal__part"><p class="journal__text">По ходу прохождения истории здесь будет появляться информация о пройденных частях!</p></div>')
     return result
   }
 }
