@@ -109,6 +109,16 @@ export const Credits = new CContainer(
 <p class="credits__name">Мария Мармажова</p>
 <p class="credits__name">Альбина</p>
 
+<p class="credits__role">ИСПОЛНИТЕЛЬ Artem Akmulin</p>
+<p class="credits__name">Separation (Музыка в меню)</p>
+<p class="credits__name">Under Fire (AEP - Пролог перестрелка)</p>
+<p class="credits__name">In the Night (Время крыс - Больница)</p>
+<p class="credits__name">Mad Waltz</p>
+<p class="credits__name">Love Theme (Время крыс - Любовная тема)</p>
+<p class="credits__name">State of Peace (Арена Юнитов - Спокойная тема)</p>
+<p class="credits__name">Common things</p>
+
+
 <h2 class="credits__subtitle">Тестирование</h2>
 <p class="credits__name">Анастасия Кобзева</p>
 
@@ -117,6 +127,8 @@ export const Credits = new CContainer(
 <p class="credits__name">Вероника</p>
 
 <img class="credits__image" src="${require('../../Images/UI/MVA.png')}">
+
+
 
 `
 )
