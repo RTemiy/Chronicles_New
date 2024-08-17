@@ -717,7 +717,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 43
       }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -732,7 +732,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 44
       }],
     simple: require('../../../../Sounds/ISML/Laugh.mp3'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -746,7 +746,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 45
       }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -763,7 +763,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     speaker: 'Нина',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ISML, 'Nina') },
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -780,7 +780,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     speaker: 'Лена',
     imageFront: require('../../../../Images/ISML/Persons/Lena.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -794,7 +794,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 48
       }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -811,7 +811,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     speaker: 'Нина',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ISML, 'Nina') },
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -825,7 +825,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 50
       }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -840,10 +840,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 51
       }],
     speaker: 'Профессор',
-    imageFront: require('../../../../Images/ISML/Persons/AS_Nowadays.png'),
+    imageFront: require('../../../../Images/ISML/Persons/Professorin_S.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -857,7 +857,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 52
       }],
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -874,7 +874,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     speaker: 'Лена',
     imageFront: require('../../../../Images/ISML/Persons/Lena.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -891,7 +891,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     speaker: 'Нина',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ISML, 'Nina') },
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/University.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -4180,6 +4180,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 253
       }],
     beforeBegin: purpleFlash,
+    music: require('../../../../Sounds/ISML/Dream.mp3'),
     ambient: require('../../../../Sounds/ISML/Waves.mp3'),
     stats: [
       { story: EStoriesEn.ISML, value: +1, category: 'Effect', id: 'Despair' }],

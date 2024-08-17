@@ -1,8 +1,8 @@
 import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
-import { askForInput } from '../../../../Components/TextInput/TextInput';
-import { saveData } from '../../../../Functions/localStorageManager';
+import { askForInput } from '../../../../Components/TextInput/TextInput'
+import { saveData } from '../../../../Functions/localStorageManager'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
@@ -16,7 +16,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
+    music: require('../../../../Sounds/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
@@ -4764,12 +4764,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 297,
     text:
       `
-        Осознание реальности тут же пристукнуло по темечку.<p>«Медблока нет, как и возможности получить квалифицированную помощь».
+        Осознание реальности тут же пристукнуло по темечку.
       `,
     buttons: [
       {
         text: '',
-        goTo: 298
+        goTo: 551
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
   },
@@ -6314,7 +6314,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 393,
     text:
       `
-        Что-то подсказывало Солдату не говорить о последствиях получения резистентности.<p>И вообще замолчать на эту тему.
+        Что-то подсказывало Солдату не говорить о последствиях получения резистентности. И вообще замолчать на эту тему.
       `,
     buttons: [
       {
@@ -7836,12 +7836,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 491,
     text:
       `
-        Старушка искренне дарила свою заботу. А $Имя Игрока$ открыто училась ее получать.<p> <p> <p>Однако в развернувшейся утопии Солдата была ложка дегтя.
+        Старушка искренне дарила свою заботу. А $Имя Игрока$ открыто училась ее получать.
       `,
     buttons: [
       {
         text: '',
-        goTo: 492
+        goTo: 552
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
   },
@@ -8062,14 +8062,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 505,
     text:
       `
-        Мужчина облизывался, наблюдая за выражением лица официантки. Пальцы двинулись выше, заползая под резинку трусов.<p>Тишина накрыла гудящий ранее зал. Словно все в напряжении наблюдали, как один из посетителей прилюдно засовывает руки под юбку, и ждали.<p>Но чего? Реакции?
+        Мужчина облизывался, наблюдая за выражением лица официантки. Пальцы двинулись выше, заползая под резинку трусов.
       `,
     buttons: [
       {
         text: '',
-        goTo: 506
+        goTo: 553
       }],
-    parallax: 'left',
     imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
   },
 
@@ -8785,5 +8784,64 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     achievement: { story: EStoriesEn.UA, name: 'Chapter01Part01Completed' },
     imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+  },
+
+  {
+    id: 551,
+    text:
+      `
+        «Медблока нет, как и возможности получить квалифицированную помощь».
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 298
+      }],
+    speaker: '$Имя Игрока$',
+    imageFront: require('../../../../Images/UA/Persons/Eve_Towel.png'),
+    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+  },
+  {
+    id: 552,
+    text:
+      `
+        Однако в развернувшейся утопии Солдата была ложка дегтя.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 492
+      }],
+    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+  },
+
+  {
+    id: 553,
+    text:
+      `
+        Тишина накрыла гудящий ранее зал. Словно все в напряжении наблюдали, как один из посетителей прилюдно засовывает руки под юбку, и ждали.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 554
+      }],
+    parallax: 'left',
+    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+  },
+  {
+    id: 554,
+    text:
+      `
+        Но чего? Реакции?
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 506
+      }],
+    parallax: 'right',
+    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
   }
 ])
