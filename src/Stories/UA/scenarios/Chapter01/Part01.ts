@@ -5948,6 +5948,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: 'Не брать',
         goTo: 373
       }],
+    imageFront: require('../../../../Images/UA/Objects/Rumka.png'),
+    imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
   },
 
