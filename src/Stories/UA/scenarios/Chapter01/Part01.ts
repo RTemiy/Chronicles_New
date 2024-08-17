@@ -2198,13 +2198,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         condition: () => {
           return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'ChooseTarget' }) === 1
         },
-        goTo: 136
+        goTo: 137
       },
       {
         condition: () => {
           return statsManager.get({ story: EStoriesEn.UA, category: 'Choice', id: 'ChooseTarget' }) === 2
         },
-        goTo: 137
+        goTo: 136
       },
       {
         condition: () => {
