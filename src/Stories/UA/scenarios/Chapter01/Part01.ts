@@ -4362,7 +4362,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 272,
     text:
       `
-        И вы?...
+        И вы?..
       `,
     buttons: [
       {
@@ -5586,7 +5586,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 347,
     text:
       `
-        Подожди, ты назвала меня Хозяином из-за этого?...
+        Подожди, ты назвала меня Хозяином из-за этого?..
       `,
     buttons: [
       {
@@ -7041,7 +7041,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 440,
     text:
       `
-        Что это?...
+        Что это?..
       `,
     buttons: [
       {
