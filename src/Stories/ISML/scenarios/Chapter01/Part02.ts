@@ -1459,7 +1459,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 89,
     text:
       `
-        — И из этого мы понимаем что …
+        — И из этого мы понимаем что…
       `,
     buttons: [
       {
@@ -2184,8 +2184,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 135
       }],
-    speaker: 'Александр Сергеевич',
-    imageFront: require('../../../../Images/ISML/Persons/AS_Nowadays.png'),
+    speaker: 'Петр Григорьевич',
+    imageFront: require('../../../../Images/ISML/Persons/PG.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Morgue.jpg')
   },
