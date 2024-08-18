@@ -119,13 +119,9 @@ module.exports = {
       lang: 'ru',
       display: 'standalone',
       related_applications: [
-        {
-          platform: 'play',
-          url: 'https://play.google.com/store/apps/details?id=com.mva.chronicles'
-        }
       ],
       orientation: 'portrait',
-      id: '/Chronicles_New/',
+      id: '/',
       scope: '/'
     }),
     new WorkboxPlugin.GenerateSW({
