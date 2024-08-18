@@ -43,7 +43,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Chapter01Part02Completed',
-  image: require('../../Images/ISML/Backgrounds/University.jpg'),
+  image: require('../../Images/ISML/Backgrounds/Night_Pound.jpg'),
   title: 'Ты не будешь одна',
   text: 'Пройти 2 часть',
   story: EStoriesEn.ISML

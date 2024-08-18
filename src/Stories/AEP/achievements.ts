@@ -35,7 +35,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'ItTakesTwo',
-  image: require('../../Images/AEP/Achievements/ItTakesTwo.JPG'),
+  image: require('../../Images/AEP/Achievements/ItTakesTwo.jpg'),
   title: 'Одного мне мало...',
   text: 'Переспите с двумя парнями в 1 части',
   story: EStoriesEn.AEP
