@@ -3350,7 +3350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 212
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3366,7 +3366,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 213
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3382,7 +3382,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 214
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3398,7 +3398,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 215
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3414,7 +3414,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 216
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3430,7 +3430,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 217
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3446,7 +3446,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 218
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3462,7 +3462,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 219
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3479,7 +3479,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 222
       }],
     message: 'Эцио был рад увидеть вас и провести приятную беседу',
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Aurora, value: +1, category: 'Person', id: 'Ezio' }],

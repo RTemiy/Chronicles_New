@@ -263,7 +263,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 15,
     text:
       `
-        — Да знаю я! — почти прокричала я.
+        — Да знаю я! — голос сорвался на крик.
       `,
     buttons: [
       {
@@ -1252,7 +1252,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 77
       }],
-    message: 'Он запомнит твой взгляд.',
+    message: 'Он запомнит твой взгляд',
     stats: [
       { story: EStoriesEn.ISML, value: +1, category: 'Person', id: 'AS' }],
     imageBack: require('../../../../Images/ISML/Backgrounds/Auditory.jpg')
@@ -2166,11 +2166,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         text: '',
         goTo: 300
       }],
-    beforeBegin: whiteFlash,
     speaker: 'Александр Сергеевич',
     imageFront: require('../../../../Images/ISML/Persons/AS_Nowadays.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
-    imageBack: require('../../../../Images/ISML/Backgrounds/Morgue.jpg')
+    imageBack: require('../../../../Images/ISML/Backgrounds/Corridor_Uni.jpg')
   },
 
   {
@@ -2185,6 +2184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
         goTo: 135
       }],
     speaker: 'Петр Григорьевич',
+    beforeBegin: whiteFlash,
     imageFront: require('../../../../Images/ISML/Persons/PG.png'),
     imageBorder: require('../../../../Images/ISML/UI/Border.png'),
     imageBack: require('../../../../Images/ISML/Backgrounds/Morgue.jpg')
@@ -4014,7 +4014,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
     id: 242,
     text:
       `
-        «Интересно, мне сегодня приснится что нибудь?»
+        «Интересно, мне сегодня приснится что-нибудь?»
       `,
     buttons: [
       {
