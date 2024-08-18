@@ -4084,7 +4084,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 255
       }],
-    message: 'Ками-сама — уважительное обращение к богу.',
+    message: 'Ками-сама — уважительное обращение к богу',
     speaker: 'Бабушка Юко',
     imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -4188,7 +4188,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 261,
     text:
       `
-        «Имя. Придумать имя. Чтобы что? Чем мой позывной так плох?».
+        «Имя. Придумать имя. Чтобы что? Чем мой позывной так плох?»
       `,
     buttons: [
       {
@@ -6891,7 +6891,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 431
       }],
-    message: 'Моти — японский десерт, сделанный из сладкого рисового теста, в которое заворачивают начинку.',
+    message: 'Моти — японский десерт, сделанный из сладкого рисового теста, в которое заворачивают начинку',
     speaker: 'Бабушка Юко',
     imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
