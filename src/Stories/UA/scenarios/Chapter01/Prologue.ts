@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { blackFlash, redFlash } from '../../../../Components/Slide/Slide';
+import { blackFlash, redFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -3106,8 +3106,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       '',
     buttons: [
       {
-        text: '',
-        goTo: 201
+        text: ''
       }],
     condition: [
       {
