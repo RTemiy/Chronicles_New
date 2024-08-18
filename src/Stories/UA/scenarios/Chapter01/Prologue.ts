@@ -1993,7 +1993,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 131
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')

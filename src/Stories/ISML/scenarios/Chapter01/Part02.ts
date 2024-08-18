@@ -2866,7 +2866,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глав
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 175
       }],
     speaker: 'Александр Сергеевич',

@@ -658,7 +658,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 42
       }],
     speaker: 'EVE-13C',
@@ -975,7 +976,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 60,
     text:
       `
-        >«Слишком близко стоит к Главарю. Который, в свою очередь, находится почти вплотную к старушке. Действовать надо быстро».
+        «Слишком близко стоит к Главарю. Который, в свою очередь, находится почти вплотную к старушке. Действовать надо быстро».
       `,
     buttons: [
       {
@@ -6362,7 +6363,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 397
       }],
     imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')

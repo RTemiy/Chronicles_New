@@ -40,7 +40,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 2,
     text:
       `
-        Следующие пару минут я бегала из стороны в сторону, пытаясь как можно скорее привести себя в нормальный вид, мысленно ругая себя за проступок.
+        Следующие пару минут я бегала из стороны в сторону, пытаясь как можно скорее привести себя в нормальный вид, мысленно ругая за проступок.
       `,
     buttons: [
       {
@@ -303,7 +303,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 17
       }],
     speaker: '$Имя Игрока$ ',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
+    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
@@ -371,7 +371,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 21,
     text:
       `
-        «Вроде бы нормально. Меня не ругают, не выставляют посмешищем, значит, на этот раз мне удалось избежать неприятностей».
+        «Вроде бы нормально. Меня не ругают, не выставляют посмешищем, значит, на этот раз удалось избежать неприятностей».
       `,
     buttons: [
       {
@@ -1514,7 +1514,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 89
       }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
@@ -1538,7 +1539,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 90,
     text:
       `
-        «Почему у других все получается легко, а у меня все через жопу?»
+        «Почему у других получается легко, а у меня все через жопу?»
       `,
     buttons: [
       {
@@ -5487,7 +5488,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     buttons: [
       {
         text: 'Нравилось',
-        goTo: 328
+        goTo: 328,
+        gift: true
       },
       {
         text: 'Было омерзительно',
@@ -6193,7 +6195,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
+        text: 'Продолжить',
+        gift: true,
         goTo: 373
       }],
     music: require('../../../../Sounds/AEP/Daily.mp3'),
@@ -6662,7 +6665,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     id: 399,
     text:
       `
-        Я встала с кровати и сладко потянулась, ведь встала вовремя.
+        Я встала с кровати и сладко потянулась, ведь проснулась вовремя.
       `,
     buttons: [
       {
