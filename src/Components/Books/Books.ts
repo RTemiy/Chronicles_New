@@ -56,9 +56,13 @@ export function startBooksTimer (): void {
   setInterval(() => {
     if (loadData(['Books_LastDate']) !== null) {
       const distance = +new Date() - +new Date(loadData(['Books_LastDate'])!)
-      distance > 7200000 && addBook()
+      if (distance > 10800000) {
+        addBook()
+        addBook()
+        addBook()
+      }
       Books.amount.innerText = loadData(['Books_amount'])!
-      const minutes = Math.floor((7200000 - distance) / 60000)
+      const minutes = Math.floor((10800000 - distance) / 60000)
       Books.help.innerText = 'Осталось: ' + String(minutes) + ' мин'
     } else {
       saveData(['Books_amount'], ['3'])
