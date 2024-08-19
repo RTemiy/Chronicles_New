@@ -519,7 +519,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 32,
     text:
       `
-        Наглая ухмылка расчертила лицо белобрысого парня.
+        Наглая ухмылка расчертила лицо черноволосого парня.
       `,
     buttons: [
       {

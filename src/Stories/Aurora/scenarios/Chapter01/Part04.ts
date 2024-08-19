@@ -3302,7 +3302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 209
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3318,7 +3318,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 210
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
@@ -3334,7 +3334,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 211
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Phone_Chat.png'),
+    imageFront: require('../../../../Images/Aurora/Objects/Phone_Call.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
