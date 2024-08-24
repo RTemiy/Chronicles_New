@@ -835,7 +835,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         condition: () => {
           return statsManager.get({ story: EStoriesEn.FOF, category: 'Person', id: 'Derek' }) <= 4
         },
-        goTo: 1000
+        goTo: 131
       }
     ],
     imageBack: require('../../../../Images/FOF/Backgrounds/Club_Street.jpg')
