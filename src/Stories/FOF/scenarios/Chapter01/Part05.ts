@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    simple: require('../../../../Sounds/FOF/Heartbeat.mp3'),
+    ambient: require('../../../../Sounds/FOF/Heartbeat.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
@@ -950,7 +950,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 1000
+        goTo: 131
       }],
     parallax: 'right',
     imageBack: require('../../../../Images/FOF/Backgrounds/Club_Street.jpg')
