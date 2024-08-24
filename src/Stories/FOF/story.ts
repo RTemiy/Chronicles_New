@@ -6,6 +6,7 @@ storiesManager.add({
   title: require('../../Images/FOF/Covers/Title.png'),
   description: 'Кассандра наслаждается находиться в центре внимания и готовится стать королевой бала. Но несчастный случай заставит девушку согласиться на сделку, которая изменит ее судьбу. Сможет ли она прожить чужую жизнь, отличить настоящее от воспоминаний, и раскрыть потенциал, который заложен в новом для нее теле?',
   genre: 'Фэнтези, Драма',
+  status: 'Новая часть',
   mature: true,
   chapters: [{
     name: 'Глава 1',
@@ -52,6 +53,26 @@ storiesManager.add({
       },
       {
         name: 'Часть 4',
+        code: '0',
+        image: require('../../Images/FOF/Backgrounds/Club.jpg'),
+        loadingImage: require('../../Images/FOF/Covers/Part04.jpg'),
+        event: (storyName: string, chapterName: string, partName: string, code: string) => {
+          scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+          statsManager.loadStats(false, storyName, chapterName, partName, code)
+        }
+      },
+      {
+        name: 'Часть 5',
+        code: '0',
+        image: require('../../Images/FOF/Backgrounds/Taxi_Forest.jpg'),
+        loadingImage: require('../../Images/FOF/Covers/Part05.jpg'),
+        event: (storyName: string, chapterName: string, partName: string, code: string) => {
+          scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+          statsManager.loadStats(false, storyName, chapterName, partName, code)
+        }
+      },
+      {
+        name: 'Часть 6',
         code: '0',
         image: require('../../Images/FOF/Backgrounds/Club.jpg'),
         loadingImage: require('../../Images/FOF/Covers/Part04.jpg'),
