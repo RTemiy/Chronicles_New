@@ -102,7 +102,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
             return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'DrinkAtParty' }) === 1
           },
           goTo: 8
-        },       
+        },
         {
           condition: () => {
             return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'GoToParty' }) === 0
