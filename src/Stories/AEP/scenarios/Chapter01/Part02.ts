@@ -2379,7 +2379,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         },
         {
           condition: () => {
-            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'CallMiguel' }) === 0
+            return statsManager.get({ story: EStoriesEn.AEP, category: 'Choice', id: 'LoveViktor' }) === 0
           },
           goTo: 185
         }
