@@ -152,7 +152,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: 'Смешаться с толпой',
-        goTo: 13,
+        goTo: 14,
         func: () => { timer.stop() }
       },
       {
@@ -607,7 +607,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 50
+        goTo: 51
       }],
     imageBack: require('../../../../Images/FOF/Backgrounds/Club_Street.jpg')
   },
@@ -621,7 +621,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 52
+        goTo: 53
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -1044,7 +1044,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 85
+        goTo: 87
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
