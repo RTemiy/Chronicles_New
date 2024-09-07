@@ -916,7 +916,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 76
+        goTo: 77
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -1280,7 +1280,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 104
+        goTo: 105
       }],
     message: 'Ты не смогла разговорить Дерека',
     speaker: 'Эбигейл',
@@ -1301,7 +1301,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 106
+        goTo: 107
       }],
     speaker: 'Дерек',
     imageFront: require('../../../../Images/FOF/Persons/Derek_Sweatshot.png'),
@@ -1318,7 +1318,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 108
+        goTo: 109
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -1572,7 +1572,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 128
+        goTo: 131
       }],
     speaker: 'Дерек',
     imageFront: require('../../../../Images/FOF/Persons/Derek_Sweatshot.png'),
@@ -1606,7 +1606,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 132
+        goTo: 133
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -1895,7 +1895,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 156
+        goTo: 157
       }],
     speaker: 'Кристофер',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Chris_Club') },
