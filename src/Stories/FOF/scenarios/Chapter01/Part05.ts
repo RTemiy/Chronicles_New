@@ -928,7 +928,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 77,
     text:
       `
-        Спасибо тебе за помощь, но я здесь не одна. Пойду к знакомому.
+        Спасибо тебе за помощь, но я здесь не одна.
       `,
     buttons: [
       {
@@ -945,7 +945,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 78,
     text:
       `
-        Парень равнодушно проводил меня взглядом. Казалось, Дереку была необходима поддержка, но я знала, что не была той, кто должен дать ему тепло. 
+        Парень равнодушно взглянул на меня, и тут же опустил затуманенный взгляд. Казалось, Дереку была необходима поддержка, но я знала, что не была той, кто должен дать ему тепло. 
       `,
     buttons: [
       {
@@ -1044,7 +1044,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 87
+        goTo: 86
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -1788,7 +1788,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 147
+        goTo: 148
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -1833,7 +1833,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 151
+        goTo: 152
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
