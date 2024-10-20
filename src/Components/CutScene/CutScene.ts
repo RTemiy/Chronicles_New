@@ -4,7 +4,7 @@ import CContainer from '../../Classes/CContainer'
 export const CutScene = new CContainer('cut-scene',
 	`
     	<div class='cut-scene__container'>
-    	<video autoplay muted loop playsinline class='cut-scene__image'>
+    	<video autoplay loop playsinline class='cut-scene__image'>
     	  <source src="" id="cutSceneSource" type="video/mp4"><source/>
       </video>
     	<button class='cut-scene__button'></button>
@@ -30,6 +30,7 @@ export function showCutscene (cutSceneInfo: { video: string, goTo: () => void })
     }, 100)
   }, 2000)
   CutScene.button.onclick = () => {
+    CutScene.video.pause()
     cutSceneInfo.goTo()
   }
 }
