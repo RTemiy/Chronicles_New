@@ -8,3 +8,11 @@ achievementsManager.add({
   text: 'Или ты не этого хотела?',
   story: EStoriesEn.OTV
 })
+
+achievementsManager.add({
+  name: 'Chapter01Part01Completed',
+  image: require('../../Images/OTV/Achievements/LongDay.jpg'),
+  title: 'Очень длинный день',
+  text: 'День, который перевернул твою жизнь',
+  story: EStoriesEn.OTV
+})
