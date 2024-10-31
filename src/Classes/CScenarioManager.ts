@@ -168,14 +168,20 @@ export default class CScenarioManager {
     this.slide.showAchievement(this.#achievementManager.unlock(achievement.story, achievement.name))
   }
 
-  #changeImages (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: TIMage, borderImage?: string): void {
+  #changeImages (backImage?: TIMage, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: TIMage, borderImage?: string): void {
     let front: any
+    let back: any
     if (frontImage !== undefined && typeof frontImage === 'function') {
       front = frontImage()
     } else if (frontImage !== undefined) {
       front = frontImage
     }
-    this.slide.changeImage(backImage, leftImage, middleImage, rightImage, front, borderImage)
+    if (backImage !== undefined && typeof backImage === 'function') {
+      back = backImage()
+    } else if (backImage !== undefined) {
+      back = backImage
+    }
+    this.slide.changeImage(back, leftImage, middleImage, rightImage, front, borderImage)
   }
 
   #doSounds (sounds: { music: string | undefined, ambient: string | undefined, simple: string | undefined }): void {

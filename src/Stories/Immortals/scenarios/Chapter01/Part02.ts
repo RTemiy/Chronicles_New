@@ -6227,7 +6227,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 389
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6245,7 +6245,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: 0, category: 'Person', id: 'Cheryl' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6259,7 +6259,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 391
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6277,7 +6277,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: 'Я предпочла скрыть правду',
         goTo: 396
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6294,7 +6294,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Cheryl' },
       { story: EStoriesEn.Immortals, value: +1, category: 'Choice', id: 'TellCherylTheTruth' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6309,7 +6309,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 394
       }],
     achievement: { story: EStoriesEn.Immortals, name: 'WantToBelieve' },
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6326,7 +6326,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     message: 'Шерил заинтересовалась историей',
     imageFront: require('../../../../Images/Immortals/Persons/Cheryl.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6340,7 +6340,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 398
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6354,7 +6354,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 397
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6373,7 +6373,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Cheryl' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6388,7 +6388,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 399
       }],
     music: require('../../../../Sounds/Immortals/Nowadays.mp3'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6402,7 +6402,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 400
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6416,7 +6416,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 401
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6430,7 +6430,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 402
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6446,7 +6446,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6460,7 +6460,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 404
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6474,7 +6474,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 405
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6488,7 +6488,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 406
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6502,7 +6502,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 407
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6516,7 +6516,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 408
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6532,7 +6532,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6548,7 +6548,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
   // @MARK
   {
@@ -6588,7 +6588,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 419
       }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6604,7 +6604,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6620,7 +6620,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6636,7 +6636,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6652,7 +6652,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6668,7 +6668,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6684,7 +6684,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6700,7 +6700,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6716,7 +6716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6732,7 +6732,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6748,7 +6748,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6764,7 +6764,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Mobile_Post.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6779,7 +6779,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         gift: true,
         goTo: 423
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6794,7 +6794,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 424
       }],
     stats: [{ category: 'Choice', id: 'TwoChoices', value: 2 }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6817,7 +6817,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 447
       }],
     message: 'Вы можете выбрать только 2 действия',
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6835,7 +6835,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       { story: EStoriesEn.Immortals, value: -1, category: 'Choice', id: 'TwoChoices' },
       { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'SpendTimeWithFamily' }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -6849,7 +6849,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 427
       }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7144,7 +7144,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       { story: EStoriesEn.Immortals, value: -1, category: 'Choice', id: 'TwoChoices' },
       { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'SpendTimeHomework' }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7164,7 +7164,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     afterAll: () => {
       statsManager.get({ story: EStoriesEn.Immortals, category: 'Effect', id: 'Study' }) > 5 && statsManager.change({ story: EStoriesEn.Immortals, value: -1, category: 'Effect', id: 'Study' })
     },
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7181,7 +7181,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     stats: [
       { story: EStoriesEn.Immortals, value: -1, category: 'Choice', id: 'TwoChoices' }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7213,7 +7213,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'WriteScarlett' }) >= 1 && scenarioManager.changeSceneButtonStatus(448, 2, false)
       statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'WriteCheryl' }) >= 1 && scenarioManager.changeSceneButtonStatus(448, 3, false)
     },
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7240,7 +7240,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 452
       }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7259,7 +7259,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7278,7 +7278,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7294,7 +7294,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7313,7 +7313,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Leon' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7341,7 +7341,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 457
       }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7360,7 +7360,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7379,7 +7379,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7395,7 +7395,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Chat.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7414,7 +7414,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Neitan' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7433,7 +7433,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     ],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7460,7 +7460,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 473
       }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7476,7 +7476,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7492,7 +7492,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7508,7 +7508,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7524,7 +7524,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7540,7 +7540,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7556,7 +7556,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7572,7 +7572,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7592,7 +7592,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7611,7 +7611,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7630,7 +7630,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: -1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7646,7 +7646,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Phone_Video.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7665,7 +7665,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Immortals, value: +1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7682,7 +7682,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     stats: [
       { story: EStoriesEn.Immortals, value: 1, category: 'Choice', id: 'WriteCheryl' }
     ],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7698,7 +7698,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       }],
     imageFront: require('../../../../Images/Immortals/Objects/Computergame.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7716,7 +7716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
     imageFront: require('../../../../Images/Immortals/Objects/Computergame.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     stats: [{ value: +1, category: 'Person', id: 'Cheryl' }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7733,7 +7733,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         }
       }],
     achievement: { story: EStoriesEn.Immortals, name: 'Chapter01Part02Completed' },
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7758,7 +7758,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       },
       goTo: 510
     }],
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
   {
@@ -7785,6 +7785,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
       statsManager.get({ story: EStoriesEn.Immortals, category: 'Choice', id: 'SpendTimeHomework' }) >= 1 && scenarioManager.changeSceneButtonStatus(510, 1, false)
     },
     message: 'У вас осталось 1 действие',
-    imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_Room.jpg')
+    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   }
 ])

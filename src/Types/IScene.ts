@@ -19,7 +19,7 @@ export default interface IScene {
   id: number
   buttons: IButton[]
   buttonsDefault?: IButton[]
-  imageBack?: string
+  imageBack?: string | (() => string)
   imageLeft?: string
   imageMiddle?: string
   imageRight?: string

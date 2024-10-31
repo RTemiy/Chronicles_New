@@ -1,6 +1,29 @@
 import { wardrobe } from '../../index'
 import { loadData } from '../../Functions/localStorageManager'
 
+wardrobe.addPerson('Hero_Room', [{
+  image: require('../../Images/Immortals/Backgrounds/Hero_Room.jpg'),
+  title: 'Комната 1',
+  description: 'Описание комнаты 1',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Immortals/Backgrounds/Hero_Room_Medium.jpg'),
+  title: 'Комната 2',
+  description: 'Описание комнаты 2',
+  cost: 'medium',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Immortals/Backgrounds/Hero_Room_Wealthy.jpg'),
+  title: 'Комната 3',
+  description: 'Описание комнаты 3',
+  cost: 'long',
+  unlocked: () => { return true }
+}
+])
+
 wardrobe.addPerson('Hero', [{
   image: require('../../Images/Immortals/Persons/Hero.png'),
   title: 'Удобная кофта',
