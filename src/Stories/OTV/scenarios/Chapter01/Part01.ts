@@ -482,7 +482,25 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
     id: 31,
     text:
       `
-        Зато вчерашнее приключение заставило меня отвлечься.<p> <p>«Что я слышала там? Они хотели кого-то убить? Но, раз людей они не трогают, то кого? И почему отпустили меня?» 
+        «Что я слышала там? Они хотели кого-то убить? Но, раз людей они не трогают, то кого? И почему отпустили меня?» 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 301
+      }],
+    music: require('../../../../Sounds/OTV/Secret.mp3'),
+    speaker: 'Ники',
+    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+  },
+
+  {
+    id: 301,
+    text:
+      `
+        Зато вчерашнее приключение заставило меня отвлечься.
       `,
     buttons: [
       {
@@ -791,7 +809,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
     id: 50,
     text:
       `
-        Я вспомнила, как нежно она дотронулась до парня и улыбнулась своей наивности. Резко спустившись в реальность, поняла: думать о вчерашнем было глупо, но вновь и вновь мои мысли поглощала встреча.
+        Я вспомнила, как нежно она дотронулась до парня и улыбнулась своей наивности.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 302
+      }],
+    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+  },
+
+  {
+    id: 302,
+    text:
+      `
+        Резко спустившись в реальность, поняла: думать о вчерашнем было глупо, но вновь и вновь мои мысли поглощала встреча.
       `,
     buttons: [
       {
@@ -994,8 +1026,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
     speaker: 'Ники',
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    stats: [
-      { story: EStoriesEn.OTV, value: +1, category: 'Person', id: 'Lina' }],
     imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
   },
 
@@ -1570,7 +1600,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 99
       }],
-    imageFront: require('../../../../Images/OTV/Items/Card.png'),
+    stats: [{ story: EStoriesEn.OTV, value: 1, category: 'Item', id: 'Lina_Number' }],
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
   },
@@ -2257,16 +2287,31 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
     buttons: [
       {
         text: 'Кто вы такие?',
-        goTo: 144
+        goTo: 144,
+        func: () => {
+          scenarioManager.changeSceneButtonStatus(143, 0, false)
+          scenarioManager.manageDialog(143, [0, 1, 2], [3])
+        }
       },
       {
         text: 'Какие ваши преимущества?',
-        goTo: 152
+        goTo: 152,
+        func: () => {
+          scenarioManager.changeSceneButtonStatus(143, 1, false)
+          scenarioManager.manageDialog(143, [0, 1, 2], [3])
+        }
       },
       {
         text: 'Что касается меня?',
-        goTo: 154
+        goTo: 154,
+        func: () => {
+          scenarioManager.changeSceneButtonStatus(143, 2, false)
+          scenarioManager.manageDialog(143, [0, 1, 2], [3])
+        }
       }],
+    beforeBegin: () => {
+      scenarioManager.resetSceneButtons(143)
+    },
     speaker: 'Ники',
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -2394,9 +2439,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
-        goTo: 157
+        text: ''
       }],
+    beforeBegin: () => {
+      scenarioManager.copySceneButtons(143, 151)
+    },
     speaker: 'Алекс пролог',
     imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -2428,9 +2475,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
-        goTo: 157
+        text: ''
       }],
+    beforeBegin: () => {
+      scenarioManager.copySceneButtons(143, 153)
+    },
     speaker: 'Алекс',
     imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -2479,9 +2528,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: '',
-        goTo: 157
+        text: ''
       }],
+    beforeBegin: () => {
+      scenarioManager.copySceneButtons(143, 156)
+    },
     speaker: 'Алекс',
     imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -3018,7 +3069,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
     id: 190,
     text:
       `
-        Мне пора домой. Завтра у меня зачет, надо подготовиться. Тем более уже темно.
+        Мне пора домой. Завтра у меня зачет, надо подготовиться. Тем более уже вечереет.
       `,
     buttons: [
       {
@@ -3255,15 +3306,32 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
     id: 205,
     text:
       `
-        С детства мне твердили, что я должен защищать сестру и не подвести семью, должен много чего изучить, исследовать.<p> <p>У тебя есть и сестра?
+        С детства мне твердили, что я должен защищать сестру и не подвести семью, должен много чего изучить, исследовать.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 300
+      }],
+    speaker: 'Алекс',
+    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+  },
+
+  {
+    id: 300,
+    text:
+      `
+        У тебя есть и сестра?
       `,
     buttons: [
       {
         text: '',
         goTo: 206
       }],
-    speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
+    speaker: 'Ники',
+    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
@@ -3311,6 +3379,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 209
       }],
     speaker: 'Ники',
+    stats: [{ story: EStoriesEn.OTV, value: +1, category: 'Person', id: 'Lina' }],
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')

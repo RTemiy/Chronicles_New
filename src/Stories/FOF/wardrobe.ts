@@ -63,3 +63,27 @@ wardrobe.addPerson('Chris_Club', [
     unlocked: () => { return true }
   }
 ])
+
+wardrobe.addPerson('Abigeil_Part06', [
+  {
+    image: require('../../Images/FOF/Persons/Abigeil_Primitive.png'),
+    title: 'Примитивность',
+    description: 'Первый попавшийся наряд.',
+    cost: 'short',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Persons/Abigeil_Shy.png'),
+    title: 'Скромность',
+    description: 'Базовый топ.',
+    cost: 'medium',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Persons/Abigeil_Femine.png'),
+    title: 'Женственность',
+    description: 'Красивая рубашка. Стильно.',
+    cost: 'long',
+    unlocked: () => { return true }
+  }
+])
