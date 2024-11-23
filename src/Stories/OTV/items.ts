@@ -14,7 +14,7 @@ statsManager.add({
 statsManager.add({
   category: 'Item',
   id: 'Lina_Number',
-  name: 'Телефон',
+  name: 'Листок',
   image: require('../../Images/OTV/Items/Card.png'),
   title: 'Визитка в стиле минимализм.',
   description: 'Лина написала мне свой номер в надежде, что я позвоню. Стоит воспользоваться этим шансом когда-нибудь.',

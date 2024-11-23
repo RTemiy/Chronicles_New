@@ -1723,14 +1723,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
   {
     id: 142,
     text:
-      `
-        ! Кат-сцена: Кристофер и девушка на барной стойке
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 143
+        text: ''
       }],
+    cutScene: { video: require('../../../../Images/FOF/CutScenes/Bar.mp4'), goTo: 143 },
     imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
@@ -2660,7 +2658,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       {
         text: '',
         func: () => {
-          saveEndProgress('FOF', 'Глава 1', 'Часть 5', '0')
+          saveEndProgress('FOF', 'Глава 1', 'Часть 6', '0')
         }
       }],
     achievement: { story: EStoriesEn.FOF, name: 'Chapter01Part05Completed' },

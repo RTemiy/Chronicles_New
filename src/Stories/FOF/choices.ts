@@ -52,3 +52,10 @@ statsManager.add({
   idDescription: 'Скучать по Нику в клубе',
   story: EStoriesEn.FOF
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'SheIsBeautiful',
+  idDescription: 'Да, она великолепна',
+  story: EStoriesEn.FOF
+})

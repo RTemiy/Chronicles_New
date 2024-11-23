@@ -74,8 +74,8 @@ storiesManager.add({
       {
         name: 'Часть 6',
         code: '0',
-        image: require('../../Images/FOF/Backgrounds/Club.jpg'),
-        loadingImage: require('../../Images/FOF/Covers/Part04.jpg'),
+        image: require('../../Images/FOF/Backgrounds/Bath.jpg'),
+        loadingImage: require('../../Images/FOF/Covers/Part06.jpg'),
         event: (storyName: string, chapterName: string, partName: string, code: string) => {
           scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           statsManager.loadStats(false, storyName, chapterName, partName, code)

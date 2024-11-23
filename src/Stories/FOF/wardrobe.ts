@@ -87,3 +87,41 @@ wardrobe.addPerson('Abigeil_Part06', [
     unlocked: () => { return true }
   }
 ])
+
+wardrobe.addPerson('Breakfast', [
+  {
+    image: require('../../Images/FOF/Objects/Avocado.png'),
+    title: 'Тост с авокадо',
+    description: 'Универсальный и полезный завтрак.',
+    cost: 'short',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Objects/Cupcake.png'),
+    title: 'Кексы с глазурью',
+    description: 'Хочется сладкого, хотя, обычно я его почти не ем.',
+    cost: 'short',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Objects/Porridge.png'),
+    title: 'Овсянка',
+    description: 'Вкусный завтрак. Хочется фруктов.',
+    cost: 'short',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Objects/Cereal.png'),
+    title: 'Хлопья с молоком',
+    description: 'Выглядит аппетитно. Пускай и не совсем полезно.',
+    cost: 'short',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Objects/Salad.png'),
+    title: 'Салат',
+    description: 'Люблю овощи на завтрак.',
+    cost: 'short',
+    unlocked: () => { return true }
+  }
+])

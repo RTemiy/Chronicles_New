@@ -1,6 +1,6 @@
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { saveEndProgress, scenarioManager } from '../../../../index'
-import { whiteFlash } from '../../../../Components/Slide/Slide';
+import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
@@ -1024,6 +1024,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 63
       }],
     speaker: 'Ники',
+    stats: [{ story: EStoriesEn.OTV, value: +1, category: 'Person', id: 'Lina', silent: true }],
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
@@ -1058,7 +1059,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     stats: [
-      { story: EStoriesEn.OTV, value: -2, category: 'Person', id: 'Lina' }],
+      { story: EStoriesEn.OTV, value: -2, category: 'Person', id: 'Lina', silent: true }],
     imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
   },
 
@@ -1139,7 +1140,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 70
       }],
     stats: [
-      { story: EStoriesEn.OTV, value: -1, category: 'Person', id: 'Lina' }],
+      { story: EStoriesEn.OTV, value: -1, category: 'Person', id: 'Lina', silent: true }],
     imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
   },
 
@@ -2308,6 +2309,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
           scenarioManager.changeSceneButtonStatus(143, 2, false)
           scenarioManager.manageDialog(143, [0, 1, 2], [3])
         }
+      },
+      {
+        text: 'Продолжить',
+        goTo: 157,
+        isActive: false
       }],
     beforeBegin: () => {
       scenarioManager.resetSceneButtons(143)
@@ -3378,8 +3384,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 209
       }],
+    stats: [{ story: EStoriesEn.OTV, value: 0, category: 'Person', id: 'Lina' }],
     speaker: 'Ники',
-    stats: [{ story: EStoriesEn.OTV, value: +1, category: 'Person', id: 'Lina' }],
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
