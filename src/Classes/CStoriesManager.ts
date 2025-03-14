@@ -81,13 +81,15 @@ export default class CStoriesManager {
     return res
   }
 
+  // <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
+
   getStoriesHTML (): string {
     let result = ''
     this.#stories.forEach(story => {
       EStoriesAvailable[story.name] === 1 && (result += `
       <div class="story">
         <div class="story__image-container">
-            <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
+            <img class="story__image" src="${story.image}"/>
             ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
             <p class="story__genre">${story.genre}</p>

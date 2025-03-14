@@ -1,0 +1,22 @@
+@import '../Common/Common';
+
+.precache-loading__container{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 45;
+  @extend %show;
+}
+
+.precache-loading__text{
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius;
+  padding: 5px 10px;
+}
+
+

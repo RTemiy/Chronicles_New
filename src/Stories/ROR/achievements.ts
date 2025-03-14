@@ -128,3 +128,35 @@ achievementsManager.add({
   text: 'Попадите на праздник аристократов',
   story: EStoriesEn.ROR
 })
+
+achievementsManager.add({
+  name: 'Warrior',
+  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  title: 'Генерал кабацких войн',
+  text: 'Представиться барону Моргнеру военным',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'Bartender',
+  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  title: 'Великий купец юга',
+  text: 'Представиться барону Моргнеру торговцем',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'Busyman',
+  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  title: 'Деловая жилка',
+  text: 'Договориться с графиней Аделаидой о сотрудничестве',
+  story: EStoriesEn.ROR
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part04Completed',
+  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  title: 'С праздника на плаху',
+  text: 'Попадите в плен бургомистру Ульбрихту',
+  story: EStoriesEn.ROR
+})

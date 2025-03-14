@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "removeComments": true,
-    "suppressImplicitAnyIndexErrors": true,
     "ignoreDeprecations": "5.0",
     "strict": true,
+    "suppressImplicitAnyIndexErrors": true,
     "noImplicitAny": true,
     "noEmitOnError": true,
     "strictNullChecks": true,
