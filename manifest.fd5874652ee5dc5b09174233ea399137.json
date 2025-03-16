@@ -1,0 +1,47 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.827e6ff48102c935f7cb2966d335ab37.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.33ee571c5ddaf32e0264ccd2ec864b8a.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.efd8397f8c2cfc6048aa30f5873a5ac8.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.117560c5a694befa44d3e06f672f06ec.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.1f9fabf674812db9b4990a2b251c95f6.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.6abe021eacae7839a2d0f215d824550a.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Chronicles | Твой выбор",
+  "short_name": "Chronicles",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Много вариативная визуальная новелла",
+  "background_color": "black",
+  "theme_color": "#000000",
+  "theme-color": "black",
+  "lang": "ru",
+  "related_applications": [],
+  "id": "/",
+  "scope": "/"
+}
