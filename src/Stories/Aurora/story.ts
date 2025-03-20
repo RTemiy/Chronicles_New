@@ -2,7 +2,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'Aurora',
-  image: require('../../Images/Aurora/Covers/Story_Cover.png'),
+  image: require('../../Images/Aurora/Covers/Story_Cover.jpg'),
   title: require('../../Images/Aurora/Covers/Title.png'),
   description:
     'Когда-то вампиры считались мифом, однако нашей героине во время поисков своего брата, пришлось столкнуться с монстрами лицом к лицу. Теперь она невольно втянута в противостояние вампиров и людей, где ей предстоит распутать не один клубок тайн.',

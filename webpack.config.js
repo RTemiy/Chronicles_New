@@ -10,7 +10,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const WebpackPwaManifest = require('webpack-pwa-manifest')
-// const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin')
 
 module.exports = {
   entry: {
@@ -81,6 +80,7 @@ module.exports = {
       }
     ]
   },
+
   resolve: {
     extensions: ['*', '.js', '.ts']
   },
@@ -107,7 +107,8 @@ module.exports = {
       short_name: 'Chronicles',
       description: 'Много вариативная визуальная новелла',
       background_color: 'black',
-      theme_color: '#007769',
+      // theme_color: '#007769',
+      theme_color: '#000000',
       crossorigin: 'use-credentials',
       icons: [
         {

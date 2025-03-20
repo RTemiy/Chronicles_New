@@ -2,7 +2,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'UA',
-  image: require('../../Images/UA/Covers/Story_Cover.png'),
+  image: require('../../Images/UA/Covers/Story_Cover.jpg'),
   title: require('../../Images/UA/Covers/Title.png'),
   description:
     'Солдат-13, с детства обучаемая служить и исполнять приказы, попадает во внешний мир за стенами лаборатории. В место, не подчиняющееся заученным постулатам и законам. И теперь ей предстоит ответить на вопрос: как выжить в городе неона и прогресса, если единственный ее навык — убивать?',

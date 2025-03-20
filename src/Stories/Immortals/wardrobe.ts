@@ -3,24 +3,31 @@ import { loadData } from '../../Functions/localStorageManager'
 
 wardrobe.addPerson('Hero_Room', [{
   image: require('../../Images/Immortals/Backgrounds/Hero_Room.jpg'),
-  title: 'Комната 1',
-  description: 'Описание комнаты 1',
+  title: 'Путешественник',
+  description: 'Светлое и просторное помещение с минималистичным дизайном.',
   cost: 'short',
   unlocked: () => { return true }
 },
 {
   image: require('../../Images/Immortals/Backgrounds/Hero_Room_Medium.jpg'),
-  title: 'Комната 2',
-  description: 'Описание комнаты 2',
+  title: 'Невинность',
+  description: 'Чистая и ухоженная комната с милой атмосферой для отдыха и учебы.',
   cost: 'medium',
   unlocked: () => { return true }
 },
 {
   image: require('../../Images/Immortals/Backgrounds/Hero_Room_Wealthy.jpg'),
-  title: 'Комната 3',
-  description: 'Описание комнаты 3',
+  title: 'Лофт',
+  description: 'Гармоничное сочетание домашнего тепла и современного комфорта.',
   cost: 'long',
   unlocked: () => { return true }
+},
+{
+  image: require('../../Images/Immortals/Backgrounds/Hero_Room_Shop_1.jpg'),
+  title: 'Уединение',
+  description: 'Спальня-кабинет с изысканным изображением леса, создающим спокойствие.',
+  cost: 'short',
+  unlocked: () => { return loadData(['Shop', 'ShopId1']) === '1' }
 }
 ])
 

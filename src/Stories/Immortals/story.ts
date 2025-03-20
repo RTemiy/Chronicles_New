@@ -2,7 +2,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'Immortals',
-  image: require('../../Images/Immortals/Covers/Story_Cover.png'),
+  image: require('../../Images/Immortals/Covers/Story_Cover.jpg'),
   title: require('../../Images/Immortals/Covers/Title.png'),
   description:
     'Волею судьбы студентка была втянута в распри богов и бессмертных. Вам предстоит распутать множество тайн, встречаться с реальными историческими личностями, менять ход истории и понять: так ли прекрасна вечная жизнь?',

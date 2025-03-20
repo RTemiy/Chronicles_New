@@ -10,7 +10,10 @@ const PrecacheLoading = new CContainer('precache-loading',
 { name: 'loadingText', selector: '.precache-loading__text' }
 )
 
-export function setPercent (percent: number): void {
-  PrecacheLoading.loadingText.innerText = `Загрузка изображений: ${percent}%`
-  percent === 100 && (PrecacheLoading.self.style.display = 'none')
+export function setPercent (percent: string): void {
+  PrecacheLoading.loadingText.innerText = `Загрузка изображений: ${percent}`
+}
+
+export function disableLoading (): void {
+  PrecacheLoading.self.style.display = 'none'
 }

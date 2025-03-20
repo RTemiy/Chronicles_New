@@ -1,7 +1,7 @@
-import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index';
+import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { whiteFlash } from '../../../../Components/Slide/Slide';
-import { choiceDone, getChoice, resetChoices } from '../../../../Functions/5Choices';
+import { whiteFlash } from '../../../../Components/Slide/Slide'
+import { choiceDone, getChoice, resetChoices } from '../../../../Functions/5Choices'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глава 1', partName: 'Часть 6', code: '0' }, [
   {
@@ -886,7 +886,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 83
+        goTo: 57
       }],
     imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
@@ -900,7 +900,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 58
+        goTo: 83
       }],
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
@@ -1868,7 +1868,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 120,
     text:
       `
-        «Она смутилась или мне не показалось?»
+        «Она смутилась или мне показалось?»
       `,
     buttons: [
       {
@@ -2546,7 +2546,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: 'Решил поучаствовать в шоу «Кухня»',
         goTo: 164,
         func: () => {
-          choiceDone(0)
+          choiceDone(1)
           scenarioManager.changeSceneButtonStatus(160, 1, getChoice(1))
         }
       },
@@ -2554,7 +2554,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: 'Устраиваешь беспорядок',
         goTo: 167,
         func: () => {
-          choiceDone(0)
+          choiceDone(2)
           scenarioManager.changeSceneButtonStatus(160, 2, getChoice(2))
         }
       },
@@ -2616,12 +2616,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: ''
+        text: '',
+        goTo: 160
       }],
-    beforeBegin: () => {
-      scenarioManager.loadChoices(160)
-      scenarioManager.copySceneButtons(160, 163)
-    },
     speaker: 'Кристофер',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -2673,12 +2670,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: ''
+        text: '',
+        goTo: 160
       }],
-    beforeBegin: () => {
-      scenarioManager.loadChoices(160)
-      scenarioManager.copySceneButtons(160, 166)
-    },
     speaker: 'Кристофер',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -2730,12 +2724,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       `,
     buttons: [
       {
-        text: ''
+        text: '',
+        goTo: 160
       }],
-    beforeBegin: () => {
-      scenarioManager.loadChoices(160)
-      scenarioManager.copySceneButtons(160, 166)
-    },
     speaker: 'Кристофер',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -2822,7 +2813,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 175
+        goTo: 180
       }],
     wardrobe: { story: EStoriesEn.FOF, personId: 'Breakfast', goTo: 180 },
     parallax: 'right',
@@ -2866,7 +2857,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 182,
     text:
       `
-        Да. Сейчас тебя скрывает вроде что-то вроде дымки. Он просто не может тебя ощутить и найти. 
+        Да. Сейчас тебя скрывает что-то вроде дымки. Он просто не может тебя ощутить и найти. 
       `,
     buttons: [
       {
@@ -3567,7 +3558,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     id: 222,
     text:
       `
-        Решив скрасить поездку беседой, я спросила:<p>Знаешь, не думала, что ты мог бы накопить на такую машину. Так как ты смог себе ее позволить?
+        Решив скрасить поездку беседой, я спросила:
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 300
+      }],
+    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+  },
+
+  {
+    id: 300,
+    text:
+      `
+        Знаешь, не думала, что ты мог бы накопить на такую машину. Так как ты смог себе ее позволить?
       `,
     buttons: [
       {

@@ -1,6 +1,6 @@
 import importAllIDirectory from './importAllIDirectory'
 
-import { setPercent } from '../Components/PrecacheLoading/PrecacheLoading'
+import { disableLoading, setPercent } from '../Components/PrecacheLoading/PrecacheLoading'
 
 export default function preCacheImages (elementPercent: HTMLElement, endFunc: () => void): void {
   const allImages = importAllIDirectory(require.context('../Images/', true, /\.(png|jpe?g|svg)$/))
@@ -12,7 +12,8 @@ export default function preCacheImages (elementPercent: HTMLElement, endFunc: ()
       allLoadedFilesAmount++
       const percent = Math.ceil((allLoadedFilesAmount / (allImagesAmount)) * 100)
       elementPercent.innerText = 'Загрузка: ' + String(percent) + '%'
-      setPercent(percent)
+      setPercent(`${allLoadedFilesAmount}/${allImagesAmount} (${percent}%)`)
+      allLoadedFilesAmount === allImagesAmount && disableLoading()
     }
     img.src = allImages[allImagesKey]
   }

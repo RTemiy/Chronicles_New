@@ -14,7 +14,7 @@ export default function checkPromoCode (code: string): void {
   })
   if (result) {
     sendActivity(`Применяет промокод ${code}`)
-    showMessage(`Промокод успешно применен!<p>${des}`, 'Принять')
+    showMessage(`Получилось!<p>${des}`, 'Принять')
   } else {
     showMessage('Такого промокода нет', 'Ок')
   }

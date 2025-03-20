@@ -7,6 +7,7 @@ import CElementManager from '../../Classes/CElementManager'
 import { Slide } from '../Slide/Slide'
 import { loadData } from '../../Functions/localStorageManager'
 import { Profile, renderProfile } from '../Profile/Profile'
+import { renderShop, Shop } from '../Shop/Shop';
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
@@ -31,6 +32,10 @@ const MenuToolbar = new CContainer(
 	<img src="${require('../../Images/UI/icon_achievements.svg')}">
 	<!--<p>Достижения</p>-->
 </div>
+<div id="menu-toolbar_basket" class="menu-toolbar__item">
+	<img src="${require('../../Images/UI/icon_basket.svg')}">
+	<!--<p>Магазин</p>-->
+	</div>
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_user.svg')}">
 	<!--<p>Профиль</p>-->
@@ -42,10 +47,11 @@ const MenuToolbar = new CContainer(
 	{ name: 'storiesButton', selector: '#menu-toolbar_stories' },
 	{ name: 'settingsButton', selector: '#menu-toolbar_settings' },
 	{ name: 'achievementsButton', selector: '#menu-toolbar_achievements' },
-	{ name: 'profileButton', selector: '#menu-toolbar_profile' }
+	{ name: 'profileButton', selector: '#menu-toolbar_profile' },
+	{ name: 'shopButton', selector: '#menu-toolbar_basket' }
 )
 
-const toolBarButtonsManager = new CElementManager(MenuToolbar.settingsButton, MenuToolbar.achievementsButton, MenuToolbar.storiesButton, MenuToolbar.profileButton)
+const toolBarButtonsManager = new CElementManager(MenuToolbar.settingsButton, MenuToolbar.achievementsButton, MenuToolbar.storiesButton, MenuToolbar.profileButton, MenuToolbar.shopButton)
 
 toolBarButtonsManager.setCustomClassToChange('button-bright')
 
@@ -63,6 +69,12 @@ MenuToolbar.profileButton.onclick = () => {
   tabManagerMenu.open(Profile.self)
   renderProfile()
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.profileButton)
+}
+
+MenuToolbar.shopButton.onclick = () => {
+  tabManagerMenu.open(Shop.self)
+  renderShop()
+  toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.shopButton)
 }
 
 loadData(['LastSave_ScenarioInfo']) === null && MenuToolbar.continueButton.setAttribute('style', 'display: none')

@@ -2,7 +2,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'OTV',
-  image: require('../../Images/OTV/Covers/StoryCover_Image.png'),
+  image: require('../../Images/OTV/Covers/Story_Cover.jpg'),
   title: require('../../Images/OTV/Covers/Title.png'),
   description:
     'В вечер Хэллоуина Ники решает идти на концерт, не подозревая, к чему это приведет. Столкнувшись с парнем, она проследила за ним, став свидетелем неприятного разговора, но уходить было поздно. В тот вечер девушка обрела новую жизнь, а вместе с ней и вопросы, на которые предстоит искать ответы в Академии.',

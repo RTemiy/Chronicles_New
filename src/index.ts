@@ -34,11 +34,12 @@ import { checkURL } from './Functions/checkURL'
 import { achievementsData } from './Utils/achievementsData'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
+import { Shop } from './Components/Shop/Shop';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
 
-export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self, Profile.self)
+export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self, Profile.self, Shop.self)
 tabManagerMenu.addElementTo(Chapters.self, Books.self)
 tabManagerMenu.addElementTo(Stories.self, Books.self)
 tabManagerMenu.addElementTo(Parts.self, Books.self)

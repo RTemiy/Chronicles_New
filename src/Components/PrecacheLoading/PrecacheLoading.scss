@@ -15,7 +15,7 @@
 .precache-loading__text{
   @extend %styled-background;
   @extend %styled-border;
-  @extend %styled-radius;
+  border-radius: 0 0 10px 10px;
   padding: 5px 10px;
 }
 

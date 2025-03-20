@@ -15,6 +15,11 @@ export const promoCodes = [
     code: 'gjtlbntkmrjyrehcfhtgjcnjd',
     description: '<b>Аврора</b> <p>- <i style="color: lawngreen">"Цветочный" наряд',
     func: () => { saveData(['Promo', 'RepostVKCompetition'], ['1']) }
+  },
+  {
+    code: 'vfufpbyid1',
+    description: '<b>Бессмертные: Последняя надежда</b> <p>- <i>Название',
+    func: () => { saveData(['Shop', 'ShopId1'], ['1']) }
   }
   /* {
     code: 'qly52axc',
