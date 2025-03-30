@@ -3,8 +3,13 @@ import importAllIDirectory from './importAllIDirectory'
 import { disableLoading, setPercent } from '../Components/PrecacheLoading/PrecacheLoading'
 
 export default function preCacheImages (elementPercent: HTMLElement, endFunc: () => void): void {
-  const allImages = importAllIDirectory(require.context('../Images/', true, /\.(png|jpe?g|svg)$/))
+  const allImages = {
+    ...importAllIDirectory(require.context('../Images/', true, /Story_Cover\.jpg$/)),
+    ...importAllIDirectory(require.context('../Images/', true, /\.svg$/)),
+    ...importAllIDirectory(require.context('../Images/', true, /\.(png|jpe?g|svg)$/))
+  }
   const allImagesAmount = Object.keys(allImages).length
+  console.log(Object.keys(allImages))
   let allLoadedFilesAmount = 0
   for (const allImagesKey in allImages) {
     const img = new Image()
