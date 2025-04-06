@@ -2,12 +2,13 @@ import CContainer from '../../Classes/CContainer'
 import './Profile.scss'
 import './Avatars.scss'
 import './Events.scss'
+import './Promocodes.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { achievementsManager, storiesManager, tabManagerMenu } from '../../index'
 import Achievements from '../Achievements/Achievements'
 import CProfile from '../../Classes/CProfile'
 import { addBook } from '../Books/Books'
-import checkPromoCode from '../../Functions/checkPromoCode'
+import checkPromoCode, { getUsedPromoCodes } from '../../Functions/checkPromoCode';
 import { showMessage } from '../MenuMessage/MenuMessage'
 import { getEventsHTML } from './events'
 import { sendActivity } from '../../Functions/GSAPI'
@@ -66,6 +67,12 @@ export const Profile = new CContainer(
 	  <div class="avatars__block"></div>
 	</div>
 </div>
+
+<div class='promocodes'>
+  <p class="tab__title">Промокоды</p>
+  <div class='promocode__blocks'>
+  </div>
+</div>
 `,
 	{ name: 'name', selector: '.profile__input' },
 	{ name: 'firstLaunch', selector: '#firstLaunch' },
@@ -83,7 +90,8 @@ export const Profile = new CContainer(
 	{ name: 'events', selector: '.profile__events' },
 	{ name: 'promoInput', selector: '#promoInput' },
 	{ name: 'promoButton', selector: '#promoButton' },
-	{ name: 'infoButton', selector: '.icon_span' }
+	{ name: 'infoButton', selector: '.icon_span' },
+	{ name: 'promocodeBlocks', selector: '.promocode__blocks' }
 )
 
 export function renderProfile (): void {
@@ -97,6 +105,7 @@ export function renderProfile (): void {
   Profile.spentTime.innerHTML = transformMinutes(parseInt(loadData(['Profile', 'TimeSpent'])!))
   Profile.wastedBooks.innerHTML = String(loadData(['Profile', 'BooksWasted'])!)
   Profile.events.innerHTML = getEventsHTML()
+  updateUsedPromoCodes()
 }
 
 Profile.name.oninput = () => {
@@ -149,6 +158,20 @@ Profile.infoButton.onclick = () => {
 Profile.screenshotButton.onclick = () => {
   showMessage('Скриншот профиля сохранен', 'Принять')
   saveScreenshot(Profile.self.querySelector('#screen'))
+}
+
+function updateUsedPromoCodes(): void {
+  Profile.promocodeBlocks.innerHTML = ''
+  let result = ''
+  const availablePromocodes = getUsedPromoCodes()
+  availablePromocodes.forEach((promoCode) => {
+    result += `
+    <div class='promocode__block'>
+      <p class='promocode_title'>${promoCode}</p>
+    </div>
+    `
+  })
+  Profile.promocodeBlocks.innerHTML = result
 }
 
 export const profileManager = new CProfile(Profile)

@@ -1,0 +1,28 @@
+@import "../Common/Common";
+
+.promocodes{
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+.promocode__blocks{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.promocode__block{
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @extend %styled-border;
+  @extend %styled-radius;
+  @extend %styled-background;
+}
+
+.promocode_title{
+  text-align: left;
+}

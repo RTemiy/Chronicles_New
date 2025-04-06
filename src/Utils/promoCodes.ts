@@ -1,25 +1,28 @@
-import { saveData } from '../Functions/localStorageManager'
-
 export const promoCodes = [
   {
     code: 'ghbdtngegcbr',
-    description: '<b>Бессмертные: Последняя надежда</b> <p>- <i>Костюм клоуна',
-    func: () => { saveData(['Promo', 'ClownAvatar'], ['1']) }
+    description: '<b>Бессмертные: Последняя надежда</b> <p>- <i>Костюм клоуна</i></p>',
+    innerCode: 'Promo_ClownAvatar'
   },
   {
     code: 'demoBanner',
     description: 'Тестовый баннер',
-    func: () => { saveData(['Promo', 'DemoBanner'], ['1']) }
+    innerCode: 'Promo_DemoBanner'
   },
   {
     code: 'gjtlbntkmrjyrehcfhtgjcnjd',
-    description: '<b>Аврора</b> <p>- <i style="color: lawngreen">"Цветочный" наряд',
-    func: () => { saveData(['Promo', 'RepostVKCompetition'], ['1']) }
+    description: '<b>Аврора</b> <p>- <i style="color: lawngreen">"Цветочный" наряд</i></p>',
+    innerCode: 'Promo_RepostVKCompetition'
   },
   {
     code: 'vfufpbyid1',
-    description: '<b>Бессмертные: Последняя надежда</b> <p>- <i>Название',
-    func: () => { saveData(['Shop', 'ShopId1'], ['1']) }
+    description: '<b>Бессмертные: Последняя надежда</b> <p>- <i>Уединение</i></p>',
+    innerCode: 'Shop_ShopId1'
+  },
+  {
+    code: 'sxychrstpr',
+    description: '<b>Осколки чужой судьбы</b> <p>- <i>Название</i></p>',
+    innerCode: 'Shop_ShopId3'
   }
   /* {
     code: 'qly52axc',

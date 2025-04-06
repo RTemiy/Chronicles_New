@@ -1,13 +1,14 @@
 import CContainer from '../../Classes/CContainer'
 import './Shop.scss'
 import { shopItems } from '../../Utils/shopItems'
+import { showMessage } from '../MenuMessage/MenuMessage'
 
 export const Shop = new CContainer(
   'shop',
   `
-<p class="tab__title">Магазин</p>
+<p class="tab__title">Магазин <img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"/></p>
 <div class="shop__container">
-  <p class='shop__category-title' >Одежда</p>
+  <p class='shop__category-title' >Одежда </p>
   <div class='shop__category-items' id='wardrobeCategory'></div>
 </div>
 <div class="shop__container">
@@ -16,7 +17,8 @@ export const Shop = new CContainer(
 </div>
 `,
   { name: 'wardrobeCategory', selector: '#wardrobeCategory' },
-  { name: 'interiorCategory', selector: '#interiorCategory' }
+  { name: 'interiorCategory', selector: '#interiorCategory' },
+  { name: 'infoButton', selector: '.icon_span' }
 )
 
 export function renderShop (): void {
@@ -56,4 +58,12 @@ export function renderShop (): void {
       Shop.interiorCategory.querySelector(`#wardrobe_item_${item.id}`).onclick = () => { item.action() }
     }
   })
+}
+
+Shop.infoButton.onclick = () => {
+  showMessage(`
+  <p>Информация
+  <p>Информация
+  `
+  , 'Принять')
 }
