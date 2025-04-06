@@ -26,10 +26,10 @@ export const shopItems = [
   {
     id: 3,
     category: 'Гардероб',
-    title: 'Название',
-    description: 'Осколки чужой судьбы <p>Глава 1 Часть 4.</p><p>⠀</p><i>Информация</i>',
+    title: 'Сексуальный',
+    description: 'Осколки чужой судьбы <p>Глава 1 Часть 4.</p><p>⠀</p><i>Показывает его страсть и безразличие к правилам этого мира.</i>',
     cost: '39',
-    image: require('../Images/FOF/Persons/Christopher_Shirt.png'),
+    image: require('../Images/FOF/Persons/Christopher_Sexy.png'),
     free: true,
     action: () => { checkPromoCode('sxychrstpr') },
     available: true
@@ -45,5 +45,5 @@ export const shopItems = [
     free: false,
     action: () => {},
     available: true
-  },
+  }
 ]

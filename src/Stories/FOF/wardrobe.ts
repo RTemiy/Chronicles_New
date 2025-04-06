@@ -1,4 +1,5 @@
 import { wardrobe } from '../../index'
+import { loadData } from '../../Functions/localStorageManager';
 
 wardrobe.addPerson('Abigeil', [{
   image: require('../../Images/FOF/Persons/Abigeil_SimpleGirl.png'),
@@ -61,6 +62,13 @@ wardrobe.addPerson('Chris_Club', [
     description: 'Выглядит отлично.',
     cost: 'long',
     unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Persons/Christopher_Sexy.png'),
+    title: 'Сексуальный',
+    description: 'Показывает его страсть и безразличие к правилам этого мира.',
+    cost: 'long',
+    unlocked: () => { return loadData(['Shop', 'ShopId3']) === '1' }
   }
 ])
 

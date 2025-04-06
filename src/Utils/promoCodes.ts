@@ -21,7 +21,7 @@ export const promoCodes = [
   },
   {
     code: 'sxychrstpr',
-    description: '<b>Осколки чужой судьбы</b> <p>- <i>Название</i></p>',
+    description: '<b>Осколки чужой судьбы</b> <p>- <i>Сексуальный</i></p>',
     innerCode: 'Shop_ShopId3'
   }
   /* {

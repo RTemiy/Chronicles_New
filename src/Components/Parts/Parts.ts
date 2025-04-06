@@ -54,6 +54,7 @@ export const renderParts = (storyName: string, chapterName: string): void => {
         addListener()
       } else {
         partElements[index].style.filter = 'grayscale(100%)'
+        partElements[index].querySelector('.part__tick').src = require('../../Images/UI/icon_notick.svg')
       }
     })
   })
