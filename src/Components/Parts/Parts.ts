@@ -52,11 +52,21 @@ export const renderParts = (storyName: string, chapterName: string): void => {
       } else if (partData.index === 0 && index === 0) {
         statsManager.resetStats()
         addListener()
+        partElements[index].querySelector('.part__tick').style.display = 'none'
+        partElements[index].querySelector('.part__tick').src = require('../../Images/UI/icon_notick.svg')
       } else {
         partElements[index].style.filter = 'grayscale(100%)'
+        partElements[index].querySelector('.part__tick').style.display = 'none'
         partElements[index].querySelector('.part__tick').src = require('../../Images/UI/icon_notick.svg')
       }
     })
+  })
+  const tickElements = Parts.container.querySelectorAll('.part__tick')
+  tickElements.forEach((tickElement: any, index: number) => {
+    if (index < tickElements.length - 1) {
+      console.log(tickElements[index].style)
+      tickElements[index + 1].style.display === 'none' && (tickElement.src = require('../../Images/UI/icon_notick.svg'))
+    }
   })
 }
 
