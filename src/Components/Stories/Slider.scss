@@ -7,15 +7,16 @@
 }
 
 .slider__check {
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
   @extend %styled-background;
   border-radius: 50px;
   transition: all 0.5s ease-in-out;
 }
 
 .slider__check_active {
-  background-color: white;
+  background: #007081;
   transform: scale(1.5);
-  margin: 0 5px;
+  margin: 0 10px;
 }

@@ -5,13 +5,14 @@ import '../Common/StoriesStyles.scss'
 import { storiesManager, tabManagerMenu } from '../../index'
 import Chapters, { renderChapters } from '../Chapters/Chapters'
 import { showMessage } from '../MenuMessage/MenuMessage'
+import { DesktopMode } from '../../Utils/technicalConsts'
 
 const Stories = new CContainer(
   'stories',
   `
-<p class="tab__title">Истории<img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"/></p>
+<p class="tab__title">Истории<img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span" ${DesktopMode && 'style="display: none;"'}/></p>
 <div class="stories__container"></div>
-<div class="stories__slider-checkbox"></div>
+<div class="stories__slider-checkbox" ></div>
 `,
   { name: 'storiesContainer', selector: '.stories__container' },
   { name: 'sliderCheckbox', selector: '.stories__slider-checkbox' },

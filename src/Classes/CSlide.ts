@@ -5,6 +5,7 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
+import { DesktopMode } from '../Utils/technicalConsts';
 
 export default class CSlide {
   private previousSlideText = ''
@@ -181,7 +182,7 @@ export default class CSlide {
             buttons[index].func!()
           }
         } else {
-          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span"/></p>`
+          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span" ${DesktopMode && 'style="display: none;"'}/></p>`
           buttonsArray[index].onclick = () => {
             showAd('medium', () => {
               buttons[index].func!()

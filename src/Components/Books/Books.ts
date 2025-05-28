@@ -2,13 +2,13 @@ import CContainer from '../../Classes/CContainer'
 import './Books.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { showMessage } from '../MenuMessage/MenuMessage'
-import { devMode } from '../../Utils/technicalConsts'
+import { DesktopMode, devMode } from '../../Utils/technicalConsts';
 import { showAd } from '../../Functions/advertisement'
 
 export const Books = new CContainer(
   'books',
   `
-  <div class="books__container">
+  <div class="books__container" ${DesktopMode && 'style="display: none;"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>
     <p class="books__text"></p>
     <p class="books__help"></p>
@@ -27,6 +27,7 @@ export function addBook (): void {
   const booksAmount = parseInt(loadData(['Books_amount'])!)
   if (booksAmount >= 3) {
     devMode && saveData(['Books_amount'], [1000])
+    DesktopMode && saveData(['Books_amount'], [1000])
   } else {
     hideAdBook()
     showMessage(`Вы получили<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')

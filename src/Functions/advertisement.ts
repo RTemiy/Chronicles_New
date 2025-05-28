@@ -2,13 +2,15 @@
 // @ts-nocheck
 
 import { showMessage } from '../Components/MenuMessage/MenuMessage'
-import { devMode } from '../Utils/technicalConsts'
+import { DesktopMode, devMode } from '../Utils/technicalConsts';
 
 type ad = 'short' | 'medium' | 'long'
 
 export function showAd (type: ad, onAccepted: () => void): void {
   !window.navigator.onLine && showMessage('Отсутствует подключение к интернету!', 'Принять')
   if (devMode) {
+    onAccepted()
+  } else if (DesktopMode){
     onAccepted()
   } else {
     let resCode = ''
