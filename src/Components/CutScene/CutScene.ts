@@ -1,5 +1,7 @@
 import './CutScene.scss'
 import CContainer from '../../Classes/CContainer'
+import { loadData, saveData } from '../../Functions/localStorageManager';
+import Settings from '../Settings/Settings';
 
 export const CutScene = new CContainer('cut-scene',
 	`
@@ -20,6 +22,7 @@ export function showCutscene (cutSceneInfo: { video: string, goTo: () => void })
   setTimeout(() => {
     CutScene.self.classList.add('cut-scene_show')
     CutScene.source.setAttribute('src', cutSceneInfo.video)
+    CutScene.video.muted = loadData(['Settings_Sound'])
     CutScene.video.load()
     CutScene.video.play()
   }, 100)

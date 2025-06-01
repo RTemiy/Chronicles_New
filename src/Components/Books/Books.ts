@@ -13,7 +13,7 @@ export const Books = new CContainer(
     <p class="books__text"></p>
     <p class="books__help"></p>
   </div>
-  <div class="ad_book">
+  <div class="ad_book" ${!DesktopMode && 'style="display: none"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency_add.svg')}"/>
   </div>
   `,

@@ -8,6 +8,7 @@ import { Slide } from '../Slide/Slide'
 import { loadData } from '../../Functions/localStorageManager'
 import { Profile, renderProfile } from '../Profile/Profile'
 import { renderShop, Shop } from '../Shop/Shop';
+import { DesktopMode } from '../../Utils/technicalConsts';
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
@@ -39,6 +40,10 @@ const MenuToolbar = new CContainer(
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_user.svg')}">
 	<!--<p>Профиль</p>-->
+		</div>
+	<div id="menu-toolbar_exit" class="menu-toolbar__item" ${!DesktopMode && 'style="display: none"'}>
+	<img src="${require('../../Images/UI/icon_exit.svg')}">
+	<!--<p>Выход</p>-->
 
 </div>
 `,
@@ -48,7 +53,8 @@ const MenuToolbar = new CContainer(
 	{ name: 'settingsButton', selector: '#menu-toolbar_settings' },
 	{ name: 'achievementsButton', selector: '#menu-toolbar_achievements' },
 	{ name: 'profileButton', selector: '#menu-toolbar_profile' },
-	{ name: 'shopButton', selector: '#menu-toolbar_basket' }
+	{ name: 'shopButton', selector: '#menu-toolbar_basket' },
+	{ name: 'exitButton', selector: '#menu-toolbar_exit' }
 )
 
 const toolBarButtonsManager = new CElementManager(MenuToolbar.settingsButton, MenuToolbar.achievementsButton, MenuToolbar.storiesButton, MenuToolbar.profileButton, MenuToolbar.shopButton)
@@ -75,6 +81,10 @@ MenuToolbar.shopButton.onclick = () => {
   tabManagerMenu.open(Shop.self)
   renderShop()
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.shopButton)
+}
+
+MenuToolbar.exitButton.onclick = () => {
+  window.close()
 }
 
 loadData(['LastSave_ScenarioInfo']) === null && MenuToolbar.continueButton.setAttribute('style', 'display: none')

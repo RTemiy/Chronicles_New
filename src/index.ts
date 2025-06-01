@@ -34,7 +34,7 @@ import { checkURL } from './Functions/checkURL'
 import { achievementsData } from './Utils/achievementsData'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
-import { Shop } from './Components/Shop/Shop';
+import { Shop } from './Components/Shop/Shop'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })

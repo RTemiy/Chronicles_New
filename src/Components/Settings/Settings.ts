@@ -9,6 +9,8 @@ import { MenuMessage, showMessage } from '../MenuMessage/MenuMessage'
 import { showAd } from '../../Functions/advertisement'
 import makeExplosion from '../../Functions/explosion'
 import downloadProgress from '../../Functions/downloadProgress'
+import { toggleFullscreen } from '../../Functions/desktopFuncs'
+import { DesktopMode } from '../../Utils/technicalConsts'
 
 const Settings = new CContainer(
   'settings',
@@ -28,6 +30,9 @@ const Settings = new CContainer(
 	    <input type="checkbox" id="settings-aha"/>
 	    <div class="slider round"></div> 
   	</label>
+	</div>
+	<div class="settings__block" ${!DesktopMode && 'style="display: none"'}>
+		<a id="fullscreen-setting">Полноэкранный режим</a>
 	</div>
 </div>
 <div class="settings__container">
@@ -88,7 +93,8 @@ const Settings = new CContainer(
   { name: 'req02', selector: '#req-02' },
   { name: 'downloadButton', selector: '#downloadFile' },
   { name: 'uploadButton', selector: '#uploadFile' },
-  { name: 'uploadInput', selector: '#uploadInput' }
+  { name: 'uploadInput', selector: '#uploadInput' },
+  { name: 'fullscreenButton', selector: '#fullscreen-setting' }
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
@@ -99,6 +105,10 @@ Settings.checkBoxSound.addEventListener('click', () => {
 Settings.checkBoxAHA.addEventListener('click', () => {
   saveData(['Settings_AHA'], [Settings.checkBoxAHA.checked])
 })
+
+Settings.fullscreenButton.onclick = () => {
+  toggleFullscreen()
+}
 
 Settings.creatorsButton.addEventListener('click', () => {
   tabManagerMenu.open(Credits.self)

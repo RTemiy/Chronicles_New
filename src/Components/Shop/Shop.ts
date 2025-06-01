@@ -2,23 +2,24 @@ import CContainer from '../../Classes/CContainer'
 import './Shop.scss'
 import { shopItems } from '../../Utils/shopItems'
 import { showMessage } from '../MenuMessage/MenuMessage'
+import { DesktopMode } from '../../Utils/technicalConsts'
 
 export const Shop = new CContainer(
   'shop',
   `
-<p class="tab__title">Магазин <img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"/></p>
+<p class="tab__title">${DesktopMode ? 'Клэймы' : 'Магазин'}</p>
 <div class="shop__container">
   <p class='shop__category-title' >Одежда </p>
   <div class='shop__category-items' id='wardrobeCategory'></div>
 </div>
 <div class="shop__container">
-  <p class='shop__category-title' >Интерьеры</p>
+  <p class='shop__category-title'>Интерьеры</p>
   <div class='shop__category-items' id='interiorCategory'></div>
 </div>
 `,
   { name: 'wardrobeCategory', selector: '#wardrobeCategory' },
-  { name: 'interiorCategory', selector: '#interiorCategory' },
-  { name: 'infoButton', selector: '.icon_span' }
+  { name: 'interiorCategory', selector: '#interiorCategory' }
+/*  { name: 'infoButton', selector: '.icon_span' } */
 )
 
 export function renderShop (): void {
