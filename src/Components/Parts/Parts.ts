@@ -41,7 +41,6 @@ export const renderParts = (storyName: string, chapterName: string): void => {
               storiesManager.getPartProp(storyName, chapterName, partName, 'event')(storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'))
               renderLoadingScreen(storiesManager.getPartProp(storyName, chapterName, partName, 'loadingImage'), () => {
                 Slide.self.style.display = 'grid'
-                LoadingScreen.self.style.display = 'none'
               })
             })
           })

@@ -6,12 +6,14 @@ import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
 import { DesktopMode } from '../Utils/technicalConsts';
+import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen';
 
 export default class CSlide {
   private previousSlideText = ''
 
   constructor (
     private readonly slide: CContainer,
+    private readonly blurredBackgroundFunc: (backgroundImage: string) => void,
     private readonly soundManager: CSoundSystem,
     private readonly tabManagerMenu: CElementManager,
     private readonly storiesElement: HTMLElement,
@@ -28,6 +30,7 @@ export default class CSlide {
 
   changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, borderImage?: string): void {
     if (backImage !== undefined && backImage !== '') {
+      setTimeout(() => { this.blurredBackgroundFunc(backImage) }, 1000)
       if (!this.slide.backgroundImage.src.includes(backImage)) {
         this.slide.backgroundImageHelper.src = this.slide.backgroundImage.src
         this.slide.backgroundImageHelper.classList.remove('slide__background_hide')
@@ -230,6 +233,7 @@ export default class CSlide {
       this.slide.self.style.display = 'none'
       this.menuToolbarElement.style.display = 'flex'
       this.soundManager.play('menu')
+      hideLoadingScreen()
     }
 
     this.slide.journalButton.onclick = () => {

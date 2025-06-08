@@ -10,7 +10,12 @@ import './index.scss'
 import loadStories from './Functions/loadStories'
 import { EStoriesEn } from './Utils/EStoriesNames'
 import CSlider from './Classes/CSlider'
-import { LoadingScreen, renderLoadingScreen } from './Components/LoadingScreen/LoadingScreen'
+import {
+  hideLoadingScreen,
+  LoadingScreen,
+  renderLoadingScreen,
+  showBlurredBackground,
+} from './Components/LoadingScreen/LoadingScreen';
 import MenuToolbar from './Components/MenuToolbar/MenuToolbar'
 import preCacheImages from './Functions/preCache'
 import CSoundSystem from './Classes/CSoundSystem'
@@ -51,7 +56,7 @@ export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
 export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
 export const wardrobe = new CWardrobe(Wardrobe)
-export const slide = new CSlide(Slide, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, animateBackForth, renderInventory, renderJournal, showCutscene)
+export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, animateBackForth, renderInventory, renderJournal, showCutscene)
 export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, wardrobe)
 export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 export const journal = new CJournal()
@@ -71,7 +76,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
   LoadingScreen.loadingPercent.style.display = 'none'
   LoadingScreen.self.onclick = () => {
     MenuToolbar.self.style.display = 'flex'
-    LoadingScreen.self.style.display = 'none'
+    hideLoadingScreen()
     showPolicy()
     soundManager.play('menu')
     checkURL()
@@ -87,6 +92,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   !DesktopMode && showRate(storyName + chapterName + partName + code)
   localStorage.removeItem('LastSave_ScenarioInfo')
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
+  hideLoadingScreen()
 }
 
 startBooksTimer()

@@ -25,6 +25,16 @@
   z-index: 1;
 }
 
+.loading-screen__background-blurred-image-helper {
+  grid-row: 1;
+  grid-column: 1;
+  filter: blur(8px);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  transition: all .5s ease-in-out;
+}
+
 .loading-screen__background-image {
   grid-row: 1;
   grid-column: 1;
