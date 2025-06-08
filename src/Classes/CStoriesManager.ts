@@ -1,6 +1,7 @@
 import type IStory from '../Types/IStory'
 import { loadData } from '../Functions/localStorageManager'
 import { EStoriesAvailable } from '../Utils/EStoriesNames'
+import { DesktopMode } from '../Utils/technicalConsts';
 
 export default class CStoriesManager {
   #stories: IStory[] = []
@@ -81,11 +82,11 @@ export default class CStoriesManager {
     return res
   }
 
-  // <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
+  //
 
   getStoriesHTML (): string {
     let result = ''
-    this.#stories.forEach(story => {
+    !DesktopMode && this.#stories.forEach(story => {
       EStoriesAvailable[story.name] === 1 && (result += `
       <div class="story">
         <div class="story__image-container">
@@ -103,6 +104,26 @@ export default class CStoriesManager {
       
       `)
     })
+
+    DesktopMode && this.#stories.forEach(story => {
+      EStoriesAvailable[story.name] === 1 && (result += `
+      <div class="story">
+        <div class="story__image-container">
+            <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
+            ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
+            ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
+            <p class="story__genre">${story.genre}</p>
+        </div>
+        <div class="story__info-container">
+          <img class="story__title" src="${story.title}">
+          <p class="story__description">${story.description}</p>
+          <p class="story__button">Читать</p>
+        </div>
+      </div>
+      
+      `)
+    })
+
     return result
   }
 

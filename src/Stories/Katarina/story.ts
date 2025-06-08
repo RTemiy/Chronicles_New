@@ -3,6 +3,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 storiesManager.add({
   name: 'Katarina',
   image: require('../../Images/Katarina/Covers/Story_Cover.jpg'),
+  video: require('../../Images/Katarina/Covers/Story_Cover.mp4'),
   title: require('../../Images/Katarina/Covers/Title.png'),
   description:
     'Роберт приезжает в Нью-Йорк в поисках правды о монстрах и того, кто за всем этим стоит. Городская жизнь поглощает его, а новые знакомые не дадут заскучать.',

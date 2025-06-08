@@ -1,2 +1,2 @@
-export const devMode = false
-export const DesktopMode = true
+export const devMode = true
+export const DesktopMode = false

@@ -4,6 +4,7 @@ import showDebugger from '../Components/Debugger/Debugger'
 import { beginMiniGameMemory } from '../Components/MiniGameMemory/MiniGameMemory'
 import { showCaseSimulator } from '../Components/CaseSimulator/CaseSimulator';
 import { tsv2array } from './tsv2array'
+import { Slide } from '../Components/Slide/Slide';
 
 export function doCommand (input: string): void {
   const commands = input.split(' ')
@@ -36,6 +37,11 @@ export function doCommand (input: string): void {
       case 't2a':
         commands.shift()
         console.log(tsv2array(commands.join('\n')))
+        break
+      case 'skip':
+        // eslint-disable-next-line no-case-declarations
+        const skipInterval = setInterval(() => { Slide.backgroundImage.click() }, 1)
+        setTimeout(() => { clearInterval(skipInterval) }, 1000)
         break
     }
   })

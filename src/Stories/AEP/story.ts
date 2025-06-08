@@ -3,6 +3,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 storiesManager.add({
   name: 'AEP',
   image: require('../../Images/AEP/Covers/Story_Cover.jpg'),
+  video: require('../../Images/AEP/Covers/Story_Cover.mp4'),
   title: require('../../Images/AEP/Covers/Title.png'),
   description:
     'Всего нужен миг, чтобы спокойная жизнь превратилась в хаос. Главная героиня попадает в водоворот интриг, страсти и криминала в самом сердце Италии. Опасность и предательства поджидают на каждом углу. Игра началась!',

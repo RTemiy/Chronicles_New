@@ -3,6 +3,7 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 storiesManager.add({
   name: 'ISML',
   image: require('../../Images/ISML/Covers/Story_Cover.jpg'),
+  video: require('../../Images/ISML/Covers/Story_Cover.mp4'),
   title: require('../../Images/ISML/Covers/Title.png'),
   description: 'Окунувшись в закипающий мир молодости и достижений, Нина вдруг ощущает, как тени апатии и беспомощности медленно подкрадываются к ней. Тени начинают крушить ее жизнь, вынуждая бороться со своими внутренними демонами.',
   genre: 'Драма, Психология',
