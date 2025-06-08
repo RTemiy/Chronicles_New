@@ -32,8 +32,7 @@ export function renderShop (): void {
       <p class='shop-item__title'>${item.title}</p>
       <img class='shop-item__image ${item.free ? '' : 'unavailableItem'}' src='${item.image}'/>
       <div class='shop-item__descriptionContainer'><p>${item.description}</div>
-      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free ? 'Бесплатно' : 'Недоступно'}</p>
-      <p class='shop-item__cost ${item.free ? '' : 'unavailableItem'}' ${item.free ? 'style="color: green; text-decoration: line-through;"' : ''}>${item.cost}₽</p>
+      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free ? 'Получить' : 'Недоступно'}</p>
     </div>
     `
     } else if (item.available && item.category === 'Интерьер') {
@@ -42,10 +41,11 @@ export function renderShop (): void {
       <p class='shop-item__title'>${item.title}</p>
       <img class='shop-item__image ${item.free ? '' : 'unavailableItem'}' src='${item.image}'/>
       <div class='shop-item__descriptionContainer'><p>${item.description}</div>
-      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free ? 'Бесплатно' : 'Недоступно'}</p>
-      <p class='shop-item__cost ${item.free ? '' : 'unavailableItem'}' ${item.free ? 'style="color: green; text-decoration: line-through;"' : ''}>${item.cost}₽</p>
+      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free ? 'Получить' : 'Недоступно'}</p>
+      
     </div>
     `
+      // <p class='shop-item__cost ${item.free ? '' : 'unavailableItem'}' ${item.free ? 'style="color: green; text-decoration: line-through;"' : ''}>${item.cost}₽</p>
     }
   })
 
@@ -61,10 +61,10 @@ export function renderShop (): void {
   })
 }
 
-Shop.infoButton.onclick = () => {
+/* Shop.infoButton.onclick = () => {
   showMessage(`
   <p>Информация
   <p>Информация
   `
   , 'Принять')
-}
+} */

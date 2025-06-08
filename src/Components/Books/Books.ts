@@ -8,12 +8,12 @@ import { showAd } from '../../Functions/advertisement'
 export const Books = new CContainer(
   'books',
   `
-  <div class="books__container" ${DesktopMode && 'style="display: none;"'}>
+  <div class="books__container" ${DesktopMode && 'style="visibility: hidden;"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>
     <p class="books__text"></p>
     <p class="books__help"></p>
   </div>
-  <div class="ad_book" ${!DesktopMode && 'style="display: none"'}>
+  <div class="ad_book" ${DesktopMode && 'style="visibility: hidden;"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency_add.svg')}"/>
   </div>
   `,

@@ -4,6 +4,7 @@ import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
 import { checkUser, sendActivity } from '../../Functions/GSAPI'
 import generateUserToken from '../../Functions/generateUserToken'
+import { DesktopMode } from '../../Utils/technicalConsts'
 
 const Policy = new CContainer('policy',
 	`
@@ -17,12 +18,11 @@ const Policy = new CContainer('policy',
 
 export function showPolicy (): void {
   const isAccepted = loadData(['isPolicyAccepted']) !== null && loadData(['isPolicyAccepted']) !== 'false'
-  setInterval(() => {
-    saveData(['Profile', 'TimeSpent'], [parseInt(loadData(['Profile', 'TimeSpent'])!) + 1])
-  }, 60000)
+  setInterval(() => { saveData(['Profile', 'TimeSpent'], [parseInt(loadData(['Profile', 'TimeSpent'])!) + 1]) }, 60000)
   if (!isAccepted) {
     localStorage.clear()
     Policy.self.style.display = 'flex'
+    DesktopMode && (accept())
   } else {
     if (loadData(['Profile', 'ID']) === null) {
       validateUser()
@@ -33,6 +33,11 @@ export function showPolicy (): void {
 }
 
 Policy.button.onclick = () => {
+  accept()
+}
+
+function accept (): void {
+  Policy.self.style.display = 'none'
   saveData(['isPolicyAccepted'], [true])
   const now = new Date()
   saveData(['Profile', 'FirstLaunch'], [String(now.getDate()) + '.' + String(now.getMonth() + 1) + '.' + String(now.getFullYear())])
@@ -40,7 +45,6 @@ Policy.button.onclick = () => {
   saveData(['Profile', 'Banner'], ['Default'])
   saveData(['Profile', 'TimeSpent'], [0])
   saveData(['Profile', 'BooksWasted'], [0])
-  Policy.self.style.display = 'none'
   validateUser()
   sendActivity('Подтверждает ПК')
 }

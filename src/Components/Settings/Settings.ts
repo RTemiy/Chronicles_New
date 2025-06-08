@@ -32,14 +32,18 @@ const Settings = new CContainer(
   	</label>
 	</div>
 	<div class="settings__block" ${!DesktopMode && 'style="display: none"'}>
-		<a id="fullscreen-setting">Полноэкранный режим</a>
+		<p>Полноэкранный режим</p>
+		<label class="switch">
+	    <input type="checkbox" id="settings-fsm"/>
+	    <div class="slider round"></div> 
+  	</label>
 	</div>
 </div>
-<div class="settings__container">
+<div class="settings__container" ${DesktopMode && 'style="display: none"'}>
 	<div class="settings__block">
 		<a>Поддержите нас</a>
 	</div>
-	<div class="settings__block">
+	<div class="settings__block" ${DesktopMode && 'style="display: none"'}>
 		<a target="_blank" rel="external" id="support-button"><img class="settings__icon"  src="${require('../../Images/UI/icon_ad.png')}"></a>
 		<a target="_blank" rel="external" href="https://vk.com/chroniclesgame"><img class="settings__icon"  src="${require('../../Images/UI/icon_vk.png')}"></a>
 		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Images/UI/icon_tg.png')}"></a>
@@ -51,7 +55,7 @@ const Settings = new CContainer(
 		<a id="req-02">Сбербанк</a>
 	</div>
 </div>
-<div class="settings__container">
+<div class="settings__container" ${DesktopMode && 'style="display: none"'}>
 	<div class="settings__block">
 		<a href="${route}/privacy_policy.html" target="_blank">Политика конфиденциальности</a>
 	</div>
@@ -76,25 +80,25 @@ const Settings = new CContainer(
 		<input id="uploadInput" style='display: none' type="file"/>
 	</div>
 </div>
-<div class="settings__container">
-	<div class="settings__block">
+<div class="settings__container" >
+	<div class="settings__block" ${DesktopMode && 'style="display: none"'}>
 		<a href=".">Проверить обновление</a>
 	</div>
 	<div class="settings__block">
-		<a onclick='localStorage.clear()' href='.' >Удалить все сохранения и настройки</a>
+		<a onclick='localStorage.clear(); window.location.reload();' >Удалить все сохранения и настройки</a>
 	</div>
 </div>
 `,
   { name: 'checkBoxSound', selector: '#settings-sound' },
   { name: 'checkBoxAHA', selector: '#settings-aha' },
+  { name: 'checkBoxfullscreen', selector: '#settings-fsm' },
   { name: 'creatorsButton', selector: '#creators-button' },
   { name: 'supportButton', selector: '#support-button' },
   { name: 'req01', selector: '#req-01' },
   { name: 'req02', selector: '#req-02' },
   { name: 'downloadButton', selector: '#downloadFile' },
   { name: 'uploadButton', selector: '#uploadFile' },
-  { name: 'uploadInput', selector: '#uploadInput' },
-  { name: 'fullscreenButton', selector: '#fullscreen-setting' }
+  { name: 'uploadInput', selector: '#uploadInput' }
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
@@ -106,19 +110,23 @@ Settings.checkBoxAHA.addEventListener('click', () => {
   saveData(['Settings_AHA'], [Settings.checkBoxAHA.checked])
 })
 
-Settings.fullscreenButton.onclick = () => {
+Settings.checkBoxfullscreen.addEventListener('click', () => {
+  saveData(['Settings_FullScreen'], [Settings.checkBoxfullscreen.checked])
   toggleFullscreen()
-}
+})
 
 Settings.creatorsButton.addEventListener('click', () => {
   tabManagerMenu.open(Credits.self)
 })
 
 function loadSettings (): void {
-  Settings.checkBoxSound.checked =
-    loadData(['Settings_Sound']) === 'true' || loadData(['Settings_Sound']) === null
-  Settings.checkBoxAHA.checked =
-    loadData(['Settings_AHA']) === 'true'
+  Settings.checkBoxSound.checked = loadData(['Settings_Sound']) === 'true' || loadData(['Settings_Sound']) === null
+
+  Settings.checkBoxAHA.checked = loadData(['Settings_AHA']) === 'true'
+
+  Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
+
+  loadData(['Settings_FullScreen']) === 'false' && toggleFullscreen()
 }
 
 Settings.supportButton.onclick = () => {

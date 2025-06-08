@@ -1,9 +1,10 @@
 import CContainer from '../../Classes/CContainer'
 import './PrecacheLoading.scss'
+import { DesktopMode } from '../../Utils/technicalConsts';
 
 const PrecacheLoading = new CContainer('precache-loading',
 `
-<div class="precache-loading__container">
+<div class="precache-loading__container" ${DesktopMode && 'style="display: none"'}>
   <p class="precache-loading__text">0%</p>
 </div>
 `,

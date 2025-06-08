@@ -64,7 +64,6 @@ export const renderParts = (storyName: string, chapterName: string): void => {
   const tickElements = Parts.container.querySelectorAll('.part__tick')
   tickElements.forEach((tickElement: any, index: number) => {
     if (index < tickElements.length - 1) {
-      console.log(tickElements[index].style)
       tickElements[index + 1].style.display === 'none' && (tickElement.src = require('../../Images/UI/icon_notick.svg'))
     }
   })
