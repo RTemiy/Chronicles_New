@@ -16,7 +16,7 @@ export const LoadingScreen = new CContainer('loading-screen',
   { name: 'continueButton', selector: '.loading-screen__continue-button' }
 )
 
-let isShowingLoadingScreen: boolean = true
+export let isShowingLoadingScreen: boolean = true
 
 export const renderLoadingScreen = (backgroundImage: string, func: () => void): void => {
   isShowingLoadingScreen = true

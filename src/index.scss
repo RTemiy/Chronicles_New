@@ -44,17 +44,20 @@ body {
   padding: 0;
   margin: 0;
   @extend %styled-background;
-  /*animation: moving-background infinite 100s linear;*/
 }
 
-/*@keyframes moving-background {
+.main-bg-anim{
+  animation: moving-background infinite 100s linear;
+}
+
+@keyframes moving-background {
   from{
     background-position: 0 0;
   }
   to{
     background-position: -641px -641px;
   }
-}*/
+}
 
 p {
   padding: 0;

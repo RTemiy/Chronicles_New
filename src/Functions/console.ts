@@ -41,7 +41,7 @@ export function doCommand (input: string): void {
       case 'skip':
         // eslint-disable-next-line no-case-declarations
         const skipInterval = setInterval(() => { Slide.backgroundImage.click() }, 1)
-        setTimeout(() => { clearInterval(skipInterval) }, 1000)
+        setTimeout(() => { clearInterval(skipInterval) }, 500)
         break
     }
   })

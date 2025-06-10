@@ -68,9 +68,9 @@ export default class CWardrobe {
   }
 
   private chooseClothes (): void {
+    this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
     showAd(this.currentClothes[this.currentIndex].cost, () => {
       this.Wardrobe.self.style.display = 'none'
-      this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
     })
   }
 
