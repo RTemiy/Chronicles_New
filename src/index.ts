@@ -92,7 +92,8 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   !DesktopMode && showRate(storyName + chapterName + partName + code)
   localStorage.removeItem('LastSave_ScenarioInfo')
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
-  setTimeout(() => { hideLoadingScreen() }, 2000)
+  hideLoadingScreen()
+  setTimeout(() => { hideLoadingScreen() }, 1100)
 }
 
 startBooksTimer()

@@ -233,7 +233,8 @@ export default class CSlide {
       this.slide.self.style.display = 'none'
       this.menuToolbarElement.style.display = 'flex'
       this.soundManager.play('menu')
-      setTimeout(() => { hideLoadingScreen() }, 2000)
+      hideLoadingScreen()
+      setTimeout(() => { hideLoadingScreen() }, 1100)
     }
 
     this.slide.journalButton.onclick = () => {

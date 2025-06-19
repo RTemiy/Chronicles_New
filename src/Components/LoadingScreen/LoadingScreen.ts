@@ -16,7 +16,7 @@ export const LoadingScreen = new CContainer('loading-screen',
   { name: 'continueButton', selector: '.loading-screen__continue-button' }
 )
 
-export let isShowingLoadingScreen: boolean = true
+let isShowingLoadingScreen: boolean = true
 
 export const renderLoadingScreen = (backgroundImage: string, func: () => void): void => {
   isShowingLoadingScreen = true
@@ -34,8 +34,14 @@ export const renderLoadingScreen = (backgroundImage: string, func: () => void): 
   }
 }
 
+export function setIsShowingLoadingScreenFalse (): void {
+  isShowingLoadingScreen = false
+}
+
 export function hideLoadingScreen (): void {
   LoadingScreen.self.style.zIndex = '-1000'
+  LoadingScreen.backgroundImage.src = require('../../Images/UI/Transparent.png')
+  LoadingScreen.backgroundBlurredImage.src = require('../../Images/UI/Transparent.png')
   LoadingScreen.backgroundBlurredImage.style.display = 'none'
   LoadingScreen.backgroundImage.style.display = 'none'
   LoadingScreen.loadingPercent.style.display = 'none'
@@ -51,6 +57,7 @@ export function showBlurredBackground (backgroundImage: string): void {
     LoadingScreen.loadingPercent.style.display = 'none'
     LoadingScreen.continueButton.style.display = 'none'
     LoadingScreen.backgroundImage.style.display = 'block'
+    LoadingScreen.backgroundImage.src = require('../../Images/UI/Transparent.png')
     LoadingScreen.backgroundBlurredImageHelper.style.display = 'block'
     if (!LoadingScreen.backgroundBlurredImage.src.includes(backgroundImage)) {
       LoadingScreen.backgroundBlurredImageHelper.style.display = 'block'

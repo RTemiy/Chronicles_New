@@ -63,3 +63,17 @@ statsManager.add({
   id: 'CallEzio',
   story: EStoriesEn.Aurora
 })
+
+statsManager.add({
+  category: 'Choice',
+  idDescription: 'Раствориться в объятиях Калеба',
+  id: 'GiveAHugKaleb',
+  story: EStoriesEn.Aurora
+})
+
+statsManager.add({
+  category: 'Choice',
+  idDescription: 'Согласиться на встречу с Эцио',
+  id: 'AcceptMeetingEzio',
+  story: EStoriesEn.Aurora
+})

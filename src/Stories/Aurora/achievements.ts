@@ -112,3 +112,11 @@ achievementsManager.add({
   text: 'Завершите четвертую часть печальными известиями',
   story: EStoriesEn.Aurora
 })
+
+achievementsManager.add({
+  name: 'Chapter01Part05Completed',
+  image: require('../../Images/Aurora/Backgrounds/Lighthouse.jpg'),
+  title: 'Вкус крови',
+  text: 'Завершите четвертую часть печальными известиями',
+  story: EStoriesEn.Aurora
+})

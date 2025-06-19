@@ -9,6 +9,7 @@ import { loadData } from '../../Functions/localStorageManager'
 import { Profile, renderProfile } from '../Profile/Profile'
 import { renderShop, Shop } from '../Shop/Shop';
 import { DesktopMode } from '../../Utils/technicalConsts';
+import { setIsShowingLoadingScreenFalse } from '../LoadingScreen/LoadingScreen';
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
@@ -90,6 +91,7 @@ MenuToolbar.exitButton.onclick = () => {
 loadData(['LastSave_ScenarioInfo']) === null && MenuToolbar.continueButton.setAttribute('style', 'display: none')
 
 MenuToolbar.continueButton.onclick = () => {
+  setIsShowingLoadingScreenFalse()
   scenarioManager.loadLastSave()
   soundManager.play('music', loadData(['LastSave_SoundInfo'])!)
   setTimeout(() => {
