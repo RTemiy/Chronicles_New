@@ -7,6 +7,7 @@ export interface IButton {
   goTo?: number
   isActive?: boolean
   gift?: boolean
+  guide?: string
 }
 
 export interface ICondition {

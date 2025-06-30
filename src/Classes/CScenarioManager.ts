@@ -158,7 +158,8 @@ export default class CScenarioManager {
         },
         isActive: el.isActive,
         goTo: el.goTo,
-        gift: el.gift
+        gift: el.gift,
+        guide: el.goTo !== undefined ? this.getSceneGuide(el.goTo) : ''
       })
     })
     this.slide.setButtonValues(newButtons)
@@ -255,6 +256,15 @@ export default class CScenarioManager {
 
   getAllScenarioSlides (): IScene[] {
     return this.#scenarios[this.#currentScenarioName]
+  }
+
+  getSceneGuide (sceneIndex: number): string {
+    const scene = this.#getSceneByIndex(sceneIndex)
+    let guide = ''
+    scene.stats?.forEach(stat => {
+      guide += `${stat.id}: ${stat.value}\n`
+    })
+    return guide
   }
 
   loadLastSave (): void {

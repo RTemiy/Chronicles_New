@@ -16,35 +16,35 @@ const MenuToolbar = new CContainer(
 	`
 <div id="menu-toolbar_continue" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_continue.svg')}">
-	<!--<p>Продолжить</p>-->
+	<p>Продолжить</p>
 </div>
 <div id="menu-toolbar_favourites" class="menu-toolbar__item" style='display: none'>
 	<img src="${require('../../Images/UI/icon_favourites.svg')}">
-	<!--<p>Фавориты</p>-->
+	<p>Фавориты</p>
 </div>
 <div id="menu-toolbar_stories" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_stories.svg')}">
-	<!--<p>Истории</p>-->
+	<p>Истории</p>
 </div>
 <div id="menu-toolbar_settings" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_settings.svg')}">
-	<!--<p>Настройки</p>-->
+	<p>Настройки</p>
 </div>
 <div id="menu-toolbar_achievements"  style="display: none" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_achievements.svg')}">
-	<!--<p>Достижения</p>-->
+	<p>Достижения</p>
 </div>
 <div id="menu-toolbar_basket" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_basket.svg')}">
-	<!--<p>Магазин</p>-->
+	<p>Клеймы</p>
 	</div>
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_user.svg')}">
-	<!--<p>Профиль</p>-->
+	<p>Профиль</p>
 		</div>
 	<div id="menu-toolbar_exit" class="menu-toolbar__item" ${!DesktopMode && 'style="display: none"'}>
 	<img src="${require('../../Images/UI/icon_exit.svg')}">
-	<!--<p>Выход</p>-->
+	<p>Выход</p>
 
 </div>
 `,

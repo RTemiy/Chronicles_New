@@ -8,6 +8,11 @@
 
 %button-tap {
   transition: transform 0.05s ease-in-out;
+
+  @container style(--desktopmode: true){
+    cursor: var(--cursorpointer), auto;
+  }
+
   &:active {
     transform: scale(95%);
   }

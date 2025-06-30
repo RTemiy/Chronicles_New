@@ -1,4 +1,4 @@
-import { scenarioManager, statsManager, wardrobe } from '../../../../index'
+import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { musicPlayer } from '../../../../Functions/musicPlayer'
 import { loadData } from '../../../../Functions/localStorageManager'
@@ -531,7 +531,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'CallEzio' }) > 0
+          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'CallEzio' }) > 1
         },
         goTo: 100
       }
@@ -2779,7 +2779,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     buttons: [
       {
         text: 'Спросила',
-        goTo: 180
+        goTo: 180,
+        gift: true
       },
       {
         text: 'Не стала тревожить',
@@ -3837,13 +3838,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     condition: [
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'CallEzio' }) > 0
+          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'CallEzio' }) > 1
         },
         goTo: 250
       },
       {
         condition: () => {
-          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'CallEzio' }) <= 0
+          return statsManager.get({ story: EStoriesEn.Aurora, category: 'Choice', id: 'CallEzio' }) <= 1
         },
         goTo: 255
       }
@@ -4235,7 +4236,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 275,
     text:
       `
-        Спустя почти неделю с момента инцидента с папой, Артур сел ко мне на диван и <p>сказал:
+        Спустя почти неделю с момента инцидента с папой, Артур сел ко мне на диван и сказал:
       `,
     buttons: [
       {
@@ -4711,7 +4712,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 305
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/City_Streets.jpg')
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
   },
 
   {
@@ -4725,7 +4726,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 306
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/City_Streets.jpg')
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
   },
 
   {
@@ -4739,7 +4740,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 307
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/City_Streets.jpg')
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
   },
 
   {
@@ -4753,7 +4754,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 308
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/City_Streets.jpg')
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
   },
 
   {
@@ -4768,7 +4769,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 309
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/Aurora/Backgrounds/City_Streets.jpg')
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
   },
 
   {
@@ -5062,7 +5063,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     buttons: [
       {
         text: '',
-        goTo: 329
+        func: () => {
+          saveEndProgress('Aurora', 'Глава 1', 'Часть 6', '0')
+        }
       }],
     achievement: { story: EStoriesEn.Aurora, name: 'Chapter01Part05Completed' },
     imageBack: require('../../../../Images/Aurora/Backgrounds/Streets.jpg')

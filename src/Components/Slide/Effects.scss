@@ -65,6 +65,45 @@
   animation: pulse-red ease-in-out 2.5s infinite;
 }
 
+.slide_disco-1:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: hue-rotate(90deg);
+  z-index: 5;
+  animation: show-hide ease-in-out 2s;
+}
+
+.slide_disco-2:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: hue-rotate(180deg);
+  z-index: 5;
+  animation: show-hide ease-in-out 2s;
+}
+
+.slide_disco-3:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  backdrop-filter: hue-rotate(270deg);
+  z-index: 5;
+  animation: show-hide ease-in-out 2s;
+}
+
 @keyframes pulse-red {
   0%{
     box-shadow: none;

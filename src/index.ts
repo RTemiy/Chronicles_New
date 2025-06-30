@@ -99,3 +99,4 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
 startBooksTimer()
 
 DesktopMode && document.body.classList.add('main-bg-anim')
+DesktopMode && document.body.style.setProperty('--desktopmode', 'true')

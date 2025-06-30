@@ -132,6 +132,7 @@
   z-index: 3;
   @extend %styled-border;
   @extend %styled-radius;
+  @extend %button-tap;
   border-radius: 0 0 0 10px;
 }
 

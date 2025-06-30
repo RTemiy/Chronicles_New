@@ -112,6 +112,18 @@ export function redFlash (): void {
   animateBackForth(Slide.self, 'slide_redFlash', 2000)
 }
 
+export function discoFlash01 (): void {
+  animateBackForth(Slide.self, 'slide_disco-1', 2000)
+}
+
+export function discoFlash02 (): void {
+  animateBackForth(Slide.self, 'slide_disco-2', 2000)
+}
+
+export function discoFlash03 (): void {
+  animateBackForth(Slide.self, 'slide_disco-3', 2000)
+}
+
 Slide.consoleInput.addEventListener('keypress', (evt: { key: string, value: string }) => {
   if (evt.key === 'Enter') {
     doCommand(Slide.consoleInput.value)

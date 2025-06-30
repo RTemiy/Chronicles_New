@@ -5,8 +5,9 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
-import { DesktopMode } from '../Utils/technicalConsts';
+import { DesktopMode, devMode } from '../Utils/technicalConsts';
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen';
+import { showMessage } from '../Components/MenuMessage/MenuMessage';
 
 export default class CSlide {
   private previousSlideText = ''
@@ -110,6 +111,7 @@ export default class CSlide {
       button.onclick = () => {}
       button.style.display = 'none'
       button.innerText = ''
+      button.oncontextmenu = () => {}
     })
   }
 
@@ -179,6 +181,9 @@ export default class CSlide {
       this.slide.backgroundImage.onclick = () => {}
       const buttonsArray = this.getButtonsArray()
       buttons.forEach((button, index) => {
+        if (devMode && button.guide !== '' && button.guide !== undefined) {
+          buttonsArray[index].oncontextmenu = () => { showMessage(button.guide!, 'Ok') }
+        }
         if (!buttons[index].gift) {
           buttonsArray[index].innerText = buttons[index].text
           buttonsArray[index].onclick = () => {

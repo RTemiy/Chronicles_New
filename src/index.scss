@@ -11,6 +11,8 @@
   --activecolor: #ffedbf;
   --font: 'Main', sans-serif;
   --stroke: 0px;
+  --desktopmode: false;
+  --cursorpointer: url(./Images/UI/cursor_pointer.svg)
 }
 
 img{
@@ -44,6 +46,7 @@ body {
   padding: 0;
   margin: 0;
   @extend %styled-background;
+  cursor: url(./Images/UI/cursor_simple.svg), auto;
 }
 
 .main-bg-anim{

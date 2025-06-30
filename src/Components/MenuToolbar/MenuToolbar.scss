@@ -2,25 +2,59 @@
 
 .menu-toolbar {
   position: fixed;
-  left: 0;
-  bottom: 0;
-  right: 0;
+
+  @container style(--desktopmode: false){
+    left: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: row;
+    @extend %styled-background;
+    justify-content: space-evenly;
+    border-radius: 0;
+  }
+
+  @container style(--desktopmode: true){
+    left: -10px;
+    bottom: 200px;
+    top: 200px;
+    flex-direction: column;
+    padding: 10px 10px 15px 15px;
+    justify-content: center;
+    gap: 15px;
+    @extend %styled-radius;
+  }
+
   display: none;
-  flex-direction: row;
-  justify-content: space-evenly;
   /*box-shadow: inset 2px 5px 3px -3px rgb(0 0 0 / 75%), -1px 0 2px 1px rgb(0 0 0 / 75%);*/
   z-index: 3;
   color: white;
-  @extend %styled-background;
+
   @extend %show;
 }
 
 .menu-toolbar__item {
+
+  @container style(--desktopmode: true){
+    flex-direction: row;
+    @extend %styled-background;
+    @extend %styled-border;
+    @extend %styled-radius;
+    justify-content: left;
+    align-items: start;
+  }
+
+  @container style(--desktopmode: false){
+    flex-direction: column;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+  }
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8px 0;
+  padding: 8px 0 8px 5px;
   gap: 10px;
   @extend %button-tap;
   transition: filter 0.5s ease-in-out;
@@ -32,5 +66,14 @@
 }
 
 .menu-toolbar__item > p {
-  font-size: var(--tinytext);
+
+  @container style(--desktopmode: true){
+    font-size: var(--bigtext);
+  }
+
+  @container style(--desktopmode: false){
+    font-size: var(--tinytext);
+    display: none;
+  }
+  margin: 5px;
 }

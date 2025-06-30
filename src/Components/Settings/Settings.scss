@@ -41,6 +41,11 @@
 
 .settings__block > p {
   margin: auto auto auto 0;
+  @extend %button-tap;
+}
+
+.settings__block > a {
+  @extend %button-tap;
 }
 
 .settings__icon {

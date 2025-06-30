@@ -1,4 +1,5 @@
 import { loadData, saveData } from '../../Functions/localStorageManager'
+import { DesktopMode } from '../../Utils/technicalConsts'
 
 export const events = [
   {
@@ -10,6 +11,11 @@ export const events = [
     title: 'День всех влюблённых 2024',
     code: '2024_February_14',
     achieve: false
+  },
+  {
+    title: 'Владелец ПК версии ',
+    code: 'Purchased_PC_Version',
+    achieve: DesktopMode
   }
 ]
 

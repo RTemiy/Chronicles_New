@@ -497,7 +497,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     id: 30,
     text:
       `
-        Возможно, это не к месту. Но вдруг наша встреча — это судьба? 
+        Возможно, это не к месту. Но вдруг наша встреча — судьба? 
       `,
     buttons: [
       {
@@ -3325,8 +3325,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 210
       }],
-    speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
     imageBorder: require('../../../../Images/UL/UI/Border.png'),
     imageBack: require('../../../../Images/UL/Backgrounds/Flat_Enter.jpg')
   },
@@ -3863,8 +3861,20 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 243
+        goTo: 550
       }],
+    imageBack: require('../../../../Images/UL/Backgrounds/Flat_Livingroom.jpg')
+  },
+
+  {
+    id: 550,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    cutScene: { video: require('../../../../Images/UL/CutScenes/AmeliaAndPaul.mp4'), goTo: 243 },
     imageBack: require('../../../../Images/UL/Backgrounds/Flat_Livingroom.jpg')
   },
 
@@ -6310,7 +6320,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     id: 399,
     text:
       `
-        Ты же не пытаешься проникнуть в мой мозг, не причиняешь боли. Ты принимаешь меня такой, какой я есть.
+        Ты же не пытаешься проникнуть в мой мозг, не причиняешь боли. Ты принимаешь меня такой, какая я есть.
       `,
     buttons: [
       {
@@ -6440,7 +6450,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     id: 407,
     text:
       `
-        Просто продолжай жить. Наслаждайся настоящем. 
+        Просто продолжай жить. Наслаждайся настоящим. 
       `,
     buttons: [
       {
@@ -6476,9 +6486,22 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     buttons: [
       {
         text: '',
+        goTo: 650
+      }],
+    imageBack: require('../../../../Images/UL/Backgrounds/Kitchen.jpg'),
+  },
+
+  {
+    id: 650,
+    text:
+      '',
+    buttons: [
+      {
+        text: '',
         goTo: 410
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Images/UL/Backgrounds/Kitchen.jpg'),
+    cutScene: { video: require('../../../../Images/UL/CutScenes/AmeliaAndDavid.mp4'), goTo: 410 }
   },
 
   {
@@ -6561,7 +6584,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     id: 415,
     text:
       `
-        Я удивлен тем, как ее не мучает совесть. Я ожидал подставы, но не до такой степени. 
+        Я удивлен тем, как ее не мучает совесть. Ожидал подставы, но не до такой степени. 
       `,
     buttons: [
       {
@@ -6691,7 +6714,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     id: 423,
     text:
       `
-        Он ушел, а я, оставшись одна, отправила в спальню, чтобы начать готовиться ко сну. 
+        Он ушел, а я, оставшись одна, отправилась в спальню, чтобы начать готовиться ко сну. 
       `,
     buttons: [
       {

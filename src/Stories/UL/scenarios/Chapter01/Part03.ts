@@ -789,7 +789,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     id: 48,
     text:
       `
-        Я решила немного прогуляться. Подумать. Взвесить все за и против.
+        Я решила немного прогуляться. Подумать. Взвесить все «за» и «против».
       `,
     buttons: [
       {
@@ -2657,7 +2657,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     id: 166,
     text:
       `
-        Он так ожидает нашей встречи? Неужели, я ему и правда понравилась?
+        «Он так ожидает нашей встречи? Неужели, я ему и правда понравилась?»
       `,
     buttons: [
       {
@@ -3127,9 +3127,22 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 197
+        goTo: 650
       }],
     imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+  },
+
+  {
+    id: 650,
+    text:
+      '',
+    buttons: [
+      {
+        text: '',
+        goTo: 197
+      }],
+    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg'),
+    cutScene: { video: require('../../../../Images/UL/CutScenes/AmeliaAndDoctor.mp4'), goTo: 197 }
   },
 
   {
