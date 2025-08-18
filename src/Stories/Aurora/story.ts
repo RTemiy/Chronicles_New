@@ -62,7 +62,7 @@ storiesManager.add({
             statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
         },
-        {
+        /*{
           name: 'Часть 5',
           code: '0',
           image: require('../../Images/Aurora/Backgrounds/Clouds_Gray.jpg'),
@@ -71,7 +71,7 @@ storiesManager.add({
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
-        },
+        },*/
         {
           name: 'Скоро',
           code: '0',

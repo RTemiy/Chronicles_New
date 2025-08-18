@@ -13,7 +13,7 @@ achievementsManager.add({
   name: 'DetectiveActress',
   image: require('../../Images/MM/Achievements/DetectiveActress.png'),
   title: 'Детектив-актриса',
-  text: 'Проявить лучшие умения в стрессовой обстановке ',
+  text: 'Отстоять себя и втереться в доверие',
   story: EStoriesEn.MM
 })
 

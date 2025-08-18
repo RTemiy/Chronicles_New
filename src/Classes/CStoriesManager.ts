@@ -98,7 +98,7 @@ export default class CStoriesManager {
         <div class="story__info-container">
           <img class="story__title" src="${story.title}">
           <p class="story__description">${story.description}</p>
-          <p class="story__button">Читать</p>
+          <p class="story__button pulsating-push">Читать</p>
         </div>
       </div>
       
@@ -117,7 +117,7 @@ export default class CStoriesManager {
         <div class="story__info-container">
           <img class="story__title" src="${story.title}">
           <p class="story__description">${story.description}</p>
-          <p class="story__button">Читать</p>
+          <p class="story__button pulsating-push">Читать</p>
         </div>
       </div>
       

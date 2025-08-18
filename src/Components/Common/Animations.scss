@@ -81,3 +81,28 @@
   z-index: 15;
   user-select: none;
 }
+
+.pulsating-push{
+  animation: pulsating-push 2s ease-in-out infinite;
+}
+
+@keyframes pulsating-push {
+  0% {
+    transform: scale(1);
+  }
+  74% {
+    transform: scale(1);
+  }
+  75% {
+    transform: scale(1.0)
+  }
+  80% {
+    transform: scale(1.1)
+  }
+  90% {
+    transform: scale(1.0)
+  }
+  95% {
+    transform: scale(1.1)
+  }
+}
