@@ -21,3 +21,17 @@ statsManager.add({
   idDescription: 'Купить платье Марте',
   story: EStoriesEn.ROR
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'IntroduceAsMilitary',
+  idDescription: 'Представиться военным',
+  story: EStoriesEn.ROR
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'GoWithMarthaBall',
+  idDescription: 'Пойти с Мартой на балле',
+  story: EStoriesEn.ROR
+})

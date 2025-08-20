@@ -3,32 +3,33 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
-  UL = 'UL',
-  Immortals = 'Immortals',
+  MM = 'MM',
   Aurora = 'Aurora',
   ROR = 'ROR',
   FOF = 'FOF',
+  Immortals = 'Immortals',
   AEP = 'AEP',
-  MM = 'MM',
   ISML = 'ISML',
   UA = 'UA',
   OTV = 'OTV',
   //
   Katarina = 'Katarina',
+  UL = 'UL',
 }
 
 export enum EStoriesRu {
   Immortals = 'Бессмертные: Последняя надежда',
-  FOF = 'Осколки чужой судьбы',
-  ROR = 'Время крыс',
-  AEP = 'Amore e passione',
   Aurora = 'Аврора',
-  UL = 'Непредсказуемая любовь',
+  ROR = 'Время крыс',
+  FOF = 'Осколки чужой судьбы',
+  AEP = 'Amore e passione',
   MM = 'Memento mori',
   ISML = 'В поисках исчезнувшего света',
-  Katarina = 'Катарина',
   UA = 'Арена юнитов',
-  OTV = 'На грани'
+  OTV = 'На грани',
+  //
+  UL = 'Непредсказуемая любовь',
+  Katarina = 'Катарина',
 }
 
 export enum EStoriesAvailable {

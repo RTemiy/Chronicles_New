@@ -8,6 +8,7 @@ storiesManager.add({
   description:
     'Когда-то вампиры считались мифом, однако нашей героине во время поисков своего брата, пришлось столкнуться с монстрами лицом к лицу. Теперь она невольно втянута в противостояние вампиров и людей, где ей предстоит распутать не один клубок тайн.',
   genre: 'Драма, Вампиры',
+  status: 'Новая часть',
   chapters: [
     {
       name: 'Глава 1',
@@ -62,7 +63,7 @@ storiesManager.add({
             statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
         },
-        /*{
+        {
           name: 'Часть 5',
           code: '0',
           image: require('../../Images/Aurora/Backgrounds/Clouds_Gray.jpg'),
@@ -71,7 +72,7 @@ storiesManager.add({
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
           }
-        },*/
+        },
         {
           name: 'Скоро',
           code: '0',

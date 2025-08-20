@@ -131,7 +131,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Warrior',
-  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  image: require('../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
   title: 'Генерал кабацких войн',
   text: 'Представиться барону Моргнеру военным',
   story: EStoriesEn.ROR
@@ -139,7 +139,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Bartender',
-  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  image: require('../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
   title: 'Великий купец юга',
   text: 'Представиться барону Моргнеру торговцем',
   story: EStoriesEn.ROR
@@ -147,7 +147,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Busyman',
-  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  image: require('../../Images/ROR/Items/Perfume.png'),
   title: 'Деловая жилка',
   text: 'Договориться с графиней Аделаидой о сотрудничестве',
   story: EStoriesEn.ROR
@@ -155,7 +155,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Chapter01Part04Completed',
-  image: require('../../Images/ROR/Backgrounds/Atelier.jpg'),
+  image: require('../../Images/ROR/Persons/Ilbricht.png'),
   title: 'С праздника на плаху',
   text: 'Попадите в плен бургомистру Ульбрихту',
   story: EStoriesEn.ROR
