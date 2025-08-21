@@ -6,7 +6,7 @@ import Settings from '../Settings/Settings';
 export const CutScene = new CContainer('cut-scene',
 	`
     	<div class='cut-scene__container'>
-    	<video autoplay loop playsinline class='cut-scene__image'>
+    	<video autoplay loop name='media' class='cut-scene__image'>
     	  <source src="" id="cutSceneSource" type="video/mp4"><source/>
       </video>
     	<button class='cut-scene__button'></button>
@@ -22,7 +22,11 @@ export function showCutscene (cutSceneInfo: { video: string, goTo: () => void })
   setTimeout(() => {
     CutScene.self.classList.add('cut-scene_show')
     CutScene.source.setAttribute('src', cutSceneInfo.video)
-    CutScene.video.muted = loadData(['Settings_Sound'])
+    if (loadData(['Settings_Sound']) === 'true') {
+      CutScene.video.muted = false
+    } else if (loadData(['Settings_Sound']) === 'false') {
+      CutScene.video.muted = true
+    }
     CutScene.video.load()
     CutScene.video.play()
   }, 100)

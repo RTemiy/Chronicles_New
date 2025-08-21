@@ -90,6 +90,7 @@
   border-radius: 0  0 10px 10px;
   text-align: center;
   padding: 5px;
+  @extend %button-tap;
 }
 
 .shop-item__cost{

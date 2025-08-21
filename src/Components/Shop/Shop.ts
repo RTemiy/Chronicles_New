@@ -1,7 +1,6 @@
 import CContainer from '../../Classes/CContainer'
 import './Shop.scss'
 import { shopItems } from '../../Utils/shopItems'
-import { showMessage } from '../MenuMessage/MenuMessage'
 import { DesktopMode } from '../../Utils/technicalConsts'
 
 export const Shop = new CContainer(
@@ -54,9 +53,9 @@ export function renderShop (): void {
 
   shopItems.forEach(item => {
     if (item.available && item.category === 'Гардероб') {
-      Shop.wardrobeCategory.querySelector(`#wardrobe_item_${item.id}`).onclick = () => { item.action() }
+      item.free && (Shop.wardrobeCategory.querySelector(`#wardrobe_item_${item.id}`).onclick = () => { item.action() })
     } else if (item.available && item.category === 'Интерьер') {
-      Shop.interiorCategory.querySelector(`#wardrobe_item_${item.id}`).onclick = () => { item.action() }
+      item.free && (Shop.interiorCategory.querySelector(`#wardrobe_item_${item.id}`).onclick = () => { item.action() })
     }
   })
 }

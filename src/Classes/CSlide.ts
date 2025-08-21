@@ -5,9 +5,9 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
-import { DesktopMode, devMode } from '../Utils/technicalConsts';
-import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen';
-import { showMessage } from '../Components/MenuMessage/MenuMessage';
+import { DesktopMode, devMode } from '../Utils/technicalConsts'
+import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
+import { showMessage } from '../Components/MenuMessage/MenuMessage'
 
 export default class CSlide {
   private previousSlideText = ''
@@ -213,6 +213,7 @@ export default class CSlide {
     this.slide.achievementText.innerText = achievementInfo.text
     this.slide.achievementImage.src = achievementInfo.image
     this.slide.achievement.classList.remove('slide__achievement_hide')
+    this.slide.achievement.classList.add('slide__achievement_show')
     setTimeout(() => {
       this.slide.achievement.classList.add('slide__achievement_hide')
     }, 4000)
