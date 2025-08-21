@@ -73,8 +73,8 @@ export default class CAchievementsManager {
     for (const prop in this.#achievements) {
       if (typeof story === 'undefined' || this.#achievements[prop].story === story) {
         EStoriesAvailable[this.#achievements[prop].story] === 1 && (render += `
-      <div class="achievement  story-${this.#achievements[prop].story}">
-        <img class="achievement__image" src="${this.#achievements[prop].unlocked ? this.#achievements[prop].image : lock}">
+      <div class="achievement story-${this.#achievements[prop].story}">
+        <img class="achievement__image ${this.#achievements[prop].unlocked && 'shimmering_image'} " src="${this.#achievements[prop].unlocked ? this.#achievements[prop].image : lock}">
         <p class="achievement__title">${this.#achievements[prop].title}</p>
         <p class="achievement__text">${this.#achievements[prop].text}</p>
         ${this.#achievements[prop].completion !== undefined && this.#achievements[prop].completion !== '0,0%' ? `<p class="achievement__completion">Это достижение есть у ${this.#achievements[prop].completion} игроков</p>` : ''}

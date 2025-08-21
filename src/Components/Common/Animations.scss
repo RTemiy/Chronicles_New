@@ -106,3 +106,33 @@
     transform: scale(1.1)
   }
 }
+
+.shimmering_image {
+  display: inline-block;
+  mask: linear-gradient(-60deg, #000 30%, rgba(0, 0, 0, 0.51), #000 70%) right/350% 100%;
+  animation: shimmerimage 3s infinite;
+}
+
+@keyframes shimmerimage {
+  100% {
+    mask-position: left
+  }
+}
+
+.shimmering_text {
+  background: linear-gradient(to right, #ccc 0%, #fff 50%, #ccc 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text; /* For WebKit browsers */
+  background-clip: text;
+  color: transparent;
+  animation: shimmertext 3s infinite linear;
+}
+
+@keyframes shimmertext {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

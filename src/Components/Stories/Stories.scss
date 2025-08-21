@@ -85,7 +85,7 @@
   max-width: 350px;
   margin: 0 auto;
   border-radius: 15px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.7);
 }
 
 .story__info-container{
@@ -104,7 +104,7 @@
 .story__title{
   margin: 0 auto 15px auto;
   align-self: center;
-  width: 80%
+  width: 80%;
 }
 
 .story__description {
@@ -114,6 +114,7 @@
   margin: 0 0 0 0;
   transition: all 0.5s ease-in-out;
   z-index: 15;
+  font-weight: 1000;
 }
 
 .story__button {

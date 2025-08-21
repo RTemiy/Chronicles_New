@@ -1,4 +1,5 @@
 import { wardrobe } from '../../index'
+import { loadData } from '../../Functions/localStorageManager';
 
 wardrobe.addPerson('AEP_Hero', [
   {
@@ -21,6 +22,13 @@ wardrobe.addPerson('AEP_Hero', [
     description: 'Нужно выглядеть как полагается и вручить этому миру красоту',
     cost: 'long',
     unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/AEP/Persons/Hero_Shop4.png'),
+    title: 'Клейм',
+    description: 'Описание',
+    cost: 'long',
+    unlocked: () => { return loadData(['Shop', 'ShopId4']) === '1' }
   }
 ])
 

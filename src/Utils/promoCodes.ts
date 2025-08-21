@@ -23,6 +23,11 @@ export const promoCodes = [
     code: 'sxychrstpr',
     description: '<b>Осколки чужой судьбы</b> <p>- <i>Сексуальный</i></p>',
     innerCode: 'Shop_ShopId3'
+  },
+  {
+    code: 'bvnghtdyt',
+    description: '<b>Amore e passione</b> <p>- <i>Клейм</i></p>',
+    innerCode: 'Shop_ShopId4'
   }
   /* {
     code: 'qly52axc',

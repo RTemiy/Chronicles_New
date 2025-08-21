@@ -13,6 +13,17 @@ export const shopItems = [
     available: true
   },
   {
+    id: 4,
+    category: 'Гардероб',
+    title: 'Клейм',
+    description: 'Amore e passione <p>Глава 1 Часть 1.</p><p>⠀</p><i>Описание</i>',
+    cost: '39',
+    image: require('../Images/AEP/Persons/Hero_Shop4.png'),
+    free: true,
+    action: () => { checkPromoCode('bvnghtdyt') },
+    available: true
+  },
+  {
     id: 0,
     category: 'Гардероб',
     title: 'Костюм клоуна',
