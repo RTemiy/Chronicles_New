@@ -50,7 +50,7 @@ export const Profile = new CContainer(
 		</div>
 	</div>
 	<div class="profile__container">
-		<button id="achievementsButton" class="profile__button" type="button"></button>
+		<button id="achievementsButton" class="profile__button pulsating-push" type="button"></button>
 	</div>
 	<div class="profile__category">
 	  <p class="profile__category-title">Награды за события</p>

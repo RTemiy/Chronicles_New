@@ -24,7 +24,7 @@ const Settings = new CContainer(
 	    <div class="slider round"></div> 
   	</label>
 	</div>
-	<div class="settings__block">
+	<div class="settings__block" style="display: none">
 		<p>Прятать подсказки</p>
 		<label class="switch">
 	    <input type="checkbox" id="settings-aha"/>
@@ -35,6 +35,13 @@ const Settings = new CContainer(
 		<p>Полноэкранный режим</p>
 		<label class="switch">
 	    <input type="checkbox" id="settings-fsm"/>
+	    <div class="slider round"></div> 
+  	</label>
+	</div>
+	<div class="settings__block">
+		<p>Уменьшить масштаб</p>
+		<label class="switch">
+	    <input type="checkbox" id="settings-scale"/>
 	    <div class="slider round"></div> 
   	</label>
 	</div>
@@ -92,6 +99,7 @@ const Settings = new CContainer(
   { name: 'checkBoxSound', selector: '#settings-sound' },
   { name: 'checkBoxAHA', selector: '#settings-aha' },
   { name: 'checkBoxfullscreen', selector: '#settings-fsm' },
+  { name: 'checkBoxScale', selector: '#settings-scale' },
   { name: 'creatorsButton', selector: '#creators-button' },
   { name: 'supportButton', selector: '#support-button' },
   { name: 'req01', selector: '#req-01' },
@@ -108,6 +116,12 @@ Settings.checkBoxSound.addEventListener('click', () => {
 
 Settings.checkBoxAHA.addEventListener('click', () => {
   saveData(['Settings_AHA'], [Settings.checkBoxAHA.checked])
+})
+
+Settings.checkBoxScale.addEventListener('click', () => {
+  saveData(['Settings_Scale'], [Settings.checkBoxScale.checked])
+  loadData(['Settings_Scale']) === 'true' && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0')
+  loadData(['Settings_Scale']) === 'false' && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
 })
 
 Settings.checkBoxfullscreen.addEventListener('click', () => {
@@ -127,6 +141,10 @@ function loadSettings (): void {
   Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
 
   loadData(['Settings_FullScreen']) === 'false' && toggleFullscreen()
+
+  Settings.checkBoxScale.checked = loadData(['Settings_Scale']) === 'true' || loadData(['Settings_Scale']) === null
+
+  loadData(['Settings_Scale']) === 'true' && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0')
 }
 
 Settings.supportButton.onclick = () => {

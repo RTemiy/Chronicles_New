@@ -10,7 +10,7 @@
   z-index: 5;
   top: 0;
   left: 0;
-  transition: all .8s ease-in-out;
+  transition: all .8s cubic-bezier(0.42, 0, 0.38, 1.12);
   transform: translateX(100vw);
 }
 
@@ -31,17 +31,14 @@
   max-width: 350px;
   text-align: center;
   margin: 0 25px 45vh 25px;
-  /*&:before{
-    @extend %styled-border;
-    @extend %slide-container;
-    border: 0;
+
+  &:before{
+    @extend %styled-radius;
     position: absolute;
-    top: -30px;
+    top: 0;
     left: 0;
-    height: 30px;
+    height: 100%;
     width: 100%;
-    content: 'Важно!';
-    padding: 5px 0 0 0;
-    border-radius: 10px 10px 0 0;
-  }*/
+    box-shadow: inset  2px 2px 50px 0 rgba(255, 255, 255, 0.2);
+  }
 }
