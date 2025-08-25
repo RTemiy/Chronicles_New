@@ -9,6 +9,7 @@ import { wasteBook } from '../Books/Books'
 import { loadData } from '../../Functions/localStorageManager'
 import { sendActivity } from '../../Functions/GSAPI'
 import { showAd } from '../../Functions/advertisement'
+import { changeState } from '../../Functions/backEventActions';
 
 const Parts = new CContainer(
   'parts',
@@ -41,6 +42,7 @@ export const renderParts = (storyName: string, chapterName: string): void => {
               storiesManager.getPartProp(storyName, chapterName, partName, 'event')(storyName, chapterName, partName, storiesManager.getPartProp(storyName, chapterName, partName, 'code'))
               renderLoadingScreen(storiesManager.getPartProp(storyName, chapterName, partName, 'loadingImage'), () => {
                 Slide.self.style.display = 'grid'
+                changeState('slide')
               })
             })
           })

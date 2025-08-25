@@ -9,7 +9,7 @@ import { MenuMessage, showMessage } from '../MenuMessage/MenuMessage'
 import { showAd } from '../../Functions/advertisement'
 import makeExplosion from '../../Functions/explosion'
 import downloadProgress from '../../Functions/downloadProgress'
-import { toggleFullscreen } from '../../Functions/desktopFuncs'
+import { setWindowScale, toggleFullscreen } from '../../Functions/desktopFuncs'
 import { DesktopMode } from '../../Utils/technicalConsts'
 
 const Settings = new CContainer(
@@ -120,8 +120,8 @@ Settings.checkBoxAHA.addEventListener('click', () => {
 
 Settings.checkBoxScale.addEventListener('click', () => {
   saveData(['Settings_Scale'], [Settings.checkBoxScale.checked])
-  loadData(['Settings_Scale']) === 'true' && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0')
-  loadData(['Settings_Scale']) === 'false' && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0')
+  loadData(['Settings_Scale']) === 'true' && changeScale('small')
+  loadData(['Settings_Scale']) === 'false' && changeScale('normal')
 })
 
 Settings.checkBoxfullscreen.addEventListener('click', () => {
@@ -144,7 +144,7 @@ function loadSettings (): void {
 
   Settings.checkBoxScale.checked = loadData(['Settings_Scale']) === 'true' || loadData(['Settings_Scale']) === null
 
-  loadData(['Settings_Scale']) === 'true' && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0')
+  loadData(['Settings_Scale']) === 'true' && changeScale('small')
 }
 
 Settings.supportButton.onclick = () => {
@@ -179,6 +179,18 @@ function readFile (): void {
       localStorage.setItem(prop, SV[prop])
     }
     location.reload()
+  }
+}
+
+function changeScale (value: 'normal' | 'small'): void {
+  switch (value) {
+    case 'normal':
+      !DesktopMode && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
+      DesktopMode && setWindowScale(0)
+      break
+    case 'small':
+      !DesktopMode && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0')
+      DesktopMode && setWindowScale(-1)
   }
 }
 

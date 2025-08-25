@@ -88,6 +88,7 @@ export default class CScenarioManager {
       this.#doAfterAll(scene.afterAll)
       func?.()
     }
+    sceneIndex === 0 && setTimeout(() => { this.#doLastSave(sceneIndex) }, 100)
   }
 
   #doBeforeBegin (beforeBegin: (() => void) | undefined): void {

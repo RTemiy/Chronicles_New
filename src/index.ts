@@ -41,9 +41,11 @@ import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
 import { Shop } from './Components/Shop/Shop'
 import { DesktopMode } from './Utils/technicalConsts';
+import { addlistenerandroidbackbutton } from './Functions/backEventActions';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
+addlistenerandroidbackbutton()
 
 export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self, Profile.self, Shop.self)
 tabManagerMenu.addElementTo(Chapters.self, Books.self)

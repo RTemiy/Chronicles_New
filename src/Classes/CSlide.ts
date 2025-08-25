@@ -8,6 +8,7 @@ import { showAd } from '../Functions/advertisement'
 import { DesktopMode, devMode } from '../Utils/technicalConsts'
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
 import { showMessage } from '../Components/MenuMessage/MenuMessage'
+import { changeState } from '../Functions/backEventActions'
 
 export default class CSlide {
   private previousSlideText = ''
@@ -240,15 +241,18 @@ export default class CSlide {
       this.menuToolbarElement.style.display = 'flex'
       this.soundManager.play('menu')
       hideLoadingScreen()
+      changeState('menu')
       setTimeout(() => { hideLoadingScreen() }, 1100)
     }
 
     this.slide.journalButton.onclick = () => {
+      changeState('journal')
       this.renderJournal()
       this.journalElement.style.display = 'flex'
     }
 
     this.slide.inventoryButton.onclick = () => {
+      changeState('inventory')
       this.renderInventory(EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]])
       this.inventoryElement.style.display = 'flex'
       this.slide.inventoryButton.classList.remove('pulsating-white')

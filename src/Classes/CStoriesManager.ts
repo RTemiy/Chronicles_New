@@ -115,8 +115,8 @@ export default class CStoriesManager {
             <p class="story__genre">${story.genre}</p>
         </div>
         <div class="story__info-container">
-          <img class="story__title" src="${story.title}">
-          <p class="story__description">${story.description}</p>
+          <img class="story__title shimmering_image" src="${story.title}">
+          <p class="story__description shimmering_text">${story.description}</p>
           <p class="story__button pulsating-push">Читать</p>
         </div>
       </div>

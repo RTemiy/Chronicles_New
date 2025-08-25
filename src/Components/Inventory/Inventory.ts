@@ -7,6 +7,7 @@ import './Items.scss'
 import './Effects.scss'
 
 import { statsManager } from '../../index'
+import { changeState } from '../../Functions/backEventActions';
 
 export const Inventory = new CContainer(
   'inventory',
@@ -114,4 +115,5 @@ export function renderInventory (story: EStoriesEn): void {
 
 Inventory.closeInventoryButton.onclick = () => {
   Inventory.self.style.display = 'none'
+  changeState('slide')
 }

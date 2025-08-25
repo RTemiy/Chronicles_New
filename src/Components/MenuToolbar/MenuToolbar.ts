@@ -10,6 +10,7 @@ import { Profile, renderProfile } from '../Profile/Profile'
 import { renderShop, Shop } from '../Shop/Shop';
 import { DesktopMode } from '../../Utils/technicalConsts';
 import { setIsShowingLoadingScreenFalse } from '../LoadingScreen/LoadingScreen';
+import { changeState } from '../../Functions/backEventActions';
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
@@ -98,6 +99,7 @@ MenuToolbar.continueButton.onclick = () => {
     MenuToolbar.self.style.display = 'none'
     tabManagerMenu.closeAll()
     Slide.self.style.display = 'grid'
+    changeState('slide')
   }, 500)
 }
 

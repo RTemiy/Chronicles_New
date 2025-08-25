@@ -3,6 +3,7 @@ import './Journal.scss'
 import { EStoriesEn } from '../../Utils/EStoriesNames';
 import { loadData } from '../../Functions/localStorageManager';
 import { journal } from '../../index';
+import { changeState } from '../../Functions/backEventActions';
 
 export const Journal = new CContainer(
   'journal',
@@ -19,6 +20,7 @@ export const Journal = new CContainer(
 
 Journal.closeJournalButton.onclick = () => {
   Journal.self.style.display = 'none'
+  changeState('slide')
 }
 
 export function renderJournal (): void {
