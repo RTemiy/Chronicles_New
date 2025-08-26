@@ -14,8 +14,8 @@ import {
   hideLoadingScreen,
   LoadingScreen,
   renderLoadingScreen,
-  showBlurredBackground,
-} from './Components/LoadingScreen/LoadingScreen';
+  showBlurredBackground
+} from './Components/LoadingScreen/LoadingScreen'
 import MenuToolbar from './Components/MenuToolbar/MenuToolbar'
 import preCacheImages from './Functions/preCache'
 import CSoundSystem from './Classes/CSoundSystem'
@@ -40,8 +40,8 @@ import { achievementsData } from './Utils/achievementsData'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
 import { Shop } from './Components/Shop/Shop'
-import { DesktopMode } from './Utils/technicalConsts';
-import { addlistenerandroidbackbutton } from './Functions/backEventActions';
+import { DesktopMode } from './Utils/technicalConsts'
+import { addlistenerandroidbackbutton, changeState } from './Functions/backEventActions'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -56,7 +56,7 @@ tabManagerMenu.open(Stories.self)
 export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
-export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), require('./Sounds/Common/Menu.mp3'))
+export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), [require('./Sounds/Common/Menu01.mp3'), require('./Sounds/Common/Menu02.mp3'), require('./Sounds/Common/Menu03.mp3')])
 export const wardrobe = new CWardrobe(Wardrobe)
 export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, animateBackForth, renderInventory, renderJournal, showCutscene)
 export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, wardrobe)
@@ -95,6 +95,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   localStorage.removeItem('LastSave_ScenarioInfo')
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
   hideLoadingScreen()
+  changeState('menu')
   setTimeout(() => { hideLoadingScreen() }, 1100)
 }
 

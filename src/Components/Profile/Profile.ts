@@ -17,6 +17,7 @@ import saveScreenshot from '../../Functions/screenshot'
 import makeExplosion from '../../Functions/explosion'
 import { transformMinutes } from '../../Functions/transformMinutes'
 import { devMode } from '../../Utils/technicalConsts'
+import { changeState } from '../../Functions/backEventActions';
 
 export const Profile = new CContainer(
   'profile',
@@ -119,6 +120,7 @@ Profile.name.onblur = () => {
 Profile.achievementsButton.onclick = () => {
   tabManagerMenu.open(Achievements.self)
   achievementsManager.render()
+  changeState('achievements')
 }
 
 Profile.avatar.onclick = () => {

@@ -66,23 +66,27 @@ toolBarButtonsManager.setCustomClassToChange('button-bright')
 MenuToolbar.settingsButton.onclick = () => {
   tabManagerMenu.open(Settings.self)
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.settingsButton)
+  changeState('menu')
 }
 
 MenuToolbar.storiesButton.onclick = () => {
   tabManagerMenu.open(Stories.self)
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.storiesButton)
+  changeState('menu')
 }
 
 MenuToolbar.profileButton.onclick = () => {
   tabManagerMenu.open(Profile.self)
   renderProfile()
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.profileButton)
+  changeState('menu')
 }
 
 MenuToolbar.shopButton.onclick = () => {
   tabManagerMenu.open(Shop.self)
   renderShop()
   toolBarButtonsManager.setCustomClassOnlyTo(MenuToolbar.shopButton)
+  changeState('menu')
 }
 
 MenuToolbar.exitButton.onclick = () => {

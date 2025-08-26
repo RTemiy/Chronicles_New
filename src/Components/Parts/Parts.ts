@@ -72,6 +72,7 @@ export const renderParts = (storyName: string, chapterName: string): void => {
 
 Parts.backButton.onclick = () => {
   tabManagerMenu.open(Chapters.self)
+  changeState('menu')
 }
 
 export default Parts

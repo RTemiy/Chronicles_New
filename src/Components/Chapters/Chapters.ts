@@ -3,6 +3,7 @@ import './Chapters.scss'
 import { storiesManager, tabManagerMenu } from '../../index'
 import Parts, { renderParts } from '../Parts/Parts'
 import Stories from '../Stories/Stories'
+import { changeState } from '../../Functions/backEventActions';
 
 const Chapters = new CContainer('chapters',
   `
@@ -22,6 +23,7 @@ export const renderChapters = (storyName: string): void => {
       chaptersElements[index].onclick = () => {
         renderParts(storyName, chapterName)
         tabManagerMenu.open(Parts.self)
+        changeState('parts')
       }
     })
   })

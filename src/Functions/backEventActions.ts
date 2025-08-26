@@ -2,8 +2,9 @@ import MenuToolbar from '../Components/MenuToolbar/MenuToolbar'
 import { Inventory } from '../Components/Inventory/Inventory'
 import { Slide } from '../Components/Slide/Slide'
 import { Journal } from '../Components/Journal/Journal'
+import Parts from '../Components/Parts/Parts';
 
-let currentState: 'menu' | 'inventory' | 'slide' | 'journal' = 'menu'
+let currentState: 'menu' | 'inventory' | 'slide' | 'journal' | 'parts' | 'achievements' = 'menu'
 
 export function initLastHash (): void {
   for (let x = 0; x < 100; x++) {
@@ -11,7 +12,7 @@ export function initLastHash (): void {
   }
 }
 
-export function changeState (stateName: 'menu' | 'inventory' | 'slide' | 'journal'): void {
+export function changeState (stateName: 'menu' | 'inventory' | 'slide' | 'journal' | 'parts' | 'achievements'): void {
   currentState = stateName
 }
 
@@ -28,6 +29,12 @@ export function backButtonEvent (): void {
       break
     case 'journal':
       Journal.closeJournalButton.click()
+      break
+    case 'parts':
+      Parts.backButton.click()
+      break
+    case 'achievements':
+      MenuToolbar.profileButton.click()
       break
   }
 }
