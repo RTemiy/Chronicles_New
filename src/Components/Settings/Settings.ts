@@ -142,7 +142,7 @@ function loadSettings (): void {
 
   loadData(['Settings_FullScreen']) === 'false' && toggleFullscreen()
 
-  Settings.checkBoxScale.checked = loadData(['Settings_Scale']) === 'true' || loadData(['Settings_Scale']) === null
+  Settings.checkBoxScale.checked = loadData(['Settings_Scale']) === 'true' || false
 
   loadData(['Settings_Scale']) === 'true' && changeScale('small')
 }
