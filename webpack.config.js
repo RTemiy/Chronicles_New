@@ -116,6 +116,38 @@ module.exports = {
           sizes: [96, 128, 192, 256, 384, 512]
         }
       ],
+      screenshots: [
+        {
+          src: 'https://vkplay.ru/hotbox/showcase/gamehighlight/pic/eb4ebbc7-a389-46a3-aa7f-91860221889f.jpg',
+          form_factor: 'wide',
+          label: 'Скриншот на ПК'
+        },
+        {
+          src: 'https://vkplay.ru/hotbox/showcase/gamehighlight/pic/78677ca7-eca7-4a75-bfd2-59f0757534f1.jpg',
+          form_factor: 'wide',
+          label: 'Скриншот на ПК'
+        },
+        {
+          src: 'https://vkplay.ru/hotbox/showcase/gamehighlight/pic/4e6c83e9-5b53-44b3-acb9-e8e9073171c7.jpg',
+          form_factor: 'wide',
+          label: 'Скриншот на ПК'
+        },
+        {
+          src: 'https://vkplay.ru/hotbox/showcase/gamehighlight/pic/eb4ebbc7-a389-46a3-aa7f-91860221889f.jpg',
+          form_factor: 'narrow',
+          label: 'Скриншот на мобильном устройстве'
+        },
+        {
+          src: 'https://vkplay.ru/hotbox/showcase/gamehighlight/pic/78677ca7-eca7-4a75-bfd2-59f0757534f1.jpg',
+          form_factor: 'narrow',
+          label: 'Скриншот на мобильном устройстве'
+        },
+        {
+          src: 'https://vkplay.ru/hotbox/showcase/gamehighlight/pic/4e6c83e9-5b53-44b3-acb9-e8e9073171c7.jpg',
+          form_factor: 'narrow',
+          label: 'Скриншот на мобильном устройстве'
+        }
+      ],
       'theme-color': 'black',
       lang: 'ru',
       display: 'standalone',

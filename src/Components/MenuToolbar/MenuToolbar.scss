@@ -4,13 +4,15 @@
   position: fixed;
 
   @container style(--desktopmode: false){
-    left: 0;
-    bottom: 0;
-    right: 0;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
     flex-direction: row;
+    padding: 5px;
     @extend %styled-background;
+    @extend %styled-radius;
+    @extend %styled-border;
     justify-content: space-evenly;
-    border-radius: 0;
   }
 
   @container style(--desktopmode: true){

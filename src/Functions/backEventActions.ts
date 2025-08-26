@@ -1,7 +1,7 @@
 import MenuToolbar from '../Components/MenuToolbar/MenuToolbar'
 import { Inventory } from '../Components/Inventory/Inventory'
 import { Slide } from '../Components/Slide/Slide'
-import { Journal } from '../Components/Journal/Journal';
+import { Journal } from '../Components/Journal/Journal'
 
 let currentState: 'menu' | 'inventory' | 'slide' | 'journal' = 'menu'
 
