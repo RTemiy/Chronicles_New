@@ -10,7 +10,7 @@
   width: 100vw;
   max-width: 400px;
   justify-content: space-evenly;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 
 %slide__toolbar-button {
@@ -57,7 +57,7 @@
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.5;
-  transition: opacity 1s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
   background-image: url("../../Images/UI/icon_down.svg");
 }
 
