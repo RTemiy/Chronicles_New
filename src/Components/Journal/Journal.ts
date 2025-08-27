@@ -1,9 +1,9 @@
 import CContainer from '../../Classes/CContainer'
 import './Journal.scss'
-import { EStoriesEn } from '../../Utils/EStoriesNames';
-import { loadData } from '../../Functions/localStorageManager';
-import { journal } from '../../index';
-import { changeState } from '../../Functions/backEventActions';
+import { EStoriesEn } from '../../Utils/EStoriesNames'
+import { loadData } from '../../Functions/localStorageManager'
+import { journal } from '../../index'
+import { changeState } from '../../Functions/backEventActions'
 
 export const Journal = new CContainer(
   'journal',

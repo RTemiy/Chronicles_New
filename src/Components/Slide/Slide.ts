@@ -48,6 +48,7 @@ export const Slide = new CContainer('slide',
         <button type="button" class="slide__journal-button"></button>
         <button type="button" class="slide__previous-button"></button>
         <button type="button" class="slide__exit-button"></button>
+        <button type="button" class="slide__hide-button"></button>
     </div>
     <div class="pie" style="--duration: 10s;">
     <p class="pie__leftTime">0</p>
@@ -74,10 +75,12 @@ export const Slide = new CContainer('slide',
   { name: 'backgroundImageHelper', selector: '.slide__backgroundHelper' },
   { name: 'message', selector: '.slide__message' },
   { name: 'messageText', selector: '.slide__message-text' },
+  { name: 'toolBar', selector: '.slide__toolbar' },
   { name: 'inventoryButton', selector: '.slide__inventory-button' },
   { name: 'journalButton', selector: '.slide__journal-button' },
   { name: 'previousSlideButton', selector: '.slide__previous-button' },
   { name: 'exitSlideButton', selector: '.slide__exit-button' },
+  { name: 'hideToolbarButton', selector: '.slide__hide-button' },
   { name: 'timer', selector: '.pie' },
   { name: 'timerLeft', selector: '.pie__leftTime' },
   { name: 'cutScene', selector: '.cut-scene' },
@@ -133,4 +136,8 @@ Slide.consoleInput.addEventListener('keypress', (evt: { key: string, value: stri
 
 export function setCurrentSlideId (id: number): void {
   Slide.consoleSlideId.innerText = id
+}
+
+Slide.hideToolbarButton.onclick = () => {
+  Slide.toolBar.classList.toggle('slide__toolbar_hidden')
 }

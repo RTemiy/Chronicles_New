@@ -112,3 +112,27 @@ achievementsManager.add({
   text: 'Наслаждайся, пока можешь',
   story: EStoriesEn.FOF
 })
+
+achievementsManager.add({
+  name: 'AboutWorries',
+  image: require('../../Images/FOF/Achievements/AboutWorries.jpg'),
+  title: 'Откровение',
+  text: 'Открой свои переживания Кристоферу',
+  story: EStoriesEn.FOF
+})
+
+achievementsManager.add({
+  name: 'ChrisPast',
+  image: require('../../Images/FOF/Achievements/ChrisPast.jpg'),
+  title: 'Прошлое странника',
+  text: 'Узнай о детстве Кристофера',
+  story: EStoriesEn.FOF
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part07Completed',
+  image: require('../../Images/FOF/Achievements/Chapter01Part07Completed.jpg'),
+  title: 'Веселье только начинается',
+  text: 'Незнакомка, готовая раскрыть все тайны',
+  story: EStoriesEn.FOF
+})

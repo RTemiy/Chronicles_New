@@ -141,4 +141,14 @@ export default class CStatsManager {
     })
     return { persons, items, effects }
   }
+
+  getImage (statInfo: IStat): string {
+    const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
+    return stat.image!
+  }
+
+  getName (statInfo: IStat): string {
+    const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
+    return stat.name!
+  }
 }

@@ -11,6 +11,7 @@ import { type TIMage } from '../Types/TImage'
 import type CWardrobe from './CWardrobe'
 import { getChoice } from '../Functions/5Choices'
 import { setCurrentSlideId } from '../Components/Slide/Slide'
+import { showStatAlert } from '../Components/SlideStatAlert/SlideStatAlert';
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -137,12 +138,13 @@ export default class CScenarioManager {
   }
 
   #doStats (stats: IStat[]): void {
-    stats.forEach(stat => {
+    stats.forEach((stat) => {
       stat.story = this.getCurrentStoryName()
       this.#statsManager.change(stat)
       if (stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
         if (stat.silent === false || stat.silent === undefined) {
           this.slide.alertInventory()
+          showStatAlert(this.#statsManager.getImage(stat)!, `${this.#statsManager.getName(stat)!} ${stat.value}`)
         }
       }
     })
