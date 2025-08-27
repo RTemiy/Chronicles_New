@@ -11,6 +11,7 @@ import makeExplosion from '../../Functions/explosion'
 import downloadProgress from '../../Functions/downloadProgress'
 import { setWindowScale, toggleFullscreen } from '../../Functions/desktopFuncs'
 import { DesktopMode } from '../../Utils/technicalConsts'
+import { SlideStatAlert } from '../SlideStatAlert/SlideStatAlert'
 
 const Settings = new CContainer(
   'settings',
@@ -24,8 +25,8 @@ const Settings = new CContainer(
 	    <div class="slider round"></div> 
   	</label>
 	</div>
-	<div class="settings__block" style="display: none">
-		<p>Прятать подсказки</p>
+	<div class="settings__block">
+		<p>Скрыть подсказки</p>
 		<label class="switch">
 	    <input type="checkbox" id="settings-aha"/>
 	    <div class="slider round"></div> 
@@ -116,6 +117,7 @@ Settings.checkBoxSound.addEventListener('click', () => {
 
 Settings.checkBoxAHA.addEventListener('click', () => {
   saveData(['Settings_AHA'], [Settings.checkBoxAHA.checked])
+  SlideStatAlert.self.style.display = Settings.checkBoxAHA.checked ? 'none' : 'flex'
 })
 
 Settings.checkBoxScale.addEventListener('click', () => {
@@ -137,6 +139,8 @@ function loadSettings (): void {
   Settings.checkBoxSound.checked = loadData(['Settings_Sound']) === 'true' || loadData(['Settings_Sound']) === null
 
   Settings.checkBoxAHA.checked = loadData(['Settings_AHA']) === 'true'
+
+  SlideStatAlert.self.style.display = Settings.checkBoxAHA.checked ? 'none' : 'flex'
 
   Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
 

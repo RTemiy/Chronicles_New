@@ -4,9 +4,11 @@ import './SlideStatAlert.scss'
 export const SlideStatAlert = new CContainer('statAlert', '')
 
 export function showStatAlert (image: string, text: string): void {
+  const fixedText = fixText(text).split(' ')
   addToQueue(`
   <img class="statAlert__image" src="${image}">
-    <p class="statAlert__text">${fixText(text)}</p>
+    <p class="statAlert__text">${fixedText[0]}</p>
+    ${fixedText[1].includes('+') ? '<p class="statAlert__value statAlert__value-add">' + String(fixedText[1]) + '</p>' : fixedText[1] !== '' ? '<p class="statAlert__value statAlert__value-minus">' + String(fixedText[1]) + '</p>' : '<p class="statAlert__value statAlert__value-new">new!</p>'}
   `)
 }
 
@@ -32,7 +34,7 @@ function fixText (text: string): string {
   const textParts = text.split(' ')
   const firstPart = textParts[0]
   let secondPart = textParts[1]
-  if (secondPart.includes('0')) {
+  if (secondPart.includes('0') && secondPart.length === 1) {
     secondPart = ''
   } else if (!secondPart.includes('-')) {
     secondPart = '+' + secondPart

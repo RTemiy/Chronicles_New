@@ -29,7 +29,35 @@
 }
 
 .statAlert__text{
+  padding-top: 10px;
   font-size: var(--tinytext);
+}
+
+.statAlert__value {
+  position: absolute;
+  text-shadow: 0 0 5px black, 1px 1px 5px black;
+  box-shadow: 0 0 5px black;
+  top: 43px;
+  left: 5px;
+  border-radius: 100px;
+  height: 20px;
+  width: auto;
+  text-align: center;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.statAlert__value-add{
+  background-color: rgba(153, 255, 157, 0.4);
+}
+
+.statAlert__value-minus{
+  background-color: rgba(255, 153, 153, 0.4);
+}
+
+.statAlert__value-new{
+  background-color: rgba(255, 228, 122, 0.4);
 }
 
 .slide-in-left {
