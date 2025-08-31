@@ -26,8 +26,13 @@ export const promoCodes = [
   },
   {
     code: 'bvnghtdyt',
-    description: '<b>Amore e passione</b> <p>- <i>Клейм</i></p>',
+    description: '<b>Amore e passione</b> <p>- <i>Праздник</i></p>',
     innerCode: 'Shop_ShopId4'
+  },
+  {
+    code: 'adsdfhgbj',
+    description: '<b>Осколки чужой судьбы</b> <p>- <i>Нежная лилия</i></p>',
+    innerCode: 'Shop_ShopId5'
   }
   /* {
     code: 'qly52axc',

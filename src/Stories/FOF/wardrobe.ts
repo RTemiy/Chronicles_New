@@ -133,3 +133,34 @@ wardrobe.addPerson('Breakfast', [
     unlocked: () => { return true }
   }
 ])
+
+wardrobe.addPerson('Abigeil_Part07', [
+  {
+    image: require('../../Images/FOF/Persons/Abigeil_Sakura.png'),
+    title: 'Сакура',
+    description: 'Нежный макияж, милая кофточка',
+    cost: 'short',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Persons/Abigeil_RedRose.png'),
+    title: 'Красная роза',
+    description: 'Яркий макияж, дерзкая кожанка',
+    cost: 'medium',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Persons/Abigeil_WhiteOrch.png'),
+    title: 'Белая орхидея',
+    description: 'Естественный макияж, романтичная блузка',
+    cost: 'long',
+    unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/FOF/Persons/Abigeil_SoftLily.png'),
+    title: 'Нежная лилия',
+    description: 'Легкий макияж, женственный образ',
+    cost: 'long',
+    unlocked: () => { return loadData(['Shop', 'ShopId5']) === '1' }
+  }
+])

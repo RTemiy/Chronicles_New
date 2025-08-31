@@ -913,7 +913,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 58,
     text:
       `
-        — Аврора, понимаю, что мы с тобой не очень близки и, признаться, твой звонок очень удивил.
+        — Аврора, понимаю, что мы с тобой не очень близки и, признаться, твой звонок удивил.
       `,
     buttons: [
       {
@@ -929,7 +929,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 59,
     text:
       `
-        — Но я здесь. Скажи, что я могу еще сделать?
+        — Но я здесь. Скажи, что могу еще сделать?
       `,
     buttons: [
       {
@@ -1077,8 +1077,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       },
       {
         text: 'Отстраниться',
-        goTo: 84,
-        gift: true
+        goTo: 84
       }],
     imageBack: require('../../../../Images/Aurora/Backgrounds/Hospital_Corridors.jpg')
   },
@@ -2689,7 +2688,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     ambient: require('../../../../Sounds/Common/Silence.mp3'),
     imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation.jpg')
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2705,7 +2704,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
       }],
     imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation.jpg')
+    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -3454,7 +3453,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     id: 224,
     text:
       `
-        Он был прав. Здесь я больше не могу ничего сделать. Он хочет, чтобы я жила, жила и строила свою жизнь.
+        Он был прав. Здесь больше ничего не поделаешь. Он хочет, чтобы я сосредоточилась на своей жизни.
       `,
     buttons: [
       {

@@ -3,12 +3,12 @@ import './SlideStatAlert.scss'
 
 export const SlideStatAlert = new CContainer('statAlert', '')
 
-export function showStatAlert (image: string, text: string): void {
-  const fixedText = fixText(text).split(' ')
+export function showStatAlert (image: string, text: string, value: number): void {
+  const fixedText = transformValue(value)
   addToQueue(`
-  <img class="statAlert__image" src="${image}">
-    <p class="statAlert__text">${fixedText[0]}</p>
-    ${fixedText[1].includes('+') ? '<p class="statAlert__value statAlert__value-add">' + String(fixedText[1]) + '</p>' : fixedText[1] !== '' ? '<p class="statAlert__value statAlert__value-minus">' + String(fixedText[1]) + '</p>' : '<p class="statAlert__value statAlert__value-new">new!</p>'}
+    <img class="statAlert__image" src="${image}">
+    <p class="statAlert__text">${text}</p>
+    ${fixedText.includes('+') ? '<p class="statAlert__value statAlert__value-add">' + String(fixedText) + '</p>' : fixedText !== 'new!' ? '<p class="statAlert__value statAlert__value-minus">' + fixedText + '</p>' : '<p class="statAlert__value statAlert__value-new">' + fixedText + '</p>'}
   `)
 }
 
@@ -30,14 +30,12 @@ function addToQueue (blockInner: string): void {
   }, 150 * SlideStatAlert.self.childElementCount)
 }
 
-function fixText (text: string): string {
-  const textParts = text.split(' ')
-  const firstPart = textParts[0]
-  let secondPart = textParts[1]
-  if (secondPart.includes('0') && secondPart.length === 1) {
-    secondPart = ''
-  } else if (!secondPart.includes('-')) {
-    secondPart = '+' + secondPart
+function transformValue (value: number): string {
+  if (value === 0) {
+    return 'new!'
+  } else if (value > 0) {
+    return `+${value}`
+  } else {
+    return `${value}`
   }
-  return firstPart + ' ' + secondPart
 }

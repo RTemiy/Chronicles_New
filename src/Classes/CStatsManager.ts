@@ -151,4 +151,9 @@ export default class CStatsManager {
     const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
     return stat.name!
   }
+
+  getShow (statInfo: IStat): number | undefined {
+    const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
+    return stat.show
+  }
 }

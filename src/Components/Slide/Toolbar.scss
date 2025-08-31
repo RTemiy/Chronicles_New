@@ -7,13 +7,13 @@
   display: flex;
   flex-direction: row;
   gap: 35px;
-  width: 100vw;
-  max-width: 400px;
+  width: 100%;
   justify-content: space-evenly;
   transition: transform 0.6s ease-in-out;
 }
 
 %slide__toolbar-button {
+  position: relative;
   background-repeat: no-repeat;
   background-size: 40px 40px;
   background-position: center;
@@ -21,8 +21,11 @@
   height: 55px;
   z-index: 5;
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: inset 2px 2px 1px 0 rgba(255, 255, 255, 0.5),
+  inset -1px -1px 1px 1px rgba(255, 255, 255, 0.5);
   @extend %button-tap;
+  @extend %liquid-glass-bg;
 }
 
 .slide__inventory-button {
@@ -53,7 +56,7 @@
   width: 55px;
   height: 55px;
   @extend %button-tap;
-  z-index: 5;
+  z-index: 15;
   background-repeat: no-repeat;
   background-size: contain;
   opacity: 0.5;

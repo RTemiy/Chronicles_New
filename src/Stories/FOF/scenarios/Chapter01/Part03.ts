@@ -2169,8 +2169,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       '',
     buttons: [
       {
-        text: '',
-        goTo: 130
+        text: ''
       }],
     cutScene: { video: require('../../../../Images/FOF/CutScenes/Nick_Abi.mp4'), goTo: 130 },
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
@@ -3781,8 +3780,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       '',
     buttons: [
       {
-        text: '',
-        goTo: 231
+        text: ''
       }],
     cutScene: { video: require('../../../../Images/FOF/CutScenes/Chris_Abi.mp4'), goTo: 231 },
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')

@@ -117,6 +117,6 @@ achievementsManager.add({
   name: 'Chapter01Part05Completed',
   image: require('../../Images/Aurora/Achievements/Chapter01Part05Completed.jpg'),
   title: 'Вкус крови',
-  text: '',
+  text: 'Завершите пятую часть с новыми ощущениями',
   story: EStoriesEn.Aurora
 })

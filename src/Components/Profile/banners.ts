@@ -9,7 +9,7 @@ profileManager.addBanners([
   },
   {
     id: 'Demo',
-    image: require('../../Images/UI/loadingscreen.png'),
+    image: require('../../Images/UI/loadingscreen.jpg'),
     style: 'box-shadow: 0 0 15px 5px #007769',
     condition: () => loadData(['Promo', 'DemoBanner']) === '1'
   },

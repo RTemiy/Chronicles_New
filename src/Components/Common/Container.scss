@@ -59,3 +59,7 @@
 .hidden-element{
   display: none;
 }
+
+%liquid-glass-bg{
+  backdrop-filter: blur(3px) url(#glass-distortion);
+}

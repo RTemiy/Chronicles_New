@@ -1886,8 +1886,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
       `,
     buttons: [
       {
-        text: '',
-        goTo: 120
+        text: ''
       }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/House_Toilet.jpg')
   },

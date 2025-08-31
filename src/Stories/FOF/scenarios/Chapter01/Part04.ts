@@ -445,8 +445,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       '',
     buttons: [
       {
-        text: '',
-        goTo: 29
+        text: ''
       }],
     wardrobe: { story: EStoriesEn.FOF, personId: 'Abigeil_Club', goTo: 29 },
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
@@ -752,8 +751,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       '',
     buttons: [
       {
-        text: '',
-        goTo: 47
+        text: ''
       }],
     wardrobe: { story: EStoriesEn.FOF, personId: 'Chris_Club', goTo: 47 },
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')

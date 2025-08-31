@@ -19,7 +19,7 @@ export default class CSoundSystem {
     this.music = new Audio(silenceSound)
     this.simple = new Audio(notificationSound)
     this.menuSounds = menuSounds
-    this.menu = new Audio(menuSounds[0])
+    this.menu = new Audio(this.menuSounds[Math.floor(Math.random() * this.menuSounds.length)])
     this.menu.loop = true
     this.#initPageVisibility()
   }
@@ -50,12 +50,12 @@ export default class CSoundSystem {
           this[type].play()
         } else {
           this.inMenu = true
-          this.menu = new Audio(this.menuSounds[Math.floor(Math.random() * this.menuSounds.length)])
+          // this.menu = new Audio(this.menuSounds[Math.floor(Math.random() * this.menuSounds.length)])
           this[type].play()
           this.music.pause()
           this.simple.pause()
           this.ambient.pause()
-          this[type].onended = () => { this.play('menu') }
+          // this[type].onended = () => { this.play('menu') }
         }
         this.setVolume(loadData(['Settings_Sound'])!)
       }, 900)

@@ -60,3 +60,13 @@ statsManager.add({
   description: '',
   story: EStoriesEn.FOF
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Samantha',
+  name: 'Саманта ',
+  image: require('../../Images/FOF/Persons/Samantha.png'),
+  title: 'С первого взгляда — привлекательная улыбчивая девушка.',
+  description: 'Харизматичная незнакомка. Что связывает ее с Крисом, и почему странник боится и ненавидит ее? Возможно, она опасна? Мне стоит быть осторожнее, пока не узнаю наверняка.',
+  story: EStoriesEn.FOF
+})

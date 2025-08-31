@@ -40,7 +40,7 @@ import { achievementsData } from './Utils/achievementsData'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
 import { Shop } from './Components/Shop/Shop'
-import { DesktopMode } from './Utils/technicalConsts'
+import { DesktopMode, devMode } from './Utils/technicalConsts';
 import { addlistenerandroidbackbutton, changeState } from './Functions/backEventActions'
 
 require('./sevice-worker')
@@ -67,7 +67,7 @@ loadStories(EStoriesEn)
 
 hideDisclaimer()
 
-renderLoadingScreen(require('./Images/UI/loadingscreen.png'), () => {})
+renderLoadingScreen(require('./Images/UI/loadingscreen.jpg'), () => {})
 
 achievementsManager.updateAchievementsInfo(achievementsData)
 
@@ -91,7 +91,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   MenuToolbar.self.style.display = 'flex'
   tabManagerMenu.open(Stories.self)
   soundManager.play('menu')
-  !DesktopMode && showRate(storyName + chapterName + partName + code)
+  !DesktopMode && !devMode && showRate(storyName + chapterName + partName + code)
   localStorage.removeItem('LastSave_ScenarioInfo')
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
   hideLoadingScreen()

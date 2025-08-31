@@ -15,8 +15,8 @@ export const shopItems = [
   {
     id: 4,
     category: 'Гардероб',
-    title: 'Клейм',
-    description: 'Amore e passione <p>Глава 1 Часть 1.</p><p>⠀</p><i>Описание</i>',
+    title: 'Праздник',
+    description: 'Amore e passione <p>Глава 1 Часть 1.</p><p>⠀</p><i>Я должна быть королевой, даже в повседневной жизни.</i>',
     cost: '39',
     image: require('../Images/AEP/Persons/Hero_Shop4.png'),
     free: true,
@@ -54,6 +54,17 @@ export const shopItems = [
     image: require('../Images/FOF/Persons/Christopher_Sexy.png'),
     free: false,
     action: () => { checkPromoCode('sxychrstpr') },
+    available: true
+  },
+  {
+    id: 5,
+    category: 'Гардероб',
+    title: 'Нежная лилия',
+    description: 'Осколки чужой судьбы <p>Глава 1 Часть 7.</p><p>⠀</p><i>Легкий макияж, женственный образ.</i>',
+    cost: '39',
+    image: require('../Images/FOF/Persons/Abigeil_SoftLily.png'),
+    free: false,
+    action: () => { checkPromoCode('adsdfhgbj') },
     available: true
   }
 ]

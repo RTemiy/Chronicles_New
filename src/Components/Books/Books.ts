@@ -8,12 +8,12 @@ import { showAd } from '../../Functions/advertisement'
 export const Books = new CContainer(
   'books',
   `
-  <div class="books__container" ${DesktopMode && 'style="visibility: hidden;"'}>
+  <div class="books__container" ${DesktopMode && 'style="visibility: hidden;"'} ${devMode && 'style="visibility: hidden;"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>
     <p class="books__text"></p>
     <p class="books__help"></p>
   </div>
-  <div class="ad_book" ${DesktopMode && 'style="visibility: hidden;"'}>
+  <div class="ad_book" ${DesktopMode && 'style="visibility: hidden;"'} ${devMode && 'style="visibility: hidden;"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency_add.svg')}"/>
   </div>
   `,
@@ -30,7 +30,7 @@ export function addBook (): void {
     DesktopMode && saveData(['Books_amount'], [1000])
   } else {
     hideAdBook()
-    showMessage(`Вы получили<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
+    !devMode && !DesktopMode && showMessage(`Вы получили<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
     saveData(['Books_amount'], [booksAmount + 1])
   }
   saveData(['Books_LastDate'], [new Date()])
@@ -50,7 +50,13 @@ export function wasteBook (approvedFunc: () => void): void {
 }
 
 export function canWasteBooks (): boolean {
-  return parseInt(loadData(['Books_amount'])!) >= 1
+  if (devMode) {
+    return true
+  } else if (DesktopMode) {
+    return true
+  } else {
+    return parseInt(loadData(['Books_amount'])!) >= 1
+  }
 }
 
 export function startBooksTimer (): void {

@@ -141,8 +141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       '',
     buttons: [
       {
-        text: '',
-        goTo: 10
+        text: ''
       }],
     cutScene: { goTo: 10, video: require('../../../../Images/FOF/CutScenes/Bath.mp4') },
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
@@ -2337,8 +2336,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       '',
     buttons: [
       {
-        text: '',
-        goTo: 149
+        text: ''
       }],
     wardrobe: { story: EStoriesEn.FOF, personId: 'Abigeil_Part06', goTo: 149 },
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
@@ -2812,8 +2810,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       '',
     buttons: [
       {
-        text: '',
-        goTo: 180
+        text: ''
       }],
     wardrobe: { story: EStoriesEn.FOF, personId: 'Breakfast', goTo: 180 },
     parallax: 'right',
@@ -3643,7 +3640,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       {
         text: '',
         func: () => {
-          saveEndProgress('FOF', 'Глава 1', 'Часть 7@', '0')
+          saveEndProgress('FOF', 'Глава 1', 'Часть 7', '0')
         }
       }],
     achievement: { story: EStoriesEn.FOF, name: 'Chapter01Part06Completed' },

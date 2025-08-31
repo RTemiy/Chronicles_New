@@ -37,7 +37,7 @@ storiesManager.add({
           name: 'Часть 2',
           code: '0',
           image: require('../../Images/Aurora/Backgrounds/University_Hall.jpg'),
-          loadingImage: require('../../Images/Aurora/Covers/Part02.png'),
+          loadingImage: require('../../Images/Aurora/Covers/Part02.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)

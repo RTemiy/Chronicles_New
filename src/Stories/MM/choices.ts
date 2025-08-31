@@ -5,5 +5,5 @@ statsManager.add({
   category: 'Choice',
   id: 'CallBoss',
   idDescription: 'Позвонить начальству',
-  story: EStoriesEn.ISML
+  story: EStoriesEn.MM
 })
