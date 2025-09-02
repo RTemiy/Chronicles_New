@@ -1,3 +1,5 @@
+import { DesktopMode } from '../Utils/technicalConsts'
+
 export default class CSlider {
   #containerElement
   #containerElements: any[]
@@ -69,11 +71,13 @@ export default class CSlider {
 
   #render (): void {
     this.#containerElements.forEach((child, index) => {
-      // const video = child.querySelector('.' + this.videoSelector)!
-      // video.pause()
+      if (DesktopMode) {
+        const video = child.querySelector('.' + this.videoSelector)!
+        video.pause()
+        index === 0 && video.play()
+      }
       child.setAttribute('style', `z-index: ${-index};`)
       index === 0 && child.setAttribute('style', ' z-index: 1;')
-      // index === 0 && video.play()
       index === 1 && child.setAttribute('style', 'transform: translateX(8%); z-index: 0;')
       index === this.#containerElements.length - 1 &&
         child.setAttribute('style', 'transform: translateX(-8%); z-index: 0;')

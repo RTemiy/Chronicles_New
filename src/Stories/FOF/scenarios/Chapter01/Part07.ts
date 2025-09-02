@@ -3425,7 +3425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/FOF/Backgrounds/Mall02.jpg'),
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Sounds/FOF/Main.mp3')
   },
 
   {

@@ -40,8 +40,9 @@ import { achievementsData } from './Utils/achievementsData'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
 import { Shop } from './Components/Shop/Shop'
-import { DesktopMode, devMode } from './Utils/technicalConsts';
+import { DesktopMode, devMode } from './Utils/technicalConsts'
 import { addlistenerandroidbackbutton, changeState } from './Functions/backEventActions'
+import { showNews } from './Functions/showNews'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -82,6 +83,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
     showPolicy()
     soundManager.play('menu')
     checkURL()
+    showNews()
   }
 })
 

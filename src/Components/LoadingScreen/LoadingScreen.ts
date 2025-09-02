@@ -51,6 +51,7 @@ export function hideLoadingScreen (): void {
 
 export function showBlurredBackground (backgroundImage: string): void {
   if (!isShowingLoadingScreen) {
+    LoadingScreen.self.onclick = () => {}
     LoadingScreen.backgroundBlurredImage.style.display = 'block'
     LoadingScreen.self.style.zIndex = '-1000'
     LoadingScreen.backgroundImage.style.display = 'none'
@@ -72,4 +73,3 @@ export function showBlurredBackground (backgroundImage: string): void {
     }
   }
 }
-
