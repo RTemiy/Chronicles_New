@@ -1,0 +1,87 @@
+@use '../Common/Colors';
+@import '../Common/Common';
+
+select, ::picker(select){
+  appearance: base-select;
+}
+
+::picker(select) {
+  border: none;
+  background: none;
+}
+
+::picker(select) {
+  opacity: 0;
+  transition: all 0.4s allow-discrete;
+}
+
+::picker(select):popover-open {
+  opacity: 1;
+}
+
+.select{
+  font-size: var(--mediumtext);
+  font-family: var(--font);
+  @extend %styled-radius;
+  @extend %styled-border;
+  @extend %styled-background;
+  color: white;
+  border: 0;
+  padding: 4px 5px;
+  @extend %button-tap;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.4s;
+}
+
+.select:focus{
+  outline: none;
+}
+
+.select::picker-icon {
+  color: #ffffff;
+  transition: 0.4s rotate;
+  content: "↷";
+}
+
+.select:open::picker-icon {
+  rotate: 180deg;
+}
+
+
+
+.option{
+  @extend %styled-background;
+  @extend %styled-border;
+  color: white;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  @extend %button-tap;
+  box-sizing: border-box;
+  padding: 4px 5px;
+}
+
+.option::checkmark {
+  order: 1;
+  margin-left: auto;
+  content: "☑";
+}
+
+.option:checked {
+  // font-weight: bold;
+  // text-decoration: underline;
+  box-shadow: inset 0 0 5px gray;
+}
+
+.option:hover{
+  box-shadow: inset 0 0 5px black;
+}
+
+.option:first-of-type {
+  border-radius: 8px 8px 0 0;
+}
+
+.option:last-of-type {
+  border-radius: 0 0 8px 8px;
+}

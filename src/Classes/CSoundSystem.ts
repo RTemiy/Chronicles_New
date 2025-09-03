@@ -22,6 +22,12 @@ export default class CSoundSystem {
     this.menu = new Audio(this.menuSounds[Math.floor(Math.random() * this.menuSounds.length)])
     this.menu.loop = true
     this.#initPageVisibility()
+    if (loadData(['Settings_MenuMusic']) !== null) {
+      this.changeMenuMusic(loadData(['Settings_MenuMusic'])!)
+    } else {
+      this.menu = new Audio(this.menuSounds[Math.floor(Math.random() * this.menuSounds.length)])
+      this.menu.loop = true
+    }
   }
 
   play (type: 'ambient' | 'music' | 'simple' | 'menu', path?: string): void {
@@ -109,5 +115,12 @@ export default class CSoundSystem {
     }
 
     document.addEventListener('visibilitychange', handleVisibilityChange, false)
+  }
+
+  changeMenuMusic (value: string): void {
+    this.menu.pause()
+    this.menu = new Audio(this.menuSounds[parseInt(value)])
+    this.play('menu')
+    this.menu.loop = true
   }
 }

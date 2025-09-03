@@ -1,6 +1,7 @@
 import CContainer from '../../Classes/CContainer'
 import './Settings.scss'
 import './Switch.scss'
+import './Select.scss'
 import { soundManager, tabManagerMenu } from '../../index'
 import { Credits } from '../Credits/Credits'
 import { loadData, saveData } from '../../Functions/localStorageManager'
@@ -24,6 +25,14 @@ const Settings = new CContainer(
 	    <input type="checkbox" id="settings-sound" checked/>
 	    <div class="slider round"></div> 
   	</label>
+	</div>
+	<div class="settings__block">
+		<p>Музыка в меню</p>
+		<select class='select' id="settings-music">
+		  <option class="option" value='0'>Separation</option>
+		  <option class="option" value='1'>Common Things</option>
+		  <option class="option" value='2'>Tears of Loss</option>
+    </select>
 	</div>
 	<div class="settings__block">
 		<p>Скрыть подсказки</p>
@@ -98,6 +107,7 @@ const Settings = new CContainer(
 </div>
 `,
   { name: 'checkBoxSound', selector: '#settings-sound' },
+  { name: 'selectMusic', selector: '#settings-music' },
   { name: 'checkBoxAHA', selector: '#settings-aha' },
   { name: 'checkBoxfullscreen', selector: '#settings-fsm' },
   { name: 'checkBoxScale', selector: '#settings-scale' },
@@ -113,6 +123,11 @@ const Settings = new CContainer(
 Settings.checkBoxSound.addEventListener('click', () => {
   saveData(['Settings_Sound'], [Settings.checkBoxSound.checked])
   soundManager.setVolume(loadData(['Settings_Sound'])!)
+})
+
+Settings.selectMusic.addEventListener('change', () => {
+  soundManager.changeMenuMusic(Settings.selectMusic.value)
+  saveData(['Settings_MenuMusic'], [Settings.selectMusic.value])
 })
 
 Settings.checkBoxAHA.addEventListener('click', () => {
@@ -143,6 +158,8 @@ function loadSettings (): void {
   SlideStatAlert.self.style.display = Settings.checkBoxAHA.checked ? 'none' : 'flex'
 
   Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
+
+  Settings.selectMusic.value = parseInt(loadData(['Settings_MenuMusic'])!)
 
   loadData(['Settings_FullScreen']) === 'false' && toggleFullscreen()
 
