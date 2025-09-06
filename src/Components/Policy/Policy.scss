@@ -23,6 +23,7 @@
   padding: 15px;
   @extend %styled-border;
   @extend %styled-background;
+  @extend %styled-radius;
 }
 
 .policy__link{
@@ -34,6 +35,7 @@
   @extend %button-tap;
   @extend %styled-border;
   @extend %styled-background;
+  @extend %styled-radius;
   font-size: large;
   padding: 15px;
 }

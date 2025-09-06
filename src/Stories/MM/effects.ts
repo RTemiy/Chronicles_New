@@ -20,3 +20,13 @@ statsManager.add({
   description: 'Маргарита полагается на интуицию и чаще прислушивается к голосу подсознания.',
   story: EStoriesEn.MM
 })
+
+statsManager.add({
+  category: 'Effect',
+  id: 'Reputation',
+  name: 'Репутация',
+  image: require('../../Images/MM/Effects/Reputation.jpg'),
+  title: 'Высокая — способствует карьерному росту. Низкая — усложняет путь.',
+  description: 'Отношение персонажей к главной героине зависит в том числе от количества репутации. Чем больше очков — тем легче Маргарите будет даваться работа и взаимодействия с участниками событий.',
+  story: EStoriesEn.MM
+})

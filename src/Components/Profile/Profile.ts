@@ -51,7 +51,7 @@ export const Profile = new CContainer(
 		</div>
 	</div>
 	<div class="profile__container">
-		<button id="achievementsButton" class="profile__button pulsating-push" type="button"></button>
+		<button id="achievementsButton" class="profile__button" type="button"></button>
 	</div>
 	<div class="profile__category">
 	  <p class="profile__category-title">Награды за события</p>
@@ -100,7 +100,7 @@ export function renderProfile (): void {
   Profile.firstLaunch.innerHTML = loadData(['Profile', 'FirstLaunch'])
   const partsInfo = storiesManager.getPartsInfo()
   Profile.completedParts.innerHTML = String(partsInfo.beginnedStories) + '/' + String(partsInfo.allStories)
-  Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${require('../../Images/UI/icon_achievements.svg')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount()
+  Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${require('../../Images/UI/icon_achievements.svg')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount() + `<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>`
   profileManager.setCurrentAvatar()
   profileManager.setCurrentBanner()
   Profile.spentTime.innerHTML = transformMinutes(parseInt(loadData(['Profile', 'TimeSpent'])!))

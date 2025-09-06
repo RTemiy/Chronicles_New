@@ -27,10 +27,6 @@ const MenuToolbar = new CContainer(
 	<img src="${require('../../Images/UI/icon_stories.svg')}">
 	<p>Истории</p>
 </div>
-<div id="menu-toolbar_settings" class="menu-toolbar__item">
-	<img src="${require('../../Images/UI/icon_settings.svg')}">
-	<p>Настройки</p>
-</div>
 <div id="menu-toolbar_achievements"  style="display: none" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_achievements.svg')}">
 	<p>Достижения</p>
@@ -42,7 +38,11 @@ const MenuToolbar = new CContainer(
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
 	<img src="${require('../../Images/UI/icon_user.svg')}">
 	<p>Профиль</p>
-		</div>
+</div>
+<div id="menu-toolbar_settings" class="menu-toolbar__item">
+	<img src="${require('../../Images/UI/icon_settings.svg')}">
+	<p>Настройки</p>
+</div>
 	<div id="menu-toolbar_exit" class="menu-toolbar__item" ${!DesktopMode && 'style="display: none"'}>
 	<img src="${require('../../Images/UI/icon_exit.svg')}">
 	<p>Выход</p>

@@ -1592,7 +1592,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
       {
         text: '',
         func: () => {
-          saveEndProgress('Aurora', 'Глава 1', 'Часть 1', '1')
+          saveEndProgress('MM', 'Глава 1', 'Часть 1', '1')
         }
       }],
     achievement: { story: EStoriesEn.MM, name: 'PrologueCompleted' },

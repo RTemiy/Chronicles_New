@@ -13,6 +13,7 @@ import downloadProgress from '../../Functions/downloadProgress'
 import { setWindowScale, toggleFullscreen } from '../../Functions/desktopFuncs'
 import { DesktopMode } from '../../Utils/technicalConsts'
 import { SlideStatAlert } from '../SlideStatAlert/SlideStatAlert'
+import { showNews } from '../../Functions/showNews'
 
 const Settings = new CContainer(
   'settings',
@@ -66,43 +67,57 @@ const Settings = new CContainer(
 		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Images/UI/icon_tg.png')}"></a>
 	</div>
 	<div class="settings__block">
-		<a id="req-01">- Т-Банк -</a>
+		<a id="req-01">Т-Банк</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
-		<a id="req-02">- Сбербанк- </a>
+		<a id="req-02">Сбербанк</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+	</div>
+</div>
+<div class="settings__container">
+	<div class="settings__block">
+		<a id="news-button">Последние новости</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+	</div>
+		<div class="settings__block">
+		<a id="creators-button">Создатели</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+	</div>
+	<div class="settings__block">
+		<a href="mailto:mvagamesofficial@gmail.com">Помощь | Сотрудничество</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
 <div class="settings__container" ${DesktopMode && 'style="display: none"'}>
 	<div class="settings__block">
-		<a href="${route}/privacy_policy.html" target="_blank">- Политика конфиденциальности -</a>
+		<a href="${route}/privacy_policy.html" target="_blank">Политика конфиденциальности</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
-		<a href="${route}/terms_conditions.html" target="_blank">- Условия и положения -</a>
-	</div>
-</div>
-<div class="settings__container">
-	<div class="settings__block">
-		<a href="mailto:mvagamesofficial@gmail.com">- Помощь | Сотрудничество -</a>
-	</div>
-	<div class="settings__block">
-		<a id="creators-button">- Создатели -</a>
+		<a href="${route}/terms_conditions.html" target="_blank">Условия и положения</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
 <div class="settings__container">
 	<div class="settings__block">
-		<a id="downloadFile">- Скачать сохранение -</a>
+		<a id="downloadFile">Скачать сохранение</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
-	  <a id="uploadFile">- Установить сохранение -</a>
+	  <a id="uploadFile">Установить сохранение</a>
+	  <img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 		<input id="uploadInput" style='display: none' type="file"/>
 	</div>
 </div>
 <div class="settings__container" >
 	<div class="settings__block" ${DesktopMode && 'style="display: none"'}>
-		<a href=".">- Проверить обновление -</a>
+		<a href=".">Проверить обновление</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
-		<a onclick='localStorage.clear(); window.location.reload();' >- Удалить все сохранения и настройки -</a>
+		<a onclick='localStorage.clear(); window.location.reload();' >Удалить все сохранения и настройки</a>
+		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
 `,
@@ -117,7 +132,8 @@ const Settings = new CContainer(
   { name: 'req02', selector: '#req-02' },
   { name: 'downloadButton', selector: '#downloadFile' },
   { name: 'uploadButton', selector: '#uploadFile' },
-  { name: 'uploadInput', selector: '#uploadInput' }
+  { name: 'uploadInput', selector: '#uploadInput' },
+  { name: 'newsButton', selector: '#news-button' }
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
@@ -139,6 +155,10 @@ Settings.checkBoxScale.addEventListener('click', () => {
   saveData(['Settings_Scale'], [Settings.checkBoxScale.checked])
   loadData(['Settings_Scale']) === 'true' && changeScale('small')
   loadData(['Settings_Scale']) === 'false' && changeScale('normal')
+})
+
+Settings.newsButton.addEventListener('click', () => {
+  showNews('settings')
 })
 
 Settings.checkBoxfullscreen.addEventListener('click', () => {

@@ -83,7 +83,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
     showPolicy()
     soundManager.play('menu')
     checkURL()
-    showNews()
+    showNews('start')
   }
 })
 
