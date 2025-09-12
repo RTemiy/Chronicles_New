@@ -7,14 +7,14 @@
     />
     <meta name="theme-color" content="black" />
     <meta charset="utf-8">
-    <meta name="description" content="Бесплатная много вариативная новелла"/>
-    <meta name="keywords" content="игра, визуальная новелла, новелла"/>
+    <meta name="description" content="Chronicles | Твой выбор. Бесплатная много вариативная новелла"/>
+    <meta name="keywords" content="игра, визуальная новелла, новелла, твой, твой выбор, выбор, chronicles, романтика, любовь, фавориты"/>
     <meta property="og:title" content="Chronicles | Твой выбор"/>
-    <meta property="og:description" content="Бесплатная много вариативная новелла"/>
+    <meta property="og:description" content="Chronicles | Твой выбор. Бесплатная много вариативная новелла"/>
     <meta property="og:type" content="game"/>
     <meta property="og:url" content="https://chroniclesgame.ru"/>
     <meta property="og:image" content=<%=require("./Images/UI/icon.png")%>>
-    <title>Chronicles</title>
+    <title>Chronicles | Твой выбор</title>
     <script>window.yaContextCb=window.yaContextCb||[]</script>
     <script src="https://yandex.ru/ads/system/context.js" async></script>
   </head>
@@ -74,6 +74,15 @@
 				xChannelSelector="R"
 				yChannelSelector="G"
 			/>
+		</filter>
+	</svg>
+
+	<svg style="display: none">
+		<filter id="wavy">
+			<feTurbulence id="turbulence" type="turbulence" numOctaves="1" result="NOISE"></feTurbulence>
+			<feDisplacementMap in="SourceGraphic" in2="NOISE" scale="50"></feDisplacementMap>
+			<animate xlink:href="#turbulence" attributeName="baseFrequency" dur="60s" keyTimes="0;0.5;1"
+							 values="0.01 0.02;0.02 0.04;0.01 0.02" repeatCount="indefinite"></animate>
 		</filter>
 	</svg>
 

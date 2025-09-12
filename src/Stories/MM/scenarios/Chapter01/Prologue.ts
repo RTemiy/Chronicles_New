@@ -119,7 +119,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 7,
     text:
       `
-        Детектив закатила глаза. Дилан усмехнулся, но, заметив рассеянное состояние девушки, тяжело вздохнул. Во взгляде пробилось сочувствие, граничащее с волнением.
+        Детектив закатила глаза.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 300
+      }],
+    imageBack: require('../../../../Images/MM/Backgrounds/Detective_Cabinet.jpg')
+  },
+
+  {
+    id: 300,
+    text:
+      `
+        Дилан усмехнулся, но, заметив рассеянное состояние девушки, тяжело вздохнул. Во взгляде пробилось сочувствие, граничащее с волнением.
       `,
     buttons: [
       {
@@ -133,7 +147,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 8,
     text:
       `
-        — Марго, в чём дело? Ты уже минут десять взгляд от окна оторвать не можешь. Я всё понимаю: созерцание города, особенно в дождь — весьма занимательно, успокаивает. 
+        — Марго, в чём дело? Ты уже минут десять взгляд от окна оторвать не можешь. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 301
+      }],
+    speaker: 'Дилан',
+    imageFront: require('../../../../Images/MM/Persons/Dylan.png'),
+    imageBorder: require('../../../../Images/MM/UI/Border.png'),
+    imageBack: require('../../../../Images/MM/Backgrounds/Detective_Cabinet.jpg')
+  },
+
+  {
+    id: 301,
+    text:
+      `
+      — Я всё понимаю: созерцание города, особенно в дождь — весьма занимательно, успокаивает. 
       `,
     buttons: [
       {
@@ -167,7 +198,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 10,
     text:
       `
-        — Нет, извини. Всё нормально. Какой вопрос я тебе задавала? 
+        — Нет, извини. Всё нормально.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 303
+      }],
+    speaker: 'Маргарита',
+    imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
+    imageBorder: require('../../../../Images/MM/UI/Border.png'),
+    imageBack: require('../../../../Images/MM/Backgrounds/Detective_Cabinet.jpg')
+  },
+
+  {
+    id: 303,
+    text:
+      `
+        — Какой вопрос я тебе задавала? 
       `,
     buttons: [
       {
@@ -370,7 +418,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 23,
     text:
       `
-        — Я не понял. Просто <i>хотел<i/>, чтобы согласилась. Но мне льстит твоя непоколебимая вера в мой дар убеждения. 
+        — Я не понял. Просто <i>хотел</i>, чтобы согласилась. Но мне льстит твоя непоколебимая вера в мой дар убеждения. 
       `,
     buttons: [
       {
@@ -511,7 +559,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 32,
     text:
       `
-        <i>Старший детектив<i/>. Звучало хорошо, и эта должность должна была стоить того, чтобы со спокойной душой пренебрегать выходными и крепким сном без кошмаров.
+        <i>Старший детектив</i>. Звучало хорошо, и эта должность должна была стоить того, чтобы со спокойной душой пренебрегать выходными и крепким сном без кошмаров.
       `,
     buttons: [
       {
@@ -1062,7 +1110,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 70,
     text:
       `
-        Да, Маргарита <i>жила<i/> этим делом. Но трудоголизм нещадно настиг её, выбив из реальности ударом под дых. Моргнуть не успела, как неделя уже подошла к концу. 
+        Да, Маргарита <i>жила</i> этим делом. Но трудоголизм нещадно настиг её, выбив из реальности ударом под дых. Моргнуть не успела, как неделя уже подошла к концу. 
       `,
     buttons: [
       {

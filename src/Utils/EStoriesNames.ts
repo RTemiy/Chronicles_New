@@ -17,21 +17,6 @@ export enum EStoriesEn {
   UL = 'UL',
 }
 
-export enum EStoriesRu {
-  Immortals = 'Бессмертные: Последняя надежда',
-  Aurora = 'Аврора',
-  ROR = 'Время крыс',
-  FOF = 'Осколки чужой судьбы',
-  AEP = 'Amore e passione',
-  MM = 'Memento mori',
-  ISML = 'В поисках исчезнувшего света',
-  UA = 'Арена юнитов',
-  OTV = 'На грани',
-  //
-  UL = 'Непредсказуемая любовь',
-  Katarina = 'Катарина',
-}
-
 export enum EStoriesAvailable {
   ROR = 1,
   FOF = 1,
@@ -45,4 +30,19 @@ export enum EStoriesAvailable {
 
   Katarina = 0,
   UL = 0,
+}
+
+export enum EStoriesRu {
+  Immortals = 'Бессмертные: Последняя надежда',
+  Aurora = 'Аврора',
+  ROR = 'Время крыс',
+  FOF = 'Осколки чужой судьбы',
+  AEP = 'Amore e passione',
+  MM = 'Memento mori',
+  ISML = 'В поисках исчезнувшего света',
+  UA = 'Арена юнитов',
+  OTV = 'На грани',
+  //
+  UL = 'Непредсказуемая любовь',
+  Katarina = 'Катарина',
 }

@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/MM/Boss.mp3'),
+    music: require('../../../../Sounds/MM/Calm.mp3'),
     ambient: require('../../../../Sounds/MM/Clock_Ticking.mp3'),
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
@@ -150,7 +150,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 6,
     text:
       `
-        —Мне жуть интересно, кому из Вас двоих в голову пришла эта <i>гениальная мысль — отправиться в парк с лопатами наперевес. Кладмены недоделанные.
+        —Мне жуть интересно, кому из Вас двоих в голову пришла эта <i>гениальная мысль</i> — отправиться в парк с лопатами наперевес. Кладмены недоделанные.
       `,
     buttons: [
       {
@@ -471,7 +471,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 27,
     text:
       `
-        <i>«Кажется, это почерк Дилана. И, чёрт возьми, в этом нет ничего сверхъестественного — он ведь тут тоже работает!»
+        <i>«Кажется, это почерк Дилана. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 520
+      }],
+    speaker: 'Маргарита',
+    imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
+    imageBorder: require('../../../../Images/MM/UI/Border.png'),
+    imageBack: require('../../../../Images/MM/Backgrounds/Boss_Cabinet.jpg')
+  },
+
+  {
+    id: 520,
+    text:
+      `
+        <i>«И, чёрт возьми, в этом нет ничего сверхъестественного — он ведь тут тоже работает!»
       `,
     buttons: [
       {
@@ -1032,7 +1049,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 64,
     text:
       `
-        — Чейз, я прекрасно знаю, что должна делать <i>по регламенту. Но ты не в курсе о содержимом этой клятой бумажки! Откровенная провокация!
+        — Чейз, я прекрасно знаю, что должна делать <i>по регламенту.</i> Но ты не в курсе о содержимом этой клятой бумажки! Откровенная провокация!
       `,
     buttons: [
       {
@@ -1116,7 +1133,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 70
       }],
-    message: 'Дактилоскопия — метод идентификации человека по отпечаткам пальцев',
+    message: 'Дактилоскопия — метод идентификации человека по отпечаткам пальцев.',
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -2001,6 +2018,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 128
       }],
+    message: 'Ваши прошлые выборы повлияли на сюжет — Маргарита ведёт расследование путём анализирования фактов.',
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -2033,6 +2051,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 131
       }],
     speaker: 'Маргарита',
+    message: 'Ваши прошлые выборы повлияли на сюжет — Маргарита ведёт расследование, опираясь на собственную Интуицию. ',
     imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
@@ -2050,6 +2069,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 131
       }],
     speaker: 'Маргарита',
+    message: 'Ваши прошлые выборы повлияли на сюжет — Маргарита расследует дело, тщательно анализируя каждую мелочь и прислушиваясь к себе.',
     imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
@@ -2221,7 +2241,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     message: 'Жмур в полицейском жаргоне — труп, мертвец.',
     ambient: require('../../../../Sounds/MM/Leaves_Wind.mp3'),
     speaker: 'Маргарита',
-    music: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Sounds/MM/Saw.mp3'),
     imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
@@ -2862,7 +2882,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         condition: () => {
           return statsManager.get({ story: EStoriesEn.MM, category: 'Choice', id: 'UATB' }) < 1
         },
-        goTo: 186
+        goTo: 194
       }],
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
@@ -3742,26 +3762,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 239
+        goTo: 240
       }],
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
-    imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
-  },
-
-  {
-    id: 239,
-    text:
-      `
-        
-      `,
-    buttons: [
-      {
-        text: '',
-        goTo: 240
-      }],
-    message: 'Отношение персонажей к главной героине зависит в том числе от репутации. Высокая — способствует карьерному росту и установлению связей. Низкая — усложняет путь.',
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
   },
 
@@ -3780,6 +3785,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: 'Нашли под деревом',
         goTo: 268
       }],
+    message: 'Отношение персонажей к главной героине зависит в том числе от репутации. Высокая — способствует карьерному росту и установлению связей. Низкая — усложняет путь.',
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
   },
 
@@ -3794,8 +3800,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 242
       }],
-    speaker: 'Маргарита',
-    imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
   },
@@ -4336,7 +4340,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 276,
     text:
       `
-        Медицинский эксперт общался с криминалистами, пока двое погрузчиков вытаскивали на поверхность тело убитого. 
+        Медицинский работник общался с криминалистами, пока двое погрузчиков вытаскивали на поверхность тело убитого. 
       `,
     buttons: [
       {
@@ -4601,7 +4605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 294,
     text:
       `
-        <i>»Что за реакция? Неужто чёртова записка так выбила тебя из колеи?»
+        <i>«Что за реакция? Неужто чёртова записка так выбила тебя из колеи?»
       `,
     buttons: [
       {
@@ -6542,7 +6546,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 419,
     text:
       `
-        — <i>«Последствия бурной юности? Акт неповиновения?»
+        <i>«Последствия бурной юности? Акт неповиновения?»
       `,
     buttons: [
       {
@@ -6782,7 +6786,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 434,
     text:
       `
-        Границы допустимого она <i>уже переступила. 
+        Границы допустимого она <i>уже</i> переступила. 
       `,
     buttons: [
       {
@@ -6838,7 +6842,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 438,
     text:
       `
-        Временами необходимые следствию признания пытаются <i>выбивать, а порой в ход идут шантаж и угрозы. 
+        Временами необходимые следствию признания пытаются <i>выбивать<i/>, а порой в ход идут шантаж и угрозы. 
       `,
     buttons: [
       {
@@ -7117,7 +7121,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 455,
     text:
       `
-        В подтверждение её слов охранник у двери тонко намекнул на своё присутствие, негромко брякнув наручниками.
+        В подтверждение сказанного охранник у двери тонко намекнул на своё присутствие, негромко брякнув наручниками.
       `,
     buttons: [
       {

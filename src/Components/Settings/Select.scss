@@ -41,12 +41,12 @@ select, ::picker(select){
 
 .select::picker-icon {
   color: #ffffff;
-  transition: 0.4s rotate;
-  // content: "˅"
+  transition: 0.4s transform;
+  content: "⏏"
 }
 
 .select:open::picker-icon {
-  rotate: 90deg;
+  transform: scale(1.2);
 }
 
 
@@ -66,7 +66,7 @@ select, ::picker(select){
 .option::checkmark {
   order: 1;
   margin-left: auto;
-  content: "✅";
+  content: "▶";
 }
 
 /*.option:checked {

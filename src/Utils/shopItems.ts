@@ -26,7 +26,7 @@ export const shopItems = [
   {
     id: 0,
     category: 'Гардероб',
-    title: 'Костюм клоуна',
+    title: 'Клоун',
     description: 'Бессмертные: Последняя надежда. <p>Глава 1 Часть 1.</p><p>⠀</p><i>Иногда я провожу праздники с Шерил, это своеобразное хобби</i>',
     cost: '39',
     image: require('../Images/Immortals/Persons/Hero_Clown.png'),
