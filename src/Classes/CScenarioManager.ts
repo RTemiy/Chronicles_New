@@ -12,6 +12,7 @@ import type CWardrobe from './CWardrobe'
 import { getChoice } from '../Functions/5Choices'
 import { setCurrentSlideId } from '../Components/Slide/Slide'
 import { showStatAlert } from '../Components/SlideStatAlert/SlideStatAlert'
+import { type CSmartphone } from './CSmartphone'
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -25,7 +26,8 @@ export default class CScenarioManager {
     soundManager: CSoundSystem,
     achievementManager: CAchievementsManager,
     private readonly slide: CSlide,
-    private readonly wardrobe: CWardrobe
+    private readonly wardrobe: CWardrobe,
+    private readonly smartphone: CSmartphone
   ) {
     this.#statsManager = statsManager
     this.#soundManager = soundManager
@@ -82,6 +84,7 @@ export default class CScenarioManager {
       this.#doDarkSilhouette(scene.darkSilhouette)
       this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
       scene.wardrobe !== undefined && this.wardrobe.showNewWardrobe(scene.wardrobe.story, scene.wardrobe.personId, () => { this.beginScene(scene.wardrobe!.goTo) })
+      scene.smartphone !== undefined && this.smartphone.showNewChat(scene.smartphone.chatId, () => { this.beginScene(scene.smartphone!.goTo) })
       scene.message !== undefined && this.slide.message(scene.message)
       scene.stats !== undefined && this.#doStats(scene.stats)
       scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
@@ -166,8 +169,7 @@ export default class CScenarioManager {
         },
         isActive: el.isActive,
         goTo: el.goTo,
-        gift: el.gift,
-        guide: el.goTo !== undefined ? this.getSceneGuide(el.goTo) : ''
+        gift: el.gift
       })
     })
     this.slide.setButtonValues(newButtons)
@@ -264,15 +266,6 @@ export default class CScenarioManager {
 
   getAllScenarioSlides (): IScene[] {
     return this.#scenarios[this.#currentScenarioName]
-  }
-
-  getSceneGuide (sceneIndex: number): string {
-    const scene = this.#getSceneByIndex(sceneIndex)
-    let guide = ''
-    scene.stats?.forEach(stat => {
-      guide += `${stat.id}: ${stat.value}\n`
-    })
-    return guide
   }
 
   loadLastSave (): void {

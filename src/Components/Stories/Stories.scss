@@ -38,7 +38,8 @@
   .story__description,
   .story__genre,
   .story__status,
-  .story__mature {
+  .story__mature,
+  .story__achievements-amount{
     visibility: hidden;
     opacity: 0;
   }
@@ -89,6 +90,7 @@
 }
 
 .story__info-container{
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,7 +133,7 @@
 }
 
 .story__genre {
-  padding: 2px 5px 0 10px;
+  padding: 5px 5px 0 10px;
   font-size: var(--tinytext);
   background: linear-gradient(300deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   grid-column: 1;
@@ -140,30 +142,33 @@
   align-self: start;
   transition: all 0.5s ease-in-out;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0 10px 0 0;
+  border-radius: 15px 15px 0 0;
   z-index: 5;
-  width: 210px;
+  min-width: 335px;
+  height: 16px;
   text-align: right;
+  justify-content: center;
+  justify-items: center;
 }
 
 .story__mature {
   text-align: center;
-  margin: 15px 0 0 0;
+  margin: 30px 0 0 0;
   padding: 3px 6px;
   font-size: var(--tinytext);
   grid-column: 1;
   grid-row: 1;
-  justify-self: left;
+  justify-self: right;
   align-self: start;
   transition: all 0.5s ease-in-out;
   background-color: red;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px 0 0 4px;
   z-index: 5;
 }
 
 .story__status {
   text-align: center;
-  margin: 40px 0 0 0;
+  margin: 30px 0 0 0;
   padding: 3px 6px;
   color: black;
   font-size: var(--tinytext);
@@ -177,10 +182,46 @@
   z-index: 5;
 }
 
+.story__achievements-amount{
+  background-color: rgba(255, 255, 255, 0.25);
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: left;
+  align-self: start;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  height: 17px;
+  padding: 2px 0;
+  font-size: var(--tinytext);
+  transition: all 0.5s ease-in-out;
+  max-width: 70px;
+  z-index: 6;
+  border-radius: 15px 0 15px 0;
+}
+
+.story__achievements-amount {
+  & p, img {
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.75));
+  }
+}
+
+.story__achievements-amount > .icon_span{
+  width: 15px;
+}
+
 @media (max-width: 400px) {
 
   .story__info-container{
     max-width: 300px;
+  }
+
+  .story__genre {
+    min-width: 270px;
   }
 
   .story__image {
@@ -211,14 +252,19 @@
   }
 
   .story__status {
-    margin: 90px 0 0 0;
+    margin: 80px 0 0 0;
   }
 
   .story__mature {
-    margin: 70px 0 0 0;
+    margin: 80px 0 0 0;
   }
 
   .story__genre {
+    margin-top: 50px;
+    min-width: 270px;
+  }
+
+  .story__achievements-amount {
     margin-top: 50px;
   }
 }

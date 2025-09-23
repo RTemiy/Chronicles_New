@@ -7,7 +7,6 @@ export interface IButton {
   goTo?: number
   isActive?: boolean
   gift?: boolean
-  guide?: string
 }
 
 export interface ICondition {
@@ -41,4 +40,5 @@ export default interface IScene {
   ghostSilhouette?: boolean
   parallax?: string
   wardrobe?: { story: EStoriesEn, personId: string, goTo: number }
+  smartphone?: { chatId: string, goTo: number }
 }

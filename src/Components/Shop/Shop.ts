@@ -20,7 +20,6 @@ export const Shop = new CContainer(
 `,
   { name: 'wardrobeCategory', selector: '#wardrobeCategory' },
   { name: 'interiorCategory', selector: '#interiorCategory' }
-/*  { name: 'infoButton', selector: '.icon_span' } */
 )
 
 export function renderShop (): void {
@@ -67,11 +66,3 @@ export function renderShop (): void {
     }
   })
 }
-
-/* Shop.infoButton.onclick = () => {
-  showMessage(`
-  <p>Информация
-  <p>Информация
-  `
-  , 'Принять')
-} */

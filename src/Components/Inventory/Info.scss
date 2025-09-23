@@ -5,13 +5,13 @@
   grid-template-rows: min-content auto;
   grid-template-columns: min-content auto;
   padding: 10px 0 0 10px;
-  margin: 75px 25px 0 25px;
+  margin: 65px 25px 0 25px;
   min-height: 290px;
   max-height: 290px;
   width: 100vw;
   max-width: 500px;
   justify-self: center;
-  border-top: 1px solid white;
+  border-top: 5px double rgba(255, 255, 255, 0.5);
   border-bottom: 1px solid white;
   background-color: rgba(0, 0, 0, 0.3);
   @extend %styled-border;

@@ -56,6 +56,13 @@ const Settings = new CContainer(
 	    <div class="slider round"></div> 
   	</label>
 	</div>
+	<div class="settings__block">
+		<p>Увеличить шрифт</p>
+		<label class="switch">
+	    <input type="checkbox" id="settings-bf"/>
+	    <div class="slider round"></div> 
+  	</label>
+	</div>
 </div>
 <div class="settings__container" ${DesktopMode && 'style="display: none"'}>
 	<div class="settings__block">
@@ -126,6 +133,7 @@ const Settings = new CContainer(
   { name: 'checkBoxAHA', selector: '#settings-aha' },
   { name: 'checkBoxfullscreen', selector: '#settings-fsm' },
   { name: 'checkBoxScale', selector: '#settings-scale' },
+  { name: 'checkBoxFont', selector: '#settings-bf' },
   { name: 'creatorsButton', selector: '#creators-button' },
   { name: 'supportButton', selector: '#support-button' },
   { name: 'req01', selector: '#req-01' },
@@ -166,6 +174,11 @@ Settings.checkBoxfullscreen.addEventListener('click', () => {
   toggleFullscreen()
 })
 
+Settings.checkBoxFont.addEventListener('click', () => {
+  saveData(['Settings_Font'], [Settings.checkBoxFont.checked])
+  setFontSize()
+})
+
 Settings.creatorsButton.addEventListener('click', () => {
   tabManagerMenu.open(Credits.self)
 })
@@ -186,6 +199,10 @@ function loadSettings (): void {
   Settings.checkBoxScale.checked = loadData(['Settings_Scale']) === 'true' || false
 
   loadData(['Settings_Scale']) === 'true' && changeScale('small')
+
+  Settings.checkBoxFont.checked = loadData(['Settings_Font']) === 'true'
+
+  setFontSize()
 }
 
 Settings.supportButton.onclick = () => {
@@ -242,6 +259,20 @@ Settings.uploadButton.addEventListener('click', () => {
 Settings.uploadInput.addEventListener('change', () => {
   readFile()
 })
+
+function setFontSize (): void {
+  if (loadData(['Settings_Font']) === 'true') {
+    document.body.style.setProperty('--bigtext', '3.55vh')
+    document.body.style.setProperty('--mediumtext', '2.0vh')
+    document.body.style.setProperty('--smalltext', '1.7vh')
+    document.body.style.setProperty('--tinytext', '1.5vh')
+  } else {
+    document.body.style.setProperty('--bigtext', '3.35vh')
+    document.body.style.setProperty('--mediumtext', '1.8vh')
+    document.body.style.setProperty('--smalltext', '1.5vh')
+    document.body.style.setProperty('--tinytext', '1.3vh')
+  }
+}
 
 loadSettings()
 

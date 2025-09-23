@@ -182,9 +182,6 @@ export default class CSlide {
       this.slide.backgroundImage.onclick = () => {}
       const buttonsArray = this.getButtonsArray()
       buttons.forEach((button, index) => {
-        if (devMode && button.guide !== '' && button.guide !== undefined) {
-          buttonsArray[index].oncontextmenu = () => { showMessage(button.guide!, 'Ok') }
-        }
         if (!buttons[index].gift) {
           buttonsArray[index].innerText = buttons[index].text
           buttonsArray[index].onclick = () => {

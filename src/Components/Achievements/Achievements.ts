@@ -10,8 +10,9 @@ const Achievements = new CContainer('achievements',
 <p class="tab__title">Достижения</p>
 <button class="achievements__back-button"></button>
 <div class="achievements_block">
-  <p class="achievements__amount"></p>
-  <div class="achievements__buttons">
+  <div class="achievements__menu">
+    <p class="achievements__amount"></p>
+    <div class="achievements__buttons"></div>
   </div>
   <div class="achievements__container"></div>
 </div>
@@ -31,7 +32,7 @@ function renderAchievementsButtons (): void {
   const storiesNames = Object.keys(EStoriesEn)
   let result = ''
   storiesNames.forEach(name => {
-    EStoriesAvailable[name] === 1 && (result += `<button id="ab-${name}" type="button" class="achievements__button">${EStoriesRu[name]}</button>`)
+    EStoriesAvailable[name] === 1 && (result += `<button id="ab-${name}" type="button" class="achievements__button story-${name}">${EStoriesRu[name]}</button>`)
   })
   Achievements.buttonsContainer.innerHTML = result
   const allButtons = Achievements.buttonsContainer.querySelectorAll('.achievements__button')

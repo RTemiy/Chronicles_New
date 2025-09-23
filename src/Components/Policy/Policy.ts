@@ -4,7 +4,7 @@ import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
 import { checkUser, sendActivity } from '../../Functions/GSAPI'
 import generateUserToken from '../../Functions/generateUserToken'
-import { DesktopMode } from '../../Utils/technicalConsts'
+import { DesktopMode, devMode } from '../../Utils/technicalConsts'
 
 const Policy = new CContainer('policy',
 	`
@@ -45,7 +45,7 @@ function accept (): void {
   saveData(['Profile', 'Banner'], ['Default'])
   saveData(['Profile', 'TimeSpent'], [0])
   saveData(['Profile', 'BooksWasted'], [0])
-  validateUser()
+  !DesktopMode && !devMode && validateUser()
   sendActivity('Подтверждает ПК')
 }
 

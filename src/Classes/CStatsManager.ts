@@ -156,4 +156,14 @@ export default class CStatsManager {
     const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
     return stat.show
   }
+
+  inheritStat (fromStat: IStat, toStat: IStat): void {
+    const scenarioName = loadData(['LastSave', 'ScenarioInfo'])!
+    const story = scenarioName.split('_')[0]
+    const from = this.#stats[story + '_' + fromStat.category + '_' + fromStat.id]
+    const to = this.#stats[story + '_' + toStat.category + '_' + toStat.id]
+    to.value = from.value
+    to.show = from.show
+    from.show = 0
+  }
 }

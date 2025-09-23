@@ -15,6 +15,7 @@ export enum EStoriesEn {
   //
   Katarina = 'Katarina',
   UL = 'UL',
+  HF = 'HF',
 }
 
 export enum EStoriesAvailable {
@@ -30,6 +31,8 @@ export enum EStoriesAvailable {
 
   Katarina = 0,
   UL = 0,
+
+  HF = 1,
 }
 
 export enum EStoriesRu {
@@ -45,4 +48,5 @@ export enum EStoriesRu {
   //
   UL = 'Непредсказуемая любовь',
   Katarina = 'Катарина',
+  HF = 'Подвиг героя',
 }

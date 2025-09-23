@@ -36,22 +36,36 @@
   overflow-y: visible;
 }
 
+.achievements__menu{
+  padding: 5px 0;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius
+}
+
 .achievements__amount {
   text-align: center;
-  padding: 0 0 10px 0;
-  margin: 0;
+  padding: 0 0 5px 0;
+  margin-bottom: 5px;
+  border-bottom: 5px double rgba(255, 255, 255, 0.2);
 }
 
 .achievements__buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
+  overflow: scroll;
+  padding-bottom: 5px;
+}
+
+.achievements__buttons::-webkit-scrollbar:horizontal {
+  height: 8px;
 }
 
 .achievements__button {
-  padding: 10px;
-  margin: 0 10px;
-  font-size: var(--mediumtext);
+  font-size: var(--smalltext);
+  min-width: 120px;
+  padding: 5px;
   @extend %button-tap;
   @extend %styled-background;
   @extend %styled-border;
