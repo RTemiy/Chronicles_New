@@ -85,7 +85,7 @@ export class CSmartphone {
     this.Smartphone.time.innerHTML = chat.time ?? ''
     this.Smartphone.battery.innerHTML = chat.battery?.toString() ?? ''
     this.Smartphone.messages.innerHTML = ''
-    this.Smartphone.closeButton.style.display = 'none'
+    // this.Smartphone.closeButton.style.display = 'none' // Кнопка скрывается через CSS (opacity: 0)
 
     // Добавляем обработчик клика для ускорения сообщений
     this.Smartphone.messages.onclick = () => {
@@ -93,15 +93,24 @@ export class CSmartphone {
     }
   }
 
+  private showTypingIndicator (show: boolean): void {
+    const indicator = this.Smartphone.typingIndicator as HTMLElement
+    if (indicator) {
+      indicator.style.display = show ? 'flex' : 'none'
+    }
+  }
+
   private showCloseButton (callback: () => void): void {
     const closeButton = this.Smartphone.closeButton as HTMLImageElement
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
     closeButton.src = require('../Images/UI/icon_exit.svg')
-    closeButton.style.display = 'block'
+    // Добавляем класс для плавной анимации появления
+    closeButton.classList.add('visible')
 
     closeButton.onclick = () => {
       this.Smartphone.self.style.display = 'none'
-      closeButton.style.display = 'none'
+      this.Smartphone.typingIndicator.style.display = 'none'
+      // Скрываем кнопку, убирая класс
+      closeButton.classList.remove('visible')
       callback()
     }
   }
@@ -123,7 +132,14 @@ export class CSmartphone {
     for (let i = 0; i < messages.length; i++) {
       const message = messages[i]
 
-      await this.wait(this.MESSAGE_DELAY_MS)
+      if (message.fellow) {
+        this.showTypingIndicator(true)
+        await new Promise(resolve => setTimeout(resolve, this.MESSAGE_DELAY_MS * 1.5))
+        this.showTypingIndicator(false)
+      } else {
+        // Для сообщений игрока используем старую логику с возможностью пропуска
+        await this.wait(this.MESSAGE_DELAY_MS)
+      }
 
       const messageElement = this.renderMessage(message)
 

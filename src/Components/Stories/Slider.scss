@@ -21,3 +21,18 @@
   transform: scale(1.5);
   margin: 0 10px;
 }
+
+.stories__slider-button {
+  width: 40px;
+  height: 40px;
+  background-image: url(../../Images/UI/icon_go-right.svg);
+  background-size: cover;
+  @container style(--desktopmode: false) {
+  display: none;
+  }
+  z-index: 10;
+}
+
+.stories__slider-button_left {
+  transform: rotate(180deg);
+}

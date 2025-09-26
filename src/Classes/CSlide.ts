@@ -5,9 +5,9 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
-import { DesktopMode, devMode } from '../Utils/technicalConsts'
+import { DesktopMode } from '../Utils/technicalConsts'
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
-import { showMessage } from '../Components/MenuMessage/MenuMessage'
+
 import { changeState } from '../Functions/backEventActions'
 
 export default class CSlide {

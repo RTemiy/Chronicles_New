@@ -10,13 +10,25 @@ export default class CSlider {
   #helperPos = 0
   readonly #elementClassName: string
   readonly #helperClassName: string
-  constructor (containerElement: HTMLElement, helperContainer: HTMLElement, elementClassName: string, helperClassName: string, private readonly videoSelector: string) {
+  constructor (
+    containerElement: HTMLElement,
+    helperContainer: HTMLElement,
+    elementClassName: string,
+    helperClassName: string,
+    private readonly videoSelector: string,
+    leftButton?: HTMLElement,
+    rightButton?: HTMLElement
+  ) {
     this.#containerElement = containerElement
     this.#helperContainer = helperContainer
     this.#elementClassName = elementClassName
     this.#helperClassName = helperClassName
     this.#containerElements = this.#getContainerChildren(containerElement)
     this.#generateSwiperHelper()
+    if (leftButton && rightButton) {
+      leftButton.onclick = () => { this.swipeRight() }
+      rightButton.onclick = () => { this.swipeLeft() }
+    }
     this.#addEventListeners()
     this.#render()
     this.#changeActiveHelper(0)
@@ -155,5 +167,15 @@ export default class CSlider {
     while (this.#helperPos !== index) {
       this.#swipeRight()
     }
+  }
+
+  public swipeLeft (): void {
+    this.#swipeLeft()
+    this.#render()
+  }
+
+  public swipeRight (): void {
+    this.#swipeRight()
+    this.#render()
   }
 }

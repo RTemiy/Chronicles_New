@@ -11,13 +11,22 @@
   @extend %show;
 }
 
+.stories__slider-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
 .stories__container {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  max-width: 400px;
+  width: 100vw;
   height: 70vh;
 }
+
 
 .story {
   max-width: 400px;
@@ -218,6 +227,10 @@
 
   .story__info-container{
     max-width: 300px;
+  }
+
+  .stories__slider-button {
+    display: none;
   }
 
   .story__genre {

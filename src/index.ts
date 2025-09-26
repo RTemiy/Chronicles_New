@@ -77,7 +77,15 @@ achievementsManager.updateAchievementsInfo(achievementsData)
 
 preCacheImages(LoadingScreen.loadingPercent, () => {
   storiesManager.render()
-  new CSlider(Stories.storiesContainer, Stories.sliderCheckbox, 'story', 'slider__check', 'story__image')
+  new CSlider(
+    Stories.storiesContainer,
+    Stories.sliderCheckbox,
+    'story',
+    'slider__check',
+    'story__image',
+    Stories.sliderButtonLeft,
+    Stories.sliderButtonRight
+  )
   LoadingScreen.continueButton.style.display = 'block'
   LoadingScreen.loadingPercent.style.display = 'none'
   LoadingScreen.self.onclick = () => {

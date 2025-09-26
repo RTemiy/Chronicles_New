@@ -10,13 +10,19 @@ import { DesktopMode } from '../../Utils/technicalConsts'
 const Stories = new CContainer(
   'stories',
   `
-<p class="tab__title">Истории<img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span" ${DesktopMode && 'style="display: none;"'}/></p>
-<div class="stories__container"></div>
-<div class="stories__slider-checkbox" ></div>
-`,
+    <p class="tab__title">Истории<img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span" ${DesktopMode && 'style="display: none;"'}/></p>
+    <div class="stories__slider-wrapper">
+      <div class="stories__slider-button stories__slider-button_left"></div>
+      <div class="stories__container"></div>
+      <div class="stories__slider-button stories__slider-button_right"></div>
+    </div>
+    <div class="stories__slider-checkbox" ></div>
+  `,
   { name: 'storiesContainer', selector: '.stories__container' },
   { name: 'sliderCheckbox', selector: '.stories__slider-checkbox' },
-  { name: 'infoButton', selector: '.icon_span' }
+  { name: 'infoButton', selector: '.icon_span' },
+  { name: 'sliderButtonLeft', selector: '.stories__slider-button_left' },
+  { name: 'sliderButtonRight', selector: '.stories__slider-button_right' }
 )
 
 export const renderStories = (): void => {
