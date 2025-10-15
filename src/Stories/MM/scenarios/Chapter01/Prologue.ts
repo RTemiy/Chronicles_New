@@ -643,7 +643,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 38
       }],
     speaker: 'Маргарита',
-    imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
+    imageFront: require('../../../../Images/MM/Persons/Margo_Coat_Cringe.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Detective_Cabinet.jpg')
   },
@@ -1538,7 +1538,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 98
       }],
     speaker: 'Маргарита',
-    imageFront: require('../../../../Images/MM/Persons/Margo_Coat.png'),
+    imageFront: require('../../../../Images/MM/Persons/Margo_Coat_Angry.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Flat_Stairs.jpg')
   },

@@ -10,10 +10,12 @@ export function showAd (type: ad, onAccepted: () => void): void {
   !window.navigator.onLine && showMessage('Отсутствует подключение к интернету!', 'Принять')
   if (devMode) {
     onAccepted()
-  } else if (DesktopMode){
+  } else if (DesktopMode) {
     onAccepted()
   } else {
-    let resCode = ''
+    // @NOADSMEASUREMENT
+    onAccepted()
+    /*let resCode = ''
     let platform = ''
     !Ya.Context.AdvManager.getPlatform() && showMessage('По какой-то причине реклама отключена! Попробуйте отключить AdBlock', 'Принять')
     if (Ya.Context.AdvManager.getPlatform() === 'desktop') {
@@ -57,6 +59,6 @@ export function showAd (type: ad, onAccepted: () => void): void {
           }
         }
       })
-    })
+    })*/
   }
 }

@@ -73,7 +73,7 @@ hideDisclaimer()
 
 renderLoadingScreen(require('./Images/UI/loadingscreen.jpg'), () => {})
 
-achievementsManager.updateAchievementsInfo(achievementsData)
+// achievementsManager.updateAchievementsInfo(achievementsData)
 
 preCacheImages(LoadingScreen.loadingPercent, () => {
   storiesManager.render()
