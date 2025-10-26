@@ -127,6 +127,10 @@ export function discoFlash03 (): void {
   animateBackForth(Slide.self, 'slide_disco-3', 2000)
 }
 
+export function vhs (): void {
+  animateBackForth(Slide.self, 'slide_vhs', 2000)
+}
+
 Slide.consoleInput.addEventListener('keypress', (evt: { key: string, value: string }) => {
   if (evt.key === 'Enter') {
     doCommand(Slide.consoleInput.value)
