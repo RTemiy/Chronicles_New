@@ -3,6 +3,17 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 statsManager.add({
   category: 'Effect',
+  id: 'Health',
+  name: 'Здоровье',
+  image: require('../../Images/UA/Effects/Health.svg'),
+  title: 'Показатель состояния организма',
+  description: 'Если значение стремится к нулю, значит, ты умираешь.',
+  showValue: true,
+  story: EStoriesEn.UA
+})
+
+statsManager.add({
+  category: 'Effect',
   id: 'Killer',
   name: 'Киллер',
   image: require('../../Images/UA/Effects/Killer.svg'),
@@ -19,17 +30,6 @@ statsManager.add({
   image: require('../../Images/UA/Effects/Butcher.svg'),
   title: 'Если слишком любишь кровь.',
   description: 'Мясник связан с более кровавыми и эмоциональными способами зачистки, получением удовольствия от нанесения тяжелых увечий.',
-  showValue: true,
-  story: EStoriesEn.UA
-})
-
-statsManager.add({
-  category: 'Effect',
-  id: 'Health',
-  name: 'Здоровье',
-  image: require('../../Images/UA/Effects/Health.svg'),
-  title: 'Показатель состояния организма',
-  description: 'Если значение стремится к нулю, значит, ты умираешь.',
   showValue: true,
   story: EStoriesEn.UA
 })

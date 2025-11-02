@@ -33,3 +33,14 @@ statsManager.add({
   showValue: true,
   story: EStoriesEn.UA
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Cerberus',
+  name: 'Кей',
+  image: require('../../Images/UA/Persons/Cerberus.png'),
+  title: 'Он странный. Но рукастый. И невоспитанный.',
+  description: 'Полное имя неизвестно, как и род деятельности. Вломился в «Кадзоку», назвал EVE-13C ежом. Наверное. все-таки стоило его покусать.',
+  showValue: true,
+  story: EStoriesEn.UA
+})

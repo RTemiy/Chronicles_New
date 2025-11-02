@@ -32,3 +32,19 @@ achievementsManager.add({
   text: 'Одиночка-Солдат узнала, что такое семья',
   story: EStoriesEn.UA
 })
+
+achievementsManager.add({
+  name: 'IronCold',
+  image: require('../../Images/UA/Objects/Art.png'),
+  title: 'Утюг холодный',
+  text: 'Даже у вечно голодного Солдата желудок не бездонный',
+  story: EStoriesEn.UA
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part02Completed',
+  image: require('../../Images/UA/Objects/Art.png'),
+  title: 'Бытовые трудности',
+  text: 'Теперь в жизни самая большая угроза — сломанная касса и неубиваемый таракан.',
+  story: EStoriesEn.UA
+})

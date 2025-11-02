@@ -33,3 +33,17 @@ statsManager.add({
   idDescription: 'Тело',
   story: EStoriesEn.UA
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'Tie',
+  idDescription: 'Связать',
+  story: EStoriesEn.UA
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'LastWarning',
+  idDescription: 'Последнее предупреждение',
+  story: EStoriesEn.UA
+})
