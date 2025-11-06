@@ -7325,7 +7325,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
       {
         text: '',
         func: () => {
-          saveEndProgress('Aurora', 'Глава 1', 'Часть 2', '1')
+          saveEndProgress('MM', 'Глава 1', 'Часть 2', '1')
         }
       }],
     speaker: 'Джонатан',

@@ -9,7 +9,7 @@ storiesManager.add({
     'Старший детектив Маргарита обнаруживает у себя дома таинственную записку с информацией об убийстве известного бизнесмена. Девушка оказывается в центре опасной игры, где каждый ход может стать решающим. Получится ли у неё раскрыть это дело, не потеряв при этом себя?',
   genre: 'Детектив, Психологическая драма, Триллер',
   mature: true,
-  status: 'Обновление истории',
+  status: 'Новая часть',
   chapters: [
     {
       name: 'Глава 1',
@@ -29,6 +29,16 @@ storiesManager.add({
           code: '1',
           image: require('../../Images/MM/Backgrounds/Dark_Park.jpg'),
           loadingImage: require('../../Images/MM/Covers/Part01.jpg'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
+          name: 'Часть 2',
+          code: '1',
+          image: require('../../Images/MM/Backgrounds/Interrogation_Room.jpg'),
+          loadingImage: require('../../Images/MM/Covers/Part02.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)

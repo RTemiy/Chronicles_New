@@ -69,7 +69,7 @@ const Settings = new CContainer(
 		<a>Поддержите нас</a>
 	</div>
 	<div class="settings__block" ${DesktopMode && 'style="display: none"'}>
-		<a target="_blank" rel="external" id="support-button"><img class="settings__icon"  src="${require('../../Images/UI/icon_ad.png')}"></a>
+		<a target="_blank" rel="external" style='display: none' id="support-button"><img class="settings__icon"  src="${require('../../Images/UI/icon_ad.png')}"></a>
 		<a target="_blank" rel="external" href="https://vk.com/chroniclesgame"><img class="settings__icon"  src="${require('../../Images/UI/icon_vk.png')}"></a>
 		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Images/UI/icon_tg.png')}"></a>
 	</div>

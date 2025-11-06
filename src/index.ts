@@ -3,7 +3,7 @@ import Settings from './Components/Settings/Settings'
 import Achievements, { renderAchievements } from './Components/Achievements/Achievements'
 import Stories, { renderStories } from './Components/Stories/Stories'
 import Chapters from './Components/Chapters/Chapters'
-import Parts from './Components/Parts/Parts'
+import Parts, { renderParts } from './Components/Parts/Parts';
 import CStoriesManager from './Classes/CStoriesManager'
 import CAchievementsManager from './Classes/CAchievementsManager'
 import './index.scss'
@@ -109,6 +109,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
   hideLoadingScreen()
   changeState('menu')
+  renderParts(storyName, chapterName)
   setTimeout(() => { hideLoadingScreen() }, 1100)
 }
 

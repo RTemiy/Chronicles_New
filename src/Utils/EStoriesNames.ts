@@ -4,13 +4,13 @@
 
 export enum EStoriesEn {
   MM = 'MM',
+  UA = 'UA',
+  Immortals = 'Immortals',
   Aurora = 'Aurora',
   ROR = 'ROR',
   FOF = 'FOF',
-  Immortals = 'Immortals',
   AEP = 'AEP',
   ISML = 'ISML',
-  UA = 'UA',
   OTV = 'OTV',
   //
   Katarina = 'Katarina',

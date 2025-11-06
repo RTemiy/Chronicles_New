@@ -4,7 +4,7 @@ import { Slide } from '../Components/Slide/Slide'
 import { Journal } from '../Components/Journal/Journal'
 import Parts from '../Components/Parts/Parts';
 
-let currentState: 'menu' | 'inventory' | 'slide' | 'journal' | 'parts' | 'achievements' = 'menu'
+export let currentState: 'menu' | 'inventory' | 'slide' | 'journal' | 'parts' | 'achievements' = 'menu'
 
 export function initLastHash (): void {
   for (let x = 0; x < 100; x++) {

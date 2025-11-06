@@ -89,6 +89,7 @@ export default class CScenarioManager {
       scene.stats !== undefined && this.#doStats(scene.stats)
       scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
       scene.achievement !== undefined && this.#doAchievement(scene.achievement)
+      scene.interruptiveFrame !== undefined && this.#doInterruptionFrame(scene.interruptiveFrame.goTo)
       this.#doAfterAll(scene.afterAll)
       func?.()
     }
@@ -217,6 +218,10 @@ export default class CScenarioManager {
     } else {
       return false
     }
+  }
+
+  #doInterruptionFrame (sceneIndex: number): void {
+    setTimeout(() => { this.beginScene(sceneIndex) }, 1500)
   }
 
   changeSceneButtonStatus (sceneIndex: number, buttonIndex: number, value: boolean): void {

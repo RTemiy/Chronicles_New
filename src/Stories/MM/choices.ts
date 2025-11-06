@@ -35,3 +35,17 @@ statsManager.add({
   idDescription: 'Смело',
   story: EStoriesEn.MM
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'TellDetailed',
+  idDescription: 'Расскажите поподробнее',
+  story: EStoriesEn.MM
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'KissHer',
+  idDescription: 'Поцеловать её',
+  story: EStoriesEn.MM
+})

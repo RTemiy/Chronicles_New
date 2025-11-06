@@ -1,8 +1,5 @@
 import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { musicPlayer } from '../../../../Functions/musicPlayer'
-import { loadData } from '../../../../Functions/localStorageManager'
-import { blackFlash, redFlash, whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава 1', partName: 'Часть 2', code: '0' }, [
   {
@@ -817,12 +814,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     buttons: [
       {
         text: '',
-        goTo: 50
+        goTo: 600
       }],
     speaker: '$Имя Игрока$',
     imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+  },
+
+  {
+    id: 600,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 50 },
+    imageBack: require('../../../../Images/UI/background_black.jpg')
   },
 
   {

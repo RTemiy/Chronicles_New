@@ -19,8 +19,17 @@ export default class CWardrobe {
     this.persons[personId] = clothesInfo
   }
 
+  addVariation (personId: string, clothesInfo: IWardrobe[]): void {
+    this.persons[personId + '_Variation'] = clothesInfo
+  }
+
   getCurrentClothesImage (storyName: string, personId: string): string {
     return this.persons[personId][loadData([storyName, personId, 'Clothes'])!].image
+  }
+
+  getCurrentClothesVariationImage (storyName: string, personId: string, variation: string): string {
+    return this.persons[personId + '_Variation'].find(item =>
+      item.originalId === parseInt(loadData([storyName, personId, 'Clothes'])!) + 1 && item.variation === variation)!.image
   }
 
   getCurrentClothesImageTitle (storyName: string, personId: string): string {
@@ -69,6 +78,7 @@ export default class CWardrobe {
 
   private chooseClothes (): void {
     this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
+    // @ts-ignore
     showAd(this.currentClothes[this.currentIndex].cost, () => {
       this.Wardrobe.self.style.display = 'none'
     })

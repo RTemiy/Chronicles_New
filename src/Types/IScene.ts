@@ -41,4 +41,5 @@ export default interface IScene {
   parallax?: string
   wardrobe?: { story: EStoriesEn, personId: string, goTo: number }
   smartphone?: { chatId: string, goTo: number }
+  interruptiveFrame?: { goTo: number }
 }
