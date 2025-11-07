@@ -2272,6 +2272,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 144
       }],
     speaker: 'Майк',
+    stats: [{ story: EStoriesEn.MM, value: 0, category: 'Person', id: 'Mike' }],
     imageFront: require('../../../../Images/MM/Persons/Mike.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Park.jpg')
@@ -6728,7 +6729,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 431
       }],
     stats: [
-      { story: EStoriesEn.MM, value: 0, category: 'Choice', id: 'DidItBrave' }],
+      { story: EStoriesEn.MM, value: 1, category: 'Choice', id: 'DidItBrave' }],
     music: require('../../../../Sounds/MM/Jonathan.mp3'),
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),

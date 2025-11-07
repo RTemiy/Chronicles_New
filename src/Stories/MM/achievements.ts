@@ -3,7 +3,7 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 achievementsManager.add({
   name: 'PrologueCompleted',
-  image: require('../../Images/MM/Objects/Burnt_Letter.png'),
+  image: require('../../Images/MM/Achievements/PrologueCompleted.jpg'),
   title: 'Записка незнакомца',
   text: 'Получить необычное письмо. Или ценную улику?',
   story: EStoriesEn.MM
@@ -11,7 +11,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'DetectiveActress',
-  image: require('../../Images/MM/Achievements/DetectiveActress.png'),
+  image: require('../../Images/MM/Achievements/DetectiveActress.jpg'),
   title: 'Детектив-актриса',
   text: 'Отстоять себя и втереться в доверие',
   story: EStoriesEn.MM
@@ -43,7 +43,7 @@ achievementsManager.add({
 
 achievementsManager.add({
   name: 'Chapter01Part02Completed',
-  image: require('../../Images/MM/Achievements/Chapter01Part01Completed.jpg'),
+  image: require('../../Images/MM/Achievements/Chapter01Part02Completed.jpg'),
   title: 'Окружена, но не сломлена',
   text: 'Чем больше ответов, тем больше вопросов',
   story: EStoriesEn.MM

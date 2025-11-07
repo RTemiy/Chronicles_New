@@ -85,7 +85,21 @@
   @extend %styled-radius;
   @extend %styled-border;
   background: linear-gradient(0deg, $mainColor 0%, $additionalColor 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
+  background-size: 100% 100%;
+  animation: gradient 10s ease infinite;
   transition: all 0.5s ease-in-out;
+}
+
+@keyframes gradient {
+  0% {
+    background-size: 100% 100%;
+  }
+  50% {
+    background-size: 100% 110%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
 }
 
 

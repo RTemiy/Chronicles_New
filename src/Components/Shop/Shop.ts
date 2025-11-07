@@ -26,26 +26,26 @@ export function renderShop (): void {
   let wardrobeResult = ''
   let interiorResult = ''
   shopItems.forEach(item => {
-    if (item.available && item.category === 'Гардероб') {
+    if (item.category === 'Гардероб') {
       wardrobeResult += `
     <div class='shop-item__container'>
       <p class='shop-item__title'>${item.title} <img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"></p>
-      <img class='shop-item__image ${item.free ? '' : 'unavailableItem'}' src='${item.image}'/>
+      <p class='shop-item__cost' ${item.free ? 'style="display: none"' : item.available ? '' : 'style="display: none"'}>${item.cost}₽</p>
+      <img class='shop-item__image ${item.free && item.available ? '' : item.available ? '' : 'unavailableItem'}' src='${item.image}'/>
       <div class='shop-item__descriptionContainer'><p>${item.description}</div>
-      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free ? 'Получить' : 'Недоступно'}</p>
+      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free && item.available ? 'Получить' : item.available ? 'Купить' : 'Недоступно'} </p>
     </div>
     `
-    } else if (item.available && item.category === 'Интерьер') {
+    } else if (item.category === 'Интерьер') {
       interiorResult += `
     <div class='shop-item__container'>
-      <p class='shop-item__title'>${item.title}<img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"></p>
-      <img class='shop-item__image ${item.free ? '' : 'unavailableItem'}' src='${item.image}'/>
+      <p class='shop-item__title'>${item.title} <img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"></p>
+      <p class='shop-item__cost' ${item.free ? 'style="display: none"' : item.available ? '' : 'style="display: none"'}>${item.cost}₽</p>
+      <img class='shop-item__image ${item.free && item.available ? '' : item.available ? '' : 'unavailableItem'}' src='${item.image}'/>
       <div class='shop-item__descriptionContainer'><p>${item.description}</div>
-      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free ? 'Получить' : 'Недоступно'}</p>
-      
+      <p class='shop-item__buy' id='wardrobe_item_${item.id}'>${item.free && item.available ? 'Получить' : item.available ? 'Купить' : 'Недоступно'} </p>
     </div>
     `
-      // <p class='shop-item__cost ${item.free ? '' : 'unavailableItem'}' ${item.free ? 'style="color: green; text-decoration: line-through;"' : ''}>${item.cost}₽</p>
     }
   })
 

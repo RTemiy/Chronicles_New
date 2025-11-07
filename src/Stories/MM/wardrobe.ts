@@ -1,4 +1,5 @@
 import { wardrobe } from '../../index'
+import { loadData } from '../../Functions/localStorageManager'
 
 wardrobe.addPerson('Margo_Sport', [
   {
@@ -20,7 +21,7 @@ wardrobe.addPerson('Margo_Sport', [
     title: 'Закрытый комплект',
     description: 'Спортивный костюм из премиального бутика стоимостью в ползарплаты.',
     cost: 'long',
-    unlocked: () => { return true }
+    unlocked: () => { return loadData(['Shop', 'ShopId7']) === '1' }
   }
 ])
 
@@ -102,5 +103,12 @@ wardrobe.addPerson('Margo_Room', [
     description: 'Гурманам, отдающим предпочтение комбинации из роскоши и комфорта.',
     cost: 'long',
     unlocked: () => { return true }
+  },
+  {
+    image: require('../../Images/MM/Backgrounds/Margo_Room_King.jpg'),
+    title: 'Королевская',
+    description: 'Гурманам, отдающим предпочтение комбинации из роскоши и комфорта.',
+    cost: 'long',
+    unlocked: () => { return loadData(['Shop', 'ShopId6']) === '1' }
   }
 ])

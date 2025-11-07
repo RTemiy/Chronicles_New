@@ -2991,7 +2991,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 189
       }],
     speaker: 'Дилан',
-    imageFront: require('../../../../Images/MM/Persons/Dylan_Coat_Sad.png'),
+    imageFront: require('../../../../Images/MM/Persons/Dylan_Sad.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Interrogation_Room.jpg')
   },
@@ -3008,6 +3008,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 801
       }],
     speaker: 'Дилан',
+    imageFront: require('../../../../Images/MM/Persons/Dylan_Thinking.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Interrogation_Room.jpg')
   },
@@ -3138,7 +3139,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 197
       }],
     speaker: 'Дилан',
-    imageFront: require('../../../../Images/MM/Persons/Dylan_Coat_Sad.png'),
+    imageFront: require('../../../../Images/MM/Persons/Dylan_Sad.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Watchroom.jpg')
   },
@@ -7267,7 +7268,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 458
       }],
     speaker: 'Дилан',
-    imageFront: require('../../../../Images/MM/Persons/Dylan_Sport.png'),
+    imageFront: require('../../../../Images/MM/Persons/Dylan_Sport_Smirk.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Gym.jpg')
@@ -8708,7 +8709,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 549
       }],
-    music: require('../../../../Sounds/MM/Alone.mp3'),
+    music: require('../../../../Sounds/MM/Calm.mp3'),
     ambient: require('../../../../Sounds/MM/Rain.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Entrance.jpg')
   },

@@ -2,6 +2,17 @@ import checkPromoCode from '../Functions/checkPromoCode'
 
 export const shopItems = [
   {
+    id: 7,
+    category: 'Гардероб',
+    title: 'Закрытый',
+    description: 'Memento Mori. <p>Глава 1 Часть 2.</p><p>⠀</p><i>Спортивный костюм из премиального бутика стоимостью в ползарплаты.</i>',
+    cost: '39',
+    image: require('../Images/MM/Persons/Margo_Sport_Tracksuit.png'),
+    free: true,
+    action: () => { checkPromoCode('vcbdfrtyhjk') },
+    available: true
+  },
+  {
     id: 1,
     category: 'Гардероб',
     title: 'Цветочная',
@@ -10,7 +21,7 @@ export const shopItems = [
     image: require('../Images/Aurora/Persons/Aurora_Green_Dress.png'),
     free: true,
     action: () => { checkPromoCode('gjtlbntkmrjyrehcfhtgjcnjd') },
-    available: true
+    available: false
   },
   {
     id: 4,
@@ -19,9 +30,9 @@ export const shopItems = [
     description: 'Amore e passione <p>Глава 1 Часть 1.</p><p>⠀</p><i>Я должна быть королевой, даже в повседневной жизни.</i>',
     cost: '39',
     image: require('../Images/AEP/Persons/Hero_Shop4.png'),
-    free: true,
+    free: false,
     action: () => { checkPromoCode('bvnghtdyt') },
-    available: true
+    available: false
   },
   {
     id: 0,
@@ -32,6 +43,17 @@ export const shopItems = [
     image: require('../Images/Immortals/Persons/Hero_Clown.png'),
     free: false,
     action: () => { checkPromoCode('ghbdtngegcbr') },
+    available: false
+  },
+  {
+    id: 6,
+    category: 'Интерьер',
+    title: 'Королевская',
+    description: 'Memento Mori. <p>Глава 1 Часть 2.</p><p>⠀</p><i>Покои для избранных. Подобному дизайну предпочтение отдала бы сама королева.</i>',
+    cost: '39',
+    image: require('../Images/MM/Backgrounds/Margo_Room_King.jpg'),
+    free: true,
+    action: () => { checkPromoCode('jflrinfdkl') },
     available: true
   },
   {
@@ -43,7 +65,7 @@ export const shopItems = [
     image: require('../Images/Immortals/Backgrounds/Hero_Room_Shop_1.jpg'),
     free: false,
     action: () => { checkPromoCode('vfufpbyid1') },
-    available: true
+    available: false
   },
   {
     id: 3,
@@ -54,7 +76,7 @@ export const shopItems = [
     image: require('../Images/FOF/Persons/Christopher_Sexy.png'),
     free: false,
     action: () => { checkPromoCode('sxychrstpr') },
-    available: true
+    available: false
   },
   {
     id: 5,
@@ -65,6 +87,6 @@ export const shopItems = [
     image: require('../Images/FOF/Persons/Abigeil_SoftLily.png'),
     free: false,
     action: () => { checkPromoCode('adsdfhgbj') },
-    available: true
+    available: false
   }
 ]

@@ -33,6 +33,16 @@ export const promoCodes = [
     code: 'adsdfhgbj',
     description: '<b>Осколки чужой судьбы</b> <p>- <i>Нежная лилия</i></p>',
     innerCode: 'Shop_ShopId5'
+  },
+  {
+    code: 'jflrinfdkl',
+    description: '<b>Memento Mori</b> <p>- <i>Королевская</i></p>',
+    innerCode: 'Shop_ShopId6'
+  },
+  {
+    code: 'vcbdfrtyhjk',
+    description: '<b>Memento Mori</b> <p>- <i>Закрытый комплект</i></p>',
+    innerCode: 'Shop_ShopId7'
   }
   /* {
     code: 'qly52axc',
