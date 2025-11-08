@@ -45,7 +45,7 @@ export function doCommand (input: string): void {
           if (currentState === 'menu') {
             clearInterval(skipInterval)
           } else {
-            Slide.backgroundImage.click()
+            Slide.fullscreenObject.click()
           }
         }, 1)
         setTimeout(() => { clearInterval(skipInterval) }, 500)

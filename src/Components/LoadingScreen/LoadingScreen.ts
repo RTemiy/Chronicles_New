@@ -5,13 +5,17 @@ export const LoadingScreen = new CContainer('loading-screen',
   `
     <img class="loading-screen__background-blurred-image-helper slide__background_hide">
     <img class="loading-screen__background-blurred-image">
-    <img class="loading-screen__background-image">
+    <div class="loading-screen__background-image-wrapper">
+      <img class="loading-screen__background-image">
+    </div>
     <p class="loading-screen__percent">100%</p>
     <p class="loading-screen__continue-button">Нажмите, чтобы продолжить</p>
+    <img class="loading-screen__logo" src='${require('../../Images/UI/logo.svg')}'>
   `,
   { name: 'backgroundBlurredImage', selector: '.loading-screen__background-blurred-image' },
   { name: 'backgroundImage', selector: '.loading-screen__background-image' },
   { name: 'backgroundBlurredImageHelper', selector: '.loading-screen__background-blurred-image-helper' },
+  { name: 'logo', selector: '.loading-screen__logo' },
   { name: 'loadingPercent', selector: '.loading-screen__percent' },
   { name: 'continueButton', selector: '.loading-screen__continue-button' }
 )
@@ -46,6 +50,7 @@ export function hideLoadingScreen (): void {
   LoadingScreen.backgroundImage.style.display = 'none'
   LoadingScreen.loadingPercent.style.display = 'none'
   LoadingScreen.continueButton.style.display = 'none'
+  LoadingScreen.logo.style.display = 'none'
   LoadingScreen.backgroundBlurredImageHelper.style.display = 'none'
 }
 
@@ -57,7 +62,7 @@ export function showBlurredBackground (backgroundImage: string): void {
     LoadingScreen.backgroundImage.style.display = 'none'
     LoadingScreen.loadingPercent.style.display = 'none'
     LoadingScreen.continueButton.style.display = 'none'
-    LoadingScreen.backgroundImage.style.display = 'block'
+    LoadingScreen.backgroundImage.style.display = 'none'
     LoadingScreen.backgroundImage.src = require('../../Images/UI/Transparent.png')
     LoadingScreen.backgroundBlurredImageHelper.style.display = 'block'
     if (!LoadingScreen.backgroundBlurredImage.src.includes(backgroundImage)) {

@@ -30,7 +30,7 @@ export default class CSlide {
     this.addClicks()
   }
 
-  changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, borderImage?: string): void {
+  changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, fullscreenObject?: string, borderImage?: string): void {
     if (backImage !== undefined && backImage !== '') {
       setTimeout(() => { this.blurredBackgroundFunc(backImage) }, 1000)
       if (!this.slide.backgroundImage.src.includes(backImage)) {
@@ -86,6 +86,16 @@ export default class CSlide {
     } else if (frontImage === undefined) {
       this.slide.imageFront.display = 'none'
       this.slide.imageFront.setAttribute('src', require('../Images/UI/Transparent.png'))
+    }
+    if (fullscreenObject !== undefined && fullscreenObject !== '') {
+      if (!this.slide.fullscreenObject.src.includes(fullscreenObject)) {
+        this.animateFunc(this.slide.fullscreenObject, 'fade-in-left', 550)
+      }
+      this.slide.fullscreenObject.src = fullscreenObject
+      this.slide.fullscreenObject.style.display = 'block'
+    } else if (fullscreenObject === undefined) {
+      this.slide.fullscreenObject.display = 'none'
+      this.slide.fullscreenObject.setAttribute('src', require('../Images/UI/Transparent.png'))
     }
     if (borderImage !== undefined && borderImage !== '') {
       this.slide.border.src = borderImage
@@ -172,14 +182,14 @@ export default class CSlide {
       this.slide.text.onclick = () => {
         buttons[0].func!()
       }
-      this.slide.backgroundImage.onclick = () => {
+      this.slide.fullscreenObject.onclick = () => {
         buttons[0].func!()
       }
       this.forEachButton((button: HTMLElement) => {
         button.style.display = 'none'
       })
     } else {
-      this.slide.backgroundImage.onclick = () => {}
+      this.slide.fullscreenObject.onclick = () => {}
       const buttonsArray = this.getButtonsArray()
       buttons.forEach((button, index) => {
         if (!buttons[index].gift) {

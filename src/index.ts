@@ -90,6 +90,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
   LoadingScreen.loadingPercent.style.display = 'none'
   LoadingScreen.self.onclick = () => {
     MenuToolbar.self.style.display = 'flex'
+
     hideLoadingScreen()
     showPolicy()
     soundManager.play('menu')

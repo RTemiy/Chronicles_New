@@ -24,6 +24,7 @@ export default interface IScene {
   imageMiddle?: string
   imageRight?: string
   imageFront?: string | (() => string)
+  fullscreenObject?: string
   imageBorder?: string
   stats?: IStat[]
   achievement?: { story: EStoriesEn, name: string }

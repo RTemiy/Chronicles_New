@@ -75,7 +75,7 @@ export default class CScenarioManager {
     const scene = this.#getSceneByIndex(sceneIndex)
     if (!this.#doCondition(scene.condition)) {
       this.#doBeforeBegin(scene.beforeBegin)
-      this.#changeImages(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.imageBorder)
+      this.#changeImages(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.fullscreenObject, scene.imageBorder)
       this.#doParallax(scene.parallax)
       this.slide.changeText(scene.text)
       this.#setButtons(scene.buttons)
@@ -180,7 +180,7 @@ export default class CScenarioManager {
     this.slide.showAchievement(this.#achievementManager.unlock(achievement.story, achievement.name))
   }
 
-  #changeImages (backImage?: TIMage, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: TIMage, borderImage?: string): void {
+  #changeImages (backImage?: TIMage, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: TIMage, fullscreen?: string, borderImage?: string): void {
     let front: any
     let back: any
     if (frontImage !== undefined && typeof frontImage === 'function') {
@@ -193,7 +193,7 @@ export default class CScenarioManager {
     } else if (backImage !== undefined) {
       back = backImage
     }
-    this.slide.changeImage(back, leftImage, middleImage, rightImage, front, borderImage)
+    this.slide.changeImage(back, leftImage, middleImage, rightImage, front, fullscreen, borderImage)
   }
 
   #doSounds (sounds: { music: string | undefined, ambient: string | undefined, simple: string | undefined }): void {

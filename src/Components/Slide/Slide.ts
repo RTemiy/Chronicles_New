@@ -39,6 +39,7 @@ export const Slide = new CContainer('slide',
         <button class="slide__button"></button>
     </div>
     <img class="slide__background" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
+    <img class="slide__backgroundFullscreenObject" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
     <img class="slide__backgroundHelper src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}""/>
     <div class="slide__message">
         <div class="slide__message-text"></div>
@@ -72,6 +73,7 @@ export const Slide = new CContainer('slide',
   { name: 'text', selector: '.slide__text' },
   { name: 'buttons', selector: '.slide__buttons' },
   { name: 'backgroundImage', selector: '.slide__background' },
+  { name: 'fullscreenObject', selector: '.slide__backgroundFullscreenObject' },
   { name: 'backgroundImageHelper', selector: '.slide__backgroundHelper' },
   { name: 'message', selector: '.slide__message' },
   { name: 'messageText', selector: '.slide__message-text' },
