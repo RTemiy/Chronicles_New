@@ -1,6 +1,6 @@
 import { smartphone, statsManager } from '../../index';
 
-smartphone.addChat('HF_01',
+/*smartphone.addChat('HF_01',
   {
     avatar: require('../../Images/HF/Persons/Major.png'),
     title: 'Майор',
@@ -88,4 +88,4 @@ smartphone.addChat('HF_01',
       }
     ]
   }
-)
+)*/

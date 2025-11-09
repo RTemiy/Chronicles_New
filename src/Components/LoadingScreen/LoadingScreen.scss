@@ -87,7 +87,8 @@
   grid-column: 1;
   z-index: 3;
   display: none;
-  animation: blink 1s infinite ease-in-out;
+  color: transparent;
+  // animation: blink 1s infinite ease-in-out;
 }
 
 @keyframes blink {
@@ -109,4 +110,81 @@
   max-width: 500px;
   height: auto;
   top: 6vh;
+  animation: goUp 3s forwards;
+  animation-delay: 6s;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+@keyframes goUp {
+  0%{
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  100%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+.loading-screen__tapImage{
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  padding-top: 25px;
+  opacity: 0;
+  border: 0 none;
+  text-decoration: none;
+  background-image: url("../../Images/UI/icon_pointer.svg");
+  background-position: center, center;
+  background-size: 60px, 60px;
+  background-repeat: no-repeat, no-repeat;
+  animation: pointerTap 1.7s infinite ease-out;
+}
+
+.loading-screen__tapImage_start{
+  animation-delay: 10s;
+}
+
+.loading-screen__tapImage_after{
+  animation-delay: 3s;
+}
+
+@keyframes pointerTap {
+  0%{
+    transform: translateX(0px);
+    opacity: 0;
+    background-image: url("../../Images/UI/icon_pointer.svg");
+  }
+  40%{
+    transform: translateX(-25px) translateY(-25px);
+    opacity: 1;
+    background-image: url("../../Images/UI/icon_pointer.svg");
+  }
+  50%{
+    transform: translateX(-45px) translateY(-25px) rotate(-10deg) scale(90%);
+    opacity: 1;
+    background-image: url("../../Images/UI/icon_pointer.svg"), url("../../Images/UI/icon_pointer_tapped.svg");
+  }
+  60%{
+    transform: translateX(-25px) translateY(-25px);
+    opacity: 1;
+    background-image: url("../../Images/UI/icon_pointer.svg");
+  }
+  70%{
+    transform: translateX(0px);
+    opacity: 0;
+    background-image: url("../../Images/UI/icon_pointer.svg");
+  }
+  80%{
+    transform: translateX(0px);
+    opacity: 0;
+    background-image: url("../../Images/UI/icon_pointer.svg");
+  }
+  100%{
+    transform: translateX(0px);
+    opacity: 0;
+    background-image: url("../../Images/UI/icon_pointer.svg");
+  }
 }

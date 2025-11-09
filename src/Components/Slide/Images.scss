@@ -9,7 +9,7 @@ $maxHeightShort: 583px;
 %imageDefaultValues{
   grid-column: 1;
   grid-row: 1;
-  filter: drop-shadow(5px -2px 5px black);
+  filter: drop-shadow(5px 3px 2px rgba(0, 0, 0, 0.65));
   transition: opacity 0.5s ease-in-out;
   image-rendering: smooth;
 }

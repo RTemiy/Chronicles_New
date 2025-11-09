@@ -36,7 +36,6 @@ import { Wardrobe } from './Components/Wardrobe/Wardrobe'
 import { Profile } from './Components/Profile/Profile'
 import { showRate } from './Components/Rate/Rate'
 import { checkURL } from './Functions/checkURL'
-import { achievementsData } from './Utils/achievementsData'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
 import { Shop } from './Components/Shop/Shop'
@@ -88,15 +87,19 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
   )
   LoadingScreen.continueButton.style.display = 'block'
   LoadingScreen.loadingPercent.style.display = 'none'
-  LoadingScreen.self.onclick = () => {
-    MenuToolbar.self.style.display = 'flex'
-
-    hideLoadingScreen()
-    showPolicy()
-    soundManager.play('menu')
-    checkURL()
-    showNews('start')
-  }
+  setTimeout(() => {
+    LoadingScreen.logo.classList.add('shimmering_image')
+    LoadingScreen.self.onclick = () => {
+      MenuToolbar.self.style.display = 'flex'
+      hideLoadingScreen()
+      showPolicy()
+      soundManager.play('menu')
+      checkURL()
+      showNews('start')
+      LoadingScreen.tapButton.classList.remove('loading-screen__tapImage_start')
+      LoadingScreen.tapButton.classList.add('loading-screen__tapImage_after')
+    }
+  }, 9000)
 })
 
 export function saveEndProgress (storyName: string, chapterName: string, partName: string, code: string): void {

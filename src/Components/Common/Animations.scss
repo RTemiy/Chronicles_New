@@ -110,6 +110,7 @@
 .shimmering_image {
   display: inline-block;
   mask: linear-gradient(-60deg, #000 30%, rgba(0, 0, 0, 0.51), #000 70%) right/350% 100%;
+  opacity: 1;
   animation: shimmerimage 3s infinite;
 }
 

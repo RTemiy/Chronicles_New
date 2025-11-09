@@ -9,7 +9,7 @@ export const LoadingScreen = new CContainer('loading-screen',
       <img class="loading-screen__background-image">
     </div>
     <p class="loading-screen__percent">100%</p>
-    <p class="loading-screen__continue-button">Нажмите, чтобы продолжить</p>
+    <p class="loading-screen__continue-button">Нажмите, чтобы<img src='${require('../../Images/UI/Transparent.png')}' class="loading-screen__tapImage loading-screen__tapImage_start"/> продолжить</p>
     <img class="loading-screen__logo" src='${require('../../Images/UI/logo.svg')}'>
   `,
   { name: 'backgroundBlurredImage', selector: '.loading-screen__background-blurred-image' },
@@ -17,7 +17,8 @@ export const LoadingScreen = new CContainer('loading-screen',
   { name: 'backgroundBlurredImageHelper', selector: '.loading-screen__background-blurred-image-helper' },
   { name: 'logo', selector: '.loading-screen__logo' },
   { name: 'loadingPercent', selector: '.loading-screen__percent' },
-  { name: 'continueButton', selector: '.loading-screen__continue-button' }
+  { name: 'continueButton', selector: '.loading-screen__continue-button' },
+  { name: 'tapButton', selector: '.loading-screen__tapImage' }
 )
 
 let isShowingLoadingScreen: boolean = true
