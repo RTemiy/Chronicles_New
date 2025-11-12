@@ -1,0 +1,79 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.3a0cda1dfcaf468dbcb4741e3e641b59.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_384x384.598d714aad8ef887ee58ad9e8b1de6fc.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_256x256.f2cde2e1363ff3c8268354a5e068adc5.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_192x192.0073e77a2979d40a60ad8c7ffd791472.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_128x128.4dcc8f11bfc0453169c24512214f6a4e.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "icon_96x96.27c8776cb306d0037a85a9d4fcee12ab.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Chronicles | Твой выбор",
+  "short_name": "Chronicles",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Много вариативная визуальная новелла",
+  "background_color": "black",
+  "theme_color": "#000000",
+  "screenshots": [
+    {
+      "src": "https://vkplay.ru/hotbox/showcase/gamehighlight/pic/eb4ebbc7-a389-46a3-aa7f-91860221889f.jpg",
+      "form_factor": "wide",
+      "label": "Скриншот на ПК"
+    },
+    {
+      "src": "https://vkplay.ru/hotbox/showcase/gamehighlight/pic/78677ca7-eca7-4a75-bfd2-59f0757534f1.jpg",
+      "form_factor": "wide",
+      "label": "Скриншот на ПК"
+    },
+    {
+      "src": "https://vkplay.ru/hotbox/showcase/gamehighlight/pic/4e6c83e9-5b53-44b3-acb9-e8e9073171c7.jpg",
+      "form_factor": "wide",
+      "label": "Скриншот на ПК"
+    },
+    {
+      "src": "https://vkplay.ru/hotbox/showcase/gamehighlight/pic/eb4ebbc7-a389-46a3-aa7f-91860221889f.jpg",
+      "form_factor": "narrow",
+      "label": "Скриншот на мобильном устройстве"
+    },
+    {
+      "src": "https://vkplay.ru/hotbox/showcase/gamehighlight/pic/78677ca7-eca7-4a75-bfd2-59f0757534f1.jpg",
+      "form_factor": "narrow",
+      "label": "Скриншот на мобильном устройстве"
+    },
+    {
+      "src": "https://vkplay.ru/hotbox/showcase/gamehighlight/pic/4e6c83e9-5b53-44b3-acb9-e8e9073171c7.jpg",
+      "form_factor": "narrow",
+      "label": "Скриншот на мобильном устройстве"
+    }
+  ],
+  "theme-color": "black",
+  "lang": "ru",
+  "related_applications": [],
+  "id": "/",
+  "scope": "/"
+}
