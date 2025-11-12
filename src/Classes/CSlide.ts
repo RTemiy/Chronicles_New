@@ -100,7 +100,7 @@ export default class CSlide {
 
     if (fullscreenObjectL !== undefined && fullscreenObjectL !== '') {
       if (!this.slide.fullscreenObjectL.src.includes(fullscreenObjectL)) {
-        this.animateFunc(this.slide.fullscreenObjectL, 'fade-in-left', 550)
+        this.animateFunc(this.slide.fullscreenObjectL, 'fade-in-left-left', 550)
       }
       this.slide.fullscreenObjectL.src = fullscreenObjectL
       this.slide.fullscreenObjectL.style.display = 'block'

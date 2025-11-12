@@ -17,7 +17,7 @@
 }
 
 .fade-in-left {
-  animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-left 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @keyframes fade-in-left {
   0% {
@@ -35,7 +35,7 @@
 }
 @keyframes fade-in-left-left {
   0% {
-    transform: translateX(-80px);
+    transform: translateX(-20px);
     opacity: 0;
   }
   100% {
@@ -49,7 +49,7 @@
 }
 @keyframes fade-in-left-right {
   0% {
-    transform: translateX(-50px) scaleX(-1);
+    transform: translateX(50px) scaleX(-1);
     opacity: 0;
   }
   100% {
