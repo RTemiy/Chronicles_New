@@ -1,7 +1,7 @@
 @import "../Common/Common";
 
 %anim{
-  transition: all .5s ease-in-out;
+  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
 }
 
 .wardrobe{
@@ -39,7 +39,7 @@
   background-position: center;
   background-size: cover;
   align-self: center;
-  z-index: 12;
+  z-index: 13;
   padding-left: 50px;
   @extend %button-tap;
 }
@@ -50,7 +50,9 @@
   grid-row: 2;
   border-radius: 10px;
   background: $inventoryCellBackground;
+  backdrop-filter: blur(15px);
   @extend %anim;
+  z-index: 12;
 }
 
 .wardrobe__right-button{
@@ -63,37 +65,40 @@
   background-position: center;
   background-size: cover;
   align-self: center;
-  z-index: 12;
+  z-index: 13;
   @extend %button-tap;
 }
 
 .wardrobe__title{
   grid-column: 2;
-  grid-row: 1;
+  grid-row: 2;
   font-weight: 600;
   text-align: center;
   justify-self: center;
   align-self: flex-start;
+  padding-top: 3px;
   padding-bottom: 5px;
-  margin-bottom: 5px;
   border-bottom: 1px solid white;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 10px 10px 0 0;
+  backdrop-filter: blur(15px);
+  z-index: 12;
   @extend %anim;
 }
 
 .wardrobe__description{
   grid-column: 2;
-  grid-row: 3;
+  grid-row: 2/3;
   text-align: left;
-  align-self: flex-start;
-  padding: 5px 0;
-  margin: 5px 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid white;
+  align-self: flex-end;
+  padding: 5px 5px;
+  z-index: 12;
   border-top: 1px solid white;
   font-size: var(--tinytext);
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.3);
   @extend %anim;
 }
 
@@ -102,12 +107,13 @@
   grid-row: 4;
   align-self: flex-start;
   padding: 10px;
+  margin-top: 5px;
   @extend %button-tap;
-  @extend %styled-border;
   @extend %slide-container;
   @extend %anim;
-  background-color: rgba(255, 255, 255, 0.18);
-  backdrop-filter: none;
+  z-index: 12;
+  backdrop-filter: blur(15px);
+  background-color: rgba(140, 140, 140);
 }
 
 .wardrobe__element_hide{

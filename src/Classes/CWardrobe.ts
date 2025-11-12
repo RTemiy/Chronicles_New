@@ -68,6 +68,7 @@ export default class CWardrobe {
       animateBackForth(this.Wardrobe.image, 'wardrobe__element_hide', 500)
       animateBackForth(this.Wardrobe.title, 'wardrobe__element_hide', 500)
       animateBackForth(this.Wardrobe.description, 'wardrobe__element_hide', 500)
+      animateBackForth(this.Wardrobe.buttonConfirm, 'wardrobe__element_hide', 500)
       setTimeout(() => {
         this.Wardrobe.image.src = this.currentClothes[this.currentIndex].image
         this.Wardrobe.title.innerHTML = this.currentClothes[this.currentIndex].title

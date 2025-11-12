@@ -42,6 +42,7 @@
   padding: 10px;
   width: 235px;
   height: 235px;
+  @extend %styled-background;
   @extend %styled-radius;
   @extend %button-tap;
   @extend %styled-border;

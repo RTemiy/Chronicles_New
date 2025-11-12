@@ -39,6 +39,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   flex-direction: column;
+  transform: scale(103%);
   @extend %button-tap;
 }
 
@@ -56,7 +57,7 @@
     .story__image {
       box-shadow: none;
       transition: all 0.5s ease-in-out;
-      border: 1px solid rgba(128, 128, 128, 0.1);
+      // border: 1px solid rgba(128, 128, 128, 0.1);
     }
   }
   .story__image-container:before{
@@ -83,7 +84,7 @@
   width: 350px;
   content: "";
   @extend %styled-radius;
-  @extend %styled-border;
+  // @extend %styled-border;
   background: linear-gradient(0deg, $mainColor 0%, $additionalColor 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
   background-size: 100% 100%;
   animation: gradient 10s ease infinite;
@@ -109,7 +110,7 @@
   max-width: 350px;
   margin: 0 auto;
   border-radius: 15px;
-  box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.7);
+  box-shadow: -1px 0 25px 1px rgba(255, 235, 184, 0.1), 1px 0 25px 1px rgba(255, 235, 184, 0.1), 0 1px 25px 1px rgba(255, 235, 184, 0.1), 0 -1px 25px 1px rgba(255, 235, 184, 0.1);
 }
 
 .story__info-container{
@@ -135,7 +136,7 @@
 .story__description {
   font-size: 1.5vh;
   text-align: left;
-  padding: 0 15px 5px 15px;
+  padding: 0 15px 15px 15px;
   margin: 0 0 0 0;
   transition: all 0.5s ease-in-out;
   z-index: 15;
@@ -143,7 +144,7 @@
 }
 
 .story__button {
-  @extend %styled-border;
+  // @extend %styled-border;
   @extend %styled-background;
   @extend %styled-radius;
   text-align: center;
@@ -237,7 +238,7 @@
   width: 15px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 380px) {
 
   .story__info-container{
     max-width: 300px;

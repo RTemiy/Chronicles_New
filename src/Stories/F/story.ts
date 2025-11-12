@@ -3,10 +3,10 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 storiesManager.add({
   name: 'F',
   image: require('../../Images/F/Covers/Story_Cover.jpg'),
-  video: require('../../Images/Immortals/Covers/Story_Cover.mp4'),
+  video: require('../../Images/F/Covers/Story_Cover.mp4'),
   title: require('../../Images/F/Covers/Title.png'),
   description:
-    'Тридцатилетний Александр несчастлив в рутине. Находка таинственного Предмета меняет его жизнь полностью. Герою предстоит решить: вернуть прежнюю жизнь или начать новую? Понять, что счастье — выбор каждого, а не судьба.',
+    'Увязнув в повседневной рутине, Константин потерял ощущение радости. Находка таинственной музыкальной шкатулки переворачивает всё с ног на голову. Герою предстоит решить: вернуть прежнюю жизнь или начать новую? Понять, что счастье — выбор каждого, а не судьба.',
   genre: 'Драма',
   mature: false,
   status: 'Спешл',

@@ -100,7 +100,7 @@ export default class CStoriesManager {
         <div class="story__info-container">
           <img class="story__title shimmering_image" src="${story.title}">
           <p class="story__description shimmering_text">${story.description}</p>
-          <p class="story__button pulsating-push">Читать</p>
+          <!--<p class="story__button pulsating-push">Играть</p>-->
         </div>
       </div>
       
@@ -119,7 +119,7 @@ export default class CStoriesManager {
         <div class="story__info-container">
           <img class="story__title shimmering_image" src="${story.title}">
           <p class="story__description shimmering_text">${story.description}</p>
-          <p class="story__button pulsating-push">Читать</p>
+          <!--<p class="story__button pulsating-push">Играть</p>-->
         </div>
       </div>
       
@@ -135,7 +135,7 @@ export default class CStoriesManager {
       if (story.name === storyName) {
         story.chapters.forEach(chapter => {
           result += `
-                      <div class="chapter story-${story.name}">
+                      <div class="chapter story-{story.name}">
                         <div class="chapter__container">
                             <img class="chapter__image" src="${chapter.image}">
                             <p class="chapter__name">${chapter.name}</p>
@@ -158,7 +158,7 @@ export default class CStoriesManager {
             chapterIndex = index
             chapter.parts.forEach(part => {
               result += `
-                          <div class="part story-${story.name}">
+                          <div class="part story-{story.name}">
                             <div class="part__container">
                               <img class="part__image" src="${part.image}">
                               <p class="part__name">${part.name}</p>
