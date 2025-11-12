@@ -24,7 +24,9 @@ export default interface IScene {
   imageMiddle?: string
   imageRight?: string
   imageFront?: string | (() => string)
-  fullscreenObject?: string
+  fullscreenObject?: string | (() => string)
+  fullscreenObjectL?: string | (() => string)
+  fullscreenObjectR?: string | (() => string)
   imageBorder?: string
   stats?: IStat[]
   achievement?: { story: EStoriesEn, name: string }
@@ -37,6 +39,8 @@ export default interface IScene {
   beforeBegin?: () => void
   afterAll?: () => void
   speaker?: string
+  speakerL?: string
+  speakerR?: string
   darkSilhouette?: boolean
   ghostSilhouette?: boolean
   parallax?: string

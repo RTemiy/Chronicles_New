@@ -12,12 +12,19 @@
 .slide__speaker{
   position: absolute;
   top: -15px;
-  left: -10px;
   z-index: 3;
   padding: 5px 10px 5px 10px;
   @extend %show;
   @extend %styled-border;
   @extend %slide-container;
+}
+
+.slide__speaker-дуае{
+  left: -10px;
+}
+
+.slide__speaker-right{
+  right: -10px;
 }
 
 .slide__text {

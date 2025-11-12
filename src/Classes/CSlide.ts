@@ -30,7 +30,7 @@ export default class CSlide {
     this.addClicks()
   }
 
-  changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, fullscreenObject?: string, borderImage?: string): void {
+  changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, fullscreenObject?: string, fullscreenObjectL?: string, fullscreenObjectR?: string, borderImage?: string): void {
     if (backImage !== undefined && backImage !== '') {
       setTimeout(() => { this.blurredBackgroundFunc(backImage) }, 1000)
       if (!this.slide.backgroundImage.src.includes(backImage)) {
@@ -97,6 +97,29 @@ export default class CSlide {
       this.slide.fullscreenObject.display = 'none'
       this.slide.fullscreenObject.setAttribute('src', require('../Images/UI/Transparent.png'))
     }
+
+    if (fullscreenObjectL !== undefined && fullscreenObjectL !== '') {
+      if (!this.slide.fullscreenObjectL.src.includes(fullscreenObjectL)) {
+        this.animateFunc(this.slide.fullscreenObjectL, 'fade-in-left', 550)
+      }
+      this.slide.fullscreenObjectL.src = fullscreenObjectL
+      this.slide.fullscreenObjectL.style.display = 'block'
+    } else if (fullscreenObjectL === undefined) {
+      this.slide.fullscreenObjectL.display = 'none'
+      this.slide.fullscreenObjectL.setAttribute('src', require('../Images/UI/Transparent.png'))
+    }
+
+    if (fullscreenObjectR !== undefined && fullscreenObjectR !== '') {
+      if (!this.slide.fullscreenObjectR.src.includes(fullscreenObjectR)) {
+        this.animateFunc(this.slide.fullscreenObjectR, 'fade-in-left-right', 550)
+      }
+      this.slide.fullscreenObjectR.src = fullscreenObjectR
+      this.slide.fullscreenObjectR.style.display = 'block'
+    } else if (fullscreenObjectR === undefined) {
+      this.slide.fullscreenObjectR.display = 'none'
+      this.slide.fullscreenObjectR.setAttribute('src', require('../Images/UI/Transparent.png'))
+    }
+
     if (borderImage !== undefined && borderImage !== '') {
       this.slide.border.src = borderImage
       this.slide.border.style.display = 'block'
@@ -153,13 +176,36 @@ export default class CSlide {
     }, 10)
   }
 
-  changeSpeaker (speakerText: string | undefined): void {
+  changeSpeaker (speakerText: string | undefined, speakerTextL: string | undefined, speakerTextR: string | undefined): void {
     this.slide.speaker.style.display = 'none'
+    this.slide.speaker.classList.remove('slide__speaker-right')
+    this.slide.speaker.classList.remove('slide__speaker-left')
     if (speakerText !== undefined && speakerText !== '') {
       const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
       this.slide.speaker.innerText = speakerText.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
       setTimeout(() => {
         this.slide.speaker.style.display = 'block'
+        this.slide.speaker.classList.add('slide__speaker-left')
+      }, 10)
+    } else {
+      this.slide.speaker.style.display = 'none'
+    }
+    if (speakerTextL !== undefined && speakerTextL !== '') {
+      const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
+      this.slide.speaker.innerText = speakerTextL.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
+      setTimeout(() => {
+        this.slide.speaker.style.display = 'block'
+        this.slide.speaker.classList.add('slide__speaker-left')
+      }, 10)
+    } else {
+      this.slide.speaker.style.display = 'none'
+    }
+    if (speakerTextR !== undefined && speakerTextL !== '') {
+      const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
+      this.slide.speaker.innerText = speakerTextR.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
+      setTimeout(() => {
+        this.slide.speaker.style.display = 'block'
+        this.slide.speaker.classList.add('slide__speaker-right')
       }, 10)
     } else {
       this.slide.speaker.style.display = 'none'
@@ -182,9 +228,7 @@ export default class CSlide {
       this.slide.text.onclick = () => {
         buttons[0].func!()
       }
-      this.slide.fullscreenObject.onclick = () => {
-        buttons[0].func!()
-      }
+      this.slide.fullscreenObject.onclick = () => { buttons[0].func!() }
       this.forEachButton((button: HTMLElement) => {
         button.style.display = 'none'
       })

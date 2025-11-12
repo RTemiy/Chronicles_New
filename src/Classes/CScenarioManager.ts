@@ -75,11 +75,11 @@ export default class CScenarioManager {
     const scene = this.#getSceneByIndex(sceneIndex)
     if (!this.#doCondition(scene.condition)) {
       this.#doBeforeBegin(scene.beforeBegin)
-      this.#changeImages(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.fullscreenObject, scene.imageBorder)
+      this.#changeImages(scene.imageBack, scene.imageLeft, scene.imageMiddle, scene.imageRight, scene.imageFront, scene.fullscreenObject, scene.fullscreenObjectL, scene.fullscreenObjectR, scene.imageBorder)
       this.#doParallax(scene.parallax)
       this.slide.changeText(scene.text)
       this.#setButtons(scene.buttons)
-      this.slide.changeSpeaker(scene.speaker)
+      this.slide.changeSpeaker(scene.speaker, scene.speakerL, scene.speakerR)
       this.#doGhostSilhouette(scene.ghostSilhouette)
       this.#doDarkSilhouette(scene.darkSilhouette)
       this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
@@ -180,9 +180,12 @@ export default class CScenarioManager {
     this.slide.showAchievement(this.#achievementManager.unlock(achievement.story, achievement.name))
   }
 
-  #changeImages (backImage?: TIMage, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: TIMage, fullscreen?: string, borderImage?: string): void {
+  #changeImages (backImage?: TIMage, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: TIMage, fullscreen?: TIMage, fullscreenL?: TIMage, fullscreenR?: TIMage, borderImage?: string): void {
     let front: any
     let back: any
+    let flscrn: any
+    let flscrnL: any
+    let flscrnR: any
     if (frontImage !== undefined && typeof frontImage === 'function') {
       front = frontImage()
     } else if (frontImage !== undefined) {
@@ -193,7 +196,25 @@ export default class CScenarioManager {
     } else if (backImage !== undefined) {
       back = backImage
     }
-    this.slide.changeImage(back, leftImage, middleImage, rightImage, front, fullscreen, borderImage)
+
+    if (fullscreen !== undefined && typeof fullscreen === 'function') {
+      flscrn = fullscreen()
+    } else if (fullscreen !== undefined) {
+      flscrn = fullscreen
+    }
+
+    if (fullscreenL !== undefined && typeof fullscreenL === 'function') {
+      flscrnL = fullscreenL()
+    } else if (fullscreenL !== undefined) {
+      flscrnL = fullscreenL
+    }
+
+    if (fullscreenR !== undefined && typeof fullscreenR === 'function') {
+      flscrnR = fullscreenR()
+    } else if (fullscreenR !== undefined) {
+      flscrnR = fullscreenR
+    }
+    this.slide.changeImage(back, leftImage, middleImage, rightImage, front, flscrn, flscrnL, flscrnR, borderImage)
   }
 
   #doSounds (sounds: { music: string | undefined, ambient: string | undefined, simple: string | undefined }): void {

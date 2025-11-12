@@ -39,6 +39,8 @@ export const Slide = new CContainer('slide',
         <button class="slide__button"></button>
     </div>
     <img class="slide__background" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
+    <img class="slide__backgroundFullscreenObjectLeft" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
+    <img class="slide__backgroundFullscreenObjectRight" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
     <img class="slide__backgroundFullscreenObject" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
     <img class="slide__backgroundHelper src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}""/>
     <div class="slide__message">
@@ -74,6 +76,8 @@ export const Slide = new CContainer('slide',
   { name: 'buttons', selector: '.slide__buttons' },
   { name: 'backgroundImage', selector: '.slide__background' },
   { name: 'fullscreenObject', selector: '.slide__backgroundFullscreenObject' },
+  { name: 'fullscreenObjectL', selector: '.slide__backgroundFullscreenObjectLeft' },
+  { name: 'fullscreenObjectR', selector: '.slide__backgroundFullscreenObjectRight' },
   { name: 'backgroundImageHelper', selector: '.slide__backgroundHelper' },
   { name: 'message', selector: '.slide__message' },
   { name: 'messageText', selector: '.slide__message-text' },
