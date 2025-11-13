@@ -42,6 +42,13 @@ const Settings = new CContainer(
 	    <div class="slider round"></div> 
   	</label>
 	</div>
+	<div class="settings__block">
+		<p>Показывать нажатия</p>
+		<label class="switch">
+	    <input type="checkbox" id="settings-tap"/>
+	    <div class="slider round"></div> 
+  	</label>
+	</div>
 	<div class="settings__block" ${!DesktopMode && 'style="display: none"'}>
 		<p>Полноэкранный режим</p>
 		<label class="switch">
@@ -131,6 +138,7 @@ const Settings = new CContainer(
   { name: 'checkBoxSound', selector: '#settings-sound' },
   { name: 'selectMusic', selector: '#settings-music' },
   { name: 'checkBoxAHA', selector: '#settings-aha' },
+  { name: 'checkBoxTap', selector: '#settings-tap' },
   { name: 'checkBoxfullscreen', selector: '#settings-fsm' },
   { name: 'checkBoxScale', selector: '#settings-scale' },
   { name: 'checkBoxFont', selector: '#settings-bf' },
@@ -174,6 +182,10 @@ Settings.checkBoxfullscreen.addEventListener('click', () => {
   toggleFullscreen()
 })
 
+Settings.checkBoxTap.addEventListener('click', () => {
+  saveData(['Settings_ShowTap'], [Settings.checkBoxTap.checked])
+})
+
 Settings.checkBoxFont.addEventListener('click', () => {
   saveData(['Settings_Font'], [Settings.checkBoxFont.checked])
   setFontSize()
@@ -191,6 +203,8 @@ function loadSettings (): void {
   SlideStatAlert.self.style.display = Settings.checkBoxAHA.checked ? 'none' : 'flex'
 
   Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
+
+  Settings.checkBoxTap.checked = loadData(['Settings_ShowTap']) === 'true' || loadData(['Settings_ShowTap']) === null
 
   Settings.selectMusic.value = parseInt(loadData(['Settings_MenuMusic'])!)
 

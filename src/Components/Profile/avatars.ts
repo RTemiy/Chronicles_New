@@ -9,7 +9,7 @@ profileManager.addAvatars([
   },
   {
     id: 'User',
-    image: require('../../Images/UI/icon_user.svg'),
+    image: require('../../Images/UI/icon_profile.svg'),
     condition: () => true
   },
   {

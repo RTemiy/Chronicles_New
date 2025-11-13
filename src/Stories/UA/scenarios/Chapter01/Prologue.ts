@@ -1,6 +1,7 @@
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { blackFlash, redFlash } from '../../../../Components/Slide/Slide'
+import { firstChoiceMessage } from '../../../../Utils/TextConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -463,7 +464,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 30
       }],
-    message: 'Сейчас вы сделаете свой первый выбор. Некоторые из них меняют сюжет незначительно, другие же ведут к серьезным переменам. Но помните, только Вам решать, каким вы видите своего главного героя',
+    message: firstChoiceMessage,
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),

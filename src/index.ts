@@ -44,6 +44,7 @@ import { addlistenerandroidbackbutton, changeState } from './Functions/backEvent
 import { showNews } from './Functions/showNews'
 import { Smartphone } from './Components/Smartphone/Smartphone'
 import { CSmartphone } from './Classes/CSmartphone'
+import { initTapTap } from './Functions/tapTap';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -118,6 +119,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
 }
 
 startBooksTimer()
+initTapTap()
 
 DesktopMode && document.body.classList.add('main-bg-anim')
 DesktopMode && document.body.style.setProperty('--desktopmode', 'true')

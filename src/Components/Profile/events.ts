@@ -16,6 +16,11 @@ export const events = [
     title: 'Владелец ПК версии ',
     code: 'Purchased_PC_Version',
     achieve: DesktopMode
+  },
+  {
+    title: 'Новый год 2025',
+    code: '2025_New_Year',
+    achieve: true
   }
 ]
 

@@ -11,12 +11,15 @@ import { renderShop, Shop } from '../Shop/Shop';
 import { DesktopMode } from '../../Utils/technicalConsts';
 import { setIsShowingLoadingScreenFalse } from '../LoadingScreen/LoadingScreen';
 import { changeState } from '../../Functions/backEventActions';
+import { getCurrentEventIcon } from '../../Utils/eventManager';
+import makeExplosion from '../../Functions/explosion';
+import { MenuMessage } from '../MenuMessage/MenuMessage';
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
 	`
 <div id="menu-toolbar_continue" class="menu-toolbar__item">
-	<img src="${require('../../Images/UI/icon_continue.svg')}">
+	<img src="${getCurrentEventIcon('icon_continue')}">
 	<p>Продолжить</p>
 </div>
 <div id="menu-toolbar_favourites" class="menu-toolbar__item" style='display: none'>
@@ -24,27 +27,27 @@ const MenuToolbar = new CContainer(
 	<p>Фавориты</p>
 </div>
 <div id="menu-toolbar_stories" class="menu-toolbar__item">
-	<img src="${require('../../Images/UI/icon_stories.svg')}">
+	<img src="${getCurrentEventIcon('icon_stories')}">
 	<p>Истории</p>
 </div>
 <div id="menu-toolbar_achievements"  style="display: none" class="menu-toolbar__item">
-	<img src="${require('../../Images/UI/icon_achievements.svg')}">
+	<img src="${getCurrentEventIcon('icon_achievements')}">
 	<p>Достижения</p>
 </div>
 <div id="menu-toolbar_basket" class="menu-toolbar__item">
-	<img src="${require('../../Images/UI/icon_basket.svg')}">
+	<img src="${getCurrentEventIcon('icon_shop')}">
 	<p>Клеймы</p>
 	</div>
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
-	<img src="${require('../../Images/UI/icon_user.svg')}">
+	<img src="${getCurrentEventIcon('icon_profile')}">
 	<p>Профиль</p>
 </div>
 <div id="menu-toolbar_settings" class="menu-toolbar__item">
-	<img src="${require('../../Images/UI/icon_settings.svg')}">
+	<img src="${getCurrentEventIcon('icon_settings')}">
 	<p>Настройки</p>
 </div>
 	<div id="menu-toolbar_exit" class="menu-toolbar__item" ${!DesktopMode && 'style="display: none"'}>
-	<img src="${require('../../Images/UI/icon_exit.svg')}">
+	<img src="${getCurrentEventIcon('icon_exit')}">
 	<p>Выход</p>
 
 </div>
