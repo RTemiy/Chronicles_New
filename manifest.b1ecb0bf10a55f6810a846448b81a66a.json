@@ -34,7 +34,7 @@
   "name": "Chronicles | Твой выбор",
   "short_name": "Chronicles",
   "orientation": "portrait",
-  "display": "standalone",
+  "display": "fullscreen",
   "start_url": ".",
   "description": "Много вариативная визуальная новелла",
   "background_color": "black",
@@ -73,6 +73,10 @@
   ],
   "theme-color": "black",
   "lang": "ru",
+  "display_override": [
+    "fullscreen",
+    "window-controls-overlay"
+  ],
   "related_applications": [],
   "id": "/",
   "scope": "/"
