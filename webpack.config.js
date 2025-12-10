@@ -150,7 +150,11 @@ module.exports = {
       ],
       'theme-color': 'black',
       lang: 'ru',
-      display: 'standalone',
+      display: 'fullscreen',
+      display_override: [
+        'fullscreen',
+        'window-controls-overlay'
+      ],
       related_applications: [
       ],
       orientation: 'portrait',
