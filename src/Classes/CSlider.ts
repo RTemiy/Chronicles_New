@@ -1,4 +1,4 @@
-import { DesktopMode } from '../Utils/technicalConsts'
+import { ANDROIDMODE, DESKTOPMODE } from '../Utils/technicalConsts';
 
 export default class CSlider {
   #containerElement
@@ -83,7 +83,7 @@ export default class CSlider {
 
   #render (): void {
     this.#containerElements.forEach((child, index) => {
-      if (DesktopMode) {
+      if (DESKTOPMODE || ANDROIDMODE) {
         const video = child.querySelector('.' + this.videoSelector)!
         video.pause()
         index === 0 && video.play()

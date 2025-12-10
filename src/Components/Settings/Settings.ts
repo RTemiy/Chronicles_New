@@ -11,9 +11,10 @@ import { showAd } from '../../Functions/advertisement'
 import makeExplosion from '../../Functions/explosion'
 import downloadProgress from '../../Functions/downloadProgress'
 import { setWindowScale, toggleFullscreen } from '../../Functions/desktopFuncs'
-import { DesktopMode } from '../../Utils/technicalConsts'
+import { DESKTOPMODE } from '../../Utils/technicalConsts'
 import { SlideStatAlert } from '../SlideStatAlert/SlideStatAlert'
 import { showNews } from '../../Functions/showNews'
+import { doVibrate } from '../../Functions/doVibrate';
 
 const Settings = new CContainer(
   'settings',
@@ -49,7 +50,14 @@ const Settings = new CContainer(
 	    <div class="slider round"></div> 
   	</label>
 	</div>
-	<div class="settings__block" ${!DesktopMode && 'style="display: none"'}>
+		<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
+		<p>Вибрация</p>
+		<label class="switch">
+	    <input type="checkbox" id="settings-vibrate"/>
+	    <div class="slider round"></div> 
+  	</label>
+	</div>
+	<div class="settings__block" ${!DESKTOPMODE && 'style="display: none"'}>
 		<p>Полноэкранный режим</p>
 		<label class="switch">
 	    <input type="checkbox" id="settings-fsm"/>
@@ -71,11 +79,11 @@ const Settings = new CContainer(
   	</label>
 	</div>
 </div>
-<div class="settings__container" ${DesktopMode && 'style="display: none"'}>
+<div class="settings__container" ${DESKTOPMODE && 'style="display: none"'}>
 	<div class="settings__block">
 		<a>Поддержите нас</a>
 	</div>
-	<div class="settings__block" ${DesktopMode && 'style="display: none"'}>
+	<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
 		<a target="_blank" rel="external" style='display: none' id="support-button"><img class="settings__icon"  src="${require('../../Images/UI/icon_ad.png')}"></a>
 		<a target="_blank" rel="external" href="https://vk.com/chroniclesgame"><img class="settings__icon"  src="${require('../../Images/UI/icon_vk.png')}"></a>
 		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Images/UI/icon_tg.png')}"></a>
@@ -103,7 +111,7 @@ const Settings = new CContainer(
 		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
-<div class="settings__container" ${DesktopMode && 'style="display: none"'}>
+<div class="settings__container" ${DESKTOPMODE && 'style="display: none"'}>
 	<div class="settings__block">
 		<a href="${route}/privacy_policy.html" target="_blank">Политика конфиденциальности</a>
 		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
@@ -125,7 +133,7 @@ const Settings = new CContainer(
 	</div>
 </div>
 <div class="settings__container" >
-	<div class="settings__block" ${DesktopMode && 'style="display: none"'}>
+	<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
 		<a href=".">Проверить обновление</a>
 		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
@@ -142,6 +150,7 @@ const Settings = new CContainer(
   { name: 'checkBoxfullscreen', selector: '#settings-fsm' },
   { name: 'checkBoxScale', selector: '#settings-scale' },
   { name: 'checkBoxFont', selector: '#settings-bf' },
+  { name: 'checkBoxVibrate', selector: '#settings-vibrate' },
   { name: 'creatorsButton', selector: '#creators-button' },
   { name: 'supportButton', selector: '#support-button' },
   { name: 'req01', selector: '#req-01' },
@@ -186,6 +195,11 @@ Settings.checkBoxTap.addEventListener('click', () => {
   saveData(['Settings_ShowTap'], [Settings.checkBoxTap.checked])
 })
 
+Settings.checkBoxVibrate.addEventListener('click', () => {
+  saveData(['Settings_Vibrate'], [Settings.checkBoxVibrate.checked])
+  doVibrate('long')
+})
+
 Settings.checkBoxFont.addEventListener('click', () => {
   saveData(['Settings_Font'], [Settings.checkBoxFont.checked])
   setFontSize()
@@ -205,6 +219,8 @@ function loadSettings (): void {
   Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
 
   Settings.checkBoxTap.checked = loadData(['Settings_ShowTap']) === 'true' || loadData(['Settings_ShowTap']) === null
+
+  Settings.checkBoxVibrate.checked = loadData(['Settings_Vibrate']) === 'true' || loadData(['Settings_Vibrate']) === null
 
   Settings.selectMusic.value = parseInt(loadData(['Settings_MenuMusic'])!)
 
@@ -257,12 +273,12 @@ function readFile (): void {
 function changeScale (value: 'normal' | 'small'): void {
   switch (value) {
     case 'normal':
-      !DesktopMode && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
-      DesktopMode && setWindowScale(0)
+      !DESKTOPMODE && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
+      DESKTOPMODE && setWindowScale(0)
       break
     case 'small':
-      !DesktopMode && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0')
-      DesktopMode && setWindowScale(-1)
+      !DESKTOPMODE && document.querySelector('meta[name="viewport"]')!.setAttribute('content', 'width=device-width, initial-scale=0.75, maximum-scale=0.75, user-scalable=0')
+      DESKTOPMODE && setWindowScale(-1)
   }
 }
 
@@ -281,10 +297,10 @@ function setFontSize (): void {
     document.body.style.setProperty('--smalltext', '1.7vh')
     document.body.style.setProperty('--tinytext', '1.5vh')
   } else {
-    document.body.style.setProperty('--bigtext', '3.35vh')
-    document.body.style.setProperty('--mediumtext', '1.8vh')
-    document.body.style.setProperty('--smalltext', '1.5vh')
-    document.body.style.setProperty('--tinytext', '1.3vh')
+    document.body.style.setProperty('--bigtext', 'min(3.35vh, 27px)')
+    document.body.style.setProperty('--mediumtext', 'min(1.8vh, 17px)')
+    document.body.style.setProperty('--smalltext', 'min(1.5vh, 11px)')
+    document.body.style.setProperty('--tinytext', 'min(1.3vh, 10px')
   }
 }
 

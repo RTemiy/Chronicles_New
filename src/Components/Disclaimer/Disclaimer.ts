@@ -1,6 +1,6 @@
 import CContainer from '../../Classes/CContainer'
 import './Disclaimer.scss'
-import { devMode } from '../../Utils/technicalConsts'
+import { DEVMODE } from '../../Utils/technicalConsts'
 
 const Disclaimer = new CContainer('disclaimer',
 	`

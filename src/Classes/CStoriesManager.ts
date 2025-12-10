@@ -1,9 +1,9 @@
 import type IStory from '../Types/IStory'
 import { loadData } from '../Functions/localStorageManager'
 import { EStoriesAvailable } from '../Utils/EStoriesNames'
-import { DesktopMode } from '../Utils/technicalConsts';
+import { ANDROIDMODE, DESKTOPMODE } from '../Utils/technicalConsts';
 import { achievementsManager } from '../index';
-import { getCurrentEventIcon } from '../Utils/eventManager';
+import { getCurrentEventImage } from '../Utils/eventManager';
 
 export default class CStoriesManager {
   #stories: IStory[] = []
@@ -88,34 +88,15 @@ export default class CStoriesManager {
 
   getStoriesHTML (): string {
     let result = ''
-    !DesktopMode && this.#stories.forEach(story => {
-      EStoriesAvailable[story.name] === 1 && (result += `
-      <div class="story">
-        <div class="story__image-container">
-            <img class="story__image" src="${story.image}"/>
-            ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
-            ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
-            <div class="story__achievements-amount"><img src="${getCurrentEventIcon('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
-            <p class="story__genre">${story.genre}</p>
-        </div>
-        <div class="story__info-container">
-          <img class="story__title shimmering_image" src="${story.title}">
-          <p class="story__description shimmering_text">${story.description}</p>
-          <!--<p class="story__button pulsating-push">Играть</p>-->
-        </div>
-      </div>
-      
-      `)
-    })
-
-    DesktopMode && this.#stories.forEach(story => {
-      EStoriesAvailable[story.name] === 1 && (result += `
+    if (DESKTOPMODE || ANDROIDMODE) {
+      this.#stories.forEach(story => {
+        EStoriesAvailable[story.name] === 1 && (result += `
       <div class="story">
         <div class="story__image-container">
             <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
             ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
-            <div class="story__achievements-amount"><img src="${getCurrentEventIcon('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
+            <div class="story__achievements-amount"><img src="${getCurrentEventImage('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
             <p class="story__genre">${story.genre}</p>
         </div>
         <div class="story__info-container">
@@ -126,7 +107,28 @@ export default class CStoriesManager {
       </div>
       
       `)
-    })
+      })
+    } else if (!DESKTOPMODE && !ANDROIDMODE) {
+      this.#stories.forEach(story => {
+        EStoriesAvailable[story.name] === 1 && (result += `
+      <div class="story">
+        <div class="story__image-container">
+            <img class="story__image" src="${story.image}"/>
+            ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
+            ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
+            <div class="story__achievements-amount"><img src="${getCurrentEventImage('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
+            <p class="story__genre">${story.genre}</p>
+        </div>
+        <div class="story__info-container">
+          <img class="story__title shimmering_image" src="${story.title}">
+          <p class="story__description">${story.description}</p>
+          <!--<p class="story__button pulsating-push">Играть</p>-->
+        </div>
+      </div>
+      
+      `)
+      })
+    }
 
     return result
   }

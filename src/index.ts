@@ -39,7 +39,7 @@ import { checkURL } from './Functions/checkURL'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
 import { Shop } from './Components/Shop/Shop'
-import { DesktopMode, devMode } from './Utils/technicalConsts'
+import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from './Utils/technicalConsts';
 import { addlistenerandroidbackbutton, changeState } from './Functions/backEventActions'
 import { showNews } from './Functions/showNews'
 import { Smartphone } from './Components/Smartphone/Smartphone'
@@ -109,7 +109,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   MenuToolbar.self.style.display = 'flex'
   tabManagerMenu.open(Parts.self)
   soundManager.play('menu')
-  !DesktopMode && !devMode && showRate(storyName + chapterName + partName + code)
+  !DESKTOPMODE && !DEVMODE && !ANDROIDMODE && showRate(storyName + chapterName + partName + code)
   localStorage.removeItem('LastSave_ScenarioInfo')
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
   hideLoadingScreen()
@@ -121,5 +121,5 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
 startBooksTimer()
 initTapTap()
 
-DesktopMode && document.body.classList.add('main-bg-anim')
-DesktopMode && document.body.style.setProperty('--desktopmode', 'true')
+DESKTOPMODE && document.body.classList.add('main-bg-anim')
+DESKTOPMODE && document.body.style.setProperty('--desktopmode', 'true')

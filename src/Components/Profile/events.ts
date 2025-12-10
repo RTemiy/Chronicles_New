@@ -1,5 +1,5 @@
 import { loadData, saveData } from '../../Functions/localStorageManager'
-import { DesktopMode } from '../../Utils/technicalConsts'
+import { ANDROIDMODE, DESKTOPMODE } from '../../Utils/technicalConsts';
 
 export const events = [
   {
@@ -15,7 +15,12 @@ export const events = [
   {
     title: 'Владелец ПК версии ',
     code: 'Purchased_PC_Version',
-    achieve: DesktopMode
+    achieve: DESKTOPMODE
+  },
+  {
+    title: 'Владелец Android версии',
+    code: 'Purchased_Android_Version',
+    achieve: ANDROIDMODE
   },
   {
     title: 'Новый год 2025',

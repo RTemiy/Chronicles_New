@@ -87,7 +87,7 @@
   // @extend %styled-border;
   background: linear-gradient(0deg, $mainColor 0%, $additionalColor 30%, rgba(255, 255, 255, 0) 70%, rgba(255, 255, 255, 0) 100%);
   background-size: 100% 100%;
-  animation: gradient 10s ease infinite;
+  //animation: gradient 10s ease infinite;
   transition: all 0.5s ease-in-out;
 }
 
@@ -134,13 +134,13 @@
 }
 
 .story__description {
-  font-size: 1.5vh;
+  font-size: var(--mediumtext);
   text-align: left;
   padding: 0 15px 15px 15px;
   margin: 0 0 0 0;
   transition: all 0.5s ease-in-out;
+  font-weight: 700;
   z-index: 15;
-  font-weight: 1000;
 }
 
 .story__button {
@@ -271,6 +271,10 @@
     margin-top: 50px;
     max-width: 300px;
     max-height: 500px;
+  }
+
+  .story__description {
+    padding: 0 35px 15px 35px;
   }
 
   .story__image-container:before {

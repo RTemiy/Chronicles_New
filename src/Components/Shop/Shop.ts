@@ -1,14 +1,14 @@
 import CContainer from '../../Classes/CContainer'
 import './Shop.scss'
 import { shopItems } from '../../Utils/shopItems'
-import { DesktopMode } from '../../Utils/technicalConsts'
+import { DESKTOPMODE } from '../../Utils/technicalConsts'
 import makeExplosion from '../../Functions/explosion'
 import { MenuMessage } from '../MenuMessage/MenuMessage'
 
 export const Shop = new CContainer(
   'shop',
   `
-<p class="tab__title">${DesktopMode ? 'Клэймы' : 'Магазин'}</p>
+<p class="tab__title">${DESKTOPMODE ? 'Клэймы' : 'Магазин'}</p>
 <div class="shop__container">
   <p class='shop__category-title' >Одежда </p>
   <div class='shop__category-items' id='wardrobeCategory'></div>

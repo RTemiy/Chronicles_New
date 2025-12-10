@@ -1,5 +1,5 @@
 import { loadData } from './localStorageManager'
-import { DesktopMode, devMode } from '../Utils/technicalConsts'
+import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from '../Utils/technicalConsts';
 
 const link = 'https://script.google.com/macros/s/AKfycbx6FKE359t7FuyPyy6S0bLjVD3g6LzL0vmO8XpDeUlrL8n0_3g_I1Y_wSR2HBPX0Jth/exec'
 
@@ -36,7 +36,7 @@ function nowTime (): string {
 }
 
 export function sendActivity (action: string): void {
-  !DesktopMode && post({
+  !DESKTOPMODE && post({
     method: 'activity',
     date: nowDate(),
     time: nowTime(),
@@ -44,7 +44,15 @@ export function sendActivity (action: string): void {
     action
   })
 
-  !devMode && post({
+  !DEVMODE && post({
+    method: 'activity',
+    date: nowDate(),
+    time: nowTime(),
+    id: loadData(['Profile', 'ID']),
+    action
+  })
+
+  !ANDROIDMODE && post({
     method: 'activity',
     date: nowDate(),
     time: nowTime(),

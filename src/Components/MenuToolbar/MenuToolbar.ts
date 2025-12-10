@@ -8,10 +8,10 @@ import { Slide } from '../Slide/Slide'
 import { loadData } from '../../Functions/localStorageManager'
 import { Profile, renderProfile } from '../Profile/Profile'
 import { renderShop, Shop } from '../Shop/Shop';
-import { DesktopMode } from '../../Utils/technicalConsts';
+import { DESKTOPMODE } from '../../Utils/technicalConsts';
 import { setIsShowingLoadingScreenFalse } from '../LoadingScreen/LoadingScreen';
 import { changeState } from '../../Functions/backEventActions';
-import { getCurrentEventIcon } from '../../Utils/eventManager';
+import { getCurrentEventImage } from '../../Utils/eventManager';
 import makeExplosion from '../../Functions/explosion';
 import { MenuMessage } from '../MenuMessage/MenuMessage';
 
@@ -19,7 +19,7 @@ const MenuToolbar = new CContainer(
   'menu-toolbar',
 	`
 <div id="menu-toolbar_continue" class="menu-toolbar__item">
-	<img src="${getCurrentEventIcon('icon_continue')}">
+	<img src="${getCurrentEventImage('icon_continue')}">
 	<p>Продолжить</p>
 </div>
 <div id="menu-toolbar_favourites" class="menu-toolbar__item" style='display: none'>
@@ -27,27 +27,27 @@ const MenuToolbar = new CContainer(
 	<p>Фавориты</p>
 </div>
 <div id="menu-toolbar_stories" class="menu-toolbar__item">
-	<img src="${getCurrentEventIcon('icon_stories')}">
+	<img src="${getCurrentEventImage('icon_stories')}">
 	<p>Истории</p>
 </div>
 <div id="menu-toolbar_achievements"  style="display: none" class="menu-toolbar__item">
-	<img src="${getCurrentEventIcon('icon_achievements')}">
+	<img src="${getCurrentEventImage('icon_achievements')}">
 	<p>Достижения</p>
 </div>
 <div id="menu-toolbar_basket" class="menu-toolbar__item">
-	<img src="${getCurrentEventIcon('icon_shop')}">
+	<img src="${getCurrentEventImage('icon_shop')}">
 	<p>Клеймы</p>
 	</div>
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
-	<img src="${getCurrentEventIcon('icon_profile')}">
+	<img src="${getCurrentEventImage('icon_profile')}">
 	<p>Профиль</p>
 </div>
 <div id="menu-toolbar_settings" class="menu-toolbar__item">
-	<img src="${getCurrentEventIcon('icon_settings')}">
+	<img src="${getCurrentEventImage('icon_settings')}">
 	<p>Настройки</p>
 </div>
-	<div id="menu-toolbar_exit" class="menu-toolbar__item" ${!DesktopMode && 'style="display: none"'}>
-	<img src="${getCurrentEventIcon('icon_exit')}">
+	<div id="menu-toolbar_exit" class="menu-toolbar__item" ${!DESKTOPMODE && 'style="display: none"'}>
+	<img src="${getCurrentEventImage('icon_exit')}">
 	<p>Выход</p>
 
 </div>

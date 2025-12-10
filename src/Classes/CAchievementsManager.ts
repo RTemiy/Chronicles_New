@@ -2,7 +2,7 @@ import type IAchievement from '../Types/IAchievement'
 import { EStoriesAvailable, type EStoriesEn } from '../Utils/EStoriesNames'
 import { loadData, saveData } from '../Functions/localStorageManager'
 import { sendActivity } from '../Functions/GSAPI'
-import { getCurrentEventIcon } from '../Utils/eventManager';
+import { getCurrentEventImage } from '../Utils/eventManager';
 
 export default class CAchievementsManager {
   #achievements: Record<string, IAchievement> = {}
@@ -74,7 +74,7 @@ export default class CAchievementsManager {
       if (typeof story === 'undefined' || this.#achievements[prop].story === story) {
         EStoriesAvailable[this.#achievements[prop].story] === 1 && (render += `
       <div class="achievement story-${this.#achievements[prop].story}">
-        <img class="achievement__image ${this.#achievements[prop].unlocked && 'shimmering_image'} " src="${this.#achievements[prop].unlocked ? this.#achievements[prop].image : getCurrentEventIcon('icon_lock')}">
+        <img class="achievement__image ${this.#achievements[prop].unlocked && 'shimmering_image'} " src="${this.#achievements[prop].unlocked ? this.#achievements[prop].image : getCurrentEventImage('icon_lock')}">
         <p class="achievement__title">${this.#achievements[prop].title}</p>
         <p class="achievement__text">${this.#achievements[prop].text}</p>
         ${this.#achievements[prop].completion !== undefined && this.#achievements[prop].completion !== '0,0%' ? `<p class="achievement__completion">Это достижение есть у ${this.#achievements[prop].completion} игроков</p>` : ''}

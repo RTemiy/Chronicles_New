@@ -13,7 +13,6 @@
   overflow: hidden;
   position: absolute;
   grid-template-rows: repeat(3, min-content);
-  @extend %show;
 }
 
 .slide__background {

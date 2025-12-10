@@ -4,7 +4,7 @@ import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/TextConsts'
 import { checkUser, sendActivity } from '../../Functions/GSAPI'
 import generateUserToken from '../../Functions/generateUserToken'
-import { DesktopMode, devMode } from '../../Utils/technicalConsts'
+import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from '../../Utils/technicalConsts';
 
 const Policy = new CContainer('policy',
 	`
@@ -22,7 +22,7 @@ export function showPolicy (): void {
   if (!isAccepted) {
     localStorage.clear()
     Policy.self.style.display = 'flex'
-    DesktopMode && (accept())
+    DESKTOPMODE && (accept())
   } else {
     if (loadData(['Profile', 'ID']) === null) {
       validateUser()
@@ -45,7 +45,7 @@ function accept (): void {
   saveData(['Profile', 'Banner'], ['Default'])
   saveData(['Profile', 'TimeSpent'], [0])
   saveData(['Profile', 'BooksWasted'], [0])
-  !DesktopMode && !devMode && validateUser()
+  !DESKTOPMODE && !DEVMODE && !ANDROIDMODE && validateUser()
   sendActivity('Подтверждает ПК')
 }
 

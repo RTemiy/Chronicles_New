@@ -7,6 +7,7 @@ export enum EStoriesEn {
 
   MM = 'MM',
   UA = 'UA',
+  TDP = 'TDP',
   Immortals = 'Immortals',
   Aurora = 'Aurora',
   ROR = 'ROR',
@@ -20,7 +21,7 @@ export enum EStoriesEn {
 }
 
 export enum EStoriesAvailable {
-  ROR = 1,
+  ROR = 0,
   FOF = 1,
   AEP = 1,
   Immortals = 1,
@@ -29,11 +30,12 @@ export enum EStoriesAvailable {
   ISML = 1,
   UA = 1,
   OTV = 1,
+  TDP = 1,
 
   Katarina = 0,
   UL = 0,
 
-  F = 1,
+  F = 0,
 }
 
 export enum EStoriesRu {
@@ -43,11 +45,11 @@ export enum EStoriesRu {
   FOF = 'Осколки чужой судьбы',
   AEP = 'Amore e passione',
   MM = 'Memento mori',
+  UL = 'Непредсказуемая любовь',
   ISML = 'В поисках исчезнувшего света',
   UA = 'Арена юнитов',
   OTV = 'На грани',
-  //
-  UL = 'Непредсказуемая любовь',
   Katarina = 'Катарина',
   F = 'Счастье',
+  TDP = 'Бремя проклятого пути',
 }

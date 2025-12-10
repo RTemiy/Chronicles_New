@@ -2,6 +2,7 @@
 
 .menu-toolbar {
   position: fixed;
+  @extend %liquid-glass-bg-r;
 
   @container style(--desktopmode: false){
     left: 10px;
@@ -9,9 +10,9 @@
     right: 10px;
     flex-direction: row;
     padding: 5px;
-    @extend %styled-background;
+    background: rgba(0, 103, 120, 0.6);
     @extend %styled-radius;
-    @extend %styled-border;
+    border-radius: 50px;
     justify-content: space-evenly;
   }
 
@@ -24,6 +25,7 @@
     justify-content: center;
     gap: 15px;
     @extend %styled-radius;
+    background: rgba(0, 103, 120, 0.6);
   }
 
   display: none;
@@ -57,7 +59,6 @@
   justify-content: center;
   align-items: center;
   padding: 8px 0 8px 5px;
-  gap: 10px;
   @extend %button-tap;
   transition: filter 0.5s ease-in-out;
 }
@@ -76,7 +77,9 @@
 
   @container style(--desktopmode: false){
     font-size: var(--tinytext);
-    display: none;
+    // display: none;
+    padding: 0;
+    margin: 0;
   }
   margin: 5px;
 }

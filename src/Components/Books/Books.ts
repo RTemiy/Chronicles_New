@@ -2,18 +2,18 @@ import CContainer from '../../Classes/CContainer'
 import './Books.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { showMessage } from '../MenuMessage/MenuMessage'
-import { DesktopMode, devMode } from '../../Utils/technicalConsts';
+import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from '../../Utils/technicalConsts';
 import { showAd } from '../../Functions/advertisement'
 
 export const Books = new CContainer(
   'books',
   `
-  <div class="books__container" ${DesktopMode && 'style="visibility: hidden;"'} ${devMode && 'style="visibility: hidden;"'}>
+  <div class="books__container" ${DESKTOPMODE && 'style="visibility: hidden;"'} ${ANDROIDMODE && 'style="visibility: hidden;"'} ${DEVMODE && 'style="visibility: hidden;"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>
     <p class="books__text"></p>
     <p class="books__help"></p>
   </div>
-  <div class="ad_book" ${DesktopMode && 'style="visibility: hidden;"'} ${devMode && 'style="visibility: hidden;"'}>
+  <div class="ad_book" ${DESKTOPMODE && 'style="visibility: hidden;"'} ${ANDROIDMODE && 'style="visibility: hidden;"'} ${DEVMODE && 'style="visibility: hidden;"'}>
     <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency_add.svg')}"/>
   </div>
   `,
@@ -26,11 +26,12 @@ export const Books = new CContainer(
 export function addBook (): void {
   const booksAmount = parseInt(loadData(['Books_amount'])!)
   if (booksAmount >= 3) {
-    devMode && saveData(['Books_amount'], [1000])
-    DesktopMode && saveData(['Books_amount'], [1000])
+    DEVMODE && saveData(['Books_amount'], [1000])
+    DESKTOPMODE && saveData(['Books_amount'], [1000])
+    ANDROIDMODE && saveData(['Books_amount'], [1000])
   } else {
     hideAdBook()
-    !devMode && !DesktopMode && showMessage(`Вы получили<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
+    !DEVMODE && !DESKTOPMODE && !ANDROIDMODE && showMessage(`Вы получили<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
     saveData(['Books_amount'], [booksAmount + 1])
   }
   saveData(['Books_LastDate'], [new Date()])
@@ -50,9 +51,9 @@ export function wasteBook (approvedFunc: () => void): void {
 }
 
 export function canWasteBooks (): boolean {
-  if (devMode) {
+  if (DEVMODE) {
     return true
-  } else if (DesktopMode) {
+  } else if (DESKTOPMODE) {
     return true
   } else {
     return parseInt(loadData(['Books_amount'])!) >= 1

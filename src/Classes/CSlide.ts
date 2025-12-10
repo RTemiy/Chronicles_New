@@ -5,10 +5,11 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
-import { DesktopMode } from '../Utils/technicalConsts'
+import { DESKTOPMODE } from '../Utils/technicalConsts'
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
 
 import { changeState } from '../Functions/backEventActions'
+import { doVibrate } from '../Functions/doVibrate';
 
 export default class CSlide {
   private previousSlideText = ''
@@ -89,7 +90,7 @@ export default class CSlide {
     }
     if (fullscreenObject !== undefined && fullscreenObject !== '') {
       if (!this.slide.fullscreenObject.src.includes(fullscreenObject)) {
-        this.animateFunc(this.slide.fullscreenObject, 'fade-in-left', 550)
+        this.animateFunc(this.slide.fullscreenObject, 'fade-in-left-FS', 550)
       }
       this.slide.fullscreenObject.src = fullscreenObject
       this.slide.fullscreenObject.style.display = 'block'
@@ -100,7 +101,8 @@ export default class CSlide {
 
     if (fullscreenObjectL !== undefined && fullscreenObjectL !== '') {
       if (!this.slide.fullscreenObjectL.src.includes(fullscreenObjectL)) {
-        this.animateFunc(this.slide.fullscreenObjectL, 'fade-in-left-left', 550)
+        this.slide.fullscreenObjectL.display = 'none'
+        this.animateFunc(this.slide.fullscreenObjectL, 'fade-in-left-left-FS', 550)
       }
       this.slide.fullscreenObjectL.src = fullscreenObjectL
       this.slide.fullscreenObjectL.style.display = 'block'
@@ -111,7 +113,7 @@ export default class CSlide {
 
     if (fullscreenObjectR !== undefined && fullscreenObjectR !== '') {
       if (!this.slide.fullscreenObjectR.src.includes(fullscreenObjectR)) {
-        this.animateFunc(this.slide.fullscreenObjectR, 'fade-in-left-right', 550)
+        this.animateFunc(this.slide.fullscreenObjectR, 'fade-in-left-right-FS', 550)
       }
       this.slide.fullscreenObjectR.src = fullscreenObjectR
       this.slide.fullscreenObjectR.style.display = 'block'
@@ -153,6 +155,7 @@ export default class CSlide {
     if (noSound === false || noSound === undefined) {
       this.soundManager.play('simple', require('../Sounds/Common/Notification.mp3'))
     }
+    doVibrate('double')
     this.slide.messageText.innerHTML = text
     this.slide.message.classList.add('slide__message_show')
   }
@@ -242,7 +245,7 @@ export default class CSlide {
             buttons[index].func!()
           }
         } else {
-          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span" ${DesktopMode && 'style="display: none;"'}/></p>`
+          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span" ${DESKTOPMODE && 'style="display: none;"'}/></p>`
           buttonsArray[index].onclick = () => {
             showAd('medium', () => {
               buttons[index].func!()

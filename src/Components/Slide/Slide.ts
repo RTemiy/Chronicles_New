@@ -12,6 +12,7 @@ import './Effects.scss'
 import './Console.scss'
 import { animateBackForth } from '../../Functions/animateBackForth'
 import { doCommand } from '../../Functions/console'
+import { doVibrate } from '../../Functions/doVibrate';
 
 export const Slide = new CContainer('slide',
   `
@@ -38,11 +39,11 @@ export const Slide = new CContainer('slide',
         <button class="slide__button"></button>
         <button class="slide__button"></button>
     </div>
-    <img class="slide__background" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
-    <img class="slide__backgroundFullscreenObjectLeft" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
-    <img class="slide__backgroundFullscreenObjectRight" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
-    <img class="slide__backgroundFullscreenObject" src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}"/>
-    <img class="slide__backgroundHelper src="${require('../../Images/Immortals/Backgrounds/Guides_World.jpg')}""/>
+    <img class="slide__background" src="${require('../../Images/UI/transparent.png')}"/>
+    <img class="slide__backgroundFullscreenObjectLeft" src="${require('../../Images/UI/transparent.png')}"/>
+    <img class="slide__backgroundFullscreenObjectRight" src="${require('../../Images/UI/transparent.png')}"/>
+    <img class="slide__backgroundFullscreenObjectCenter" src="${require('../../Images/UI/transparent.png')}"/>
+    <img class="slide__backgroundHelper"/>
     <div class="slide__message">
         <div class="slide__message-text"></div>
     </div>
@@ -75,10 +76,10 @@ export const Slide = new CContainer('slide',
   { name: 'text', selector: '.slide__text' },
   { name: 'buttons', selector: '.slide__buttons' },
   { name: 'backgroundImage', selector: '.slide__background' },
-  { name: 'fullscreenObject', selector: '.slide__backgroundFullscreenObject' },
+  { name: 'backgroundImageHelper', selector: '.slide__backgroundHelper' },
+  { name: 'fullscreenObject', selector: '.slide__backgroundFullscreenObjectCenter' },
   { name: 'fullscreenObjectL', selector: '.slide__backgroundFullscreenObjectLeft' },
   { name: 'fullscreenObjectR', selector: '.slide__backgroundFullscreenObjectRight' },
-  { name: 'backgroundImageHelper', selector: '.slide__backgroundHelper' },
   { name: 'message', selector: '.slide__message' },
   { name: 'messageText', selector: '.slide__message-text' },
   { name: 'toolBar', selector: '.slide__toolbar' },
@@ -119,6 +120,7 @@ export function redPulsatingStop (): void {
 
 export function redFlash (): void {
   animateBackForth(Slide.self, 'slide_redFlash', 2000)
+  doVibrate('long')
 }
 
 export function discoFlash01 (): void {

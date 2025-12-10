@@ -60,8 +60,16 @@
   display: none;
 }
 
-%liquid-glass-bg{
-  backdrop-filter: blur(3px) url(#glass-distortion);
+%liquid-glass-bg-c{
+  backdrop-filter: url(#dpc) blur(2px);
+}
+
+%liquid-glass-bg-s{
+  backdrop-filter:  url(#dps) blur(2px);
+}
+
+%liquid-glass-bg-r{
+  backdrop-filter:  url(#dpr) blur(2px);
 }
 
 %wavy{
