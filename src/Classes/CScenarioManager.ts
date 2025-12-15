@@ -82,6 +82,7 @@ export default class CScenarioManager {
       this.slide.changeSpeaker(scene.speaker, scene.speakerL, scene.speakerR)
       this.#doGhostSilhouette(scene.ghostSilhouette)
       this.#doDarkSilhouette(scene.darkSilhouette)
+      this.#doBlurredSilhouette(scene.blurredSilhouette)
       this.#doSounds({ music: scene.music, ambient: scene.ambient, simple: scene.simple })
       scene.wardrobe !== undefined && this.wardrobe.showNewWardrobe(scene.wardrobe.story, scene.wardrobe.personId, () => { this.beginScene(scene.wardrobe!.goTo) })
       scene.smartphone !== undefined && this.smartphone.showNewChat(scene.smartphone.chatId, () => { this.beginScene(scene.smartphone!.goTo) })
@@ -89,7 +90,7 @@ export default class CScenarioManager {
       scene.stats !== undefined && this.#doStats(scene.stats)
       scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
       scene.achievement !== undefined && this.#doAchievement(scene.achievement)
-      scene.interruptiveFrame !== undefined && this.#doInterruptionFrame(scene.interruptiveFrame.goTo)
+      scene.interruptiveFrame !== undefined && this.#doInterruptionFrame(scene.interruptiveFrame.goTo, scene.interruptiveFrame.timeMS)
       this.#doAfterAll(scene.afterAll)
       func?.()
     }
@@ -134,6 +135,14 @@ export default class CScenarioManager {
       this.slide.changeGhostSilhouette(true)
     } else {
       this.slide.changeGhostSilhouette(false)
+    }
+  }
+
+  #doBlurredSilhouette (status: boolean | undefined): void {
+    if (status === true) {
+      this.slide.changeBlurredSilhouette(true)
+    } else {
+      this.slide.changeBlurredSilhouette(false)
     }
   }
 
@@ -241,8 +250,8 @@ export default class CScenarioManager {
     }
   }
 
-  #doInterruptionFrame (sceneIndex: number): void {
-    setTimeout(() => { this.beginScene(sceneIndex) }, 1500)
+  #doInterruptionFrame (sceneIndex: number, timeMS?: number): void {
+    setTimeout(() => { this.beginScene(sceneIndex) }, timeMS ?? 1500)
   }
 
   changeSceneButtonStatus (sceneIndex: number, buttonIndex: number, value: boolean): void {

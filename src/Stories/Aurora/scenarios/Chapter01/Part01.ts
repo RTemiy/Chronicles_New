@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { firstChoiceMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage } from '../../../../Utils/textConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {

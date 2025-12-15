@@ -2,7 +2,7 @@ import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { askForInput } from '../../../../Components/TextInput/TextInput'
 import { saveData } from '../../../../Functions/localStorageManager'
-import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [

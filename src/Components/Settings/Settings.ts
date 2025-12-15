@@ -5,16 +5,16 @@ import './Select.scss'
 import { soundManager, tabManagerMenu } from '../../index'
 import { Credits } from '../Credits/Credits'
 import { loadData, saveData } from '../../Functions/localStorageManager'
-import { route } from '../../Utils/TextConsts'
+import { route } from '../../Utils/textConsts'
 import { MenuMessage, showMessage } from '../MenuMessage/MenuMessage'
 import { showAd } from '../../Functions/advertisement'
 import makeExplosion from '../../Functions/explosion'
 import downloadProgress from '../../Functions/downloadProgress'
 import { setWindowScale, toggleFullscreen } from '../../Functions/desktopFuncs'
-import { DESKTOPMODE } from '../../Utils/technicalConsts'
+import { ANDROIDMODE, DESKTOPMODE } from '../../Utils/technicalConsts'
 import { SlideStatAlert } from '../SlideStatAlert/SlideStatAlert'
 import { showNews } from '../../Functions/showNews'
-import { doVibrate } from '../../Functions/doVibrate';
+import { doVibrate } from '../../Functions/doVibrate'
 
 const Settings = new CContainer(
   'settings',
@@ -121,7 +121,7 @@ const Settings = new CContainer(
 		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
-<div class="settings__container">
+<div class="settings__container" ${ANDROIDMODE && 'style="display: none"'}>
 	<div class="settings__block">
 		<a id="downloadFile">Скачать сохранение</a>
 		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
@@ -133,7 +133,7 @@ const Settings = new CContainer(
 	</div>
 </div>
 <div class="settings__container" >
-	<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
+	<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'} ${ANDROIDMODE && 'style="display: none"'}>
 		<a href=".">Проверить обновление</a>
 		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>

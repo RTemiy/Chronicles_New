@@ -41,44 +41,53 @@
 
 			<filter id="dpc" color-interpolation-filters='sRGB'>
 				<feImage href=<%=require("./Images/UI/dpcircle.png")%> preserveAspectRatio='none' result="displacementMap"/>
+					<feDisplacementMap in="SourceGraphic" scale="200" xChannelSelector="R" yChannelSelector="G" />
 
-					<feDisplacementMap in="SourceGraphic" in2='displacementMap' scale="800" xChannelSelector="R" yChannelSelector="G" />
-
+				<!--<feDisplacementMap in="SourceGraphic" in2='displacementMap' scale="800" xChannelSelector="R" yChannelSelector="G" result="redDisplacement" />
 				<feColorMatrix
-					in="redOffset"
+					in="redDisplacement"
 					type="matrix"
-					values="1 0 0 0 0
-                0 0 0 0 0
-                0 0 0 0 0
-                0 0 0 1 0"
+					values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0"
 					result="red" />
 
-					<feDisplacementMap in="SourceGraphic" in2='displacementMap' scale="350" xChannelSelector="R" yChannelSelector="G" />
-
-				<!-- GREEN CHANNEL: No offset -->
+				<feDisplacementMap in="SourceGraphic" in2='displacementMap' scale="350" xChannelSelector="R" yChannelSelector="G" result="greenDisplacement" />
 				<feColorMatrix
+					in="greenDisplacement"
 					type="matrix"
-					values="0 0 0 0 0
-                0 1 0 0 0
-                0 0 0 0 0
-                0 0 0 1 0"
+					values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0"
 					result="green" />
 
-					<feDisplacementMap in="SourceGraphic" in2='displacementMap' scale="200" xChannelSelector="R" yChannelSelector="G" />
-
+				<feDisplacementMap in="SourceGraphic" in2='displacementMap' scale="200" xChannelSelector="R" yChannelSelector="G" result="blueDisplacement" />
 				<feColorMatrix
-					in="blueOffset"
+					in="blueDisplacement"
 					type="matrix"
-					values="0 0 0 0 0
-                0 0 0 0 0
-                0 0 1 0 0
-                0 0 0 1 0"
+					values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0"
 					result="blue" />
 
-				<!-- Combine red and green -->
-					<feBlend in="red" in2="green" mode="screen"/>
-					<feBlend in2="blue" mode="screen"/>
+				<feBlend in="red" in2="green" mode="screen" result="rgBlend"/>
+				<feBlend in="rgBlend" in2="blue" mode="screen"/>-->
+			</filter>
 
+			<filter id="naturalShadow" x="0" y="0" width="2" height="2">
+				<feOffset in="SourceGraphic" dx="3" dy="3" />
+				<feGaussianBlur stdDeviation="5" result="blur" />
+				<feMerge>
+					<feMergeNode in="blur"/>
+					<feMergeNode in="SourceGraphic"/>
+				</feMerge>
+			</filter>
+
+			<filter id="innershadow" x="0" y="0" width="2" height="2">
+				<feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+				<feOffset in="blur" dx="5" dy="5" result="offsetBlur"/>
+				<feComposite in="SourceAlpha" in2="offsetBlur" operator="out" result="shadow"/>
+				<feFlood flood-color="red" flood-opacity="0.7" result="color"/>
+				<feComposite in="color" in2="shadow" operator="in" result="shadowColorInner"/>
+				<feComposite in="SourceGraphic" in2="shadowColorInner" operator="atop"/>
+				<feMerge>
+					<feMergeNode in="SourceGraphic"/>
+					<feMergeNode in="shadowColorInner"/>
+				</feMerge>
 			</filter>
 
 		</defs>

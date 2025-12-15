@@ -8,6 +8,7 @@ export enum EStoriesEn {
   MM = 'MM',
   UA = 'UA',
   TDP = 'TDP',
+  ITLH = 'ITLH',
   Immortals = 'Immortals',
   Aurora = 'Aurora',
   ROR = 'ROR',
@@ -15,27 +16,31 @@ export enum EStoriesEn {
   AEP = 'AEP',
   ISML = 'ISML',
   OTV = 'OTV',
+  PFT = 'PFT',
   //
   Katarina = 'Katarina',
   UL = 'UL',
 }
 
 export enum EStoriesAvailable {
+  Immortals = 0,
+  Aurora = 1,
   ROR = 0,
   FOF = 1,
   AEP = 1,
-  Immortals = 1,
-  Aurora = 1,
   MM = 1,
   ISML = 1,
   UA = 1,
   OTV = 1,
   TDP = 1,
+  PFT = 1,
+  ITLH = 1,
 
   Katarina = 0,
   UL = 0,
 
-  F = 0,
+  F = 0
+
 }
 
 export enum EStoriesRu {
@@ -52,4 +57,6 @@ export enum EStoriesRu {
   Katarina = 'Катарина',
   F = 'Счастье',
   TDP = 'Бремя проклятого пути',
+  PFT = 'Пациентка из 307',
+  ITLH = 'Бессмертные: Последняя надежда'
 }

@@ -1,7 +1,7 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { blackFlash } from '../../../../Components/Slide/Slide'
-import { previousSlideMessage } from '../../../../Utils/TextConsts';
+import { previousSlideMessage } from '../../../../Utils/textConsts';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ISML, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {

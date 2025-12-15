@@ -22,8 +22,10 @@ $maxHeightShort: 583px;
   height: 100vh;
   justify-self: left;
   transition: opacity 0.5s ease-in-out;
-  image-rendering: smooth;
+  image-rendering: high-quality;
+  image-resolution: from-image;
   z-index: 1;
+  /*filter: url(#innershadow)*/
 }
 
 .slide__image-container {

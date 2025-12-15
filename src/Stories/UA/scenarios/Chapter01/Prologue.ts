@@ -1,7 +1,7 @@
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { blackFlash, redFlash } from '../../../../Components/Slide/Slide'
-import { firstChoiceMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage } from '../../../../Utils/textConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {

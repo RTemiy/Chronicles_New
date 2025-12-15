@@ -119,11 +119,15 @@
 }
 
 .image_silhouette{
-  filter: brightness(0) drop-shadow(5px -2px 5px black);
+  filter: brightness(0);
 }
 
 .image_ghost{
-  filter: opacity(50%) drop-shadow(5px -2px 5px black);
+  filter: opacity(50%) url(#naturalShadow);
+}
+
+.image_blurred{
+  filter: blur(20px);
 }
 
 @keyframes show-hide {

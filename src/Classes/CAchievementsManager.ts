@@ -73,7 +73,7 @@ export default class CAchievementsManager {
     for (const prop in this.#achievements) {
       if (typeof story === 'undefined' || this.#achievements[prop].story === story) {
         EStoriesAvailable[this.#achievements[prop].story] === 1 && (render += `
-      <div class="achievement story-${this.#achievements[prop].story}">
+      <div class="achievement story-${this.#achievements[prop].story} ${this.#achievements[prop].unlocked ? 'achievement_unlocked' : 'achievement_locked'}">
         <img class="achievement__image ${this.#achievements[prop].unlocked && 'shimmering_image'} " src="${this.#achievements[prop].unlocked ? this.#achievements[prop].image : getCurrentEventImage('icon_lock')}">
         <p class="achievement__title">${this.#achievements[prop].title}</p>
         <p class="achievement__text">${this.#achievements[prop].text}</p>

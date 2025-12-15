@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { previousSlideMessage } from '../../../../Utils/TextConsts'
+import { previousSlideMessage } from '../../../../Utils/textConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава 1', partName: 'Пролог', code: '1' }, [
   {

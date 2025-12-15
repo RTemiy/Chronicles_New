@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { firstChoiceMessage, previousSlideMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [

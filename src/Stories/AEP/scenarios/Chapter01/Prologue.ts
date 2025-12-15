@@ -1,6 +1,6 @@
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { saveEndProgress, scenarioManager } from '../../../../index'
-import { firstChoiceMessage, previousSlideMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 import { askForInput } from '../../../../Components/TextInput/TextInput'
 import { saveData } from '../../../../Functions/localStorageManager'
 

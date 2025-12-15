@@ -1,0 +1,2 @@
+import { smartphone } from '../../index';
+

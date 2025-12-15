@@ -216,13 +216,45 @@ export default class CSlide {
   }
 
   changeDarkSilhouette (status: boolean): void {
-    status && this.slide.imageFront.classList.add('image_silhouette')
-    !status && this.slide.imageFront.classList.remove('image_silhouette')
+    if (status) {
+      this.slide.imageFront.classList.add('image_silhouette')
+      this.slide.fullscreenObject.classList.add('image_silhouette')
+      this.slide.fullscreenObjectL.classList.add('image_silhouette')
+      this.slide.fullscreenObjectR.classList.add('image_silhouette')
+    } else {
+      this.slide.imageFront.classList.remove('image_silhouette')
+      this.slide.fullscreenObject.classList.remove('image_silhouette')
+      this.slide.fullscreenObjectL.classList.remove('image_silhouette')
+      this.slide.fullscreenObjectR.classList.remove('image_silhouette')
+    }
   }
 
   changeGhostSilhouette (status: boolean): void {
-    status && this.slide.imageFront.classList.add('image_ghost')
-    !status && this.slide.imageFront.classList.remove('image_ghost')
+    if (status) {
+      this.slide.imageFront.classList.add('image_ghost')
+      this.slide.fullscreenObject.classList.add('image_ghost')
+      this.slide.fullscreenObjectL.classList.add('image_ghost')
+      this.slide.fullscreenObjectR.classList.add('image_ghost')
+    } else {
+      this.slide.imageFront.classList.remove('image_ghost')
+      this.slide.fullscreenObject.classList.remove('image_ghost')
+      this.slide.fullscreenObjectL.classList.remove('image_ghost')
+      this.slide.fullscreenObjectR.classList.remove('image_ghost')
+    }
+  }
+
+  changeBlurredSilhouette (status: boolean): void {
+    if (status) {
+      this.slide.imageFront.classList.add('image_blurred')
+      this.slide.fullscreenObject.classList.add('image_blurred')
+      this.slide.fullscreenObjectL.classList.add('image_blurred')
+      this.slide.fullscreenObjectR.classList.add('image_blurred')
+    } else {
+      this.slide.imageFront.classList.remove('image_blurred')
+      this.slide.fullscreenObject.classList.remove('image_blurred')
+      this.slide.fullscreenObjectL.classList.remove('image_blurred')
+      this.slide.fullscreenObjectR.classList.remove('image_blurred')
+    }
   }
 
   setButtonValues (buttons: IButton[]): void {
@@ -240,7 +272,7 @@ export default class CSlide {
       const buttonsArray = this.getButtonsArray()
       buttons.forEach((button, index) => {
         if (!buttons[index].gift) {
-          buttonsArray[index].innerText = buttons[index].text
+          buttonsArray[index].innerHTML = buttons[index].text
           buttonsArray[index].onclick = () => {
             buttons[index].func!()
           }

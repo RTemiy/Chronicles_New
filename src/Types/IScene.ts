@@ -15,6 +15,7 @@ export interface ICondition {
 }
 
 export default interface IScene {
+
   text: string
   id: number
   buttons: IButton[]
@@ -43,8 +44,9 @@ export default interface IScene {
   speakerR?: string
   darkSilhouette?: boolean
   ghostSilhouette?: boolean
+  blurredSilhouette?: boolean
   parallax?: string
   wardrobe?: { story: EStoriesEn, personId: string, goTo: number }
   smartphone?: { chatId: string, goTo: number }
-  interruptiveFrame?: { goTo: number }
+  interruptiveFrame?: { goTo: number, timeMS?: number }
 }

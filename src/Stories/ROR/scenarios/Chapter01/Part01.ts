@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { firstChoiceMessage, inventoryMessage } from '../../../../Utils/TextConsts'
+import { firstChoiceMessage, inventoryMessage } from '../../../../Utils/textConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
