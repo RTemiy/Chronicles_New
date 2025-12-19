@@ -89,6 +89,7 @@ export default class CScenarioManager {
       scene.message !== undefined && this.slide.message(scene.message)
       scene.stats !== undefined && this.#doStats(scene.stats)
       scene.cutScene !== undefined && this.#doCutScene(scene.cutScene)
+      scene.OKMessage !== undefined && this.#doOKMessage(scene.OKMessage)
       scene.achievement !== undefined && this.#doAchievement(scene.achievement)
       scene.interruptiveFrame !== undefined && this.#doInterruptionFrame(scene.interruptiveFrame.goTo, scene.interruptiveFrame.timeMS)
       this.#doAfterAll(scene.afterAll)
@@ -234,6 +235,10 @@ export default class CScenarioManager {
 
   #doCutScene (cutSceneInfo: { video: string, goTo: number }): void {
     this.slide.showCutScene({ video: cutSceneInfo.video, goTo: () => { this.beginScene(cutSceneInfo.goTo) } })
+  }
+
+  #doOKMessage (OKMessageInfo: { image: string, goTo: number, buttonText: string }): void {
+    this.slide.showOKMessage({ image: OKMessageInfo.image, buttonText: OKMessageInfo.buttonText, goTo: () => { this.beginScene(OKMessageInfo.goTo) } })
   }
 
   changeSceneProp (index: number, propName: string, value: any): void {

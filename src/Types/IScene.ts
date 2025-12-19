@@ -35,6 +35,7 @@ export default interface IScene {
   ambient?: string
   simple?: string
   message?: string
+  OKMessage?: { image: string, goTo: number, buttonText: string }
   condition?: ICondition[]
   cutScene?: { video: string, goTo: number }
   beforeBegin?: () => void

@@ -45,6 +45,7 @@ import { showNews } from './Functions/showNews'
 import { Smartphone } from './Components/Smartphone/Smartphone'
 import { CSmartphone } from './Classes/CSmartphone'
 import { initTapTap } from './Functions/tapTap';
+import { showOKMessage } from './Components/OKMessage/OKMessage';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -62,7 +63,7 @@ export const statsManager = new CStatsManager()
 export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), [require('./Sounds/Common/Menu01.mp3'), require('./Sounds/Common/Menu02.mp3'), require('./Sounds/Common/Menu03.mp3')])
 export const wardrobe = new CWardrobe(Wardrobe)
 export const smartphone = new CSmartphone(Smartphone)
-export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, animateBackForth, renderInventory, renderJournal, showCutscene)
+export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, animateBackForth, renderInventory, renderJournal, showCutscene, showOKMessage)
 export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, wardrobe, smartphone)
 export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 export const journal = new CJournal()

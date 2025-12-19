@@ -3,7 +3,7 @@ import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { musicPlayer } from '../../../../Functions/musicPlayer'
 import { loadData } from '../../../../Functions/localStorageManager'
 import { blackFlash, redFlash, whiteFlash, vhs } from '../../../../Components/Slide/Slide'
-import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts';
+import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
     id: 0,
@@ -1343,6 +1343,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
       }],
     beforeBegin: whiteFlash,
     message: 'После свадьбы, год назад. Счастливый брак? ',
+    music: require('../../../../Sounds/PFT/Calm_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Room.jpg')
   },
 
@@ -2665,7 +2666,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
     id: 156,
     text:
       `
-        «Но если бы ни это, Присцилла бы докопалась до истины, узнала, что я <i>не могу</i> уехать. Что тогда могла случиться?»
+        «Но если бы ни это, Присцилла бы докопалась до истины, узнала, что я <i>не могу</i> уехать. Что тогда могло случиться?»
       `,
     buttons: [
       {
@@ -2751,7 +2752,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 163
       }],
-    message: 'Вы умеете сохранять связи, несмотря ни на что.',
+    message: 'Вы хотите сохранять связи, несмотря ни на что.',
     achievement: { story: EStoriesEn.PFT, name: 'FriendshipKeeper' },
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Corridor.jpg')
   },
@@ -3486,7 +3487,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: ''
       }],
     beforeBegin: () => {
-      saveEndProgress('PFT', 'Глава 1', 'Часть 1', '0')
+      setTimeout(() => {
+        saveEndProgress('PFT', 'Глава 1', 'Часть 1', '0')
+      }, 5000)
     },
     achievement: { story: EStoriesEn.PFT, name: 'PrologueCompleted' },
     imageBack: require('../../../../Images/UI/background_black.jpg')

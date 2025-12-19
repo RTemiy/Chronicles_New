@@ -21,63 +21,81 @@ const Settings = new CContainer(
   `
 <p class="tab__title">Настройки</p>
 <div class="settings__container">
+  <div class="settings__block">
+		<a>Звуковое сопровождение</a>
+	</div>
+    <div class="settings__block">
+      <p>Звук</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-sound" checked/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    <div class="settings__block">
+      <p>Музыка в меню</p>
+      <select class='select' id="settings-music">
+        <option class="option" value='0'>Separation</option>
+        <option class="option" value='1'>Common Things</option>
+        <option class="option" value='2'>Tears of Loss</option>
+      </select>
+    </div>
+	</div>
+	
+	<div class="settings__container">
 	<div class="settings__block">
-		<p>Звук</p>
-		<label class="switch">
-	    <input type="checkbox" id="settings-sound" checked/>
-	    <div class="slider round"></div> 
-  	</label>
+		<a>Внутриигровые подсказки</a>
 	</div>
+    <div class="settings__block">
+      <p>Скрыть подсказки</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-aha"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    
+      <div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
+      <p>Вибрация</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-vibrate"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    <div class="settings__block">
+      <p>Показывать нажатия</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-tap"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    
+    </div>
+    
+    	<div class="settings__container">
 	<div class="settings__block">
-		<p>Музыка в меню</p>
-		<select class='select' id="settings-music">
-		  <option class="option" value='0'>Separation</option>
-		  <option class="option" value='1'>Common Things</option>
-		  <option class="option" value='2'>Tears of Loss</option>
-    </select>
+		<a>Отображение и масштаб</a>
 	</div>
-	<div class="settings__block">
-		<p>Скрыть подсказки</p>
-		<label class="switch">
-	    <input type="checkbox" id="settings-aha"/>
-	    <div class="slider round"></div> 
-  	</label>
-	</div>
-	<div class="settings__block">
-		<p>Показывать нажатия</p>
-		<label class="switch">
-	    <input type="checkbox" id="settings-tap"/>
-	    <div class="slider round"></div> 
-  	</label>
-	</div>
-		<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
-		<p>Вибрация</p>
-		<label class="switch">
-	    <input type="checkbox" id="settings-vibrate"/>
-	    <div class="slider round"></div> 
-  	</label>
-	</div>
-	<div class="settings__block" ${!DESKTOPMODE && 'style="display: none"'}>
-		<p>Полноэкранный режим</p>
-		<label class="switch">
-	    <input type="checkbox" id="settings-fsm"/>
-	    <div class="slider round"></div> 
-  	</label>
-	</div>
-	<div class="settings__block">
-		<p>Уменьшить масштаб</p>
-		<label class="switch">
-	    <input type="checkbox" id="settings-scale"/>
-	    <div class="slider round"></div> 
-  	</label>
-	</div>
-	<div class="settings__block">
-		<p>Увеличить шрифт</p>
-		<label class="switch">
-	    <input type="checkbox" id="settings-bf"/>
-	    <div class="slider round"></div> 
-  	</label>
-	</div>
+    <div class="settings__block" ${!DESKTOPMODE && 'style="display: none"'}>
+      <p>Полноэкранный режим</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-fsm"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    <div class="settings__block">
+      <p>Уменьшить масштаб</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-scale"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    <div class="settings__block">
+      <p>Увеличить шрифт</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-bf"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+  </div>
 </div>
 <div class="settings__container" ${DESKTOPMODE && 'style="display: none"'}>
 	<div class="settings__block">

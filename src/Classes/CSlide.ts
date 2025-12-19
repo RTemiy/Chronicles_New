@@ -9,7 +9,7 @@ import { DESKTOPMODE } from '../Utils/technicalConsts'
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
 
 import { changeState } from '../Functions/backEventActions'
-import { doVibrate } from '../Functions/doVibrate';
+import { doVibrate } from '../Functions/doVibrate'
 
 export default class CSlide {
   private previousSlideText = ''
@@ -26,9 +26,18 @@ export default class CSlide {
     private readonly animateFunc: (element: HTMLElement, className: string, duration: number) => void,
     private readonly renderInventory: (story: EStoriesEn) => void,
     private readonly renderJournal: () => void,
-    readonly showCutScene: (cutSceneInfo: { video: string, goTo: () => void }) => void
+    readonly showCutScene: (cutSceneInfo: { video: string, goTo: () => void }) => void,
+    readonly showOKMessageFunc: (OKMessageInfo: { image: string, buttonText: string, goTo: () => void }) => void
   ) {
     this.addClicks()
+  }
+
+  showOKMessage (OKMessageInfo: { image: string, buttonText: string, goTo: () => void }): void {
+    this.showOKMessageFunc(OKMessageInfo)
+    setTimeout(() => {
+      this.soundManager.play('simple', require('../Sounds/Common/Notification.mp3'))
+      doVibrate('short')
+    }, 2500)
   }
 
   changeImage (backImage?: string, leftImage?: string, middleImage?: string, rightImage?: string, frontImage?: string, fullscreenObject?: string, fullscreenObjectL?: string, fullscreenObjectR?: string, borderImage?: string): void {

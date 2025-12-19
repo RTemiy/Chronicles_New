@@ -3449,8 +3449,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 215
       },
       {
-        text: '218',
-        goTo: 215
+        text: 'Помочь',
+        goTo: 218
       }],
     speakerL: 'Генрих',
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
