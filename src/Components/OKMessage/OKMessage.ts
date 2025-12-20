@@ -27,7 +27,7 @@ export function showOKMessage (OKMessageInfo: { image: string, buttonText: strin
     }, 100)
   }, 2000)
   OKMessage.button.onclick = () => {
-    OKMessageInfo.goTo()
+    setTimeout(() => { OKMessageInfo.goTo() }, 2000)
   }
 }
 

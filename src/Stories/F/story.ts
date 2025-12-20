@@ -12,14 +12,14 @@ storiesManager.add({
   status: 'Спешл',
   chapters: [
     {
-      name: 'Счастье?',
-      image: require('../../Images/UI/background.png'),
+      name: 'Спешл',
+      image: require('../../Images/F/Backgrounds/Inside_Tent.jpg'),
       parts: [
         {
-          name: 'Повседневность',
+          name: 'Часть 1',
           code: '0',
-          image: require('../../Images/UI/background.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
+          image: require('../../Images/F/Backgrounds/Inside_Tent.jpg'),
+          loadingImage: require('../../Images/F/Covers/Part01.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           }

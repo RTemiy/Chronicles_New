@@ -3,11 +3,11 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 statsManager.add({
   category: 'Effect',
-  id: 'BrokenHand',
-  name: 'Перелом',
-  image: require('../../Images/Immortals/Effects/bone.svg'),
-  title: 'Сломанная рука',
-  description: 'Ранение, которое я получила после стычки с монстром при похищении.',
+  id: 'PersonalGrowth',
+  name: 'Путь',
+  image: require('../../Images/F/Effects/PG.png'),
+  title: 'Личностный рост. Определяет вектор дальнейших шагов.',
+  description: 'Позволяет выбирать стратегию жизни: предпринять шаги по её улучшению или плыть по течению.  Положительные характеристики способствуют развитию и улучшению, при отрицательных герой перестает видеть смысл бороться.',
   showValue: false,
-  story: EStoriesEn.Immortals
+  story: EStoriesEn.F
 })

@@ -38,7 +38,7 @@ export function showCutscene (cutSceneInfo: { video: string, goTo: () => void })
   }, 2000)
   CutScene.button.onclick = () => {
     CutScene.video.pause()
-    cutSceneInfo.goTo()
+    setTimeout(() => { cutSceneInfo.goTo() }, 2000)
   }
 }
 

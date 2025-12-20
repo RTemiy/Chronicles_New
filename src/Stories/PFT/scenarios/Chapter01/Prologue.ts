@@ -1,8 +1,6 @@
-import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
+import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { musicPlayer } from '../../../../Functions/musicPlayer'
-import { loadData } from '../../../../Functions/localStorageManager'
-import { blackFlash, redFlash, whiteFlash, vhs } from '../../../../Components/Slide/Slide'
+import { whiteFlash, vhs } from '../../../../Components/Slide/Slide'
 import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -119,17 +117,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
     buttons: [
       {
         text: 'Необдуманное потребление',
-        goTo: 8
+        goTo: 500
       },
       {
         text: 'Художница-феминистка',
-        goTo: 208
+        goTo: 501
       },
       {
         text: 'Современный джаз',
-        goTo: 15
+        goTo: 502
       }],
     message: firstChoiceMessage,
+    parallax: 'left',
+    imageBack: require('../../../../Images/PFT/Backgrounds/Gallery.jpg')
+  },
+
+  {
+    id: 500,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    OKMessage: { goTo: 8, image: require('../../../../Images/PFT/Objects/Installation_Photo.png'), buttonText: 'Продолжить' },
     parallax: 'left',
     imageBack: require('../../../../Images/PFT/Backgrounds/Gallery.jpg')
   },
@@ -200,6 +211,19 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
   },
 
   {
+    id: 501,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    OKMessage: { goTo: 208, image: require('../../../../Images/PFT/Objects/Artist_Portray.png'), buttonText: 'Продолжить' },
+    parallax: 'left',
+    imageBack: require('../../../../Images/PFT/Backgrounds/Gallery.jpg')
+  },
+
+  {
     id: 208,
     text:
       `
@@ -259,6 +283,19 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
+    parallax: 'left',
+    imageBack: require('../../../../Images/PFT/Backgrounds/Gallery.jpg')
+  },
+
+  {
+    id: 502,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    OKMessage: { goTo: 15, image: require('../../../../Images/PFT/Objects/Vocalist_Photo.png'), buttonText: 'Продолжить' },
     parallax: 'left',
     imageBack: require('../../../../Images/PFT/Backgrounds/Gallery.jpg')
   },

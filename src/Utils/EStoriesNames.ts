@@ -4,14 +4,11 @@
 
 export enum EStoriesEn {
   F = 'F',
-
+  ITLH = 'ITLH',
+  TDP = 'TDP',
   MM = 'MM',
   UA = 'UA',
-  TDP = 'TDP',
-  ITLH = 'ITLH',
-  Immortals = 'Immortals',
   Aurora = 'Aurora',
-  ROR = 'ROR',
   FOF = 'FOF',
   AEP = 'AEP',
   // ISML = 'ISML',
@@ -20,6 +17,8 @@ export enum EStoriesEn {
   //
   Katarina = 'Katarina',
   UL = 'UL',
+  Immortals = 'Immortals',
+  ROR = 'ROR',
 }
 
 export enum EStoriesAvailable {
@@ -39,7 +38,7 @@ export enum EStoriesAvailable {
   Katarina = 0,
   UL = 0,
 
-  F = 0
+  F = 1
 
 }
 
