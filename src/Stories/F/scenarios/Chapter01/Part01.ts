@@ -1,7 +1,7 @@
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
-import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts';
+import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл', partName: 'Часть 1', code: '0' }, [
   {
@@ -501,21 +501,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 601
+        goTo: 32
       }],
     message: inventoryMessage,
-    imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
-  },
-
-  {
-    id: 601,
-    text:
-      '',
-    buttons: [
-      {
-        text: ''
-      }],
-    OKMessage: { goTo: 32, image: require('../../../../Images/F/Objects/Opened_Glowing_Box.png'), buttonText: 'Продолжить' },
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
 
@@ -530,6 +518,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 33
       }],
+    simple: require('../../../../Sounds/F/MagicBox.mp3'),
     imageFront: require('../../../../Images/F/Objects/Opened_Glowing_Box.png'),
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
@@ -746,8 +735,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 47
       }],
-    speakerR: 'Евгений Владимирович (развратник)',
-    fullscreenObjectR: require('../../../../Images/F/Persons/Eugene.png'),
+    speakerR: 'Евгений Владимирович',
+    fullscreenObjectR: require('../../../../Images/F/Persons/Eugene_Smirk.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Office.jpg')
   },
 
@@ -792,8 +781,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 50
       }],
-    speakerR: 'Евгений Владимирович (развратник)',
-    fullscreenObjectR: require('../../../../Images/F/Persons/Eugene.png'),
+    speakerR: 'Евгений Владимирович',
+    fullscreenObjectR: require('../../../../Images/F/Persons/Eugene_Smirk.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Office.jpg')
   },
 
@@ -2393,7 +2382,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       {
         text: ''
       }],
-    OKMessage: {goTo: 156, buttonText: 'Развернуть', image: require('../../../../Images/F/Items/Flyer.png')},
+    OKMessage: { goTo: 156, buttonText: 'Развернуть', image: require('../../../../Images/F/Items/Flyer.png') },
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
   },
 
@@ -2408,6 +2397,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 157
       }],
+    simple: require('../../../../Sounds/F/Paper.mp3'),
     imageFront: require('../../../../Images/F/Items/Flyer.png'),
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
@@ -2811,16 +2801,30 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 183,
     text:
       `
-        — Так денег не заработаешь.<p> <p>— А вы считаете, счастье только в деньгах?
+        — Так денег не заработаешь.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 610
+      }],
+    speakerL: 'Константин',
+    fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
+    imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
+  },
+
+  {
+    id: 610,
+    text:
+      `
+        — А вы считаете, счастье только в деньгах?
       `,
     buttons: [
       {
         text: '',
         goTo: 184
       }],
-    speakerL: 'Константин',
     speakerR: 'Девушка',
-    fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     fullscreenObjectR: require('../../../../Images/F/Persons/Alice_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
   },
@@ -3620,7 +3624,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 237,
     text:
       `
-        Есть коллеги, знакомые, пусть и большинство из них — редкостные болваны.<p> <p>А у Ирины что? Ежедневная стирка, готовка, уборка, занятия  с сыном и его сопровождение в сад и на тренировку. А после — сон, из которого не хочется возвращаться в суровую реальность. 
+        Есть коллеги, знакомые, пусть и большинство из них — редкостные болваны.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 611
+      }],
+    imageBack: require('../../../../Images/F/Backgrounds/Flat_Kitchen.jpg')
+  },
+
+  {
+    id: 611,
+    text:
+      `
+        А у Ирины что? Ежедневная стирка, готовка, уборка, занятия  с сыном и его сопровождение в сад и на тренировку. А после — сон, из которого не хочется возвращаться в суровую реальность. 
       `,
     buttons: [
       {
@@ -6738,9 +6756,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 445
+        goTo: 615
       }],
-    imageFront: require('../../../../Images/F/Items/Closed_Box.png'),
+    imageBorder: require('../../../../Images/F/UI/Border.png'),
+    imageBack: require('../../../../Images/F/Backgrounds/Inside_Tent.jpg')
+  },
+
+  {
+    id: 615,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    OKMessage: { goTo: 445, image: require('../../../../Images/F/Items/Closed_Box.png'), buttonText: 'Взять' },
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Inside_Tent.jpg')
   },
@@ -6757,6 +6787,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 446
       }],
     speakerR: 'Старушка',
+    stats: [{ story: EStoriesEn.F, value: +1, category: 'Item', id: 'Box' }],
     fullscreenObjectR: require('../../../../Images/F/Persons/Witch.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Inside_Tent.jpg')
   },
@@ -6955,14 +6986,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
   {
     id: 459,
     text:
-      `
-        ! Чат<p>«Перезвони мне. Срочно». 
-      `,
+      '',
     buttons: [
       {
-        text: '',
-        goTo: 460
+        text: ''
       }],
+    smartphone: { goTo: 460, chatId: 'FPart01Irina' },
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Inside_Tent.jpg')
   },
@@ -7085,8 +7114,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 468
       }],
     music: require('../../../../Sounds/F/Theme_JingleBells.mp3'),
-    stats: [
-      { story: EStoriesEn.F, value: +1, category: 'Item', id: 'Шкатулка' }],
     imageBack: require('../../../../Images/F/Backgrounds/Christmas_Market_Empty.jpg')
   },
 
@@ -7262,6 +7289,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 480
       }],
+    imageFront: require('../../../../Images/F/Items/Closed_Box.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
 
@@ -7276,6 +7304,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 481
       }],
+    simple: require('../../../../Sounds/F/MagicBox-Open.mp3'),
+    imageFront: require('../../../../Images/F/Objects/Opened_Empty_Box.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
 
@@ -7283,7 +7313,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 481,
     text:
       `
-        Изнутри потянулся ненавязчивый, медленный перезвон — точно ветер затрепал колокольчики в такт снежинкам, растягивая мягкие звуки.
+      Я улыбнулся — в детстве у мамы была похожая вещь, только из её шкатулки выплывала грациозная балерина, раскручивающаяся вокруг своей оси.
+ 
       `,
     buttons: [
       {
@@ -7300,7 +7331,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 482,
     text:
       `
-        Я улыбнулся — в детстве у мамы была похожая вещь, только из её шкатулки выплывала грациозная балерина, раскручивающаяся вокруг своей оси.<p>Шкатулка в руках неожиданно засветилась, а перед глазами точно в калейдоскопе замелькали недавно пережитые мною события.
+        Изнутри потянулся ненавязчивый, медленный перезвон — точно ветер затрепал колокольчики в такт снежинкам, растягивая мягкие звуки.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 620
+      }],
+    simple: require('../../../../Sounds/F/MagicBox.mp3'),
+    imageFront: require('../../../../Images/F/Objects/Opened_Empty_Box.png'),
+    imageBorder: require('../../../../Images/F/UI/Border.png'),
+    imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
+  },
+
+  {
+    id: 620,
+    text:
+      `
+        Шкатулка в руках неожиданно засветилась, а перед глазами точно в калейдоскопе замелькали недавно пережитые мною события.
       `,
     buttons: [
       {
@@ -7477,9 +7525,22 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 495
+        goTo: 700
       }],
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
+  },
+
+  {
+    id: 700,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 495 },
+    simple: require('../../../../Sounds/F/Door_Closed.mp3'),
+    imageBack: require('../../../../Images/UI/background_black.jpg')
   },
 
   {
@@ -7605,7 +7666,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 503,
     text:
       `
-        Изнутри послышался детский, а следом — и женский хохот, и голос <b>МОЕЙ</b><p> жены: 
+        Изнутри послышался детский, а следом — и женский хохот, и голос <b><i>МОЕЙ</i></b> жены: 
       `,
     buttons: [
       {
@@ -7636,7 +7697,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 505,
     text:
       `
-        А следом — голос <b>МОЕГО</b> сына:
+        А следом — голос <b><i>МОЕГО</i></b> сына:
       `,
     buttons: [
       {
@@ -8046,6 +8107,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 533
       }],
+    simple: require('../../../../Sounds/F/Footsteps.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Stairway.jpg')
   },
 
@@ -8225,6 +8287,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 544
       }],
+    ambient: require('../../../../Sounds/F/Wind_Powerfull.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Home.jpg')
   },
 
@@ -8734,6 +8797,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         }
       }],
     speakerL: 'Константин',
+    ambient: require('../../../../Sounds/Common/Silence.mp3'),
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     achievement: { story: EStoriesEn.F, name: 'PrologueCompleted' },
     imageBack: require('../../../../Images/F/Backgrounds/Orthodox_Church.jpg')

@@ -1,4 +1,22 @@
-import { smartphone, statsManager } from '../../index';
+import { smartphone } from '../../index'
+
+smartphone.addChat('FPart01Irina',
+  {
+    avatar: require('../../Images/F/Persons/Irina_Avatar.png'),
+    title: 'Ира',
+    messages: [
+      {
+        fellow: true,
+        text: 'Перезвони мне.'
+      },
+      {
+        fellow: true,
+        text: 'Срочно',
+        end: true
+      }
+    ]
+  }
+)
 
 /*smartphone.addChat('HF_01',
   {

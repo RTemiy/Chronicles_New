@@ -15,7 +15,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    message: 'Первое правило Солдата: Убивай, защищай, умирай',
+    message: 'Первое правило Солдата: Защищай, убивай, умирай',
     music: require('../../../../Sounds/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
@@ -2451,7 +2451,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 159,
     text:
       `
-        Цель забулькала, засучила ногами, заваливаясь на Солдата. Бандит пытался что-то сделать, дотянутся до оружия или оттолкнуть нападавшую от себя. Но не успел.
+        Цель забулькала, засучила ногами, заваливаясь на Солдата. Бандит пытался что-то сделать, дотянуться до оружия или оттолкнуть нападавшую от себя. Но не успел.
       `,
     buttons: [
       {
@@ -2896,7 +2896,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 190,
     text:
       `
-        «Убивай за своего Хозяина, защищай своего Хозяина, умирай во имя своего Хозяина».
+        «Защищай своего Хозяина, убивай за своего Хозяина, умирай во имя своего Хозяина».
       `,
     buttons: [
       {

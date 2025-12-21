@@ -24,7 +24,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     id: 1,
     text:
       `
-        «Теперь я понимаю, что значит выражение «тепличный цветок».
+        «Теперь я понимаю, что значит выражение "тепличный цветок"».
       `,
     buttons: [
       {
@@ -3153,6 +3153,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
 
   {
     id: 196,
+    text:
+      `
+        Медленно, в такт слегка шаркающих шагов, они покинули подворотню, выходя в свет неоновых вывесок у дороги.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 700
+      }],
+    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+  },
+
+  {
+    id: 700,
     text:
       `
         «Все еще не понимаю, почему их нельзя убить».

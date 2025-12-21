@@ -1,9 +1,6 @@
-import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
+import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { musicPlayer } from '../../../../Functions/musicPlayer'
-import { loadData } from '../../../../Functions/localStorageManager'
-import { blackFlash, redFlash, whiteFlash } from '../../../../Components/Slide/Slide'
-import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts';
+import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
@@ -42,6 +39,18 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
 
   {
     id: 2,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    OKMessage: { goTo: 650, image: require('../../../../Images/TDP/Objects/Poster.png'), buttonText: 'Далее' },
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+  },
+
+  {
+    id: 650,
     text:
       `
         С него взирал иерарх Бертольд. Правда алчности в нем столько, что хватит на десятерых. Под его началом церковь стала больше сектой, чем храмом божьим.
@@ -624,7 +633,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 39,
     text:
       `
-        — Что?!
+        — Что?! Какого…
       `,
     buttons: [
       {
@@ -1160,14 +1169,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 73,
     text:
       `
-        Я решил посмотреть, как там Гвин. У коня в последнее время настроение ни к черту.
+        Я решил посмотреть, как там Гвин. У него в последнее время настроение ни к черту.
       `,
     buttons: [
       {
         text: '',
         goTo: 74
       }],
-    imageFront: require('../../../../Images/TDP/Persons/Horse_Black.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -1201,7 +1209,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 76
       }],
     simple: require('../../../../Sounds/TDP/Horse.mp3'),
-    imageFront: require('../../../../Images/TDP/Persons/Horse_Black.png'),
+    fullscreenObjectR: require('../../../../Images/TDP/Persons/Horse_Black.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -1217,7 +1225,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 77
       }],
-    imageFront: require('../../../../Images/TDP/Persons/Horse_Black.png'),
+    fullscreenObjectR: require('../../../../Images/TDP/Persons/Horse_Black.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -1410,7 +1418,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 89
       }],
-    imageFront: require('../../../../Images/TDP/Persons/Horse_White.png'),
+    fullscreenObjectR: require('../../../../Images/TDP/Persons/Horse_White.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -1419,16 +1427,31 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 89,
     text:
       `
-        Стало заметно, что на лице Джоанны появилась улыбка, а движения — смелее.<p>— Что вы делаете?
+        Стало заметно, что на лице Джоанны появилась улыбка, а движения — смелее.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 500
+      }],
+    fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne_Smile.png'),
+    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+  },
+
+  {
+    id: 500,
+    text:
+      `
+        — Что вы делаете?
       `,
     buttons: [
       {
         text: '',
         goTo: 90
       }],
-    simple: require('../../../../Sounds/TDP/Horse_01.mp3'),
     speakerR: 'Марта',
-    imageFront: require('../../../../Images/TDP/Persons/Horse_White.png'),
+    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -3181,7 +3204,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 198
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3195,7 +3218,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 199
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3211,7 +3234,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     speakerL: 'Генрих',
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3227,7 +3250,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     speakerR: 'Джек',
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3243,7 +3266,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     speakerL: 'Генрих',
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3259,7 +3282,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     speakerR: 'Марта',
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3275,7 +3298,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     speakerL: 'Генрих',
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3291,7 +3314,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     speakerR: 'Марта',
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3313,7 +3336,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Vig' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Joanne' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Jack' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3514,6 +3537,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 219
       }],
+    stats: [
+      { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'HelpGirl' }],
     imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
   },
 

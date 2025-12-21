@@ -12,15 +12,15 @@ achievementsManager.add({
 achievementsManager.add({
   name: 'GoDarkDeep',
   image: require('../../Images/F/Achievements/GoDarkDeep.png'),
-  title: 'В руках Господа',
-  text: 'Найти силы и двигаться дальше',
+  title: 'Провалиться в бездну',
+  text: 'И позволить отчаянию себя поглотить',
   story: EStoriesEn.F
 })
 
 achievementsManager.add({
   name: 'PrologueCompleted',
   image: require('../../Images/F/Achievements/PrologueCompleted.png'),
-  title: 'Провалиться в бездну',
-  text: 'И позволить отчаянию себя поглотить',
+  title: 'В руках Господа',
+  text: 'Найти силы и двигаться дальше',
   story: EStoriesEn.F
 })
