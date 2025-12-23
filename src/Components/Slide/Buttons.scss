@@ -24,6 +24,7 @@
   @extend %show;
   @extend %slide-container;
   border-radius: 10px;
+  animation: fade-in 0.7s ease 0.65s 1 normal forwards;
   p{
     display: flex;
     justify-content: center;

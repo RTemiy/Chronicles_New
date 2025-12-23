@@ -503,6 +503,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 32
       }],
+    simple: require('../../../../Sounds/F/MagicBox-Open.mp3'),
+
     message: inventoryMessage,
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
@@ -1454,7 +1456,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 94,
     text:
       `
-        Поправив очки, девушка сжала пальцами бумажный стаканчик.
+        Поправив прядь волос, девушка сжала пальцами бумажный стаканчик.
       `,
     buttons: [
       {
@@ -3012,7 +3014,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 196,
     text:
       `
-        Убрав верхнюю одежду в шкаф и разувшись, увидел, как из спальни вышла Ирина
+        Убрав верхнюю одежду в шкаф и разувшись, увидел, как из спальни вышла Ирина.
       `,
     buttons: [
       {
@@ -4754,7 +4756,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 312
       }],
     speakerL: 'Константин',
-    fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Office.png'),
+    fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Stop_Evening.jpg')
   },
 
@@ -4948,7 +4950,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 324,
     text:
       `
-        И, быть может, это одна из возможных решений моих проблем — перестать позволять другим себя обесценивать, чтобы в последующем научиться ценить себя самому?
+        И, быть может, это одно из возможных решений моих проблем — перестать позволять другим себя обесценивать, чтобы в последующем научиться ценить себя самому?
       `,
     buttons: [
       {
@@ -5265,11 +5267,23 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 346
+        goTo: 800
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Stop_Evening.jpg')
+  },
+
+  {
+    id: 800,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 346 },
+    imageBack: require('../../../../Images/UI/background_black.jpg')
   },
 
   {
@@ -5638,7 +5652,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 370,
     text:
       `
-        Скользя взглядом по согревающим огонькам намотанных на уличные ели гирлянд, чувствуя ароматный запах глинтвейна и мандаринов, я почувствовал это — пробуждение. Душа захотела пуститься в пляс от осознания — ещё не всё потеряно. 
+        Скользя взглядом по согревающим огонькам намотанных на уличные ели гирлянд, вдыхая ароматный запах глинтвейна и мандаринов, я почувствовал это — пробуждение. Душа захотела пуститься в пляс от осознания — ещё не всё потеряно. 
       `,
     buttons: [
       {
@@ -6122,6 +6136,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     beforeBegin: whiteFlash,
     speakerR: 'Девушка',
+    ghostSilhouette: true,
     fullscreenObjectR: require('../../../../Images/F/Persons/Alice_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
   },
@@ -6138,6 +6153,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 404
       }],
     speakerL: 'Константин',
+    ghostSilhouette: true,
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
   },
@@ -6168,6 +6184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 406
       }],
     speakerR: 'Девушка',
+    ghostSilhouette: true,
     fullscreenObjectR: require('../../../../Images/F/Persons/Alice_Coat_Smile.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
   },
@@ -7076,7 +7093,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 465,
     text:
       `
-        «Ушли домой? И ничего не сказали? Что за бред…».
+        «Ушли домой? И ничего не сказали? Что за бред…»
       `,
     buttons: [
       {
@@ -7113,7 +7130,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 468
       }],
-    music: require('../../../../Sounds/F/Theme_JingleBells.mp3'),
+    music: require('../../../../Sounds/F/Theme_Dramatic.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Christmas_Market_Empty.jpg')
   },
 

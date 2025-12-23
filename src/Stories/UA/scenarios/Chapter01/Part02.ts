@@ -3179,7 +3179,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 199
       }],
     speaker: 'Мальчишка 3',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_2.png'),
+    imageFront: require('../../../../Images/UA/Persons/Small_Guy_0.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
   },
@@ -3853,7 +3853,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 241
       }],
     speaker: 'Мальчишка 2',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_2.png'),
+    imageFront: require('../../../../Images/UA/Persons/Small_Guy_0.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
   },
@@ -3887,7 +3887,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 243
       }],
     speaker: 'Мальчишка 2',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_2.png'),
+    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
   },
@@ -3904,7 +3904,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 244
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
+    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
   },

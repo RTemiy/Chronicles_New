@@ -32,7 +32,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.TDP, value: +1, category: 'Item', id: 'Bag' }],
-    message: previousSlideMessage,
+    message: inventoryMessage,
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
@@ -45,7 +45,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       {
         text: ''
       }],
-    OKMessage: { goTo: 650, image: require('../../../../Images/TDP/Objects/Poster.png'), buttonText: 'Далее' },
+    OKMessage: { goTo: 650, image: require('../../../../Images/TDP/Objects/Poster.png'), buttonText: 'Рассмотреть' },
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
@@ -60,7 +60,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    message: inventoryMessage,
     imageFront: require('../../../../Images/TDP/Objects/Poster.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
@@ -657,7 +656,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 41
       }],
     simple: require('../../../../Sounds/TDP/Slap.mp3'),
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
@@ -1021,6 +1019,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: 'Проигнорировать оскорбление',
         goTo: 70
       }],
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
@@ -1192,7 +1191,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 75
       }],
     speakerL: 'Генрих',
-    imageFront: require('../../../../Images/TDP/Persons/Horse_Black.png'),
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -1257,6 +1256,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 79
       }],
+    speakerL: 'Генрих',
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -1308,6 +1308,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: 'Дать погладить лошадь',
         goTo: 85
       }],
+    speakerL: 'Генрих',
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
@@ -1432,7 +1434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 500
+        goTo: 670
       }],
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne_Smile.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
@@ -1440,7 +1442,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
   },
 
   {
-    id: 500,
+    id: 670,
     text:
       `
         — Что вы делаете?
@@ -1970,17 +1972,29 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 122
+        goTo: 680
       }],
     music: require('../../../../Sounds/TDP/Glaswer.mp3'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
+    id: 680,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 122 },
+    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+  },
+
+  {
     id: 122,
     text:
       `
-        «Ну твою ж мать...». 
+        «Ну твою ж мать...» 
       `,
     buttons: [
       {
@@ -2275,6 +2289,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: 'Не платить',
         goTo: 154
       }],
+    speakerL: 'Генрих',
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech_Annoyed.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
@@ -2412,7 +2428,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 149,
     text:
       `
-        — Мое... я жил в этом городе и кое-что здесь понимаю. И абсолютно уверен — тут явно что-то не так.
+        — Мое... я жил в этом городе и кое-что здесь понимаю. И абсолютно уверен — тут явно дело нечисто.
       `,
     buttons: [
       {
@@ -2728,7 +2744,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 169,
     text:
       `
-        Вернувшись к повозке, все они сразу же подошли к нам в ожидании, что мы расскажем подробности разговора со стражей.
+        Вернувшись к повозке, все они сразу же подошли к нам в ожидании, что мы расскажем подробности.
       `,
     buttons: [
       {
@@ -3002,7 +3018,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 186
       }],
-    message: 'Джека не понравилась ваша грубость.. ',
+    message: 'Джека не понравилась ваша грубость.',
     speakerR: 'Марта',
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
     stats: [
@@ -3040,6 +3056,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     message: 'Марту расстроили ваши слова. Она будет меньше просить вас о помощи. ',
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Martha' }],
+    speakerL: 'Генрих',
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
@@ -3065,7 +3083,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 189,
     text:
       `
-        — Предлагаю вернуться на место встречи. Там не так людно, поэтому вряд ли вас кто то побеспокоит. 
+        — Предлагаю вернуться на место встречи. Там не так людно, поэтому вряд ли вас кто-то побеспокоит. 
       `,
     buttons: [
       {
@@ -3150,7 +3168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 237
+        goTo: 550
       }],
     message: 'Марта и Джек понимают сложность ситуации и принимают ваше решение. ',
     stats: [
@@ -3160,10 +3178,53 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
   },
 
   {
+    id: 550,
+    text:
+      `
+         Все неспешно залезли обратно. По их лицам было видно, что идея далеко не самая лучшая, но деваться некуда. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 551
+      }],
+    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+  },
+
+  {
+    id: 551,
+    text:
+      `
+         Запрыгнув на козлы и взяв поводья, я развернул повозку и мы медленно тронулись обратно в глубь города. 
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 552
+      }],
+    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+  },
+
+  {
+    id: 552,
+    text:
+      `
+        Как бы то ни было, иного выхода просто нет. Так мы будем сокрыты от посторонних взглядов, находясь хоть в какой-то безопасности.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 237
+      }],
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
+  },
+
+  {
     id: 195,
     text:
       `
-        «А ведь если не изменяет память, как-то раз местный трактирщик проиграл мне в карты. Он тогда был изрядно пьян, но обещал помочь в случае чего Остается надеяться, что он помнит про свое обещание». 
+        «А ведь если не изменяет память, как-то раз местный трактирщик проиграл мне в карты. Он тогда был изрядно пьян, но обещал помочь в случае чего. Остается надеяться, что он помнит про свое обещание». 
       `,
     buttons: [
       {
@@ -3476,7 +3537,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 218
       }],
     speakerL: 'Генрих',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
   },
 
@@ -3588,7 +3649,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 222,
     text:
       `
-        «До сих пор не понимаю, где отец откопал эту литературу».
+        «До сих пор не понимаю, где отец откопал эту книгу».
       `,
     buttons: [
       {
@@ -3778,7 +3839,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 234,
     text:
       `
-        Вернувшись за стойку он взял из шкафчика ключ и пошел к лестнице, жестом приглашая за собой. Поднявшись на второй этаж, открыл комнату, отдав ключ Джеку.
+        Вернувшись за стойку он взял из шкафчика ключ и пошел к лестнице, жестом приглашая за собой. Поднявшись на второй этаж, открыл комнату, отдав мне ключ.
       `,
     buttons: [
       {
@@ -3806,7 +3867,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 236,
     text:
       `
-        Долго думать не пришлось. Дети с Мартой легли на кровать, а Джек расположился на небольшом диванчике у окна. Мы с Мортимером решили вернуться обратно к повозке, в которой, храпя на пол улицы, спал Дитрих.
+        Долго думать не пришлось. Дети с Мартой легли на кровать, а Джек расположился на небольшом диванчике у окна. Мортимер предложил выйти на улицу, чтобы не мешать им отдыхать.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 500
+      }],
+    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern_Room.png')
+  },
+
+  {
+    id: 500,
+    text:
+      `
+        Отдав ключ Джеку, мы спустились вниз и вышли к повозке, в которой, храпя на пол улицы, спал Дитрих.
       `,
     buttons: [
       {
@@ -3819,8 +3894,119 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
   {
     id: 237,
     text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    condition: [
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.TDP, category: 'Choice', id: 'StayPut' }) >= 1
+        },
+        goTo: 625
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.TDP, category: 'Choice', id: 'HideWagon' }) >= 1
+        },
+        goTo: 627
+      },
+      {
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.TDP, category: 'Choice', id: 'AskForHelp' }) >= 1
+        },
+        goTo: 629
+      }
+    ]
+  },
+
+  {
+    id: 625,
+    text:
       `
-        Сейчас нет времени просто стоять и размышлять, надо действовать, и как можно быстрее. В любой момент наши дела могут стать еще хуже.
+        В голове крутилась куча разных мыслей, не давая привести разум в порядок.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 626
+      }],
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+  },
+
+  {
+    id: 626,
+    text:
+      `
+        В любом случае, сейчас нет времени просто стоять и размышлять как поступить. Необходимо действовать, и как можно быстрее. В любой момент наши дела могут стать еще хуже.
+      `,
+    buttons: [
+      {
+        text: '',
+        func: () => {
+          saveEndProgress('TDP', 'Глава 1', 'Часть 2', '0')
+        }
+      }],
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    achievement: { story: EStoriesEn.TDP, name: 'Chapter01Part01Completed' },
+    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+  },
+
+  {
+    id: 627,
+    text:
+      `
+        В голове крутилась куча разных мыслей, не давая привести разум в порядок.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 628
+      }],
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
+  },
+
+  {
+    id: 628,
+    text:
+      `
+        В любом случае, сейчас нет времени просто стоять и размышлять как поступить. Необходимо действовать, и как можно быстрее. В любой момент наши дела могут стать еще хуже.
+      `,
+    buttons: [
+      {
+        text: '',
+        func: () => {
+          saveEndProgress('TDP', 'Глава 1', 'Часть 2', '0')
+        }
+      }],
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    achievement: { story: EStoriesEn.TDP, name: 'Chapter01Part01Completed' },
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
+  },
+
+  {
+    id: 629,
+    text:
+      `
+        В голове крутилась куча разных мыслей, не давая привести разум в порядок.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 630
+      }],
+    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+  },
+
+  {
+    id: 630,
+    text:
+      `
+        В любом случае, сейчас нет времени просто стоять и размышлять как поступить. Необходимо действовать, и как можно быстрее. В любой момент наши дела могут стать еще хуже.
       `,
     buttons: [
       {
@@ -3832,5 +4018,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     achievement: { story: EStoriesEn.TDP, name: 'Chapter01Part01Completed' },
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
-  }
-])
+  }])

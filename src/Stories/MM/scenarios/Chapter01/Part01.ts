@@ -470,7 +470,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     id: 27,
     text:
       `
-        <i>«Кажется, это почерк Дилана. 
+        <i>«Кажется, это почерк Дилана.»
       `,
     buttons: [
       {

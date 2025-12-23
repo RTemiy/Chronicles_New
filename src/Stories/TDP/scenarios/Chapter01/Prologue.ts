@@ -1,5 +1,6 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
+import { previousSlideMessage } from '../../../../Utils/textConsts';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -28,7 +29,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    message: 'Мор - повальная, массовая смерть, эпидемия неизлечимой болезни.',
+    message: previousSlideMessage,
     imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 

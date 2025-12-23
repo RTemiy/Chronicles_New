@@ -4,7 +4,7 @@ storiesManager.add({
   name: 'F',
   image: require('../../Images/F/Covers/Story_Cover.jpg'),
   video: require('../../Images/F/Covers/Story_Cover.mp4'),
-  title: require('../../Images/F/Covers/Title.png'),
+  title: require('../../Images/F/Covers/Title.svg'),
   description:
     'Увязнув в повседневной рутине, Константин потерял ощущение радости. Находка таинственной музыкальной шкатулки переворачивает всё с ног на голову. Герою предстоит решить: вернуть прежнюю жизнь или начать новую? Понять, что счастье — выбор каждого, а не судьба.',
   genre: 'Драма',
