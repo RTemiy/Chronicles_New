@@ -7228,7 +7228,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 475
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/F/Theme_Dramatic.mp3'),
     ambient: require('../../../../Sounds/UL/Wind.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
@@ -7338,7 +7337,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 482
       }],
-    music: require('../../../../Sounds/F/Theme_JingleBells.mp3'),
+    music: require('../../../../Sounds/F/Theme_Witch.mp3'),
     imageFront: require('../../../../Images/F/Objects/Opened_Empty_Box.png'),
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')

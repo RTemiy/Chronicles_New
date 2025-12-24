@@ -456,7 +456,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 28,
     text:
       `
-        «Ага, так чутье меня не обмануло. Судя по достаточно выразительному, хоть и слегка сиплому голосу, это действительно старик, предположительно, лет 60, может 65».
+        «Ага, так чутье меня не обмануло. Судя по достаточно выразительному, хоть и слегка сиплому голосу, это действительно старик, предположительно, лет шестьдесят, может шестьдесят пять».
       `,
     buttons: [
       {
@@ -1662,7 +1662,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 103
       }],
-    music: require('../../../../Sounds/TDP/Jack_Theme.mp3'),
+    music: require('../../../../Sounds/TDP/Shadows_Theme.mp3'),
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -3018,7 +3018,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 186
       }],
-    message: 'Джека не понравилась ваша грубость.',
+    message: 'Джеку не понравилась ваша грубость.',
     speakerR: 'Марта',
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
     stats: [
@@ -3387,7 +3387,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 206
+        goTo: 900
       }],
     message: 'Марте очень приятна ваша забота о детях. Она станет больше доверять вам.',
     speakerL: 'Генрих',
@@ -3398,6 +3398,19 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Joanne' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Jack' }],
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+  },
+
+  {
+    id: 900,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 206 },
+    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png'),
+    simple: require('../../../../Sounds/TDP/Door_Squak.mp3')
   },
 
   {
@@ -3510,7 +3523,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     id: 213,
     text:
       `
-        Марта вроде и хотела что-то сказать, но от неожиданности растерялась. Вцепившись в мою руку, она все крепче прижимала ее к себе, всем видом показывая, что я должен что-то сделать.
+        Марта вроде и хотела что-то сказать, но от неожиданности растерялась. Вцепившись в мою руку, она все крепче прижимала ее к себе, всем видом показывая — ей нужна моя помощь.
       `,
     buttons: [
       {

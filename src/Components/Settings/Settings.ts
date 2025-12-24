@@ -37,6 +37,7 @@ const Settings = new CContainer(
         <option class="option" value='0'>Separation</option>
         <option class="option" value='1'>Common Things</option>
         <option class="option" value='2'>Tears of Loss</option>
+        <option class="option" value='3'>Happy New Year</option>
       </select>
     </div>
 	</div>

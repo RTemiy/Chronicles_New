@@ -13,7 +13,7 @@ storiesManager.add({
   chapters: [
     {
       name: 'Спешл',
-      image: require('../../Images/F/Backgrounds/Inside_Tent.jpg'),
+      image: require('../../Images/F/Covers/Part01Cover.jpg'),
       parts: [
         {
           name: 'Часть 1',
