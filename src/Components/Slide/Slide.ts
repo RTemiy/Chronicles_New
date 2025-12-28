@@ -13,6 +13,7 @@ import './Console.scss'
 import { animateBackForth } from '../../Functions/animateBackForth'
 import { doCommand } from '../../Functions/console'
 import { doVibrate } from '../../Functions/doVibrate';
+import { loadData } from '../../Functions/localStorageManager';
 
 export const Slide = new CContainer('slide',
   `
@@ -155,5 +156,5 @@ Slide.hideToolbarButton.onclick = () => {
 }
 
 export function hideToolbar (): void {
-  Slide.toolBar.classList.add('slide__toolbar_hidden')
+  loadData(['Settings_HideToolbar']) === 'true' && Slide.toolBar.classList.add('slide__toolbar_hidden')
 }

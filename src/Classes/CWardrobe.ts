@@ -61,25 +61,29 @@ export default class CWardrobe {
     this.currentIndex += number
     this.currentIndex < 0 && (this.currentIndex = this.currentClothes.length - 1)
     this.currentIndex > this.currentClothes.length - 1 && (this.currentIndex = 0)
-    if (!this.currentClothes[this.currentIndex].unlocked()) {
-      number < 0 && this.turnTo(-1)
-      number > 0 && this.turnTo(1)
-    } else {
-      animateBackForth(this.Wardrobe.image, 'wardrobe__element_hide', 500)
-      animateBackForth(this.Wardrobe.title, 'wardrobe__element_hide', 500)
-      animateBackForth(this.Wardrobe.description, 'wardrobe__element_hide', 500)
-      animateBackForth(this.Wardrobe.buttonConfirm, 'wardrobe__element_hide', 500)
-      setTimeout(() => {
-        this.Wardrobe.image.src = this.currentClothes[this.currentIndex].image
-        this.Wardrobe.title.innerHTML = this.currentClothes[this.currentIndex].title
-        this.Wardrobe.description.innerHTML = this.currentClothes[this.currentIndex].description
-      }, 500)
-    }
+    animateBackForth(this.Wardrobe.image, 'wardrobe__element_hide', 500)
+    animateBackForth(this.Wardrobe.title, 'wardrobe__element_hide', 500)
+    animateBackForth(this.Wardrobe.description, 'wardrobe__element_hide', 500)
+    animateBackForth(this.Wardrobe.buttonConfirm, 'wardrobe__element_hide', 500)
+    setTimeout(() => {
+      if (!this.currentClothes[this.currentIndex].unlocked()) {
+        this.Wardrobe.buttonConfirm.innerHTML = 'Недоступно'
+        this.Wardrobe.buttonConfirm.disabled = true
+        this.Wardrobe.image.classList.add('wardrobe__imageLocked')
+      } else {
+        this.Wardrobe.image.classList.remove('wardrobe__imageLocked')
+        this.Wardrobe.buttonConfirm.disabled = false
+        this.Wardrobe.buttonConfirm.innerHTML = 'Выбрать'
+      }
+      this.Wardrobe.image.src = this.currentClothes[this.currentIndex].image
+      this.Wardrobe.title.innerHTML = this.currentClothes[this.currentIndex].title
+      this.Wardrobe.description.innerHTML = this.currentClothes[this.currentIndex].description
+    }, 500)
   }
 
   private chooseClothes (): void {
     this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
-    // @ts-ignore
+    // @ts-expect-error
     showAd(this.currentClothes[this.currentIndex].cost, () => {
       this.Wardrobe.self.style.display = 'none'
     })

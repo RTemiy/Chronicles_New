@@ -37,7 +37,57 @@
   width: 100%;
   max-width: 400px;
   margin: auto;
+  z-index: 12;
+  filter: brightness(0%);
+  animation: okmessage-imageINTRO 1s ease-in-out forwards 1.2s;
 }
+
+@keyframes okmessage-imageINTRO {
+  0%{
+    filter: brightness(0%);
+  }
+
+  100%{
+    filter: brightness(100%);
+  }
+}
+
+.okmessage-imageBG{
+  grid-column: 1;
+  grid-row: 1;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+  height: 100%;
+  max-height: 400px;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background: radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+  animation: okmessage-imageBGANIM 10s ease-in-out infinite;
+  z-index: 11;
+  opacity: 0.8;
+}
+
+@keyframes okmessage-imageBGANIM{
+  0%{
+    opacity: 0.8;
+  }
+  25%{
+    opacity: 0.5;
+  }
+  50%{
+    opacity: 0.6;
+  }
+  75%{
+    opacity: 0.4;
+  }
+  100%{
+    opacity: 0.8;
+  }
+}
+
+
 
 .okmessage-button{
   justify-self: center;

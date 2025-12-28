@@ -5,6 +5,7 @@ import { loadData } from '../../Functions/localStorageManager'
 export const OKMessage = new CContainer('okmessage',
 	`
     	<div class='okmessage__container'>
+    	  <div class="okmessage-imageBG"></div>
     	  <img class="okmessage-image">
     	  <button class="okmessage-button"></button>
 			</div>

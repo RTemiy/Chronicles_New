@@ -47,9 +47,16 @@ const Settings = new CContainer(
 		<a>Внутриигровые подсказки</a>
 	</div>
     <div class="settings__block">
-      <p>Скрыть подсказки</p>
+      <p>Скрыть подсказки по статам</p>
       <label class="switch">
         <input type="checkbox" id="settings-aha"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    <div class="settings__block">
+      <p>Скрывать нижнюю панель</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-hidetoolbar"/>
         <div class="slider round"></div> 
       </label>
     </div>
@@ -86,6 +93,13 @@ const Settings = new CContainer(
       <p>Уменьшить масштаб</p>
       <label class="switch">
         <input type="checkbox" id="settings-scale"/>
+        <div class="slider round"></div> 
+      </label>
+    </div>
+    <div class="settings__block">
+      <p>Печатная машинка</p>
+      <label class="switch">
+        <input type="checkbox" id="settings-typingtext"/>
         <div class="slider round"></div> 
       </label>
     </div>
@@ -166,6 +180,8 @@ const Settings = new CContainer(
   { name: 'selectMusic', selector: '#settings-music' },
   { name: 'checkBoxAHA', selector: '#settings-aha' },
   { name: 'checkBoxTap', selector: '#settings-tap' },
+  { name: 'checkBoxHideToolbar', selector: '#settings-hidetoolbar' },
+  { name: 'checkBoxTypingText', selector: '#settings-typingtext' },
   { name: 'checkBoxfullscreen', selector: '#settings-fsm' },
   { name: 'checkBoxScale', selector: '#settings-scale' },
   { name: 'checkBoxFont', selector: '#settings-bf' },
@@ -214,6 +230,14 @@ Settings.checkBoxTap.addEventListener('click', () => {
   saveData(['Settings_ShowTap'], [Settings.checkBoxTap.checked])
 })
 
+Settings.checkBoxHideToolbar.addEventListener('click', () => {
+  saveData(['Settings_HideToolbar'], [Settings.checkBoxHideToolbar.checked])
+})
+
+Settings.checkBoxTypingText.addEventListener('click', () => {
+  saveData(['Settings_TypingText'], [Settings.checkBoxTypingText.checked])
+})
+
 Settings.checkBoxVibrate.addEventListener('click', () => {
   saveData(['Settings_Vibrate'], [Settings.checkBoxVibrate.checked])
   doVibrate('long')
@@ -225,6 +249,7 @@ Settings.checkBoxFont.addEventListener('click', () => {
 })
 
 Settings.creatorsButton.addEventListener('click', () => {
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
   tabManagerMenu.open(Credits.self)
 })
 
@@ -238,6 +263,10 @@ function loadSettings (): void {
   Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
 
   Settings.checkBoxTap.checked = loadData(['Settings_ShowTap']) === 'true' || loadData(['Settings_ShowTap']) === null
+
+  Settings.checkBoxHideToolbar.checked = loadData(['Settings_HideToolbar']) === 'true'
+
+  Settings.checkBoxTypingText.checked = loadData(['Settings_TypingText']) === 'true' || loadData(['Settings_TypingText']) === null
 
   Settings.checkBoxVibrate.checked = loadData(['Settings_Vibrate']) === 'true' || loadData(['Settings_Vibrate']) === null
 

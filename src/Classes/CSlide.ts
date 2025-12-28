@@ -10,6 +10,7 @@ import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
 
 import { changeState } from '../Functions/backEventActions'
 import { doVibrate } from '../Functions/doVibrate'
+import typingText from '../Functions/typingText';
 
 export default class CSlide {
   private previousSlideText = ''
@@ -187,6 +188,10 @@ export default class CSlide {
       this.slide.text.style.display = 'block'
       this.slide.text.innerHTML = this.slide.text.innerHTML.replace('$Имя Игрока$', loadData([`${storyName}_Name`]))
     }, 10)
+    // eslint-disable-next-line no-mixed-operators
+    loadData(['Settings_TypingText']) === 'true' || loadData(['Settings_TypingText']) === null && (setTimeout(() => {
+      typingText(this.slide.text)
+    }, 280))
   }
 
   changeSpeaker (speakerText: string | undefined, speakerTextL: string | undefined, speakerTextR: string | undefined): void {
