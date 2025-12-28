@@ -54,7 +54,7 @@ const Settings = new CContainer(
       </label>
     </div>
     
-      <div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
+      <div class="settings__block" ${DESKTOPMODE && 'style="display: none"'} ${!ANDROIDMODE && 'style="display: none"'}>
       <p>Вибрация</p>
       <label class="switch">
         <input type="checkbox" id="settings-vibrate"/>

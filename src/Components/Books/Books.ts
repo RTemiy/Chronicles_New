@@ -55,6 +55,8 @@ export function canWasteBooks (): boolean {
     return true
   } else if (DESKTOPMODE) {
     return true
+  } else if (ANDROIDMODE) {
+    return true
   } else {
     return parseInt(loadData(['Books_amount'])!) >= 1
   }

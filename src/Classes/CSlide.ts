@@ -5,7 +5,7 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
-import { DESKTOPMODE } from '../Utils/technicalConsts'
+import { ANDROIDMODE, DESKTOPMODE } from '../Utils/technicalConsts';
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
 
 import { changeState } from '../Functions/backEventActions'
@@ -23,6 +23,7 @@ export default class CSlide {
     private readonly menuToolbarElement: HTMLElement,
     private readonly inventoryElement: HTMLElement,
     private readonly journalElement: HTMLElement,
+    private readonly hideToolbar: () => void,
     private readonly animateFunc: (element: HTMLElement, className: string, duration: number) => void,
     private readonly renderInventory: (story: EStoriesEn) => void,
     private readonly renderJournal: () => void,
@@ -192,6 +193,8 @@ export default class CSlide {
     this.slide.speaker.style.display = 'none'
     this.slide.speaker.classList.remove('slide__speaker-right')
     this.slide.speaker.classList.remove('slide__speaker-left')
+    this.slide.text.classList.remove('slide__text-speech')
+    this.slide.text.classList.remove('slide__text-speechBig')
     if (speakerText !== undefined && speakerText !== '') {
       const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
       this.slide.speaker.innerText = speakerText.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
@@ -199,28 +202,29 @@ export default class CSlide {
         this.slide.speaker.style.display = 'block'
         this.slide.speaker.classList.add('slide__speaker-left')
       }, 10)
-    } else {
-      this.slide.speaker.style.display = 'none'
-    }
-    if (speakerTextL !== undefined && speakerTextL !== '') {
+      this.slide.text.classList.add('slide__text-speech')
+      this.slide.text.innerHTML.length > 120 && this.slide.text.classList.add('slide__text-speechBig')
+    } else if (speakerTextL !== undefined && speakerTextL !== '') {
       const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
       this.slide.speaker.innerText = speakerTextL.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
       setTimeout(() => {
         this.slide.speaker.style.display = 'block'
         this.slide.speaker.classList.add('slide__speaker-left')
       }, 10)
-    } else {
-      this.slide.speaker.style.display = 'none'
-    }
-    if (speakerTextR !== undefined && speakerTextL !== '') {
+      this.slide.text.classList.add('slide__text-speech')
+      this.slide.text.innerHTML.length > 120 && this.slide.text.classList.add('slide__text-speechBig')
+    } else if (speakerTextR !== undefined && speakerTextL !== '') {
       const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
       this.slide.speaker.innerText = speakerTextR.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
       setTimeout(() => {
         this.slide.speaker.style.display = 'block'
         this.slide.speaker.classList.add('slide__speaker-right')
       }, 10)
+      this.slide.text.classList.add('slide__text-speech')
+      this.slide.text.innerHTML.length > 120 && this.slide.text.classList.add('slide__text-speechBig')
     } else {
       this.slide.speaker.style.display = 'none'
+      this.slide.text.classList.remove('slide__text-speech')
     }
   }
 
@@ -271,8 +275,12 @@ export default class CSlide {
     if (buttons.length <= 1 && !buttons[0].gift) {
       this.slide.text.onclick = () => {
         buttons[0].func!()
+        this.hideToolbar()
       }
-      this.slide.fullscreenObject.onclick = () => { buttons[0].func!() }
+      this.slide.fullscreenObject.onclick = () => {
+        this.hideToolbar()
+        buttons[0].func!()
+      }
       this.forEachButton((button: HTMLElement) => {
         button.style.display = 'none'
       })
@@ -284,12 +292,14 @@ export default class CSlide {
           buttonsArray[index].innerHTML = buttons[index].text
           buttonsArray[index].onclick = () => {
             buttons[index].func!()
+            this.hideToolbar()
           }
         } else {
-          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span" ${DESKTOPMODE && 'style="display: none;"'}/></p>`
+          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span" ${DESKTOPMODE && 'style="display: none;"'} ${ANDROIDMODE && 'style="display: none;"'}/></p>`
           buttonsArray[index].onclick = () => {
             showAd('medium', () => {
               buttons[index].func!()
+              this.hideToolbar()
             })
           }
         }

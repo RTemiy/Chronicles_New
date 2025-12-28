@@ -25,7 +25,7 @@ import CScenarioManager from './Classes/CScenarioManager'
 import { Books, startBooksTimer } from './Components/Books/Books'
 import CTimer from './Classes/CTimer'
 import CSlide from './Classes/CSlide'
-import { Slide } from './Components/Slide/Slide'
+import { hideToolbar, Slide } from './Components/Slide/Slide';
 import { Inventory, renderInventory } from './Components/Inventory/Inventory'
 import { animateBackForth } from './Functions/animateBackForth'
 import { showPolicy } from './Components/Policy/Policy'
@@ -60,10 +60,10 @@ tabManagerMenu.open(Stories.self)
 export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
-export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), [require('./Sounds/Common/Menu01.mp3'), require('./Sounds/Common/Menu02.mp3'), require('./Sounds/Common/Menu03.mp3')])
+export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), [require('./Sounds/Common/Menu01.mp3'), require('./Sounds/Common/Menu02.mp3'), require('./Sounds/Common/Menu03.mp3'), require('./Sounds/Common/Menu04.mp3')])
 export const wardrobe = new CWardrobe(Wardrobe)
 export const smartphone = new CSmartphone(Smartphone)
-export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, animateBackForth, renderInventory, renderJournal, showCutscene, showOKMessage)
+export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, hideToolbar, animateBackForth, renderInventory, renderJournal, showCutscene, showOKMessage)
 export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, wardrobe, smartphone)
 export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 export const journal = new CJournal()
@@ -108,14 +108,13 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   statsManager.saveStats(false, storyName, chapterName, partName, code)
   Slide.self.style.display = 'none'
   MenuToolbar.self.style.display = 'flex'
-  tabManagerMenu.open(Parts.self)
+  tabManagerMenu.open(Stories.self)
   soundManager.play('menu')
   !DESKTOPMODE && !DEVMODE && !ANDROIDMODE && showRate(storyName + chapterName + partName + code)
   localStorage.removeItem('LastSave_ScenarioInfo')
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
   hideLoadingScreen()
   changeState('menu')
-  renderParts(storyName, chapterName)
   setTimeout(() => { hideLoadingScreen() }, 1100)
 }
 

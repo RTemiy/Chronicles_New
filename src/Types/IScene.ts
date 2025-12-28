@@ -16,10 +16,16 @@ export interface ICondition {
 
 export default interface IScene {
 
-  text: string
   id: number
+
+  text: string
+  message?: string
   buttons: IButton[]
   buttonsDefault?: IButton[]
+  speaker?: string
+  speakerL?: string
+  speakerR?: string
+
   imageBack?: string | (() => string)
   imageLeft?: string
   imageMiddle?: string
@@ -29,25 +35,26 @@ export default interface IScene {
   fullscreenObjectL?: string | (() => string)
   fullscreenObjectR?: string | (() => string)
   imageBorder?: string
+
   stats?: IStat[]
   achievement?: { story: EStoriesEn, name: string }
+
   music?: string
   ambient?: string
   simple?: string
-  message?: string
+
+  interruptiveFrame?: { goTo: number, timeMS?: number }
   OKMessage?: { image: string, goTo: number, buttonText: string }
-  condition?: ICondition[]
+  wardrobe?: { story: EStoriesEn, personId: string, goTo: number, food?: boolean }
   cutScene?: { video: string, goTo: number }
-  beforeBegin?: () => void
-  afterAll?: () => void
-  speaker?: string
-  speakerL?: string
-  speakerR?: string
+  smartphone?: { chatId: string, goTo: number }
+
   darkSilhouette?: boolean
   ghostSilhouette?: boolean
   blurredSilhouette?: boolean
   parallax?: string
-  wardrobe?: { story: EStoriesEn, personId: string, goTo: number }
-  smartphone?: { chatId: string, goTo: number }
-  interruptiveFrame?: { goTo: number, timeMS?: number }
+
+  condition?: ICondition[]
+  beforeBegin?: () => void
+  afterAll?: () => void
 }

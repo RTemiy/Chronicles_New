@@ -101,7 +101,7 @@ export default class CStoriesManager {
         </div>
         <div class="story__info-container">
           <img class="story__title shimmering_image" src="${story.title}">
-          <p class="story__description shimmering_text">${story.description}</p>
+          <p class="story__description">${story.description}</p>
           <!--<p class="story__button pulsating-push">Играть</p>-->
         </div>
       </div>

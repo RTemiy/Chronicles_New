@@ -153,3 +153,7 @@ export function setCurrentSlideId (id: number): void {
 Slide.hideToolbarButton.onclick = () => {
   Slide.toolBar.classList.toggle('slide__toolbar_hidden')
 }
+
+export function hideToolbar (): void {
+  Slide.toolBar.classList.add('slide__toolbar_hidden')
+}

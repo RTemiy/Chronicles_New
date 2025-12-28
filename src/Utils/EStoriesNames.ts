@@ -4,6 +4,7 @@
 
 export enum EStoriesEn {
   F = 'F',
+  PFT = 'PFT',
   ITLH = 'ITLH',
   TDP = 'TDP',
   MM = 'MM',
@@ -13,7 +14,6 @@ export enum EStoriesEn {
   AEP = 'AEP',
   // ISML = 'ISML',
   OTV = 'OTV',
-  PFT = 'PFT',
   //
   Katarina = 'Katarina',
   UL = 'UL',

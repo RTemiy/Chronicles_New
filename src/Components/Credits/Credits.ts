@@ -95,6 +95,7 @@ export const Credits = new CContainer(
 <p class="credits__name">Separation</p>
 <p class="credits__name">Common Things</p>
 <p class="credits__name">Tears Of Loss</p>
+<p class="credits__name">Happy New Year </p>
 <p class="credits__name">Under Fire (AEP - Пролог перестрелка)</p>
 <p class="credits__name">In the Night (Время крыс - Больница)</p>
 <p class="credits__name">Mad Waltz</p>

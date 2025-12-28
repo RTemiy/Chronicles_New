@@ -21,11 +21,19 @@
 }
 
 .slide__speaker-left{
-  left: -10px;
+  left: 10px;
+  border-radius: 150px;
+  &:before{
+    border-radius: 150px;
+  }
 }
 
 .slide__speaker-right{
-  right: -10px;
+  right: 10px;
+  border-radius: 150px;
+  &:before{
+    border-radius: 150px;
+  }
 }
 
 .slide__text {
@@ -46,5 +54,19 @@
   }
   p:first-child {
     margin-top: 0;
+  }
+}
+
+.slide__text-speech{
+  border-radius: 150px;
+  &:before{
+    border-radius: 150px;
+  }
+}
+
+.slide__text-speechBig{
+  border-radius: 50px;
+  &:before{
+    border-radius: 50px;
   }
 }

@@ -1019,6 +1019,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: 'Проигнорировать оскорбление',
         goTo: 70
       }],
+    speakerL: 'Генрих',
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -3917,7 +3918,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         condition: () => {
           return statsManager.get({ story: EStoriesEn.TDP, category: 'Choice', id: 'StayPut' }) >= 1
         },
-        goTo: 625
+        goTo: 920
       },
       {
         condition: () => {
@@ -3932,6 +3933,20 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 629
       }
     ]
+  },
+
+  {
+    id: 920,
+    text:
+      `
+        В голове крутилась куча разных мыслей, не давая привести разум в порядок.
+      `,
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 625 },
+    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
