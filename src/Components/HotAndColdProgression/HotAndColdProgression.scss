@@ -1,0 +1,102 @@
+@import "../Common/Common";
+
+.hotandcoldprogression{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  bottom: 70vh;
+  left: 0;
+  transition: visibility 1s ease-in-out, opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.hotandcoldprogression__container{
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  flex-direction: column;
+  @extend %styled-border;
+  @extend %styled-radius;
+  @extend %slide-container;
+  width: 350px;
+  transition: all 1s ease-in-out;
+  padding: 10px;
+}
+
+.hotandcoldprogression__block{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.hotandcoldprogression__imageBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hotandcoldprogression__statImage{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.hotandcoldprogression__progressionBar{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  @extend %styled-radius;
+  @extend %styled-border;
+}
+
+.hotandcoldprogression__coldBarBG{
+  height: 15px;
+  width: 175px;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.hotandcoldprogression__coldBar{
+  height: 15px;
+  background-color: blue;
+  justify-self: flex-end;
+  grid-row: 1;
+  grid-column: 1;
+  @extend %styled-radius;
+  @extend %styled-border;
+  border-radius: 0 10px 10px 0;
+}
+
+.hotandcoldprogression__hotBarBG{
+  height: 15px;
+  width: 175px;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.hotandcoldprogression__hotBar{
+  height: 15px;
+  background-color: red;
+  grid-row: 1;
+  grid-column: 2;
+  @extend %styled-radius;
+  @extend %styled-border;
+  border-radius: 0 10px 10px 0;
+}
+
+.hotandcoldprogression_show{
+  opacity: 1;
+  visibility: visible;
+}
+
+.hotandcoldprogression_barTransitionAdd{
+  transition: width 2s ease-in-out;
+}

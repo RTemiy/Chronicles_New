@@ -1,4 +1,4 @@
-const currentEvent: 'default' | 'newYear' = 'newYear'
+const currentEvent: 'default' | 'newYear' = 'default'
 
 export function getCurrentEventImage (imageName: string): string {
   switch (currentEvent) {

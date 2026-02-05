@@ -13,6 +13,7 @@ import { getChoice } from '../Functions/5Choices'
 import { setCurrentSlideId } from '../Components/Slide/Slide'
 import { showStatAlert } from '../Components/SlideStatAlert/SlideStatAlert'
 import { type CSmartphone } from './CSmartphone'
+import { showHotAndColdProgression } from '../Components/HotAndColdProgression/HotAndColdProgression';
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -156,7 +157,9 @@ export default class CScenarioManager {
       stat.story = this.getCurrentStoryName()
       if (stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
         if (stat.silent === false || stat.silent === undefined) {
-          if (stat.value === 0 && this.#statsManager.getShow(stat) === 0) {
+          if (this.#statsManager.getIsProgressionBar(stat)) {
+            showHotAndColdProgression(this.#statsManager.getImage(stat), this.#statsManager.getMinValue(stat)!, this.#statsManager.getMaxValue(stat)!, this.#statsManager.get(stat), this.#statsManager.get(stat) + stat.value!)
+          } else if (stat.value === 0 && this.#statsManager.getShow(stat) === 0) {
             this.slide.alertInventory()
             showStatAlert(this.#statsManager.getImage(stat)!, `${this.#statsManager.getName(stat)!}`, stat.value!)
           } else if (stat.value !== 0 && this.#statsManager.getShow(stat) !== undefined) {

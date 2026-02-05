@@ -2,11 +2,16 @@ import { achievementsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 import { profileManager } from '../../Components/Profile/Profile'
 
-/*profileManager.addBanners([
+profileManager.addBanners([
   {
-    id: 'Immortals_Guides_World',
-    image: require('../../Images/Immortals/Backgrounds/Guides_World.jpg'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'PrologueCompleted')
+    id: 'ITLH_GW',
+    image: require('../../Images/ITLH/Backgrounds/Guides_World.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'PrologueCompleted')
   },
+  {
+    id: 'ITLH_TS',
+    image: require('../../Images/ITLH/Backgrounds/Tesla_Door.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'PrologueCompleted')
+  }
 
-])*/
+])

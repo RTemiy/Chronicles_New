@@ -47,7 +47,8 @@ const Settings = new CContainer(
 		<a>Внутриигровые подсказки</a>
 	</div>
     <div class="settings__block">
-      <p>Скрыть подсказки по статам</p>
+      <p>Подсказки по статам</p>
+      <p class="settings__hint">Отлкючение/включение всплывающих подсказок сверху слева при получении видимых в инвентаре статов</p>
       <label class="switch">
         <input type="checkbox" id="settings-aha"/>
         <div class="slider round"></div> 
@@ -55,6 +56,7 @@ const Settings = new CContainer(
     </div>
     <div class="settings__block">
       <p>Скрывать нижнюю панель</p>
+      <p class="settings__hint">Автоматическое скрытие нижней панели при пролистывании истории</p>
       <label class="switch">
         <input type="checkbox" id="settings-hidetoolbar"/>
         <div class="slider round"></div> 
@@ -98,6 +100,7 @@ const Settings = new CContainer(
     </div>
     <div class="settings__block">
       <p>Печатная машинка</p>
+      <p class="settings__hint">Визуальный эффект, при котором текст появляется не сразу, а побуквенно</p>
       <label class="switch">
         <input type="checkbox" id="settings-typingtext"/>
         <div class="slider round"></div> 

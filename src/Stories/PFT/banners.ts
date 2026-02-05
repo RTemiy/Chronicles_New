@@ -2,10 +2,15 @@ import { achievementsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 import { profileManager } from '../../Components/Profile/Profile'
 
-/*profileManager.addBanners([
+profileManager.addBanners([
   {
-    id: 'Immortals_Guides_World',
-    image: require('../../Images/Immortals/Backgrounds/Guides_World.jpg'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'PrologueCompleted')
+    id: 'PFT_Corridor',
+    image: require('../../Images/PFT/Backgrounds/Viktor_Corridor.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.PFT, 'PrologueCompleted')
+  },
+  {
+    id: 'PFT_Chamber',
+    image: require('../../Images/PFT/Backgrounds/Chamber.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.PFT, 'PrologueCompleted')
   }
-])*/
+])

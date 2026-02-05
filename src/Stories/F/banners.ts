@@ -2,10 +2,25 @@ import { achievementsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 import { profileManager } from '../../Components/Profile/Profile'
 
-/*profileManager.addBanners([
+profileManager.addBanners([
   {
-    id: 'Immortals_Guides_World',
-    image: require('../../Images/Immortals/Backgrounds/Guides_World.jpg'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.Immortals, 'PrologueCompleted')
+    id: 'F_Market',
+    image: require('../../Images/F/Backgrounds/Christmas_Market.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'GoHigh')
+  },
+  {
+    id: 'F_Tent',
+    image: require('../../Images/F/Backgrounds/Inside_Tent.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'GoDarkDeep')
+  },
+  {
+    id: 'F_Neva_Evening',
+    image: require('../../Images/F/Backgrounds/Neva.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'PrologueCompleted')
+  },
+  {
+    id: 'F_Church',
+    image: require('../../Images/F/Backgrounds/Orthodox_Church.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'PrologueCompleted')
   }
-])*/
+])

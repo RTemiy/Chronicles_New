@@ -57,3 +57,25 @@
   margin-left: auto;
   width: 10px;
 }
+
+
+
+.settings__hint{
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius;
+  max-width: 220px;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+  padding: 10px;
+  font-size: var(--tinytext);
+}
+
+.settings__block:hover{
+  .settings__hint {
+    opacity: 1;
+    visibility: visible;
+  }
+}

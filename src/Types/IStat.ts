@@ -13,4 +13,7 @@ export default interface IStat {
   value?: number
   show?: number
   showValue?: boolean
+  progressionBar?: boolean
+  minValue?: number
+  maxValue?: number
 }

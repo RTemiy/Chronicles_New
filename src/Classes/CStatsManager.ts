@@ -157,6 +157,25 @@ export default class CStatsManager {
     return stat.show
   }
 
+  getMinValue (statInfo: IStat): number | undefined {
+    const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
+    return stat.minValue
+  }
+
+  getMaxValue (statInfo: IStat): number | undefined {
+    const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
+    return stat.maxValue
+  }
+
+  getIsProgressionBar (statInfo: IStat): boolean {
+    const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
+    if (stat.progressionBar === undefined || !stat.progressionBar) {
+      return false
+    } else {
+      return true
+    }
+  }
+
   inheritStat (fromStat: IStat, toStat: IStat): void {
     const scenarioName = loadData(['LastSave', 'ScenarioInfo'])!
     const story = scenarioName.split('_')[0]
