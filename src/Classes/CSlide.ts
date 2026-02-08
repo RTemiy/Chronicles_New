@@ -5,7 +5,7 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
-import { ANDROIDMODE, DESKTOPMODE } from '../Utils/technicalConsts';
+import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from '../Utils/technicalConsts';
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
 
 import { changeState } from '../Functions/backEventActions'
@@ -277,44 +277,53 @@ export default class CSlide {
 
   setButtonValues (buttons: IButton[]): void {
     this.resetButtonValues()
-    if (buttons.length <= 1 && !buttons[0].gift) {
-      this.slide.text.onclick = () => {
-        buttons[0].func!()
-        this.hideToolbar()
-      }
-      this.slide.fullscreenObject.onclick = () => {
-        this.hideToolbar()
-        buttons[0].func!()
-      }
-      this.forEachButton((button: HTMLElement) => {
-        button.style.display = 'none'
-      })
-    } else {
-      this.slide.fullscreenObject.onclick = () => {}
-      const buttonsArray = this.getButtonsArray()
-      buttons.forEach((button, index) => {
-        if (!buttons[index].gift) {
-          buttonsArray[index].innerHTML = buttons[index].text
-          buttonsArray[index].onclick = () => {
-            buttons[index].func!()
-            this.hideToolbar()
-          }
-        } else {
-          buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span" ${DESKTOPMODE && 'style="display: none;"'} ${ANDROIDMODE && 'style="display: none;"'}/></p>`
-          buttonsArray[index].onclick = () => {
-            showAd('medium', () => {
+    const doChange = (): void => {
+      if (buttons.length <= 1 && !buttons[0].gift) {
+        this.slide.text.onclick = () => {
+          buttons[0].func!()
+          this.hideToolbar()
+        }
+        this.slide.fullscreenObject.onclick = () => {
+          this.hideToolbar()
+          buttons[0].func!()
+        }
+        this.forEachButton((button: HTMLElement) => {
+          button.style.display = 'none'
+        })
+      } else {
+        this.slide.fullscreenObject.onclick = () => {}
+        const buttonsArray = this.getButtonsArray()
+        buttons.forEach((button, index) => {
+          if (!buttons[index].gift) {
+            buttonsArray[index].innerHTML = buttons[index].text
+            buttonsArray[index].onclick = () => {
               buttons[index].func!()
               this.hideToolbar()
-            })
+            }
+          } else {
+            buttonsArray[index].innerHTML = '<p>' + buttons[index].text + `<img src="${require('../Images/UI/icon_gift.svg')}" class="icon_span" ${DESKTOPMODE && 'style="display: none;"'} ${ANDROIDMODE && 'style="display: none;"'}/></p>`
+            buttonsArray[index].onclick = () => {
+              showAd('medium', () => {
+                buttons[index].func!()
+                this.hideToolbar()
+              })
+            }
           }
-        }
-        if (buttons[index].isActive === undefined || buttons[index].isActive!) {
-          buttonsArray[index].style.display = 'inline'
-        } else {
-          buttonsArray[index].style.display = 'none'
-          buttonsArray[index].innerText = buttons[index].text
-        }
-      })
+          if (buttons[index].isActive === undefined || buttons[index].isActive!) {
+            buttonsArray[index].style.display = 'inline'
+          } else {
+            buttonsArray[index].style.display = 'none'
+            buttonsArray[index].innerText = buttons[index].text
+          }
+        })
+      }
+    }
+    if (loadData(['Settings_TypingText']) === 'true' || loadData(['Settings_TypingText']) === null) {
+      setTimeout(() => { doChange() }, 1500)
+    } else if (DEVMODE) {
+      doChange()
+    } else {
+      setTimeout(() => { doChange() }, 1000)
     }
   }
 

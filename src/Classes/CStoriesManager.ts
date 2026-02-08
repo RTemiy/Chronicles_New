@@ -3,7 +3,7 @@ import { loadData } from '../Functions/localStorageManager'
 import { EStoriesAvailable } from '../Utils/EStoriesNames'
 import { ANDROIDMODE, DESKTOPMODE } from '../Utils/technicalConsts';
 import { achievementsManager } from '../index';
-import { getCurrentEventImage } from '../Utils/eventManager';
+import { getCurrentEventImageSVG } from '../Utils/eventManager';
 
 export default class CStoriesManager {
   #stories: IStory[] = []
@@ -96,7 +96,7 @@ export default class CStoriesManager {
             <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
             ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
-            <div class="story__achievements-amount"><img src="${getCurrentEventImage('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
+            <div class="story__achievements-amount"><img src="${getCurrentEventImageSVG('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
             <p class="story__genre">${story.genre}</p>
         </div>
         <div class="story__info-container">
@@ -116,7 +116,7 @@ export default class CStoriesManager {
             <img class="story__image" src="${story.image}"/>
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
             ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
-            <div class="story__achievements-amount"><img src="${getCurrentEventImage('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
+            <div class="story__achievements-amount"><img src="${getCurrentEventImageSVG('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>
             <p class="story__genre">${story.genre}</p>
         </div>
         <div class="story__info-container">

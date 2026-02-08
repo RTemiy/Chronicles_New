@@ -46,6 +46,8 @@ import { Smartphone } from './Components/Smartphone/Smartphone'
 import { CSmartphone } from './Classes/CSmartphone'
 import { initTapTap } from './Functions/tapTap';
 import { showOKMessage } from './Components/OKMessage/OKMessage';
+import { getCurrentEventImageJPG } from './Utils/eventManager';
+import menuToolbar from './Components/MenuToolbar/MenuToolbar';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -72,7 +74,7 @@ loadStories(EStoriesEn)
 
 hideDisclaimer()
 
-renderLoadingScreen(require('./Images/UI/loadingscreen.jpg'), () => {})
+renderLoadingScreen(getCurrentEventImageJPG('loadingscreen'), () => {})
 
 // achievementsManager.updateAchievementsInfo(achievementsData)
 
@@ -100,6 +102,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
       showNews('start')
       LoadingScreen.tapButton.classList.remove('loading-screen__tapImage_start')
       LoadingScreen.tapButton.classList.add('loading-screen__tapImage_after')
+      menuToolbar.storiesButton.click()
     }
   }, 9000)
 })

@@ -11,6 +11,7 @@
   width: 100%;
   justify-content: space-evenly;
   transition: transform 0.6s ease-in-out;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(20, 52, 56, 0.35));
 }
 
 %slide__toolbar-button {

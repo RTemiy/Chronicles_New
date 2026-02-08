@@ -1,6 +1,6 @@
 import makeExplosion from './explosion'
 import { loadData } from './localStorageManager'
-import { getCurrentEventImage } from '../Utils/eventManager';
+import { getCurrentEventImageSVG } from '../Utils/eventManager';
 
 export function initTapTap (): void {
   document.body.onclick = (event) => {
@@ -13,7 +13,7 @@ export function initTapTap (): void {
       placeholder.style.height = '1px'
       placeholder.style.pointerEvents = 'none'
       document.body.appendChild(placeholder)
-      makeExplosion(placeholder, [`<img src="${getCurrentEventImage('tap')}" class="icon_span"/>`], 0.7, 10, 8, 30)
+      makeExplosion(placeholder, [`<img src="${getCurrentEventImageSVG('tap')}" class="icon_span"/>`], 0.7, 10, 8, 30)
       setTimeout(() => { placeholder.remove() }, 1000)
     }
   }

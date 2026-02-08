@@ -72,6 +72,7 @@
 .loading-screen__background-image {
   height: 100%;
   width: auto;
+  @extend %styled-background;
 }
 
 .loading-screen__percent {

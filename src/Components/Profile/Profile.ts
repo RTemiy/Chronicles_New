@@ -18,7 +18,7 @@ import makeExplosion from '../../Functions/explosion'
 import { transformMinutes } from '../../Functions/transformMinutes'
 import { DEVMODE } from '../../Utils/technicalConsts'
 import { changeState } from '../../Functions/backEventActions';
-import { getCurrentEventImage } from '../../Utils/eventManager';
+import { getCurrentEventImageSVG } from '../../Utils/eventManager';
 
 export const Profile = new CContainer(
   'profile',
@@ -101,13 +101,13 @@ export function renderProfile (): void {
   Profile.firstLaunch.innerHTML = loadData(['Profile', 'FirstLaunch'])
   const partsInfo = storiesManager.getPartsInfo()
   Profile.completedParts.innerHTML = String(partsInfo.beginnedStories) + '/' + String(partsInfo.allStories)
-  Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${getCurrentEventImage('icon_achievements')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount() + `<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>`
-  profileManager.setCurrentAvatar()
-  profileManager.setCurrentBanner()
+  Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${getCurrentEventImageSVG('icon_achievements')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount() + `<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>`
   Profile.spentTime.innerHTML = transformMinutes(parseInt(loadData(['Profile', 'TimeSpent'])!))
   Profile.wastedBooks.innerHTML = String(loadData(['Profile', 'BooksWasted'])!)
   Profile.events.innerHTML = getEventsHTML()
   updateUsedPromoCodes()
+  profileManager.setCurrentAvatar()
+  profileManager.setCurrentBanner()
 }
 
 Profile.name.oninput = () => {

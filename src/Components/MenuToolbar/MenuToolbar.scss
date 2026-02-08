@@ -10,10 +10,11 @@
     right: 10px;
     flex-direction: row;
     padding: 5px;
-    background: rgba(0, 89, 79, 0.65);
+    background: rgba(0, 76, 89, 0.5);
     @extend %styled-radius;
     border-radius: 50px;
     justify-content: space-evenly;
+    gap: 5px;
   }
 
   @container style(--desktopmode: true){
@@ -25,7 +26,7 @@
     justify-content: center;
     gap: 15px;
     @extend %styled-radius;
-    background: rgba(0, 89, 79, 0.65);
+    background: rgba(0, 76, 89, 0.70);
   }
 
   display: none;
@@ -53,20 +54,34 @@
     justify-content: center;
     align-items: center;
     background: transparent;
+    width: 70px;
+    height: 20px;
+    border-radius: 50px;
   }
 
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 0 8px 5px;
+  padding: 8px 5px;
   @extend %button-tap;
-  transition: filter 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .menu-toolbar__item > img {
+
+  @container style(--desktopmode: true){
+
+  }
   max-width: 45px;
   width: 40px;
+  height: 40px;
   align-self: center;
+  object-fit: contain;
+
+  @container style(--desktopmode: false){
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .menu-toolbar__item > p {
@@ -82,4 +97,36 @@
     margin: 0;
   }
   margin: 5px;
+}
+
+.button-bright {
+  // filter: drop-shadow(0 0 5px white);
+  background: rgba(0, 219, 255, 0.15);
+
+  &>img {
+    animation: littlejump 0.5s ease-in-out;
+    animation-iteration-count: 1;
+  }
+}
+
+@keyframes littlejump {
+  0%{
+    transform: translateY(0);
+  }
+
+  25%{
+    transform: translateY(-4px);
+  }
+
+  50%{
+    transform: translateY(0);
+  }
+
+  75%{
+    transform: translateY(-2px);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
 }

@@ -11,7 +11,7 @@ import { renderShop, Shop } from '../Shop/Shop';
 import { DESKTOPMODE } from '../../Utils/technicalConsts';
 import { setIsShowingLoadingScreenFalse } from '../LoadingScreen/LoadingScreen';
 import { changeState } from '../../Functions/backEventActions';
-import { getCurrentEventImage } from '../../Utils/eventManager';
+import { getCurrentEventImageSVG } from '../../Utils/eventManager';
 import makeExplosion from '../../Functions/explosion';
 import { MenuMessage } from '../MenuMessage/MenuMessage';
 
@@ -19,7 +19,7 @@ const MenuToolbar = new CContainer(
   'menu-toolbar',
 	`
 <div id="menu-toolbar_continue" class="menu-toolbar__item">
-	<img src="${getCurrentEventImage('icon_continue')}">
+	<img src="${getCurrentEventImageSVG('icon_continue')}">
 	<p>Продолжить</p>
 </div>
 <div id="menu-toolbar_favourites" class="menu-toolbar__item" style='display: none'>
@@ -27,27 +27,27 @@ const MenuToolbar = new CContainer(
 	<p>Фавориты</p>
 </div>
 <div id="menu-toolbar_stories" class="menu-toolbar__item">
-	<img src="${getCurrentEventImage('icon_stories')}">
+	<img src="${getCurrentEventImageSVG('icon_stories')}">
 	<p>Истории</p>
 </div>
 <div id="menu-toolbar_achievements"  style="display: none" class="menu-toolbar__item">
-	<img src="${getCurrentEventImage('icon_achievements')}">
+	<img src="${getCurrentEventImageSVG('icon_achievements')}">
 	<p>Достижения</p>
 </div>
 <div id="menu-toolbar_basket" class="menu-toolbar__item">
-	<img src="${getCurrentEventImage('icon_shop')}">
+	<img src="${getCurrentEventImageSVG('icon_shop')}">
 	<p>Клеймы</p>
 	</div>
 <div id="menu-toolbar_profile" class="menu-toolbar__item">
-	<img src="${getCurrentEventImage('icon_profile')}">
+	<img src="${getCurrentEventImageSVG('icon_profile')}">
 	<p>Профиль</p>
 </div>
 <div id="menu-toolbar_settings" class="menu-toolbar__item">
-	<img src="${getCurrentEventImage('icon_settings')}">
+	<img src="${getCurrentEventImageSVG('icon_settings')}">
 	<p>Настройки</p>
 </div>
 	<div id="menu-toolbar_exit" class="menu-toolbar__item" ${!DESKTOPMODE && 'style="display: none"'}>
-	<img src="${getCurrentEventImage('icon_exit')}">
+	<img src="${getCurrentEventImageSVG('icon_exit')}">
 	<p>Выход</p>
 
 </div>

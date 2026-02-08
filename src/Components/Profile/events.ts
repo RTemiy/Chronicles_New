@@ -1,37 +1,9 @@
 import { loadData, saveData } from '../../Functions/localStorageManager'
-import { ANDROIDMODE, DESKTOPMODE } from '../../Utils/technicalConsts';
-
-export const events = [
-  {
-    title: 'Выпуск глобального обновления 2024',
-    code: '2024_Global_Update',
-    achieve: false
-  },
-  {
-    title: 'День всех влюблённых 2024',
-    code: '2024_February_14',
-    achieve: false
-  },
-  {
-    title: 'Владелец ПК версии ',
-    code: 'Purchased_PC_Version',
-    achieve: DESKTOPMODE
-  },
-  {
-    title: 'Владелец Android версии',
-    code: 'Purchased_Android_Version',
-    achieve: ANDROIDMODE
-  },
-  {
-    title: 'Новый год 2025',
-    code: '2025_New_Year',
-    achieve: true
-  }
-]
+import { profileEvents } from '../../Utils/eventManager'
 
 export function getEventsHTML (): string {
   let result = ''
-  events.forEach(event => {
+  profileEvents.forEach(event => {
     if (event.achieve) {
       saveData([event.code], [1])
     }
