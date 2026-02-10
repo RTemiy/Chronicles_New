@@ -15,7 +15,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 1
       }],
     message: 'Дата: 4 октября 1586 года',
-    music: require('../../../../Sounds/ROR/Prologue.mp3'),
+    music: require('../../../../Audio/ROR/Prologue.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Table_Candle.jpg')
   },
 

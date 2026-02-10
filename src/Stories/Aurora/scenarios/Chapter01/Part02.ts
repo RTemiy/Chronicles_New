@@ -16,7 +16,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/Aurora/Lighthouse.mp3'),
+    music: require('../../../../Audio/Aurora/Lighthouse.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
@@ -181,7 +181,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 12
       }],
-    ambient: require('../../../../Sounds/Aurora/Wind.mp3'),
+    ambient: require('../../../../Audio/Aurora/Wind.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
   },
 
@@ -1187,7 +1187,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 75
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageFront: require('../../../../Images/Aurora/Persons/Arthur.png'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Car.jpg')
@@ -1248,7 +1248,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 79
       }],
-    music: require('../../../../Sounds/Aurora/Daily_01.mp3'),
+    music: require('../../../../Audio/Aurora/Daily_01.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Car.jpg')
   },
 
@@ -1814,7 +1814,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 113
       }],
-    music: require('../../../../Sounds/Aurora/Romantic_Man.mp3'),
+    music: require('../../../../Audio/Aurora/Romantic_Man.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Forest.jpg')
   },
 
@@ -2543,7 +2543,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 161
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/Aurora/Sad.mp3'),
+    music: require('../../../../Audio/Aurora/Sad.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
@@ -2660,7 +2660,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 169
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/Aurora/Daily_01.mp3'),
+    music: require('../../../../Audio/Aurora/Daily_01.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Car.jpg')
   },
 

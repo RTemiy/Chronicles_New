@@ -15,7 +15,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         goTo: 1
       }],
     message: '<i> ÐÑŒÑŽ-Ð™Ð¾Ñ€Ðº 1885 Ð³Ð¾Ð´',
-    music: require('../../../../Sounds/Immortals/NY_Sad.mp3'),
+    music: require('../../../../Audio/Immortals/NY_Sad.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Robert.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     darkSilhouette: true,
@@ -67,7 +67,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 4
       }],
-    simple: require('../../../../Sounds/Immortals/Close_Door.mp3'),
+    simple: require('../../../../Audio/Immortals/Close_Door.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital_Dark.jpg')
   },
 
@@ -3063,7 +3063,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 487
       }],
-    music: require('../../../../Sounds/Immortals/Ball.mp3'),
+    music: require('../../../../Audio/Immortals/Ball.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -4093,7 +4093,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 252
       }],
-    music: require('../../../../Sounds/Immortals/Ball_Calm.mp3'),
+    music: require('../../../../Audio/Immortals/Ball_Calm.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -4214,7 +4214,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 259
       }],
-    music: require('../../../../Sounds/Immortals/Ball_Fast.mp3'),
+    music: require('../../../../Audio/Immortals/Ball_Fast.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -4416,7 +4416,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         goTo: 271
       }],
     parallax: 'left',
-    music: require('../../../../Sounds/Immortals/Ball.mp3'),
+    music: require('../../../../Audio/Immortals/Ball.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -4678,7 +4678,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 287
       }],
-    music: require('../../../../Sounds/Immortals/Antagonist.mp3'),
+    music: require('../../../../Audio/Immortals/Antagonist.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Antagonist_Smoking.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
@@ -4712,7 +4712,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 512
       }],
-    music: require('../../../../Sounds/Immortals/Antagonist.mp3'),
+    music: require('../../../../Audio/Immortals/Antagonist.mp3'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
   },
@@ -6302,7 +6302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 387
       }],
-    music: require('../../../../Sounds/Immortals/Ball.mp3'),
+    music: require('../../../../Audio/Immortals/Ball.mp3'),
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Katarina_Ball') },
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
@@ -6337,7 +6337,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 389
       }],
-    music: require('../../../../Sounds/Immortals/Ball.mp3'),
+    music: require('../../../../Audio/Immortals/Ball.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -7031,7 +7031,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
     imageFront: require('../../../../Images/Immortals/Persons/Neitan_Smoking.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
-    simple: require('../../../../Sounds/Immortals/Applause.mp3'),
+    simple: require('../../../../Audio/Immortals/Applause.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -7965,7 +7965,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 189
       }],
-    music: require('../../../../Sounds/Immortals/Ball.mp3'),
+    music: require('../../../../Audio/Immortals/Ball.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -8319,7 +8319,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         goTo: 431
       }],
     parallax: 'right',
-    simple: require('../../../../Sounds/Immortals/Applause.mp3'),
+    simple: require('../../../../Audio/Immortals/Applause.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -8350,7 +8350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 513
       }],
-    music: require('../../../../Sounds/Immortals/Antagonist.mp3'),
+    music: require('../../../../Audio/Immortals/Antagonist.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Antagonist_Smoking.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'left',
@@ -8368,7 +8368,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 289
       }],
-    music: require('../../../../Sounds/Immortals/Antagonist.mp3'),
+    music: require('../../../../Audio/Immortals/Antagonist.mp3'),
     parallax: 'left',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Garden.jpg')
   },

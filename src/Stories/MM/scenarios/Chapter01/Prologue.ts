@@ -14,8 +14,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/MM/Calm.mp3'),
-    ambient: require('../../../../Sounds/MM/Rain.mp3'),
+    music: require('../../../../Audio/MM/Calm.mp3'),
+    ambient: require('../../../../Audio/MM/Rain.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Detective_Cabinet.jpg')
   },
 
@@ -785,7 +785,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 48
       }],
-    music: require('../../../../Sounds/MM/Romantic.mp3'),
+    music: require('../../../../Audio/MM/Romantic.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/London_Street.jpg')
   },
 
@@ -1030,9 +1030,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 65
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     message: 'Спустя шесть часов беспрерывной работы…',
-    music: require('../../../../Sounds/MM/Darkness.mp3'),
+    music: require('../../../../Audio/MM/Darkness.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Entrance.jpg')
   },
 

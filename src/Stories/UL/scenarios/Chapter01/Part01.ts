@@ -15,8 +15,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/UL/Thinking.mp3'),
-    ambient: require('../../../../Sounds/UL/Wind.mp3'),
+    music: require('../../../../Audio/UL/Thinking.mp3'),
+    ambient: require('../../../../Audio/UL/Wind.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Rooftop.jpg')
   },
 
@@ -94,8 +94,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 6
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/UL/Main.mp3'),
-    ambient: require('../../../../Sounds/UL/Street.mp3'),
+    music: require('../../../../Audio/UL/Main.mp3'),
+    ambient: require('../../../../Audio/UL/Street.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Icerink_Far.jpg')
   },
 
@@ -124,7 +124,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 8
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Library.jpg')
   },
 
@@ -251,7 +251,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 17
       }],
-    ambient: require('../../../../Sounds/UL/Street.mp3'),
+    ambient: require('../../../../Audio/UL/Street.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Icerink_Far.jpg')
   },
 
@@ -458,8 +458,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 31
       }],
     beforeBegin: redPulsating,
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
-    music: require('../../../../Sounds/UL/Abstraction.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
+    music: require('../../../../Audio/UL/Abstraction.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Fade.jpg')
   },
 
@@ -502,7 +502,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 34
       }],
-    ambient: require('../../../../Sounds/UL/Whisper.mp3'),
+    ambient: require('../../../../Audio/UL/Whisper.mp3'),
     speaker: '...',
     imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
     imageBorder: require('../../../../Images/UL/UI/Border.png'),
@@ -585,7 +585,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 39
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     beforeBegin: redPulsatingStop,
     imageBack: require('../../../../Images/UL/Backgrounds/Fade.jpg')
   },
@@ -602,7 +602,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 40
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/UL/Awakening.mp3'),
+    music: require('../../../../Audio/UL/Awakening.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Hospital_Room.jpg')
   },
 
@@ -1516,7 +1516,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 98
       }],
-    simple: require('../../../../Sounds/UL/Mobile.mp3'),
+    simple: require('../../../../Audio/UL/Mobile.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Hospital_Room.jpg')
   },
 

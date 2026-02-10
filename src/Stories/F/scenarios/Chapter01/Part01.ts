@@ -15,8 +15,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/F/Theme_Dramatic.mp3'),
-    ambient: require('../../../../Sounds/UL/Wind.mp3'),
+    music: require('../../../../Audio/F/Theme_Dramatic.mp3'),
+    ambient: require('../../../../Audio/UL/Wind.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
 
@@ -471,8 +471,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     message: 'Становись сильнее обстоятельств, чтобы счастье стало твоим постоянным спутником.  ',
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
-    stats: [
-      { story: EStoriesEn.F, value: +1, category: 'Effect', id: 'PersonalGrowth' }],
+    stats: [{ story: EStoriesEn.F, value: +1, category: 'Effect', id: 'PersonalGrowth' }],
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
 
@@ -503,8 +502,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 32
       }],
-    simple: require('../../../../Sounds/F/MagicBox-Open.mp3'),
-
+    simple: require('../../../../Audio/F/MagicBox-Open.mp3'),
     message: inventoryMessage,
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
@@ -520,7 +518,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 33
       }],
-    simple: require('../../../../Sounds/F/MagicBox.mp3'),
+    simple: require('../../../../Audio/F/MagicBox.mp3'),
     imageFront: require('../../../../Images/F/Objects/Opened_Glowing_Box.png'),
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
@@ -551,10 +549,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     beforeBegin: whiteFlash,
     message: 'Несколько дней назад…',
-    music: require('../../../../Sounds/F/Theme_Daily.mp3'),
+    music: require('../../../../Audio/F/Theme_Daily.mp3'),
     speakerR: 'Евгений Владимирович',
     fullscreenObjectR: require('../../../../Images/F/Persons/Eugene.png'),
-    ambient: require('.././../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Office.jpg')
   },
 
@@ -2268,7 +2266,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 149
       }],
-    music: require('../../../../Sounds/F/Theme_Witch.mp3'),
+    music: require('../../../../Audio/F/Theme_Witch.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
   },
 
@@ -2399,7 +2397,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 157
       }],
-    simple: require('../../../../Sounds/F/Paper.mp3'),
+    simple: require('../../../../Audio/F/Paper.mp3'),
     imageFront: require('../../../../Images/F/Items/Flyer.png'),
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Evening.jpg')
@@ -2990,7 +2988,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 195
       }],
-    music: require('../../../../Sounds/F/Theme_Daily.mp3'),
+    music: require('../../../../Audio/F/Theme_Daily.mp3'),
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Flat_Livingroom.jpg')
@@ -5018,7 +5016,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 329
       }],
-    ambient: require('../../../../Sounds/UL/Wind.mp3'),
+    ambient: require('../../../../Audio/UL/Wind.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Stop_Evening.jpg')
   },
 
@@ -5297,7 +5295,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 347
       }],
-    music: require('../../../../Sounds/F/Theme_JingleBells.mp3'),
+    music: require('../../../../Audio/F/Theme_JingleBells.mp3'),
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Christmas_Market.jpg')
@@ -5762,7 +5760,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 378
       }],
-    simple: require('../../../../Sounds/F/JingleBells.mp3'),
+    simple: require('../../../../Audio/F/JingleBells.mp3'),
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Near_Tent.jpg')
@@ -5805,8 +5803,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 381
       }],
-    music: require('../../../../Sounds/F/Theme_Witch.mp3'),
-    ambient: require('.././../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/F/Theme_Witch.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Inside_Tent.jpg')
   },
 
@@ -6982,7 +6980,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 458
       }],
-    simple: require('../../../../Sounds/F/PhoneAlert.mp3'),
+    simple: require('../../../../Audio/F/PhoneAlert.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Inside_Tent.jpg')
   },
 
@@ -7130,7 +7128,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 468
       }],
-    music: require('../../../../Sounds/F/Theme_Dramatic.mp3'),
+    music: require('../../../../Audio/F/Theme_Dramatic.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Christmas_Market_Empty.jpg')
   },
 
@@ -7228,7 +7226,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 475
       }],
     beforeBegin: whiteFlash,
-    ambient: require('../../../../Sounds/UL/Wind.mp3'),
+    ambient: require('../../../../Audio/UL/Wind.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
 
@@ -7320,7 +7318,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 481
       }],
-    simple: require('../../../../Sounds/F/MagicBox-Open.mp3'),
+    simple: require('../../../../Audio/F/MagicBox-Open.mp3'),
     imageFront: require('../../../../Images/F/Objects/Opened_Empty_Box.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
   },
@@ -7337,7 +7335,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 482
       }],
-    music: require('../../../../Sounds/F/Theme_Witch.mp3'),
+    music: require('../../../../Audio/F/Theme_Witch.mp3'),
     imageFront: require('../../../../Images/F/Objects/Opened_Empty_Box.png'),
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
@@ -7354,7 +7352,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 620
       }],
-    simple: require('../../../../Sounds/F/MagicBox.mp3'),
+    simple: require('../../../../Audio/F/MagicBox.mp3'),
     imageFront: require('../../../../Images/F/Objects/Opened_Empty_Box.png'),
     imageBorder: require('../../../../Images/F/UI/Border.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Neva.jpg')
@@ -7555,7 +7553,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 495 },
-    simple: require('../../../../Sounds/F/Door_Closed.mp3'),
+    simple: require('../../../../Audio/F/Door_Closed.mp3'),
     imageBack: require('../../../../Images/UI/background_black.jpg')
   },
 
@@ -7570,7 +7568,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 496
       }],
-    music: require('../../../../Sounds/F/Theme_Dramatic.mp3'),
+    music: require('../../../../Audio/F/Theme_Dramatic.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Stairway.jpg')
   },
 
@@ -8123,7 +8121,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 533
       }],
-    simple: require('../../../../Sounds/F/Footsteps.mp3'),
+    simple: require('../../../../Audio/F/Footsteps.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Stairway.jpg')
   },
 
@@ -8286,7 +8284,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 543
       }],
-    music: require('../../../../Sounds/F/Theme_Tragic.mp3'),
+    music: require('../../../../Audio/F/Theme_Tragic.mp3'),
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Home.jpg')
@@ -8303,7 +8301,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 544
       }],
-    ambient: require('../../../../Sounds/F/Wind_Powerfull.mp3'),
+    ambient: require('../../../../Audio/F/Wind_Powerfull.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Street_Near_Home.jpg')
   },
 
@@ -8607,7 +8605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 564
       }],
-    simple: require('../../../../Sounds/F/ChurchBells.mp3'),
+    simple: require('../../../../Audio/F/ChurchBells.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Orthodox_Church.jpg')
   },
 
@@ -8636,7 +8634,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 566
       }],
-    simple: require('../../../../Sounds/F/ChurchBells.mp3'),
+    simple: require('../../../../Audio/F/ChurchBells.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Orthodox_Church.jpg')
   },
 
@@ -8695,7 +8693,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 570
       }],
-    simple: require('../../../../Sounds/F/Inhale.mp3'),
+    simple: require('../../../../Audio/F/Inhale.mp3'),
     imageBack: require('../../../../Images/F/Backgrounds/Orthodox_Church.jpg')
   },
 
@@ -8813,7 +8811,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         }
       }],
     speakerL: 'Константин',
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     fullscreenObjectL: require('../../../../Images/F/Persons/Konstantin_Coat.png'),
     achievement: { story: EStoriesEn.F, name: 'PrologueCompleted' },
     imageBack: require('../../../../Images/F/Backgrounds/Orthodox_Church.jpg')

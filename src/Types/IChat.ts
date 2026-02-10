@@ -11,10 +11,11 @@ export interface IChat {
 
 interface IChatMessage {
   fellow: boolean
-  answers?: Array<{ text: string, goToAnchor: string }>
+  answers?: Array<{ text: string, goToAnchor: string, senderName: string }>
   goToAnchor?: string
   text?: string
   anchor?: string
   end?: boolean
+  senderName: string
   func?: () => void
 }

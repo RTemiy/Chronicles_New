@@ -41,7 +41,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Warehouse.jpg')
   },
 
@@ -1182,7 +1182,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 76
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Stone_Hatch.jpg')
@@ -1741,7 +1741,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 112
       }],
     beforeBegin: redFlash,
-    simple: require('../../../../Sounds/ROR/Wound.mp3'),
+    simple: require('../../../../Audio/ROR/Wound.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Canalization_Trash.jpg')
   },
 
@@ -1879,7 +1879,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 121
       }],
-    music: require('../../../../Sounds/ROR/Hospital.mp3'),
+    music: require('../../../../Audio/ROR/Hospital.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Bunkplace.jpg')
   },
 
@@ -2482,7 +2482,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 160
       }],
-    simple: require('../../../../Sounds/ROR/Cutting.mp3'),
+    simple: require('../../../../Audio/ROR/Cutting.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Body.jpg')
   },
 
@@ -3053,8 +3053,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 196
       }],
-    simple: require('../../../../Sounds/ROR/Glass.mp3'),
-    ambient: require('../../../../Sounds/ROR/Fire.mp3'),
+    simple: require('../../../../Audio/ROR/Glass.mp3'),
+    ambient: require('../../../../Audio/ROR/Fire.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Mortimer_Mask.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Chapel_Body_Fire.jpg')
@@ -3192,7 +3192,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 212
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     message: 'Мортимер сильно разочарован вашим решением',
     imageFront: require('../../../../Images/ROR/Persons/Mortimer_Mask.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
@@ -3317,7 +3317,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         gift: true,
         goTo: 213
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 

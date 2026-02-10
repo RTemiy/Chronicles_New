@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/MM/Darkness.mp3'),
+    music: require('../../../../Audio/MM/Darkness.mp3'),
     speaker: 'Джонатан',
     imageFront: require('../../../../Images/MM/Persons/Jonathan_Angry.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -120,7 +120,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 8
       }],
     message: 'Зеркало Гезелла — пуленепробиваемое стекло, полностью отзеркаливающее с одной стороны и просвечивающее с другой.',
-    ambient: require('../../../../Sounds/MM/Clock_Ticking.mp3'),
+    ambient: require('../../../../Audio/MM/Clock_Ticking.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Interrogation_Room.jpg')
   },
 
@@ -195,7 +195,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 13
       }],
     speaker: 'Маргарита',
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Interrogation_Room.jpg')
@@ -251,7 +251,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 16
       }],
-    music: require('../../../../Sounds/MM/Jonathan.mp3'),
+    music: require('../../../../Audio/MM/Jonathan.mp3'),
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -846,7 +846,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 53
       }],
-    music: require('../../../../Sounds/MM/Calm.mp3'),
+    music: require('../../../../Audio/MM/Calm.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Interrogation_Room.jpg')
   },
 
@@ -1101,7 +1101,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 69
       }],
-    music: require('../../../../Sounds/MM/Calm.mp3'),
+    music: require('../../../../Audio/MM/Calm.mp3'),
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -1274,7 +1274,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 80
       }],
-    music: require('../../../../Sounds/MM/Fast.mp3'),
+    music: require('../../../../Audio/MM/Fast.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Watchroom.jpg')
   },
 
@@ -1859,7 +1859,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 117
       }],
-    music: require('../../../../Sounds/MM/Mysterious.mp3'),
+    music: require('../../../../Audio/MM/Mysterious.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Interrogation_Room.jpg')
   },
 
@@ -3038,7 +3038,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 190
       }],
     message: 'Кабинет рядом с допросной',
-    music: require('../../../../Sounds/MM/Darkness.mp3'),
+    music: require('../../../../Audio/MM/Darkness.mp3'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
     imageBack: require('../../../../Images/MM/Backgrounds/Watchroom.jpg')
   },
@@ -3156,8 +3156,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 198
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/MM/Calm.mp3'),
-    ambient: require('../../../../Sounds/MM/Rain.mp3'),
+    music: require('../../../../Audio/MM/Calm.mp3'),
+    ambient: require('../../../../Audio/MM/Rain.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Boss_Cabinet.jpg')
   },
 
@@ -4457,8 +4457,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
       }],
     beforeBegin: whiteFlash,
     message: 'Пять лет назад.',
-    music: require('../../../../Sounds/MM/Mysterious.mp3'),
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/MM/Mysterious.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     speaker: 'Роджерс Марпл',
     imageFront: require('../../../../Images/MM/Persons/Rodgers.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -5185,8 +5185,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 325
       }],
-    music: require('../../../../Sounds/MM/Mysterious.mp3'),
-    ambient: require('../../../../Sounds/MM/Rain.mp3'),
+    music: require('../../../../Audio/MM/Mysterious.mp3'),
+    ambient: require('../../../../Audio/MM/Rain.mp3'),
     speaker: 'Маргарита',
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -5515,8 +5515,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 345
       }],
-    music: require('../../../../Sounds/MM/Calm.mp3'),
-    ambient: require('../../../../Sounds/MM/Rain.mp3'),
+    music: require('../../../../Audio/MM/Calm.mp3'),
+    ambient: require('../../../../Audio/MM/Rain.mp3'),
     speaker: 'Артур Нильсен',
     imageFront: require('../../../../Images/MM/Persons/Arthur.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -6061,7 +6061,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 380
       }],
-    music: require('../../../../Sounds/MM/Saw.mp3'),
+    music: require('../../../../Audio/MM/Saw.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Detective_Cabinet.jpg')
   },
 
@@ -6964,8 +6964,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 437
       }],
     message: 'В дальнейшем Маргарита будет надевать на тренировки эту одежду. ',
-    music: require('../../../../Sounds/MM/Daily.mp3'),
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/MM/Daily.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Gym.jpg')
   },
 
@@ -7469,7 +7469,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 470
       }],
-    music: require('../../../../Sounds/MM/Romantic.mp3'),
+    music: require('../../../../Audio/MM/Romantic.mp3'),
     parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Gym.jpg')
   },
@@ -8314,7 +8314,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 524
       }],
-    music: require('../../../../Sounds/MM/Daily.mp3'),
+    music: require('../../../../Audio/MM/Daily.mp3'),
     parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Gym.jpg')
   },
@@ -8474,7 +8474,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 534
       }],
-    music: require('../../../../Sounds/MM/Daily.mp3'),
+    music: require('../../../../Audio/MM/Daily.mp3'),
     parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Gym.jpg')
   },
@@ -8604,7 +8604,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 542
       }],
-    music: require('../../../../Sounds/MM/Daily.mp3'),
+    music: require('../../../../Audio/MM/Daily.mp3'),
     parallax: 'left',
     imageBack: require('../../../../Images/MM/Backgrounds/Gym.jpg')
   },
@@ -8709,8 +8709,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 549
       }],
-    music: require('../../../../Sounds/MM/Calm.mp3'),
-    ambient: require('../../../../Sounds/MM/Rain.mp3'),
+    music: require('../../../../Audio/MM/Calm.mp3'),
+    ambient: require('../../../../Audio/MM/Rain.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Dark_Entrance.jpg')
   },
 
@@ -9178,7 +9178,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 579
       }],
-    music: require('../../../../Sounds/MM/Romantic.mp3'),
+    music: require('../../../../Audio/MM/Romantic.mp3'),
     imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.MM, 'Margo_Room') }
   },
 
@@ -9434,7 +9434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 595
       }],
-    music: require('../../../../Sounds/MM/Jonathan.mp3'),
+    music: require('../../../../Audio/MM/Jonathan.mp3'),
     imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.MM, 'Margo_Room') }
   },
 
@@ -9679,8 +9679,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 612
       }],
-    music: require('../../../../Sounds/MM/Mysterious.mp3'),
-    ambient: require('../../../../Sounds/MM/Engine.mp3'),
+    music: require('../../../../Audio/MM/Mysterious.mp3'),
+    ambient: require('../../../../Audio/MM/Engine.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Light_Car_Room.jpg')
   },
 
@@ -10062,7 +10062,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 637
       }],
-    music: require('../../../../Sounds/MM/Jonathan.mp3'),
+    music: require('../../../../Audio/MM/Jonathan.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Light_Car_Room.jpg')
   },
 
@@ -11141,7 +11141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 704
       }],
-    music: require('../../../../Sounds/MM/Mysterious.mp3'),
+    music: require('../../../../Audio/MM/Mysterious.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Light_Car_Room.jpg')
   },
 
@@ -11439,8 +11439,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 723
       }],
-    music: require('../../../../Sounds/MM/Mysterious.mp3'),
-    ambient: require('../../../../Sounds/MM/Engine.mp3'),
+    music: require('../../../../Audio/MM/Mysterious.mp3'),
+    ambient: require('../../../../Audio/MM/Engine.mp3'),
     speaker: 'Маргарита ',
     imageFront: require('../../../../Images/MM/Persons/Margo_Form.png'),
     imageBorder: require('../../../../Images/MM/UI/Border.png'),
@@ -11776,8 +11776,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 743
       }],
-    music: require('../../../../Sounds/MM/Alone.mp3'),
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/MM/Alone.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Panorama_Cabinet.jpg')
   },
 
@@ -11995,7 +11995,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         goTo: 757
       }],
     message: 'Утро следующего дня. ',
-    music: require('../../../../Sounds/MM/Saw.mp3'),
+    music: require('../../../../Audio/MM/Saw.mp3'),
     imageBack: require('../../../../Images/MM/Backgrounds/Detective_Cabinet.jpg')
   },
 

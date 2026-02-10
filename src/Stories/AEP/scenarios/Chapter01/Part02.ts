@@ -15,7 +15,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 1
       }],
     message: '<i>На следующий день…',
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
@@ -1678,7 +1678,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 98
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 
@@ -1972,7 +1972,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 116
       }],
-    music: require('../../../../Sounds/AEP/Ero.mp3'),
+    music: require('../../../../Audio/AEP/Ero.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 
@@ -2187,7 +2187,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 130
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 
@@ -2216,7 +2216,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 132
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 
@@ -2417,7 +2417,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 144
       }],
-    music: require('../../../../Sounds/AEP/Ero.mp3'),
+    music: require('../../../../Audio/AEP/Ero.mp3'),
     speaker: '$Имя Игрока$',
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'MatteoIsSexy' },
@@ -3048,7 +3048,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 184
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
@@ -3080,7 +3080,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 186
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 
@@ -3109,7 +3109,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 188
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 
@@ -3917,7 +3917,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 236
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
   },
 
@@ -4550,7 +4550,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 274
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
@@ -5511,7 +5511,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.AEP, value: 1, category: 'Choice', id: 'LikeMadMatt' }],
-    music: require('../../../../Sounds/AEP/Ero.mp3'),
+    music: require('../../../../Audio/AEP/Ero.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
   },
 
@@ -5872,7 +5872,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 353
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
   },
 
@@ -6014,7 +6014,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 362
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     speaker: '$Имя Игрока$',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     stats: [
@@ -6199,7 +6199,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         gift: true,
         goTo: 373
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
   },
 
@@ -6371,7 +6371,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     beforeBegin: whiteFlash,
     message: '<i>Спустя два месяца…',
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
@@ -7129,7 +7129,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 428
       }],
-    simple: require('../../../../Sounds/AEP/Car_Alarm.mp3'),
+    simple: require('../../../../Audio/AEP/Car_Alarm.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 

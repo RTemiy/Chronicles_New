@@ -1,5 +1,8 @@
 import type CContainer from './CContainer'
 import { type IChat } from '../Types/IChat'
+import { loadData } from '../Functions/localStorageManager';
+import { EStoriesEn } from '../Utils/EStoriesNames';
+import { profileManager } from '../Components/Profile/Profile';
 
 export class CSmartphone {
   private chats: Record<string, IChat> = {}
@@ -38,7 +41,10 @@ export class CSmartphone {
     messageElement.classList.add(message.fellow ? 'smartphone-chat__message-fellow' : 'smartphone-chat__message-me')
 
     if (message.text) {
-      messageElement.innerHTML = message.text
+      const storyName = EStoriesEn[loadData(['LastSave_ScenarioInfo'])!.split('_')[0]]
+      let resultText = `<p class='smartphone-chat__message-senderName'>${message.senderName}</p><p class='smartphone-chat__message-text'>${message.text}</p>`
+      resultText = resultText.replace('$Имя Игрока$', loadData([`${storyName}_Name`])!)
+      messageElement.innerHTML = resultText
     }
 
     this.Smartphone.messages.appendChild(messageElement)
@@ -52,7 +58,7 @@ export class CSmartphone {
     }
   }
 
-  private async waitForAnswer (messageElement: HTMLElement, answers: Array<{ text: string, goToAnchor: string }>): Promise<string> {
+  private async waitForAnswer (messageElement: HTMLElement, answers: Array<{ text: string, goToAnchor: string, senderName: string }>): Promise<string> {
     return await new Promise<string>(resolve => {
       const answersContainer = document.createElement('div')
       answersContainer.classList.add('smartphone-chat__answers')
@@ -63,7 +69,7 @@ export class CSmartphone {
         answerButton.innerHTML = answer.text
         answerButton.onclick = () => {
           // Отображаем выбранный ответ как новое сообщение от пользователя
-          this.renderMessage({ fellow: false, text: answer.text })
+          this.renderMessage({ fellow: false, text: answer.text, senderName: answer.senderName })
           // Удаляем кнопки после выбора
           answersContainer.parentElement!.remove()
           // Возвращаем якорь для перехода
@@ -85,6 +91,8 @@ export class CSmartphone {
     this.Smartphone.time.innerHTML = chat.time ?? ''
     this.Smartphone.battery.innerHTML = chat.battery?.toString() ?? ''
     this.Smartphone.messages.innerHTML = ''
+    // eslint-disable-next-line @typescript-eslint/no-base-to-string,@typescript-eslint/restrict-plus-operands
+    this.Smartphone.messages.style.backgroundImage = 'url("' + profileManager.findBanner(loadData(['Profile', 'Banner'])!).image + '")'
     // this.Smartphone.closeButton.style.display = 'none' // Кнопка скрывается через CSS (opacity: 0)
 
     // Добавляем обработчик клика для ускорения сообщений

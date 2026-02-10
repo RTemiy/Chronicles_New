@@ -21,7 +21,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 1
       }],
     message: '<i>За 9 месяцев до событий в Колизее',
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
@@ -821,7 +821,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 50
       }],
-    music: require('../../../../Sounds/AEP/Ero.mp3'),
+    music: require('../../../../Audio/AEP/Ero.mp3'),
     imageFront: require('../../../../Images/AEP/Persons/Naked_Guy.png'),
     imageBorder: require('../../../../Images/AEP/UI/Border.png'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Fog.jpg')
@@ -932,7 +932,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 57
       }],
-    simple: require('../../../../Sounds/AEP/Alarm.mp3'),
+    simple: require('../../../../Audio/AEP/Alarm.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Fog.jpg')
   },
 
@@ -965,8 +965,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 59
       }],
-    simple: require('../../../../Sounds/Common/Silence.mp3'),
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    simple: require('../../../../Audio/Common/Silence.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
@@ -1700,7 +1700,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 102
       }],
-    music: require('../../../../Sounds/AEP/Ero.mp3'),
+    music: require('../../../../Audio/AEP/Ero.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Taxi.jpg')
   },
 
@@ -1760,7 +1760,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 106
       }],
-    simple: require('../../../../Sounds/AEP/Car_Alarm.mp3'),
+    simple: require('../../../../Audio/AEP/Car_Alarm.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Taxi.jpg')
   },
 
@@ -2306,7 +2306,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 141
       }],
-    music: require('../../../../Sounds/AEP/Ero.mp3'),
+    music: require('../../../../Audio/AEP/Ero.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Taxi.jpg')
   },
 
@@ -2366,7 +2366,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 145
       }],
-    simple: require('../../../../Sounds/AEP/Car_Alarm.mp3'),
+    simple: require('../../../../Audio/AEP/Car_Alarm.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Taxi.jpg')
   },
 
@@ -2879,7 +2879,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 178
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
@@ -4895,7 +4895,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 300
       }],
-    music: require('../../../../Sounds/AEP/Party.mp3'),
+    music: require('../../../../Audio/AEP/Party.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Penthouse_Party.jpg')
   },
 
@@ -5464,7 +5464,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 334
       }],
-    music: require('../../../../Sounds/AEP/Ero.mp3'),
+    music: require('../../../../Audio/AEP/Ero.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Penthouse_Party.jpg')
   },
 
@@ -5806,7 +5806,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 357
       }],
-    music: require('../../../../Sounds/AEP/Party.mp3'),
+    music: require('../../../../Audio/AEP/Party.mp3'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
     imageBack: require('../../../../Images/AEP/Backgrounds/Penthouse_Party.jpg')
@@ -6179,7 +6179,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 378
       }],
-    music: require('../../../../Sounds/AEP/Daily.mp3'),
+    music: require('../../../../Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
   },
   // @MARK

@@ -16,8 +16,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/Aurora/Lighthouse.mp3'),
-    ambient: require('../../../../Sounds/Aurora/Wind.mp3'),
+    music: require('../../../../Audio/Aurora/Lighthouse.mp3'),
+    ambient: require('../../../../Audio/Aurora/Wind.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Dawn.jpg')
   },
 
@@ -90,7 +90,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 7
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Dawn.jpg')
   },
 
@@ -1111,7 +1111,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 72
       }],
-    simple: require('../../../../Sounds/Immortals/Beep_Long.mp3'),
+    simple: require('../../../../Audio/Immortals/Beep_Long.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/University_Hall.jpg')
   },
 
@@ -1216,7 +1216,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 79
       }],
-    simple: require('../../../../Sounds/Immortals/Beep_Long.mp3'),
+    simple: require('../../../../Audio/Immortals/Beep_Long.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/University_Outside.jpg')
   },
 
@@ -3241,7 +3241,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 206
       }],
     parallax: 'left',
-    music: require('../../../../Sounds/Aurora/City.mp3'),
+    music: require('../../../../Audio/Aurora/City.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/City_Fountain.jpg')
   },
 
@@ -3602,7 +3602,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 230
       }],
-    music: require('../../../../Sounds/Aurora/Church.mp3'),
+    music: require('../../../../Audio/Aurora/Church.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Church.jpg')
   },
 
@@ -5382,7 +5382,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 341
       }],
-    music: require('../../../../Sounds/Aurora/Lighthouse.mp3'),
+    music: require('../../../../Audio/Aurora/Lighthouse.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
@@ -5600,7 +5600,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 355
       }],
-    music: require('../../../../Sounds/Aurora/Lighthouse.mp3'),
+    music: require('../../../../Audio/Aurora/Lighthouse.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 

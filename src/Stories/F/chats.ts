@@ -7,11 +7,13 @@ smartphone.addChat('FPart01Irina',
     messages: [
       {
         fellow: true,
+        senderName: 'Ира',
         text: 'Перезвони мне.'
       },
       {
         fellow: true,
         text: 'Срочно',
+        senderName: 'Ира',
         end: true
       }
     ]

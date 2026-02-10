@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/OTV/Peril.mp3'),
+    music: require('../../../../Audio/OTV/Peril.mp3'),
     speaker: 'Парень',
     imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -150,7 +150,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 10
       }],
-    music: require('../../../../Sounds/OTV/Secret.mp3'),
+    music: require('../../../../Audio/OTV/Secret.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
@@ -213,7 +213,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    simple: require('../../../../Sounds/OTV/Lina_Laugh.mp3'),
+    simple: require('../../../../Audio/OTV/Lina_Laugh.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
@@ -293,7 +293,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    simple: require('../../../../Sounds/OTV/Alex_Laugh.mp3'),
+    simple: require('../../../../Audio/OTV/Alex_Laugh.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
@@ -387,7 +387,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    music: require('../../../../Sounds/OTV/Ambient.mp3'),
+    music: require('../../../../Audio/OTV/Ambient.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
   },
 
@@ -489,7 +489,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 301
       }],
-    music: require('../../../../Sounds/OTV/Secret.mp3'),
+    music: require('../../../../Audio/OTV/Secret.mp3'),
     speaker: 'Ники',
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -507,7 +507,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 32
       }],
-    music: require('../../../../Sounds/OTV/Secret.mp3'),
+    music: require('../../../../Audio/OTV/Secret.mp3'),
     speaker: 'Ники',
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -736,7 +736,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 46
       }],
-    music: require('../../../../Sounds/OTV/Ambient.mp3'),
+    music: require('../../../../Audio/OTV/Ambient.mp3'),
     speaker: 'Эми',
     imageFront: require('../../../../Images/OTV/Persons/Amy.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
@@ -2275,7 +2275,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 143
       }],
-    music: require('../../../../Sounds/OTV/Secret.mp3'),
+    music: require('../../../../Audio/OTV/Secret.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
@@ -2570,7 +2570,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 159
       }],
-    music: require('../../../../Sounds/OTV/Ambient.mp3'),
+    music: require('../../../../Audio/OTV/Ambient.mp3'),
     speaker: 'Ники',
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),

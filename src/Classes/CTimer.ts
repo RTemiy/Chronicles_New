@@ -11,7 +11,7 @@ export default class CTimer {
 
   set (time: number, failFunc: () => void): void {
     let leftTime = time
-    this.soundManager.play('ambient', require('../Sounds/Common/Timer.mp3'))
+    this.soundManager.play('ambient', require('../Audio/Common/Timer.mp3'))
     this.timerElement.setAttribute(
       'style',
       `display: flex; --duration: ${time}s`
@@ -36,7 +36,7 @@ export default class CTimer {
     clearTimeout(this.timeout)
     clearInterval(this.interval)
     this.soundManager.stop('ambient')
-    this.soundManager.play('ambient', require('../Sounds/Common/Silence.mp3'))
+    this.soundManager.play('ambient', require('../Audio/Common/Silence.mp3'))
     this.timerElement.style.display = 'none'
   }
 }

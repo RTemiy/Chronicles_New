@@ -93,7 +93,9 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  background: linear-gradient(#e66465, #9198e5);
+  background-size: 300px 550px;
+  background-repeat: no-repeat;
+  background-position: center;
   scroll-behavior: smooth;
 }
 
@@ -102,12 +104,13 @@
 }
 
 .smartphone-chat__message{
-  background-color: white;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
   padding: 5px 7px;
   margin: 0 5px;
   width: auto;
   border-radius: 15px;
+  backdrop-filter: blur(15px);
   @extend %show;
 
   &:first-of-type{
@@ -117,6 +120,14 @@
   &:last-of-type{
     margin-bottom: 5px;
   }
+}
+
+.smartphone-chat__message-senderName{
+  font-weight: 800;
+  color: #bdbdbd;
+}
+
+.smartphone-chat__message-text{
 }
 
 .smartphone-chat__message-fellow{
@@ -135,13 +146,15 @@
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   padding: 5px;
 }
 
 .smartphone-chat__answer-button{
   border-radius: 25px;
   background-color: rgba(128, 128, 128, 0.25);
+  font-size: var(--mediumtext);
+  padding: 5px 5px;
   @extend %button-tap;
 }
 

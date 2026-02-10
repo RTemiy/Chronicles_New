@@ -17,7 +17,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/Immortals/Guide.mp3'),
+    music: require('../../../../Audio/Immortals/Guide.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 

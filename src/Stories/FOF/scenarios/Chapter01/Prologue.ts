@@ -15,7 +15,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/FOF/Whisper.mp3'),
+    music: require('../../../../Audio/FOF/Whisper.mp3'),
     speaker: 'Эйприл',
     imageFront: require('../../../../Images/FOF/Persons/April.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -363,7 +363,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 22
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Locker_Room.jpg')
   },
 
@@ -2000,7 +2000,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 123
       }],
-    music: require('../../../../Sounds/FOF/Show.mp3'),
+    music: require('../../../../Audio/FOF/Show.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -2150,7 +2150,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
           saveEndProgress('FOF', 'Глава 1', 'Часть 1', '0')
         }
       }],
-    simple: require('../../../../Sounds/FOF/Prologue_Hit.mp3'),
+    simple: require('../../../../Audio/FOF/Prologue_Hit.mp3'),
     achievement: { story: EStoriesEn.FOF, name: 'PrologueCompleted' },
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   }

@@ -20,10 +20,14 @@ export default class CStatsManager {
 
   change (statInfo: IStat): void {
     const stat = this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id]
-    stat.value! += statInfo.value!
+    if (statInfo.value! === -100500) {
+      this.hideStat(stat)
+    } else {
+      stat.value! += statInfo.value!
+    }
     if (stat.category === 'Person' || stat.category === 'Item' || stat.category === 'Effect') {
       if (statInfo.silent !== true) {
-        stat.show = 1
+        statInfo.value! !== -100500 && (stat.show = 1)
       }
     }
     sendActivity(`Выбирает ${stat.story} ${stat.id} ${stat.value}`)
@@ -113,27 +117,28 @@ export default class CStatsManager {
       if (stat.story === story) {
         if (stat.category === 'Person') {
           persons += `
-                     <div class="inventory__person-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
-                     <img class="inventory__person-image" src="${stat.image}">
-                     <p class="inventory__person-value">${stat.showValue === false ? '' : stat.value}</p>
-                     <p class="inventory__person-name">${stat.name}</p>
+                     <div class='inventory__person-cell ${stat.show === 1 ? '' : 'inventory__disabled'}' data-image='${stat.image}' data-title='${stat.title}' data-description='${stat.description}'>
+                     <img class='inventory__person-image' src='${stat.image}'>
+                     <p class='inventory__person-value'>${stat.showValue === false ? '' : stat.value}</p>
+                     <p class='inventory__person-name'>${stat.name}</p>
                      </div>
                      `
-        } if (stat.category === 'Item') {
+        }
+        if (stat.category === 'Item') {
           items += `
-                     <div class="inventory__item-cell ${stat.show === 1 && stat.value! > 0 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
-                     <img class="inventory__item-image" src="${stat.image}">
-                     <p class="inventory__item-value">${stat.value! > 1 ? stat.value : ''}</p>
-                     <p class="inventory__item-name">${stat.name}</p>
+                     <div class='inventory__item-cell ${stat.show === 1 && stat.value! > 0 ? '' : 'inventory__disabled'}' data-image='${stat.image}' data-title='${stat.title}' data-description='${stat.description}'>
+                     <img class='inventory__item-image' src='${stat.image}'>
+                     <p class='inventory__item-value'>${stat.value! > 1 ? stat.value : ''}</p>
+                     <p class='inventory__item-name'>${stat.name}</p>
                      </div>
                      `
         }
         if (stat.category === 'Effect') {
           effects += `
-                     <div class="inventory__effect-cell ${stat.show === 1 ? '' : 'inventory__disabled'}" data-image="${stat.image}" data-title="${stat.title}" data-description="${stat.description}">
-                     <img class="inventory__effect-image" src="${stat.image}">
-                     <p class="inventory__effect-value">${stat.showValue === false ? '' : stat.value}</p>
-                     <p class="inventory__effect-name">${stat.name}</p>
+                     <div class='inventory__effect-cell ${stat.show === 1 ? '' : 'inventory__disabled'}' data-image='${stat.image}' data-title='${stat.title}' data-description='${stat.description}'>
+                     <img class='inventory__effect-image' src='${stat.image}'>
+                     <p class='inventory__effect-value'>${stat.showValue === false ? '' : stat.value}</p>
+                     <p class='inventory__effect-name'>${stat.name}</p>
                      </div>
                      `
         }
@@ -184,5 +189,9 @@ export default class CStatsManager {
     to.value = from.value
     to.show = from.show
     from.show = 0
+  }
+
+  hideStat (statInfo: IStat): void {
+    this.#stats[statInfo.story + '_' + statInfo.category + '_' + statInfo.id].show = 0
   }
 }

@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -2455,7 +2455,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 153
       }],
     beforeBegin: redFlash,
-    ambient: require('../../../../Sounds/ROR/Small_Whisper.mp3'),
+    ambient: require('../../../../Audio/ROR/Small_Whisper.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Nightmare.jpg')
   },
 
@@ -2529,7 +2529,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 158
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
@@ -4155,7 +4155,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         gift: true,
         goTo: 261
       }],
-    music: require('../../../../Sounds/ROR/Jack_Theme.mp3'),
+    music: require('../../../../Audio/ROR/Jack_Theme.mp3'),
     imageFront: require('../../../../Images/ROR/Objects/Carete.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
@@ -4564,7 +4564,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 287
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
@@ -5979,7 +5979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 376
       }],
-    ambient: require('../../../../Sounds/ROR/Small_Crowd.mp3'),
+    ambient: require('../../../../Audio/ROR/Small_Crowd.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
   },
 
@@ -6245,7 +6245,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 393
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
   },
 

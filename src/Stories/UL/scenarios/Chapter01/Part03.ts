@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/UL/Main.mp3'),
+    music: require('../../../../Audio/UL/Main.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
   },
 
@@ -554,7 +554,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 35
       }],
-    simple: require('../../../../Sounds/UL/Mobile.mp3'),
+    simple: require('../../../../Audio/UL/Mobile.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
   },
 
@@ -905,7 +905,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 204
       }
     ],
-    music: require('../../../../Sounds/UL/Thinking.mp3'),
+    music: require('../../../../Audio/UL/Thinking.mp3'),
     speaker: 'Амелия',
     imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
     imageBorder: require('../../../../Images/UL/UI/Border.png'),
@@ -1070,7 +1070,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 64
       }],
-    simple: require('../../../../Sounds/UL/Dog.mp3'),
+    simple: require('../../../../Audio/UL/Dog.mp3'),
     imageFront: require('../../../../Images/UL/Persons/Dog.png'),
     imageBorder: require('../../../../Images/UL/UI/Border.png'),
     imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
@@ -2340,7 +2340,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 146
       }],
-    simple: require('../../../../Sounds/UL/Whisper.mp3'),
+    simple: require('../../../../Audio/UL/Whisper.mp3'),
     imageBack: require('../../../../Images/UL/Backgrounds/Cafe_Memory.jpg')
   },
 

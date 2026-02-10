@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/TDP/Glaswer.mp3'),
+    music: require('../../../../Audio/TDP/Glaswer.mp3'),
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
@@ -200,7 +200,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    simple: require('../../../../Sounds/TDP/Water_Splash.mp3'),
+    simple: require('../../../../Audio/TDP/Water_Splash.mp3'),
     fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Item', id: 'Bag' }],
@@ -574,7 +574,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 36
       }],
-    simple: require('../../../../Sounds/TDP/Coins.mp3'),
+    simple: require('../../../../Audio/TDP/Coins.mp3'),
     speakerR: 'Мортимер',
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
@@ -655,7 +655,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    simple: require('../../../../Sounds/TDP/Slap.mp3'),
+    simple: require('../../../../Audio/TDP/Slap.mp3'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
@@ -861,7 +861,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 54
       }],
-    simple: require('../../../../Sounds/TDP/Coins.mp3'),
+    simple: require('../../../../Audio/TDP/Coins.mp3'),
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Vig.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
@@ -1147,7 +1147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 72
       }],
-    simple: require('../../../../Sounds/TDP/Slap.mp3'),
+    simple: require('../../../../Audio/TDP/Slap.mp3'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
@@ -1208,7 +1208,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 76
       }],
-    simple: require('../../../../Sounds/TDP/Horse.mp3'),
+    simple: require('../../../../Audio/TDP/Horse.mp3'),
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Horse_Black.png'),
     imageBorder: require('../../../../Images/TDP/UI/Border.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
@@ -1663,7 +1663,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 103
       }],
-    music: require('../../../../Sounds/TDP/Shadows_Theme.mp3'),
+    music: require('../../../../Audio/TDP/Shadows_Theme.mp3'),
     fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
@@ -1975,7 +1975,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 680
       }],
-    music: require('../../../../Sounds/TDP/Glaswer.mp3'),
+    music: require('../../../../Audio/TDP/Glaswer.mp3'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
@@ -2325,7 +2325,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 143
       }],
     message: 'Вы потратили двести крон. ',
-    simple: require('../../../../Sounds/TDP/Coins.mp3'),
+    simple: require('../../../../Audio/TDP/Coins.mp3'),
     stats: [
       { story: EStoriesEn.TDP, value: -200, category: 'Item', id: 'Money' }],
     imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
@@ -3411,7 +3411,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     interruptiveFrame: { goTo: 206 },
     imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png'),
-    simple: require('../../../../Sounds/TDP/Door_Squak.mp3')
+    simple: require('../../../../Audio/TDP/Door_Squak.mp3')
   },
 
   {

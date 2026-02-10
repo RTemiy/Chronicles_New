@@ -16,8 +16,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 1
       }],
     message: '<i> Нью-Йорк 1885 год',
-    music: require('../../../../Sounds/Immortals/NY.mp3'),
-    ambient: require('../../../../Sounds/Immortals/NY_Humble.mp3'),
+    music: require('../../../../Audio/Immortals/NY.mp3'),
+    ambient: require('../../../../Audio/Immortals/NY_Humble.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
   },
 
@@ -526,7 +526,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: 'Справилась сама',
         goTo: 36
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
   },
 
@@ -1519,7 +1519,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 89
       }],
-    simple: require('../../../../Sounds/Immortals/Knock.mp3'),
+    simple: require('../../../../Audio/Immortals/Knock.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Entry.jpg')
   },
 
@@ -1590,7 +1590,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 94
       }],
-    music: require('../../../../Sounds/Immortals/Monster.mp3'),
+    music: require('../../../../Audio/Immortals/Monster.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Old_Lady_Flat.jpg')
@@ -1697,8 +1697,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         goTo: 101
       }],
     stats: [{ story: EStoriesEn.Immortals, category: 'Choice', id: 'DontBelieve', value: +1 }],
-    music: require('../../../../Sounds/Immortals/NY.mp3'),
-    ambient: require('../../../../Sounds/Immortals/NY_Humble.mp3'),
+    music: require('../../../../Audio/Immortals/NY.mp3'),
+    ambient: require('../../../../Audio/Immortals/NY_Humble.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885.jpg')
   },
 
@@ -2164,7 +2164,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 130
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
@@ -2322,7 +2322,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 141
       }],
-    music: require('../../../../Sounds/Immortals/Monster.mp3'),
+    music: require('../../../../Audio/Immortals/Monster.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
@@ -2412,8 +2412,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 147
       }],
-    music: require('../../../../Sounds/Immortals/NY.mp3'),
-    ambient: require('../../../../Sounds/Immortals/NY_Humble.mp3'),
+    music: require('../../../../Audio/Immortals/NY.mp3'),
+    ambient: require('../../../../Audio/Immortals/NY_Humble.mp3'),
     stats: [{ story: EStoriesEn.Immortals, category: 'Choice', id: 'RunAwayFromNicola', value: +1 }],
     imageFront: require('../../../../Images/Immortals/Persons/Katarina.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
@@ -2510,7 +2510,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 153
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets_Dark.jpg')
   },
 
@@ -2815,7 +2815,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 174
       }],
-    music: require('../../../../Sounds/Immortals/Monster.mp3'),
+    music: require('../../../../Audio/Immortals/Monster.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Hospital.jpg')
@@ -2905,7 +2905,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 180
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Streets.jpg')
   },
 
@@ -3248,7 +3248,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 204
       }],
-    music: require('../../../../Sounds/Immortals/Monster.mp3'),
+    music: require('../../../../Audio/Immortals/Monster.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/NY_1885_Bookstore_Inside.jpg')
@@ -3324,7 +3324,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 500
       }],
-    music: require('../../../../Sounds/Immortals/Nowadays.mp3'),
+    music: require('../../../../Audio/Immortals/Nowadays.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Med.jpg')
   },
 
@@ -3800,7 +3800,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 237
       }],
-    simple: require('../../../../Sounds/Immortals/Beep_Long.mp3'),
+    simple: require('../../../../Audio/Immortals/Beep_Long.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Med.jpg')
   },
 
@@ -4147,7 +4147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 258
       }],
-    music: require('../../../../Sounds/Immortals/Neitan.mp3'),
+    music: require('../../../../Audio/Immortals/Neitan.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Corridor.jpg')
   },
 
@@ -5178,7 +5178,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 323
       }],
-    music: require('../../../../Sounds/Immortals/Leon.mp3'),
+    music: require('../../../../Audio/Immortals/Leon.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/University_Corridor.jpg')
   },
 
@@ -6031,7 +6031,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 377
       }],
-    music: require('../../../../Sounds/Immortals/Cheryl.mp3'),
+    music: require('../../../../Audio/Immortals/Cheryl.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_House.jpg')
   },
 
@@ -6387,7 +6387,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Г�
         text: '',
         goTo: 399
       }],
-    music: require('../../../../Sounds/Immortals/Nowadays.mp3'),
+    music: require('../../../../Audio/Immortals/Nowadays.mp3'),
     imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 

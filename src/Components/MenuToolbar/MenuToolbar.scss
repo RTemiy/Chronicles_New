@@ -15,6 +15,16 @@
     border-radius: 50px;
     justify-content: space-evenly;
     gap: 5px;
+    &:after{
+      content: '';
+      position: absolute;
+      left: -10px;
+      bottom: -10px;
+      width: 100vw;
+      height: 120%;
+      background: linear-gradient(rgba(255, 255, 255, 0), rgba(20, 52, 56, 0.5));
+      z-index: -1;
+    }
   }
 
   @container style(--desktopmode: true){
@@ -55,7 +65,7 @@
     align-items: center;
     background: transparent;
     width: 70px;
-    height: 20px;
+    height: 30px;
     border-radius: 50px;
   }
 

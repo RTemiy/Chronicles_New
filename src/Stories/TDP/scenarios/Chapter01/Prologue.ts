@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/TDP/Glaswer.mp3'),
+    music: require('../../../../Audio/TDP/Glaswer.mp3'),
     imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 

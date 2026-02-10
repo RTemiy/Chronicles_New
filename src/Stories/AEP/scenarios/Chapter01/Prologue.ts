@@ -16,7 +16,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/AEP/Prologue.mp3'),
+    music: require('../../../../Audio/AEP/Prologue.mp3'),
     imageBack: require('../../../../Images/AEP/Backgrounds/Col.jpg')
   },
 

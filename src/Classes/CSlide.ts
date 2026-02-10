@@ -11,6 +11,7 @@ import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
 import { changeState } from '../Functions/backEventActions'
 import { doVibrate } from '../Functions/doVibrate'
 import typingText from '../Functions/typingText';
+import menuToolbar from '../Components/MenuToolbar/MenuToolbar';
 
 export default class CSlide {
   private previousSlideText = ''
@@ -37,7 +38,7 @@ export default class CSlide {
   showOKMessage (OKMessageInfo: { image: string, buttonText: string, goTo: () => void }): void {
     this.showOKMessageFunc(OKMessageInfo)
     setTimeout(() => {
-      this.soundManager.play('simple', require('../Sounds/Common/Notification.mp3'))
+      this.soundManager.play('simple', require('../Audio/Common/Notification.mp3'))
       doVibrate('short')
     }, 2500)
   }
@@ -154,6 +155,7 @@ export default class CSlide {
 
   private resetButtonValues (): void {
     this.slide.text.onclick = () => {}
+    this.slide.fullscreenObject.onclick = () => {}
     this.forEachButton((button: HTMLElement) => {
       button.onclick = () => {}
       button.style.display = 'none'
@@ -164,7 +166,7 @@ export default class CSlide {
 
   message (text: string, noSound?: boolean): void {
     if (noSound === false || noSound === undefined) {
-      this.soundManager.play('simple', require('../Sounds/Common/Notification.mp3'))
+      this.soundManager.play('simple', require('../Audio/Common/Notification.mp3'))
     }
     doVibrate('double')
     this.slide.messageText.innerHTML = text
@@ -189,9 +191,12 @@ export default class CSlide {
       this.slide.text.innerHTML = this.slide.text.innerHTML.replace('$Имя Игрока$', loadData([`${storyName}_Name`]))
     }, 10)
     // eslint-disable-next-line no-mixed-operators
-    loadData(['Settings_TypingText']) === 'true' || loadData(['Settings_TypingText']) === null && (setTimeout(() => {
-      typingText(this.slide.text)
-    }, 280))
+
+    if (loadData(['Settings_TypingText']) === 'true' || loadData(['Settings_TypingText']) === null) {
+      setTimeout(() => {
+        typingText(this.slide.text)
+      }, 280)
+    }
   }
 
   changeSpeaker (speakerText: string | undefined, speakerTextL: string | undefined, speakerTextR: string | undefined): void {
@@ -361,6 +366,7 @@ export default class CSlide {
       this.soundManager.play('menu')
       hideLoadingScreen()
       changeState('menu')
+      menuToolbar.storiesButton.click()
       setTimeout(() => { hideLoadingScreen() }, 1100)
     }
 

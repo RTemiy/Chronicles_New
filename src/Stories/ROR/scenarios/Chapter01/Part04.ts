@@ -13,7 +13,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
   },
 
@@ -60,7 +60,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    music: require('../../../../Sounds/ROR/Ball.mp3'),
+    music: require('../../../../Audio/ROR/Ball.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
   },
 
@@ -2405,7 +2405,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    music: require('../../../../Sounds/ROR/Romantic.mp3'),
+    music: require('../../../../Audio/ROR/Romantic.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -2516,7 +2516,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 154
       }],
-    music: require('../../../../Sounds/ROR/Ball.mp3'),
+    music: require('../../../../Audio/ROR/Ball.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
@@ -2933,7 +2933,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 177
       }],
-    music: require('../../../../Sounds/ROR/Romantic.mp3'),
+    music: require('../../../../Audio/ROR/Romantic.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     parallax: 'left',
@@ -3260,7 +3260,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 196
       }],
-    music: require('../../../../Sounds/ROR/Ball.mp3'),
+    music: require('../../../../Audio/ROR/Ball.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
@@ -3307,7 +3307,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 199
       }],
-    music: require('../../../../Sounds/ROR/Ball.mp3'),
+    music: require('../../../../Audio/ROR/Ball.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
@@ -5755,7 +5755,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 354
       }],
-    music: require('../../../../Sounds/ROR/Ball.mp3'),
+    music: require('../../../../Audio/ROR/Ball.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
@@ -5963,7 +5963,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 367
       }],
-    music: require('../../../../Sounds/ROR/Ball.mp3'),
+    music: require('../../../../Audio/ROR/Ball.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')

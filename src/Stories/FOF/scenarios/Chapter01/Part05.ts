@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    ambient: require('../../../../Sounds/FOF/Heartbeat.mp3'),
+    ambient: require('../../../../Audio/FOF/Heartbeat.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
@@ -122,7 +122,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 10
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
@@ -555,7 +555,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    music: require('../../../../Sounds/FOF/Sad.mp3'),
+    music: require('../../../../Audio/FOF/Sad.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Club_Street.jpg')
   },
 
@@ -1688,7 +1688,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 140
       }],
-    music: require('../../../../Sounds/FOF/Club_2.mp3'),
+    music: require('../../../../Audio/FOF/Club_2.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Club.jpg')
   },
 
@@ -2307,7 +2307,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 189
       }],
-    music: require('../../../../Sounds/FOF/Sad_2.mp3'),
+    music: require('../../../../Audio/FOF/Sad_2.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Taxi_City.jpg')
   },
 

@@ -22,41 +22,41 @@ statsManager.add({
   story: EStoriesEn.ITLH
 })
 
-/*statsManager.add({
+statsManager.add({
   category: 'Person',
   id: 'Cheryl',
   name: 'Шерил',
-  image: require('../../Images/Immortals/Persons/Cheryl.png'),
-  title: 'Шерил все реже улыбается… Ее жизни что-то угрожает? ',
-  description: 'Девушка живет в соседнем доме. Мы с ней довольно близко общаемся, часто проводим время вместе. Она мне как сестра.',
-  story: EStoriesEn.Immortals
+  image: require('../../Images/ITLH/Persons/Cheryl_Avatar.png'),
+  title: 'Она стала все реже улыбаться… Ее жизни что-то угрожает?',
+  description: 'Подруга, живущая в соседнем доме. Настоящая мечтательница, участвует в волонтерских проектах. Ее образ мыслей порой кажется необычным, но именно эта уникальность сближает нас еще больше.',
+  story: EStoriesEn.ITLH
 })
 
 statsManager.add({
   category: 'Person',
   id: 'Scarlett',
   name: 'Скарлетт',
-  image: require('../../Images/Immortals/Persons/Scarlett.png'),
-  title: 'Кажется, что в последнее время Скар сама не своя. Могу ли я ей помочь?',
-  description: 'Моя подруга, с которой мы учимся в одном университете. Она умная и довольно активная. Никогда не упустит возможности читать мне нотации.',
-  story: EStoriesEn.Immortals
+  image: require('../../Images/ITLH/Persons/Scarlett_Avatar.png'),
+  title: 'Похоже, в последнее время она сама не своя. Могу ли я помочь?',
+  description: 'Лучшая подруга, сокурсница. Умная и энергичная, четко знает, чего хочет добиться в жизни. Не упустит возможность читать нотации о важности учебы.',
+  story: EStoriesEn.ITLH
 })
 
 statsManager.add({
   category: 'Person',
   id: 'Neitan',
   name: 'Нэйтан',
-  image: require('../../Images/Immortals/Persons/Neitan.png'),
-  title: 'Он знаток своего дела и любитель повторять про «важность» учебы.',
-  description: 'Профессор, который уже несколько лет преподает историю в нашем университете. Его харизма и обаяние прекрасно сочетаются с острым умом.',
-  story: EStoriesEn.Immortals
+  image: require('../../Images/ITLH/Persons/Neitan_Avatar.png'),
+  title: 'Мы часто общаемся вне занятий благодаря моей дружбе с его братом, однако Нэйтан держит дистанцию.',
+  description: 'Обаятельный и харизматичный профессор истории, который преподает в нашем университете. Строго следит за выполнением поставленных задач и поддерживает студентов в их начинаниях.',
+  story: EStoriesEn.ITLH
 })
 
-statsManager.add({
+/*statsManager.add({
   category: 'Person',
   id: 'Leon',
   name: 'Леон',
-  image: require('../../Images/Immortals/Persons/Leon.png'),
+  image: require('../../Images/ITLH/Persons/Leon_Avatar.png'),
   title: 'Мы снова общаемся с ним, как в старые добрые времена…',
   description: 'Мой хороший друг, одногруппник, брат профессора Нэйтана. Леон всегда был очень заботлив и внимателен к окружающим. У него большие планы на жизнь, которые он хочет воплотить в ближайшее время.',
   story: EStoriesEn.Immortals
@@ -66,7 +66,7 @@ statsManager.add({
   category: 'Person',
   id: 'Nicola',
   name: 'Никола',
-  image: require('../../Images/Immortals/Persons/Nicola.png'),
+  image: require('../../Images/ITLH/Persons/Nicola.png'),
   title: 'Это он? Великий ученый? Я не схожу с ума?',
   description: 'Инженер и учёный-физик, изобретатель в области электротехники и радиотехники. «Я не тружусь более для настоящего, я тружусь для будущего».',
   story: EStoriesEn.Immortals
@@ -76,7 +76,7 @@ statsManager.add({
   category: 'Person',
   id: 'Robert',
   name: 'Роберт',
-  image: require('../../Images/Immortals/Persons/Robert.png'),
+  image: require('../../Images/ITLH/Persons/Robert.png'),
   title: 'Фиктивный муж Катарины. Называет себя охотником на монстров.',
   description: 'Этот мужчина определенно играет не последнюю роль во всем происходящем. Возможно только он сможет защитить меня в эпохе Теслы. Хотелось бы надеяться, что он друг…',
   story: EStoriesEn.Immortals
@@ -86,7 +86,7 @@ statsManager.add({
   category: 'Person',
   id: 'Alexander',
   name: 'Александр',
-  image: require('../../Images/Immortals/Persons/Antagonist_Mask.png'),
+  image: require('../../Images/ITLH/Persons/Antagonist_Mask.png'),
   title: 'Странный мужчина, который одержим Катариной.',
   description: 'Я ничего о нем не знаю. Он определенно внушает страх, но я не могу избавиться от чувства заинтересованности. Мне хочется докопаться до его мотивов. Что я найду в общении с ним? Ответы или только боль?',
   story: EStoriesEn.Immortals

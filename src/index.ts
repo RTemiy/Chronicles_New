@@ -62,7 +62,7 @@ tabManagerMenu.open(Stories.self)
 export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
-export const soundManager = new CSoundSystem(require('./Sounds/Common/Silence.mp3'), require('./Sounds/Common/Notification.mp3'), [require('./Sounds/Common/Menu01.mp3'), require('./Sounds/Common/Menu02.mp3'), require('./Sounds/Common/Menu03.mp3'), require('./Sounds/Common/Menu04.mp3')])
+export const soundManager = new CSoundSystem(require('./Audio/Common/Silence.mp3'), require('./Audio/Common/Notification.mp3'), [require('./Audio/Common/Menu01.mp3'), require('./Audio/Common/Menu02.mp3'), require('./Audio/Common/Menu03.mp3'), require('./Audio/Common/Menu04.mp3')])
 export const wardrobe = new CWardrobe(Wardrobe)
 export const smartphone = new CSmartphone(Smartphone)
 export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, hideToolbar, animateBackForth, renderInventory, renderJournal, showCutscene, showOKMessage)
@@ -118,6 +118,7 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
   hideLoadingScreen()
   changeState('menu')
+  menuToolbar.storiesButton.click()
   setTimeout(() => { hideLoadingScreen() }, 1100)
 }
 

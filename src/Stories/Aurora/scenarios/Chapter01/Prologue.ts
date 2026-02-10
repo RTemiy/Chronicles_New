@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 50
       }],
-    music: require('../../../../Sounds/Aurora/Aurora.mp3'),
+    music: require('../../../../Audio/Aurora/Aurora.mp3'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
   },
@@ -31,7 +31,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 1
       }],
     message: previousSlideMessage,
-    music: require('../../../../Sounds/Aurora/Aurora.mp3'),
+    music: require('../../../../Audio/Aurora/Aurora.mp3'),
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
   },

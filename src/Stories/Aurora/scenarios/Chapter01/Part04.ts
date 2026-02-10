@@ -16,8 +16,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/Aurora/Lighthouse.mp3'),
-    ambient: require('../../../../Sounds/Aurora/Sea_Waves.mp3'),
+    music: require('../../../../Audio/Aurora/Lighthouse.mp3'),
+    ambient: require('../../../../Audio/Aurora/Sea_Waves.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse_Night_Blur.jpg')
   },
 
@@ -119,7 +119,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 8
       }],
-    simple: require('../../../../Sounds/Aurora/Beatrice.mp3'),
+    simple: require('../../../../Audio/Aurora/Beatrice.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse_Night_Blur.jpg')
   },
 
@@ -255,7 +255,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 17
       }],
-    simple: require('../../../../Sounds/Aurora/Woman_Laugh.mp3'),
+    simple: require('../../../../Audio/Aurora/Woman_Laugh.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse_Night_Blur.jpg')
   },
 
@@ -357,7 +357,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 24
       }],
-    simple: require('../../../../Sounds/Immortals/Beep_Long.mp3'),
+    simple: require('../../../../Audio/Immortals/Beep_Long.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
 
@@ -2551,7 +2551,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 408
       }],
-    music: require('../../../../Sounds/Aurora/Romantic_Man.mp3'),
+    music: require('../../../../Audio/Aurora/Romantic_Man.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')
   },
 
@@ -3981,7 +3981,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 252
       }],
-    music: require('../../../../Sounds/Aurora/Stress.mp3'),
+    music: require('../../../../Audio/Aurora/Stress.mp3'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Flat_Post.jpg')
   },
 
@@ -6460,7 +6460,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 161
       }],
-    music: require('../../../../Sounds/Aurora/Romantic_Man.mp3'),
+    music: require('../../../../Audio/Aurora/Romantic_Man.mp3'),
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Aurora, 'Aurora_Part04') },
     imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Images/Aurora/Backgrounds/Arthur_Home_Streets.jpg')

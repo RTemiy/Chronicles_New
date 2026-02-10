@@ -13,7 +13,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/UA/Calm_Theme.mp3'),
+    music: require('../../../../Audio/UA/Calm_Theme.mp3'),
     speaker: 'Громкий посетитель',
     imageFront: require('../../../../Images/UA/Persons/Huckster.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -863,7 +863,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 51
       }],
     message: 'Через два дня.',
-    music: require('../../../../Sounds/UA/Idyll_Theme.mp3'),
+    music: require('../../../../Audio/UA/Idyll_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
   },
 
@@ -1233,8 +1233,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 75
       }],
-    simple: require('../../../../Sounds/UA/Crowd.mp3'),
-    music: require('../../../../Sounds/UA/Calm_Theme.mp3'),
+    simple: require('../../../../Audio/UA/Crowd.mp3'),
+    music: require('../../../../Audio/UA/Calm_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
   },
 
@@ -2278,7 +2278,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 141
       }],
-    music: require('../../../../Sounds/UA/Tension_Theme.mp3'),
+    music: require('../../../../Audio/UA/Tension_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
   },
 
@@ -4556,7 +4556,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 285
       }],
-    music: require('../../../../Sounds/UA/Idyll_Theme.mp3'),
+    music: require('../../../../Audio/UA/Idyll_Theme.mp3'),
     speaker: 'Августа',
     imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -5236,7 +5236,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 800
       }],
-    simple: require('../../../../Sounds/UA/Breaking_Dishes.mp3'),
+    simple: require('../../../../Audio/UA/Breaking_Dishes.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
@@ -5266,7 +5266,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 329
       }],
-    music: require('../../../../Sounds/UA/Alert_Theme.mp3'),
+    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
     speaker: 'Августа',
     imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -5791,7 +5791,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 360
       }],
     message: 'Неделя спустя.',
-    music: require('../../../../Sounds/UA/Calm_Theme.mp3'),
+    music: require('../../../../Audio/UA/Calm_Theme.mp3'),
     imageFront: require('../../../../Images/UA/Objects/Cash_register.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
@@ -5839,7 +5839,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 363
       }],
-    simple: require('../../../../Sounds/UA/Metal_hit.mp3'),
+    simple: require('../../../../Audio/UA/Metal_hit.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
   },
 
@@ -7952,7 +7952,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 492
       }],
     speaker: 'Кей',
-    simple: require('../../../../Sounds/UA/Cough.mp3'),
+    simple: require('../../../../Audio/UA/Cough.mp3'),
     imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
@@ -8080,7 +8080,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 500
       }],
     speaker: 'Кей',
-    simple: require('../../../../Sounds/UA/Cough.mp3'),
+    simple: require('../../../../Audio/UA/Cough.mp3'),
     imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
     imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
@@ -8560,7 +8560,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 530
       }],
-    simple: require('../../../../Sounds/UA/Breaking_Metal.mp3'),
+    simple: require('../../../../Audio/UA/Breaking_Metal.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
   },
 

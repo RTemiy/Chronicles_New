@@ -15,7 +15,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath.jpg')
   },
 
@@ -44,7 +44,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    ambient: require('../../../../Sounds/FOF/Water.mp3'),
+    ambient: require('../../../../Audio/FOF/Water.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath.jpg')
   },
 
@@ -73,7 +73,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
@@ -102,7 +102,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 7
       }],
-    ambient: require('../../../../Sounds/FOF/Droplets.mp3'),
+    ambient: require('../../../../Audio/FOF/Droplets.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
@@ -131,7 +131,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 9
       }],
-    music: require('../../../../Sounds/FOF/Nightmare.mp3'),
+    music: require('../../../../Audio/FOF/Nightmare.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
@@ -173,8 +173,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 12
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
-    simple: require('../../../../Sounds/FOF/Woman_Cry.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
+    simple: require('../../../../Audio/FOF/Woman_Cry.mp3'),
     speaker: 'Кассандра',
     imageFront: require('../../../../Images/FOF/Persons/Cassandra_Towel.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -206,7 +206,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    simple: require('../../../../Sounds/FOF/Signal.mp3'),
+    simple: require('../../../../Audio/FOF/Signal.mp3'),
     speaker: 'Кассандра',
     imageFront: require('../../../../Images/FOF/Persons/Cassandra_Towel.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -224,7 +224,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    simple: require('../../../../Sounds/FOF/Signal.mp3'),
+    simple: require('../../../../Audio/FOF/Signal.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
@@ -239,7 +239,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    music: require('../../../../Sounds/FOF/Whispers.mp3'),
+    music: require('../../../../Audio/FOF/Whispers.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
@@ -418,7 +418,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 28
       }],
     speaker: '…',
-    simple: require('../../../../Sounds/FOF/Psycho_Laugh.mp3'),
+    simple: require('../../../../Audio/FOF/Psycho_Laugh.mp3'),
     imageFront: require('../../../../Images/FOF/Persons/Shadow.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     darkSilhouette: true,
@@ -465,7 +465,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 31
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
@@ -838,7 +838,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 54
       }],
-    simple: require('../../../../Sounds/FOF/Nick_Giggle.mp3'),
+    simple: require('../../../../Audio/FOF/Nick_Giggle.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
@@ -1042,7 +1042,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 67
       }],
-    simple: require('../../../../Sounds/FOF/Nick_Giggle.mp3'),
+    simple: require('../../../../Audio/FOF/Nick_Giggle.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
@@ -1232,7 +1232,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 80
       }],
-    simple: require('../../../../Sounds/FOF/Nick_Giggle.mp3'),
+    simple: require('../../../../Audio/FOF/Nick_Giggle.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
@@ -1599,7 +1599,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 103
       }],
     message: 'Похоже, между вами что-то происходит. Или это все мимолетно?',
-    music: require('../../../../Sounds/FOF/Christopher.mp3'),
+    music: require('../../../../Audio/FOF/Christopher.mp3'),
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -1891,7 +1891,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 122
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
@@ -2190,7 +2190,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 139
       }],
-    music: require('../../../../Sounds/FOF/Bath.mp3'),
+    music: require('../../../../Audio/FOF/Bath.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
@@ -2312,7 +2312,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 

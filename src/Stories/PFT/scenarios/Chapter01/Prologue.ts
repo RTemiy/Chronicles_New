@@ -14,8 +14,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/PFT/Calm_Theme.mp3'),
-    /* simple: require('../../../../Sounds/PFT/Tram.mp3'), */
+    music: require('../../../../Audio/PFT/Calm_Theme.mp3'),
+    /* simple: require('../../../../Audio/PFT/Tram.mp3'), */
     imageBack: require('../../../../Images/PFT/Backgrounds/Museum_Sunny.jpg')
   },
 
@@ -468,7 +468,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    music: require('../../../../Sounds/PFT/Stress_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Stress_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Picture_Room.jpg')
   },
 
@@ -539,7 +539,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: ''
       }],
     beforeBegin: vhs,
-    ambient: require('../../../../Sounds/PFT/ManWhisper.mp3'),
+    ambient: require('../../../../Audio/PFT/ManWhisper.mp3'),
     interruptiveFrame: { goTo: 211, timeMS: 3000 },
     imageBack: require('../../../../Images/PFT/Backgrounds/Picture_Room_Scary.jpg')
   },
@@ -585,7 +585,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 30
       }],
-    ambient: require('../../../../Sounds/PFT/FastBreath.mp3'),
+    ambient: require('../../../../Audio/PFT/FastBreath.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Picture_Room_Scary.jpg')
   },
 
@@ -600,7 +600,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 225
       }],
-    ambient: require('../../../../Sounds/PFT/FastBreath.mp3'),
+    ambient: require('../../../../Audio/PFT/FastBreath.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Picture_Room_Dark.jpg')
   },
 
@@ -645,7 +645,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 230
       }],
-    ambient: require('.././../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Picture_Room.jpg')
   },
 
@@ -672,7 +672,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 34
       }],
-    music: require('../../../../Sounds/PFT/Calm_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Calm_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Museum_Sunny.jpg')
   },
 
@@ -863,7 +863,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 44
       }],
-    simple: require('../../../../Sounds/PFT/Ring.mp3'),
+    simple: require('../../../../Audio/PFT/Ring.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Museum_Sunny.jpg')
   },
 
@@ -1130,7 +1130,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         goTo: 56
       }],
     message: 'Около 2 лет назад…',
-    music: require('../../../../Sounds/PFT/Viktor_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Viktor_Theme.mp3'),
     stats: [
       { story: EStoriesEn.PFT, value: +1, category: 'Person', id: 'Viktor' }],
     beforeBegin: whiteFlash,
@@ -1380,7 +1380,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
       }],
     beforeBegin: whiteFlash,
     message: 'После свадьбы, год назад. Счастливый брак? ',
-    music: require('../../../../Sounds/PFT/Calm_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Calm_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Room.jpg')
   },
 
@@ -1502,7 +1502,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 79
       }],
-    music: require('../../../../Sounds/PFT/Stress_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Stress_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Room.jpg')
   },
 
@@ -1621,7 +1621,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 87
       }],
-    simple: require('../../../../Sounds/PFT/Slap.mp3'),
+    simple: require('../../../../Audio/PFT/Slap.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Room.jpg')
   },
 
@@ -1650,7 +1650,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 89
       }],
-    music: require('../../../../Sounds/PFT/Tale_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Tale_Theme.mp3'),
     speakerL: 'Венди',
     beforeBegin: vhs,
     fullscreenObjectL: require('../../../../Images/PFT/Persons/Wendy_GreenDress.png'),
@@ -1816,7 +1816,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         goTo: 100
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/PFT/Stress_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Stress_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Room.jpg')
   },
 
@@ -1904,7 +1904,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 106
       }],
-    music: require('.././../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     stats: [
       { story: EStoriesEn.PFT, value: 1, category: 'Item', id: 'Letter' }],
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Room.jpg')
@@ -1935,7 +1935,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 108
       }],
-    music: require('../../../../Sounds/PFT/Stress_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Stress_Theme.mp3'),
     fullscreenObjectR: require('../../../../Images/PFT/Persons/Priscilla.png'),
     stats: [
       { story: EStoriesEn.PFT, value: 0, category: 'Person', id: 'Priscilla' }],
@@ -2499,8 +2499,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 144
       }],
-    simple: require('../../../../Sounds/PFT/DoorSlap.mp3'),
-    music: require('.././../../../Sounds/Common/Silence.mp3'),
+    simple: require('../../../../Audio/PFT/DoorSlap.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Room.jpg')
   },
 
@@ -2559,7 +2559,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 148
       }],
-    music: require('../../../../Sounds/PFT/Stress_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Stress_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Viktor_Corridor.jpg')
   },
 
@@ -2851,7 +2851,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 165
       }],
-    music: require('.././../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Picture_Room_Dark.jpg')
   },
 
@@ -2866,7 +2866,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 166
       }],
-    music: require('../../../../Sounds/PFT/Hospital_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Hospital_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Chamber_Blurred.jpg')
   },
 
@@ -3089,7 +3089,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
       }],
     speakerL: 'Венди',
     fullscreenObjectL: require('../../../../Images/PFT/Persons/Wendy_Hospital_Eyes.png'),
-    music: require('.././../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Picture_Room_Dark.jpg')
   },
 
@@ -3104,7 +3104,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 182
       }],
-    music: require('../../../../Sounds/PFT/Stress_Theme.mp3'),
+    music: require('../../../../Audio/PFT/Stress_Theme.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Chamber.jpg')
   },
 
@@ -3511,7 +3511,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: ''
       }],
     cutScene: { video: require('../../../../Images/PFT/Cutscenes/OnTheBed.mp4'), goTo: 300 },
-    music: require('.././../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/PFT/Backgrounds/Chamber.jpg')
   },
 

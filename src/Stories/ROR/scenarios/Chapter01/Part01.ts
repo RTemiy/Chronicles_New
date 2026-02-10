@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
   },
 
@@ -663,7 +663,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 200
       }],
-    simple: require('../../../../Sounds/ROR/Money.mp3'),
+    simple: require('../../../../Audio/ROR/Money.mp3'),
     imageFront: require('../../../../Images/ROR/Objects/Moneybag.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Roadway.jpg')
@@ -1933,7 +1933,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 95
       }],
-    music: require('../../../../Sounds/ROR/Jack_Theme.mp3'),
+    music: require('../../../../Audio/ROR/Jack_Theme.mp3'),
     imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
     imageBorder: require('../../../../Images/ROR/UI/Border.png'),
     stats: [
@@ -2333,7 +2333,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 201
       }],
-    music: require('../../../../Sounds/ROR/City.mp3'),
+    music: require('../../../../Audio/ROR/City.mp3'),
     imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 

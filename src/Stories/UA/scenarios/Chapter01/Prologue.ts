@@ -16,7 +16,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 1
       }],
     message: 'Первое правило Солдата: Защищай, убивай, умирай',
-    music: require('../../../../Sounds/UA/Alert_Theme.mp3'),
+    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -290,7 +290,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 19
       }],
     stats: [{ story: EStoriesEn.UA, value: 100, category: 'Effect', id: 'Health' }],
-    simple: require('../../../../Sounds/UA/1Shot.mp3'),
+    simple: require('../../../../Audio/UA/1Shot.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -305,8 +305,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 20
       }],
-    simple: require('../../../../Sounds/UA/3Shots.mp3'),
-    music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
+    simple: require('../../../../Audio/UA/3Shots.mp3'),
+    music: require('../../../../Audio/UA/Fight_Theme.mp3'),
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -352,7 +352,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 23
       }],
-    simple: require('../../../../Sounds/UA/5Shots.mp3'),
+    simple: require('../../../../Audio/UA/5Shots.mp3'),
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -370,7 +370,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 24
       }],
-    simple: require('../../../../Sounds/UA/BodySounds.mp3'),
+    simple: require('../../../../Audio/UA/BodySounds.mp3'),
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -1277,7 +1277,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     speaker: 'EVE-13C',
     imageFront: require('../../../../Images/UA/Persons/Eve.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    simple: require('../../../../Sounds/UA/1Shot.mp3'),
+    simple: require('../../../../Audio/UA/1Shot.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1533,7 +1533,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 101
       }],
-    simple: require('../../../../Sounds/UA/1Shot.mp3'),
+    simple: require('../../../../Audio/UA/1Shot.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1682,7 +1682,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 110
       }],
     beforeBegin: blackFlash,
-    music: require('../../../../Sounds/UA/Alert_Theme.mp3'),
+    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 
@@ -2377,7 +2377,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 202
       }],
-    music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
+    music: require('../../../../Audio/UA/Fight_Theme.mp3'),
     speaker: 'ZAYNE-3C',
     imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
     imageBorder: require('../../../../Images/UA/UI/Border.png'),
@@ -2843,7 +2843,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 187
       }],
-    music: require('../../../../Sounds/UA/Alert_Theme.mp3'),
+    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
@@ -3168,8 +3168,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 155
       }],
-    simple: require('../../../../Sounds/UA/5Shots.mp3'),
-    music: require('../../../../Sounds/UA/Fight_Theme.mp3'),
+    simple: require('../../../../Audio/UA/5Shots.mp3'),
+    music: require('../../../../Audio/UA/Fight_Theme.mp3'),
     imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
   },
 

@@ -1,206 +1,23 @@
 import { statsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
-/*statsManager.add({
+statsManager.add({
   category: 'Choice',
-  id: 'WakeUp',
-  story: EStoriesEn.Immortals
+  id: 'GoSleep',
+  story: EStoriesEn.ITLH,
+  idDescription: 'Поспать еще'
 })
 
 statsManager.add({
   category: 'Choice',
-  id: 'GoTaxi',
-  story: EStoriesEn.Immortals
+  id: 'Library',
+  story: EStoriesEn.ITLH,
+  idDescription: 'Библиотека'
 })
 
 statsManager.add({
   category: 'Choice',
-  id: 'GoBus',
-  story: EStoriesEn.Immortals
+  id: 'Taxi',
+  story: EStoriesEn.ITLH,
+  idDescription: 'Поехать на такси'
 })
-
-statsManager.add({
-  category: 'Choice',
-  id: 'TakeSerious',
-  idDescription: 'Выбор "Отнестись серьезно"',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'DontBelieve',
-  idDescription: 'Выбор "Не верить в происходящее"',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'RunAwayFromNicola',
-  idDescription: 'Выбор "Убежать"',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'TurnToSide',
-  idDescription: 'Выбор "Убежать в переулок"',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'HelpFromLeon',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'TakeCigarette',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'TellCherylTheTruth',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'TwoChoices',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'SpendTimeWithFamily',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'SpendTimeHomework',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'WriteLeon',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'WriteNeitan',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'WriteScarlett',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'WriteCheryl',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'GoLeftGuidesWorld',
-  idDescription: 'Пойти налево в мире проводника',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'InviteCheryl',
-  idDescription: 'Пригласить Шерил на вечеринку',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'FollowScarlett',
-  idDescription: 'Последовать после вечеринки за Скарлетт',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'HugLeon',
-  idDescription: 'Обнять Леона',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'GiveCherylMoney',
-  idDescription: 'Одолжить денег Шерил',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'TryToEscape',
-  idDescription: 'Попытаться сбежать',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'AttackMonster',
-  idDescription: 'Атаковать Монстра',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'GoToTerrace',
-  idDescription: 'Пойти на террасу',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'WaitRobert',
-  idDescription: 'Дождаться Роберта',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'WalkGarden',
-  idDescription: 'Прогуляться по саду',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'DanceWithRobert',
-  idDescription: 'Приняла преложение',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'LeaveGarden',
-  idDescription: 'Покинуть сад',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'ResistAlexander',
-  idDescription: 'Противостоять',
-  story: EStoriesEn.Immortals
-})
-
-statsManager.add({
-  category: 'Choice',
-  id: 'PushAlexander',
-  idDescription: 'Оттолкнуть',
-  story: EStoriesEn.Immortals
-})*/

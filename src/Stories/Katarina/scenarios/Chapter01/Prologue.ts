@@ -58,7 +58,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Katarina, chapterName: 'Гл
       }],
     beforeBegin: whiteFlash,
     message: '<i> Нью-Йорк 1882 год',
-    music: require('../../../../Sounds/Immortals/Robert_Theme.mp3'),
+    music: require('../../../../Audio/Immortals/Robert_Theme.mp3'),
     imageBack: require('../../../../Images/Katarina/Backgrounds/NY.jpg')
   },
 
@@ -262,7 +262,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Katarina, chapterName: 'Гл
         text: '',
         goTo: 18
       }],
-    music: require('../../../../Sounds/Immortals/Ball.mp3'),
+    music: require('../../../../Audio/Immortals/Ball.mp3'),
     imageBack: require('../../../../Images/Katarina/Backgrounds/Bankee.jpg')
   },
 
@@ -726,7 +726,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Katarina, chapterName: 'Гл
         text: '',
         goTo: 47
       }],
-    music: require('../../../../Sounds/Immortals/Robert_Theme.mp3'),
+    music: require('../../../../Audio/Immortals/Robert_Theme.mp3'),
     imageBack: require('../../../../Images/Katarina/Backgrounds/Gaming_Club.jpg')
   },
 

@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: 'Ð“Ð
         text: '',
         goTo: 300
       }],
-    music: require('../../../../Sounds/Immortals/Nowadays.mp3'),
+    music: require('../../../../Audio/Immortals/Nowadays.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Room_Curtains.jpg')
   },
 

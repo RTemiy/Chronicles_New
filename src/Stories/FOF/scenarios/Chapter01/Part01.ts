@@ -16,7 +16,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 1
       }],
     imageBack: require('../../../../Images/FOF/Backgrounds/Hospital_Room.jpg'),
-    music: require('../../../../Sounds/FOF/Cardio.mp3')
+    music: require('../../../../Audio/FOF/Cardio.mp3')
   },
 
   {
@@ -296,7 +296,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     message: 'Дерек ненавидит тебя и бросил прямо в больнице',
     speaker: 'Дерек',
     darkSilhouette: true,
@@ -369,7 +369,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     message: 'Дерек ничего к тебе не испытывает. Он бросил тебя прямо в больнице',
     speaker: 'Дерек',
     darkSilhouette: true,
@@ -446,7 +446,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 24
       }],
     message: 'Дерек переживает за тебя, он продолжает поддерживать ваши отношения',
-    music: require('../../../../Sounds/FOF/Derek.mp3'),
+    music: require('../../../../Audio/FOF/Derek.mp3'),
     speaker: 'Дерек',
     darkSilhouette: true,
     imageFront: require('../../../../Images/FOF/Persons/Derek.png'),
@@ -536,7 +536,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 29
       }],
-    music: require('../../../../Sounds/FOF/Space.mp3'),
+    music: require('../../../../Audio/FOF/Space.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
   },
 
@@ -755,7 +755,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 43
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
   },
 
@@ -860,7 +860,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 50
       }],
-    ambient: require('../../../../Sounds/FOF/Cry.mp3'),
+    ambient: require('../../../../Audio/FOF/Cry.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
   },
 
@@ -913,7 +913,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     imageLeft: require('../../../../Images/FOF/Persons/Cassandra.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg'),
-    ambient: require('../../../../Sounds/Common/Silence.mp3')
+    ambient: require('../../../../Audio/Common/Silence.mp3')
   },
 
   {
@@ -1193,7 +1193,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 68
       }],
-    music: require('../../../../Sounds/FOF/Gym.mp3'),
+    music: require('../../../../Audio/FOF/Gym.mp3'),
     message: 'Твоя внешкольная деятельность поражает!',
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     stats: [{ story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Respect' }],
@@ -1599,7 +1599,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 94
       }],
     speaker: 'Кассандра',
-    music: require('../../../../Sounds/FOF/Space.mp3'),
+    music: require('../../../../Audio/FOF/Space.mp3'),
     imageLeft: require('../../../../Images/FOF/Persons/Cassandra.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
@@ -1855,7 +1855,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 109
       }],
-    music: require('../../../../Sounds/FOF/Whisper.mp3'),
+    music: require('../../../../Audio/FOF/Whisper.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -1977,7 +1977,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 117
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Restaurant.jpg')
   },
 
@@ -2485,7 +2485,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    music: require('../../../../Sounds/FOF/Space.mp3'),
+    music: require('../../../../Audio/FOF/Space.mp3'),
     stats: [{ story: EStoriesEn.FOF, value: 0, category: 'Person', id: 'Aunt' }],
     imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
   },
@@ -3241,8 +3241,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 187
       }],
     beforeBegin: blackFlash,
-    simple: require('../../../../Sounds/FOF/Explo.mp3'),
-    music: require('../../../../Sounds/Common/Silence.mp3'),
+    simple: require('../../../../Audio/FOF/Explo.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -3271,7 +3271,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 189
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -3635,7 +3635,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 213
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     speaker: 'Кристофер',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -4027,7 +4027,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -4581,7 +4581,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 269
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -4669,7 +4669,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 275
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     speaker: 'Кристофер',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -5657,7 +5657,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 330
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     speaker: 'Эбигейл',
     imageLeft: require('../../../../Images/FOF/Persons/Abigeil.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),

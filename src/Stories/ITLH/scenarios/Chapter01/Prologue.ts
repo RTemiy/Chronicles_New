@@ -17,7 +17,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/ITLH/Theme_Guide.mp3'),
+    music: require('../../../../Audio/ITLH/Music/Theme_Guide.mp3'),
     speakerR: 'Неизвестный',
     blurredSilhouette: true,
     fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),

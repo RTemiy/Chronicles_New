@@ -12,7 +12,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       {
         text: ''
       }],
-    music: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     cutScene: { video: require('../../../../Images/OTV/Cutscenes/Prologue.mp4'), goTo: 1 },
     imageBack: require('../../../../Images/OTV/Backgrounds/Concert.jpg')
   },
@@ -28,7 +28,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    music: require('../../../../Sounds/OTV/Prologue.mp3'),
+    music: require('../../../../Audio/OTV/Prologue.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Concert.jpg')
   },
 
@@ -212,7 +212,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    simple: require('../../../../Sounds/OTV/Scream_Girl.mp3'),
+    simple: require('../../../../Audio/OTV/Scream_Girl.mp3'),
     imageFront: require('../../../../Images/OTV/Persons/Artist.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Concert.jpg')
@@ -227,7 +227,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: ''
       }],
     cutScene: { video: require('../../../../Images/OTV/Cutscenes/Concert.mp4'), goTo: 15 },
-    music: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Concert.jpg')
   },
 
@@ -242,7 +242,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    music: require('../../../../Sounds/OTV/Concert.mp3'),
+    music: require('../../../../Audio/OTV/Concert.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Concert.jpg')
   },
 
@@ -425,7 +425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 28
       }],
-    music: require('../../../../Sounds/OTV/Concert_Blurred.mp3'),
+    music: require('../../../../Audio/OTV/Concert_Blurred.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
@@ -442,7 +442,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.OTV, value: +1, category: 'Item', id: 'Phone' }],
-    simple: require('../../../../Sounds/OTV/Phone_Call.mp3'),
+    simple: require('../../../../Audio/OTV/Phone_Call.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
@@ -695,7 +695,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 44
       }],
-    ambient: require('../../../../Sounds/OTV/Heartbeat_01.mp3'),
+    ambient: require('../../../../Audio/OTV/Heartbeat_01.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
@@ -742,7 +742,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 47
       }],
     speaker: 'Ники',
-    simple: require('../../../../Sounds/OTV/Ring.mp3'),
+    simple: require('../../../../Audio/OTV/Ring.mp3'),
     imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Images/OTV/UI/Border.png'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
@@ -759,7 +759,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 48
       }],
-    simple: require('../../../../Sounds/OTV/Heels.mp3'),
+    simple: require('../../../../Audio/OTV/Heels.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
@@ -774,8 +774,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 49
       }],
-    simple: require('../../../../Sounds/Common/Silence.mp3'),
-    music: require('../../../../Sounds/OTV/Peril.mp3'),
+    simple: require('../../../../Audio/Common/Silence.mp3'),
+    music: require('../../../../Audio/OTV/Peril.mp3'),
     imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 

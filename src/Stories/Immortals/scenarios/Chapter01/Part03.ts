@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/Immortals/Guide.mp3'),
+    music: require('../../../../Audio/Immortals/Guide.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
@@ -200,7 +200,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 15
       }],
-    ambient: require('../../../../Sounds/Immortals/Flowerfield.mp3'),
+    ambient: require('../../../../Audio/Immortals/Flowerfield.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Flowerfield.jpg')
   },
 
@@ -381,7 +381,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 27
       }],
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World.jpg')
   },
 
@@ -410,7 +410,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 29
       }],
-    simple: require('../../../../Sounds/Immortals/Thunder.mp3'),
+    simple: require('../../../../Audio/Immortals/Thunder.mp3'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World_Another.jpg')
   },
@@ -971,7 +971,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
       }],
     beforeBegin: whiteFlash,
     message: '<i> –ü–æ–º–ø–µ–∏ 79 –≥. –Ω.—ç',
-    music: require('../../../../Sounds/Immortals/Pompeii.mp3'),
+    music: require('../../../../Audio/Immortals/Pompeii.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Pompei_Square.jpg')
   },
 
@@ -1276,7 +1276,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 84
       }],
-    ambient: require('../../../../Sounds/Immortals/Rain.mp3'),
+    ambient: require('../../../../Audio/Immortals/Rain.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Pompei_Square_Rain.jpg')
   },
 
@@ -1363,8 +1363,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         goTo: 90
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/Immortals/Guide.mp3'),
-    ambient: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Immortals/Guide.mp3'),
+    ambient: require('../../../../Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Guides_World_Another.jpg')
   },
 
@@ -1822,7 +1822,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         goTo: 117
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Sounds/Immortals/Nowadays.mp3'),
+    music: require('../../../../Audio/Immortals/Nowadays.mp3'),
     imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.Immortals, 'Hero_Room') }
   },
 
@@ -2290,7 +2290,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 147
       }],
-    simple: require('../../../../Sounds/Immortals/Doorbell.mp3'),
+    simple: require('../../../../Audio/Immortals/Doorbell.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Kitchen.jpg')
   },
 
@@ -3272,7 +3272,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 207
       }],
-    music: require('../../../../Sounds/Immortals/Disco.mp3'),
+    music: require('../../../../Audio/Immortals/Disco.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom_Disco.jpg')
   },
 
@@ -4262,7 +4262,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 293
       }],
-    music: require('../../../../Sounds/Immortals/Nowadays.mp3'),
+    music: require('../../../../Audio/Immortals/Nowadays.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom_Disco.jpg')
   },
 
@@ -4780,7 +4780,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         goTo: 325
       }],
     stats: [{ value: 1, category: 'Choice', id: 'HugLeon' }],
-    music: require('../../../../Sounds/Immortals/Leon.mp3'),
+    music: require('../../../../Audio/Immortals/Leon.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Hero_House_Night.jpg')
   },
 
@@ -5070,7 +5070,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 344
       }],
-    music: require('../../../../Sounds/Immortals/Scarlett.mp3'),
+    music: require('../../../../Audio/Immortals/Scarlett.mp3'),
     stats: [{ value: 1, category: 'Choice', id: 'FollowScarlett' }],
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom_Disco.jpg')
   },
@@ -5320,7 +5320,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 360
       }],
-    music: require('../../../../Sounds/Immortals/Cheryl.mp3'),
+    music: require('../../../../Audio/Immortals/Cheryl.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Kitchen.jpg')
   },
 
@@ -5836,7 +5836,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 392
       }],
-    music: require('../../../../Sounds/Immortals/Nowadays.mp3'),
+    music: require('../../../../Audio/Immortals/Nowadays.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Livingroom.jpg')
   },
 
@@ -6236,7 +6236,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         goTo: 417
       }],
     message: '<i> –ù—å—é-–ô–æ—Ä–∫ 1885 –≥–æ–¥',
-    music: require('../../../../Sounds/Immortals/ChairThinking.mp3'),
+    music: require('../../../../Audio/Immortals/ChairThinking.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6964,7 +6964,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
     imageFront: require('../../../../Images/Immortals/Persons/Katarina_Ragged.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
-    music: require('../../../../Sounds/Immortals/ChairStress.mp3'),
+    music: require('../../../../Audio/Immortals/ChairStress.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -6994,7 +6994,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 467
       }],
-    simple: require('../../../../Sounds/Immortals/MonsterScream.mp3'),
+    simple: require('../../../../Audio/Immortals/MonsterScream.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 
@@ -7180,7 +7180,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 479
       }],
-    simple: require('../../../../Sounds/Immortals/MonsterScream.mp3'),
+    simple: require('../../../../Audio/Immortals/MonsterScream.mp3'),
     parallax: 'right',
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
@@ -7338,7 +7338,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 489
       }],
-    simple: require('../../../../Sounds/Immortals/Scream.mp3'),
+    simple: require('../../../../Audio/Immortals/Scream.mp3'),
     beforeBegin: redFlash,
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
@@ -7815,7 +7815,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 518
       }],
-    music: require('../../../../Sounds/Immortals/ChairStress.mp3'),
+    music: require('../../../../Audio/Immortals/ChairStress.mp3'),
     imageFront: require('../../../../Images/Immortals/Persons/Monster.png'),
     imageBorder: require('../../../../Images/Immortals/UI/Border.png'),
     parallax: 'right',
@@ -8151,7 +8151,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Immortals, chapterName: '–ì–
         text: '',
         goTo: 539
       }],
-    simple: require('../../../../Sounds/Immortals/Explosion.mp3'),
+    simple: require('../../../../Audio/Immortals/Explosion.mp3'),
     imageBack: require('../../../../Images/Immortals/Backgrounds/Chair_Room.jpg')
   },
 

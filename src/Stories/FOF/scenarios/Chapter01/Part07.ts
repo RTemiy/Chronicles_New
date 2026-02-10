@@ -14,7 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Mall01.jpg')
   },
 
@@ -412,7 +412,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Mall02.jpg')
   },
 
@@ -2806,7 +2806,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 167
       }],
-    music: require('../../../../Sounds/FOF/Sad.mp3'),
+    music: require('../../../../Audio/FOF/Sad.mp3'),
     speaker: 'Кристофер',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -3425,7 +3425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     parallax: 'right',
     imageBack: require('../../../../Images/FOF/Backgrounds/Mall02.jpg'),
-    music: require('../../../../Sounds/FOF/Main.mp3')
+    music: require('../../../../Audio/FOF/Main.mp3')
   },
 
   {
@@ -4513,7 +4513,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 275
       }],
-    music: require('../../../../Sounds/FOF/Christopher.mp3'),
+    music: require('../../../../Audio/FOF/Christopher.mp3'),
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part07') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -4818,7 +4818,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 293
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Mall01.jpg')
   },
 
@@ -5992,7 +5992,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 365
       }],
-    music: require('../../../../Sounds/FOF/Sad.mp3'),
+    music: require('../../../../Audio/FOF/Sad.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Mall01.jpg')
   },
 
@@ -6270,7 +6270,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 382
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Mall01.jpg')
   },
 
@@ -6796,7 +6796,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 416
       }],
-    music: require('../../../../Sounds/FOF/Heartbeat.mp3'),
+    music: require('../../../../Audio/FOF/Heartbeat.mp3'),
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part07') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -6986,7 +6986,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 428
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Cosmetics.jpg')
   },
 
@@ -7198,7 +7198,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 441
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Cosmetics.jpg')
   },
 

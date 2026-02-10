@@ -13,7 +13,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Sounds/FOF/Forest.mp3'),
+    music: require('../../../../Audio/FOF/Forest.mp3'),
     speaker: 'Эбигейл',
     imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil') },
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -1088,7 +1088,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 62
       }],
-    music: require('../../../../Sounds/FOF/Main.mp3'),
+    music: require('../../../../Audio/FOF/Main.mp3'),
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Constancy' },
       { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Shift' },
@@ -1755,7 +1755,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 104
       }],
-    music: require('../../../../Sounds/FOF/Stress01.mp3'),
+    music: require('../../../../Audio/FOF/Stress01.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -1821,7 +1821,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 108
       }],
-    simple: require('../../../../Sounds/FOF/Girl_Giggle.mp3'),
+    simple: require('../../../../Audio/FOF/Girl_Giggle.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -1870,7 +1870,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 111
       }],
-    simple: require('../../../../Sounds/FOF/Girl_Giggle.mp3'),
+    simple: require('../../../../Audio/FOF/Girl_Giggle.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Gym.jpg')
   },
 
@@ -1900,7 +1900,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 113
       }],
-    music: require('../../../../Sounds/FOF/Forest.mp3'),
+    music: require('../../../../Audio/FOF/Forest.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   },
 
@@ -1943,7 +1943,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 116
       }],
-    music: require('../../../../Sounds/FOF/Forest.mp3'),
+    music: require('../../../../Audio/FOF/Forest.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   },
 
@@ -2297,7 +2297,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 138
       }],
-    music: require('../../../../Sounds/FOF/Sad.mp3'),
+    music: require('../../../../Audio/FOF/Sad.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Glade.jpg')
   },
 
@@ -3451,7 +3451,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 210
       }],
-    music: require('../../../../Sounds/FOF/Christopher.mp3'),
+    music: require('../../../../Audio/FOF/Christopher.mp3'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
   },
 
@@ -3876,7 +3876,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 237
       }],
-    music: require('../../../../Sounds/Common/Silence.mp3'),
+    music: require('../../../../Audio/Common/Silence.mp3'),
     speaker: 'Кристофер',
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
@@ -3999,7 +3999,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 244
       }],
     speaker: 'Кристофер',
-    simple: require('../../../../Sounds/FOF/Nick_Giggle.mp3'),
+    simple: require('../../../../Audio/FOF/Nick_Giggle.mp3'),
     imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
     imageBorder: require('../../../../Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Images/FOF/Backgrounds/Wooden_Hall.jpg')
