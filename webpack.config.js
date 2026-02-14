@@ -97,7 +97,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      favicon: './src/Images/UI/icon.png',
+      favicon: './src/Media/Images/UI/icon.png',
       chunks: ['app']
     }),
     new CleanWebpackPlugin(),
@@ -112,7 +112,7 @@ module.exports = {
       crossorigin: 'use-credentials',
       icons: [
         {
-          src: path.resolve('src/Images/UI/icon.png'),
+          src: path.resolve('src/Media/Images/UI/icon.png'),
           sizes: [96, 128, 192, 256, 384, 512]
         }
       ],
