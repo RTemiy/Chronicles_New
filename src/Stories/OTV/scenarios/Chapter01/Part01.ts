@@ -14,11 +14,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/OTV/Peril.mp3'),
+    music: require('../../../../Media/Audio/OTV/Peril.mp3'),
     speaker: 'Парень',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -32,7 +32,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -47,9 +47,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 3
       }],
     speaker: 'Девушка',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -63,7 +63,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -77,7 +77,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -91,7 +91,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -105,7 +105,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 7
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -119,7 +119,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 8
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -134,9 +134,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 9
       }],
     speaker: 'Девушка',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -150,8 +150,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 10
       }],
-    music: require('../../../../Audio/OTV/Secret.mp3'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    music: require('../../../../Media/Audio/OTV/Secret.mp3'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -166,9 +166,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 11
       }],
     speaker: 'Девушка',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -182,7 +182,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 12
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -197,9 +197,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 13
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -213,8 +213,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    simple: require('../../../../Audio/OTV/Lina_Laugh.mp3'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    simple: require('../../../../Media/Audio/OTV/Lina_Laugh.mp3'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -229,9 +229,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 15
       }],
     speaker: 'Девушка',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -246,9 +246,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 16
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -262,7 +262,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -277,9 +277,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 18
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -293,8 +293,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    simple: require('../../../../Audio/OTV/Alex_Laugh.mp3'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    simple: require('../../../../Media/Audio/OTV/Alex_Laugh.mp3'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -309,9 +309,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 20
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -326,9 +326,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 21
       }],
     speaker: 'Девушка',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -343,9 +343,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 22
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -359,7 +359,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 23
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -373,7 +373,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 24
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -387,8 +387,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    music: require('../../../../Audio/OTV/Ambient.mp3'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/OTV/Ambient.mp3'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -402,7 +402,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 26
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -416,7 +416,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -430,7 +430,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 28
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -444,7 +444,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 29
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -458,7 +458,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 30
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -473,9 +473,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 31
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -489,11 +489,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 301
       }],
-    music: require('../../../../Audio/OTV/Secret.mp3'),
+    music: require('../../../../Media/Audio/OTV/Secret.mp3'),
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -507,11 +507,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 32
       }],
-    music: require('../../../../Audio/OTV/Secret.mp3'),
+    music: require('../../../../Media/Audio/OTV/Secret.mp3'),
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -526,9 +526,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 33
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -543,9 +543,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 34
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -560,9 +560,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 35
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -580,7 +580,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: 'Вспомнить концерт',
         goTo: 42
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -594,11 +594,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 37
       }],
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
     ghostSilhouette: true,
     stats: [{ story: EStoriesEn.OTV, value: 1, category: 'Person', id: 'Alex', silent: true }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -612,10 +612,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 38
       }],
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
     ghostSilhouette: true,
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -630,9 +630,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 39
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -646,7 +646,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 40
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -660,7 +660,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -674,7 +674,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -688,7 +688,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 43
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -703,9 +703,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 44
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -720,9 +720,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 45
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -736,11 +736,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 46
       }],
-    music: require('../../../../Audio/OTV/Ambient.mp3'),
+    music: require('../../../../Media/Audio/OTV/Ambient.mp3'),
     speaker: 'Эми',
-    imageFront: require('../../../../Images/OTV/Persons/Amy.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Amy.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -754,7 +754,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 47
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -769,9 +769,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 48
       }],
     speaker: 'Одногруппник',
-    imageFront: require('../../../../Images/OTV/Persons/Guy.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Guy.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -785,7 +785,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 49
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Lection.jpg')
   },
 
   {
@@ -800,9 +800,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 50
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -816,7 +816,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 302
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -830,7 +830,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 51
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -846,9 +846,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     beforeBegin: whiteFlash,
     speaker: 'Девушка',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Dark_Street.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 
   {
@@ -864,9 +864,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     beforeBegin: whiteFlash,
     speaker: 'Ники ',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -881,9 +881,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 54
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -897,7 +897,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 55
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -911,7 +911,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 56
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -925,7 +925,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -939,7 +939,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 58
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -954,9 +954,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 59
       }],
     speaker: 'Девушка',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -971,9 +971,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 60
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -987,7 +987,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 61
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1009,7 +1009,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: 'Проигнорировала ее',
         goTo: 69
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1025,9 +1025,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     speaker: 'Ники',
     stats: [{ story: EStoriesEn.OTV, value: +1, category: 'Person', id: 'Lina', silent: true }],
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1041,7 +1041,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 70
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1056,11 +1056,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 65
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
     stats: [
       { story: EStoriesEn.OTV, value: -2, category: 'Person', id: 'Lina', silent: true }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1075,9 +1075,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 66
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1092,9 +1092,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 67
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1109,9 +1109,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 68
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1125,7 +1125,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 70
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1141,7 +1141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.OTV, value: -1, category: 'Person', id: 'Lina', silent: true }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1156,9 +1156,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 71
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1172,7 +1172,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 72
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1187,9 +1187,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 73
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1203,7 +1203,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 74
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1218,9 +1218,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 75
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1235,9 +1235,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 76
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1252,9 +1252,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 77
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1269,9 +1269,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 78
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1285,7 +1285,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 79
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1300,9 +1300,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 80
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1317,9 +1317,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 81
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1333,7 +1333,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 82
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1348,9 +1348,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 83
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1364,7 +1364,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 84
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1379,9 +1379,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 85
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1396,9 +1396,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 86
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1412,7 +1412,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 87
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1426,7 +1426,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 88
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1440,7 +1440,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 89
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1455,9 +1455,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 90
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1472,9 +1472,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 91
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1488,7 +1488,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 92
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1503,9 +1503,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 93
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1520,9 +1520,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 94
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1537,9 +1537,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 95
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1553,7 +1553,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 96
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1568,9 +1568,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 97
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1585,9 +1585,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 98
       }],
     speaker: 'Лина',
-    imageFront: require('../../../../Images/OTV/Persons/Lina_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1602,8 +1602,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 99
       }],
     stats: [{ story: EStoriesEn.OTV, value: 1, category: 'Item', id: 'Lina_Number' }],
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1618,9 +1618,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 100
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1635,9 +1635,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 101
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1651,7 +1651,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 102
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1666,9 +1666,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 103
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1682,7 +1682,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 104
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/University.jpg')
   },
 
   {
@@ -1696,7 +1696,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 105
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1710,7 +1710,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 106
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1724,7 +1724,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 107
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1738,7 +1738,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 108
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1752,7 +1752,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 109
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1766,7 +1766,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 110
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1780,7 +1780,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 111
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1794,7 +1794,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 112
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1808,7 +1808,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 113
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1822,7 +1822,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 114
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1837,9 +1837,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 115
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1854,11 +1854,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 116
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
     stats: [
       { story: EStoriesEn.OTV, value: 0, category: 'Person', id: 'Alex' }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1872,7 +1872,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 117
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1886,7 +1886,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 118
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1900,7 +1900,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 119
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1915,9 +1915,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 120
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1932,9 +1932,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 121
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1948,7 +1948,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 122
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1963,9 +1963,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 123
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1980,9 +1980,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 124
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -1996,7 +1996,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 125
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2011,9 +2011,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 126
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2028,9 +2028,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 127
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2045,9 +2045,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 128
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2062,9 +2062,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 129
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2078,7 +2078,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 130
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2093,9 +2093,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 131
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2113,7 +2113,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: 'Смотреть вперед',
         goTo: 139
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2129,7 +2129,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.OTV, value: +1, category: 'Person', id: 'Alex' }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2143,7 +2143,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 134
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2157,7 +2157,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 135
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2171,7 +2171,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 136
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2185,7 +2185,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 137
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2200,9 +2200,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 138
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2216,7 +2216,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 140
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2230,7 +2230,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 140
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2244,7 +2244,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 141
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2259,9 +2259,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 142
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2275,8 +2275,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 143
       }],
-    music: require('../../../../Audio/OTV/Secret.mp3'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    music: require('../../../../Media/Audio/OTV/Secret.mp3'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2319,9 +2319,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       scenarioManager.resetSceneButtons(143)
     },
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2335,7 +2335,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 145
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2350,9 +2350,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 146
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2367,9 +2367,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 147
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2384,9 +2384,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 148
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2400,7 +2400,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 149
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2415,9 +2415,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 150
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2432,9 +2432,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 151
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2451,9 +2451,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       scenarioManager.copySceneButtons(143, 151)
     },
     speaker: 'Алекс пролог',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2468,9 +2468,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 153
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2487,9 +2487,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       scenarioManager.copySceneButtons(143, 153)
     },
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2504,9 +2504,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 155
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2521,9 +2521,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 156
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2540,9 +2540,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       scenarioManager.copySceneButtons(143, 156)
     },
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2556,7 +2556,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 158
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2570,11 +2570,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 159
       }],
-    music: require('../../../../Audio/OTV/Ambient.mp3'),
+    music: require('../../../../Media/Audio/OTV/Ambient.mp3'),
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2588,7 +2588,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 160
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2603,9 +2603,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 161
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2620,9 +2620,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 162
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2636,7 +2636,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 163
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2651,9 +2651,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 164
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2668,9 +2668,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 165
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2685,9 +2685,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 166
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2702,9 +2702,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 167
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2719,9 +2719,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 168
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2735,7 +2735,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 169
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2750,9 +2750,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 170
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2767,9 +2767,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 171
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2784,9 +2784,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 172
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2800,7 +2800,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 173
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2815,9 +2815,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 174
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2831,7 +2831,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 175
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2846,9 +2846,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 176
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2863,9 +2863,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 177
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2879,7 +2879,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 178
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2893,7 +2893,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 179
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2908,9 +2908,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 180
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2924,7 +2924,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 181
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2939,9 +2939,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 182
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2956,9 +2956,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 183
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2973,9 +2973,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 184
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -2989,7 +2989,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 185
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3004,9 +3004,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 186
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3021,9 +3021,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 187
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3037,7 +3037,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 188
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3052,9 +3052,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 189
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3068,7 +3068,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 190
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3083,9 +3083,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 191
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3099,7 +3099,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 192
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3113,7 +3113,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 193
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3127,7 +3127,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 194
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3142,9 +3142,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 195
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3158,7 +3158,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 196
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3173,9 +3173,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 197
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3190,9 +3190,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 198
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3207,9 +3207,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 199
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3223,7 +3223,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 200
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3238,9 +3238,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 201
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3255,9 +3255,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 202
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3272,9 +3272,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 203
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3288,7 +3288,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 204
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3303,9 +3303,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 205
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3320,9 +3320,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 300
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3337,9 +3337,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 206
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3354,9 +3354,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 207
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3370,7 +3370,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 208
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3386,9 +3386,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     stats: [{ story: EStoriesEn.OTV, value: 0, category: 'Person', id: 'Lina' }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3402,7 +3402,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 210
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3417,9 +3417,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 211
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3434,9 +3434,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 212
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3450,7 +3450,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 213
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3465,9 +3465,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 214
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3481,7 +3481,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 215
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3496,9 +3496,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 216
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_Streetwear.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3513,9 +3513,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 217
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3530,9 +3530,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 218
       }],
     speaker: 'Алекс',
-    imageFront: require('../../../../Images/OTV/Persons/Alex_Prologue.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Alex_Prologue.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3546,7 +3546,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 219
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Park_Dawn.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Park_Dawn.jpg')
   },
 
   {
@@ -3560,7 +3560,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 220
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3576,9 +3576,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     message: 'Стат Наследие — героиня чтит традиции, силу семьи, и идет по их пути несмотря ни на что. Сила крови и родственная связь для нее все',
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3601,9 +3601,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 232
       }],
     message: 'Стат Трансформация — верит в прогресс, такая героиня готова идти на некоторые уступки ради сохранения баланса. Для нее имеет большее значение настоящее, нежели прошлое',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3618,11 +3618,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 223
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
     stats: [
       { story: EStoriesEn.OTV, value: +1, category: 'Person', id: 'Alex' }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3636,7 +3636,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 224
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3651,9 +3651,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 225
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3667,7 +3667,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 226
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3682,9 +3682,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 227
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3699,9 +3699,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 238
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3717,7 +3717,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.OTV, value: +1, category: 'Effect', id: 'Hereditary' }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3732,9 +3732,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 230
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3749,9 +3749,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 231
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3766,9 +3766,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 238
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3784,7 +3784,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.OTV, value: 1, category: 'Effect', id: 'Transformation' }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3798,7 +3798,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 234
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3812,7 +3812,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3826,7 +3826,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 236
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3840,7 +3840,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 237
       }],
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3855,9 +3855,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         goTo: 238
       }],
     speaker: 'Ники',
-    imageFront: require('../../../../Images/OTV/Persons/Nicki_TShirt.png'),
-    imageBorder: require('../../../../Images/OTV/UI/Border.png'),
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_TShirt.png'),
+    imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   },
 
   {
@@ -3874,6 +3874,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         }
       }],
     achievement: { story: EStoriesEn.OTV, name: 'Chapter01Part01Completed' },
-    imageBack: require('../../../../Images/OTV/Backgrounds/Livingroom_Evening.jpg')
+    imageBack: require('../../../../Media/Images/OTV/Backgrounds/Livingroom_Evening.jpg')
   }
 ])

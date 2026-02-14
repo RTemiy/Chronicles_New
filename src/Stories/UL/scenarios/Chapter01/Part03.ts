@@ -14,8 +14,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/UL/Main.mp3'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    music: require('../../../../Media/Audio/UL/Main.mp3'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -29,7 +29,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 2
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -44,7 +44,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 3
       }],
     stats: [{ story: EStoriesEn.UL, value: 0, category: 'Person', id: 'Doctor' }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -59,9 +59,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 4
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -76,9 +76,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 5
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -93,9 +93,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 6
       }],
     speaker: 'Джозеф ',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -109,7 +109,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 7
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -124,10 +124,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 8
       }],
     speaker: 'Санитар',
-    imageFront: require('../../../../Images/UL/Persons/Male_Nurse.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/Male_Nurse.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -141,7 +141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 9
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -157,9 +157,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }],
     speaker: 'Санитар',
     darkSilhouette: true,
-    imageFront: require('../../../../Images/UL/Persons/Male_Nurse.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Male_Nurse.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -174,9 +174,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 11
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -190,7 +190,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 12
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -205,9 +205,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 13
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -223,9 +223,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }],
     speaker: 'Санитар',
     darkSilhouette: true,
-    imageFront: require('../../../../Images/UL/Persons/Male_Nurse.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Male_Nurse.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -241,9 +241,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }],
     speaker: 'Санитар',
     darkSilhouette: true,
-    imageFront: require('../../../../Images/UL/Persons/Male_Nurse.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Male_Nurse.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -257,7 +257,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 16
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -272,9 +272,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 17
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -289,9 +289,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 18
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -311,9 +311,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }
     ],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -328,10 +328,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 20
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     stats: [{ story: EStoriesEn.UL, value: +1, category: 'Person', id: 'Doctor' }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -346,9 +346,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 25
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -363,9 +363,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 22
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -380,9 +380,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 23
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -397,9 +397,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 25
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -414,9 +414,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 26
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -431,9 +431,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 27
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -447,7 +447,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 28
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -462,9 +462,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 29
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -478,7 +478,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 30
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -493,9 +493,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 31
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -510,9 +510,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 32
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -526,7 +526,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 33
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -540,7 +540,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 34
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Procedural.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Procedural.jpg')
   },
 
   {
@@ -554,8 +554,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 35
       }],
-    simple: require('../../../../Audio/UL/Mobile.mp3'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    simple: require('../../../../Media/Audio/UL/Mobile.mp3'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -570,10 +570,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 36
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -588,9 +588,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 37
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -605,10 +605,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 38
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -623,9 +623,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 39
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -640,10 +640,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 40
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -658,10 +658,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 41
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -676,10 +676,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 42
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -694,10 +694,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 43
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -712,10 +712,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 44
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -730,10 +730,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 45
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -748,10 +748,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 46
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -765,7 +765,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 47
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -780,9 +780,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 48
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -796,7 +796,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 49
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -810,7 +810,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 50
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -824,7 +824,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 51
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -840,9 +840,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }],
     ghostSilhouette: true,
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -858,9 +858,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }],
     ghostSilhouette: true,
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Indoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Indoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -876,9 +876,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }],
     ghostSilhouette: true,
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -905,11 +905,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 204
       }
     ],
-    music: require('../../../../Audio/UL/Thinking.mp3'),
+    music: require('../../../../Media/Audio/UL/Thinking.mp3'),
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -923,7 +923,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 56
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -937,7 +937,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -951,7 +951,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 58
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -965,7 +965,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -979,7 +979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 60
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -994,9 +994,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 61
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1011,9 +1011,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 300
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1054,9 +1054,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 63
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1070,10 +1070,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 64
       }],
-    simple: require('../../../../Audio/UL/Dog.mp3'),
-    imageFront: require('../../../../Images/UL/Persons/Dog.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    simple: require('../../../../Media/Audio/UL/Dog.mp3'),
+    imageFront: require('../../../../Media/Images/UL/Persons/Dog.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1087,9 +1087,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 65
       }],
-    imageFront: require('../../../../Images/UL/Persons/Dog.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Dog.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1103,9 +1103,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 66
       }],
-    imageFront: require('../../../../Images/UL/Persons/Dog.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Dog.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1120,9 +1120,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 67
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1137,9 +1137,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 68
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1154,9 +1154,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 69
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1170,7 +1170,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 70
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1184,7 +1184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 71
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1198,7 +1198,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 72
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1212,7 +1212,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 73
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1226,7 +1226,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 74
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1240,7 +1240,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 75
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1255,9 +1255,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 76
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1272,9 +1272,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 77
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/David_Home.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/David_Home.jpg')
   },
 
   {
@@ -1288,7 +1288,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 78
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1302,7 +1302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 79
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1316,7 +1316,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 80
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1330,7 +1330,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 81
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1344,7 +1344,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 82
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1359,9 +1359,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 83
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Shirt.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Shirt.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1375,7 +1375,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 84
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1390,9 +1390,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 85
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1407,9 +1407,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 86
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Shirt.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Shirt.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1423,7 +1423,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 87
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1438,9 +1438,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 88
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1455,9 +1455,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 89
       }],
     speaker: 'Дэвид',
-    imageFront: require('../../../../Images/UL/Persons/David_Shirt.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/David_Shirt.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1471,7 +1471,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 90
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1486,9 +1486,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 91
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1502,7 +1502,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 92
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -1516,7 +1516,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 93
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1530,7 +1530,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 94
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1544,7 +1544,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 95
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1558,7 +1558,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 96
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1572,7 +1572,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 97
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1586,7 +1586,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 98
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1600,7 +1600,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 99
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1617,7 +1617,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         }
       }],
     achievement: { story: EStoriesEn.UL, name: 'DavidEnding' },
-    imageBack: require('../../../../Images/UL/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Car.jpg')
   },
 
   {
@@ -1631,7 +1631,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 101
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -1645,7 +1645,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 102
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1659,7 +1659,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 103
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1674,9 +1674,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 104
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1691,9 +1691,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 105
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1707,7 +1707,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 106
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1722,9 +1722,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 107
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1738,7 +1738,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 301
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1779,9 +1779,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 109
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1796,9 +1796,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 110
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1812,7 +1812,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 111
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -1826,7 +1826,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 112
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1841,9 +1841,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 113
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1857,7 +1857,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 114
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1872,9 +1872,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 115
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1889,9 +1889,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 116
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1906,9 +1906,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 117
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1923,9 +1923,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 118
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1940,9 +1940,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 119
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1956,7 +1956,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 120
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1971,9 +1971,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 121
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -1987,7 +1987,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 122
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2002,9 +2002,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 123
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Objects/Ring.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Objects/Ring.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2018,7 +2018,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 124
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2033,9 +2033,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 125
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Objects/Ring.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Objects/Ring.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2049,7 +2049,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 126
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2063,7 +2063,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 127
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2077,7 +2077,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 128
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2092,9 +2092,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 129
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2108,7 +2108,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 131
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Rooftop_Restaurant.jpg')
   },
 
   {
@@ -2122,7 +2122,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 132
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2136,7 +2136,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 133
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2150,7 +2150,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 134
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2164,7 +2164,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 135
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2179,9 +2179,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 136
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2196,9 +2196,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 137
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2213,9 +2213,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 138
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2230,9 +2230,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 139
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2247,9 +2247,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 140
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2264,9 +2264,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 141
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2280,7 +2280,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 142
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2295,9 +2295,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 143
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2311,7 +2311,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 144
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2326,7 +2326,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 145
       }],
     beforeBegin: redFlash,
-    imageBack: require('../../../../Images/UL/Backgrounds/Cafe_Memory.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cafe_Memory.jpg')
   },
 
   {
@@ -2340,8 +2340,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 146
       }],
-    simple: require('../../../../Audio/UL/Whisper.mp3'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cafe_Memory.jpg')
+    simple: require('../../../../Media/Audio/UL/Whisper.mp3'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cafe_Memory.jpg')
   },
 
   {
@@ -2356,10 +2356,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 147
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UL/Backgrounds/Cafe_Memory.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cafe_Memory.jpg')
   },
 
   {
@@ -2375,9 +2375,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
       }],
     beforeBegin: whiteFlash,
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2392,9 +2392,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 149
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2409,9 +2409,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 150
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2425,7 +2425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 151
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2440,9 +2440,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 152
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2457,9 +2457,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 153
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2474,9 +2474,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 154
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2491,9 +2491,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 155
       }],
     speaker: 'Пол',
-    imageFront: require('../../../../Images/UL/Persons/Paul_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Paul_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2507,7 +2507,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 156
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/England_Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/England_Park.jpg')
   },
 
   {
@@ -2521,7 +2521,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 157
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2535,7 +2535,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 158
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2549,7 +2549,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 159
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2563,7 +2563,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 160
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2577,7 +2577,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 161
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2591,7 +2591,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 162
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2605,7 +2605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 163
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2622,7 +2622,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         }
       }],
     achievement: { story: EStoriesEn.UL, name: 'PaulEnding' },
-    imageBack: require('../../../../Images/UL/Backgrounds/Paul_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Paul_Home.jpg')
   },
 
   {
@@ -2636,7 +2636,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 165
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -2650,7 +2650,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 166
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2665,9 +2665,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 167
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2681,7 +2681,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 168
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2695,7 +2695,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 169
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2710,9 +2710,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 170
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2727,9 +2727,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 171
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2743,7 +2743,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 172
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2758,9 +2758,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 173
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2774,7 +2774,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 174
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2789,9 +2789,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 175
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Outdoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Outdoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2805,7 +2805,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 176
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2819,7 +2819,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 177
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2833,7 +2833,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 178
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Theatre.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Theatre.jpg')
   },
 
   {
@@ -2847,7 +2847,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 302
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Doctor_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Doctor_Home.jpg')
   },
 
   {
@@ -2887,7 +2887,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 180
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Doctor_Home.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Doctor_Home.jpg')
   },
 
   {
@@ -2901,7 +2901,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 181
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Grave.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Grave.jpg')
   },
 
   {
@@ -2915,7 +2915,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 182
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Grave.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Grave.jpg')
   },
 
   {
@@ -2929,7 +2929,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 183
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Grave.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Grave.jpg')
   },
 
   {
@@ -2943,7 +2943,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 184
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Grave.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Grave.jpg')
   },
 
   {
@@ -2957,7 +2957,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 185
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Grave.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Grave.jpg')
   },
 
   {
@@ -2971,7 +2971,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 187
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -2985,7 +2985,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 188
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3000,9 +3000,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 189
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Indoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Indoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3016,7 +3016,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 190
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3031,9 +3031,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 191
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Indoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Indoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3048,9 +3048,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 192
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3064,7 +3064,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 193
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3079,9 +3079,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 194
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Indoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Indoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3096,9 +3096,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 195
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3113,9 +3113,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 196
       }],
     speaker: 'Джозеф',
-    imageFront: require('../../../../Images/UL/Persons/Doctor_Indoor.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Doctor_Indoor.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3129,7 +3129,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 650
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3141,8 +3141,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 197
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg'),
-    cutScene: { video: require('../../../../Images/UL/CutScenes/AmeliaAndDoctor.mp4'), goTo: 197 }
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg'),
+    cutScene: { video: require('../../../../Media/Images/UL/CutScenes/AmeliaAndDoctor.mp4'), goTo: 197 }
   },
 
   {
@@ -3156,7 +3156,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 198
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3170,7 +3170,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 199
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3184,7 +3184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 200
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3198,7 +3198,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 201
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3212,7 +3212,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 202
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3226,7 +3226,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 203
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3243,7 +3243,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         }
       }],
     achievement: { story: EStoriesEn.UL, name: 'DoctorEnding' },
-    imageBack: require('../../../../Images/UL/Backgrounds/Garden.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Garden.jpg')
   },
 
   {
@@ -3257,7 +3257,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 205
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -3271,7 +3271,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 206
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Street_Day.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Street_Day.jpg')
   },
 
   {
@@ -3285,7 +3285,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 207
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -3299,7 +3299,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 208
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -3313,7 +3313,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 209
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -3327,7 +3327,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 210
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -3341,7 +3341,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 211
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -3356,9 +3356,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 212
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -3372,7 +3372,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 213
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Bedroom.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Bedroom.jpg')
   },
 
   {
@@ -3386,7 +3386,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 214
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3400,7 +3400,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 215
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3414,7 +3414,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 216
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3428,7 +3428,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 217
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3442,7 +3442,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 218
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3457,9 +3457,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 219
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3474,9 +3474,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 220
       }],
     speaker: 'Валентина',
-    imageFront: require('../../../../Images/UL/Persons/Valentina_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Valentina_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3490,7 +3490,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 221
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3529,7 +3529,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 223
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3544,9 +3544,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 224
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3561,9 +3561,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 225
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3578,9 +3578,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 226
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3595,9 +3595,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 227
       }],
     speaker: 'Валентина',
-    imageFront: require('../../../../Images/UL/Persons/Valentina_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Valentina_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3612,9 +3612,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 228
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3629,9 +3629,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 237
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3645,7 +3645,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 230
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3660,9 +3660,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 231
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3677,9 +3677,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 232
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3694,9 +3694,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 233
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3711,9 +3711,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 234
       }],
     speaker: 'Валентина',
-    imageFront: require('../../../../Images/UL/Persons/Valentina_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Valentina_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3728,9 +3728,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 235
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3745,9 +3745,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 237
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Publishing.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Publishing.jpg')
   },
 
   {
@@ -3761,7 +3761,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 238
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3775,7 +3775,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 239
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3789,7 +3789,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 240
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3804,9 +3804,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 241
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3821,9 +3821,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 242
       }],
     speaker: 'Парень',
-    imageFront: require('../../../../Images/UL/Persons/Victor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Victor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3837,7 +3837,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 243
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3851,7 +3851,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 244
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3866,9 +3866,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 245
       }],
     speaker: 'Парень',
-    imageFront: require('../../../../Images/UL/Persons/Victor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Victor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3883,9 +3883,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 246
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3899,7 +3899,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 247
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3914,9 +3914,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 248
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/UL/Persons/Victor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Victor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3931,9 +3931,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 249
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3947,7 +3947,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 250
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3962,9 +3962,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 251
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/UL/Persons/Victor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Victor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3979,9 +3979,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 252
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -3996,9 +3996,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 253
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/UL/Persons/Victor_Casual.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Victor_Casual.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -4013,9 +4013,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         goTo: 254
       }],
     speaker: 'Амелия',
-    imageFront: require('../../../../Images/UL/Persons/Amelia_New.png'),
-    imageBorder: require('../../../../Images/UL/UI/Border.png'),
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
+    imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -4029,7 +4029,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 255
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -4043,7 +4043,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 256
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Cinema.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Cinema.jpg')
   },
 
   {
@@ -4057,7 +4057,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 257
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4071,7 +4071,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 258
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4085,7 +4085,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 259
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4099,7 +4099,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 260
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4113,7 +4113,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 261
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4127,7 +4127,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 262
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4141,7 +4141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 263
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4155,7 +4155,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 264
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4169,7 +4169,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 265
       }],
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   },
 
   {
@@ -4186,6 +4186,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         }
       }],
     achievement: { story: EStoriesEn.UL, name: 'Part03Completed' },
-    imageBack: require('../../../../Images/UL/Backgrounds/Park.jpg')
+    imageBack: require('../../../../Media/Images/UL/Backgrounds/Park.jpg')
   }
 ])

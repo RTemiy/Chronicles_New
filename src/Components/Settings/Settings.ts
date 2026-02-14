@@ -120,62 +120,62 @@ const Settings = new CContainer(
 		<a>Поддержите нас</a>
 	</div>
 	<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'}>
-		<a target="_blank" rel="external" style='display: none' id="support-button"><img class="settings__icon"  src="${require('../../Images/UI/icon_ad.png')}"></a>
-		<a target="_blank" rel="external" href="https://vk.com/chroniclesgame"><img class="settings__icon"  src="${require('../../Images/UI/icon_vk.png')}"></a>
-		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Images/UI/icon_tg.png')}"></a>
+		<a target="_blank" rel="external" style='display: none' id="support-button"><img class="settings__icon"  src="${require('../../Media/Images/UI/icon_ad.png')}"></a>
+		<a target="_blank" rel="external" href="https://vk.com/chroniclesgame"><img class="settings__icon"  src="${require('../../Media/Images/UI/icon_vk.png')}"></a>
+		<a target="_blank" rel="external" href="https://t.me/chronicles_game"><img class="settings__icon" src="${require('../../Media/Images/UI/icon_tg.png')}"></a>
 	</div>
 	<div class="settings__block">
 		<a id="req-01">Т-Банк</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
 		<a id="req-02">Сбербанк</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
 <div class="settings__container">
 	<div class="settings__block">
 		<a id="news-button">Последние новости</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 		<div class="settings__block">
 		<a id="creators-button">Создатели</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
 		<a href="mailto:mvagamesofficial@gmail.com">Помощь | Сотрудничество</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
 <div class="settings__container" ${DESKTOPMODE && 'style="display: none"'}>
 	<div class="settings__block">
 		<a href="${route}/privacy_policy.html" target="_blank">Политика конфиденциальности</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
 		<a href="${route}/terms_conditions.html" target="_blank">Условия и положения</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
 <div class="settings__container" ${ANDROIDMODE && 'style="display: none"'}>
 	<div class="settings__block">
 		<a id="downloadFile">Скачать сохранение</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
 	  <a id="uploadFile">Установить сохранение</a>
-	  <img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+	  <img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 		<input id="uploadInput" style='display: none' type="file"/>
 	</div>
 </div>
 <div class="settings__container" >
 	<div class="settings__block" ${DESKTOPMODE && 'style="display: none"'} ${ANDROIDMODE && 'style="display: none"'}>
 		<a href=".">Проверить обновление</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
 		<a onclick='localStorage.clear(); window.location.reload();' >Удалить все сохранения и настройки</a>
-		<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
 `,
@@ -211,7 +211,11 @@ Settings.selectMusic.addEventListener('change', () => {
 
 Settings.checkBoxAHA.addEventListener('click', () => {
   saveData(['Settings_AHA'], [Settings.checkBoxAHA.checked])
-  SlideStatAlert.self.style.display = Settings.checkBoxAHA.checked ? 'none' : 'flex'
+  if (loadData(['Settings_AHA']) === 'true' || loadData(['Settings_AHA']) === null) {
+    SlideStatAlert.self.style.display = 'flex'
+  } else {
+    SlideStatAlert.self.style.display = 'none'
+  }
 })
 
 Settings.checkBoxScale.addEventListener('click', () => {
@@ -261,7 +265,11 @@ function loadSettings (): void {
 
   Settings.checkBoxAHA.checked = loadData(['Settings_AHA']) === 'true'
 
-  SlideStatAlert.self.style.display = Settings.checkBoxAHA.checked ? 'none' : 'flex'
+  if (loadData(['Settings_AHA']) === 'true' || loadData(['Settings_AHA']) === null) {
+    SlideStatAlert.self.style.display = 'flex'
+  } else {
+    SlideStatAlert.self.style.display = 'none'
+  }
 
   Settings.checkBoxfullscreen.checked = loadData(['Settings_FullScreen']) === 'true' || loadData(['Settings_FullScreen']) === null
 
@@ -288,7 +296,7 @@ function loadSettings (): void {
 
 Settings.supportButton.onclick = () => {
   showAd('long', () => {
-    makeExplosion(MenuMessage.self, [`<img src="${require('../../Images/UI/icon_achievements.svg')}" class="icon_span"/>`])
+    makeExplosion(MenuMessage.self, [`<img src="${require('../../Media/Images/UI/icon_achievements.svg')}" class="icon_span"/>`])
     showMessage('Спасибо за поддержку Chronicles', 'Принять')
   })
 }

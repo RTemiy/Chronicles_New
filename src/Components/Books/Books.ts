@@ -9,12 +9,12 @@ export const Books = new CContainer(
   'books',
   `
   <div class="books__container" ${DESKTOPMODE && 'style="visibility: hidden;"'} ${ANDROIDMODE && 'style="visibility: hidden;"'} ${DEVMODE && 'style="visibility: hidden;"'}>
-    <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>
+    <img class="books__icon" src="${require('../../Media/Images/UI/icon_stories_currency.svg')}"/>
     <p class="books__text"></p>
     <p class="books__help"></p>
   </div>
   <div class="ad_book" ${DESKTOPMODE && 'style="visibility: hidden;"'} ${ANDROIDMODE && 'style="visibility: hidden;"'} ${DEVMODE && 'style="visibility: hidden;"'}>
-    <img class="books__icon" src="${require('../../Images/UI/icon_stories_currency_add.svg')}"/>
+    <img class="books__icon" src="${require('../../Media/Images/UI/icon_stories_currency_add.svg')}"/>
   </div>
   `,
   { name: 'books', selector: '.books__container' },
@@ -31,7 +31,7 @@ export function addBook (): void {
     ANDROIDMODE && saveData(['Books_amount'], [1000])
   } else {
     hideAdBook()
-    !DEVMODE && !DESKTOPMODE && !ANDROIDMODE && showMessage(`Вы получили<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
+    !DEVMODE && !DESKTOPMODE && !ANDROIDMODE && showMessage(`Вы получили<img class="books__icon" src="${require('../../Media/Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
     saveData(['Books_amount'], [booksAmount + 1])
   }
   saveData(['Books_LastDate'], [new Date()])
@@ -46,7 +46,7 @@ export function wasteBook (approvedFunc: () => void): void {
     !canWasteBooks() && showAdBook()
   } else {
     showAdBook()
-    showMessage(`Недостаточно<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
+    showMessage(`Недостаточно<img class="books__icon" src="${require('../../Media/Images/UI/icon_stories_currency.svg')}"/>`, 'Принять')
   }
 }
 

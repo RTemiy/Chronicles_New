@@ -14,9 +14,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 50
       }],
-    music: require('../../../../Audio/Aurora/Aurora.mp3'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    music: require('../../../../Media/Audio/Aurora/Aurora.mp3'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -31,9 +31,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 1
       }],
     message: previousSlideMessage,
-    music: require('../../../../Audio/Aurora/Aurora.mp3'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    music: require('../../../../Media/Audio/Aurora/Aurora.mp3'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -47,9 +47,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 2
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Poe_Book.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Poe_Book.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -63,9 +63,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 3
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Poe_Book.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Poe_Book.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -80,9 +80,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 4
       }],
     message: 'Эдгар По — «Сон во сне»',
-    imageFront: require('../../../../Images/Aurora/Objects/Poe_Book.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Poe_Book.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -96,9 +96,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 5
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Poe_Book.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Poe_Book.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -113,11 +113,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 6
       }],
     message: inventoryMessage,
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Aurora, value: 0, category: 'Person', id: 'Aurora' }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -131,9 +131,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 7
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -147,7 +147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 8
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -161,9 +161,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 9
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -177,7 +177,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 10
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -191,7 +191,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 13
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
   {
     id: 13,
@@ -206,9 +206,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
           saveEndProgress('Aurora', 'Глава 1', 'Часть 1', '0')
         }
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg'),
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg'),
     achievement: { story: EStoriesEn.Aurora, name: 'PrologueCompleted' }
   }
 ])

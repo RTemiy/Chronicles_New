@@ -37,7 +37,7 @@
     0 0 5px 1px rgba(0, 0, 0, 0.5),
     inset 0 0 5px 1px rgba(0, 0, 0, 0.5);
   @extend %button-tap;
-  background: url("../../Images/UI/icon_x.svg");
+  background: url("../../Media/Images/UI/icon_x.svg");
   background-clip: padding-box;
   background-size: 100%;
   background-color: white;
@@ -50,7 +50,7 @@ input:checked + .slider {
 
 input:checked + .slider:before {
   transform: translateX(24px);
-  background: url("../../Images/UI/icon_check.svg");
+  background: url("../../Media/Images/UI/icon_check.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-color: white;

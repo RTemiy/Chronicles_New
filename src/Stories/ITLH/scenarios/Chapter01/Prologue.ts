@@ -17,11 +17,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/ITLH/Music/Theme_Guide.mp3'),
+    music: require('../../../../Media/Audio/ITLH/Music/Theme_Guide.mp3'),
     speakerR: 'Неизвестный',
     blurredSilhouette: true,
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
 
   {
@@ -36,7 +36,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 2
       }],
     message: previousSlideMessage,
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
 
   {
@@ -51,9 +51,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 3
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
     blurredSilhouette: true,
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
 
   {
@@ -69,8 +69,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     speakerR: 'Проводник',
     blurredSilhouette: true,
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
 
   {
@@ -84,7 +84,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     parallax: 'left',
     interruptiveFrame: { goTo: 4 },
     beforeBegin: whiteFlash,
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -98,9 +98,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 5
       }],
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -115,7 +115,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 6
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -129,9 +129,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 81
       }],
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -143,7 +143,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     interruptiveFrame: { goTo: 7 },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -157,8 +157,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 8
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -172,7 +172,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 9
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -186,8 +186,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 10
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -201,8 +201,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 11
       }],
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Scared.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Scared.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -216,7 +216,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 12
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -235,7 +235,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
           })
         }
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -249,8 +249,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 14
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide_Smirk.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide_Smirk.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -265,8 +265,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 15
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -280,7 +280,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 16
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -295,8 +295,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 17
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -310,7 +310,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 18
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -325,8 +325,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 19
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -341,8 +341,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 20
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -356,7 +356,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 21
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -371,8 +371,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 22
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -386,7 +386,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 23
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -401,8 +401,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 24
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Scared.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Scared.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -445,8 +445,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       scenarioManager.resetSceneButtons(24)
     },
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -460,7 +460,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 26
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -475,8 +475,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 27
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -490,7 +490,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 28
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -505,8 +505,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 29
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -521,8 +521,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 30
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -537,8 +537,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 31
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide_Smirk.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide_Smirk.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -552,7 +552,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 32
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -567,8 +567,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 33
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Scared.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Scared.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -585,8 +585,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       scenarioManager.copySceneButtons(24, 33)
     },
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -600,7 +600,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 35
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -616,8 +616,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Серафим — высший ангельский чин, наиболее приближенный к Богу.',
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -631,7 +631,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 37
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -646,8 +646,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 38
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -662,8 +662,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 39
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -678,8 +678,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 40
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -693,7 +693,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 41
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -708,8 +708,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 42
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -726,8 +726,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       scenarioManager.copySceneButtons(24, 42)
     },
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -741,7 +741,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 44
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -756,8 +756,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 45
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide_Smirk.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide_Smirk.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -772,8 +772,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 46
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -788,8 +788,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 47
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -804,8 +804,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 48
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -820,8 +820,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 49
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -837,7 +837,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     beforeBegin: () => {
       scenarioManager.copySceneButtons(24, 49)
     },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -852,8 +852,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 51
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -867,7 +867,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 52
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -881,7 +881,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 53
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -896,8 +896,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 54
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -916,8 +916,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 62
       }],
     message: firstChoiceMessage,
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -931,7 +931,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 56
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -945,7 +945,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -961,10 +961,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Проводнику приятна ваша вера в его слова.',
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Guide' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -979,8 +979,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 59
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -994,7 +994,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 60
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1009,8 +1009,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 61
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1025,8 +1025,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 68
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1040,7 +1040,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 63
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1055,8 +1055,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 64
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Scared.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Scared.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1070,7 +1070,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 65
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1085,8 +1085,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 66
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1100,7 +1100,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 67
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1115,10 +1115,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 68
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: 0, category: 'Person', id: 'Guide' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Guides_World.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
   {
@@ -1130,7 +1130,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     interruptiveFrame: { goTo: 69 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -1145,7 +1145,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 70
       }],
     message: inventoryMessage,
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Tesla_Door.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Tesla_Door.jpg')
   },
 
   {
@@ -1159,7 +1159,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 71
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Tesla_Door.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Tesla_Door.jpg')
   },
 
   {
@@ -1173,7 +1173,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 72
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Tesla_Door.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Tesla_Door.jpg')
   },
 
   {
@@ -1185,8 +1185,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 73
       }],
-    cutScene: { video: require('../../../../Images/ITLH/Cutscenes/FaceTheFaith.mp4'), goTo: 73 },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Tesla_Door.jpg')
+    cutScene: { video: require('../../../../Media/Images/ITLH/Cutscenes/FaceTheFaith.mp4'), goTo: 73 },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Tesla_Door.jpg')
   },
 
   {
@@ -1201,8 +1201,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 74
       }],
     speakerR: 'Проводник',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Guide.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Tesla_Door.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Tesla_Door.jpg')
   },
 
   {
@@ -1218,8 +1218,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
           saveEndProgress('ITLH', 'Глава 1', 'Часть 1', '0')
         }
       }],
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero.png'),
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
     achievement: { story: EStoriesEn.ITLH, name: 'PrologueCompleted' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Tesla_Door.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Tesla_Door.jpg')
   }
 ])

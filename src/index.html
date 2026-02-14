@@ -13,7 +13,7 @@
     <meta property="og:description" content="Chronicles | Твой выбор. Бесплатная много вариативная новелла"/>
     <meta property="og:type" content="game"/>
     <meta property="og:url" content="https://chroniclesgame.ru"/>
-    <meta property="og:image" content=<%=require("./Images/UI/icon.png")%>>
+    <meta property="og:image" content=<%=require("./Media/Images/UI/icon.png")%>>
     <title>Chronicles | Твой выбор</title>
     <script>window.yaContextCb=window.yaContextCb||[]</script>
     <script src="https://yandex.ru/ads/system/context.js" async></script>
@@ -30,17 +30,17 @@
 			</filter>
 
 			<filter id="dps">
-				<feImage href=<%=require("./Images/UI/dpsquare.png")%> preserveAspectRatio='none'/>
+				<feImage href=<%=require("./Media/Images/UI/dpsquare.png")%> preserveAspectRatio='none'/>
 					<feDisplacementMap in="SourceGraphic" scale="200" xChannelSelector="R" yChannelSelector="G" />
 			</filter>
 
 			<filter id="dpr">
-				<feImage href=<%=require("./Images/UI/dprectangle.png")%> preserveAspectRatio='none'/>
+				<feImage href=<%=require("./Media/Images/UI/dprectangle.png")%> preserveAspectRatio='none'/>
 					<feDisplacementMap in="SourceGraphic" scale="200" xChannelSelector="R" yChannelSelector="G" />
 			</filter>
 
 			<filter id="dpc" color-interpolation-filters='sRGB'>
-				<feImage href=<%=require("./Images/UI/dpcircle.png")%> preserveAspectRatio='none' result="displacementMap"/>
+				<feImage href=<%=require("./Media/Images/UI/dpcircle.png")%> preserveAspectRatio='none' result="displacementMap"/>
 					<feDisplacementMap in="SourceGraphic" scale="200" xChannelSelector="R" yChannelSelector="G" />
 
 				<!--<feDisplacementMap in="SourceGraphic" in2='displacementMap' scale="800" xChannelSelector="R" yChannelSelector="G" result="redDisplacement" />

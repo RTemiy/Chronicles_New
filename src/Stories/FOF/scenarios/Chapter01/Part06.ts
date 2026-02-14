@@ -15,8 +15,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/FOF/Main.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath.jpg')
+    music: require('../../../../Media/Audio/FOF/Main.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath.jpg')
   },
 
   {
@@ -30,7 +30,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath.jpg')
   },
 
   {
@@ -44,8 +44,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    ambient: require('../../../../Audio/FOF/Water.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath.jpg')
+    ambient: require('../../../../Media/Audio/FOF/Water.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath.jpg')
   },
 
   {
@@ -59,7 +59,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath.jpg')
   },
 
   {
@@ -73,8 +73,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    ambient: require('../../../../Audio/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -88,7 +88,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -102,8 +102,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 7
       }],
-    ambient: require('../../../../Audio/FOF/Droplets.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    ambient: require('../../../../Media/Audio/FOF/Droplets.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -117,7 +117,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 8
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -131,8 +131,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 9
       }],
-    music: require('../../../../Audio/FOF/Nightmare.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    music: require('../../../../Media/Audio/FOF/Nightmare.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -143,8 +143,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       {
         text: ''
       }],
-    cutScene: { goTo: 10, video: require('../../../../Images/FOF/CutScenes/Bath.mp4') },
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    cutScene: { goTo: 10, video: require('../../../../Media/Images/FOF/CutScenes/Bath.mp4') },
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -158,7 +158,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 11
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -173,12 +173,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 12
       }],
-    ambient: require('../../../../Audio/Common/Silence.mp3'),
-    simple: require('../../../../Audio/FOF/Woman_Cry.mp3'),
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
+    simple: require('../../../../Media/Audio/FOF/Woman_Cry.mp3'),
     speaker: 'Кассандра',
-    imageFront: require('../../../../Images/FOF/Persons/Cassandra_Towel.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Cassandra_Towel.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -192,7 +192,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -206,11 +206,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    simple: require('../../../../Audio/FOF/Signal.mp3'),
+    simple: require('../../../../Media/Audio/FOF/Signal.mp3'),
     speaker: 'Кассандра',
-    imageFront: require('../../../../Images/FOF/Persons/Cassandra_Towel.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Cassandra_Towel.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -224,8 +224,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    simple: require('../../../../Audio/FOF/Signal.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    simple: require('../../../../Media/Audio/FOF/Signal.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -239,8 +239,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    music: require('../../../../Audio/FOF/Whispers.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    music: require('../../../../Media/Audio/FOF/Whispers.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -254,7 +254,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Roses.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Roses.jpg')
   },
 
   {
@@ -268,7 +268,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 18
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -282,7 +282,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -296,7 +296,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -310,7 +310,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 21
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -325,9 +325,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 22
       }],
     speaker: 'Кассандра',
-    imageFront: require('../../../../Images/FOF/Persons/Cassandra_Towel.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Cassandra_Towel.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -342,9 +342,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 23
       }],
     speaker: 'Кассандра',
-    imageFront: require('../../../../Images/FOF/Persons/Cassandra_Towel.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Cassandra_Towel.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -358,7 +358,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 24
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -372,7 +372,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -387,9 +387,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 26
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Abigeil.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -403,7 +403,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -418,11 +418,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 28
       }],
     speaker: '…',
-    simple: require('../../../../Audio/FOF/Psycho_Laugh.mp3'),
-    imageFront: require('../../../../Images/FOF/Persons/Shadow.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    simple: require('../../../../Media/Audio/FOF/Psycho_Laugh.mp3'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Shadow.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -436,7 +436,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 29
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -450,7 +450,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 30
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -465,8 +465,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 31
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Audio/FOF/Main.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    music: require('../../../../Media/Audio/FOF/Main.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -481,9 +481,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 32
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -498,9 +498,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 33
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -514,7 +514,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 34
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -528,7 +528,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 35
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -559,7 +559,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 71
       }
     ],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -573,7 +573,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 37
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -588,9 +588,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 38
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -604,7 +604,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 39
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -619,9 +619,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 40
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -635,7 +635,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -650,9 +650,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 42
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -666,7 +666,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 43
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -681,9 +681,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 44
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -697,7 +697,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -711,7 +711,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 46
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -726,9 +726,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 47
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -742,7 +742,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 48
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -757,9 +757,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 49
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -774,9 +774,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 50
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -790,7 +790,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 51
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -805,9 +805,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 52
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -822,9 +822,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 53
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -838,8 +838,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 54
       }],
-    simple: require('../../../../Audio/FOF/Nick_Giggle.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    simple: require('../../../../Media/Audio/FOF/Nick_Giggle.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -854,9 +854,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 55
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -871,9 +871,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 56
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -887,7 +887,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -902,9 +902,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 83
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -918,7 +918,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -932,7 +932,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 60
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -946,7 +946,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 61
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -960,7 +960,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 62
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -975,9 +975,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 63
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -992,9 +992,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 64
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1009,9 +1009,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 65
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1026,9 +1026,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 66
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1042,8 +1042,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 67
       }],
-    simple: require('../../../../Audio/FOF/Nick_Giggle.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    simple: require('../../../../Media/Audio/FOF/Nick_Giggle.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1058,9 +1058,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 68
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1075,9 +1075,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 69
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1092,9 +1092,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 83
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1108,7 +1108,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 72
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1122,7 +1122,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 73
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1136,7 +1136,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 74
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1150,7 +1150,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 75
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1165,9 +1165,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 76
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1182,9 +1182,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 77
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1199,9 +1199,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 78
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1216,9 +1216,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 79
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1232,8 +1232,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 80
       }],
-    simple: require('../../../../Audio/FOF/Nick_Giggle.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    simple: require('../../../../Media/Audio/FOF/Nick_Giggle.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1248,9 +1248,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 81
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1265,9 +1265,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 82
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1282,9 +1282,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 83
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1298,7 +1298,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 84
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1313,9 +1313,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 85
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1330,9 +1330,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 86
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1346,7 +1346,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 87
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1361,9 +1361,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 88
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1377,7 +1377,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 89
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1392,9 +1392,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 90
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1409,9 +1409,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 91
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1425,7 +1425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 92
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1439,7 +1439,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 93
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1454,9 +1454,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 94
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1474,7 +1474,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: 'Смущена',
         goTo: 102
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1489,9 +1489,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 96
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1506,9 +1506,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 97
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1522,7 +1522,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 98
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1536,7 +1536,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 99
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1551,9 +1551,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 100
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1568,9 +1568,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 101
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1584,7 +1584,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 121
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1599,14 +1599,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 103
       }],
     message: 'Похоже, между вами что-то происходит. Или это все мимолетно?',
-    music: require('../../../../Audio/FOF/Christopher.mp3'),
+    music: require('../../../../Media/Audio/FOF/Christopher.mp3'),
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: 2, category: 'Person', id: 'Christopher' }],
     achievement: { story: EStoriesEn.FOF, name: 'BadGuy' },
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1621,9 +1621,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 104
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1638,9 +1638,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 105
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1655,9 +1655,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 106
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1671,7 +1671,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 107
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1685,7 +1685,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 108
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1700,9 +1700,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 109
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1716,7 +1716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 110
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1727,8 +1727,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       {
         text: ''
       }],
-    cutScene: { video: require('../../../../Images/FOF/CutScenes/Christopher_Couch.mp4'), goTo: 111 },
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    cutScene: { video: require('../../../../Media/Images/FOF/CutScenes/Christopher_Couch.mp4'), goTo: 111 },
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1743,9 +1743,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 112
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1759,7 +1759,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 113
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1773,7 +1773,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 114
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1787,7 +1787,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 115
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1802,9 +1802,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 116
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1818,7 +1818,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 117
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1832,7 +1832,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 118
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1846,7 +1846,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 119
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1860,7 +1860,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 120
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1875,9 +1875,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 121
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1891,8 +1891,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 122
       }],
-    music: require('../../../../Audio/FOF/Main.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    music: require('../../../../Media/Audio/FOF/Main.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1907,9 +1907,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 123
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1924,9 +1924,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 124
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1941,9 +1941,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 125
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg'),
     beforeBegin: () => {
       resetChoices()
       scenarioManager.resetSceneButtons(125)
@@ -1973,9 +1973,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       scenarioManager.loadChoices(125)
     },
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -1991,11 +1991,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Тебе приятна забота Кристофера',
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Person', id: 'Christopher' }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2010,9 +2010,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 128
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2027,9 +2027,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 129
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2044,9 +2044,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 125
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2061,9 +2061,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 131
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2078,9 +2078,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 132
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2095,9 +2095,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 133
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2112,9 +2112,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 134
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Club') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Club') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2129,9 +2129,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 135
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2146,9 +2146,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 136
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2162,7 +2162,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 137
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Guestroom_Morning.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },
 
   {
@@ -2176,7 +2176,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 138
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2190,8 +2190,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 139
       }],
-    music: require('../../../../Audio/FOF/Bath.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    music: require('../../../../Media/Audio/FOF/Bath.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2205,7 +2205,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 140
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2220,9 +2220,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 141
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Towel.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Abigeil_Towel.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2236,7 +2236,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 142
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2251,9 +2251,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 143
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Towel.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Abigeil_Towel.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2267,7 +2267,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 144
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2282,9 +2282,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 145
       }],
     speaker: 'Эбигейл',
-    imageFront: require('../../../../Images/FOF/Persons/Abigeil_Towel.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Abigeil_Towel.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2298,7 +2298,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 146
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2312,8 +2312,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    music: require('../../../../Audio/FOF/Main.mp3'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Bath_Loft.jpg')
+    music: require('../../../../Media/Audio/FOF/Main.mp3'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Bath_Loft.jpg')
   },
 
   {
@@ -2327,7 +2327,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 148
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
   {
@@ -2339,7 +2339,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: ''
       }],
     wardrobe: { story: EStoriesEn.FOF, personId: 'Abigeil_Part06', goTo: 149 },
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
   {
@@ -2353,7 +2353,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 150
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
   {
@@ -2367,7 +2367,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 151
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
   {
@@ -2381,7 +2381,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 152
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Abigail_Room.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
   {
@@ -2396,9 +2396,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 153
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2413,10 +2413,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 154
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2431,10 +2431,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 155
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2449,10 +2449,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 156
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2467,7 +2467,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 157
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2482,7 +2482,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 158
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2497,10 +2497,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 159
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2519,10 +2519,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       scenarioManager.resetSceneButtons(160)
     },
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2564,10 +2564,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       scenarioManager.loadChoices(160)
     },
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2582,10 +2582,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 162
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2600,10 +2600,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 163
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2618,10 +2618,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 160
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2636,10 +2636,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 165
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2654,10 +2654,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 166
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2672,10 +2672,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 160
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2690,10 +2690,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 168
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2708,10 +2708,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 169
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2726,10 +2726,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 160
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2744,10 +2744,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 171
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2762,10 +2762,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 172
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2780,10 +2780,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 173
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2798,10 +2798,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 174
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2814,7 +2814,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     wardrobe: { story: EStoriesEn.FOF, personId: 'Breakfast', goTo: 180 },
     parallax: 'right',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2829,7 +2829,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 181
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2844,10 +2844,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 182
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2862,10 +2862,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 183
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2880,10 +2880,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 184
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2898,7 +2898,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 185
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2913,10 +2913,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 186
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2931,10 +2931,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 187
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2949,10 +2949,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 188
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2979,7 +2979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 197
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -2994,12 +2994,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 190
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Effect', id: 'Shift' }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3014,10 +3014,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 199
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3032,12 +3032,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 192
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Person', id: 'Nick' }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3052,7 +3052,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 193
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3067,10 +3067,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 199
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3085,12 +3085,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 195
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
     stats: [
       { story: EStoriesEn.FOF, value: -1, category: 'Effect', id: 'Respect' }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3105,7 +3105,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 196
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3120,10 +3120,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 199
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3138,12 +3138,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 198
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     parallax: 'left',
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Person', id: 'Christopher' }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3158,7 +3158,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 199
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3172,7 +3172,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 200
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3187,9 +3187,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 201
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3204,9 +3204,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 202
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3221,9 +3221,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 203
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Kitchen_Chris.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Kitchen_Chris.jpg')
   },
 
   {
@@ -3237,7 +3237,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 204
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3252,9 +3252,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 205
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3269,9 +3269,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 206
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3294,9 +3294,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 210
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3312,12 +3312,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Кристофер доволен, что ваши взгляды совпадают',
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Person', id: 'Christopher' },
       { story: EStoriesEn.FOF, value: +1, category: 'Choice', id: 'SheIsBeautiful' }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3332,9 +3332,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 211
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3350,11 +3350,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Кристофер огорчен, что ты не разделяешь его интересы',
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: -1, category: 'Person', id: 'Christopher' }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3369,9 +3369,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 211
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Backdoor_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Backdoor_Car.jpg')
   },
 
   {
@@ -3385,7 +3385,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 212
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3399,7 +3399,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 213
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3413,7 +3413,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 214
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3427,7 +3427,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 215
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3441,7 +3441,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 216
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3466,7 +3466,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 222
       }
     ],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3481,9 +3481,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 218
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3497,7 +3497,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 219
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3512,9 +3512,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 220
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3529,9 +3529,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 221
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3546,9 +3546,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 222
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3562,7 +3562,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 300
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3577,9 +3577,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 223
       }],
     speaker: 'Эбигейл',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.FOF, 'Abigeil_Part06') },
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.FOF, 'Abigeil_Part06') },
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3594,9 +3594,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 224
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3611,9 +3611,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 225
       }],
     speaker: 'Кристофер',
-    imageFront: require('../../../../Images/FOF/Persons/Christopher.png'),
-    imageBorder: require('../../../../Images/FOF/UI/Border.png'),
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageFront: require('../../../../Media/Images/FOF/Persons/Christopher.png'),
+    imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3627,7 +3627,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 226
       }],
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   },
 
   {
@@ -3644,6 +3644,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         }
       }],
     achievement: { story: EStoriesEn.FOF, name: 'Chapter01Part06Completed' },
-    imageBack: require('../../../../Images/FOF/Backgrounds/Car.jpg')
+    imageBack: require('../../../../Media/Images/FOF/Backgrounds/Car.jpg')
   }
 ])

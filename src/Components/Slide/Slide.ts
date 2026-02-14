@@ -27,7 +27,7 @@ export const Slide = new CContainer('slide',
         <img class="slide__imageMiddle"/>
         <img class="slide__imageRight"/>
         <img class="slide__imageFront"/>
-        <img class="slide__border" src="${require('../../Images/UI/border_invisible.png')}"/>
+        <img class="slide__border" src="${require('../../Media/Images/UI/border_invisible.png')}"/>
     </div>
     <div class="slide__text-container">
     	<p class="slide__speaker"></p>
@@ -40,10 +40,10 @@ export const Slide = new CContainer('slide',
         <button class="slide__button"></button>
         <button class="slide__button"></button>
     </div>
-    <img class="slide__background" src="${require('../../Images/UI/transparent.png')}"/>
-    <img class="slide__backgroundFullscreenObjectLeft" src="${require('../../Images/UI/transparent.png')}"/>
-    <img class="slide__backgroundFullscreenObjectRight" src="${require('../../Images/UI/transparent.png')}"/>
-    <img class="slide__backgroundFullscreenObjectCenter" src="${require('../../Images/UI/transparent.png')}"/>
+    <img class="slide__background" src="${require('../../Media/Images/UI/transparent.png')}"/>
+    <img class="slide__backgroundFullscreenObjectLeft" src="${require('../../Media/Images/UI/transparent.png')}"/>
+    <img class="slide__backgroundFullscreenObjectRight" src="${require('../../Media/Images/UI/transparent.png')}"/>
+    <img class="slide__backgroundFullscreenObjectCenter" src="${require('../../Media/Images/UI/transparent.png')}"/>
     <img class="slide__backgroundHelper"/>
     <div class="slide__message">
         <div class="slide__message-text"></div>

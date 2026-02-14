@@ -23,31 +23,31 @@ import { getCurrentEventImageSVG } from '../../Utils/eventManager';
 export const Profile = new CContainer(
   'profile',
 	`
-<p class="tab__title">Профиль <img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"/></p>
-<img class="profile__screenshot" src="${require('../../Images/UI/icon_camera.svg')}">
+<p class="tab__title">Профиль <img src="${require('../../Media/Images/UI/icon_info.svg')}" class="icon_span"/></p>
+<img class="profile__screenshot" src="${require('../../Media/Images/UI/icon_camera.svg')}">
 <div class="profile__block" id='screen'>
 	<img class="profile__banner">
 	<div class="profile__container profile__container-profile">
 		<img class="profile__image">
 		<input class="profile__input" type="text" placeholder="Введите имя">
-		<img class="profile__edit-banner" src="${require('../../Images/UI/icon_paint.svg')}">
+		<img class="profile__edit-banner" src="${require('../../Media/Images/UI/icon_paint.svg')}">
 	</div>
 	<div class="profile__category">
 	  <p class="profile__category-title">Общая статистика</p>
 		<div class="profile__container">
-			<p class="profile__text"><img class="books__icon" src="${require('../../Images/UI/icon_exit.svg')}"/> Первый запуск:</p>
+			<p class="profile__text"><img class="books__icon" src="${require('../../Media/Images/UI/icon_exit.svg')}"/> Первый запуск:</p>
 			<p id="firstLaunch" class="profile__text"></p>
 		</div>
 		<div class="profile__container">
-			<p class="profile__text"><img class="books__icon" src="${require('../../Images/UI/icon_time.svg')}"/> Времени в игре:</p>
+			<p class="profile__text"><img class="books__icon" src="${require('../../Media/Images/UI/icon_time.svg')}"/> Времени в игре:</p>
 			<p id="spentTime" class="profile__text"></p>
 		</div>
 		<div class="profile__container">
-			<p class="profile__text"><img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/> Книжек потрачено:</p>
+			<p class="profile__text"><img class="books__icon" src="${require('../../Media/Images/UI/icon_stories_currency.svg')}"/> Книжек потрачено:</p>
 			<p id="wastedBooks" class="profile__text"></p>
 		</div>
 		<div class="profile__container">
-			<p class="profile__text"><img class="books__icon" src="${require('../../Images/UI/icon_stories.svg')}"/> Историй начато:</p>
+			<p class="profile__text"><img class="books__icon" src="${require('../../Media/Images/UI/icon_stories.svg')}"/> Историй начато:</p>
 			<p id="completedParts" class="profile__text"></p>
 		</div>
 	</div>
@@ -71,7 +71,7 @@ export const Profile = new CContainer(
 </div>
 
 <div class='promocodes'>
-  <p class="tab__title">Промокоды</p>
+  <p class="tab__title">Мои клеймы</p>
   <div class='promocode__blocks'>
   </div>
 </div>
@@ -101,7 +101,7 @@ export function renderProfile (): void {
   Profile.firstLaunch.innerHTML = loadData(['Profile', 'FirstLaunch'])
   const partsInfo = storiesManager.getPartsInfo()
   Profile.completedParts.innerHTML = String(partsInfo.beginnedStories) + '/' + String(partsInfo.allStories)
-  Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${getCurrentEventImageSVG('icon_achievements')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount() + `<img src="${require('../../Images/UI/icon_go-right.svg')}" class="icon_span_next"/>`
+  Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${getCurrentEventImageSVG('icon_achievements')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount() + `<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>`
   Profile.spentTime.innerHTML = transformMinutes(parseInt(loadData(['Profile', 'TimeSpent'])!))
   Profile.wastedBooks.innerHTML = String(loadData(['Profile', 'BooksWasted'])!)
   Profile.events.innerHTML = getEventsHTML()
@@ -138,7 +138,7 @@ function enableConsole (): void {
   addBook()
   addBook()
   addBook()
-  makeExplosion(Profile.wastedBooks, [`<img class="books__icon" src="${require('../../Images/UI/icon_stories_currency.svg')}"/>`], 1.2, 10, 25, 10)
+  makeExplosion(Profile.wastedBooks, [`<img class="books__icon" src="${require('../../Media/Images/UI/icon_stories_currency.svg')}"/>`], 1.2, 10, 25, 10)
   Slide.console.classList.add('console_activated')
 }
 
@@ -163,7 +163,7 @@ Profile.screenshotButton.onclick = () => {
   saveScreenshot(Profile.self.querySelector('#screen'))
 }
 
-function updateUsedPromoCodes(): void {
+function updateUsedPromoCodes (): void {
   Profile.promocodeBlocks.innerHTML = ''
   let result = ''
   const availablePromocodes = getUsedPromoCodes()

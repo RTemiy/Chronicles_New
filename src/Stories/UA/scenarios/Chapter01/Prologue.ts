@@ -16,8 +16,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 1
       }],
     message: 'Первое правило Солдата: Защищай, убивай, умирай',
-    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    music: require('../../../../Media/Audio/UA/Alert_Theme.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -31,7 +31,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 2
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -46,7 +46,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 3
       }],
     message: 'Нажмите на нижней панели стрелочку, чтобы посмотреть текст предыдущего слайда',
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -62,9 +62,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     speaker: 'EVE-13C',
     stats: [{ story: EStoriesEn.UA, value: 0, category: 'Person', id: 'Eve' }],
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -78,7 +78,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -93,9 +93,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 6
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -109,7 +109,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 7
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -123,7 +123,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 8
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -138,9 +138,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 9
       }],
     speaker: 'EVE-13C ',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -154,7 +154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 10
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -170,9 +170,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     message: 'Энзоскелет — имплант, обеспечивающий механическое укрепление позвоночника человека. Обычно применяется в целях снижения нагрузки и увеличения емкости организма для установки дополнительных модификаций и имплантов',
     speaker: 'EVE-13C ',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -186,7 +186,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 12
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -201,9 +201,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 13
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -217,7 +217,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 14
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -231,7 +231,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 15
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -245,7 +245,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 16
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -259,7 +259,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 17
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -273,9 +273,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 18
       }],
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -290,8 +290,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 19
       }],
     stats: [{ story: EStoriesEn.UA, value: 100, category: 'Effect', id: 'Health' }],
-    simple: require('../../../../Audio/UA/1Shot.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    simple: require('../../../../Media/Audio/UA/1Shot.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -305,12 +305,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 20
       }],
-    simple: require('../../../../Audio/UA/3Shots.mp3'),
-    music: require('../../../../Audio/UA/Fight_Theme.mp3'),
+    simple: require('../../../../Media/Audio/UA/3Shots.mp3'),
+    music: require('../../../../Media/Audio/UA/Fight_Theme.mp3'),
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -324,7 +324,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 21
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -338,7 +338,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 22
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -352,11 +352,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 23
       }],
-    simple: require('../../../../Audio/UA/5Shots.mp3'),
+    simple: require('../../../../Media/Audio/UA/5Shots.mp3'),
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -370,11 +370,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 24
       }],
-    simple: require('../../../../Audio/UA/BodySounds.mp3'),
+    simple: require('../../../../Media/Audio/UA/BodySounds.mp3'),
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -388,7 +388,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 25
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -402,7 +402,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 26
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -416,7 +416,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 27
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -431,9 +431,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 28
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -448,9 +448,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 29
       }],
     speaker: 'Цель №2',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_02.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_02.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -466,9 +466,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     message: firstChoiceMessage,
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -487,9 +487,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 38
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -504,7 +504,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 32
       }],
     stats: [{ story: EStoriesEn.UA, category: 'Choice', id: 'ComeToDoor', value: 1 }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -518,7 +518,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 33
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -533,9 +533,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 34
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -549,7 +549,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 35
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -563,7 +563,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 36
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -577,7 +577,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 37
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -591,7 +591,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 44
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -605,7 +605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 39
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -620,9 +620,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 40
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -636,7 +636,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 41
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -650,7 +650,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 42
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -664,7 +664,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 44
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -679,9 +679,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 45
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -695,7 +695,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 46
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -710,9 +710,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 47
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -726,7 +726,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 48
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -740,7 +740,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 49
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -755,9 +755,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 50
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -771,7 +771,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 51
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -796,7 +796,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 56
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -810,7 +810,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 53
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -825,9 +825,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 54
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -841,7 +841,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 55
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -856,9 +856,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 57
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -872,7 +872,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -887,9 +887,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 58
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -903,7 +903,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -917,7 +917,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 60
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -932,9 +932,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 61
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -953,9 +953,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 64
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -970,7 +970,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 63
       }],
     stats: [{ story: EStoriesEn.UA, category: 'Choice', id: 'Obey', value: 1 }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -985,9 +985,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 98
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1001,7 +1001,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 65
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1016,9 +1016,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 66
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1032,7 +1032,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 67
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1046,7 +1046,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 68
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1061,9 +1061,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 69
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1077,7 +1077,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 70
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1092,9 +1092,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 71
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1108,7 +1108,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 72
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1123,9 +1123,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 73
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1140,9 +1140,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 74
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1156,7 +1156,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 75
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1170,7 +1170,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 76
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1185,9 +1185,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 77
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1202,9 +1202,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 78
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1218,7 +1218,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 79
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1232,7 +1232,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 80
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1246,7 +1246,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 81
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1260,7 +1260,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 82
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1275,10 +1275,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 83
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    simple: require('../../../../Audio/UA/1Shot.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    simple: require('../../../../Media/Audio/UA/1Shot.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1293,7 +1293,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 84
       }],
     beforeBegin: redFlash,
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1308,7 +1308,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 85
       }],
     stats: [{ story: EStoriesEn.UA, value: -10, category: 'Effect', id: 'Health' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1323,9 +1323,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 86
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1339,7 +1339,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 87
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1353,7 +1353,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 88
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1368,9 +1368,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 89
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1384,7 +1384,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 90
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1398,7 +1398,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 91
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1412,7 +1412,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 92
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1426,7 +1426,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 93
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1441,9 +1441,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 94
       }],
     speaker: 'Цель №1',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_01.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_01.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1457,7 +1457,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 95
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1471,7 +1471,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 96
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1486,9 +1486,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 98
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1503,9 +1503,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 99
       }],
     speaker: 'Цель №2',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_02.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_02.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1519,7 +1519,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 100
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1533,8 +1533,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 101
       }],
-    simple: require('../../../../Audio/UA/1Shot.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    simple: require('../../../../Media/Audio/UA/1Shot.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1548,7 +1548,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 102
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1563,9 +1563,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 103
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1579,7 +1579,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 104
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1604,7 +1604,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 105
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1619,9 +1619,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 106
       }],
     speaker: 'Цель №2',
-    imageFront: require('../../../../Images/UA/Persons/Bandit_02.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Bandit_02.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1635,7 +1635,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 107
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1650,9 +1650,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 108
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1667,7 +1667,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 109
       }],
     beforeBegin: blackFlash,
-    imageBack: require('../../../../Images/UA/Backgrounds/Soldier_Room.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
   {
@@ -1682,8 +1682,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 110
       }],
     beforeBegin: blackFlash,
-    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    music: require('../../../../Media/Audio/UA/Alert_Theme.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1708,7 +1708,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 111
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1723,7 +1723,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 112
       }],
     beforeBegin: redFlash,
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1737,7 +1737,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 113
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1752,9 +1752,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 114
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1768,7 +1768,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 118
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1782,7 +1782,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 118
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1797,10 +1797,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 119
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1815,7 +1815,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 120
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1830,9 +1830,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 121
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1846,7 +1846,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 122
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1860,7 +1860,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 123
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1875,9 +1875,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 124
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1891,7 +1891,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 125
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1906,9 +1906,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 126
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1922,7 +1922,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 127
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1947,7 +1947,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 129
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1963,9 +1963,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     parallax: 'right',
     speaker: 'Раздраженный мужчина',
-    imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Sorax.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1981,9 +1981,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     speaker: 'Раздраженный мужчина',
     parallax: 'right',
-    imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Sorax.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -1998,7 +1998,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         gift: true,
         goTo: 131
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2012,7 +2012,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 132
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2027,9 +2027,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 133
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2044,9 +2044,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 134
       }],
     speaker: 'Заказчик ',
-    imageFront: require('../../../../Images/UA/Persons/Orderer.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Orderer.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2060,7 +2060,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 135
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2076,9 +2076,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     message: 'Корпораты — работники корпораций, крупных гигантов, приватизировавших все сферы жизни в городах. Их боятся и презирают из-за всеобъемлющей власти, которой невозможно противостоять',
     speaker: 'Раздраженный мужчина',
-    imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Sorax.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2093,9 +2093,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 137
       }],
     speaker: 'Заказчик',
-    imageFront: require('../../../../Images/UA/Persons/Orderer.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Orderer.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2110,9 +2110,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 138
       }],
     speaker: 'Соракс',
-    imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Sorax.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2127,9 +2127,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 139
       }],
     speaker: 'Заказчик',
-    imageFront: require('../../../../Images/UA/Persons/Orderer.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Orderer.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2144,9 +2144,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 140
       }],
     speaker: 'Соракс',
-    imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Sorax.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2161,9 +2161,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 141
       }],
     speaker: 'Заказчик',
-    imageFront: require('../../../../Images/UA/Persons/Orderer.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Orderer.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2179,9 +2179,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     message: 'Вайлет — синтетический наркотик, обретший популярность более десяти лет назад. Основным действием является долгоиграющая эйфория',
     speaker: 'Соракс',
-    imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Sorax.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2195,7 +2195,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 143
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2209,7 +2209,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 144
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2224,9 +2224,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 145
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA//Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA//Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2240,7 +2240,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 146
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2254,7 +2254,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 147
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2269,9 +2269,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 148
       }],
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2285,7 +2285,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 149
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2302,7 +2302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     parallax: 'right',
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Item', id: 'Neck' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2317,7 +2317,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 151
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2333,9 +2333,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     speaker: 'Соракс',
     parallax: 'right',
-    imageFront: require('../../../../Images/UA/Persons/Sorax.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Sorax.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2349,7 +2349,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 153
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2363,7 +2363,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 154
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2377,11 +2377,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 202
       }],
-    music: require('../../../../Audio/UA/Fight_Theme.mp3'),
+    music: require('../../../../Media/Audio/UA/Fight_Theme.mp3'),
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2395,7 +2395,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 156
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2409,7 +2409,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 157
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2428,7 +2428,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 163
       }],
     message: 'Статы Киллер и Мясник влияют на предпочитаемый героиней способ убийства. Киллер связан с быстрыми и тихими обезвреживаниями противника, когда как Мясник с более кровавыми и эмоциональными способами зачистки',
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2444,7 +2444,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Effect', id: 'Killer' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2458,7 +2458,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 160
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2472,7 +2472,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 161
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2488,7 +2488,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Item', id: 'Pistol' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2503,9 +2503,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 185
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2521,7 +2521,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Effect', id: 'Butcher' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2535,7 +2535,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 165
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2561,7 +2561,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 166
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2575,7 +2575,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 169
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2589,7 +2589,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 169
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2614,7 +2614,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 170
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2628,7 +2628,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 168
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2642,7 +2642,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 173
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2656,7 +2656,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 173
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2670,7 +2670,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 174
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2695,7 +2695,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 175
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2709,7 +2709,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 176
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2723,7 +2723,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 180
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2737,7 +2737,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 178
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2751,7 +2751,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 180
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2765,7 +2765,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 181
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2780,9 +2780,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 182
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2796,7 +2796,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 183
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2811,11 +2811,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 185
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Item', id: 'Pistol' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2829,7 +2829,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 186
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -2843,8 +2843,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 187
       }],
-    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    music: require('../../../../Media/Audio/UA/Alert_Theme.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2859,9 +2859,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 188
       }],
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2875,7 +2875,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 189
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2889,7 +2889,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 190
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2904,9 +2904,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 191
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2921,9 +2921,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 192
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2942,9 +2942,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 194
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2964,9 +2964,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 250
       }],
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -2981,9 +2981,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 195
       }],
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3003,9 +3003,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         isActive: false
       }],
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3020,9 +3020,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 195
       }],
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3036,7 +3036,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 196
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3051,9 +3051,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 197
       }],
     speaker: 'ZAYNE-3C',
-    imageFront: require('../../../../Images/UA/Persons/Zayne.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Zayne.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3067,7 +3067,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 198
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3081,7 +3081,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 199
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3096,9 +3096,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 200
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3123,8 +3123,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 200
       }
     ],
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3139,9 +3139,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 201
       }],
     speaker: 'EVE-13C',
-    imageFront: require('../../../../Images/UA/Persons/Eve.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
 
   {
@@ -3155,7 +3155,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 203
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   },
   {
     id: 202,
@@ -3168,9 +3168,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 155
       }],
-    simple: require('../../../../Audio/UA/5Shots.mp3'),
-    music: require('../../../../Audio/UA/Fight_Theme.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Canteen.jpg')
+    simple: require('../../../../Media/Audio/UA/5Shots.mp3'),
+    music: require('../../../../Media/Audio/UA/Fight_Theme.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -3187,6 +3187,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         }
       }],
     achievement: { story: EStoriesEn.UA, name: 'PrologueCompleted' },
-    imageBack: require('../../../../Images/UA/Backgrounds/Nova_Beginning.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Nova_Beginning.jpg')
   }
 ])

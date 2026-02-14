@@ -2,7 +2,7 @@ import { smartphone } from '../../index'
 
 smartphone.addChat('FPart01Irina',
   {
-    avatar: require('../../Images/F/Persons/Irina_Avatar.png'),
+    avatar: require('../../Media/Images/F/Persons/Irina_Avatar.png'),
     title: 'Ира',
     messages: [
       {

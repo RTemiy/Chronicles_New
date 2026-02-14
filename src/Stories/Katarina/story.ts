@@ -2,9 +2,9 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'Katarina',
-  image: require('../../Images/Katarina/Covers/Story_Cover.jpg'),
-  video: require('../../Images/Katarina/Covers/Story_Cover.mp4'),
-  title: require('../../Images/Katarina/Covers/Title.png'),
+  image: require('../../Media/Images/Katarina/Covers/Story_Cover.jpg'),
+  video: require('../../Media/Images/Katarina/Covers/Story_Cover.mp4'),
+  title: require('../../Media/Images/Katarina/Covers/Title.png'),
   description:
     'Роберт приезжает в Нью-Йорк в поисках правды о монстрах и того, кто за всем этим стоит. Городская жизнь поглощает его, а новые знакомые не дадут заскучать.',
   genre: 'Романтика, Фантастика',
@@ -13,13 +13,13 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/Katarina/Backgrounds/Theatre_Scene.jpg'),
+      image: require('../../Media/Images/Katarina/Backgrounds/Theatre_Scene.jpg'),
       parts: [
         {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Images/Katarina/Backgrounds/NY.jpg'),
-          loadingImage: require('../../Images/Katarina/Covers/Prologue_LS.png'),
+          image: require('../../Media/Images/Katarina/Backgrounds/NY.jpg'),
+          loadingImage: require('../../Media/Images/Katarina/Covers/Prologue_LS.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           }
@@ -37,8 +37,8 @@ storiesManager.add({
         {
           name: 'Скоро',
           code: '0',
-          image: require('../../Images/UI/background.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
+          image: require('../../Media/Images/UI/background.png'),
+          loadingImage: require('../../Media/Images/ITLH/Covers/Chapter01Part01.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)

@@ -48,6 +48,8 @@ import { initTapTap } from './Functions/tapTap';
 import { showOKMessage } from './Components/OKMessage/OKMessage';
 import { getCurrentEventImageJPG } from './Utils/eventManager';
 import menuToolbar from './Components/MenuToolbar/MenuToolbar';
+import { initParticles } from './Functions/particlesEffect';
+import stories from './Components/Stories/Stories';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -62,7 +64,7 @@ tabManagerMenu.open(Stories.self)
 export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
 export const statsManager = new CStatsManager()
-export const soundManager = new CSoundSystem(require('./Audio/Common/Silence.mp3'), require('./Audio/Common/Notification.mp3'), [require('./Audio/Common/Menu01.mp3'), require('./Audio/Common/Menu02.mp3'), require('./Audio/Common/Menu03.mp3'), require('./Audio/Common/Menu04.mp3')])
+export const soundManager = new CSoundSystem(require('./Media/Audio/Common/Silence.mp3'), require('./Media/Audio/Common/Notification.mp3'), [require('./Media/Audio/Common/Menu01.mp3'), require('./Media/Audio/Common/Menu02.mp3'), require('./Media/Audio/Common/Menu03.mp3'), require('./Media/Audio/Common/Menu04.mp3')])
 export const wardrobe = new CWardrobe(Wardrobe)
 export const smartphone = new CSmartphone(Smartphone)
 export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, hideToolbar, animateBackForth, renderInventory, renderJournal, showCutscene, showOKMessage)
@@ -104,7 +106,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
       LoadingScreen.tapButton.classList.add('loading-screen__tapImage_after')
       menuToolbar.storiesButton.click()
     }
-  }, 9000)
+  }, DEVMODE ? 1000 : 9000)
 })
 
 export function saveEndProgress (storyName: string, chapterName: string, partName: string, code: string): void {

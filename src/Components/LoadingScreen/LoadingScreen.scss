@@ -137,7 +137,7 @@
   opacity: 0;
   border: 0 none;
   text-decoration: none;
-  background-image: url("../../Images/UI/icon_pointer.svg");
+  background-image: url("../../Media/Images/UI/icon_pointer.svg");
   background-position: center, center;
   background-size: 60px, 60px;
   background-repeat: no-repeat, no-repeat;
@@ -156,36 +156,36 @@
   0%{
     transform: translateX(0px);
     opacity: 0;
-    background-image: url("../../Images/UI/icon_pointer.svg");
+    background-image: url("../../Media/Images/UI/icon_pointer.svg");
   }
   40%{
     transform: translateX(-25px) translateY(-25px);
     opacity: 1;
-    background-image: url("../../Images/UI/icon_pointer.svg");
+    background-image: url("../../Media/Images/UI/icon_pointer.svg");
   }
   50%{
     transform: translateX(-45px) translateY(-25px) rotate(-10deg) scale(90%);
     opacity: 1;
-    background-image: url("../../Images/UI/icon_pointer.svg"), url("../../Images/UI/icon_pointer_tapped.svg");
+    background-image: url("../../Media/Images/UI/icon_pointer.svg"), url("../../Media/Images/UI/icon_pointer_tapped.svg");
   }
   60%{
     transform: translateX(-25px) translateY(-25px);
     opacity: 1;
-    background-image: url("../../Images/UI/icon_pointer.svg");
+    background-image: url("../../Media/Images/UI/icon_pointer.svg");
   }
   70%{
     transform: translateX(0px);
     opacity: 0;
-    background-image: url("../../Images/UI/icon_pointer.svg");
+    background-image: url("../../Media/Images/UI/icon_pointer.svg");
   }
   80%{
     transform: translateX(0px);
     opacity: 0;
-    background-image: url("../../Images/UI/icon_pointer.svg");
+    background-image: url("../../Media/Images/UI/icon_pointer.svg");
   }
   100%{
     transform: translateX(0px);
     opacity: 0;
-    background-image: url("../../Images/UI/icon_pointer.svg");
+    background-image: url("../../Media/Images/UI/icon_pointer.svg");
   }
 }

@@ -17,12 +17,10 @@ export enum EStoriesEn {
   //
   Katarina = 'Katarina',
   UL = 'UL',
-  Immortals = 'Immortals',
   ROR = 'ROR',
 }
 
 export enum EStoriesAvailable {
-  Immortals = 0,
   Aurora = 1,
   ROR = 0,
   FOF = 1,
@@ -43,7 +41,6 @@ export enum EStoriesAvailable {
 }
 
 export enum EStoriesRu {
-  Immortals = 'Бессмертные: Последняя надежда',
   Aurora = 'Аврора',
   ROR = 'Время крыс',
   FOF = 'Осколки чужой судьбы',

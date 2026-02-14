@@ -15,8 +15,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 1
       }],
     message: '<i>На следующий день…',
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -31,9 +31,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 2
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -47,7 +47,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -62,9 +62,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 4
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -78,7 +78,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -128,7 +128,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 12
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -143,9 +143,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 7
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -159,7 +159,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -174,9 +174,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 14
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -191,9 +191,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 10
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -208,9 +208,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 14
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -225,9 +225,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 14
       }],
     speaker: '$Имя Игрока$ ',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -242,9 +242,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 13
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -259,9 +259,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 14
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -275,7 +275,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -288,7 +288,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 16
       }],
     wardrobe: { story: EStoriesEn.AEP, personId: 'AEP_Hero_Part_2', goTo: 16 },
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -303,9 +303,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 17
       }],
     speaker: '$Имя Игрока$ ',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -319,7 +319,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 18
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -334,9 +334,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 19
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -350,7 +350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -364,7 +364,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 21
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -379,9 +379,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 22
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -395,7 +395,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 23
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -427,7 +427,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 70
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -441,7 +441,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -456,9 +456,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 26
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -472,7 +472,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -487,9 +487,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 28
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -503,7 +503,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 29
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -535,7 +535,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 30
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -551,11 +551,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Ваш вечер проходил дома, поэтому вы успели сделать домашнюю работу',
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -570,9 +570,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 32
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -586,7 +586,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 33
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -601,9 +601,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 34
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -618,9 +618,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 43
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -636,11 +636,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Вы были заняты другими делами и не успели закончить домашнюю работу',
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -655,9 +655,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 37
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -672,9 +672,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 38
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -688,7 +688,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 39
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -703,9 +703,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 40
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -720,9 +720,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 41
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -737,9 +737,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 42
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -754,9 +754,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 43
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -770,7 +770,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 44
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -784,7 +784,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -798,7 +798,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 46
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -813,9 +813,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 47
       }],
     speaker: 'Карлота',
-    imageFront: require('../../../../Images/AEP/Persons/Carlotte.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Carlotte.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -829,7 +829,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 48
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -844,9 +844,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 49
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -861,9 +861,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 50
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -877,7 +877,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 51
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -891,7 +891,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 52
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -906,9 +906,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 53
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -922,7 +922,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 88
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -936,7 +936,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 55
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -951,9 +951,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 56
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -967,7 +967,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -982,9 +982,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 58
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -999,9 +999,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 59
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1015,7 +1015,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 60
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1047,7 +1047,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 61
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1063,11 +1063,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Ваш вечер проходил дома, поэтому вы успели сделать домашнюю работу',
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1082,9 +1082,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 65
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1100,11 +1100,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Вы были заняты другими делами и не успели закончить домашнюю работу',
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1119,9 +1119,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 65
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1135,7 +1135,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 66
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1150,9 +1150,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 67
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1166,7 +1166,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 68
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1181,9 +1181,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 69
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1197,7 +1197,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 88
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1211,7 +1211,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 71
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1225,7 +1225,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 72
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1240,9 +1240,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 73
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1256,7 +1256,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 74
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1271,9 +1271,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 75
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1288,9 +1288,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 76
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1305,9 +1305,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 77
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1321,7 +1321,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 78
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1353,7 +1353,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 79
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1369,11 +1369,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Ваш вечер проходил дома, поэтому вы успели сделать домашнюю работу',
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1388,9 +1388,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 81
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1404,7 +1404,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 82
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1419,9 +1419,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 87
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1437,11 +1437,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Вы были заняты другими делами и не успели закончить домашнюю работу',
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1456,9 +1456,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 85
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1472,7 +1472,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 86
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1487,9 +1487,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 87
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1503,7 +1503,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 88
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1518,7 +1518,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         gift: true,
         goTo: 89
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1532,7 +1532,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 90
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1547,9 +1547,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 91
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1564,9 +1564,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 92
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1581,9 +1581,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 93
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1598,9 +1598,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 94
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1615,9 +1615,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 95
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1632,7 +1632,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 96
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1664,7 +1664,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 187
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -1678,8 +1678,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 98
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1694,9 +1694,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 99
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1710,7 +1710,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 100
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1725,9 +1725,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 101
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1741,7 +1741,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 102
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1756,9 +1756,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 103
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1773,9 +1773,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 104
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1790,9 +1790,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 105
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1807,9 +1807,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 106
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1823,7 +1823,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 107
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1838,9 +1838,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 108
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1855,9 +1855,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 109
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1871,7 +1871,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 110
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1886,9 +1886,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 111
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1903,9 +1903,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 112
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1919,7 +1919,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 113
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1934,9 +1934,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 114
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1956,9 +1956,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 129
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1972,8 +1972,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 116
       }],
-    music: require('../../../../Audio/AEP/Ero.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/AEP/Ero.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -1988,9 +1988,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 117
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2004,7 +2004,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 118
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2019,9 +2019,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 119
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2035,7 +2035,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 120
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2050,9 +2050,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 121
       }],
     speaker: 'Виктор',
-    imageFront: require('../../../../Images/AEP/Persons/Viktor.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Viktor.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2067,9 +2067,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 122
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2083,7 +2083,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 123
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2097,7 +2097,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 124
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2111,7 +2111,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 125
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2125,7 +2125,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 126
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2141,11 +2141,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Кто знает, что чувствует Виктор. Возможно, это взаимно?',
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Viktor' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2159,7 +2159,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 128
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2173,7 +2173,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2187,8 +2187,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 130
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2202,7 +2202,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2216,8 +2216,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 132
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2232,9 +2232,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 133
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2248,7 +2248,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 134
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2263,9 +2263,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 135
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2279,7 +2279,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 136
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2293,7 +2293,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 137
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2308,9 +2308,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 138
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2325,9 +2325,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 139
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2341,7 +2341,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 140
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2356,9 +2356,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 141
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2384,7 +2384,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 185
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2403,7 +2403,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: 'Извергом',
         goTo: 183
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2417,14 +2417,14 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 144
       }],
-    music: require('../../../../Audio/AEP/Ero.mp3'),
+    music: require('../../../../Media/Audio/AEP/Ero.mp3'),
     speaker: '$Имя Игрока$',
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'MatteoIsSexy' },
       { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'SexCounter' }],
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2438,7 +2438,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 145
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2453,9 +2453,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 146
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2469,7 +2469,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2484,9 +2484,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 148
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2501,9 +2501,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 149
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2517,7 +2517,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 150
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2532,9 +2532,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 151
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2548,7 +2548,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 152
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2563,9 +2563,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 153
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2580,9 +2580,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 154
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2596,7 +2596,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 155
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2610,7 +2610,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 156
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2625,9 +2625,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 157
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2642,9 +2642,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 158
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2659,9 +2659,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 159
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2676,9 +2676,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 160
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2693,9 +2693,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 161
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2710,9 +2710,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 162
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2726,7 +2726,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 163
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2740,7 +2740,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 164
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2754,7 +2754,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 165
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2769,9 +2769,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 166
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2785,7 +2785,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 167
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2799,7 +2799,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 168
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2814,9 +2814,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 470
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2827,9 +2827,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       {
         text: ''
       }],
-    cutScene: { video: require('../../../../Images/AEP/CutScenes/Matteo and Hero.mp4'), goTo: 169 },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    cutScene: { video: require('../../../../Media/Images/AEP/CutScenes/Matteo and Hero.mp4'), goTo: 169 },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2843,7 +2843,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 170
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2857,7 +2857,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 171
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2871,7 +2871,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 172
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2885,7 +2885,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 173
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2899,7 +2899,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 174
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2913,7 +2913,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 175
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2927,7 +2927,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 176
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2941,7 +2941,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 177
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2955,7 +2955,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 178
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2969,7 +2969,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 179
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2983,7 +2983,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 180
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -2998,9 +2998,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 181
       }],
     speaker: 'Маттео',
-    imageFront: require('../../../../Images/AEP/Persons/Matteo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matteo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3015,9 +3015,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 182
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3034,7 +3034,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Matteo' }],
     achievement: { story: EStoriesEn.AEP, name: 'CrimeAndPunishment' },
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3048,11 +3048,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 184
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3066,7 +3066,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 185
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3080,8 +3080,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 186
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3095,7 +3095,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3109,8 +3109,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 188
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3125,9 +3125,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 189
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3141,7 +3141,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 190
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3156,9 +3156,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 191
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3172,7 +3172,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 192
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3187,9 +3187,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 193
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3203,7 +3203,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 194
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3218,9 +3218,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 195
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3235,9 +3235,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 196
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3251,7 +3251,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 197
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3266,9 +3266,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 198
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3283,9 +3283,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 199
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3300,9 +3300,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 200
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3316,7 +3316,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 201
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3331,9 +3331,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 202
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3353,9 +3353,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 231
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3370,9 +3370,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 204
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3387,9 +3387,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 205
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3404,9 +3404,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 206
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3432,7 +3432,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 210
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3447,9 +3447,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 208
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3464,9 +3464,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 209
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3480,7 +3480,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 210
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3495,9 +3495,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 211
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3511,7 +3511,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 212
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3526,9 +3526,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 213
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3543,9 +3543,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 214
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3560,9 +3560,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 215
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3576,7 +3576,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 216
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3590,7 +3590,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 217
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3605,9 +3605,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 218
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3622,9 +3622,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 219
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3650,7 +3650,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 227
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3665,9 +3665,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 221
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3685,7 +3685,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: 'Не отдавать',
         goTo: 225
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3700,9 +3700,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 223
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3716,7 +3716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 224
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3731,12 +3731,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 229
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Item', id: 'Granny_Cigarettes' },
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Isabelle' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3751,9 +3751,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 226
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3768,9 +3768,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 229
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3785,9 +3785,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 228
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3802,9 +3802,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 229
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3819,9 +3819,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 230
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3838,7 +3838,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     message: 'Профессор не против вашей компании',
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Isabelle' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3853,9 +3853,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 232
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3870,9 +3870,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 233
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3887,9 +3887,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 234
       }],
     speaker: 'Изабелла',
-    imageFront: require('../../../../Images/AEP/Persons/Isabella.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Isabella.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3903,7 +3903,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3917,8 +3917,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 236
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3932,7 +3932,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 237
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3946,9 +3946,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 238
       }],
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3962,7 +3962,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 239
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -3976,24 +3976,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
     condition: [
       {
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.AEP, 'AEP_Hero_Part_2') === 'Бабушкин кошмар'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.AEP, 'AEP_Hero_Part_2') === 'Бабушкин кошмар'
         },
         goTo: 240
       },
       {
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.AEP, 'AEP_Hero_Part_2') === 'Бабушкино равнодушие'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.AEP, 'AEP_Hero_Part_2') === 'Бабушкино равнодушие'
         },
         goTo: 244
       },
       {
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.AEP, 'AEP_Hero_Part_2') === 'Бабушкина гордость'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.AEP, 'AEP_Hero_Part_2') === 'Бабушкина гордость'
         },
         goTo: 248
       }
     ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4008,9 +4008,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 241
       }],
     speaker: 'Вызывающий студент',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4024,7 +4024,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 242
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4039,9 +4039,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 243
       }],
     speaker: 'Вызывающий студент',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4057,11 +4057,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Ваш наряд не впечатлил незнакомца',
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Person', id: 'Leonardo', silent: true }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4076,9 +4076,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 245
       }],
     speaker: 'Вызывающий студент',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4092,7 +4092,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 246
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4107,9 +4107,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 247
       }],
     speaker: 'Вызывающий студент',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4125,11 +4125,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Ваш наряд кажется незнакомцу приемлемым',
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: 1, category: 'Person', id: 'Leonardo', silent: true }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4144,9 +4144,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 249
       }],
     speaker: 'Вызывающий студент',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4160,7 +4160,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 250
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4175,9 +4175,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 251
       }],
     speaker: 'Вызывающий студент',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4193,11 +4193,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Ваш наряд кажется незнакомцу привлекательным',
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: 2, category: 'Person', id: 'Leonardo', silent: true }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4211,7 +4211,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 253
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4226,9 +4226,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 254
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4243,9 +4243,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 255
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4259,7 +4259,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 256
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4274,9 +4274,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 257
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4291,9 +4291,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 258
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4308,9 +4308,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 259
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4325,9 +4325,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 260
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4341,7 +4341,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 261
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4356,9 +4356,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 262
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4373,9 +4373,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 263
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4390,9 +4390,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 264
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4407,9 +4407,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 265
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4424,9 +4424,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 266
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4440,7 +4440,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 267
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4455,9 +4455,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 268
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4472,9 +4472,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 269
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4489,9 +4489,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 270
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4506,9 +4506,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 271
       }],
     speaker: 'Леонардо',
-    imageFront: require('../../../../Images/AEP/Persons/Leonardo.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Leonardo.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4522,7 +4522,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 272
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4536,7 +4536,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 273
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -4550,11 +4550,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 274
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4569,7 +4569,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 275
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4584,10 +4584,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 276
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4602,10 +4602,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 277
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4620,7 +4620,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 278
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4635,10 +4635,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 279
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4671,7 +4671,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         }
       ],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4686,7 +4686,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 281
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4701,7 +4701,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 282
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4716,10 +4716,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 283
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4734,10 +4734,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 284
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4752,10 +4752,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 285
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4770,10 +4770,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 307
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4788,10 +4788,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 280
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4806,10 +4806,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 288
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4824,10 +4824,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 289
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4859,7 +4859,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 303
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4874,10 +4874,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 291
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4892,7 +4892,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 292
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4907,7 +4907,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 293
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4922,10 +4922,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 294
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4940,10 +4940,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 295
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4958,7 +4958,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 296
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4973,7 +4973,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 297
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -4988,7 +4988,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 298
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5003,10 +5003,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 307
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5021,10 +5021,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 300
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5039,10 +5039,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 301
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5057,10 +5057,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 302
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5075,10 +5075,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 307
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5093,10 +5093,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 304
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5111,10 +5111,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 305
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5129,10 +5129,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 306
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5147,10 +5147,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 307
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5165,7 +5165,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 308
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5180,10 +5180,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 309
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5198,7 +5198,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 310
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5213,7 +5213,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 311
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5228,10 +5228,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 312
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5246,10 +5246,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 313
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5264,10 +5264,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 314
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5282,7 +5282,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 315
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5297,10 +5297,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 316
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5319,10 +5319,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 361
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5337,7 +5337,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 318
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5352,10 +5352,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 319
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -5369,7 +5369,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 320
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5384,9 +5384,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 321
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5401,9 +5401,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 322
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5417,7 +5417,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 323
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5431,7 +5431,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 324
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5446,9 +5446,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 325
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5462,7 +5462,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 326
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5476,7 +5476,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 327
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5495,7 +5495,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: 'Было омерзительно',
         goTo: 352
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5511,8 +5511,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.AEP, value: 1, category: 'Choice', id: 'LikeMadMatt' }],
-    music: require('../../../../Audio/AEP/Ero.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    music: require('../../../../Media/Audio/AEP/Ero.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5527,9 +5527,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 330
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5544,9 +5544,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 331
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5560,7 +5560,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 332
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5575,9 +5575,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 333
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5591,7 +5591,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 334
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5605,7 +5605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 335
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5619,7 +5619,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 336
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5634,9 +5634,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 337
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5651,9 +5651,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 338
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5667,7 +5667,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 339
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5681,7 +5681,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 340
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5695,7 +5695,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 341
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5710,9 +5710,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 342
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5726,7 +5726,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 344
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5740,7 +5740,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 345
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5755,9 +5755,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 346
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5773,12 +5773,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Мэтт доволен вашим покорством',
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Matt' },
       { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5793,9 +5793,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 348
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5809,7 +5809,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 349
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5824,9 +5824,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 350
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5840,7 +5840,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 351
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5855,10 +5855,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 372
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     achievement: { story: EStoriesEn.AEP, name: 'Blackmail' },
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5872,8 +5872,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 353
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5887,7 +5887,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 354
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5902,9 +5902,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 355
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5918,7 +5918,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 356
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5934,11 +5934,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Вы сохранили достоинство и не прогнулись под Мэттом',
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5953,9 +5953,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 358
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5969,7 +5969,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 359
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -5984,9 +5984,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 360
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Brassiere.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Brassiere.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -6000,7 +6000,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 372
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lumber.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lumber.jpg')
   },
 
   {
@@ -6014,13 +6014,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 362
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     stats: [
       { story: EStoriesEn.AEP, value: 1, category: 'Choice', id: 'RefuseMatt' }],
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6034,7 +6034,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 363
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6049,9 +6049,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 364
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6066,9 +6066,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 365
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6083,9 +6083,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 366
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6099,7 +6099,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 367
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6114,9 +6114,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 368
       }],
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6132,12 +6132,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Мэтт зол на вас и не собирается так просто сдаваться',
     speaker: 'Мэтт',
-    imageFront: require('../../../../Images/AEP/Persons/Matt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Matt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Person', id: 'Matt' },
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6152,7 +6152,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 370
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6167,10 +6167,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 371
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6184,7 +6184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 372
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Uni_Hall.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Uni_Hall.jpg')
   },
 
   {
@@ -6199,8 +6199,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         gift: true,
         goTo: 373
       }],
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6214,7 +6214,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 374
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6228,10 +6228,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 375
       }],
-    imageFront: require('../../../../Images/AEP/Persons/Salvatore_Shirt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Salvatore_Shirt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6246,11 +6246,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 376
       }],
     speaker: 'Поклонницы',
-    imageFront: require('../../../../Images/AEP/Persons/Girl_S.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Girl_S.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
     darkSilhouette: true,
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6265,11 +6265,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 377
       }],
     speaker: 'Поклонницы',
-    imageFront: require('../../../../Images/AEP/Persons/Girl_S_2.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Girl_S_2.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
     darkSilhouette: true,
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6284,11 +6284,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 378
       }],
     speaker: 'Поклонницы',
-    imageFront: require('../../../../Images/AEP/Persons/Girl_S.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Girl_S.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
     darkSilhouette: true,
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6302,10 +6302,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 379
       }],
-    imageFront: require('../../../../Images/AEP/Persons/Salvatore_Shirt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Salvatore_Shirt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6319,10 +6319,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 380
       }],
-    imageFront: require('../../../../Images/AEP/Persons/Salvatore_Shirt.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Salvatore_Shirt.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6337,10 +6337,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 381
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6355,7 +6355,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 382
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/AEP/Backgrounds/University.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/University.jpg')
   },
 
   {
@@ -6371,8 +6371,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     beforeBegin: whiteFlash,
     message: '<i>Спустя два месяца…',
-    music: require('../../../../Audio/AEP/Daily.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    music: require('../../../../Media/Audio/AEP/Daily.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6386,7 +6386,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 384
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6400,7 +6400,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 385
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6415,9 +6415,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 386
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6436,9 +6436,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 389
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6453,9 +6453,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 388
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6471,7 +6471,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6486,9 +6486,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 390
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6503,11 +6503,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 391
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Effect', id: 'Karma' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6521,7 +6521,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 392
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6553,7 +6553,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 393
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6568,9 +6568,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 394
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6586,9 +6586,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Из-за низкой кармы, вы предпочитаете заниматься другими делами',
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6603,9 +6603,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 396
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6621,9 +6621,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Из-за средней кармы, вы успеваете уделять учебе достаточно времени',
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6638,9 +6638,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 398
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6656,9 +6656,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }],
     message: 'Из-за высокой кармы, вы уделяете учебе большую часть времени',
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6672,7 +6672,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 400
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6687,9 +6687,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 401
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/AEP/Persons/Hero_Pajamas.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Hero_Pajamas.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6703,7 +6703,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 402
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Room.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')
   },
 
   {
@@ -6717,7 +6717,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 403
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6732,9 +6732,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 404
       }],
     speaker: 'Бабушка',
-    imageFront: require('../../../../Images/AEP/Persons/Granny.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Granny.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6749,9 +6749,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 405
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6766,9 +6766,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 406
       }],
     speaker: 'Бабушка',
-    imageFront: require('../../../../Images/AEP/Persons/Granny.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Granny.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6783,9 +6783,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 407
       }],
     speaker: 'Бабушка',
-    imageFront: require('../../../../Images/AEP/Persons/Granny.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Granny.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6800,9 +6800,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 408
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6816,7 +6816,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 409
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6831,9 +6831,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 410
       }],
     speaker: 'Бабушка',
-    imageFront: require('../../../../Images/AEP/Persons/Granny.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Granny.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6847,7 +6847,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 411
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6861,7 +6861,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 412
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6887,7 +6887,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
           goTo: 424
         }
       ],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6901,7 +6901,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 414
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6915,7 +6915,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 415
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6929,7 +6929,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 416
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6944,9 +6944,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 417
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6966,9 +6966,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
       }
     ],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -6983,11 +6983,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 419
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Choice', id: 'MeetMiguel' }],
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7001,7 +7001,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 420
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7016,11 +7016,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 427
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: +1, category: 'Person', id: 'Miguel' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7035,9 +7035,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 422
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7051,7 +7051,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 423
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7066,11 +7066,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 427
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: -1, category: 'Person', id: 'Miguel' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7084,7 +7084,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 425
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7099,9 +7099,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 426
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7115,7 +7115,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 427
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7129,8 +7129,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 428
       }],
-    simple: require('../../../../Audio/AEP/Car_Alarm.mp3'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    simple: require('../../../../Media/Audio/AEP/Car_Alarm.mp3'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7145,9 +7145,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 429
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7162,9 +7162,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 430
       }],
     speaker: 'Бабушка',
-    imageFront: require('../../../../Images/AEP/Persons/Granny.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Granny.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7179,9 +7179,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 431
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7196,9 +7196,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 432
       }],
     speaker: 'Бабушка',
-    imageFront: require('../../../../Images/AEP/Persons/Granny.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Granny.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7212,7 +7212,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 433
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7227,9 +7227,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 434
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7243,7 +7243,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 435
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Hero_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Kitchen.jpg')
   },
 
   {
@@ -7258,9 +7258,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 436
       }],
     speaker: 'Джон',
-    imageFront: require('../../../../Images/AEP/Persons/John.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/John.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7275,9 +7275,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 437
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7292,9 +7292,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 438
       }],
     speaker: 'Джон',
-    imageFront: require('../../../../Images/AEP/Persons/John.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/John.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7308,7 +7308,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 439
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7322,7 +7322,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 440
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7336,7 +7336,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 441
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7350,7 +7350,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 442
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7365,9 +7365,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 443
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7382,11 +7382,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 444
       }],
     speaker: 'Джон',
-    imageFront: require('../../../../Images/AEP/Persons/John.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/AEP/Persons/John.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
     stats: [
       { story: EStoriesEn.AEP, value: 0, category: 'Person', id: 'John' }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7401,9 +7401,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 445
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7418,9 +7418,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 446
       }],
     speaker: 'Джон',
-    imageFront: require('../../../../Images/AEP/Persons/John.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/John.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7435,9 +7435,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 447
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7452,9 +7452,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 448
       }],
     speaker: 'Джон',
-    imageFront: require('../../../../Images/AEP/Persons/John.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/John.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7468,7 +7468,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 449
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/John_Car.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/John_Car.jpg')
   },
 
   {
@@ -7482,7 +7482,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 450
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7496,7 +7496,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 451
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7510,7 +7510,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 452
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7525,9 +7525,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 453
       }],
     speaker: 'Неизвестный',
-    imageFront: require('../../../../Images/AEP/Persons/Dekan.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Dekan.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7542,9 +7542,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 454
       }],
     speaker: 'Декан',
-    imageFront: require('../../../../Images/AEP/Persons/Dekan.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Dekan.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7559,9 +7559,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 455
       }],
     speaker: 'Декан',
-    imageFront: require('../../../../Images/AEP/Persons/Dekan.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Dekan.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7576,9 +7576,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 456
       }],
     speaker: 'Декан',
-    imageFront: require('../../../../Images/AEP/Persons/Dekan.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Dekan.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7593,9 +7593,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 457
       }],
     speaker: 'Декан',
-    imageFront: require('../../../../Images/AEP/Persons/Dekan.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Dekan.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7610,9 +7610,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 458
       }],
     speaker: 'Декан',
-    imageFront: require('../../../../Images/AEP/Persons/Dekan.png'),
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: require('../../../../Media/Images/AEP/Persons/Dekan.png'),
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7626,7 +7626,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 459
       }],
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7641,9 +7641,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         goTo: 460
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
-    imageBorder: require('../../../../Images/AEP/UI/Border.png'),
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.AEP, 'AEP_Hero_Part_2') },
+    imageBorder: require('../../../../Media/Images/AEP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   },
 
   {
@@ -7660,6 +7660,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         }
       }],
     achievement: { story: EStoriesEn.AEP, name: 'Chapter02Part01Completed' },
-    imageBack: require('../../../../Images/AEP/Backgrounds/Lection.jpg')
+    imageBack: require('../../../../Media/Images/AEP/Backgrounds/Lection.jpg')
   }
 ])

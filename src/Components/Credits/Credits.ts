@@ -106,6 +106,6 @@ export const Credits = new CContainer(
 
 
 
-<img class="credits__image" src="${require('../../Images/UI/MVA.png')}">
+<img class="credits__image" src="${require('../../Media/Images/UI/MVA.png')}">
 `
 )

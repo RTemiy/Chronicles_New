@@ -13,12 +13,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/UA/Calm_Theme.mp3'),
+    music: require('../../../../Media/Audio/UA/Calm_Theme.mp3'),
     speaker: 'Громкий посетитель',
-    imageFront: require('../../../../Images/UA/Persons/Huckster.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Huckster.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -33,7 +33,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 2
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -48,10 +48,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 3
       }],
     speaker: 'Громкая посетительница',
-    imageFront: require('../../../../Images/UA/Persons/Huckster_Girl.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Huckster_Girl.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -66,10 +66,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 4
       }],
     speaker: 'Громкий посетитель',
-    imageFront: require('../../../../Images/UA/Persons/Huckster.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Huckster.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -84,7 +84,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 5
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -99,10 +99,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 6
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -117,8 +117,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 7
       }],
     parallax: 'left',
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -133,10 +133,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 8
       }],
     speaker: 'Громкая посетительница',
-    imageFront: require('../../../../Images/UA/Persons/Huckster_Girl.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Huckster_Girl.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -151,10 +151,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 9
       }],
     speaker: 'Громкий посетитель',
-    imageFront: require('../../../../Images/UA/Persons/Huckster.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Huckster.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -169,7 +169,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 10
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -184,7 +184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 11
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -199,10 +199,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 12
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -217,7 +217,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 13
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -232,10 +232,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 14
       }],
     speaker: 'Громкий посетитель',
-    imageFront: require('../../../../Images/UA/Persons/Huckster.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Huckster.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -250,7 +250,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 15
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -265,9 +265,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 16
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -282,9 +282,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 17
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -299,9 +299,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 18
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -315,7 +315,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 19
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -330,9 +330,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 20
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -347,9 +347,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 21
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -364,9 +364,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 22
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -380,7 +380,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 23
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -395,9 +395,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 24
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -411,7 +411,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 25
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -425,7 +425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 26
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -440,9 +440,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 27
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -456,7 +456,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 28
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -471,9 +471,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 29
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -488,9 +488,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 30
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -505,9 +505,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 31
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -522,9 +522,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 32
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -539,9 +539,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 33
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -556,9 +556,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 34
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -572,7 +572,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 35
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -587,9 +587,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 36
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -604,9 +604,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 37
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -620,7 +620,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 38
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -635,9 +635,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 39
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -652,9 +652,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 40
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -669,9 +669,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 650
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -686,9 +686,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 41
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -702,7 +702,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 42
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -717,9 +717,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 43
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -734,9 +734,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 44
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -751,9 +751,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 45
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -768,9 +768,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 46
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -784,9 +784,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 47
       }],
-    imageFront: require('../../../../Images/UA/Objects/Ramen.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Ramen.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -801,9 +801,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 48
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -817,9 +817,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 49
       }],
-    imageFront: require('../../../../Images/UA/Objects/Ramen.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Ramen.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -834,9 +834,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 600
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -848,7 +848,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: ''
       }],
     interruptiveFrame: { goTo: 50 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -863,8 +863,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 51
       }],
     message: 'Через два дня.',
-    music: require('../../../../Audio/UA/Idyll_Theme.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    music: require('../../../../Media/Audio/UA/Idyll_Theme.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -878,9 +878,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 52
       }],
-    imageFront: require('../../../../Images/UA/Objects/Knife.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Knife.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -894,9 +894,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 53
       }],
-    imageFront: require('../../../../Images/UA/Objects/Knife.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Knife.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -911,9 +911,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 54
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -928,9 +928,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 55
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -944,7 +944,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 56
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -959,9 +959,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 57
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -975,7 +975,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 58
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -989,7 +989,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1004,9 +1004,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 60
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1021,9 +1021,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 61
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1037,7 +1037,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 62
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1052,9 +1052,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 63
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1068,7 +1068,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 64
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1082,7 +1082,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 65
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1097,9 +1097,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 66
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1113,7 +1113,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 67
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1128,9 +1128,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 68
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1145,9 +1145,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 69
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1161,7 +1161,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 70
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1175,7 +1175,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 71
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1190,9 +1190,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 72
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1206,7 +1206,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 73
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1219,7 +1219,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 74
       }],
     wardrobe: { story: EStoriesEn.UA, personId: 'UA_Eve_Part_2', goTo: 74 },
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -1233,9 +1233,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 75
       }],
-    simple: require('../../../../Audio/UA/Crowd.mp3'),
-    music: require('../../../../Audio/UA/Calm_Theme.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    simple: require('../../../../Media/Audio/UA/Crowd.mp3'),
+    music: require('../../../../Media/Audio/UA/Calm_Theme.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1250,10 +1250,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 76
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1268,7 +1268,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 77
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1283,10 +1283,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 78
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1301,7 +1301,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 79
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1316,9 +1316,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 80
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1332,7 +1332,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 81
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1347,9 +1347,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 82
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1363,7 +1363,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 83
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1378,9 +1378,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 84
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1394,7 +1394,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 85
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1409,9 +1409,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 86
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1425,7 +1425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 87
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1439,7 +1439,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 88
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1454,9 +1454,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 89
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1471,9 +1471,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 90
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1488,9 +1488,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 91
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1505,9 +1505,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 92
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1522,9 +1522,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 93
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1538,7 +1538,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 94
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1553,9 +1553,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 95
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1570,9 +1570,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 96
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1587,9 +1587,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 97
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1603,7 +1603,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 98
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1618,9 +1618,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 100
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1635,8 +1635,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 101
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1650,7 +1650,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 102
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1665,9 +1665,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 103
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1681,7 +1681,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 104
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1696,9 +1696,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 105
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1713,9 +1713,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 106
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1729,8 +1729,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 107
       }],
-    imageFront: require('../../../../Images/UA/Objects/White_Strawberry.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/White_Strawberry.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1745,9 +1745,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 108
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1762,9 +1762,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 109
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1778,7 +1778,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 110
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1793,9 +1793,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 111
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1813,9 +1813,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: 'Отказаться',
         goTo: 117
       }],
-    imageFront: require('../../../../Images/UA/Objects/White_Strawberry.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/White_Strawberry.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1829,7 +1829,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 113
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1844,9 +1844,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 114
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1861,9 +1861,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 115
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1878,9 +1878,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 116
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1894,7 +1894,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 121
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1908,7 +1908,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 118
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1923,9 +1923,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 119
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1939,7 +1939,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 120
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1954,9 +1954,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 121
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1971,9 +1971,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 122
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -1988,9 +1988,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 123
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2004,7 +2004,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 124
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2019,9 +2019,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 125
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2037,9 +2037,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     message: 'Юзу — цитрусовый фрукт, распространен в юго-восточной Азии.',
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2054,9 +2054,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 127
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2070,7 +2070,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 128
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2085,10 +2085,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 129
       }],
     speaker: 'Сын Августы',
-    imageFront: require('../../../../Images/UA/Persons/Augusta_Small_Son.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta_Small_Son.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2102,7 +2102,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 130
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2117,9 +2117,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 131
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2134,10 +2134,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 132
       }],
     speaker: 'Сын Августы',
-    imageFront: require('../../../../Images/UA/Persons/Augusta_Small_Son.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta_Small_Son.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2152,9 +2152,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 133
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2168,7 +2168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 134
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2183,9 +2183,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 135
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2199,7 +2199,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 136
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2214,9 +2214,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 137
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2231,9 +2231,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 138
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2247,7 +2247,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 139
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2262,9 +2262,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 140
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2278,8 +2278,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 141
       }],
-    music: require('../../../../Audio/UA/Tension_Theme.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    music: require('../../../../Media/Audio/UA/Tension_Theme.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2293,7 +2293,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 142
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2307,7 +2307,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 143
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2321,7 +2321,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 144
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2336,9 +2336,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 145
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2352,7 +2352,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 146
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2366,7 +2366,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 147
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2381,9 +2381,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 148
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2397,7 +2397,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 149
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2412,9 +2412,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 150
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2428,7 +2428,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 151
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2442,7 +2442,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 152
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2457,9 +2457,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 153
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2473,7 +2473,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 154
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2487,7 +2487,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 155
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2501,7 +2501,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 156
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2516,9 +2516,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 157
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2532,7 +2532,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 158
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2546,7 +2546,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 159
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2560,7 +2560,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 160
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2575,9 +2575,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 161
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2591,7 +2591,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 162
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2606,9 +2606,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 163
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2623,9 +2623,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 164
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2639,7 +2639,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 165
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2654,9 +2654,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 166
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2671,9 +2671,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 167
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2688,9 +2688,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 168
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2704,7 +2704,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 169
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2719,9 +2719,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 170
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2736,9 +2736,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 171
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2753,9 +2753,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 172
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2769,7 +2769,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 173
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2788,9 +2788,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 179
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2805,11 +2805,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 175
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Effect', id: 'Humanity' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2823,7 +2823,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 176
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2837,7 +2837,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 177
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2852,9 +2852,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 178
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2868,7 +2868,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 204
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2885,7 +2885,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     stats: [
       { story: EStoriesEn.UA, value: -1, category: 'Effect', id: 'Humanity' },
       { story: EStoriesEn.UA, value: 1, category: 'Choice', id: 'Tie' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2899,7 +2899,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 181
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2913,7 +2913,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 182
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2928,9 +2928,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 183
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2945,9 +2945,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 184
       }],
     speaker: 'Мальчишка',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2961,7 +2961,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 185
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2975,7 +2975,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 186
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -2989,7 +2989,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 187
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3004,9 +3004,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 188
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3020,7 +3020,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 189
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3035,9 +3035,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 190
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3051,7 +3051,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 191
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3066,9 +3066,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 192
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3082,7 +3082,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 193
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3096,7 +3096,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 194
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3111,9 +3111,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 195
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3128,9 +3128,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 196
       }],
     speaker: 'Мальчишка 2',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_2.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_2.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3145,9 +3145,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 197
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3162,9 +3162,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 198
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3179,9 +3179,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 199
       }],
     speaker: 'Мальчишка 3',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_0.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_0.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3195,7 +3195,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 200
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3210,9 +3210,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 201
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3226,7 +3226,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 202
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3240,7 +3240,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 203
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3254,7 +3254,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 204
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3268,7 +3268,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 205
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3283,9 +3283,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 206
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3310,7 +3310,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 207
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3324,7 +3324,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 208
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3339,9 +3339,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 209
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3356,9 +3356,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 210
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3373,9 +3373,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 211
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3389,7 +3389,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 212
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3404,9 +3404,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 213
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3420,7 +3420,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 214
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3435,9 +3435,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 215
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3451,7 +3451,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 216
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3466,9 +3466,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 217
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3483,9 +3483,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 218
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3499,7 +3499,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 219
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3514,9 +3514,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 220
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3531,9 +3531,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 221
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3547,7 +3547,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 222
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3562,9 +3562,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 223
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3578,7 +3578,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 224
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3593,9 +3593,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 225
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3609,7 +3609,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 226
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3624,9 +3624,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 227
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3641,9 +3641,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 228
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3658,9 +3658,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 229
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3675,9 +3675,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 230
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3692,9 +3692,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 231
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3709,9 +3709,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 232
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3726,9 +3726,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 233
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3743,9 +3743,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 234
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3759,7 +3759,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 235
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3774,9 +3774,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 236
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3791,9 +3791,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 237
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3807,7 +3807,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 238
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3822,9 +3822,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 239
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3838,7 +3838,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 240
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3853,9 +3853,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 241
       }],
     speaker: 'Мальчишка 2',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_0.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_0.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3870,9 +3870,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 242
       }],
     speaker: 'Мальчишка 3',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_2.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_2.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3887,9 +3887,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 243
       }],
     speaker: 'Мальчишка 2',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_1.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_1.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3904,9 +3904,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 244
       }],
     speaker: 'Мальчишка 1',
-    imageFront: require('../../../../Images/UA/Persons/Small_Guy_Leader.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Small_Guy_Leader.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3921,7 +3921,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 245
       }],
     message: 'ОПГ — организованная преступная группа.',
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3936,9 +3936,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 246
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3952,7 +3952,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 247
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3967,9 +3967,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 248
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3983,7 +3983,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 249
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -3998,9 +3998,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 250
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4014,7 +4014,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 251
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4029,9 +4029,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 274
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4046,9 +4046,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 253
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4062,7 +4062,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 254
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4077,9 +4077,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 255
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4093,7 +4093,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 256
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4108,9 +4108,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 257
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4125,9 +4125,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 258
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4142,9 +4142,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 259
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4159,9 +4159,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 260
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4175,7 +4175,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 261
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4190,9 +4190,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 262
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4206,7 +4206,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 263
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4221,9 +4221,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 264
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4238,9 +4238,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 265
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4255,9 +4255,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 266
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4271,7 +4271,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 267
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4286,9 +4286,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 268
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4302,7 +4302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 269
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4317,9 +4317,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 270
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4334,9 +4334,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 271
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4351,9 +4351,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 272
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4367,7 +4367,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 273
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4382,9 +4382,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 274
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4398,7 +4398,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 275
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4413,9 +4413,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 276
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4430,9 +4430,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 277
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4446,7 +4446,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 278
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4461,9 +4461,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 279
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4478,9 +4478,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 280
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4494,7 +4494,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 281
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4509,9 +4509,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 282
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4526,9 +4526,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 283
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4542,7 +4542,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 284
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Market.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Market.jpg')
   },
 
   {
@@ -4556,11 +4556,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 285
       }],
-    music: require('../../../../Audio/UA/Idyll_Theme.mp3'),
+    music: require('../../../../Media/Audio/UA/Idyll_Theme.mp3'),
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4574,7 +4574,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 286
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4589,9 +4589,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 287
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4606,9 +4606,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 288
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4623,9 +4623,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 289
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4639,7 +4639,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 290
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4652,7 +4652,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 291
       }],
     wardrobe: { story: EStoriesEn.UA, personId: 'UA_Eve_Part_2_Food', goTo: 291 },
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4666,18 +4666,18 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
     condition: [
       {
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle('UA', 'UA_Eve_Part_2_Food') === 'Рагу'
+          return wardrobe.getCurrentEntityImageTitle('UA', 'UA_Eve_Part_2_Food') === 'Рагу'
         },
         goTo: 292
       },
       {
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle('UA', 'UA_Eve_Part_2_Food') !== 'Рагу'
+          return wardrobe.getCurrentEntityImageTitle('UA', 'UA_Eve_Part_2_Food') !== 'Рагу'
         },
         goTo: 317
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4692,9 +4692,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 293
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4709,9 +4709,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 294
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4726,9 +4726,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 295
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4742,7 +4742,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 296
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4757,9 +4757,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 297
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4773,7 +4773,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 298
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4788,9 +4788,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 299
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Objects/Stew.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Stew.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4805,9 +4805,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 300
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4822,9 +4822,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 301
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4839,9 +4839,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 302
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4855,7 +4855,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 303
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4870,9 +4870,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 304
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4887,9 +4887,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 305
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4904,9 +4904,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 306
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4920,7 +4920,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 307
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4935,9 +4935,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 308
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4951,7 +4951,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 309
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4966,9 +4966,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 310
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4982,7 +4982,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 311
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -4997,9 +4997,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 312
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5013,7 +5013,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 313
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5028,9 +5028,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 314
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5045,9 +5045,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 315
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5061,7 +5061,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 316
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5076,7 +5076,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 327
       }],
     achievement: { story: EStoriesEn.UA, name: 'IronCold' },
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5090,7 +5090,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 318
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5105,9 +5105,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 319
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5122,9 +5122,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 320
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5139,9 +5139,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 321
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5155,7 +5155,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 322
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5170,9 +5170,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 323
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5187,9 +5187,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 324
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5203,9 +5203,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 325
       }],
-    imageFront: require('../../../../Images/UA/Objects/Apple_Pie.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Apple_Pie.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5220,9 +5220,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 327
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Home.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Home.jpg')
   },
 
   {
@@ -5236,8 +5236,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 800
       }],
-    simple: require('../../../../Audio/UA/Breaking_Dishes.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    simple: require('../../../../Media/Audio/UA/Breaking_Dishes.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5251,8 +5251,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 328
       }],
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5266,12 +5266,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 329
       }],
-    music: require('../../../../Audio/UA/Alert_Theme.mp3'),
+    music: require('../../../../Media/Audio/UA/Alert_Theme.mp3'),
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5285,7 +5285,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 330
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5300,10 +5300,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 331
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5318,10 +5318,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 332
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5335,7 +5335,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 333
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5350,10 +5350,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 334
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5368,10 +5368,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 335
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5386,10 +5386,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 336
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5404,10 +5404,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 337
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5421,7 +5421,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 338
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5436,9 +5436,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 339
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5453,10 +5453,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 340
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5471,10 +5471,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 341
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5489,10 +5489,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 342
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5506,7 +5506,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 343
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5521,10 +5521,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 344
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5538,7 +5538,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 345
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5553,10 +5553,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 346
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5571,10 +5571,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 347
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5589,10 +5589,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 348
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5607,10 +5607,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 349
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5625,10 +5625,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 350
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5643,10 +5643,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 351
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5661,10 +5661,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 352
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5678,7 +5678,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 353
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5693,9 +5693,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 354
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5709,7 +5709,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 355
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5724,10 +5724,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 356
       }],
     speaker: 'Августа',
-    imageFront: require('../../../../Images/UA/Persons/Augusta.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Augusta.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5742,10 +5742,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 357
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5759,7 +5759,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 358
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5774,9 +5774,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 359
       }],
     speaker: '$Имя Игрока$',
-    imageFront: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Augusta_Kitchen.jpg')
+    imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.UA, 'UA_Eve_Part_2') },
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Augusta_Kitchen.jpg')
   },
 
   {
@@ -5791,10 +5791,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 360
       }],
     message: 'Неделя спустя.',
-    music: require('../../../../Audio/UA/Calm_Theme.mp3'),
-    imageFront: require('../../../../Images/UA/Objects/Cash_register.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    music: require('../../../../Media/Audio/UA/Calm_Theme.mp3'),
+    imageFront: require('../../../../Media/Images/UA/Objects/Cash_register.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5808,7 +5808,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 361
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5823,9 +5823,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 362
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5839,8 +5839,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 363
       }],
-    simple: require('../../../../Audio/UA/Metal_hit.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    simple: require('../../../../Media/Audio/UA/Metal_hit.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5855,9 +5855,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 364
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5872,9 +5872,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 365
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5888,7 +5888,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 366
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5903,9 +5903,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 367
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5920,9 +5920,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 368
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5937,9 +5937,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 369
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5953,7 +5953,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 370
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5968,9 +5968,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 371
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5984,7 +5984,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 372
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -5999,9 +5999,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 373
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6016,9 +6016,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 374
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6032,7 +6032,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 375
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6047,9 +6047,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 376
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6064,9 +6064,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 377
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6080,9 +6080,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 378
       }],
-    imageFront: require('../../../../Images/UA/Objects/Cash_register.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Cash_register.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6097,9 +6097,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 379
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6113,7 +6113,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 380
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6129,9 +6129,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     message: 'Тайяки — японское печенье в форме рыбки, традиционно со сладкой начинкой из бобов анко.',
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6146,7 +6146,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 382
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6161,7 +6161,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 383
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6176,10 +6176,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 384
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6194,10 +6194,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 385
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6212,7 +6212,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 386
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6227,7 +6227,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 387
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6242,10 +6242,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 388
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6260,7 +6260,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 389
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6275,7 +6275,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 390
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6290,10 +6290,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 391
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6308,10 +6308,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 392
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6326,7 +6326,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 393
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6341,10 +6341,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 394
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6359,7 +6359,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 395
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6374,10 +6374,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 396
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6392,10 +6392,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 397
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6410,7 +6410,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 398
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6425,7 +6425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 399
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6440,10 +6440,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 400
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6458,10 +6458,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 401
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6476,7 +6476,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 402
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6491,10 +6491,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 403
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6509,7 +6509,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 404
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6528,10 +6528,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 405
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6546,12 +6546,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 406
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Effect', id: 'Butcher' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6566,7 +6566,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 407
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6581,10 +6581,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 408
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6599,10 +6599,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 409
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6617,7 +6617,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 418
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6632,13 +6632,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 411
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Effect', id: 'Killer' },
       { story: EStoriesEn.UA, value: +1, category: 'Choice', id: 'LastWarning' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6653,10 +6653,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 412
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6671,7 +6671,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 413
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6686,10 +6686,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 414
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6704,7 +6704,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 415
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6719,10 +6719,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 416
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6737,10 +6737,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 417
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6755,7 +6755,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 418
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6770,9 +6770,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 419
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6786,7 +6786,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 420
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6801,9 +6801,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 421
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6817,7 +6817,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 422
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6832,9 +6832,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 423
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6849,9 +6849,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 424
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6865,7 +6865,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 425
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6880,9 +6880,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 426
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6896,7 +6896,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 427
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6911,9 +6911,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 428
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6928,9 +6928,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 429
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6945,9 +6945,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 430
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6961,7 +6961,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 431
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6976,9 +6976,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 432
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -6993,9 +6993,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 433
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7009,7 +7009,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 434
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7023,7 +7023,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 435
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7048,7 +7048,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 438
       }
     ],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7063,9 +7063,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 437
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7080,9 +7080,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 441
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7097,9 +7097,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 439
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7114,9 +7114,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 440
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7131,9 +7131,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 441
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7147,7 +7147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 442
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7161,7 +7161,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 443
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7176,9 +7176,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 444
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7193,9 +7193,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 445
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7210,9 +7210,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 446
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7227,9 +7227,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 447
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7244,9 +7244,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 448
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7261,9 +7261,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 449
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7278,9 +7278,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 450
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7294,7 +7294,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 451
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7309,9 +7309,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 452
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7326,9 +7326,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 453
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7343,9 +7343,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 454
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7359,7 +7359,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 455
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7374,9 +7374,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 456
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7391,9 +7391,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 457
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7407,7 +7407,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 458
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7422,11 +7422,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 459
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
     stats: [
       { story: EStoriesEn.UA, value: 0, category: 'Person', id: 'Cerberus' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7441,9 +7441,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 460
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7457,7 +7457,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 461
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7471,7 +7471,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 462
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7485,7 +7485,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 463
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7499,7 +7499,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 464
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7514,9 +7514,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 465
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7531,9 +7531,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 466
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7548,9 +7548,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 467
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7564,7 +7564,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 468
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7579,9 +7579,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 469
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7596,9 +7596,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 470
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7612,7 +7612,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 471
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7627,9 +7627,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 472
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7644,9 +7644,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 473
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7660,7 +7660,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 474
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7675,9 +7675,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 475
       }],
     speaker: 'Гость',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7692,9 +7692,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 476
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7709,9 +7709,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 477
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7725,7 +7725,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 478
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7740,9 +7740,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 479
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7757,9 +7757,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 480
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7773,7 +7773,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 481
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7788,9 +7788,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 482
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7805,9 +7805,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 483
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7822,9 +7822,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 484
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -7839,9 +7839,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 485
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7856,9 +7856,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 486
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7873,9 +7873,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 487
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7890,9 +7890,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 488
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7906,7 +7906,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 489
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7921,9 +7921,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 490
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7937,7 +7937,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 491
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7952,10 +7952,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 492
       }],
     speaker: 'Кей',
-    simple: require('../../../../Audio/UA/Cough.mp3'),
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    simple: require('../../../../Media/Audio/UA/Cough.mp3'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7969,7 +7969,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 493
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -7984,9 +7984,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 494
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8000,7 +8000,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 495
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8015,9 +8015,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 496
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8032,9 +8032,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 497
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8049,9 +8049,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 498
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8065,7 +8065,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 499
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8080,10 +8080,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 500
       }],
     speaker: 'Кей',
-    simple: require('../../../../Audio/UA/Cough.mp3'),
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    simple: require('../../../../Media/Audio/UA/Cough.mp3'),
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8098,9 +8098,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 501
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8114,7 +8114,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 502
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8128,7 +8128,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 503
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8143,9 +8143,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 504
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8159,7 +8159,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 505
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8174,9 +8174,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 506
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8191,9 +8191,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 507
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8207,7 +8207,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 508
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8222,9 +8222,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 509
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8239,9 +8239,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 510
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8256,9 +8256,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 511
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8272,7 +8272,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 512
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8287,9 +8287,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 513
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8304,9 +8304,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 514
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8321,9 +8321,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 515
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8337,7 +8337,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 516
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8352,9 +8352,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 517
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8368,7 +8368,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 518
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8383,9 +8383,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 519
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8399,7 +8399,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 520
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8414,9 +8414,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 521
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8431,9 +8431,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 522
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8448,9 +8448,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 523
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8464,7 +8464,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 524
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8479,9 +8479,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 525
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8496,9 +8496,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 526
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8512,7 +8512,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 527
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8527,9 +8527,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 528
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8544,9 +8544,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 529
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8560,8 +8560,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 530
       }],
-    simple: require('../../../../Audio/UA/Breaking_Metal.mp3'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    simple: require('../../../../Media/Audio/UA/Breaking_Metal.mp3'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8575,7 +8575,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 531
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8590,9 +8590,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 532
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8607,9 +8607,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 533
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8624,9 +8624,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 534
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8641,9 +8641,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 535
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8657,7 +8657,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 536
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8672,9 +8672,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 537
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8688,7 +8688,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 538
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8703,9 +8703,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 539
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8719,7 +8719,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 540
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8734,9 +8734,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 541
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8750,7 +8750,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 542
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8765,9 +8765,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 543
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8781,7 +8781,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 544
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8800,9 +8800,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 548
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8818,7 +8818,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
       }],
     stats: [
       { story: EStoriesEn.UA, value: +1, category: 'Person', id: 'Cerberus' }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8833,9 +8833,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 547
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8850,9 +8850,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 551
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8867,9 +8867,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 549
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8883,7 +8883,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 550
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8898,9 +8898,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 551
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8915,9 +8915,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 552
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8932,9 +8932,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 553
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8948,7 +8948,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 554
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8963,9 +8963,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 555
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8979,7 +8979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 556
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -8994,9 +8994,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 557
       }],
     speaker: 'Керберус',
-    imageFront: require('../../../../Images/UA/Objects/Shop_Bag.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Objects/Shop_Bag.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9010,7 +9010,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 558
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9025,9 +9025,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 559
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9041,7 +9041,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 560
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9056,9 +9056,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 561
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9072,7 +9072,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 562
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9087,9 +9087,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 563
       }],
     speaker: 'Кей',
-    imageFront: require('../../../../Images/UA/Persons/Cerberus.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Cerberus.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9104,9 +9104,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 564
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9121,9 +9121,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 565
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9137,7 +9137,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 566
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Restaurant.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Restaurant.jpg')
   },
 
   {
@@ -9152,9 +9152,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 567
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9168,7 +9168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 568
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9183,9 +9183,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 569
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9200,9 +9200,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 570
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9216,7 +9216,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 571
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9231,9 +9231,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 572
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9248,9 +9248,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 573
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9265,9 +9265,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 574
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9281,7 +9281,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 575
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9296,9 +9296,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 576
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9313,9 +9313,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 577
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9329,7 +9329,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 578
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9344,9 +9344,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 579
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9361,9 +9361,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 580
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9378,9 +9378,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 581
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9395,9 +9395,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 582
       }],
     speaker: 'Бабушка Юко',
-    imageFront: require('../../../../Images/UA/Persons/Yuko.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Yuko.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9411,7 +9411,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 583
       }],
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9426,9 +9426,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         goTo: 584
       }],
     speaker: '$Имя Игрока$',
-    imageFront: require('../../../../Images/UA/Persons/Eve_Waitress.png'),
-    imageBorder: require('../../../../Images/UA/UI/Border.png'),
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageFront: require('../../../../Media/Images/UA/Persons/Eve_Waitress.png'),
+    imageBorder: require('../../../../Media/Images/UA/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },
 
   {
@@ -9445,6 +9445,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         }
       }],
     achievement: { story: EStoriesEn.UA, name: 'Chapter01Part02Completed' },
-    imageBack: require('../../../../Images/UA/Backgrounds/Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   }
 ])

@@ -14,8 +14,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/TDP/Glaswer.mp3'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    music: require('../../../../Media/Audio/TDP/Glaswer.mp3'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -30,7 +30,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 2
       }],
     message: previousSlideMessage,
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -44,7 +44,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -58,7 +58,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -72,7 +72,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -86,7 +86,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -100,7 +100,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 7
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -114,7 +114,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 8
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -128,7 +128,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 9
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Tablet.jpg')
   },
 
   {
@@ -142,8 +142,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 10
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -157,7 +157,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 11
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -172,7 +172,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 12
       }],
     message: 'Чумные доктора использовали чеснок для профилактики заражения чумой, считая, что он губителен для возбудителей болезни и являлся частью защиты от неприятного запаха, исходящего от тел зараженных и трупов.',
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -186,7 +186,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -200,7 +200,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -214,7 +214,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -228,8 +228,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Bodies.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Bodies.jpg')
   },
 
   {
@@ -243,7 +243,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Bodies.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Bodies.jpg')
   },
 
   {
@@ -257,7 +257,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 18
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Bodies.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Bodies.jpg')
   },
 
   {
@@ -271,7 +271,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Bodies.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Bodies.jpg')
   },
 
   {
@@ -285,8 +285,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Central.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Central.jpg')
   },
 
   {
@@ -300,7 +300,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 21
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Central.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Central.jpg')
   },
 
   {
@@ -314,7 +314,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 22
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Central.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Central.jpg')
   },
 
   {
@@ -328,7 +328,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 23
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Central.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Central.jpg')
   },
 
   {
@@ -342,7 +342,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 24
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street_Central.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street_Central.jpg')
   },
 
   {
@@ -356,7 +356,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -370,7 +370,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 26
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -384,7 +384,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -398,7 +398,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 28
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -412,7 +412,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 29
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -426,7 +426,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 30
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -440,7 +440,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 31
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -454,8 +454,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 32
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -469,7 +469,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 33
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -483,7 +483,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 34
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -497,7 +497,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 35
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -511,8 +511,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 36
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -526,8 +526,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 37
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -541,7 +541,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 38
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -555,7 +555,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 39
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -569,7 +569,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 40
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street.jpg')
   },
 
   {
@@ -583,7 +583,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street.jpg')
   },
 
   {
@@ -600,6 +600,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         }
       }],
     achievement: { story: EStoriesEn.TDP, name: 'PrologueCompleted' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Street.jpg')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Street.jpg')
   }
 ])

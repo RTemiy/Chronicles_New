@@ -26,6 +26,9 @@ export default function showDebugger (): void {
     </div>
     `
   })
+  /*
+  -- Показать все слайды --
+
   result += '<h2>Слайды:</h2>'
   currentScenario.forEach(slide => {
     result += `
@@ -42,7 +45,7 @@ export default function showDebugger (): void {
   : ''}</p>
     </div>
     `
-  })
+  }) */
   Debugger.window.innerHTML = result
 }
 

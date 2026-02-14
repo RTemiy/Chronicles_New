@@ -2,9 +2,9 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'ITLH',
-  image: require('../../Images/ITLH/Covers/Story_Cover.jpg'),
-  video: require('../../Images/ITLH/Covers/Story_Cover.mp4'),
-  title: require('../../Images/ITLH/Covers/Title.png'),
+  image: require('../../Media/Images/ITLH/Covers/Story_Cover.jpg'),
+  video: require('../../Media/Images/ITLH/Covers/Story_Cover.mp4'),
+  title: require('../../Media/Images/ITLH/Covers/Title.png'),
   description:
     'Волею судьбы студентка была втянута в распри богов и бессмертных. Вам предстоит распутать множество тайн, встречаться с реальными историческими личностями, менять ход истории и понять: так ли прекрасна вечная жизнь?',
   genre: 'Романтика, Фантастика',
@@ -13,13 +13,13 @@ storiesManager.add({
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/ITLH/Covers/Chapter01.jpg'),
+      image: require('../../Media/Images/ITLH/Covers/Chapter01.jpg'),
       parts: [
         {
           name: 'Пролог',
           code: '0',
-          image: require('../../Images/ITLH/Backgrounds/Guides_World.jpg'),
-          loadingImage: require('../../Images/ITLH/Covers/Prologue.jpg'),
+          image: require('../../Media/Images/ITLH/Backgrounds/Guides_World.jpg'),
+          loadingImage: require('../../Media/Images/ITLH/Covers/Prologue.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           }
@@ -27,8 +27,8 @@ storiesManager.add({
         {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Images/ITLH/Backgrounds/Lectionhall_01.png'),
-          loadingImage: require('../../Images/ITLH/Covers/Chapter01Part01.jpg'),
+          image: require('../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg'),
+          loadingImage: require('../../Media/Images/ITLH/Covers/Chapter01Part01.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
@@ -37,8 +37,8 @@ storiesManager.add({
         {
           name: 'Скоро',
           code: '0',
-          image: require('../../Images/UI/background.png'),
-          loadingImage: require('../../Images/Immortals/Covers/Part01.png'),
+          image: require('../../Media/Images/UI/background.png'),
+          loadingImage: require('../../Media/Images/ITLH/Covers/Chapter01Part01.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)

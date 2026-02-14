@@ -14,8 +14,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/ITLH/Music/Theme_Nowadays.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Window_Morning.png')
+    music: require('../../../../Media/Audio/ITLH/Music/Theme_Nowadays.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
   {
@@ -30,8 +30,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 2
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas_Eyes.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Window_Morning.png')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas_Eyes.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
   {
@@ -45,7 +45,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 3
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Window_Morning.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
   {
@@ -60,8 +60,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 4
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas_Eyes.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Window_Morning.png')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas_Eyes.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
   {
@@ -75,7 +75,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Window_Morning.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
   {
@@ -88,7 +88,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 6
       }],
     wardrobe: { story: EStoriesEn.ITLH, personId: 'Hero_Room', goTo: 6 },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Window_Morning.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
   {
@@ -100,7 +100,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     interruptiveFrame: { goTo: 7 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -115,8 +115,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 8
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -131,22 +131,28 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       {
         goTo: 9,
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Путешественник'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Путешественник'
         }
       },
       {
         goTo: 13,
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Морской бриз'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Морской бриз'
         }
       },
       {
         goTo: 17,
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Вдохновение'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Вдохновение'
+        }
+      },
+      {
+        goTo: 22,
+        condition: () => {
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Уединение'
         }
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -160,7 +166,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 10
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -175,8 +181,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 11
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -190,7 +196,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 12
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -205,8 +211,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 22
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -220,7 +226,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 14
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -235,22 +241,22 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 15
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
     id: 15,
     text:
       `
-        Увидев ее на гаражной распродаже, просто не смогла мимо.
+        Увидев ее на гаражной распродаже, просто не смогла пройти мимо.
       `,
     buttons: [
       {
         text: '',
         goTo: 16
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -265,8 +271,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 22
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -280,7 +286,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 18
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -294,7 +300,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 19
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -309,8 +315,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 20
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -324,7 +330,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 22
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -335,8 +341,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       {
         text: ''
       }],
-    OKMessage: { goTo: 23, buttonText: 'Взглянуть', image: require('.././../../../Images/ITLH/Objects/Mobile.png') },
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    OKMessage: { goTo: 23, buttonText: 'Взглянуть', image: require('../../../../Media/Images/ITLH/Objects/Mobile.png') },
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -350,7 +356,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 24
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -370,8 +376,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }
     ],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -386,10 +392,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 26
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: 1, category: 'Choice', id: 'GoSleep' }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -403,7 +409,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 27
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -418,9 +424,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 28
       }],
     beforeBegin: whiteFlash,
-    ambient: require('../../../../Audio/ITLH/Ambient/Wind.mp3'),
-    music: require('.././../../../Audio/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    ambient: require('../../../../Media/Audio/ITLH/Ambient/Wind.mp3'),
+    music: require('../../../../Media/Audio/Common/Silence.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -434,7 +440,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 29
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -448,7 +454,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 30
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -462,7 +468,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 31
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -476,7 +482,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 32
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -490,7 +496,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 33
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -504,7 +510,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 34
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -519,9 +525,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 35
       }],
     speakerR: 'Неизвестный',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Alexander.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Alexander.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Garden_NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
   },
 
   {
@@ -536,9 +542,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 36
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Audio/ITLH/Music/Theme_Nowadays.mp3'),
-    ambient: require('.././../../../Audio/Common/Silence.mp3'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    music: require('../../../../Media/Audio/ITLH/Music/Theme_Nowadays.mp3'),
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -553,8 +559,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 37
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -568,7 +574,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 38
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -583,9 +589,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 39
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
     achievement: { story: EStoriesEn.ITLH, name: 'Sleeper' },
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -599,7 +605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 40
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -614,8 +620,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 41
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -627,7 +633,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     wardrobe: { story: EStoriesEn.ITLH, personId: 'Hero_Chapter01_Part01', goTo: 42 },
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -639,7 +645,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     interruptiveFrame: { goTo: 43 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -656,7 +662,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Item', id: 'Phone' },
       { story: EStoriesEn.ITLH, value: +700, category: 'Item', id: 'Money' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/House_Hero.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/House_Hero.png')
   },
 
   {
@@ -671,8 +677,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 45
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/House_Hero.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/House_Hero.png')
   },
 
   {
@@ -687,8 +693,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 46
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/House_Hero.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/House_Hero.png')
   },
 
   {
@@ -703,8 +709,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 47
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/House_Hero.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/House_Hero.png')
   },
 
   {
@@ -723,8 +729,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 96
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/House_Hero.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/House_Hero.png')
   },
 
   {
@@ -738,12 +744,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 49
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Car_Goes.mp3'),
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Car_Goes.mp3'),
     stats: [
       { story: EStoriesEn.ITLH, value: -200, category: 'Item', id: 'Money' },
       { story: EStoriesEn.ITLH, value: 1, category: 'Choice', id: 'Taxi' }],
     achievement: { story: EStoriesEn.ITLH, name: 'IChooseComfort' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Taxi.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Taxi.jpg')
   },
 
   {
@@ -757,7 +763,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 50
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Taxi.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Taxi.jpg')
   },
 
   {
@@ -771,7 +777,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 51
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Taxi.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Taxi.jpg')
   },
 
   {
@@ -785,7 +791,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 52
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Taxi.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Taxi.jpg')
   },
 
   {
@@ -800,9 +806,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 53
       }],
     message: 'Не со всеми персонажами отношения выстраиваются благодаря положительным статам. Читайте внимательно подсказки и сюжет, чтобы выйти на нужный вам уровень взаимоотношений.',
-    simple: require('../../../../Audio/ITLH/Sounds/Vibro.mp3'),
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Taxi.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Vibro.mp3'),
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Taxi.jpg')
   },
 
   {
@@ -815,7 +821,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 54
       }],
     smartphone: { goTo: 54, chatId: 'ChatWithCheryl' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Taxi.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Taxi.jpg')
   },
 
   {
@@ -828,7 +834,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 55
       }],
     interruptiveFrame: { goTo: 55 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Car_Close.mp3'),
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -842,8 +849,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 56
       }],
-    music: require('../../../../Audio/ITLH/Music/Theme_University.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    music: require('../../../../Media/Audio/ITLH/Music/Theme_University.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -857,8 +864,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 57
       }],
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -872,7 +879,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 58
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -886,7 +893,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -901,8 +908,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 60
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -916,7 +923,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 61
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -929,7 +936,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 62
       }],
     interruptiveFrame: { goTo: 62 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -943,7 +950,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 63
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -958,8 +965,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 64
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -973,7 +980,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 65
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -987,7 +994,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 66
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1002,8 +1009,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 67
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1018,8 +1025,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 68
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1034,8 +1041,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 69
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1050,8 +1057,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 70
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1066,8 +1073,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 71
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1082,8 +1089,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 72
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh_Smirk.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh_Smirk.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1097,7 +1104,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 73
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1111,8 +1118,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 74
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1126,7 +1133,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 75
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1140,7 +1147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 76
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1154,10 +1161,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 77
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Whiteboard.mp3'),
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Whiteboard.mp3'),
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1172,8 +1179,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 78
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1188,8 +1195,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 79
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1203,7 +1210,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 80
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1217,7 +1224,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 81
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1231,8 +1238,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 82
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Vibro.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Vibro.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1247,8 +1254,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 83
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1262,7 +1269,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 84
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1274,7 +1281,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     smartphone: { goTo: 85, chatId: 'FamilyArguing' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1288,7 +1295,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 86
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1303,8 +1310,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 87
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1319,8 +1326,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 88
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1334,7 +1341,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 89
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1348,7 +1355,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 90
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1363,8 +1370,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 91
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1379,8 +1386,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 92
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1395,8 +1402,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 93
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1410,7 +1417,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 94
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1425,8 +1432,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 95
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1440,7 +1447,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 264
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -1454,8 +1461,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 97
       }],
-    music: require('../../../../Audio/ITLH/Music/Theme_Nowadays.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/House_Hero.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/House_Hero.png')
   },
 
   {
@@ -1470,8 +1476,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 98
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/House_Hero.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/House_Hero.png')
   },
 
   {
@@ -1484,7 +1490,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 99
       }],
     interruptiveFrame: { goTo: 99 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -1500,7 +1506,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     stats: [
       { story: EStoriesEn.ITLH, value: -50, category: 'Item', id: 'Money' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Bus.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Bus.jpg')
   },
 
   {
@@ -1514,7 +1520,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 101
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Bus.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Bus.jpg')
   },
 
   {
@@ -1528,7 +1534,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 102
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Bus.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Bus.jpg')
   },
 
   {
@@ -1543,9 +1549,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 103
       }],
     message: 'Не со всеми персонажами отношения выстраиваются благодаря положительным статам. Читайте внимательно подсказки и сюжет, чтобы выйти на нужный вам уровень взаимоотношений.',
-    simple: require('../../../../Audio/ITLH/Sounds/Vibro.mp3'),
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Bus.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Vibro.mp3'),
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Bus.jpg')
   },
 
   {
@@ -1557,7 +1563,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     smartphone: { goTo: 104, chatId: 'ChatWithCheryl' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Bus.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Bus.jpg')
   },
 
   {
@@ -1571,7 +1577,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 105
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Bus.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Bus.jpg')
   },
 
   {
@@ -1586,8 +1592,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 106
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Bus.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Bus.jpg')
   },
 
   {
@@ -1600,7 +1606,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 107
       }],
     interruptiveFrame: { goTo: 107 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Car_Close.mp3'),
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -1614,8 +1621,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 108
       }],
-    music: require('../../../../Audio/ITLH/Music/Theme_University.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    music: require('../../../../Media/Audio/ITLH/Music/Theme_University.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1629,7 +1636,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 109
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1643,7 +1650,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 110
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1658,8 +1665,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 111
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1673,7 +1680,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 112
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1688,8 +1695,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 113
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1708,8 +1715,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 132
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1724,10 +1731,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 115
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
     stats: [
       { story: EStoriesEn.ITLH, value: 1, category: 'Choice', id: 'Library' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -1740,7 +1747,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 116
       }],
     interruptiveFrame: { goTo: 116 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -1754,7 +1761,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 117
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1769,8 +1776,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 118
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1784,7 +1791,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 119
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1798,7 +1805,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 120
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1813,8 +1820,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 121
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1828,7 +1835,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 122
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1843,8 +1850,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 123
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1860,7 +1867,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Item', id: 'Essay' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1875,9 +1882,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 125
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
     achievement: { story: EStoriesEn.ITLH, name: 'RecoverEssay' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1891,7 +1898,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 126
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1905,8 +1912,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 127
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Vibro.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Vibro.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1921,8 +1928,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 128
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1936,7 +1943,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 129
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1948,7 +1955,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     smartphone: { goTo: 130, chatId: 'FamilyArguing' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1963,8 +1970,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 131
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1978,7 +1985,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 264
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -1993,8 +2000,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 133
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Library.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
   },
 
   {
@@ -2007,7 +2014,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 134
       }],
     interruptiveFrame: { goTo: 134 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    ambient: require('../../../../Media/Audio/ITLH/Ambient/Birds.mp3'),
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -2021,7 +2029,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 135
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2036,8 +2044,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 136
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2051,7 +2059,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 137
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2065,8 +2073,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 138
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2080,7 +2088,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 139
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2094,8 +2102,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 140
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2109,7 +2117,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 141
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2124,8 +2132,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 142
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan_Smile.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan_Smile.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2139,7 +2147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 143
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2154,8 +2162,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 144
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan_Upset.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan_Upset.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2169,7 +2177,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 145
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2184,8 +2192,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 146
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2200,8 +2208,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 147
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2215,7 +2223,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 148
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2231,10 +2239,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Преподаватель недоволен вашим отношением к учебе.',
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan_Upset.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan_Upset.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: -1, category: 'Person', id: 'Neitan' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2248,7 +2256,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 150
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2262,7 +2270,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 151
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2273,8 +2281,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       {
         text: ''
       }],
-    OKMessage: { goTo: 152, buttonText: 'Взглянуть', image: require('../../../../Images/ITLH/Objects/Book.png') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    OKMessage: { goTo: 152, buttonText: 'Взглянуть', image: require('../../../../Media/Images/ITLH/Objects/Book.png') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2289,8 +2297,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 153
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2304,7 +2312,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 154
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2319,8 +2327,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 155
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2335,8 +2343,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 156
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2351,8 +2359,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 157
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2367,8 +2375,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 158
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan_Smile.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan_Smile.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2382,7 +2390,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 159
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2397,8 +2405,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 160
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2412,7 +2420,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 161
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2426,7 +2434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 162
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2441,8 +2449,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 163
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2457,8 +2465,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 164
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2473,8 +2481,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 165
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2488,8 +2496,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 166
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Vibro.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Vibro.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2503,7 +2511,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 167
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2515,7 +2523,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     smartphone: { goTo: 168, chatId: 'FamilyArguing' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2529,7 +2537,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 169
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2543,7 +2551,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 170
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2558,8 +2566,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 171
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2574,8 +2582,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 172
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2589,7 +2597,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 173
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2604,8 +2612,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 174
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2620,8 +2628,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 175
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan_Smile.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan_Smile.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2635,7 +2643,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 176
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2649,7 +2657,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 264
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Park.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2664,7 +2672,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 178
       }],
     achievement: { story: EStoriesEn.ITLH, name: 'GoodGirl' },
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2679,8 +2687,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 179
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2695,10 +2703,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 180
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Hero_Pajamas.png'),
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Item', id: 'Essay' }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2712,7 +2720,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 181
       }],
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2724,7 +2732,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     wardrobe: { story: EStoriesEn.ITLH, personId: 'Hero_Chapter01_Part01', goTo: 182 },
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2739,8 +2747,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 183
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2754,8 +2762,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 184
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Mug_Crash.mp3'),
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Mug_Crash.mp3'),
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2770,8 +2778,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 185
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Room') }
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
   },
 
   {
@@ -2785,7 +2793,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 186
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2799,7 +2807,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 187
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2813,7 +2821,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 188
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2827,7 +2835,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 189
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2842,8 +2850,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 190
       }],
     speakerR: 'Мама',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Mother.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Mother.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2857,7 +2865,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 191
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2872,8 +2880,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 192
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2888,8 +2896,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 193
       }],
     speakerR: 'Папа',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Father_Sad.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Father_Sad.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2903,7 +2911,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 194
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2918,8 +2926,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 195
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2934,8 +2942,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 196
       }],
     speakerR: 'Мама',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Mother.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Mother.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2950,8 +2958,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 197
       }],
     speakerR: 'Папа',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Father.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Father.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2966,8 +2974,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 198
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2982,8 +2990,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 199
       }],
     speakerR: 'Папа',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Father.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Father.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -2997,7 +3005,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 200
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3012,8 +3020,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 201
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3028,8 +3036,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 202
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3044,8 +3052,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 203
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3059,7 +3067,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 204
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3072,7 +3080,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 205
       }],
     wardrobe: { story: EStoriesEn.ITLH, personId: 'Breakfast_Chapter01_Part01', goTo: 205 },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3087,22 +3095,22 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       {
         goTo: 208,
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.ITLH, 'Breakfast_Chapter01_Part01') === 'Блины'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Breakfast_Chapter01_Part01') === 'Блины'
         }
       },
       {
         goTo: 207,
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.ITLH, 'Breakfast_Chapter01_Part01') === 'Бутерброды'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Breakfast_Chapter01_Part01') === 'Бутерброды'
         }
       },
       {
         goTo: 206,
         condition: () => {
-          return wardrobe.getCurrentClothesImageTitle(EStoriesEn.ITLH, 'Breakfast_Chapter01_Part01') === 'Фруктовый салат'
+          return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Breakfast_Chapter01_Part01') === 'Фруктовый салат'
         }
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3116,7 +3124,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 209
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3130,7 +3138,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 209
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3144,7 +3152,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 209
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3158,7 +3166,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 210
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3172,7 +3180,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 211
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3187,8 +3195,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 212
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3202,7 +3210,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 213
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Kitchen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')
   },
 
   {
@@ -3216,11 +3224,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 214
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Car_Goes.mp3'),
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Car_Goes.mp3'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Item', id: 'Phone' },
       { story: EStoriesEn.ITLH, value: +700, category: 'Item', id: 'Money' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3235,8 +3243,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 215
       }],
     speakerR: 'Папа',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Father.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Father.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3251,8 +3259,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 216
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3267,8 +3275,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 217
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3283,8 +3291,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 218
       }],
     speakerR: 'Папа',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Father.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Father.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3298,7 +3306,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 219
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3312,7 +3320,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 220
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3327,9 +3335,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 221
       }],
     message: 'Не со всеми персонажами отношения выстраиваются благодаря положительным статам. Читайте внимательно подсказки и сюжет, чтобы выйти на нужный вам уровень взаимоотношений.',
-    simple: require('../../../../Audio/ITLH/Sounds/Vibro.mp3'),
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Vibro.mp3'),
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3341,7 +3349,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     smartphone: { goTo: 222, chatId: 'ChatWithCheryl' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Car_Father.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Car_Father.jpg')
   },
 
   {
@@ -3354,7 +3362,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 223
       }],
     interruptiveFrame: { goTo: 223 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Car_Close.mp3'),
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -3368,8 +3377,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 224
       }],
-    music: require('../../../../Audio/ITLH/Music/Theme_University.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    music: require('../../../../Media/Audio/ITLH/Music/Theme_University.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -3383,8 +3392,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 225
       }],
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -3398,7 +3407,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 226
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -3412,7 +3421,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 227
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -3427,8 +3436,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 228
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -3442,7 +3451,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 229
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/University.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/University.jpg')
   },
 
   {
@@ -3455,7 +3464,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 230
       }],
     interruptiveFrame: { goTo: 230 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -3469,7 +3478,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 231
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3484,8 +3493,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 232
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3499,7 +3508,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 233
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3513,7 +3522,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 234
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3528,8 +3537,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 235
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3544,8 +3553,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 236
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3560,8 +3569,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 237
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3576,8 +3585,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 238
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3592,8 +3601,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 239
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3608,8 +3617,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 240
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh_Smirk.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh_Smirk.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3623,7 +3632,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 241
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3637,8 +3646,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 242
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3652,7 +3661,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 243
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3666,7 +3675,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 244
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3680,10 +3689,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 245
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Whiteboard.mp3'),
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Whiteboard.mp3'),
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3698,8 +3707,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 246
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3714,8 +3723,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 247
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3729,7 +3738,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 248
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3743,7 +3752,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 249
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3757,8 +3766,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 250
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Vibro.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Vibro.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3773,8 +3782,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 251
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3788,7 +3797,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 252
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3800,7 +3809,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     smartphone: { goTo: 253, chatId: 'FamilyArguing' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3814,7 +3823,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 254
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3829,8 +3838,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 255
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3845,8 +3854,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 256
       }],
     speakerR: 'Оливия',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Olivia.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Olivia.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3860,7 +3869,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 257
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3874,7 +3883,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 258
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3889,8 +3898,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 259
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3905,8 +3914,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 260
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3921,8 +3930,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 261
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3936,7 +3945,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 262
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3951,8 +3960,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 263
       }],
     speakerR: 'Хью',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Hugh.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Hugh.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3966,7 +3975,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 264
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_01.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_01.jpg')
   },
 
   {
@@ -3980,8 +3989,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 265
       }],
-    ambient: require('../../../../Audio/ITLH/Ambient/Canteen.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    ambient: require('../../../../Media/Audio/ITLH/Ambient/Canteen.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -3996,8 +4005,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 266
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4011,7 +4020,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 267
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4025,7 +4034,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 268
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4040,8 +4049,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 269
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4055,7 +4064,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 270
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4070,8 +4079,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 271
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4086,8 +4095,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 272
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Smirk.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Smirk.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4102,8 +4111,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 273
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4118,8 +4127,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 274
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4143,7 +4152,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
           return statsManager.get({ story: EStoriesEn.ITLH, category: 'Item', id: 'Essay' }) >= 0
         }
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4157,7 +4166,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 276
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4172,8 +4181,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 277
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4188,8 +4197,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 278
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4204,8 +4213,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 279
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4220,8 +4229,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 280
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4236,8 +4245,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 281
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityVariationImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01', 'Thinking') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4253,10 +4262,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Скарлетт довольна, что вы сделали домашнюю работу.',
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Smirk.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Smirk.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4270,7 +4279,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 283
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4284,7 +4293,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 284
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4299,8 +4308,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 285
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4315,8 +4324,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 286
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4331,8 +4340,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 287
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4347,8 +4356,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 288
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4364,10 +4373,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Скарлетт расстроена, что вы не принесли домашнюю работу.',
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Sad.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Sad.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: -1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4381,7 +4390,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 290
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4396,8 +4405,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 291
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4411,7 +4420,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 292
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4425,7 +4434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 293
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4440,8 +4449,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 294
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4455,7 +4464,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 295
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4470,8 +4479,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 296
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Angry.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Angry.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4486,8 +4495,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 297
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4502,8 +4511,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 298
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4518,8 +4527,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 299
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4534,8 +4543,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 300
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Sad.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Sad.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4553,7 +4562,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: 'Было все равно',
         goTo: 310
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4567,7 +4576,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 302
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4582,8 +4591,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 303
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4598,8 +4607,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 304
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Angry.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Angry.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4614,8 +4623,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 305
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4630,8 +4639,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 306
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4646,8 +4655,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 307
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4661,7 +4670,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 308
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4677,10 +4686,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Скарлетт дорожит вашей дружбой.',
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Smirk.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Smirk.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4694,7 +4703,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 319
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4708,7 +4717,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 311
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4723,8 +4732,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 312
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4739,8 +4748,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 313
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Angry.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Angry.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4755,8 +4764,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 314
       }],
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4771,8 +4780,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 315
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4786,7 +4795,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 316
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4802,10 +4811,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Вы со Скарлетт не такие уж и близкие подруги.',
     speakerR: 'Скарлетт',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett_Sad.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett_Sad.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: -1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4819,7 +4828,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 319
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Canteen.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Canteen.jpg')
   },
 
   {
@@ -4831,7 +4840,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     interruptiveFrame: { goTo: 320 },
-    imageBack: require('../../../../Images/UI/background_black.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -4845,8 +4854,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 321
       }],
-    ambient: require('.././../../../Audio/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4860,7 +4869,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 322
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4874,7 +4883,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 323
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4888,7 +4897,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 324
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4902,7 +4911,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 325
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4917,8 +4926,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 326
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan_Smile.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan_Smile.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4942,7 +4951,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
           return statsManager.get({ story: EStoriesEn.ITLH, category: 'Choice', id: 'Library' }) <= 0
         }
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4956,7 +4965,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 328
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4970,7 +4979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 329
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4984,8 +4993,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 332
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -4999,7 +5008,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 331
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5014,8 +5023,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 332
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5030,8 +5039,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 333
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5047,8 +5056,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     message: 'Знание — накопительный стат. Чем выше его значение, тем лучше вы будете разбираться в исторических эпохах и узнавать дополнительные сведения, влияющие на сюжет.',
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5072,7 +5081,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
           return statsManager.get({ story: EStoriesEn.ITLH, category: 'Item', id: 'Essay' }) >= 0
         }
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5090,7 +5099,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       { story: EStoriesEn.ITLH, value: +1, category: 'Effect', id: 'Knowledge' },
       { story: EStoriesEn.ITLH, value: -1, category: 'Item', id: 'Essay' },
       { story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Neitan' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5105,8 +5114,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 339
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5123,7 +5132,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     stats: [
       { story: EStoriesEn.ITLH, value: -1, category: 'Effect', id: 'Knowledge' },
       { story: EStoriesEn.ITLH, value: -1, category: 'Person', id: 'Neitan' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5138,8 +5147,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 339
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5153,7 +5162,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 340
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5167,7 +5176,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 341
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5181,7 +5190,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 342
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5196,8 +5205,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 343
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5219,8 +5228,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: 'Перешёптывалась со Скарлетт',
         goTo: 348
       }],
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5234,10 +5243,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 345
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Effect', id: 'Knowledge' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5251,7 +5260,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 350
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5265,10 +5274,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 347
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Neitan' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5282,7 +5291,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 350
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5296,10 +5305,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 349
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Scarlett' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5313,7 +5322,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 350
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5327,7 +5336,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 351
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5342,8 +5351,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 352
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5357,7 +5366,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 353
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5375,8 +5384,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: 'Не поднимать руку',
         goTo: 366
       }],
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5391,8 +5400,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 355
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5408,7 +5417,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Neitan' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5423,8 +5432,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 357
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5439,8 +5448,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 358
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan_Smile.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan_Smile.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5466,8 +5475,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       timer.set(7, () => { scenarioManager.beginScene(359) })
     },
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: () => { return wardrobe.getCurrentClothesImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5482,7 +5491,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 360
       }],
     beforeBegin: () => { timer.stop() },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5497,8 +5506,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 361
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5513,8 +5522,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 366
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5530,11 +5539,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     beforeBegin: () => { timer.stop() },
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
     stats: [
       { story: EStoriesEn.ITLH, value: +1, category: 'Effect', id: 'Knowledge' }],
     achievement: { story: EStoriesEn.ITLH, name: 'CorrectAnswer' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5549,7 +5558,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 364
       }],
     beforeBegin: () => { timer.stop() },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5564,8 +5573,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 365
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5580,8 +5589,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 366
       }],
     speakerR: 'Нэйтан',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Neitan.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5595,8 +5604,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 367
       }],
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Scarlett.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5610,7 +5619,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 368
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5624,7 +5633,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 369
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5638,7 +5647,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 370
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/Lectionhall_02.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
   {
@@ -5653,13 +5662,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 371
       }],
     beforeBegin: whiteFlash,
-    music: require('../../../../Audio/ITLH/Music/Theme_NY.mp3'),
-    ambient: require('../../../../Audio/ITLH/Ambient/NY_Humble.mp3'),
+    music: require('../../../../Media/Audio/ITLH/Music/Theme_NY.mp3'),
+    ambient: require('../../../../Media/Audio/ITLH/Ambient/NY_Humble.mp3'),
     message: '<i> Нью-Йорк 1885 год.',
     stats: [
       { story: EStoriesEn.ITLH, value: -100500, category: 'Item', id: 'Money' },
       { story: EStoriesEn.ITLH, value: -100500, category: 'Item', id: 'Phone' }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5673,7 +5682,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 372
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5687,7 +5696,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 373
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5701,7 +5710,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 374
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5715,7 +5724,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 375
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5729,7 +5738,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 376
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5744,8 +5753,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 377
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Katarina.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Katarina.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5759,7 +5768,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 400
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5770,8 +5779,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       {
         text: ''
       }],
-    cutScene: { video: require('../../../../Images/ITLH/Cutscenes/MeetKatarina.mp4'), goTo: 378 },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    cutScene: { video: require('../../../../Media/Images/ITLH/Cutscenes/MeetKatarina.mp4'), goTo: 378 },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5785,8 +5794,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 379
       }],
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Katarina.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Katarina.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5800,8 +5809,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 380
       }],
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Katarina.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Katarina.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5815,7 +5824,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 381
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5830,8 +5839,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 382
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Katarina.png'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Katarina.png'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5845,7 +5854,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 383
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5859,7 +5868,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 384
       }],
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5874,9 +5883,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 385
       }],
     speakerR: 'Неизвестный',
-    fullscreenObjectR: require('../../../../Images/ITLH/Persons/Nicola.png'),
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Nicola.png'),
     darkSilhouette: true,
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5890,10 +5899,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 386
       }],
-    simple: require('../../../../Audio/ITLH/Sounds/Heartbeat.mp3'),
-    music: require('.././../../../Audio/Common/Silence.mp3'),
-    ambient: require('.././../../../Audio/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    simple: require('../../../../Media/Audio/ITLH/Sounds/Heartbeat.mp3'),
+    music: require('../../../../Media/Audio/Common/Silence.mp3'),
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   },
 
   {
@@ -5910,8 +5919,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         }
       }],
     speakerL: '$Имя Игрока$',
-    fullscreenObjectL: require('../../../../Images/ITLH/Persons/Katarina.png'),
+    fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Katarina.png'),
     achievement: { story: EStoriesEn.ITLH, name: 'Chapter01Part01Completed' },
-    imageBack: require('../../../../Images/ITLH/Backgrounds/NewYork_1885.png')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/NewYork_1885.jpg')
   }
 ])

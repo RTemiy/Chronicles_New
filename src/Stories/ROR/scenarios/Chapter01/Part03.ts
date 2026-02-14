@@ -14,8 +14,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/ROR/City.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    music: require('../../../../Media/Audio/ROR/City.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -30,7 +30,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 2
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -45,9 +45,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 3
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -62,7 +62,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 4
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -77,9 +77,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 5
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -94,9 +94,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 6
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -111,9 +111,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 7
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Joanne.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -137,7 +137,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 9
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -152,9 +152,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 9
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -168,7 +168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 10
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -182,9 +182,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 11
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -198,9 +198,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 12
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -215,7 +215,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 13
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -229,9 +229,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -245,7 +245,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -259,9 +259,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -275,9 +275,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -302,7 +302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 33
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -316,7 +316,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -330,9 +330,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -346,9 +346,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 21
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -362,9 +362,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 22
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -378,9 +378,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 23
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -394,9 +394,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 24
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -410,9 +410,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -426,9 +426,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 26
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -442,9 +442,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -458,9 +458,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 28
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -474,9 +474,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 29
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -490,9 +490,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 30
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -506,9 +506,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 31
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -522,7 +522,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 32
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -536,7 +536,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 46
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -550,9 +550,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 34
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -566,9 +566,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 35
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -582,9 +582,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 36
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -598,9 +598,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 37
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -614,9 +614,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 38
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -630,9 +630,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 39
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -646,9 +646,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 40
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -662,7 +662,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -676,9 +676,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 42
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -692,9 +692,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 43
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -708,9 +708,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 44
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -724,9 +724,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -740,9 +740,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 46
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -756,9 +756,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 47
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -772,9 +772,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 48
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -788,9 +788,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 49
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -815,7 +815,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 63
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -829,9 +829,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 51
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -845,9 +845,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 52
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -861,9 +861,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 53
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -877,9 +877,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 54
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -893,9 +893,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 55
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -909,7 +909,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 56
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -923,9 +923,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 57
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -939,9 +939,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 58
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -955,9 +955,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 59
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -971,9 +971,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 60
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -987,9 +987,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 61
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1003,7 +1003,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 62
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1017,9 +1017,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 90
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1033,9 +1033,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 64
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1049,9 +1049,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 65
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1065,9 +1065,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 66
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1081,9 +1081,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 67
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1097,7 +1097,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 68
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1111,9 +1111,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 69
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1127,9 +1127,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 70
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1143,9 +1143,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 71
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1159,9 +1159,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 72
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1175,9 +1175,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 73
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1191,9 +1191,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 74
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1207,9 +1207,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 75
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1223,9 +1223,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 76
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1239,9 +1239,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 77
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1255,9 +1255,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 78
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1271,7 +1271,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 79
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1285,9 +1285,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 80
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1301,9 +1301,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 81
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1317,9 +1317,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 82
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1333,9 +1333,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 83
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1349,9 +1349,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 84
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1365,9 +1365,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 85
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1381,9 +1381,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 86
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1397,9 +1397,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 87
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1413,9 +1413,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 88
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1429,9 +1429,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 89
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1445,7 +1445,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 90
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1459,9 +1459,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 91
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1475,9 +1475,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 92
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1491,9 +1491,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 93
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1507,9 +1507,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 94
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1523,7 +1523,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 95
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1541,7 +1541,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: 'Сдержаться и спокойно поговорить',
         goTo: 106
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1555,10 +1555,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 97
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [{ value: 1, category: 'Choice', id: 'ThreatVig' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1572,7 +1572,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 98
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1586,9 +1586,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 99
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1602,7 +1602,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 100
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1616,9 +1616,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 101
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1632,9 +1632,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 102
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1648,9 +1648,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 103
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1664,9 +1664,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 104
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1680,9 +1680,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 105
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1697,12 +1697,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 116
       }],
     message: 'Виг обижен на вас, отношения с ним ухудшились',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: -1, category: 'Person', id: 'Vig' }],
     achievement: { story: EStoriesEn.ROR, name: 'ThreatWig' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1716,9 +1716,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 107
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1732,9 +1732,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 108
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1748,7 +1748,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 109
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1762,9 +1762,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 110
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1778,9 +1778,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 111
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1794,9 +1794,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 112
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1810,9 +1810,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 113
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1826,9 +1826,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 114
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1842,9 +1842,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 115
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1859,12 +1859,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 116
       }],
     message: 'Виг доверился вам, ваши отношения с ним улучшены',
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Vig' },
       { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Martha' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1878,7 +1878,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 117
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1892,9 +1892,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 118
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1908,9 +1908,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 119
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1924,9 +1924,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 120
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1940,9 +1940,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 121
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1956,9 +1956,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 122
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1972,9 +1972,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 123
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -1988,9 +1988,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 124
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2008,7 +2008,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: 'Отказаться платить за платье',
         goTo: 139
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2033,7 +2033,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 131
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2048,7 +2048,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 127
       }],
     stats: [{ value: 1, category: 'Choice', id: 'SaveMarthaDress' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2062,9 +2062,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 128
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2078,9 +2078,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 129
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2094,9 +2094,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 130
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2111,12 +2111,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 149
       }],
     message: 'Марта крайне признательна вам за щедрость',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: +2, category: 'Person', id: 'Martha' }],
     achievement: { story: EStoriesEn.ROR, name: 'BuyMarthaDress' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2131,10 +2131,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 132
       }],
     message: 'У вас оказалось недостаточно средств для покупки',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [{ value: 1, category: 'Choice', id: 'SaveMarthaDress' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2148,9 +2148,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 133
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2164,7 +2164,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 134
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2178,9 +2178,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 135
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2194,9 +2194,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 136
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2210,9 +2210,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 137
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2226,7 +2226,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 138
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2240,9 +2240,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 149
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2256,7 +2256,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 140
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2270,7 +2270,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 141
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2284,9 +2284,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 142
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2300,7 +2300,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 143
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2314,9 +2314,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 144
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2330,9 +2330,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 145
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2346,9 +2346,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 146
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2362,7 +2362,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2376,9 +2376,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 148
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2395,7 +2395,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
     message: 'Марта разочарована вашей жадностью',
     stats: [
       { story: EStoriesEn.ROR, value: -1, category: 'Person', id: 'Martha' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2410,7 +2410,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         gift: true,
         goTo: 150
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2424,9 +2424,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 151
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2440,7 +2440,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 152
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2455,8 +2455,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 153
       }],
     beforeBegin: redFlash,
-    ambient: require('../../../../Audio/ROR/Small_Whisper.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Nightmare.jpg')
+    ambient: require('../../../../Media/Audio/ROR/Small_Whisper.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Nightmare.jpg')
   },
 
   {
@@ -2470,7 +2470,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 154
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Nightmare.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Nightmare.jpg')
   },
 
   {
@@ -2484,7 +2484,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 155
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Nightmare.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Nightmare.jpg')
   },
 
   {
@@ -2498,10 +2498,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 156
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Sister.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Sister.png'),
     ghostSilhouette: true,
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Nightmare.jpg')
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Nightmare.jpg')
   },
 
   {
@@ -2515,7 +2515,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 157
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Nightmare.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Nightmare.jpg')
   },
 
   {
@@ -2529,8 +2529,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 158
       }],
-    ambient: require('../../../../Audio/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2544,7 +2544,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 159
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2558,7 +2558,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 160
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2572,9 +2572,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 161
       }],
-    imageFront: require('../../../../Images/ROR/Objects/Porridge.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Objects/Porridge.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2588,9 +2588,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 162
       }],
-    imageFront: require('../../../../Images/ROR/Objects/Porridge.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Objects/Porridge.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2604,9 +2604,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 163
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2620,7 +2620,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 164
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2634,9 +2634,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 165
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2650,9 +2650,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 166
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2666,9 +2666,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 167
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2682,9 +2682,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 168
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -2698,7 +2698,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 169
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2712,7 +2712,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 170
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2726,9 +2726,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 171
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2742,7 +2742,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 172
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2756,9 +2756,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 173
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2772,9 +2772,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 174
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2788,9 +2788,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 175
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2804,7 +2804,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 176
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -2818,7 +2818,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 177
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2833,7 +2833,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 178
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2848,9 +2848,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 179
       }],
     parallax: 'right',
-    imageFront: require('../../../../Images/ROR/Persons/Damien.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2864,9 +2864,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 180
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2880,9 +2880,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 181
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2896,9 +2896,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 182
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2912,9 +2912,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 183
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2928,9 +2928,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 184
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2944,9 +2944,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 185
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2960,9 +2960,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 186
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2976,9 +2976,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 187
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -2992,9 +2992,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 188
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3008,9 +3008,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 189
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3024,9 +3024,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 190
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3040,9 +3040,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 191
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3056,9 +3056,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 192
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3072,9 +3072,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 193
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3088,7 +3088,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 194
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3102,9 +3102,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 195
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3118,9 +3118,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 196
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3134,9 +3134,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 197
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3150,9 +3150,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 198
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3166,7 +3166,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 199
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3180,9 +3180,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 200
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3196,9 +3196,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 201
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3212,9 +3212,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 202
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3228,9 +3228,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 203
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3245,7 +3245,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 204
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3260,9 +3260,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 205
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3277,7 +3277,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 206
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3292,7 +3292,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 207
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3307,9 +3307,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 208
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3324,9 +3324,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 209
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3341,7 +3341,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 210
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3356,9 +3356,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 211
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Atelier.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Atelier.jpg')
   },
 
   {
@@ -3372,7 +3372,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 212
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3386,9 +3386,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 213
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3402,9 +3402,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 214
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Coat.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Coat.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3418,9 +3418,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 215
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3434,7 +3434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 216
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3448,7 +3448,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 217
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3462,9 +3462,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 218
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3478,7 +3478,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 219
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3492,7 +3492,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 220
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3506,7 +3506,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 221
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3520,7 +3520,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 222
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3534,9 +3534,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 223
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3550,9 +3550,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 224
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Back.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Back.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3566,7 +3566,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 225
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3580,9 +3580,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 226
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3596,7 +3596,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 227
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3610,9 +3610,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 228
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Back.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Back.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3626,9 +3626,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 229
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3642,7 +3642,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 230
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3656,7 +3656,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 231
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3670,7 +3670,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 232
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3684,7 +3684,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 233
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3698,9 +3698,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 234
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Back.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Back.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3714,9 +3714,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3730,7 +3730,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 236
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3744,9 +3744,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 237
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Back.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Back.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3760,7 +3760,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 238
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3774,9 +3774,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 239
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3790,9 +3790,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 240
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3806,9 +3806,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 241
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3822,7 +3822,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 242
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3836,9 +3836,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 243
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3852,9 +3852,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 244
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3868,7 +3868,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 245
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3882,9 +3882,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 246
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3898,7 +3898,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 247
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3912,9 +3912,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 248
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3928,9 +3928,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 249
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3944,9 +3944,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 250
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3960,7 +3960,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 251
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3974,9 +3974,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 252
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -3990,9 +3990,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 253
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4006,9 +4006,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 254
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Damien_Glasses.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Damien_Glasses.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4039,7 +4039,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 258
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4053,10 +4053,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 260
       }],
-    imageFront: require('../../../../Images/ROR/Objects/Moneybag.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Objects/Moneybag.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [{ story: EStoriesEn.ROR, value: -20, category: 'Item', id: 'Money' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4070,9 +4070,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 257
       }],
-    imageFront: require('../../../../Images/ROR/Objects/Moneybag.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Objects/Moneybag.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4086,7 +4086,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 260
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4111,7 +4111,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 259
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4125,9 +4125,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 259
       }],
-    imageFront: require('../../../../Images/ROR/Objects/Moneybag.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Objects/Moneybag.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
   {
     id: 259,
@@ -4140,7 +4140,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 260
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Dressingroom.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Dressingroom.jpg')
   },
 
   {
@@ -4155,10 +4155,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         gift: true,
         goTo: 261
       }],
-    music: require('../../../../Audio/ROR/Jack_Theme.mp3'),
-    imageFront: require('../../../../Images/ROR/Objects/Carete.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    music: require('../../../../Media/Audio/ROR/Jack_Theme.mp3'),
+    imageFront: require('../../../../Media/Images/ROR/Objects/Carete.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -4172,7 +4172,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 262
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Dirty_Streets.jpg')
   },
 
   {
@@ -4186,9 +4186,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 263
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4202,9 +4202,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 264
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4218,9 +4218,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 265
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Joanne.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4234,9 +4234,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 266
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Joanne.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4250,9 +4250,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 267
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4266,7 +4266,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 268
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4280,9 +4280,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 269
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Joanne.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4296,9 +4296,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 270
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4312,7 +4312,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 271
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4326,9 +4326,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 272
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4342,9 +4342,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 273
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4358,9 +4358,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 274
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4374,9 +4374,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 275
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4390,9 +4390,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 276
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4406,9 +4406,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 277
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4422,7 +4422,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 278
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4436,9 +4436,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 279
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4452,9 +4452,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 280
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4468,9 +4468,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 281
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4484,9 +4484,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 282
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4500,9 +4500,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 283
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4516,9 +4516,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 284
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4532,9 +4532,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 285
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4548,9 +4548,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 286
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4564,10 +4564,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 287
       }],
-    music: require('../../../../Audio/ROR/City.mp3'),
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    music: require('../../../../Media/Audio/ROR/City.mp3'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4581,9 +4581,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 288
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Joanne.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Joanne.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4597,9 +4597,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 289
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4613,7 +4613,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 290
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4627,9 +4627,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 291
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4643,9 +4643,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 292
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4659,7 +4659,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 293
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4677,7 +4677,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: 'Угомонить Дитриха',
         goTo: 310
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4691,9 +4691,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 295
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4707,9 +4707,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 296
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4723,9 +4723,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 297
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4739,7 +4739,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 298
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4753,9 +4753,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 299
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4770,11 +4770,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 300
       }],
     message: 'Дитрих благодарен вам, что вы встали на его сторону. Джек обиделся на ваше решение',
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [{ story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Ditrich' }],
     achievement: { story: EStoriesEn.ROR, name: 'SilenceLover' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4799,7 +4799,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 323
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4813,9 +4813,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 302
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4829,7 +4829,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 303
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4843,9 +4843,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 304
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4859,7 +4859,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 305
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4873,9 +4873,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 306
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4889,9 +4889,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 307
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4905,7 +4905,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 308
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4919,11 +4919,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 309
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: +1, category: 'Item', id: 'Antihangover' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4937,9 +4937,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 323
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4953,7 +4953,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 311
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4967,9 +4967,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 312
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4983,9 +4983,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 313
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -4999,9 +4999,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 314
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5015,7 +5015,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 315
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5029,9 +5029,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 316
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5045,7 +5045,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 317
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5059,9 +5059,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 318
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5075,9 +5075,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 319
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5091,9 +5091,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 320
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5107,9 +5107,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 321
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5123,9 +5123,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 322
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5140,11 +5140,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 323
       }],
     message: 'Джек благодарен вам, что вы приняли его сторону. Дитрих затаил на вас обиду',
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Jack' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5158,9 +5158,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 324
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5174,9 +5174,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 325
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5190,7 +5190,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 326
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5204,9 +5204,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 327
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5220,9 +5220,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 328
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5236,9 +5236,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 329
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5252,7 +5252,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 330
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5266,9 +5266,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 331
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5282,9 +5282,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 332
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5298,7 +5298,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 333
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5312,9 +5312,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 334
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5328,9 +5328,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 335
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5344,7 +5344,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 336
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5370,7 +5370,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 347
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5384,9 +5384,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 338
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5400,7 +5400,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 339
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5414,7 +5414,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 340
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5428,9 +5428,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 341
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5444,9 +5444,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 342
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5460,9 +5460,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 343
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5476,9 +5476,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 344
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5492,7 +5492,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 345
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5506,9 +5506,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 346
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5522,9 +5522,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 347
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5538,7 +5538,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 348
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5552,7 +5552,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 349
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5566,9 +5566,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 350
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Wounded.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Wounded.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5582,7 +5582,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 351
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5596,9 +5596,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 352
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5612,7 +5612,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 353
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5626,7 +5626,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 354
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5651,7 +5651,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 358
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5665,9 +5665,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 356
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5681,9 +5681,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 357
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5697,9 +5697,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 358
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5713,7 +5713,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 359
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5727,7 +5727,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 360
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Inside_Carete.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Inside_Carete.jpg')
   },
 
   {
@@ -5741,9 +5741,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 361
       }],
-    imageFront: require('../../../../Images/ROR/Objects/Carete.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Objects/Carete.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5757,9 +5757,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 362
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5773,9 +5773,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 363
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5789,9 +5789,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 364
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5805,9 +5805,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 365
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5821,9 +5821,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 366
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5837,9 +5837,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 367
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5853,9 +5853,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 368
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5869,9 +5869,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 369
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5885,9 +5885,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 370
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5901,9 +5901,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 371
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5917,9 +5917,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 372
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Jack.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Jack.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5933,9 +5933,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 373
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5949,9 +5949,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 374
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5965,7 +5965,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 375
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Night.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Night.jpg')
   },
 
   {
@@ -5979,8 +5979,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 376
       }],
-    ambient: require('../../../../Audio/ROR/Small_Crowd.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    ambient: require('../../../../Media/Audio/ROR/Small_Crowd.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6005,7 +6005,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 388
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6019,7 +6019,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 378
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6033,7 +6033,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 379
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6047,7 +6047,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 380
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6061,7 +6061,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 381
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6075,9 +6075,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 382
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6091,9 +6091,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 383
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6107,9 +6107,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 384
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6123,9 +6123,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 385
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6139,9 +6139,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 386
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6155,7 +6155,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 387
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6169,7 +6169,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 392
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6183,7 +6183,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 389
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6197,9 +6197,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 390
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Figure_Hood.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Figure_Hood.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6215,7 +6215,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.ROR, value: -1, category: 'Item', id: 'Letter01' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6229,9 +6229,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 392
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Figure_Hood.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Tavern.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Figure_Hood.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Tavern.jpg')
   },
 
   {
@@ -6245,8 +6245,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 393
       }],
-    ambient: require('../../../../Audio/Common/Silence.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Underground.jpg')
   },
 
   {
@@ -6263,6 +6263,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         }
       }],
     achievement: { story: EStoriesEn.ROR, name: 'Chapter01Part03Completed' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Underground.jpg')
   }
 ])

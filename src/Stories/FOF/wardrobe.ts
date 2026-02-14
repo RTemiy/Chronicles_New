@@ -1,22 +1,22 @@
 import { wardrobe } from '../../index'
 import { loadData } from '../../Functions/localStorageManager';
 
-wardrobe.addPerson('Abigeil', [{
-  image: require('../../Images/FOF/Persons/Abigeil_SimpleGirl.png'),
+wardrobe.addEntity('Abigeil', [{
+  image: require('../../Media/Images/FOF/Persons/Abigeil_SimpleGirl.png'),
   title: 'Простушка',
   description: 'Выгляжу, будто из секонд-хенда, но выбирать не приходится.',
   cost: 'short',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/FOF/Persons/Abigeil_AsAll.png'),
+  image: require('../../Media/Images/FOF/Persons/Abigeil_AsAll.png'),
   title: 'Как все',
   description: 'Ничего необычного, классический наряд серой массы.',
   cost: 'medium',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/FOF/Persons/Abigeil_Attractive.png'),
+  image: require('../../Media/Images/FOF/Persons/Abigeil_Attractive.png'),
   title: 'Привлекательная',
   description: 'Даже на мой взгляд, это не самый плохой образ, а я привередливая.',
   cost: 'long',
@@ -24,23 +24,23 @@ wardrobe.addPerson('Abigeil', [{
 }
 ])
 
-wardrobe.addPerson('Abigeil_Club', [
+wardrobe.addEntity('Abigeil_Club', [
   {
-    image: require('../../Images/FOF/Persons/Abigeil_Brilliance.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_Brilliance.png'),
     title: 'Яркость',
     description: 'Сочетание красного и золотого смотрится интересно.',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Abigeil_Desire.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_Desire.png'),
     title: 'Страсть',
     description: 'Красное соблазнительное платье.',
     cost: 'medium',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Abigeil_Delicacy.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_Delicacy.png'),
     title: 'Изысканность',
     description: 'Маленькое черное платье. Что может быть лучше?',
     cost: 'long',
@@ -48,23 +48,23 @@ wardrobe.addPerson('Abigeil_Club', [
   }
 ])
 
-wardrobe.addPerson('Chris_Club', [
+wardrobe.addEntity('Chris_Club', [
   {
-    image: require('../../Images/FOF/Persons/Christopher.png'),
+    image: require('../../Media/Images/FOF/Persons/Christopher.png'),
     title: 'Футболка',
     description: 'Подчеркивает его рельеф. Ничего лишнего.',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Christopher_Leather.png'),
+    image: require('../../Media/Images/FOF/Persons/Christopher_Leather.png'),
     title: 'Кожанка',
     description: 'Выглядит отлично.',
     cost: 'long',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Christopher_Sexy.png'),
+    image: require('../../Media/Images/FOF/Persons/Christopher_Sexy.png'),
     title: 'Сексуальный',
     description: 'Показывает его страсть и безразличие к правилам этого мира.',
     cost: 'long',
@@ -72,23 +72,23 @@ wardrobe.addPerson('Chris_Club', [
   }
 ])
 
-wardrobe.addPerson('Abigeil_Part06', [
+wardrobe.addEntity('Abigeil_Part06', [
   {
-    image: require('../../Images/FOF/Persons/Abigeil_Primitive.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_Primitive.png'),
     title: 'Примитивность',
     description: 'Первый попавшийся наряд.',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Abigeil_Shy.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_Shy.png'),
     title: 'Скромность',
     description: 'Базовый топ.',
     cost: 'medium',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Abigeil_Femine.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_Femine.png'),
     title: 'Женственность',
     description: 'Красивая рубашка. Стильно.',
     cost: 'long',
@@ -96,37 +96,37 @@ wardrobe.addPerson('Abigeil_Part06', [
   }
 ])
 
-wardrobe.addPerson('Breakfast', [
+wardrobe.addEntity('Breakfast', [
   {
-    image: require('../../Images/FOF/Objects/Avocado.png'),
+    image: require('../../Media/Images/FOF/Objects/Avocado.png'),
     title: 'Тост с авокадо',
     description: 'Универсальный и полезный завтрак.',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Objects/Cupcake.png'),
+    image: require('../../Media/Images/FOF/Objects/Cupcake.png'),
     title: 'Кексы с глазурью',
     description: 'Хочется сладкого, хотя, обычно я его почти не ем.',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Objects/Porridge.png'),
+    image: require('../../Media/Images/FOF/Objects/Porridge.png'),
     title: 'Овсянка',
     description: 'Вкусный завтрак. Хочется фруктов.',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Objects/Cereal.png'),
+    image: require('../../Media/Images/FOF/Objects/Cereal.png'),
     title: 'Хлопья с молоком',
     description: 'Выглядит аппетитно. Пускай и не совсем полезно.',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Objects/Salad.png'),
+    image: require('../../Media/Images/FOF/Objects/Salad.png'),
     title: 'Салат',
     description: 'Люблю овощи на завтрак.',
     cost: 'short',
@@ -134,30 +134,30 @@ wardrobe.addPerson('Breakfast', [
   }
 ])
 
-wardrobe.addPerson('Abigeil_Part07', [
+wardrobe.addEntity('Abigeil_Part07', [
   {
-    image: require('../../Images/FOF/Persons/Abigeil_Sakura.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_Sakura.png'),
     title: 'Сакура',
     description: 'Нежный макияж, милая кофточка',
     cost: 'short',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Abigeil_RedRose.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_RedRose.png'),
     title: 'Красная роза',
     description: 'Яркий макияж, дерзкая кожанка',
     cost: 'medium',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Abigeil_WhiteOrch.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_WhiteOrch.png'),
     title: 'Белая орхидея',
     description: 'Естественный макияж, романтичная блузка',
     cost: 'long',
     unlocked: () => { return true }
   },
   {
-    image: require('../../Images/FOF/Persons/Abigeil_SoftLily.png'),
+    image: require('../../Media/Images/FOF/Persons/Abigeil_SoftLily.png'),
     title: 'Нежная лилия',
     description: 'Легкий макияж, женственный образ',
     cost: 'long',

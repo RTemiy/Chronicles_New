@@ -15,8 +15,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 1
       }],
     message: 'Дата: 4 октября 1586 года',
-    music: require('../../../../Audio/ROR/Prologue.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Table_Candle.jpg')
+    music: require('../../../../Media/Audio/ROR/Prologue.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Table_Candle.jpg')
   },
 
   {
@@ -31,7 +31,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 2
       }],
     message: previousSlideMessage,
-    imageBack: require('../../../../Images/ROR/Backgrounds/Table_Candle.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Table_Candle.jpg')
   },
 
   {
@@ -46,7 +46,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 3
       }],
     message: 'Мор - устар., прост. повальная, массовая смерть, эпидемия',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Streets.jpg')
   },
 
   {
@@ -60,7 +60,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Streets.jpg')
   },
 
   {
@@ -74,7 +74,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Streets.jpg')
   },
 
   {
@@ -88,7 +88,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Streets.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Streets.jpg')
   },
 
   {
@@ -103,9 +103,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 7
       }],
     message: 'Дата: 6 октября 1586 года.',
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -119,7 +119,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 8
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -133,7 +133,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 9
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -148,7 +148,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 10
       }],
     message: 'Дата: 19 октября 1586 года',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Streets_Plague.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Streets_Plague.jpg')
   },
 
   {
@@ -162,9 +162,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 11
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Glaswer_Streets_Plague.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Glaswer_Streets_Plague.jpg')
   },
 
   {
@@ -178,9 +178,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 12
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Central_Square.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Central_Square.jpg')
   },
 
   {
@@ -194,7 +194,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Central_Square.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Central_Square.jpg')
   },
 
   {
@@ -208,7 +208,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Central_Square.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Central_Square.jpg')
   },
 
   {
@@ -223,7 +223,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 15
       }],
     message: 'Дата: 30 октября 1586 года',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -237,9 +237,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -253,9 +253,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Mortimer.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Mortimer.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -270,9 +270,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 18
       }],
     message: 'Дата: 1 ноября 1586 года',
-    imageFront: require('../../../../Images/ROR/Persons/Ditrich.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ditrich.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -286,7 +286,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   },
 
   {
@@ -303,6 +303,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         }
       }],
     achievement: { name: 'PrologueCompleted', story: EStoriesEn.ROR },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg')
   }
 ])

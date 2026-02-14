@@ -40,7 +40,7 @@
 }
 
 .smartphone-chat__statusbar{
-  height: 30px;
+  min-height: 30px;
   width: 100%;
   background-color: #2c2c2c;
   display: flex;
@@ -54,6 +54,7 @@
 }
 
 .smartphone-chat__toolbar{
+  position: relative;
   height: 45px;
   width: 100%;
   background-color: rgba(159, 159, 159, 0.5);
@@ -61,6 +62,35 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+}
+
+.smartphone-chat__toolbar_online{
+  &:before{
+    position: absolute;
+    content: "";
+    left: 10px;
+    bottom: 7px;
+    width: 10px;
+    height: 10px;
+    background: limegreen;
+    border-radius: 50px;
+    outline: 2px solid gray;
+  }
+}
+
+.smartphone-chat__toolbar_offline{
+  &:before{
+    position: absolute;
+    content: "";
+    left: 10px;
+    bottom: 7px;
+    width: 10px;
+    height: 10px;
+    background: #ff2424;
+    border-radius: 50px;
+    outline: 2px solid gray;
+  }
 }
 
 .smartphone-chat__avatar{
@@ -152,7 +182,7 @@
 
 .smartphone-chat__answer-button{
   border-radius: 25px;
-  background-color: rgba(128, 128, 128, 0.25);
+  background-color: rgba(128, 128, 128, 0.75);
   font-size: var(--mediumtext);
   padding: 5px 5px;
   @extend %button-tap;
@@ -170,11 +200,10 @@
 
 .smartphone-chat__close-button{
   // Задаем фиксированную ширину и прозрачность по умолчанию
-  width: 35px; // Ширина (20px) + отступ (15px)
-  height: 20px;
-  padding-right: 15px; // Используем padding вместо margin
+  width: 40px; // Ширина (20px) + отступ (15px)
+  height: 25px;
+  padding-right: 10px; // Используем padding вместо margin
   filter: drop-shadow(1px 1px 2px black);
-  cursor: pointer;
   @extend %button-tap;
   opacity: 0; // Изначально невидима
   pointer-events: none; // Изначально неактивна

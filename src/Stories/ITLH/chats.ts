@@ -1,9 +1,9 @@
-import { smartphone, statsManager } from '../../index';
-import { EStoriesEn } from '../../Utils/EStoriesNames';
+import { smartphone, statsManager } from '../../index'
+import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 smartphone.addChat('FamilyArguing',
   {
-    avatar: require('../../Images/UI/icon_favourites.svg'),
+    avatar: require('../../Media/Images/ITLH/Covers/Chat_Family.jpg'),
     title: 'Семья',
     messages: [
       {
@@ -78,7 +78,7 @@ smartphone.addChat('FamilyArguing',
 
 smartphone.addChat('ChatWithCheryl',
   {
-    avatar: require('../../Images/UI/icon_favourites.svg'),
+    avatar: require('../../Media/Images/ITLH/Covers/Chat_Cheryl.jpg'),
     title: 'Шерил',
     messages: [
       {
@@ -159,7 +159,7 @@ smartphone.addChat('ChatWithCheryl',
         fellow: true,
         senderName: 'Шерил',
         text: 'Я не позволю, чтобы мой мир разрушили дурацкие обстоятельства!',
-        func: () => { statsManager.add({ story: EStoriesEn.ITLH, value: -1, category: 'Person', id: 'Cheryl' }) },
+        func: () => { statsManager.change({ story: EStoriesEn.ITLH, value: -1, category: 'Person', id: 'Cheryl' }) },
         goToAnchor: '3'
       },
       {
@@ -187,7 +187,7 @@ smartphone.addChat('ChatWithCheryl',
         fellow: true,
         senderName: 'Шерил',
         text: 'Спасибо! Мы со всем справимся.',
-        func: () => { statsManager.add({ story: EStoriesEn.ITLH, value: 1, category: 'Person', id: 'Cheryl' }) },
+        func: () => { statsManager.change({ story: EStoriesEn.ITLH, value: +1, category: 'Person', id: 'Cheryl' }) },
         goToAnchor: '3'
       },
       {

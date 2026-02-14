@@ -2,7 +2,6 @@ import CContainer from '../../Classes/CContainer'
 import './CaseSimulator.scss'
 import { type ICase, type ICaseItem, type TRarity } from '../../Types/ICaseItem'
 import { ulCase } from './ulCase'
-import { immortalsCase } from './immortalsCase'
 
 const CaseSimulator = new CContainer('case-simulator',
   `
@@ -23,7 +22,7 @@ const CaseSimulator = new CContainer('case-simulator',
   { name: 'closeButton', selector: '.case-simulator__close-button' }
 )
 
-const caseDatabase: ICase[] = [ulCase, immortalsCase]
+const caseDatabase: ICase[] = [ulCase]
 
 export function showCaseSimulator (): void {
   CaseSimulator.caseItems.style.display = 'none'

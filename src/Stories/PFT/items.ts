@@ -5,7 +5,7 @@ statsManager.add({
   category: 'Item',
   id: 'Letter',
   name: 'Записка',
-  image: require('../../Images/PFT/Items/Letter.png'),
+  image: require('../../Media/Images/PFT/Items/Letter.png'),
   title: 'От «любимого» Виктора.',
   description: 'Педантично сложенная бумажка, которая изменила планы Венди.',
   story: EStoriesEn.PFT

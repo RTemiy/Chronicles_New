@@ -27,6 +27,21 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  &:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    content: '';
+    display: block;
+    align-self: center;
+    justify-self: center;
+    height: 50%;
+    width: 100%;
+    background: radial-gradient(closest-side, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0));
+    animation: okmessage-imageBGANIM 10s ease-in-out infinite;
+  }
 }
 
 .wardrobe__left-button{
@@ -35,7 +50,7 @@
   grid-row: 2;
   width: 50px;
   height: 50px;
-  background-image: url("../../Images/UI/icon_go-left.svg");
+  background-image: url("../../Media/Images/UI/icon_go-left.svg");
   background-position: center;
   background-size: cover;
   align-self: center;
@@ -55,6 +70,16 @@
   z-index: 12;
 }
 
+.wardrobe__image-Food{
+  max-width: 280px;
+  grid-column: 2;
+  grid-row: 2;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  @extend %anim;
+  z-index: 12;
+}
+
 .wardrobe__imageLocked {
   filter: saturate(0.5) brightness(0.5);
 }
@@ -65,7 +90,7 @@
   justify-self: right;
   width: 50px;
   height: 50px;
-  background-image: url("../../Images/UI/icon_go-right.svg");
+  background-image: url("../../Media/Images/UI/icon_go-right.svg");
   background-position: center;
   background-size: cover;
   align-self: center;

@@ -1,7 +1,7 @@
 import { statsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
-statsManager.add({
+/*statsManager.add({
   category: 'Person',
   id: 'Nicola',
   name: 'Никола Тесла',
@@ -32,4 +32,4 @@ statsManager.add({
   description: 'Очаровательная девушка, покорившая меня своей игрой, красотой и смелостью. Я пытаюсь разгадать ее тайны, понять ее мотивы. Почему она мне так интересна?',
   showValue: false,
   story: EStoriesEn.Katarina
-})
+})*/

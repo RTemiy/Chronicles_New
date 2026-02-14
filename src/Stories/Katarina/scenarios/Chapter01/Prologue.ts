@@ -2,7 +2,7 @@ import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { whiteFlash } from '../../../../Components/Slide/Slide'
 
-scenarioManager.addScenario({ storyName: EStoriesEn.Katarina, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
+/*scenarioManager.addScenario({ storyName: EStoriesEn.Katarina, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
     id: 0,
     text:
@@ -1624,4 +1624,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Katarina, chapterName: 'Гл
     imageBorder: require('../../../../Images/Katarina/UI/Border.png'),
     imageBack: require('../../../../Images/Katarina/Backgrounds/Wardrobe.jpg')
   }
-])
+])*/

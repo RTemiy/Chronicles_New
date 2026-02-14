@@ -44,7 +44,7 @@ stars.forEach((star: any, index) => {
   star.onclick = () => {
     rating = index
     Rate.sendButton.style.display = 'block'
-    makeExplosion(star, [`<img class="books__icon no-select" src="${require('../../Images/UI/icon_star_active.svg')}"/>`], 1.2, 10, 25, 10)
+    makeExplosion(star, [`<img class="books__icon no-select" src="${require('../../Media/Images/UI/icon_star_active.svg')}"/>`], 1.2, 10, 25, 10)
     renderRating()
   }
 })

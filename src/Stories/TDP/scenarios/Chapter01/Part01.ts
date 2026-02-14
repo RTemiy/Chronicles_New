@@ -14,9 +14,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/TDP/Glaswer.mp3'),
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    music: require('../../../../Media/Audio/TDP/Glaswer.mp3'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -33,8 +33,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     stats: [
       { story: EStoriesEn.TDP, value: +1, category: 'Item', id: 'Bag' }],
     message: inventoryMessage,
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -45,8 +45,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       {
         text: ''
       }],
-    OKMessage: { goTo: 650, image: require('../../../../Images/TDP/Objects/Poster.png'), buttonText: 'Рассмотреть' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    OKMessage: { goTo: 650, image: require('../../../../Media/Images/TDP/Objects/Poster.png'), buttonText: 'Рассмотреть' },
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -60,9 +60,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    imageFront: require('../../../../Images/TDP/Objects/Poster.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageFront: require('../../../../Media/Images/TDP/Objects/Poster.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -76,8 +76,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -91,7 +91,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -105,7 +105,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -119,7 +119,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 7
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -133,9 +133,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 8
       }],
-    imageFront: require('../../../../Images/TDP/Items/Bread.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageFront: require('../../../../Media/Images/TDP/Items/Bread.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -149,8 +149,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 9
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -170,8 +170,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     message: firstChoiceMessage,
     speaker: 'Гених',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -185,8 +185,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 11
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -200,11 +200,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    simple: require('../../../../Audio/TDP/Water_Splash.mp3'),
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    simple: require('../../../../Media/Audio/TDP/Water_Splash.mp3'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Item', id: 'Bag' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -218,8 +218,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -233,9 +233,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     achievement: { story: EStoriesEn.TDP, name: 'KeepBag' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -249,8 +249,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -264,12 +264,12 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: +1, category: 'Item', id: 'Dagger' },
       { story: EStoriesEn.TDP, value: +10, category: 'Item', id: 'Sugar' },
       { story: EStoriesEn.TDP, value: +10, category: 'Item', id: 'Money' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -283,8 +283,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -298,7 +298,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 18
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -312,8 +312,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -327,8 +327,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -342,8 +342,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 21
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -357,8 +357,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 22
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -372,8 +372,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 23
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -387,8 +387,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 24
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -402,8 +402,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -417,8 +417,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 26
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -432,8 +432,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -448,8 +448,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 28
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -464,8 +464,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 29
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -480,8 +480,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 30
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -496,10 +496,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 31
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 0, category: 'Person', id: 'Mortimer' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -514,8 +514,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 32
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -530,8 +530,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 33
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -545,7 +545,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 34
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -559,8 +559,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 35
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -574,10 +574,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 36
       }],
-    simple: require('../../../../Audio/TDP/Coins.mp3'),
+    simple: require('../../../../Media/Audio/TDP/Coins.mp3'),
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -592,8 +592,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 37
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -608,8 +608,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 38
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -624,8 +624,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 39
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -640,8 +640,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 40
       }],
     speakerR: 'Дитрих',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich_Angry.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich_Angry.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -655,8 +655,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    simple: require('../../../../Audio/TDP/Slap.mp3'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    simple: require('../../../../Media/Audio/TDP/Slap.mp3'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -671,8 +671,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 42
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -687,8 +687,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 43
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -703,8 +703,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 44
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -718,7 +718,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -733,8 +733,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 46
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -749,8 +749,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 47
       }],
     message: 'Анафема — это полное отлучение человека от Церкви за тяжкие грехи.',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -764,8 +764,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 48
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -780,8 +780,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 49
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -796,10 +796,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 50
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 0, category: 'Person', id: 'Martha' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -814,8 +814,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 51
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -830,8 +830,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 52
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -846,8 +846,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 53
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -861,9 +861,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 54
       }],
-    simple: require('../../../../Audio/TDP/Coins.mp3'),
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Vig.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    simple: require('../../../../Media/Audio/TDP/Coins.mp3'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Vig.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -877,8 +877,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 55
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Joanne.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -893,8 +893,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 56,
         gift: true
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -909,8 +909,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 57
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_01.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_01.png')
   },
 
   {
@@ -923,7 +923,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 58
       }],
     interruptiveFrame: { goTo: 58 },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -937,7 +937,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -952,8 +952,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 60
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -967,8 +967,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 61
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -983,10 +983,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 62
       }],
     speakerR: 'Дитрих',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 0, category: 'Person', id: 'Ditrich' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1000,8 +1000,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 63
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1020,8 +1020,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 70
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1035,11 +1035,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 65
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'ResponseDitrich' }],
     achievement: { story: EStoriesEn.TDP, name: 'ResponseDitrich' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1053,8 +1053,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 66
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1069,8 +1069,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 67
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1084,8 +1084,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 68
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich_Angry.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich_Angry.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1100,8 +1100,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 69
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1118,7 +1118,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     message: 'Дитрих держит на вас обиду.',
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Ditrich' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1132,8 +1132,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 71
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Ditrich.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Ditrich.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1147,8 +1147,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 72
       }],
-    simple: require('../../../../Audio/TDP/Slap.mp3'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    simple: require('../../../../Media/Audio/TDP/Slap.mp3'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1162,7 +1162,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 73
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1176,8 +1176,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 74
       }],
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1192,9 +1192,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 75
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1208,10 +1208,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 76
       }],
-    simple: require('../../../../Audio/TDP/Horse.mp3'),
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Horse_Black.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    simple: require('../../../../Media/Audio/TDP/Horse.mp3'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Horse_Black.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1225,9 +1225,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 77
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Horse_Black.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Horse_Black.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1243,7 +1243,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.TDP, value: -2, category: 'Item', id: 'Sugar' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1258,8 +1258,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 79
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1273,8 +1273,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 80
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Joanne.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1288,10 +1288,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 81
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Joanne.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 0, category: 'Person', id: 'Joanne' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1310,8 +1310,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 85
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1325,8 +1325,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 83
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Joanne.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1341,8 +1341,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 84
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1360,7 +1360,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Joanne' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Martha' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1374,9 +1374,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 86
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     achievement: { story: EStoriesEn.TDP, name: 'Zoo' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1391,8 +1391,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 87
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1406,8 +1406,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 88
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Joanne.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1421,9 +1421,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 89
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Horse_White.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Horse_White.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1437,9 +1437,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 670
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Joanne_Smile.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Joanne_Smile.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1454,9 +1454,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 90
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBorder: require('../../../../Images/TDP/UI/Border.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBorder: require('../../../../Media/Images/TDP/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1470,8 +1470,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 91
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1486,8 +1486,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 92
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1502,8 +1502,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 93
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1521,7 +1521,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     stats: [
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Joanne' },
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Martha' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1535,7 +1535,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 95
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1549,8 +1549,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 96
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Vig.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Vig.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1565,8 +1565,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 97
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1581,10 +1581,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 98
       }],
     speakerR: 'Виг',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Vig.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Vig.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 0, category: 'Person', id: 'Vig' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1599,8 +1599,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 99
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1615,8 +1615,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 100
       }],
     speakerR: 'Виг',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Vig.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Vig.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1631,8 +1631,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 101
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1649,7 +1649,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     message: 'В Крейсе используется собственная валюта — Имперская крона. Не забывайте, это очень ценный ресурс, который можно получить не только законным путем. Распоряжайтесь ей с умом и будьте осторожны.',
     stats: [
       { story: EStoriesEn.TDP, value: +200, category: 'Item', id: 'Money' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1663,9 +1663,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 103
       }],
-    music: require('../../../../Audio/TDP/Shadows_Theme.mp3'),
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    music: require('../../../../Media/Audio/TDP/Shadows_Theme.mp3'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1679,8 +1679,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 104
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1695,8 +1695,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 105
       }],
     speakerR: 'Неизвестный',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1711,8 +1711,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 106
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1727,8 +1727,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 107
       }],
     speakerR: 'Неизвестный',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1742,8 +1742,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 108
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1758,8 +1758,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 109
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1777,7 +1777,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: 'Взять всю предложенную сумму',
         goTo: 114
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1791,10 +1791,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 111
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'BardPayNormal' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1809,8 +1809,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 112
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1826,11 +1826,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     message: 'Вы получили десять крон. Бард благодарен вам за помощь.',
     speakerR: 'Джек',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
     stats: [
       { story: EStoriesEn.TDP, value: +10, category: 'Item', id: 'Money' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Jack' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1845,8 +1845,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 121
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1860,9 +1860,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 115
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     achievement: { story: EStoriesEn.TDP, name: 'TakeJacksMoney' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1877,8 +1877,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 116
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1893,8 +1893,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 117
       }],
     speakerR: 'Неизвестный',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack_Puzzled.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack_Puzzled.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1909,8 +1909,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 118
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1925,8 +1925,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 119
       }],
     speakerR: 'Джек',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1941,11 +1941,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 120
       }],
     message: 'Вы получили девяносто крон. Барда расстроила ваша жадность.',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
     stats: [
       { story: EStoriesEn.TDP, value: +90, category: 'Item', id: 'Money' },
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Jack' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1960,8 +1960,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 121
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1975,8 +1975,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 680
       }],
-    music: require('../../../../Audio/TDP/Glaswer.mp3'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Streets.png')
+    music: require('../../../../Media/Audio/TDP/Glaswer.mp3'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Streets.png')
   },
 
   {
@@ -1988,7 +1988,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: ''
       }],
     interruptiveFrame: { goTo: 122 },
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2003,8 +2003,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 123
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech_Annoyed.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech_Annoyed.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2019,8 +2019,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 124
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech_Annoyed.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech_Annoyed.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2034,8 +2034,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 125
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2049,8 +2049,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 126
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2064,8 +2064,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 127
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2079,8 +2079,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 128
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2095,8 +2095,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 129
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2111,8 +2111,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 130
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2127,8 +2127,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 131
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer_Mask.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer_Mask.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2143,8 +2143,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 132
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2159,8 +2159,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 133
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2175,8 +2175,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 134
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2191,8 +2191,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 135
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2207,8 +2207,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 136
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2223,8 +2223,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 137
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech_Annoyed.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech_Annoyed.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2239,8 +2239,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 138
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2255,8 +2255,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 139
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2271,8 +2271,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 140
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2291,8 +2291,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 154
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech_Annoyed.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech_Annoyed.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2306,11 +2306,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 142
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'Pay' }],
     achievement: { story: EStoriesEn.TDP, name: 'SpendMoney' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2325,10 +2325,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 143
       }],
     message: 'Вы потратили двести крон. ',
-    simple: require('../../../../Audio/TDP/Coins.mp3'),
+    simple: require('../../../../Media/Audio/TDP/Coins.mp3'),
     stats: [
       { story: EStoriesEn.TDP, value: -200, category: 'Item', id: 'Money' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2343,8 +2343,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 144
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2358,8 +2358,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 145
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2374,8 +2374,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 146
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2389,8 +2389,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2405,8 +2405,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 148
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2421,8 +2421,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 149
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2437,8 +2437,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 150
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2453,8 +2453,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 151
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2469,8 +2469,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 152
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2485,8 +2485,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 153
       }],
     speakerL: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2501,8 +2501,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 166
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2517,8 +2517,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 155
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2533,8 +2533,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 156
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2549,8 +2549,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 157
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2565,8 +2565,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 158
       }],
     speakerR: 'Отто',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Otto.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Otto.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2581,8 +2581,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 159
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2596,8 +2596,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 160
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2612,8 +2612,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 161
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2628,8 +2628,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 162
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2644,8 +2644,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 163
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2660,8 +2660,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 164
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2676,8 +2676,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 165
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2692,8 +2692,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 166
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2707,8 +2707,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 167
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2722,8 +2722,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 168
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2737,8 +2737,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 169
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2752,7 +2752,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 170
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2777,7 +2777,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 175
       }
     ],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2791,8 +2791,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 172
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2807,8 +2807,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 173
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2823,8 +2823,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 174
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2838,7 +2838,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 180
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2852,8 +2852,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 176
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2868,8 +2868,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 177
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2884,8 +2884,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 178
       }],
     speakerR: 'Мортимер',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Mortimer.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Mortimer.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2900,8 +2900,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 179
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2915,7 +2915,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 180
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2930,8 +2930,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 181
       }],
     speakerR: 'Джек',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2954,8 +2954,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 195
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2970,10 +2970,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 183
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'StayPut' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -2988,8 +2988,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 184
       }],
     speakerR: 'Джек',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3004,8 +3004,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 185
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3021,10 +3021,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     message: 'Джеку не понравилась ваша грубость.',
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Jack' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3039,8 +3039,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 187
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3058,8 +3058,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Martha' }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3074,10 +3074,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 189
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'HideWagon' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3092,8 +3092,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 190
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3108,8 +3108,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 191
       }],
     speakerR: 'Джек',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3124,8 +3124,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 192
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3140,8 +3140,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 193
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3156,8 +3156,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 194
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3175,7 +3175,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     stats: [
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Martha' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Jack' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3189,7 +3189,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 551
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3203,7 +3203,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 552
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3217,8 +3217,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 237
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
   },
 
   {
@@ -3233,10 +3233,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 196
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'AskForHelp' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3251,8 +3251,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 197
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3266,7 +3266,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 198
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3280,7 +3280,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 199
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3295,8 +3295,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 200
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3311,8 +3311,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 201
       }],
     speakerR: 'Джек',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Jack.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Jack.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3327,8 +3327,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 202
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3343,8 +3343,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 203
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3359,8 +3359,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 204
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3375,8 +3375,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 205
       }],
     speakerR: 'Марта',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3392,13 +3392,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     message: 'Марте очень приятна ваша забота о детях. Она станет больше доверять вам.',
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: +2, category: 'Person', id: 'Martha' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Vig' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Joanne' },
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Jack' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -3410,8 +3410,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: ''
       }],
     interruptiveFrame: { goTo: 206 },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png'),
-    simple: require('../../../../Audio/TDP/Door_Squak.mp3')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png'),
+    simple: require('../../../../Media/Audio/TDP/Door_Squak.mp3')
   },
 
   {
@@ -3425,7 +3425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 207
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3440,8 +3440,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 208
       }],
     speakerR: 'Трактирщик',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3456,8 +3456,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 209
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3471,7 +3471,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 210
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3485,7 +3485,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 211
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3500,8 +3500,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 212
       }],
     speakerR: 'Трактирщик',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3516,8 +3516,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 213
       }],
     speakerR: 'Трактирщик',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3531,8 +3531,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 214
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Martha.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Martha.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3551,8 +3551,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 218
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3566,8 +3566,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 216
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3581,7 +3581,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 217
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3598,7 +3598,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
     message: 'Марта стесняется вас, жалея о своем действии.',
     stats: [
       { story: EStoriesEn.TDP, value: -1, category: 'Person', id: 'Martha' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3614,7 +3614,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     stats: [
       { story: EStoriesEn.TDP, value: 1, category: 'Choice', id: 'HelpGirl' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3628,7 +3628,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 220
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3642,7 +3642,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 221
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3656,7 +3656,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 222
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3671,8 +3671,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 223
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3686,7 +3686,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 224
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3700,7 +3700,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 225
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3716,10 +3716,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
       }],
     message: 'Марта относится к вам лучше.',
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     stats: [
       { story: EStoriesEn.TDP, value: +1, category: 'Person', id: 'Martha' }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3734,8 +3734,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 227
       }],
     speakerR: 'Трактирщик',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3750,8 +3750,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 228
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3766,8 +3766,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 229
       }],
     speakerR: 'Трактирщик',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3782,8 +3782,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 230
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3797,8 +3797,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 231
       }],
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3813,8 +3813,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 232
       }],
     speakerR: 'Трактирщик',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3829,8 +3829,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 233
       }],
     speakerL: 'Генрих',
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3845,8 +3845,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         goTo: 234
       }],
     speakerR: 'Трактирщик',
-    fullscreenObjectR: require('../../../../Images/TDP/Persons/Innkeeper.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    fullscreenObjectR: require('../../../../Media/Images/TDP/Persons/Innkeeper.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3860,7 +3860,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern.png')
   },
 
   {
@@ -3874,7 +3874,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 236
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern_Room.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern_Room.png')
   },
 
   {
@@ -3888,7 +3888,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 500
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern_Room.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern_Room.png')
   },
 
   {
@@ -3902,7 +3902,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 237
       }],
-    imageBack: require('../../../../Images/TDP/Backgrounds/Tavern_Room.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Tavern_Room.png')
   },
 
   {
@@ -3946,7 +3946,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: ''
       }],
     interruptiveFrame: { goTo: 625 },
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3960,8 +3960,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 626
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3977,9 +3977,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
           saveEndProgress('TDP', 'Глава 1', 'Часть 2', '0')
         }
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     achievement: { story: EStoriesEn.TDP, name: 'Chapter01Part01Completed' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/City_Gates_Closed.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png')
   },
 
   {
@@ -3993,8 +3993,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 628
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
   },
 
   {
@@ -4010,9 +4010,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
           saveEndProgress('TDP', 'Глава 1', 'Часть 2', '0')
         }
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     achievement: { story: EStoriesEn.TDP, name: 'Chapter01Part01Completed' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_02_Evening.png')
   },
 
   {
@@ -4026,8 +4026,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
         text: '',
         goTo: 630
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   },
 
   {
@@ -4043,7 +4043,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.TDP, chapterName: 'Глав�
           saveEndProgress('TDP', 'Глава 1', 'Часть 2', '0')
         }
       }],
-    fullscreenObjectL: require('../../../../Images/TDP/Persons/Henriech.png'),
+    fullscreenObjectL: require('../../../../Media/Images/TDP/Persons/Henriech.png'),
     achievement: { story: EStoriesEn.TDP, name: 'Chapter01Part01Completed' },
-    imageBack: require('../../../../Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
+    imageBack: require('../../../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png')
   }])

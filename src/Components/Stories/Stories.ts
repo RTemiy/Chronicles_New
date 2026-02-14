@@ -10,7 +10,7 @@ import { ANDROIDMODE, DESKTOPMODE } from '../../Utils/technicalConsts';
 const Stories = new CContainer(
   'stories',
   `
-    <p class="tab__title">Истории<img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span" ${DESKTOPMODE && 'style="display: none;"'} ${ANDROIDMODE && 'style="display: none;"'}/></p>
+    <p class="tab__title">Истории<img src="${require('../../Media/Images/UI/icon_info.svg')}" class="icon_span" ${DESKTOPMODE && 'style="display: none;"'} ${ANDROIDMODE && 'style="display: none;"'}/></p>
     <div class="stories__slider-wrapper">
       <div class="stories__slider-button stories__slider-button_left"></div>
       <div class="stories__container"></div>

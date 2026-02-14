@@ -166,7 +166,7 @@ export default class CStoriesManager {
                             <div class="part__container">
                               <img class="part__image" src="${part.image}">
                               <p class="part__name">${part.name}</p>
-                              <img class="part__tick" src="${require('../Images/UI/icon_tick.svg')}">
+                              <img class="part__tick" src="${require('../Media/Images/UI/icon_tick.svg')}">
                             </div>
                           </div>
                         `

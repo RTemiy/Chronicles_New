@@ -91,6 +91,8 @@ export class CSmartphone {
     this.Smartphone.time.innerHTML = chat.time ?? ''
     this.Smartphone.battery.innerHTML = chat.battery?.toString() ?? ''
     this.Smartphone.messages.innerHTML = ''
+    this.Smartphone.toolbar.classList.remove('smartphone-chat__toolbar_offline')
+    this.Smartphone.toolbar.classList.add('smartphone-chat__toolbar_online')
     // eslint-disable-next-line @typescript-eslint/no-base-to-string,@typescript-eslint/restrict-plus-operands
     this.Smartphone.messages.style.backgroundImage = 'url("' + profileManager.findBanner(loadData(['Profile', 'Banner'])!).image + '")'
     // this.Smartphone.closeButton.style.display = 'none' // Кнопка скрывается через CSS (opacity: 0)
@@ -110,7 +112,9 @@ export class CSmartphone {
 
   private showCloseButton (callback: () => void): void {
     const closeButton = this.Smartphone.closeButton as HTMLImageElement
-    closeButton.src = require('../Images/UI/icon_exit.svg')
+    closeButton.src = require('../Media/Images/UI/icon_cross.svg')
+    this.Smartphone.toolbar.classList.add('smartphone-chat__toolbar_offline')
+    this.Smartphone.toolbar.classList.remove('smartphone-chat__toolbar_online')
     // Добавляем класс для плавной анимации появления
     closeButton.classList.add('visible')
 

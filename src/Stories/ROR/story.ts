@@ -2,22 +2,22 @@ import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
   name: 'ROR',
-  image: require('../../Images/ROR/Covers/Story_Cover.jpg'),
-  video: require('../../Images/ROR/Covers/Story_Cover.mp4'),
-  title: require('../../Images/ROR/Covers/Title.png'),
+  image: require('../../Media/Images/ROR/Covers/Story_Cover.jpg'),
+  video: require('../../Media/Images/ROR/Covers/Story_Cover.mp4'),
+  title: require('../../Media/Images/ROR/Covers/Title.png'),
   description: 'Страну Крейс поразила страшная болезнь - чума. В условиях эпидемии Генрих работает контрабандистом, переправляя нуждающихся за границу. Однажды к нему обратилась группа беженцев. Начавшееся приключение перевернет не только судьбы героев, но и всей страны.',
   genre: 'Фэнтези, Приключение',
   mature: true,
   chapters: [
     {
       name: 'Глава 1',
-      image: require('../../Images/ROR/Backgrounds/Central_Square.jpg'),
+      image: require('../../Media/Images/ROR/Backgrounds/Central_Square.jpg'),
       parts: [
         {
           name: 'Пролог',
           code: '0',
-          image: require('../../Images/ROR/Backgrounds/Mortimer_Cabinet.jpg'),
-          loadingImage: require('../../Images/ROR/Covers/Prologue.png'),
+          image: require('../../Media/Images/ROR/Backgrounds/Mortimer_Cabinet.jpg'),
+          loadingImage: require('../../Media/Images/ROR/Covers/Prologue.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
           }
@@ -25,8 +25,8 @@ storiesManager.add({
         {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Images/ROR/Backgrounds/Glaswer_Gates.jpg'),
-          loadingImage: require('../../Images/ROR/Covers/Part01.png'),
+          image: require('../../Media/Images/ROR/Backgrounds/Glaswer_Gates.jpg'),
+          loadingImage: require('../../Media/Images/ROR/Covers/Part01.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
@@ -35,8 +35,8 @@ storiesManager.add({
         {
           name: 'Часть 2',
           code: '0',
-          image: require('../../Images/ROR/Backgrounds/Chapel_Fire.jpg'),
-          loadingImage: require('../../Images/ROR/Covers/Part02.png'),
+          image: require('../../Media/Images/ROR/Backgrounds/Chapel_Fire.jpg'),
+          loadingImage: require('../../Media/Images/ROR/Covers/Part02.png'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
@@ -45,8 +45,8 @@ storiesManager.add({
         {
           name: 'Часть 3',
           code: '0',
-          image: require('../../Images/ROR/Backgrounds/Tavern.jpg'),
-          loadingImage: require('../../Images/ROR/Covers/Part03.jpg'),
+          image: require('../../Media/Images/ROR/Backgrounds/Tavern.jpg'),
+          loadingImage: require('../../Media/Images/ROR/Covers/Part03.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)
@@ -55,8 +55,8 @@ storiesManager.add({
         {
           name: 'Часть 4',
           code: '0',
-          image: require('../../Images/ROR/Backgrounds/Ball_Hall.jpg'),
-          loadingImage: require('../../Images/ROR/Covers/Part04.jpg'),
+          image: require('../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg'),
+          loadingImage: require('../../Media/Images/ROR/Covers/Part04.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)

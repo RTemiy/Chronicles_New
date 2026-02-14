@@ -5,18 +5,18 @@ const currentEvent: 'default' | 'newYear' = 'default'
 export function getCurrentEventImageSVG (imageName: string): string {
   switch (currentEvent) {
     case 'newYear':
-      return require('../Images/UI/new_year/' + imageName + '.svg')
+      return require('../Media/Images/UI/new_year/' + imageName + '.svg')
     default:
-      return require('../Images/UI/' + imageName + '.svg')
+      return require('../Media/Images/UI/' + imageName + '.svg')
   }
 }
 
 export function getCurrentEventImageJPG (imageName: string): string {
   switch (currentEvent) {
     case 'newYear':
-      return require('../Images/UI/new_year/' + imageName + '.jpg')
+      return require('../Media/Images/UI/new_year/' + imageName + '.jpg')
     default:
-      return require('../Images/UI/' + imageName + '.jpg')
+      return require('../Media/Images/UI/' + imageName + '.jpg')
   }
 }
 

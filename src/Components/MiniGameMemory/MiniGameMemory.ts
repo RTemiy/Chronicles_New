@@ -86,8 +86,8 @@ function showPath (): void {
 }
 
 function updateInfo (): void {
-  MiniGameMemory.lives.innerHTML = `<span><img class="icon_span" src="${require('../../Images/UI/icon_favourites.svg')}"></span> ${totalLives - wastedLives}/${totalLives}`
-  MiniGameMemory.wins.innerHTML = `<span><img class="icon_span" src="${require('../../Images/UI/icon_achievements.svg')}"></span> ${roundsWon}/${roundsToWin}`
+  MiniGameMemory.lives.innerHTML = `<span><img class="icon_span" src="${require('../../Media/Images/UI/icon_favourites.svg')}"></span> ${totalLives - wastedLives}/${totalLives}`
+  MiniGameMemory.wins.innerHTML = `<span><img class="icon_span" src="${require('../../Media/Images/UI/icon_achievements.svg')}"></span> ${roundsWon}/${roundsToWin}`
 }
 
 function disableButtons (): void {

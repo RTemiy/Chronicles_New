@@ -12,7 +12,7 @@
   --font: 'Main', sans-serif;
   --stroke: 0px;
   --desktopmode: false;
-  --cursorpointer: url(./Images/UI/cursor_pointer.svg)
+  --cursorpointer: url(Media/Images/UI/cursor_pointer.svg)
 }
 
 img{
@@ -26,7 +26,7 @@ a{
 body {
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-image: url(./Images/UI/background.png);
+  background-image: url(Media/Images/UI/background.png);
   scroll-behavior: smooth;
   background-attachment: fixed;
   font-size: var(--mediumtext);
@@ -45,7 +45,7 @@ body {
   padding: 0;
   margin: 0;
   @extend %styled-background;
-  cursor: url(./Images/UI/cursor_simple.svg), auto;
+  cursor: url(Media/Images/UI/cursor_simple.svg), auto;
 }
 
 .main-bg-anim{

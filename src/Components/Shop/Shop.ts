@@ -29,7 +29,7 @@ export function renderShop (): void {
     if (item.category === 'Гардероб') {
       wardrobeResult += `
     <div class='shop-item__container'>
-      <p class='shop-item__title'>${item.title} <img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"></p>
+      <p class='shop-item__title'>${item.title} <img src="${require('../../Media/Images/UI/icon_info.svg')}" class="icon_span"></p>
       <p class='shop-item__cost' ${item.free ? 'style="display: none"' : item.available ? '' : 'style="display: none"'}>${item.cost}₽</p>
       <img class='shop-item__image ${item.free && item.available ? '' : item.available ? '' : 'unavailableItem'}' src='${item.image}'/>
       <div class='shop-item__descriptionContainer'><p>${item.description}</div>
@@ -39,7 +39,7 @@ export function renderShop (): void {
     } else if (item.category === 'Интерьер') {
       interiorResult += `
     <div class='shop-item__container'>
-      <p class='shop-item__title'>${item.title} <img src="${require('../../Images/UI/icon_info.svg')}" class="icon_span"></p>
+      <p class='shop-item__title'>${item.title} <img src="${require('../../Media/Images/UI/icon_info.svg')}" class="icon_span"></p>
       <p class='shop-item__cost' ${item.free ? 'style="display: none"' : item.available ? '' : 'style="display: none"'}>${item.cost}₽</p>
       <img class='shop-item__image ${item.free && item.available ? '' : item.available ? '' : 'unavailableItem'}' src='${item.image}'/>
       <div class='shop-item__descriptionContainer'><p>${item.description}</div>
@@ -56,12 +56,12 @@ export function renderShop (): void {
     if (item.available && item.category === 'Гардероб') {
       item.free && (Shop.wardrobeCategory.querySelector(`#wardrobe_item_${item.id}`).onclick = () => {
         item.action()
-        makeExplosion(MenuMessage.self, [`<img src="${require('../../Images/UI/icon_gift.svg')}" class="icon_span"/>`], 3, 50, 50, 30)
+        makeExplosion(MenuMessage.self, [`<img src="${require('../../Media/Images/UI/icon_gift.svg')}" class="icon_span"/>`], 3, 50, 50, 30)
       })
     } else if (item.available && item.category === 'Интерьер') {
       item.free && (Shop.interiorCategory.querySelector(`#wardrobe_item_${item.id}`).onclick = () => {
         item.action()
-        makeExplosion(MenuMessage.self, [`<img src="${require('../../Images/UI/icon_gift.svg')}" class="icon_span"/>`], 3, 50, 50, 30)
+        makeExplosion(MenuMessage.self, [`<img src="${require('../../Media/Images/UI/icon_gift.svg')}" class="icon_span"/>`], 3, 50, 50, 30)
       })
     }
   })

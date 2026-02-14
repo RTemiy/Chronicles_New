@@ -13,8 +13,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/ROR/City.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
+    music: require('../../../../Media/Audio/ROR/City.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Underground.jpg')
   },
 
   {
@@ -28,9 +28,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 2
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Underground.jpg')
   },
 
   {
@@ -44,9 +44,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 3
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Underground.jpg')
   },
 
   {
@@ -60,8 +60,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    music: require('../../../../Audio/ROR/Ball.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Underground.jpg')
+    music: require('../../../../Media/Audio/ROR/Ball.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Underground.jpg')
   },
 
   {
@@ -75,7 +75,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 5
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -89,7 +89,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -103,7 +103,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 7
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -117,9 +117,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 8
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -133,7 +133,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 9
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -147,9 +147,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 10
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -163,7 +163,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 11
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -177,7 +177,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 12
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -191,9 +191,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -208,7 +208,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 14
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -222,10 +222,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -239,10 +239,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -256,10 +256,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -273,10 +273,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 18
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -290,7 +290,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -304,10 +304,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -321,10 +321,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 21
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -338,10 +338,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 22
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -355,10 +355,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 23
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -372,10 +372,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 24
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -389,10 +389,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 25
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -406,10 +406,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 26
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -423,10 +423,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 27
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -440,10 +440,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 28
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -457,11 +457,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 29
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
     darkSilhouette: true,
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -475,10 +475,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 30
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -492,10 +492,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 31
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -509,10 +509,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 32
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -526,10 +526,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 33
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -543,10 +543,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 34
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -560,10 +560,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 35
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -577,10 +577,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 36
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -594,10 +594,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 37
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -611,10 +611,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 38
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -628,10 +628,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 39
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -645,10 +645,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 40
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -662,10 +662,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 41
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -679,10 +679,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 42
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -696,10 +696,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 43
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -713,10 +713,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 44
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -730,10 +730,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 45
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -747,10 +747,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 46
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -764,10 +764,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 47
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -781,10 +781,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 48
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -798,10 +798,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 49
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -815,10 +815,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 50
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -836,10 +836,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: 'Представиться торговцем',
         goTo: 66
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -855,7 +855,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
       }],
     parallax: 'right',
     achievement: { story: EStoriesEn.ROR, name: 'Warrior' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg'),
     stats: [{ story: EStoriesEn.ROR, value: +1, category: 'Choice', id: 'IntroduceAsMilitary' }]
   },
 
@@ -870,10 +870,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 54
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -887,10 +887,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 55
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -904,10 +904,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 510
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -921,10 +921,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 56
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -938,10 +938,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 57
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -955,10 +955,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 58
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -972,10 +972,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 59
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -989,10 +989,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 60
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1006,10 +1006,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 61
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1023,10 +1023,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 62
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1040,10 +1040,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 63
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1057,10 +1057,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 64
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1074,10 +1074,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 65
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1091,10 +1091,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 83
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1108,11 +1108,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 67
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
     achievement: { story: EStoriesEn.ROR, name: 'Bartender' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1126,9 +1126,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 68
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1142,10 +1142,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 69
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1159,10 +1159,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 70
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1176,10 +1176,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 71
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1194,7 +1194,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 72
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1208,10 +1208,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 73
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1225,10 +1225,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 74
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1242,10 +1242,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 75
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1259,10 +1259,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 76
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1276,10 +1276,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 77
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1293,10 +1293,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 78
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1310,10 +1310,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 79
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1327,10 +1327,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 80
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1344,10 +1344,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 81
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1361,10 +1361,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 82
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1378,7 +1378,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 83
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1392,10 +1392,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 84
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1409,10 +1409,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 85
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1426,10 +1426,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 86
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1443,10 +1443,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 87
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1460,10 +1460,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 88
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1477,10 +1477,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 89
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1494,7 +1494,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 90
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1508,10 +1508,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 91
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1526,7 +1526,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 92
       }],
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1540,10 +1540,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 93
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'right',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1557,9 +1557,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 94
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1573,7 +1573,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 95
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1587,9 +1587,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 96
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1603,9 +1603,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 97
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1619,9 +1619,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 98
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1635,9 +1635,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 99
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1651,9 +1651,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 100
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1667,9 +1667,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 101
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1683,9 +1683,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 102
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1699,9 +1699,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 103
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1715,7 +1715,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 104
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1729,9 +1729,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 105
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1745,9 +1745,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 106
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1761,9 +1761,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 107
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1777,9 +1777,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 108
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1793,9 +1793,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 109
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1809,9 +1809,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 110
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1836,7 +1836,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 111
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1850,9 +1850,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 112
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1866,9 +1866,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 113
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1882,9 +1882,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 114
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1898,9 +1898,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 115
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1914,9 +1914,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 116
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1930,9 +1930,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 117
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1946,9 +1946,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 118
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1962,9 +1962,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 119
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1978,10 +1978,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 120
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Longman_S.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Longman_S.png'),
     darkSilhouette: true,
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -1995,10 +1995,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 121
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Girl_S.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Girl_S.png'),
     darkSilhouette: true,
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2012,9 +2012,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 122
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Man_Bear.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Man_Bear.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2028,9 +2028,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 123
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Man_Bear.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Man_Bear.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2044,9 +2044,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 124
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Man_Bear.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Man_Bear.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2060,9 +2060,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 125
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Man_Bear.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Man_Bear.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2076,7 +2076,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 126
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2090,9 +2090,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 127
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2106,7 +2106,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 128
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2120,9 +2120,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 129
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2136,7 +2136,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 130
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2150,9 +2150,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 131
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2166,9 +2166,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 132
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2182,9 +2182,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 133
       }],
-    imageFront: require('../../../../Images/ROR/Items/Cupcake.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Items/Cupcake.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2198,9 +2198,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 134
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2214,9 +2214,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 135
       }],
-    imageFront: require('../../../../Images/ROR/Items/Cupcake.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Items/Cupcake.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2230,9 +2230,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 136
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2246,9 +2246,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 137
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2262,9 +2262,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 138
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2278,9 +2278,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 139
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Hugo_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Hugo_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2294,9 +2294,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 140
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2310,9 +2310,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 141
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2326,7 +2326,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 142
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2340,10 +2340,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 143
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Pointing_Man_S.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Pointing_Man_S.png'),
     darkSilhouette: true,
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2357,9 +2357,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 144
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2373,9 +2373,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 145
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2389,9 +2389,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 146
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2405,8 +2405,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 147
       }],
-    music: require('../../../../Audio/ROR/Romantic.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    music: require('../../../../Media/Audio/ROR/Romantic.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2420,9 +2420,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 148
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2436,9 +2436,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 149
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2452,9 +2452,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 150
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2468,9 +2468,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 151
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2484,9 +2484,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 152
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2500,9 +2500,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 153
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2516,10 +2516,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 154
       }],
-    music: require('../../../../Audio/ROR/Ball.mp3'),
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    music: require('../../../../Media/Audio/ROR/Ball.mp3'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2533,9 +2533,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 155
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2549,9 +2549,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 156
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2565,9 +2565,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 157
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2581,7 +2581,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 158
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2595,9 +2595,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 159
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2611,9 +2611,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 160
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2627,9 +2627,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 161
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2643,9 +2643,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 162
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2659,9 +2659,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 163
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2681,9 +2681,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: 'Поговорить с Аделаидой сразу',
         goTo: 195
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2698,9 +2698,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 165
       }],
     stats: [{ story: EStoriesEn.ROR, value: +1, category: 'Choice', id: 'GoWithMarthaBall' }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2714,9 +2714,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 166
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2730,9 +2730,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 167
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2746,10 +2746,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 168
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2763,10 +2763,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 169
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2780,10 +2780,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 170
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2797,10 +2797,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 171
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2814,10 +2814,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 172
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2831,10 +2831,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 173
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2848,10 +2848,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 500
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2865,10 +2865,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 501
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2882,10 +2882,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 174
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2899,10 +2899,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 175
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2916,10 +2916,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 176
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2933,11 +2933,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 177
       }],
-    music: require('../../../../Audio/ROR/Romantic.mp3'),
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    music: require('../../../../Media/Audio/ROR/Romantic.mp3'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2951,10 +2951,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 178
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2968,10 +2968,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 179
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -2985,10 +2985,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 180
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3002,10 +3002,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 181
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3019,10 +3019,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 182
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3036,10 +3036,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 183
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3053,10 +3053,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 184
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3070,10 +3070,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 185
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3087,10 +3087,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 186
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3104,10 +3104,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 187
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3121,10 +3121,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 188
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3138,10 +3138,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 189
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3155,10 +3155,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 190
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3172,10 +3172,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 191
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3189,10 +3189,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 192
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3206,10 +3206,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 193
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3223,10 +3223,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 194
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3240,13 +3240,13 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 198
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
     stats: [
       { story: EStoriesEn.ROR, value: +2, category: 'Person', id: 'Martha' }],
     message: 'Доверие Марты к вам значительно увеличивается',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3260,8 +3260,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 196
       }],
-    music: require('../../../../Audio/ROR/Ball.mp3'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    music: require('../../../../Media/Audio/ROR/Ball.mp3'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3275,9 +3275,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 197
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3291,9 +3291,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 198
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3307,10 +3307,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 199
       }],
-    music: require('../../../../Audio/ROR/Ball.mp3'),
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    music: require('../../../../Media/Audio/ROR/Ball.mp3'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3324,9 +3324,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 200
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3340,9 +3340,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 201
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3356,9 +3356,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 202
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3372,9 +3372,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 203
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3388,7 +3388,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 204
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3402,9 +3402,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 205
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3418,9 +3418,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 206
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3434,7 +3434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 207
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3448,9 +3448,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 208
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3464,9 +3464,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 209
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3480,9 +3480,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 210
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3496,9 +3496,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 211
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3512,9 +3512,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 212
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3528,9 +3528,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 213
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3544,9 +3544,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 214
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3560,7 +3560,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 215
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3574,9 +3574,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 216
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3590,7 +3590,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 217
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3604,9 +3604,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 218
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3620,9 +3620,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 219
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3636,7 +3636,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 220
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3650,9 +3650,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 221
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3666,9 +3666,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 222
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3682,9 +3682,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 223
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3698,9 +3698,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 224
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3714,9 +3714,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 225
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3730,7 +3730,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 226
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3744,9 +3744,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 227
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3771,7 +3771,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 246
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3785,7 +3785,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 229
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3799,9 +3799,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 230
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3815,9 +3815,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 231
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3831,9 +3831,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 232
       }],
-    imageFront: require('../../../../Images/ROR/Items/Perfume.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Items/Perfume.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3847,11 +3847,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 233
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: -1, category: 'Item', id: 'Perfume' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3865,9 +3865,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 234
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3881,9 +3881,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 235
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3897,9 +3897,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 236
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3913,9 +3913,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 237
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3929,9 +3929,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 238
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3945,9 +3945,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 239
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3961,9 +3961,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 240
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3977,9 +3977,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 241
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -3993,9 +3993,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 242
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4009,7 +4009,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 243
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4023,7 +4023,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 244
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4037,9 +4037,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 245
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4053,10 +4053,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 254
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     achievement: { story: EStoriesEn.ROR, name: 'Busyman' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4070,9 +4070,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 247
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4086,7 +4086,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 248
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4100,9 +4100,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 249
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4116,9 +4116,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 250
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4132,9 +4132,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 251
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Adelaida.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Adelaida.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4148,7 +4148,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 252
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4162,7 +4162,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 253
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4176,9 +4176,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 254
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4192,9 +4192,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 255
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4208,9 +4208,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 256
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4224,9 +4224,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 257
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4240,9 +4240,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 258
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4256,9 +4256,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 259
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4272,9 +4272,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 260
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4288,7 +4288,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 261
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4302,7 +4302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 262
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4316,9 +4316,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 263
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4332,9 +4332,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 264
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Konig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Konig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4348,9 +4348,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 265
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Konig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Konig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4364,9 +4364,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 266
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Konig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Konig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4380,7 +4380,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 267
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4394,9 +4394,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 268
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4410,9 +4410,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 269
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Spieleman.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Spieleman.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4426,9 +4426,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 270
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Spieleman.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Spieleman.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4442,9 +4442,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 271
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Spieleman.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Spieleman.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4458,9 +4458,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 272
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4474,9 +4474,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 273
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4490,9 +4490,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 274
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4506,9 +4506,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 275
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Konig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Konig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4522,9 +4522,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 276
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4538,9 +4538,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 277
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4554,9 +4554,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 278
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Konig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Konig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4570,9 +4570,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 279
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4586,9 +4586,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 280
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4602,9 +4602,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 281
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Konig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Konig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4618,9 +4618,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 282
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Spieleman.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Spieleman.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4634,9 +4634,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 283
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Konig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Konig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4650,9 +4650,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 284
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Spieleman.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Spieleman.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4666,9 +4666,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 285
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4682,9 +4682,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 286
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Spieleman.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Spieleman.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4698,9 +4698,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 287
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4714,7 +4714,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 288
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4728,9 +4728,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 289
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4744,7 +4744,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 290
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4758,7 +4758,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 291
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4772,10 +4772,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 292
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Pointing_Man_S.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Pointing_Man_S.png'),
     darkSilhouette: true,
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4790,9 +4790,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 293
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4807,9 +4807,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 294
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4824,9 +4824,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 295
       }],
     parallax: 'left',
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4840,9 +4840,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 296
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4856,9 +4856,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 297
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4872,9 +4872,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 298
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4888,9 +4888,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 299
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4905,7 +4905,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 300
       }],
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4919,9 +4919,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 301
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4935,9 +4935,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 302
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4951,9 +4951,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 303
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4967,9 +4967,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 304
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4983,7 +4983,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 305
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -4997,9 +4997,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 306
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5013,9 +5013,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 307
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5029,7 +5029,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 308
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5043,9 +5043,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 309
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5072,7 +5072,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 353
       }
     ],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5086,9 +5086,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 311
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5102,7 +5102,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 312
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5116,9 +5116,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 313
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5132,9 +5132,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 314
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5148,9 +5148,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 315
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5164,7 +5164,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 316
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5178,7 +5178,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 317
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5192,9 +5192,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 318
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5208,9 +5208,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 319
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5224,9 +5224,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 320
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5240,9 +5240,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 321
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5256,9 +5256,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 322
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5272,7 +5272,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 323
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5286,9 +5286,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 324
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5302,9 +5302,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 325
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5318,9 +5318,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 326
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5334,7 +5334,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 327
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5348,9 +5348,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 328
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5364,9 +5364,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 329
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5380,10 +5380,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 330
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     parallax: 'left',
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5397,7 +5397,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 331
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5411,7 +5411,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 332
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5425,7 +5425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 333
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5439,9 +5439,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 334
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5455,9 +5455,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 335
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5471,9 +5471,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 336
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5487,9 +5487,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 337
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5503,9 +5503,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 338
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5519,9 +5519,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 339
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5535,9 +5535,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 340
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5551,9 +5551,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 341
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5567,9 +5567,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 342
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5583,9 +5583,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 343
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5599,9 +5599,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 344
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5615,9 +5615,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 345
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5631,9 +5631,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 346
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5647,9 +5647,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 347
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5663,9 +5663,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 348
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5679,7 +5679,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 349
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5693,9 +5693,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 350
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5709,9 +5709,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 351
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Burgomeister_Cabinet.jpg')
   },
 
   {
@@ -5725,7 +5725,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 352
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Darkness.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -5739,9 +5739,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 366
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Darkness.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Darkness.jpg')
   },
 
   {
@@ -5755,10 +5755,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 354
       }],
-    music: require('../../../../Audio/ROR/Ball.mp3'),
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    music: require('../../../../Media/Audio/ROR/Ball.mp3'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5773,9 +5773,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         goTo: 355
       }],
     message: 'Будучи солдафоном, Моргнер не желает помогать простому торговцу',
-    imageFront: require('../../../../Images/ROR/Persons/Morgner.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Morgner.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5789,7 +5789,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 356
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5803,9 +5803,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 357
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5819,9 +5819,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 358
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5835,7 +5835,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 359
       }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5849,9 +5849,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 360
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Figure_Hood.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Figure_Hood.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5865,9 +5865,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 361
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Martha_Dress_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Martha_Dress_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5881,9 +5881,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 362
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5897,9 +5897,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 363
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Figure_Hood.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Figure_Hood.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5913,9 +5913,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 364
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5929,9 +5929,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 365
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Ilbricht.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageFront: require('../../../../Media/Images/ROR/Persons/Ilbricht.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5945,11 +5945,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 366
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Vig.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Vig.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     stats: [
       { story: EStoriesEn.ROR, value: +1, category: 'Person', id: 'Vig' }],
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5963,10 +5963,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 367
       }],
-    music: require('../../../../Audio/ROR/Ball.mp3'),
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    music: require('../../../../Media/Audio/ROR/Ball.mp3'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   },
 
   {
@@ -5982,9 +5982,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
           saveEndProgress('ROR', 'Глава 1', 'Часть 5', '0')
         }
       }],
-    imageFront: require('../../../../Images/ROR/Persons/Henrich_Costume_Mask.png'),
-    imageBorder: require('../../../../Images/ROR/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/ROR/Persons/Henrich_Costume_Mask.png'),
+    imageBorder: require('../../../../Media/Images/ROR/UI/Border.png'),
     achievement: { story: EStoriesEn.ROR, name: 'Chapter01Part04Completed' },
-    imageBack: require('../../../../Images/ROR/Backgrounds/Ball_Hall.jpg')
+    imageBack: require('../../../../Media/Images/ROR/Backgrounds/Ball_Hall.jpg')
   }
 ])

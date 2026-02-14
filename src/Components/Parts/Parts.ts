@@ -34,7 +34,7 @@ export const renderParts = (storyName: string, chapterName: string): void => {
           showAd('short', () => {
             wasteBook(() => {
               MenuToolbar.self.style.display = 'none'
-              MenuToolbar.continueButton.setAttribute('style', 'display: block')
+              MenuToolbar.continueButton.setAttribute('style', 'display: flex')
               tabManagerMenu.closeAll()
               LoadingScreen.continueButton.style.display = 'none'
               setTimeout(() => { LoadingScreen.continueButton.style.display = 'block' }, 3000)
@@ -54,18 +54,18 @@ export const renderParts = (storyName: string, chapterName: string): void => {
         statsManager.resetStats()
         addListener()
         partElements[index].querySelector('.part__tick').style.display = 'none'
-        partElements[index].querySelector('.part__tick').src = require('../../Images/UI/icon_notick.svg')
+        partElements[index].querySelector('.part__tick').src = require('../../Media/Images/UI/icon_notick.svg')
       } else {
         partElements[index].style.filter = 'grayscale(100%)'
         partElements[index].querySelector('.part__tick').style.display = 'none'
-        partElements[index].querySelector('.part__tick').src = require('../../Images/UI/icon_notick.svg')
+        partElements[index].querySelector('.part__tick').src = require('../../Media/Images/UI/icon_notick.svg')
       }
     })
   })
   const tickElements = Parts.container.querySelectorAll('.part__tick')
   tickElements.forEach((tickElement: any, index: number) => {
     if (index < tickElements.length - 1) {
-      tickElements[index + 1].style.display === 'none' && (tickElement.src = require('../../Images/UI/icon_notick.svg'))
+      tickElements[index + 1].style.display === 'none' && (tickElement.src = require('../../Media/Images/UI/icon_notick.svg'))
     }
   })
 }

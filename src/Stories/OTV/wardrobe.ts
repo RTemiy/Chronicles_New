@@ -1,7 +1,7 @@
 import { wardrobe } from '../../index'
 import { loadData } from '../../Functions/localStorageManager'
 
-/*wardrobe.addPerson('Hero', [{
+/*wardrobe.addEntity('Hero', [{
   image: require('../../Images/Immortals/Persons/Hero.png'),
   title: 'Удобная кофта',
   description: 'Просто и со вкусом. В черном всегда чувствуешь себя увереннее',

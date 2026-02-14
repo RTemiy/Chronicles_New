@@ -1,29 +1,29 @@
 import { wardrobe } from '../../index'
 import { loadData } from '../../Functions/localStorageManager'
 
-wardrobe.addPerson('Aurora_City', [{
-  image: require('../../Images/Aurora/Persons/Aurora_Dog.png'),
+wardrobe.addEntity('Aurora_City', [{
+  image: require('../../Media/Images/Aurora/Persons/Aurora_Dog.png'),
   title: 'Ребенок',
   description: 'Ты не любишь выделяться',
   cost: 'short',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Aurora/Persons/Aurora_Coat_Blue.png'),
+  image: require('../../Media/Images/Aurora/Persons/Aurora_Coat_Blue.png'),
   title: 'Деловая',
   description: 'Ты серьезно подходишь к делу',
   cost: 'medium',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Aurora/Persons/Aurora_Dress.png'),
+  image: require('../../Media/Images/Aurora/Persons/Aurora_Dress.png'),
   title: 'Леди',
   description: 'Тобой правит элегантность',
   cost: 'long',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Aurora/Persons/Aurora_Green_Dress.png'),
+  image: require('../../Media/Images/Aurora/Persons/Aurora_Green_Dress.png'),
   title: '<p style="color: lawngreen">Цветочная',
   description: 'Предпочитаешь свежесть и легкость',
   cost: 'short',
@@ -31,22 +31,22 @@ wardrobe.addPerson('Aurora_City', [{
 }
 ])
 
-wardrobe.addPerson('Aurora_Part04', [{
-  image: require('../../Images/Aurora/Persons/Aurora_Purple_Sweater.png'),
+wardrobe.addEntity('Aurora_Part04', [{
+  image: require('../../Media/Images/Aurora/Persons/Aurora_Purple_Sweater.png'),
   title: 'Простота',
   description: 'Ты не хочешь думать над образом',
   cost: 'short',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Aurora/Persons/Aurora_Suit.png'),
+  image: require('../../Media/Images/Aurora/Persons/Aurora_Suit.png'),
   title: 'Строгость',
   description: 'Тебе нравится легкость',
   cost: 'medium',
   unlocked: () => { return true }
 },
 {
-  image: require('../../Images/Aurora/Persons/Aurora_Checkered.png'),
+  image: require('../../Media/Images/Aurora/Persons/Aurora_Checkered.png'),
   title: 'Милота',
   description: 'Ты даришь этому миру яркость',
   cost: 'long',

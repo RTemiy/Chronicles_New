@@ -8,7 +8,7 @@ statsManager.add({
   title: 'Писатель',
   showValue: false,
   description: 'Ты не можешь жить без книг и собственных фантазий о будущих историях',
-  image: require('../../Images/Aurora/Effects/Writer.svg'),
+  image: require('../../Media/Images/Aurora/Effects/Writer.svg'),
   story: EStoriesEn.Aurora
 })
 
@@ -19,7 +19,7 @@ statsManager.add({
   description: 'Тебе нравится рисовать и запечатлевать любимые образы на холсте.',
   showValue: false,
   id: 'ChooseArtist',
-  image: require('../../Images/Aurora/Effects/Artist.svg'),
+  image: require('../../Media/Images/Aurora/Effects/Artist.svg'),
   story: EStoriesEn.Aurora
 })
 
@@ -30,7 +30,7 @@ statsManager.add({
   description: 'Ты грезишь о воплощении самых лиричных и задорных мелодий.',
   showValue: false,
   id: 'ChooseMusician',
-  image: require('../../Images/Aurora/Effects/Musician.svg'),
+  image: require('../../Media/Images/Aurora/Effects/Musician.svg'),
   story: EStoriesEn.Aurora
 })
 
@@ -41,7 +41,7 @@ statsManager.add({
   description: 'Тобой правят логика и разум.',
   showValue: false,
   id: 'BePragmatic',
-  image: require('../../Images/Aurora/Effects/Pragmatic.svg'),
+  image: require('../../Media/Images/Aurora/Effects/Pragmatic.svg'),
   story: EStoriesEn.Aurora
 })
 
@@ -52,7 +52,7 @@ statsManager.add({
   showValue: false,
   title: 'Романтик',
   description: 'Тобой правят чувства и эмоции.',
-  image: require('../../Images/Aurora/Effects/Romantic.svg'),
+  image: require('../../Media/Images/Aurora/Effects/Romantic.svg'),
   story: EStoriesEn.Aurora
 })
 
@@ -62,6 +62,6 @@ statsManager.add({
   id: 'Spirit',
   title: 'Дух Авроры',
   description: 'Твоя решимость. Твое принятие ситуаций. Твое отношение к окружающему.',
-  image: require('../../Images/Aurora/Effects/Spirit.svg'),
+  image: require('../../Media/Images/Aurora/Effects/Spirit.svg'),
   story: EStoriesEn.Aurora
 })

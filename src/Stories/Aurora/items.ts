@@ -7,7 +7,7 @@ statsManager.add({
   id: 'Pass01',
   title: 'Временный пропуск',
   description: 'Пропуск, который любезно дал мне Артур, чтобы я могла посещать университет',
-  image: require('../../Images/Aurora/Items/Trial_Pass.png'),
+  image: require('../../Media/Images/Aurora/Items/Trial_Pass.png'),
   story: EStoriesEn.Aurora
 })
 
@@ -17,6 +17,6 @@ statsManager.add({
   id: 'MotherPhoto',
   title: 'Потерянная фотография',
   description: 'Возможно, это обронил Калеб? На ней изображена красивая девушка и подпись: «Моя семья»',
-  image: require('../../Images/Aurora/Items/Mother_Photo.png'),
+  image: require('../../Media/Images/Aurora/Items/Mother_Photo.png'),
   story: EStoriesEn.Aurora
 })

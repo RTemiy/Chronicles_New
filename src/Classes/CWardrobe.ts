@@ -15,7 +15,7 @@ export default class CWardrobe {
   constructor (private readonly Wardrobe: CContainer) {
   }
 
-  addPerson (personId: string, clothesInfo: IWardrobe[]): void {
+  addEntity (personId: string, clothesInfo: IWardrobe[]): void {
     this.persons[personId] = clothesInfo
   }
 
@@ -23,24 +23,24 @@ export default class CWardrobe {
     this.persons[personId + '_Variation'] = clothesInfo
   }
 
-  getCurrentClothesImage (storyName: string, personId: string): string {
+  getCurrentEntityImage (storyName: string, personId: string): string {
     return this.persons[personId][loadData([storyName, personId, 'Clothes'])!].image
   }
 
-  getCurrentClothesVariationImage (storyName: string, personId: string, variation: string): string {
+  getCurrentEntityVariationImage (storyName: string, personId: string, variation: string): string {
     return this.persons[personId + '_Variation'].find(item =>
       item.originalId === parseInt(loadData([storyName, personId, 'Clothes'])!) + 1 && item.variation === variation)!.image
   }
 
-  getCurrentClothesImageTitle (storyName: string, personId: string): string {
+  getCurrentEntityImageTitle (storyName: string, personId: string): string {
     return this.persons[personId][loadData([storyName, personId, 'Clothes'])!].title
   }
 
-  private getAllClothes (personId: string): IWardrobe[] {
+  private getAllEntities (personId: string): IWardrobe[] {
     return this.persons[personId]
   }
 
-  private saveCurrentClothes (storyName: string, personId: string, clothesCode: number): void {
+  private saveCurrentEntities (storyName: string, personId: string, clothesCode: number): void {
     saveData([storyName, personId, 'Clothes'], [clothesCode])
   }
 
@@ -49,7 +49,7 @@ export default class CWardrobe {
     isNaN(this.currentIndex) && (this.currentIndex = 0)
     this.currentStoryInfo = storyInfo
     this.currentPerson = personId
-    this.currentClothes = wardrobe.getAllClothes(this.currentPerson)
+    this.currentClothes = wardrobe.getAllEntities(this.currentPerson)
     this.Wardrobe.image.src = this.currentClothes[this.currentIndex].image
     this.Wardrobe.title.innerHTML = this.currentClothes[this.currentIndex].title
     this.Wardrobe.description.innerHTML = this.currentClothes[this.currentIndex].description
@@ -81,8 +81,8 @@ export default class CWardrobe {
     }, 500)
   }
 
-  private chooseClothes (): void {
-    this.saveCurrentClothes(this.currentStoryInfo, this.currentPerson, this.currentIndex)
+  private chooseEntity (): void {
+    this.saveCurrentEntities(this.currentStoryInfo, this.currentPerson, this.currentIndex)
     // @ts-expect-error
     showAd(this.currentClothes[this.currentIndex].cost, () => {
       this.Wardrobe.self.style.display = 'none'
@@ -99,7 +99,7 @@ export default class CWardrobe {
     }
 
     this.Wardrobe.buttonConfirm.onclick = () => {
-      this.chooseClothes()
+      this.chooseEntity()
       callback()
     }
   }

@@ -9,8 +9,8 @@ export const LoadingScreen = new CContainer('loading-screen',
       <img class="loading-screen__background-image">
     </div>
     <p class="loading-screen__percent">100%</p>
-    <p class="loading-screen__continue-button">Нажмите, чтобы<img src='${require('../../Images/UI/Transparent.png')}' class="loading-screen__tapImage loading-screen__tapImage_start"/> продолжить</p>
-    <img class="loading-screen__logo" src='${require('../../Images/UI/logo.svg')}'>
+    <p class="loading-screen__continue-button">Нажмите, чтобы<img src='${require('../../Media/Images/UI/Transparent.png')}' class="loading-screen__tapImage loading-screen__tapImage_start"/> продолжить</p>
+    <img class="loading-screen__logo" src='${require('../../Media/Images/UI/logo.svg')}'>
   `,
   { name: 'backgroundBlurredImage', selector: '.loading-screen__background-blurred-image' },
   { name: 'backgroundImage', selector: '.loading-screen__background-image' },
@@ -45,8 +45,8 @@ export function setIsShowingLoadingScreenFalse (): void {
 
 export function hideLoadingScreen (): void {
   LoadingScreen.self.style.zIndex = '-1000'
-  LoadingScreen.backgroundImage.src = require('../../Images/UI/Transparent.png')
-  LoadingScreen.backgroundBlurredImage.src = require('../../Images/UI/Transparent.png')
+  LoadingScreen.backgroundImage.src = require('../../Media/Images/UI/Transparent.png')
+  LoadingScreen.backgroundBlurredImage.src = require('../../Media/Images/UI/Transparent.png')
   LoadingScreen.backgroundBlurredImage.style.display = 'none'
   LoadingScreen.backgroundImage.style.display = 'none'
   LoadingScreen.loadingPercent.style.display = 'none'
@@ -64,7 +64,7 @@ export function showBlurredBackground (backgroundImage: string): void {
     LoadingScreen.loadingPercent.style.display = 'none'
     LoadingScreen.continueButton.style.display = 'none'
     LoadingScreen.backgroundImage.style.display = 'none'
-    LoadingScreen.backgroundImage.src = require('../../Images/UI/Transparent.png')
+    LoadingScreen.backgroundImage.src = require('../../Media/Images/UI/Transparent.png')
     LoadingScreen.backgroundBlurredImageHelper.style.display = 'block'
     if (!LoadingScreen.backgroundBlurredImage.src.includes(backgroundImage)) {
       LoadingScreen.backgroundBlurredImageHelper.style.display = 'block'

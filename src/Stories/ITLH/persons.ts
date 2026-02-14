@@ -5,7 +5,7 @@ statsManager.add({
   category: 'Person',
   id: 'Hero',
   name: '',
-  image: require('../../Images/ITLH/Persons/Hero_Avatar.png'),
+  image: require('../../Media/Images/ITLH/Persons/Hero_Avatar.png'),
   title: 'В последнее время происходит множество странных событий. Получится ли у меня справиться?',
   description: 'Про себя сложнее всего писать… Студентка, живу с мамой и папой, работаю, пытаясь обеспечить самостоятельную жизнь.',
   showValue: false,
@@ -16,7 +16,7 @@ statsManager.add({
   category: 'Person',
   id: 'Guide',
   name: 'Проводник',
-  image: require('../../Images/ITLH/Persons/Guide_Avatar.png'),
+  image: require('../../Media/Images/ITLH/Persons/Guide_Avatar.png'),
   title: 'Его цели и мотивы неясны, но я думаю, он не желает мне зла. Время покажет. ',
   description: 'Загадочное существо, которое не отвечает прямо на мои вопросы. Однако именно он должен помочь мне в этом путешествии.',
   story: EStoriesEn.ITLH
@@ -26,7 +26,7 @@ statsManager.add({
   category: 'Person',
   id: 'Cheryl',
   name: 'Шерил',
-  image: require('../../Images/ITLH/Persons/Cheryl_Avatar.png'),
+  image: require('../../Media/Images/ITLH/Persons/Cheryl_Avatar.png'),
   title: 'Она стала все реже улыбаться… Ее жизни что-то угрожает?',
   description: 'Подруга, живущая в соседнем доме. Настоящая мечтательница, участвует в волонтерских проектах. Ее образ мыслей порой кажется необычным, но именно эта уникальность сближает нас еще больше.',
   story: EStoriesEn.ITLH
@@ -36,7 +36,7 @@ statsManager.add({
   category: 'Person',
   id: 'Scarlett',
   name: 'Скарлетт',
-  image: require('../../Images/ITLH/Persons/Scarlett_Avatar.png'),
+  image: require('../../Media/Images/ITLH/Persons/Scarlett_Avatar.png'),
   title: 'Похоже, в последнее время она сама не своя. Могу ли я помочь?',
   description: 'Лучшая подруга, сокурсница. Умная и энергичная, четко знает, чего хочет добиться в жизни. Не упустит возможность читать нотации о важности учебы.',
   story: EStoriesEn.ITLH
@@ -46,7 +46,7 @@ statsManager.add({
   category: 'Person',
   id: 'Neitan',
   name: 'Нэйтан',
-  image: require('../../Images/ITLH/Persons/Neitan_Avatar.png'),
+  image: require('../../Media/Images/ITLH/Persons/Neitan_Avatar.png'),
   title: 'Мы часто общаемся вне занятий благодаря моей дружбе с его братом, однако Нэйтан держит дистанцию.',
   description: 'Обаятельный и харизматичный профессор истории, который преподает в нашем университете. Строго следит за выполнением поставленных задач и поддерживает студентов в их начинаниях.',
   story: EStoriesEn.ITLH

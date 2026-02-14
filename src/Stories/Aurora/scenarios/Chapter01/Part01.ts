@@ -14,8 +14,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 1
       }],
-    music: require('../../../../Audio/Aurora/Lighthouse.mp3'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    music: require('../../../../Media/Audio/Aurora/Lighthouse.mp3'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -29,7 +29,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 2
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -43,7 +43,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 3
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -57,9 +57,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 4
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -73,9 +73,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 5
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -89,7 +89,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 6
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -103,9 +103,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 7
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -119,9 +119,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 8
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -135,9 +135,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 9
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -151,9 +151,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 10
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -167,7 +167,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 11
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -181,7 +181,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 12
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -195,7 +195,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 13
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -209,9 +209,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 14
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -225,9 +225,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 15
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -241,9 +241,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 16
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -257,9 +257,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 17
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -273,9 +273,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 18
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -289,9 +289,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 19
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -305,7 +305,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 20
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -319,7 +319,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 21
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -333,9 +333,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 22
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -349,9 +349,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 23
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Missing_Poster.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Missing_Poster.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -365,9 +365,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 24
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Missing_Poster.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Missing_Poster.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -381,9 +381,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 25
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Missing_Poster.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Missing_Poster.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -397,11 +397,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 26
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Missing_Poster.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Missing_Poster.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Aurora, value: 0, category: 'Person', id: 'Yan' }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -415,7 +415,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 27
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -429,7 +429,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 28
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -443,9 +443,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 29
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -459,9 +459,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 30
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -475,9 +475,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 31
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -491,7 +491,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 32
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -505,7 +505,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 33
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -519,9 +519,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 34
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -535,7 +535,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 35
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -549,9 +549,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 36
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
   },
 
   {
@@ -565,9 +565,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 37
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
   },
 
   {
@@ -581,9 +581,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 38
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
   },
 
   {
@@ -597,7 +597,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 39
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Bath.jpg')
   },
 
   {
@@ -611,7 +611,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 40
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -625,7 +625,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 41
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -639,7 +639,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 42
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -653,7 +653,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 43
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -667,7 +667,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 44
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -681,7 +681,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 45
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -695,7 +695,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 46
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -718,9 +718,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 62
       }],
     message: firstChoiceMessage,
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -735,9 +735,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 48
       }],
     stats: [{ story: EStoriesEn.Aurora, id: 'ChooseArtist', value: 1, category: 'Effect' }],
-    imageFront: require('../../../../Images/Aurora/Objects/Album.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Album.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -751,9 +751,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 49
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Album.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Album.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -767,7 +767,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 50
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -781,9 +781,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 51
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Album.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Album.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -797,7 +797,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 52
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -811,7 +811,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 53
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -825,7 +825,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 54
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -839,10 +839,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 74
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Album.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Album.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     achievement: { story: EStoriesEn.Aurora, name: 'ChooseArtist' },
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Bench.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Bench.jpg')
   },
 
   {
@@ -857,7 +857,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 56
       }],
     stats: [{ story: EStoriesEn.Aurora, id: 'ChooseWriter', value: 1, category: 'Effect' }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -871,7 +871,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 57
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -885,9 +885,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 58
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Book.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Book.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -901,7 +901,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 59
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Streets.jpg')
   },
 
   {
@@ -915,7 +915,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 60
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation.jpg')
   },
 
   {
@@ -930,9 +930,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 61
       }],
     parallax: 'Right',
-    imageFront: require('../../../../Images/Aurora/Objects/Book.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Book.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation.jpg')
   },
 
   {
@@ -946,10 +946,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 74
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Book.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Book.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     achievement: { story: EStoriesEn.Aurora, name: 'ChooseWriter' },
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation.jpg')
   },
 
   {
@@ -964,7 +964,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 63
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -978,7 +978,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 64
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -992,9 +992,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 65
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Classmate.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Classmate.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -1008,9 +1008,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 202
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Classmate.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Classmate.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -1024,9 +1024,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 66
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -1040,9 +1040,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 67
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Classmate.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Classmate.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -1056,7 +1056,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 68
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -1070,8 +1070,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 69
       }],
-    music: require('../../../../Audio/Aurora/KingQueens.mp3'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    music: require('../../../../Media/Audio/Aurora/KingQueens.mp3'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -1085,7 +1085,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 70
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/School.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/School.jpg')
   },
 
   {
@@ -1099,9 +1099,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 71
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Walkman.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Walkman.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -1115,9 +1115,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 72
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Walkman.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Suburbs_Room.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Walkman.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
   {
@@ -1131,9 +1131,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 73
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Walkman.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Walkman.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1147,10 +1147,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 74
       }],
-    imageFront: require('../../../../Images/Aurora/Objects/Walkman.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Objects/Walkman.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     achievement: { story: EStoriesEn.Aurora, name: 'ChooseMusician' },
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1164,8 +1164,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 75
       }],
-    music: require('../../../../Audio/Aurora/Lighthouse.mp3'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    music: require('../../../../Media/Audio/Aurora/Lighthouse.mp3'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1179,9 +1179,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 76
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1196,7 +1196,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         gift: true,
         goTo: 77
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1214,9 +1214,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: 'Прагматичной',
         goTo: 83
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1231,9 +1231,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 79
       }],
     stats: [{ story: EStoriesEn.Aurora, id: 'BeRomantic', value: 1, category: 'Effect' }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1247,9 +1247,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 80
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1263,9 +1263,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 81
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1279,9 +1279,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 82
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1295,9 +1295,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 88
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1312,9 +1312,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 84
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1328,9 +1328,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 85
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1344,9 +1344,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 86
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1360,9 +1360,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 87
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1376,9 +1376,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 88
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse_Night.jpg')
   },
 
   {
@@ -1392,7 +1392,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 89
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1406,7 +1406,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 90
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1420,9 +1420,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 91
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1436,9 +1436,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 92
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1452,9 +1452,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 93
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1468,9 +1468,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 94
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1484,9 +1484,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 95
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1500,9 +1500,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 96
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1516,9 +1516,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 97
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1532,9 +1532,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 98
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1548,9 +1548,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 99
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1564,7 +1564,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 100
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1578,9 +1578,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 101
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1594,9 +1594,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 102
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1610,9 +1610,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 103
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1626,9 +1626,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 104
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1642,7 +1642,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 105
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1656,7 +1656,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 106
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1670,9 +1670,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 107
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1686,9 +1686,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 108
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1702,9 +1702,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 109
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1718,9 +1718,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 110
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1734,7 +1734,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 111
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1748,9 +1748,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 112
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1764,8 +1764,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 113
       }],
-    music: require('../../../../Audio/Aurora/Sad.mp3'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    music: require('../../../../Media/Audio/Aurora/Sad.mp3'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -1779,7 +1779,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 114
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1793,7 +1793,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 115
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1807,7 +1807,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 116
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1821,7 +1821,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 117
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1835,7 +1835,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 200
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1858,7 +1858,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         },
         goTo: 123
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -1872,7 +1872,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 119
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1886,7 +1886,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 120
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1900,7 +1900,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 121
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1914,7 +1914,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 122
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1928,7 +1928,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 127
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1942,7 +1942,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 124
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1956,7 +1956,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 125
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1970,7 +1970,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 201
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1984,7 +1984,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 126
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -1998,7 +1998,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 127
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Funeral.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Funeral.jpg')
   },
 
   {
@@ -2012,9 +2012,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 128
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -2028,9 +2028,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 129
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -2045,9 +2045,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 130
       }],
     ghostSilhouette: true,
-    imageFront: require('../../../../Images/Aurora/Persons/Yan.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Yan.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -2061,11 +2061,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 131
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Arthur_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Arthur_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Aurora, value: 0, category: 'Person', id: 'Arthur' }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -2079,7 +2079,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 132
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/House_Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/House_Lighthouse.jpg')
   },
 
   {
@@ -2093,9 +2093,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 133
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -2109,9 +2109,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 134
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   },
 
   {
@@ -2125,7 +2125,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 135
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2139,7 +2139,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 136
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2153,9 +2153,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 137
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2169,9 +2169,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 138
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2185,9 +2185,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 139
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2201,9 +2201,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 140
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2217,9 +2217,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 141
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2233,7 +2233,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 142
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2247,9 +2247,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 143
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2263,9 +2263,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 144
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2279,9 +2279,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 145
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2295,9 +2295,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 146
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2311,9 +2311,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 147
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2327,9 +2327,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 148
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2343,9 +2343,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 149
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2359,7 +2359,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 150
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2373,7 +2373,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 151
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2387,7 +2387,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 152
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2401,9 +2401,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 153
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Sweater.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Sweater.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2417,11 +2417,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 154
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Dad.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     stats: [
       { story: EStoriesEn.Aurora, value: 0, category: 'Person', id: 'Dad' }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2435,7 +2435,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 155
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2449,7 +2449,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 156
       }],
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Observation_Night.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
 
   {
@@ -2465,9 +2465,9 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
           saveEndProgress('Aurora', 'Глава 1', 'Часть 2', '0')
         }
       }],
-    imageFront: require('../../../../Images/Aurora/Persons/Aurora_Coat.png'),
-    imageBorder: require('../../../../Images/Aurora/UI/Border.png'),
+    imageFront: require('../../../../Media/Images/Aurora/Persons/Aurora_Coat.png'),
+    imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     achievement: { story: EStoriesEn.Aurora, name: 'Chapter01Part01Completed' },
-    imageBack: require('../../../../Images/Aurora/Backgrounds/Lighthouse.jpg')
+    imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   }
 ])
