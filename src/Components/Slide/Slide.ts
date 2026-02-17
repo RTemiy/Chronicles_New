@@ -40,10 +40,10 @@ export const Slide = new CContainer('slide',
         <button class="slide__button"></button>
         <button class="slide__button"></button>
     </div>
-    <img class="slide__background" src="${require('../../Media/Images/UI/transparent.png')}"/>
-    <img class="slide__backgroundFullscreenObjectLeft" src="${require('../../Media/Images/UI/transparent.png')}"/>
-    <img class="slide__backgroundFullscreenObjectRight" src="${require('../../Media/Images/UI/transparent.png')}"/>
-    <img class="slide__backgroundFullscreenObjectCenter" src="${require('../../Media/Images/UI/transparent.png')}"/>
+    <img class="slide__background" src="${require('../../Media/Images/UI/transparent_placeholder.png')}"/>
+    <img class="slide__backgroundFullscreenObjectLeft" src="${require('../../Media/Images/UI/transparent_placeholder.png')}"/>
+    <img class="slide__backgroundFullscreenObjectRight" src="${require('../../Media/Images/UI/transparent_placeholder.png')}"/>
+    <img class="slide__backgroundFullscreenObjectCenter" src="${require('../../Media/Images/UI/transparent_placeholder.png')}"/>
     <img class="slide__backgroundHelper"/>
     <div class="slide__message">
         <div class="slide__message-text"></div>

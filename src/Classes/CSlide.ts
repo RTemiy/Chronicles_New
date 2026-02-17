@@ -58,7 +58,7 @@ export default class CSlide {
       }
     } else if (backImage === undefined) {
       this.slide.backgroundImage.display = 'none'
-      this.slide.backgroundImage.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.backgroundImage.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
     if (leftImage !== undefined && leftImage !== '') {
       if (!this.slide.imageLeft.src.includes(leftImage)) {
@@ -68,7 +68,7 @@ export default class CSlide {
       this.slide.imageLeft.style.display = 'block'
     } else if (leftImage === undefined) {
       this.slide.imageLeft.display = 'none'
-      this.slide.imageLeft.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.imageLeft.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
     if (middleImage !== undefined && middleImage !== '') {
       if (!this.slide.imageMiddle.src.includes(middleImage)) {
@@ -78,7 +78,7 @@ export default class CSlide {
       this.slide.imageMiddle.style.display = 'block'
     } else if (middleImage === undefined) {
       this.slide.imageMiddle.display = 'none'
-      this.slide.imageMiddle.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.imageMiddle.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
     if (rightImage !== undefined && rightImage !== '') {
       if (!this.slide.imageRight.src.includes(rightImage)) {
@@ -88,7 +88,7 @@ export default class CSlide {
       this.slide.imageRight.style.display = 'block'
     } else if (rightImage === undefined) {
       this.slide.imageRight.display = 'none'
-      this.slide.imageRight.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.imageRight.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
     if (frontImage !== undefined && frontImage !== '') {
       if (!this.slide.imageFront.src.includes(frontImage)) {
@@ -98,7 +98,7 @@ export default class CSlide {
       this.slide.imageFront.style.display = 'block'
     } else if (frontImage === undefined) {
       this.slide.imageFront.display = 'none'
-      this.slide.imageFront.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.imageFront.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
     if (fullscreenObject !== undefined && fullscreenObject !== '') {
       if (!this.slide.fullscreenObject.src.includes(fullscreenObject)) {
@@ -108,7 +108,7 @@ export default class CSlide {
       this.slide.fullscreenObject.style.display = 'block'
     } else if (fullscreenObject === undefined) {
       this.slide.fullscreenObject.display = 'none'
-      this.slide.fullscreenObject.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.fullscreenObject.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
 
     if (fullscreenObjectL !== undefined && fullscreenObjectL !== '') {
@@ -120,7 +120,7 @@ export default class CSlide {
       this.slide.fullscreenObjectL.style.display = 'block'
     } else if (fullscreenObjectL === undefined) {
       this.slide.fullscreenObjectL.display = 'none'
-      this.slide.fullscreenObjectL.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.fullscreenObjectL.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
 
     if (fullscreenObjectR !== undefined && fullscreenObjectR !== '') {
@@ -131,7 +131,7 @@ export default class CSlide {
       this.slide.fullscreenObjectR.style.display = 'block'
     } else if (fullscreenObjectR === undefined) {
       this.slide.fullscreenObjectR.display = 'none'
-      this.slide.fullscreenObjectR.setAttribute('src', require('../Media/Images/UI/Transparent.png'))
+      this.slide.fullscreenObjectR.setAttribute('src', require('../Media/Images/UI/transparent_placeholder.png'))
     }
 
     if (borderImage !== undefined && borderImage !== '') {
