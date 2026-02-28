@@ -193,11 +193,14 @@ export default class CSlide {
     // eslint-disable-next-line no-mixed-operators
 
     if (loadData(['Settings_TypingText']) === 'true' || loadData(['Settings_TypingText']) === null) {
+      this.slide.text.classList.add('slide__text-enabledSizing')
       this.slide.text.classList.remove('slide__text-enableSizing')
       setTimeout(() => {
         typingText(this.slide.text)
         this.slide.text.classList.add('slide__text-enableSizing')
       }, 280)
+    } else {
+      this.slide.text.classList.remove('slide__text-enabledSizing')
     }
   }
 

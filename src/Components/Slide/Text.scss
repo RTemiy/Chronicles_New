@@ -47,7 +47,6 @@
   animation: fade-in 0.7s ease 0.45s 1 normal forwards;
   @extend %styled-border;
   @extend %slide-container;
-  max-height: 10px;
   transition: max-height 5s linear;
   /*hyphens: auto;*/
   p {
@@ -57,6 +56,10 @@
   p:first-child {
     margin-top: 0;
   }
+}
+
+.slide__text-enabledSizing {
+  max-height: 10px;
 }
 
 .slide__text-enableSizing {
