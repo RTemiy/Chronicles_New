@@ -17,7 +17,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     music: require('../../../../Media/Audio/FOF/Whisper.mp3'),
     speaker: 'Эйприл',
-    imageFront: require('../../../../Media/Images/FOF/Persons/April.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/April_F.png'),
+    
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -49,7 +50,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 3
       }],
     speaker: 'Эйприл',
-    imageFront: require('../../../../Media/Images/FOF/Persons/April.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/April_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -66,7 +67,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 4
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -83,7 +84,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 5
       }],
     speaker: 'Эйприл',
-    imageFront: require('../../../../Media/Images/FOF/Persons/April.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/April_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -166,7 +167,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: firstChoiceMessage,
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -184,7 +185,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Дерек не сомневается в твоих способностях. Он поражен рвением выступить и показать класс',
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: +2, category: 'Person', id: 'Derek' },
@@ -205,7 +206,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: inventoryMessage,
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -237,7 +238,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Дерек не сомневается в тебе. Ты заслуживаешь уважения в его глазах',
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: +1, category: 'Person', id: 'Derek' },
@@ -258,7 +259,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: inventoryMessage,
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -290,7 +291,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Дерек сомневается в тебе. Ты не заслуживаешь уважения в его глазах',
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: -1, category: 'Person', id: 'Derek' },
@@ -311,7 +312,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: inventoryMessage,
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -328,7 +329,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 20
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -345,7 +346,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 21
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     stats: [
       { story: EStoriesEn.FOF, value: 0, category: 'Person', id: 'Derek' }],
@@ -379,7 +380,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 23
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Locker_Room.jpg')
   },
@@ -410,7 +411,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 25
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Locker_Room.jpg')
   },
@@ -805,7 +806,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 51
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/School_Corridor.jpg')
   },
@@ -850,7 +851,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 54
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -881,7 +882,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 56
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -898,7 +899,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 200
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -930,7 +931,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 58
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -947,7 +948,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 59
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -978,7 +979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 61
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1009,7 +1010,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 63
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1026,7 +1027,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 64
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1057,7 +1058,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 66
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1074,7 +1075,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 67
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1105,7 +1106,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 69
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1136,7 +1137,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 71
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1167,7 +1168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 73
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1184,7 +1185,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 74
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1201,7 +1202,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 75
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1232,7 +1233,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 77
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1263,7 +1264,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 79
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1294,7 +1295,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 81
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1311,7 +1312,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 82
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1328,7 +1329,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 83
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1359,7 +1360,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 85
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Night_Streets.jpg')
   },
@@ -1440,7 +1441,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 90
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/House_Facade.jpg')
   },
@@ -1485,7 +1486,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 93
       }],
     speaker: 'Дерек',
-    imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/Derek_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/House_Facade.jpg')
   },
@@ -1670,7 +1671,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 103
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Restaurant.jpg')
   },
@@ -1701,7 +1702,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 105
       }],
     speaker: 'Кассандра',
-    imageLeft: require('../../../../Media/Images/FOF/Persons/Cassandra.png'),
+    fullscreenObjectL: require('../../../../Media/Images/FOF/Persons/Cassandra_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Locker_Room.jpg')
   },
@@ -1718,7 +1719,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 106
       }],
     speaker: 'Эйприл',
-    imageFront: require('../../../../Media/Images/FOF/Persons/April.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/April_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Locker_Room.jpg')
   },
@@ -1769,7 +1770,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 109
       }],
     speaker: 'Эйприл',
-    imageFront: require('../../../../Media/Images/FOF/Persons/April.png'),
+    fullscreenObjectR: require('../../../../Media/Images/FOF/Persons/April_F.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Locker_Room.jpg')
   },

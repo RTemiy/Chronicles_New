@@ -1,7 +1,18 @@
 import { profileManager } from './Profile'
 import { loadData } from '../../Functions/localStorageManager'
+import { DEVMODE } from '../../Utils/technicalConsts';
 
 profileManager.addAvatars([
+  {
+    id: 'DEV_MVA',
+    image: require('../../Media/Images/UI/MVA.png'),
+    condition: () => DEVMODE
+  },
+  {
+    id: 'DEV_ACHIV',
+    image: require('../../Media/Images/ITLH/Achievements/PrologueCompleted.png'),
+    condition: () => DEVMODE
+  },
   {
     id: 'Default',
     image: require('../../Media/Images/UI/icon_paint.svg'),
