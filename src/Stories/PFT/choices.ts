@@ -28,3 +28,17 @@ statsManager.add({
   story: EStoriesEn.PFT,
   idDescription: 'Сказать нет!'
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'LikeReading',
+  story: EStoriesEn.PFT,
+  idDescription: 'Люблю читать'
+})
+
+statsManager.add({
+  category: 'Choice',
+  id: 'GoodNight',
+  story: EStoriesEn.PFT,
+  idDescription: 'Спокойной ночи!'
+})

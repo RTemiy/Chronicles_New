@@ -31,12 +31,13 @@ statsManager.add({
   story: EStoriesEn.PFT
 })
 
-/*statsManager.add({
+statsManager.add({
   category: 'Person',
   id: 'Natan',
+  story: EStoriesEn.PFT,
   name: 'Натан',
-  image: require('../../Images/PFT/Persons/Natan_Avatar.png'),
+  image: require('../../Media/Images/PFT/Persons/Natan_Avatar.png'),
   title: 'Новый, увлечённый своим делом, психиатр клиники Святого Вита.',
-  description: 'Вернулся в Литл-Рок после стажировки в Европе по экспериментальной психиатрии. Во время прохождения клинического этапа обучения в медицинской школе имел связь с Шэрон.',
-  story: EStoriesEn.PFT
-})*/
+  description: 'Вернулся в Литл-Рок после стажировки в Европе по экспериментальной психиатрии. Во время прохождения клинического этапа обучения в медицинской школе имел связь с Шэрон. ',
+  idDescription: '-'
+})
