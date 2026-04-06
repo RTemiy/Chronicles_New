@@ -27,6 +27,7 @@ export default class CScenarioManager {
     soundManager: CSoundSystem,
     achievementManager: CAchievementsManager,
     private readonly slide: CSlide,
+    private readonly slideEffects: Array<{ name: string, func: () => void }>,
     private readonly wardrobe: CWardrobe,
     private readonly smartphone: CSmartphone
   ) {
@@ -93,6 +94,7 @@ export default class CScenarioManager {
       scene.OKMessage !== undefined && this.#doOKMessage(scene.OKMessage)
       scene.achievement !== undefined && this.#doAchievement(scene.achievement)
       scene.interruptiveFrame !== undefined && this.#doInterruptionFrame(scene.interruptiveFrame.goTo, scene.interruptiveFrame.timeMS)
+      this.#doEffect(scene.effect)
       this.#doAfterAll(scene.afterAll)
       func?.()
     }
@@ -121,6 +123,18 @@ export default class CScenarioManager {
       return res
     } else {
       return false
+    }
+  }
+
+  #doEffect (effectName: string | undefined): void {
+    if (effectName !== undefined) {
+      this.slideEffects.forEach(effect => {
+        if (effect.name === effectName) {
+          effect.func()
+        }
+      })
+    } else {
+      this.slideEffects[0].func()
     }
   }
 

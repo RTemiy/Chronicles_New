@@ -65,6 +65,124 @@
   animation: pulse-red ease-in-out 2.5s infinite;
 }
 
+.slide_lightningInfinite:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../Media/Images/UI/effects/Lightning.png");
+  background-size: contain;
+  animation: lightning .5s infinite steps(2);
+  mask-image: radial-gradient(#000000FF 0%, #00000000 75%, #00000000 100%);
+}
+
+@keyframes lightning {
+  0%{ transform: rotate(5deg); }
+  10%{ transform: rotate(180deg); }
+  30%{ transform: rotate(40deg); }
+  50%{ transform: rotate(260deg); }
+  70%{ transform: rotate(25deg); }
+  80%{ transform: rotate(175deg); }
+  00%{ transform: rotate(280deg); }
+}
+
+.slide_fogInfinite:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../Media/Images/UI/effects/Fog01.png");
+  background-size: cover;
+  background-repeat: repeat;
+  transform: scale(230%);
+  animation: 55s fogMoveForward linear infinite;
+  // mask-image: radial-gradient(#000000FF 0%, #00000000 75%, #00000000 100%);
+}
+
+.slide_fogInfinite:before{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../Media/Images/UI/effects/Fog02.png");
+  background-size: cover;
+  background-repeat: repeat;
+  transform: scale(230%);
+  animation: 50s fogMoveBack linear infinite;
+  // mask-image: radial-gradient(#000000FF 0%, #00000000 75%, #00000000 100%);
+}
+
+@keyframes fogMoveForward {
+  from { transform: rotate(0deg) scale(230%); }
+  to { transform: rotate(360deg) scale(230%); }
+}
+
+@keyframes fogMoveBack{
+  from { transform: rotate(360deg) scale(230%); }
+  to { transform: rotate(0deg) scale(230%); }
+}
+
+.slide_yellowlightInfinite:before{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../Media/Images/UI/effects/Lights_01.png");
+  background-size: contain;
+  animation: 10s lightsMoveBlinkForward linear infinite;
+  // mask-image: radial-gradient(#000000FF 0%, #00000000 75%, #00000000 100%);
+}
+
+.slide_yellowlightInfinite:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../Media/Images/UI/effects/Lights_02.png");
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  animation: 15s lightsMoveBlinkForwardBack linear infinite;
+  transform: scale(220%);
+  // mask-image: radial-gradient(#000000FF 0%, #00000000 75%, #00000000 100%);
+}
+
+@keyframes lightsMoveBlinkForward {
+  0% { transform: rotate(0deg); opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { transform: rotate(360deg); opacity: 1; }
+}
+
+@keyframes lightsMoveBlinkForwardBack {
+  0% { transform: rotate(360deg) scale(220%); opacity: 0; background-position: 0 0; }
+  25% { opacity: 1; transform: scale(220%); }
+  50% { opacity: 0; transform: scale(220%); }
+  75% { opacity: 1; transform: scale(220%);}
+  100% { transform: rotate(0deg) scale(220%); opacity: 0; background-position: 500px 1000px; }
+}
+
+
 .slide_disco-1:after{
   position: absolute;
   pointer-events: none;

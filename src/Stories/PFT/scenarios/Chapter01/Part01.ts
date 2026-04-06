@@ -147,6 +147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         goTo: 10
       }],
     ambient: require('../../../../Media/Audio/PFT/Ambients/Electricity.mp3'),
+    effect: 'Молнии',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
 
@@ -162,6 +163,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         goTo: 11
       }],
     beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
 
@@ -176,6 +178,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 12
       }],
+    effect: 'Молнии',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
 
@@ -190,7 +193,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 13
       }],
-    beforeBegin: redFlash,
+    effect: 'Молнии',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
 
@@ -205,6 +208,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
 
@@ -219,6 +223,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 15
       }],
+    effect: 'Молнии',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
 
@@ -233,6 +238,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 16
       }],
+    effect: 'Молнии',
     speakerL: 'Венди',
     fullscreenObjectL: require('../../../../Media/Images/PFT/Persons/Wendy_Hospital_Afraid.png'),
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
@@ -249,6 +255,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 17
       }],
+    effect: 'Молнии',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
 
@@ -260,6 +267,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
       {
         text: ''
       }],
+    effect: 'Молнии',
     interruptiveFrame: { goTo: 18 },
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/White.jpg')
   },
@@ -275,6 +283,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 19
       }],
+    effect: 'Молнии',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/White.jpg')
   },
 
@@ -289,6 +298,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 20
       }],
+    effect: 'Молнии',
     simple: require('../../../../Media/Audio/PFT/Sounds/Bones_Crack.mp3'),
     music: require('../../../../Media/Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/White.jpg')
@@ -305,6 +315,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 21
       }],
+    effect: 'Молнии',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/White.jpg')
   },
 

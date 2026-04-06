@@ -12,8 +12,8 @@ import './Effects.scss'
 import './Console.scss'
 import { animateBackForth } from '../../Functions/animateBackForth'
 import { doCommand } from '../../Functions/console'
-import { doVibrate } from '../../Functions/doVibrate';
-import { loadData } from '../../Functions/localStorageManager';
+import { doVibrate } from '../../Functions/doVibrate'
+import { loadData } from '../../Functions/localStorageManager'
 
 export const Slide = new CContainer('slide',
   `
@@ -99,6 +99,10 @@ export const Slide = new CContainer('slide',
   { name: 'speaker', selector: '.slide__speaker' }
 )
 
+export function disableAll (): void {
+  Slide.self.setAttribute('class', 'slide')
+}
+
 export function whiteFlash (): void {
   animateBackForth(Slide.self, 'slide_whiteFlash', 2000)
 }
@@ -140,12 +144,60 @@ export function vhs (): void {
   animateBackForth(Slide.self, 'slide_vhs', 2000)
 }
 
-Slide.consoleInput.addEventListener('keypress', (evt: { key: string, value: string }) => {
-  if (evt.key === 'Enter') {
-    doCommand(Slide.consoleInput.value)
-    Slide.consoleInput.value = ''
+export function lightning (): void {
+  Slide.self.classList.add('slide_lightningInfinite')
+}
+
+export function fog (): void {
+  Slide.self.classList.add('slide_fogInfinite')
+}
+
+export function yellowlight (): void {
+  Slide.self.classList.add('slide_yellowlightInfinite')
+}
+
+export const slideEffects = [
+  {
+    name: 'Disable All',
+    func: disableAll
+  },
+  {
+    name: 'Белая вспышка',
+    func: whiteFlash
+  },
+  {
+    name: 'Черная вспышка',
+    func: blackFlash
+  },
+  {
+    name: 'Фиолетовая вспышка',
+    func: purpleFlash
+  },
+  {
+    name: 'Красная вспышка',
+    func: redFlash
+  },
+  {
+    name: 'Красная пульсация',
+    func: redPulsating
+  },
+  {
+    name: 'VHS',
+    func: vhs
+  },
+  {
+    name: 'Молнии',
+    func: lightning
+  },
+  {
+    name: 'Дымка',
+    func: fog
+  },
+  {
+    name: 'Желтое сияние',
+    func: yellowlight
   }
-})
+]
 
 export function setCurrentSlideId (id: number): void {
   Slide.consoleSlideId.innerText = id
@@ -154,6 +206,13 @@ export function setCurrentSlideId (id: number): void {
 Slide.hideToolbarButton.onclick = () => {
   Slide.toolBar.classList.toggle('slide__toolbar_hidden')
 }
+
+Slide.consoleInput.addEventListener('keypress', (evt: { key: string, value: string }) => {
+  if (evt.key === 'Enter') {
+    doCommand(Slide.consoleInput.value)
+    Slide.consoleInput.value = ''
+  }
+})
 
 export function hideToolbar (): void {
   loadData(['Settings_HideToolbar']) === 'true' && Slide.toolBar.classList.add('slide__toolbar_hidden')

@@ -14,6 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 1
       }],
+    effect: 'Желтое сияние',
     music: require('../../../../Media/Audio/ITLH/Music/Theme_Nowadays.mp3'),
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
@@ -30,6 +31,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 2
       }],
     speakerL: '$Имя Игрока$',
+    effect: 'Желтое сияние',
     fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas_Eyes.png'),
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
@@ -45,6 +47,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 3
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
@@ -60,6 +63,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 4
       }],
     speakerL: '$Имя Игрока$',
+    effect: 'Желтое сияние',
     fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero_Pajamas_Eyes.png'),
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
@@ -75,6 +79,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 5
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
@@ -88,6 +93,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 6
       }],
     wardrobe: { story: EStoriesEn.ITLH, personId: 'Hero_Room', goTo: 6 },
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Window_Morning.jpg')
   },
 
@@ -100,6 +106,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: ''
       }],
     interruptiveFrame: { goTo: 7 },
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
@@ -147,7 +154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         }
       },
       {
-        goTo: 22,
+        goTo: 500,
         condition: () => {
           return wardrobe.getCurrentEntityImageTitle(EStoriesEn.ITLH, 'Hero_Room') === 'Уединение'
         }
@@ -324,6 +331,34 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     text:
       `
         Это мое маленькое творческое пространство, дарящее свободу мыслям и простор для воплощения фантазий.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 22
+      }],
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
+  },
+
+  {
+    id: 500,
+    text:
+      `
+        Книжный рай, который я обустраивала в течение десяти лет.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 501
+      }],
+    imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
+  },
+
+  {
+    id: 501,
+    text:
+      `
+        Стены украшены гирляндой, подаренной моей лучшей подругой. Мама настояла на нескольких цветах, чтобы придать помещению живости.
       `,
     buttons: [
       {

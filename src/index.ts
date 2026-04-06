@@ -25,7 +25,7 @@ import CScenarioManager from './Classes/CScenarioManager'
 import { Books, startBooksTimer } from './Components/Books/Books'
 import CTimer from './Classes/CTimer'
 import CSlide from './Classes/CSlide'
-import { hideToolbar, Slide } from './Components/Slide/Slide';
+import { hideToolbar, Slide, slideEffects } from './Components/Slide/Slide';
 import { Inventory, renderInventory } from './Components/Inventory/Inventory'
 import { animateBackForth } from './Functions/animateBackForth'
 import { showPolicy } from './Components/Policy/Policy'
@@ -68,7 +68,7 @@ export const soundManager = new CSoundSystem(require('./Media/Audio/Common/Silen
 export const wardrobe = new CWardrobe(Wardrobe)
 export const smartphone = new CSmartphone(Smartphone)
 export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabManagerMenu, Stories.self, MenuToolbar.self, Inventory.self, Journal.self, hideToolbar, animateBackForth, renderInventory, renderJournal, showCutscene, showOKMessage)
-export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, wardrobe, smartphone)
+export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, slideEffects, wardrobe, smartphone)
 export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 export const journal = new CJournal()
 

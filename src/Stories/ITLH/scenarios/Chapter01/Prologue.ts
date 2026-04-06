@@ -20,6 +20,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     music: require('../../../../Media/Audio/ITLH/Music/Theme_Guide.mp3'),
     speakerR: 'Неизвестный',
     blurredSilhouette: true,
+    effect: 'Дымка',
     fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
@@ -36,6 +37,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         goTo: 2
       }],
     message: previousSlideMessage,
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
 
@@ -53,6 +55,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     speakerR: 'Проводник',
     fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
     blurredSilhouette: true,
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
 
@@ -69,6 +72,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     speakerR: 'Проводник',
     blurredSilhouette: true,
+    effect: 'Дымка',
     fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Guide.png'),
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World_Blurred.jpg')
   },
@@ -84,6 +88,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     parallax: 'left',
     interruptiveFrame: { goTo: 4 },
     beforeBegin: whiteFlash,
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
@@ -100,6 +105,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     fullscreenObjectL: require('../../../../Media/Images/ITLH/Persons/Hero.png'),
     parallax: 'left',
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 
