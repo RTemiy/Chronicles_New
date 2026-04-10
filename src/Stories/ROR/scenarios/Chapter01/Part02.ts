@@ -1740,7 +1740,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 112
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     simple: require('../../../../Media/Audio/ROR/Wound.mp3'),
     imageBack: require('../../../../Media/Images/ROR/Backgrounds/Canalization_Trash.jpg')
   },

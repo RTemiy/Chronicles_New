@@ -6396,7 +6396,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 398
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
@@ -6676,7 +6676,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 416
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/UA/Calm_Theme.mp3'),
     imageBack: require('../../../../Media/Images/UA/Backgrounds/Kitchen.jpg')
   },

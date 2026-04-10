@@ -816,7 +816,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 51
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/FOF/Club.mp3'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Club.jpg')
   },
@@ -3429,7 +3429,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 261
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     music: require('../../../../Media/Audio/FOF/Noise.mp3'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Club_Toilet.jpg')
   },
@@ -3445,7 +3445,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 209
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Club_Toilet.jpg')
   },
 
@@ -3837,7 +3837,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 240
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     speaker: 'Пьяный мужик ',
     imageFront: require('../../../../Media/Images/FOF/Persons/Man.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),

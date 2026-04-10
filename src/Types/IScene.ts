@@ -54,7 +54,7 @@ export default interface IScene {
   blurredSilhouette?: boolean
   parallax?: string
 
-  effect?: string
+  effect?: string | string[]
 
   condition?: ICondition[]
   beforeBegin?: () => void

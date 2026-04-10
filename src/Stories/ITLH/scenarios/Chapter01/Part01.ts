@@ -458,7 +458,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 28
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     ambient: require('../../../../Media/Audio/ITLH/Ambient/Wind.mp3'),
     music: require('../../../../Media/Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Garden_NewYork_1885.jpg')
@@ -576,7 +576,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 36
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/ITLH/Music/Theme_Nowadays.mp3'),
     ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
     imageBack: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Room') }
@@ -2036,7 +2036,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     speakerL: '$Имя Игрока$',
     fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
-    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Library.jpg')
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Park.jpg')
   },
 
   {
@@ -2418,7 +2418,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     id: 158,
     text:
       `
-        Мы немного поговорили об той эпохе, а затем разговор свелся к повседневным темам.
+        Мы немного поговорили о той эпохе, а затем разговор свелся к повседневным темам.
       `,
     buttons: [
       {
@@ -4977,6 +4977,18 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       {
         goTo: 327,
         condition: () => {
+          return statsManager.get({ story: EStoriesEn.ITLH, category: 'Choice', id: 'GoSleep' }) <= 0
+        }
+      },
+      {
+        goTo: 327,
+        condition: () => {
+          return statsManager.get({ story: EStoriesEn.ITLH, category: 'Choice', id: 'Taxi' }) >= 1
+        }
+      },
+      {
+        goTo: 327,
+        condition: () => {
           return statsManager.get({ story: EStoriesEn.ITLH, category: 'Choice', id: 'Library' }) >= 1
         }
       },
@@ -4985,7 +4997,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         condition: () => {
           return statsManager.get({ story: EStoriesEn.ITLH, category: 'Choice', id: 'Library' }) <= 0
         }
-      }],
+      }
+    ],
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
   },
 
@@ -5554,7 +5567,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 366
+        goTo: 367
       }],
     speakerR: 'Нэйтан',
     fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
@@ -5570,7 +5583,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 366
+        goTo: 367
       }],
     beforeBegin: () => { timer.stop() },
     speakerR: 'Нэйтан',
@@ -5621,7 +5634,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 366
+        goTo: 367
       }],
     speakerR: 'Нэйтан',
     fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
@@ -5696,7 +5709,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
         text: '',
         goTo: 371
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/ITLH/Music/Theme_NY.mp3'),
     ambient: require('../../../../Media/Audio/ITLH/Ambient/NY_Humble.mp3'),
     message: '<i> Нью-Йорк 1885 год.',

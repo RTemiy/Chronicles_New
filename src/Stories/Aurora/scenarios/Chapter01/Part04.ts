@@ -284,7 +284,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 398
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     message: '<i> Вы вернулись в воспоминания ',
     music: musicPlayer[`AuroraDaily${loadData(['Aurora', 'Daily', 'Music'])}`],
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Aurora_Room.jpg')
@@ -442,7 +442,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 30
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Suburbs_Room.jpg')
   },
 
@@ -488,7 +488,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 33
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Arthur_Bathroom.jpg')
   },
 
@@ -4010,7 +4010,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 254
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Flat_Post.jpg')
   },
 
@@ -4025,7 +4025,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 255
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Flat_Post.jpg')
   },
 
@@ -4040,7 +4040,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 256
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Flat_Post.jpg')
   },
 

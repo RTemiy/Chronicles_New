@@ -93,7 +93,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 6
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/UL/Main.mp3'),
     ambient: require('../../../../Media/Audio/UL/Street.mp3'),
     imageBack: require('../../../../Media/Images/UL/Backgrounds/Icerink_Far.jpg')
@@ -601,7 +601,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 40
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/UL/Awakening.mp3'),
     imageBack: require('../../../../Media/Images/UL/Backgrounds/Hospital_Room.jpg')
   },

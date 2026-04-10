@@ -4188,7 +4188,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 264
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/UL/Backgrounds/Flat_Livingroom.jpg')
   },
 

@@ -56,7 +56,7 @@ import { whiteFlash } from '../../../../Components/Slide/Slide'
         text: '',
         goTo: 4
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     message: '<i> Нью-Йорк 1882 год',
     music: require('../../../../Audio/Immortals/Robert_Theme.mp3'),
     imageBack: require('../../../../Images/Katarina/Backgrounds/NY.jpg')

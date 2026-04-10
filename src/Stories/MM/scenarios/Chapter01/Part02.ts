@@ -3155,7 +3155,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 198
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/MM/Calm.mp3'),
     ambient: require('../../../../Media/Audio/MM/Rain.mp3'),
     imageBack: require('../../../../Media/Images/MM/Backgrounds/Boss_Cabinet.jpg')
@@ -4455,7 +4455,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
         text: '',
         goTo: 279
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     message: 'Пять лет назад.',
     music: require('../../../../Media/Audio/MM/Mysterious.mp3'),
     ambient: require('../../../../Media/Audio/Common/Silence.mp3'),

@@ -3,7 +3,7 @@ import Settings from './Components/Settings/Settings'
 import Achievements, { renderAchievements } from './Components/Achievements/Achievements'
 import Stories, { renderStories } from './Components/Stories/Stories'
 import Chapters from './Components/Chapters/Chapters'
-import Parts, { renderParts } from './Components/Parts/Parts';
+import Parts, { renderParts } from './Components/Parts/Parts'
 import CStoriesManager from './Classes/CStoriesManager'
 import CAchievementsManager from './Classes/CAchievementsManager'
 import './index.scss'
@@ -25,7 +25,7 @@ import CScenarioManager from './Classes/CScenarioManager'
 import { Books, startBooksTimer } from './Components/Books/Books'
 import CTimer from './Classes/CTimer'
 import CSlide from './Classes/CSlide'
-import { hideToolbar, Slide, slideEffects } from './Components/Slide/Slide';
+import { hideToolbar, Slide, slideEffects } from './Components/Slide/Slide'
 import { Inventory, renderInventory } from './Components/Inventory/Inventory'
 import { animateBackForth } from './Functions/animateBackForth'
 import { showPolicy } from './Components/Policy/Policy'
@@ -39,17 +39,18 @@ import { checkURL } from './Functions/checkURL'
 import { Journal, renderJournal } from './Components/Journal/Journal'
 import CJournal from './Classes/CJournal'
 import { Shop } from './Components/Shop/Shop'
-import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from './Utils/technicalConsts';
+import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from './Utils/technicalConsts'
 import { addlistenerandroidbackbutton, changeState } from './Functions/backEventActions'
 import { showNews } from './Functions/showNews'
 import { Smartphone } from './Components/Smartphone/Smartphone'
 import { CSmartphone } from './Classes/CSmartphone'
-import { initTapTap } from './Functions/tapTap';
-import { showOKMessage } from './Components/OKMessage/OKMessage';
-import { getCurrentEventImageJPG } from './Utils/eventManager';
-import menuToolbar from './Components/MenuToolbar/MenuToolbar';
-import { initParticles } from './Functions/particlesEffect';
-import stories from './Components/Stories/Stories';
+import { initTapTap } from './Functions/tapTap'
+import { showOKMessage } from './Components/OKMessage/OKMessage'
+import { getCurrentEventImageJPG } from './Utils/eventManager'
+import menuToolbar from './Components/MenuToolbar/MenuToolbar'
+import { initParticles } from './Functions/particlesEffect'
+import stories from './Components/Stories/Stories'
+import { makeDevErrorAlerts } from './Functions/devErrorsAlert';
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -129,3 +130,5 @@ initTapTap()
 
 DESKTOPMODE && document.body.classList.add('main-bg-anim')
 DESKTOPMODE && document.body.style.setProperty('--desktopmode', 'true')
+
+DEVMODE && makeDevErrorAlerts()

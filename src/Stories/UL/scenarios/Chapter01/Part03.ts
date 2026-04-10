@@ -2325,7 +2325,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 145
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/UL/Backgrounds/Cafe_Memory.jpg')
   },
 
@@ -2373,7 +2373,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UL, chapterName: 'Глава
         text: '',
         goTo: 148
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     speaker: 'Амелия',
     imageFront: require('../../../../Media/Images/UL/Persons/Amelia_New.png'),
     imageBorder: require('../../../../Media/Images/UL/UI/Border.png'),

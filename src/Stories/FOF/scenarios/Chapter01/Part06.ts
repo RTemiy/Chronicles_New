@@ -464,7 +464,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 31
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Guestroom_Morning.jpg')
   },

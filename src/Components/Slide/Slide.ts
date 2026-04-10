@@ -152,13 +152,17 @@ export function fog (): void {
   Slide.self.classList.add('slide_fogInfinite')
 }
 
+export function BW (): void {
+  Slide.self.classList.add('slide_BWInfinite')
+}
+
 export function yellowlight (): void {
   Slide.self.classList.add('slide_yellowlightInfinite')
 }
 
 export const slideEffects = [
   {
-    name: 'Disable All',
+    name: 'Выключить',
     func: disableAll
   },
   {
@@ -192,6 +196,10 @@ export const slideEffects = [
   {
     name: 'Дымка',
     func: fog
+  },
+  {
+    name: 'ЧБ',
+    func: BW
   },
   {
     name: 'Желтое сияние',

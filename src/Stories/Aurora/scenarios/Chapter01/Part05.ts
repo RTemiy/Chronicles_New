@@ -189,7 +189,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 13
       }],
     message: '<i> Вы вернулись в воспоминания',
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/Aurora/Dramatic.mp3'),
     ambient: require('../../../../Media/Audio/FOF/Cardio.mp3'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
@@ -266,7 +266,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 18
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
   },
 
@@ -281,7 +281,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 19
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
   },
 
@@ -296,7 +296,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 20
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
   },
 
@@ -311,7 +311,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 21
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.Aurora, 'Aurora_Part04') },
     imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
@@ -328,7 +328,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 22
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.Aurora, 'Aurora_Part04') },
     imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
@@ -345,7 +345,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 28
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     message: 'Вы не можете быть выше обстоятельств, Аврора падает духом',
     imageFront: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.Aurora, 'Aurora_Part04') },
     imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
@@ -2684,7 +2684,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 174
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
     imageFront: require('../../../../Media/Images/Aurora/Persons/Dad.png'),
     imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),
@@ -2718,7 +2718,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 176
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     ambient: require('../../../../Media/Audio/FOF/Cardio.mp3'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
   },
@@ -2845,7 +2845,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 184
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
     music: require('../../../../Media/Audio/Aurora/Sad.mp3'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Clouds_White.jpg')
@@ -3106,7 +3106,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 202
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/Aurora/Dramatic.mp3'),
     ambient: require('../../../../Media/Audio/FOF/Cardio.mp3'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Hospital_Room.jpg')
@@ -4921,7 +4921,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 319
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Streets.jpg')
   },
 

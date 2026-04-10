@@ -1,7 +1,6 @@
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { saveData } from '../../../../Functions/localStorageManager'
-import { whiteFlash } from '../../../../Components/Slide/Slide'
 import { askForInput } from '../../../../Components/TextInput/TextInput'
 import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 
@@ -87,8 +86,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       }],
     parallax: 'left',
     interruptiveFrame: { goTo: 4 },
-    beforeBegin: whiteFlash,
-    effect: 'Дымка',
+    effect: ['Белая вспышка', 'Дымка'],
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Guides_World.jpg')
   },
 

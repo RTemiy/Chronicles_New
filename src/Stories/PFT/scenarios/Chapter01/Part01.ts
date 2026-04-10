@@ -1,6 +1,6 @@
 import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { blackFlash, redFlash, vhs } from '../../../../Components/Slide/Slide'
+import { blackFlash, vhs } from '../../../../Components/Slide/Slide'
 
 scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глава 1', partName: 'Часть 1', code: '0' }, [
   {
@@ -162,7 +162,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 11
       }],
-    beforeBegin: redFlash,
     effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Hospital_Basement_Store.jpg')
   },
@@ -1746,7 +1745,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 113
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     music: require('../../../../Media/Audio/PFT/Music/Stress_Theme.mp3'),
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Shower_Steam.jpg')
   },
@@ -2191,7 +2190,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 142
       }],
-    beforeBegin: vhs,
+    effect: 'VHS',
     music: require('../../../../Media/Audio/PFT/Music/Theme_Medieval.mp3'),
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Room_Fireplace.jpg')
   },
@@ -4321,8 +4320,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: 'Впиться взглядом',
         goTo: 281
       }],
+    effect: 'Черная вспышка',
     beforeBegin: () => {
-      blackFlash()
       timer.set(6, () => { scenarioManager.beginScene(284) })
     },
     music: require('../../../../Media/Audio/PFT/Music/Stress_Theme.mp3'),

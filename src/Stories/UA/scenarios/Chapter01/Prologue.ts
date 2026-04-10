@@ -1292,7 +1292,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 84
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1666,7 +1666,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 109
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageBack: require('../../../../Media/Images/UA/Backgrounds/Soldier_Room.jpg')
   },
 
@@ -1681,7 +1681,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 110
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     music: require('../../../../Media/Audio/UA/Alert_Theme.mp3'),
     imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
@@ -1722,7 +1722,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.UA, chapterName: 'Глава
         text: '',
         goTo: 112
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     imageBack: require('../../../../Media/Images/UA/Backgrounds/Canteen.jpg')
   },
 

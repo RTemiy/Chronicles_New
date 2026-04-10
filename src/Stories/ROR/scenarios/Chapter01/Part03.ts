@@ -2454,7 +2454,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ROR, chapterName: 'Глав�
         text: '',
         goTo: 153
       }],
-    beforeBegin: redFlash,
+    effect: 'Красная вспышка',
     ambient: require('../../../../Media/Audio/ROR/Small_Whisper.mp3'),
     imageBack: require('../../../../Media/Images/ROR/Backgrounds/Nightmare.jpg')
   },

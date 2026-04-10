@@ -10,6 +10,7 @@
   justify-content: center;
   z-index: 45;
   @extend %show;
+  pointer-events: none;
 }
 
 .precache-loading__text{

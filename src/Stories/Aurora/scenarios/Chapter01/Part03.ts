@@ -302,7 +302,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         goTo: 21
       }],
     message: '<i> Вы вернулись в воспоминания ',
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: musicPlayer[`AuroraDaily${loadData(['Aurora', 'Daily', 'Music'])}`],
     imageFront: require('../../../../Media/Images/Aurora/Persons/Kaleb.png'),
     imageBorder: require('../../../../Media/Images/Aurora/UI/Border.png'),

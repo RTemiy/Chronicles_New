@@ -844,7 +844,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 52
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     speaker: 'Девушка',
     imageFront: require('../../../../Media/Images/OTV/Persons/Lina_Streetwear.png'),
     imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),
@@ -862,7 +862,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 53
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     speaker: 'Ники ',
     imageFront: require('../../../../Media/Images/OTV/Persons/Nicki_Streetwear.png'),
     imageBorder: require('../../../../Media/Images/OTV/UI/Border.png'),

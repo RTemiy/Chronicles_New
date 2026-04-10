@@ -4798,7 +4798,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.MM, chapterName: 'Глава
     message: '11 часов утра. Кабинет в местном полицейском участке',
     music: require('../../../../Media/Audio/MM/Stress.mp3'),
     speaker: 'Дилан',
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageFront: require('../../../../Media/Images/MM/Persons/Dylan.png'),
     imageBorder: require('../../../../Media/Images/MM/UI/Border.png'),
     imageBack: require('../../../../Media/Images/MM/Backgrounds/Watchroom.jpg')

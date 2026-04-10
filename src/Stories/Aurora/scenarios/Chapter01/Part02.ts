@@ -2542,7 +2542,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 161
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/Aurora/Sad.mp3'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Observation_Night.jpg')
   },
@@ -2659,7 +2659,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 169
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/Aurora/Daily_01.mp3'),
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Arthur_Car.jpg')
   },

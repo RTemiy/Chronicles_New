@@ -61,7 +61,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 4
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     speaker: 'Тетя',
     darkSilhouette: true,
     imageFront: require('../../../../Media/Images/FOF/Persons/Aunt.png'),
@@ -151,7 +151,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 9
       }],
     darkSilhouette: true,
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     speaker: 'Эйприл',
     imageFront: require('../../../../Media/Images/FOF/Persons/April.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
@@ -222,7 +222,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         goTo: 13
       }],
     darkSilhouette: true,
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     imageFront: require('../../../../Media/Images/FOF/Persons/Derek.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Hospital_Room.jpg')
@@ -3240,7 +3240,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 187
       }],
-    beforeBegin: blackFlash,
+    effect: 'Черная вспышка',
     simple: require('../../../../Media/Audio/FOF/Explo.mp3'),
     music: require('../../../../Media/Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')

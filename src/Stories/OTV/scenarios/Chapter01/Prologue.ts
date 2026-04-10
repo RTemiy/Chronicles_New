@@ -790,7 +790,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.OTV, chapterName: 'Глав�
         text: '',
         goTo: 50
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageBack: require('../../../../Media/Images/OTV/Backgrounds/Dark_Street.jpg')
   },
 

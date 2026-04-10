@@ -25,6 +25,16 @@ storiesManager.add({
           }
         },
         {
+          name: 'Часть 2',
+          code: '0',
+          image: require('../../Media/Images/F/Backgrounds/Room_Witch.jpg'),
+          loadingImage: require('../../Media/Images/F/Covers/Part02.jpg'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
           name: 'Скоро',
           code: '0',
           image: require('../../Media/Images/UI/background.png'),

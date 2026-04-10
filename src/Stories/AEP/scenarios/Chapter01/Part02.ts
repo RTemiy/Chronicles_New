@@ -6369,7 +6369,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.AEP, chapterName: 'Глав�
         text: '',
         goTo: 383
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     message: '<i>Спустя два месяца…',
     music: require('../../../../Media/Audio/AEP/Daily.mp3'),
     imageBack: require('../../../../Media/Images/AEP/Backgrounds/Hero_Room.jpg')

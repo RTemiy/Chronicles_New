@@ -148,7 +148,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
     imageFront: require('../../../../Media/Images/FOF/Persons/Nick.png'),
     imageBorder: require('../../../../Media/Images/FOF/UI/Border.png'),
     darkSilhouette: true,
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 
@@ -279,7 +279,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 311
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
@@ -312,7 +312,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
         text: '',
         goTo: 14
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     message: 'Путь перемен',
     music: require('../../../../Media/Audio/FOF/Main.mp3'),
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
@@ -348,7 +348,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.FOF, chapterName: 'Глав�
       }],
     message: 'Путь постоянства',
     music: require('../../../../Media/Audio/FOF/Main.mp3'),
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageBack: require('../../../../Media/Images/FOF/Backgrounds/Abigail_Room.jpg')
   },
 

@@ -13,7 +13,7 @@ import { getChoice } from '../Functions/5Choices'
 import { setCurrentSlideId } from '../Components/Slide/Slide'
 import { showStatAlert } from '../Components/SlideStatAlert/SlideStatAlert'
 import { type CSmartphone } from './CSmartphone'
-import { showHotAndColdProgression } from '../Components/HotAndColdProgression/HotAndColdProgression';
+import { showHotAndColdProgression } from '../Components/HotAndColdProgression/HotAndColdProgression'
 
 export default class CScenarioManager {
   #currentScenarioName: string = ''
@@ -126,14 +126,22 @@ export default class CScenarioManager {
     }
   }
 
-  #doEffect (effectName: string | undefined): void {
-    if (effectName !== undefined) {
+  #doEffect (effectName: string[] | string | undefined): void {
+    if (typeof effectName === 'string') {
       this.slideEffects.forEach(effect => {
         if (effect.name === effectName) {
           effect.func()
         }
       })
-    } else {
+    } else if (Array.isArray(effectName)) {
+      effectName.forEach(effect => {
+        this.slideEffects.forEach(effectDatabaseName => {
+          if (effectDatabaseName.name === effect) {
+            effectDatabaseName.func()
+          }
+        })
+      })
+    } else if (effectName === undefined) {
       this.slideEffects[0].func()
     }
   }

@@ -566,7 +566,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
       {
         text: ''
       }],
-    beforeBegin: vhs,
+    effect: 'VHS',
     ambient: require('../../../../Media/Audio/PFT/ManWhisper.mp3'),
     interruptiveFrame: { goTo: 211, timeMS: 3000 },
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Picture_Room_Scary.jpg')
@@ -1246,7 +1246,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
     music: require('../../../../Media/Audio/PFT/Music/Viktor_Theme.mp3'),
     stats: [
       { story: EStoriesEn.PFT, value: +1, category: 'Person', id: 'Viktor' }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Viktor_Room_Past.jpg')
   },
 
@@ -1491,7 +1491,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 73
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     message: 'После свадьбы, год назад. Счастливый брак? ',
     music: require('../../../../Media/Audio/PFT/Music/Calm_Theme.mp3'),
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Viktor_Room.jpg')
@@ -1765,7 +1765,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
       }],
     music: require('../../../../Media/Audio/PFT/Music/Tale_Theme.mp3'),
     speakerL: 'Венди',
-    beforeBegin: vhs,
+    effect: 'VHS',
     fullscreenObjectL: require('../../../../Media/Images/PFT/Persons/Wendy_GreenDress.png'),
     ghostSilhouette: true,
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Medieval.jpg')
@@ -1928,7 +1928,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         goTo: 99
       }],
     interruptiveFrame: { goTo: 511 },
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
@@ -1956,7 +1956,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
         text: '',
         goTo: 100
       }],
-    beforeBegin: whiteFlash,
+    effect: 'Белая вспышка',
     music: require('../../../../Media/Audio/PFT/Music/Stress_Theme.mp3'),
     imageBack: require('../../../../Media/Images/PFT/Backgrounds/Viktor_Room.jpg')
   },

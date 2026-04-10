@@ -24,3 +24,35 @@ achievementsManager.add({
   text: 'Найти силы и двигаться дальше',
   story: EStoriesEn.F
 })
+
+achievementsManager.add({
+  name: 'Soulmate',
+  image: require('../../Media/Images/F/Achievements/Soulmate.png'),
+  title: 'Разговор по душам',
+  text: 'Излить душу первому встречному',
+  story: EStoriesEn.F
+})
+
+achievementsManager.add({
+  name: 'Witch_Hug',
+  image: require('../../Media/Images/F/Achievements/Witch_Hug.png'),
+  title: 'Объятья ведьмы',
+  text: 'Ты принял тьму Алисы. А она тебя?',
+  story: EStoriesEn.F
+})
+
+achievementsManager.add({
+  name: 'Colleges',
+  image: require('../../Media/Images/F/Achievements/Colleges.png'),
+  title: 'Коллегиальная этика',
+  text: 'Узнай Леру получше и желай продолжения',
+  story: EStoriesEn.F
+})
+
+achievementsManager.add({
+  name: 'NoTime',
+  image: require('../../Media/Images/F/Achievements/NoTime.png'),
+  title: 'Времени нет',
+  text: 'Тик-так, выбирай: либо эдак, либо так',
+  story: EStoriesEn.F
+})

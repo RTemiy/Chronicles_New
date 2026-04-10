@@ -12,6 +12,7 @@ import { changeState } from '../Functions/backEventActions'
 import { doVibrate } from '../Functions/doVibrate'
 import typingText from '../Functions/typingText';
 import menuToolbar from '../Components/MenuToolbar/MenuToolbar';
+import { disableAll } from '../Components/Slide/Slide';
 
 export default class CSlide {
   private previousSlideText = ''
@@ -369,6 +370,7 @@ export default class CSlide {
       this.slide.self.style.display = 'none'
       this.menuToolbarElement.style.display = 'flex'
       this.soundManager.play('menu')
+      disableAll()
       hideLoadingScreen()
       changeState('menu')
       menuToolbar.storiesButton.click()

@@ -12,7 +12,7 @@
   justify-content: center;
   backdrop-filter: blur(5px);
   @extend %show;
-  z-index: 2;
+  z-index: 100;
 }
 
 .menu-message__container{
