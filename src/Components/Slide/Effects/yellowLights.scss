@@ -1,0 +1,45 @@
+.slide_yellowlightInfinite:before{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../../Media/Images/UI/effects/Lights_01.png");
+  background-size: 300px;
+  animation: 10s lightsMoveBlinkForward linear infinite;
+}
+
+.slide_yellowlightInfinite:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../../Media/Images/UI/effects/Lights_02.png");
+  background-size: 300px 300px;
+  background-repeat: repeat;
+  animation: 15s lightsMoveBlinkForwardBack linear infinite;
+  backdrop-filter: blur(0.4px);
+}
+
+@keyframes lightsMoveBlinkForward {
+  0% { transform: rotate(0deg) scale(230%); opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { transform: rotate(360deg) scale(230%); opacity: 1; }
+}
+
+@keyframes lightsMoveBlinkForwardBack {
+  0% { transform: rotate(360deg) scale(220%); opacity: 0; background-position: 0 0; }
+  25% { opacity: 1; transform: scale(220%); }
+  50% { opacity: 0; transform: scale(220%); }
+  75% { opacity: 1; transform: scale(220%);}
+  100% { transform: rotate(0deg) scale(220%); opacity: 0; background-position: 500px 1000px; }
+}

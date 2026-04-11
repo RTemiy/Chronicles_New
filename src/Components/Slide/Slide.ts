@@ -128,18 +128,6 @@ export function redFlash (): void {
   doVibrate('long')
 }
 
-export function discoFlash01 (): void {
-  animateBackForth(Slide.self, 'slide_disco-1', 2000)
-}
-
-export function discoFlash02 (): void {
-  animateBackForth(Slide.self, 'slide_disco-2', 2000)
-}
-
-export function discoFlash03 (): void {
-  animateBackForth(Slide.self, 'slide_disco-3', 2000)
-}
-
 export function vhs (): void {
   animateBackForth(Slide.self, 'slide_vhs', 2000)
 }
@@ -158,6 +146,10 @@ export function BW (): void {
 
 export function yellowlight (): void {
   Slide.self.classList.add('slide_yellowlightInfinite')
+}
+
+export function snow (): void {
+  Slide.self.classList.add('slide_snowInfinite')
 }
 
 export const slideEffects = [
@@ -204,6 +196,10 @@ export const slideEffects = [
   {
     name: 'Желтое сияние',
     func: yellowlight
+  },
+  {
+    name: 'Снег',
+    func: snow
   }
 ]
 

@@ -34,3 +34,35 @@ profileManager.addAvatars([
     condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'PrologueCompleted')
   }
 ])
+
+profileManager.addAvatars([
+  {
+    id: 'F_AliceTowel',
+    image: require('../../Media/Images/F/Persons/Alice_Towel_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Witch_Hug')
+  }
+])
+
+profileManager.addAvatars([
+  {
+    id: 'F_Valeria_Coat',
+    image: require('../../Media/Images/F/Persons/Valeria_Coat_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Colleges')
+  }
+])
+
+profileManager.addAvatars([
+  {
+    id: 'F_Irina_Coat',
+    image: require('../../Media/Images/F/Persons/Irina_Coat_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'NoTime')
+  }
+])
+
+profileManager.addAvatars([
+  {
+    id: 'F_Konstantin_Trousers',
+    image: require('../../Media/Images/F/Persons/Konstantin_Trousers_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'NoTime')
+  }
+])

@@ -4,12 +4,14 @@ import './SlideStatAlert.scss'
 export const SlideStatAlert = new CContainer('statAlert', '')
 
 export function showStatAlert (image: string, text: string, value: number): void {
-  const fixedText = transformValue(value)
-  addToQueue(`
+  if (value !== -100500) {
+    const fixedText = transformValue(value)
+    addToQueue(`
     <img class="statAlert__image" src="${image}">
     <p class="statAlert__text">${text}</p>
     ${fixedText.includes('+') ? '<p class="statAlert__value statAlert__value-add">' + String(fixedText) + '</p>' : fixedText !== 'new!' ? '<p class="statAlert__value statAlert__value-minus">' + fixedText + '</p>' : '<p class="statAlert__value statAlert__value-new">' + fixedText + '</p>'}
   `)
+  }
 }
 
 function addToQueue (blockInner: string): void {

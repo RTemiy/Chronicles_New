@@ -7,13 +7,11 @@ import CElementManager from '../../Classes/CElementManager'
 import { Slide } from '../Slide/Slide'
 import { loadData } from '../../Functions/localStorageManager'
 import { Profile, renderProfile } from '../Profile/Profile'
-import { renderShop, Shop } from '../Shop/Shop';
-import { DESKTOPMODE } from '../../Utils/technicalConsts';
-import { setIsShowingLoadingScreenFalse } from '../LoadingScreen/LoadingScreen';
-import { changeState } from '../../Functions/backEventActions';
-import { getCurrentEventImageSVG } from '../../Utils/eventManager';
-import makeExplosion from '../../Functions/explosion';
-import { MenuMessage } from '../MenuMessage/MenuMessage';
+import { renderShop, Shop } from '../Shop/Shop'
+import { DESKTOPMODE } from '../../Utils/technicalConsts'
+import { setIsShowingLoadingScreenFalse } from '../LoadingScreen/LoadingScreen'
+import { changeState } from '../../Functions/backEventActions'
+import { getCurrentEventImageSVG } from '../../Utils/eventManager'
 
 const MenuToolbar = new CContainer(
   'menu-toolbar',
@@ -102,6 +100,7 @@ MenuToolbar.continueButton.onclick = () => {
   setIsShowingLoadingScreenFalse()
   scenarioManager.loadLastSave()
   soundManager.play('music', loadData(['LastSave_SoundInfo'])!)
+  soundManager.play('ambient', loadData(['LastSave_SoundInfoAmbient'])!)
   setTimeout(() => {
     MenuToolbar.self.style.display = 'none'
     tabManagerMenu.closeAll()

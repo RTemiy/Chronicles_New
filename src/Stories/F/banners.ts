@@ -24,3 +24,35 @@ profileManager.addBanners([
     condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'PrologueCompleted')
   }
 ])
+
+profileManager.addBanners([
+  {
+    id: 'F_BusPark',
+    image: require('../../Media/Images/F/Backgrounds/Buses_Night.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Soulmate')
+  }
+])
+
+profileManager.addBanners([
+  {
+    id: 'F_AliceBedroom',
+    image: require('../../Media/Images/F/Backgrounds/Bedroom_Alice.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Witch_Hug')
+  }
+])
+
+profileManager.addBanners([
+  {
+    id: 'F_PtrsbrgM',
+    image: require('../../Media/Images/F/Backgrounds/Petersburg_Moring.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Colleges')
+  }
+])
+
+profileManager.addBanners([
+  {
+    id: 'F_WitchRoom',
+    image: require('../../Media/Images/F/Backgrounds/Room_Witch.jpg'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'NoTime')
+  }
+])

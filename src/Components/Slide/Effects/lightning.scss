@@ -1,0 +1,24 @@
+.slide_lightningInfinite:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../../Media/Images/UI/effects/Lightning.png");
+  background-size: contain;
+  animation: lightning .5s infinite steps(2);
+  mask-image: radial-gradient(#000000FF 0%, #00000000 75%, #00000000 100%);
+}
+
+@keyframes lightning {
+  0%{ transform: rotate(5deg); }
+  10%{ transform: rotate(180deg); }
+  30%{ transform: rotate(40deg); }
+  50%{ transform: rotate(260deg); }
+  70%{ transform: rotate(25deg); }
+  80%{ transform: rotate(175deg); }
+  00%{ transform: rotate(280deg); }
+}

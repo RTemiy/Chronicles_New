@@ -1,4 +1,4 @@
-import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
+import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { askedAmount, choiceDone, getChoice, resetChoices } from '../../../../Functions/5Choices'
 
@@ -14,6 +14,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 1
       }],
+    effect: 'Желтое сияние',
     music: require('../../../../Media/Audio/F/Music/Theme_Romantic.mp3'),
     ambient: require('../../../../Media/Audio/F/Ambients/Waves.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
@@ -30,6 +31,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 2
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -44,6 +46,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 3
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -58,6 +61,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 4
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -70,6 +74,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     cutScene: { video: require('../../../../Media/Images/F/Cutscenes/Hero_Ira_Beach.mp4'), goTo: 5 },
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -86,6 +91,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -100,6 +106,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 7
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -114,6 +121,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 8
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -128,6 +136,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 9
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -142,6 +151,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 10
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -158,6 +168,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit_Smile.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -172,6 +183,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 12
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -186,6 +198,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 13
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -200,6 +213,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 14
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -214,6 +228,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 15
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -228,6 +243,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 16
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -242,6 +258,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 17
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -258,6 +275,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers_Smile.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -272,6 +290,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 19
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -288,6 +307,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -302,6 +322,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 21
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -316,6 +337,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 22
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -336,6 +358,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -352,6 +375,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -366,6 +390,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 25
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -382,6 +407,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -398,6 +424,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers_Puzzled.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -414,6 +441,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -428,6 +456,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 29
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -444,6 +473,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -460,6 +490,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -476,6 +507,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -492,6 +524,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -508,6 +541,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers_Smile.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -524,6 +558,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit_Smile.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -538,6 +573,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 36
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -552,6 +588,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 55
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -570,6 +607,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers_Smile.png'),
     stats: [
       { story: EStoriesEn.F, value: 1, category: 'Choice', id: 'LoveYou' }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -584,6 +622,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 39
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -600,6 +639,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit_Confused.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -614,6 +654,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 41
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -630,6 +671,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers_Smile.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -644,6 +686,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 43
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -658,6 +701,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 44
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -672,6 +716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 45
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -688,6 +733,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit_Confused.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -704,6 +750,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers_Smile.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -718,6 +765,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 48
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -732,6 +780,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 49
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -746,6 +795,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 50
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -760,6 +810,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 51
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -776,6 +827,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit_Confused.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -790,6 +842,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 53
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -804,6 +857,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 54
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -823,6 +877,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
     stats: [
       { story: EStoriesEn.F, value: +1, category: 'Person', id: 'Irina' }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -837,6 +892,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 56
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -851,6 +907,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 57
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -863,6 +920,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     OKMessage: { goTo: 58, image: require('../../../../Media/Images/F/Objects/Shell.png'), buttonText: 'Рассмотреть' },
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -877,6 +935,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 59
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -893,6 +952,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -907,6 +967,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 61
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -923,6 +984,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -939,6 +1001,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -953,6 +1016,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 64
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -969,6 +1033,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -983,6 +1048,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 66
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -999,6 +1065,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1013,10 +1080,10 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 68
       }],
-    effect: 'VHS',
     simple: require('../../../../Media/Audio/F/Sounds/Glitch.mp3'),
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
+    effect: ['Желтое сияние', 'VHS'],
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1033,7 +1100,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     simple: require('../../../../Media/Audio/F/Sounds/Glitch.mp3'),
     speakerR: 'Неизвестный',
-    effect: 'VHS',
+    effect: ['Желтое сияние', 'VHS'],
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Homeless.png'),
     darkSilhouette: true,
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
@@ -1050,6 +1117,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 70
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1064,6 +1132,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 71
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1078,6 +1147,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 72
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1096,7 +1166,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     speakerR: 'Неизвестный',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Homeless.png'),
     darkSilhouette: true,
-    effect: 'VHS',
+    effect: ['Желтое сияние', 'VHS'],
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1113,6 +1183,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1127,6 +1198,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 75
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1141,6 +1213,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 76
       }],
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1157,6 +1230,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
+    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1186,8 +1260,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     music: require('../../../../Media/Audio/F/Music/Theme_Dramatic.mp3'),
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat_Shock.png'),
-    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
     effect: 'Белая вспышка',
+    ambient: require('../../../../Media/Audio/F/Ambients/BusAmbient.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -1446,6 +1520,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 96
       }],
+    simple: require('../../../../Media/Audio/F/Sounds/Slurp.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -1718,6 +1793,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 113
       }],
+    simple: require('../../../../Media/Audio/F/Sounds/Slurp.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -2285,6 +2361,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 149
       }],
+    simple: require('../../../../Media/Audio/F/Sounds/Hic.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -2608,7 +2685,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 212
+        goTo: 217
       }],
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
@@ -3355,7 +3432,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 217,
     text:
       `
-        Далее (общий итог всех трех выборов)<p>— В общем, что хочу сказать.
+        — В общем, что хочу сказать.
       `,
     buttons: [
       {
@@ -3410,6 +3487,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 221
       }],
+    simple: require('../../../../Media/Audio/F/Sounds/BusStops.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -3764,6 +3842,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 244
       }],
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -4001,6 +4080,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 260
       }],
+    simple: require('../../../../Media/Audio/F/Sounds/Lighter.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Buses_Night.jpg')
   },
 
@@ -4226,6 +4306,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 275
       }],
     speakerR: 'Водитель',
+    effect: 'Снег',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Bus_Driver.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Buses_Night.jpg')
   },
@@ -5629,7 +5710,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 370,
     text:
       `
-        ! Выбор: Аттракционы<p>Так как народ только подтягивался, мы смогли без проблем купить билет на карусель.
+        Так как народ только подтягивался, мы смогли без проблем купить билет на карусель.
       `,
     buttons: [
       {
@@ -7826,6 +7907,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 516
       }],
+    simple: require('../../../../Media/Audio/F/Sounds/Door_Closed.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
   },
 
@@ -7852,6 +7934,8 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 518
       }],
+    effect: 'Дымка',
+    ambient: require('../../../../Media/Audio/F/Ambients/Shower.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7866,6 +7950,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 519
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7882,6 +7967,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7896,6 +7982,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 521
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7910,6 +7997,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 522
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7926,6 +8014,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7940,6 +8029,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 524
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7956,6 +8046,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7970,6 +8061,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 526
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -7986,6 +8078,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8002,6 +8095,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8023,6 +8117,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     message: 'Данный выбор повлияет на дальнейшие взаимодействия с персонажем. ',
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8040,6 +8135,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     music: require('../../../../Media/Audio/F/Music/Theme_Romantic.mp3'),
     stats: [
       { story: EStoriesEn.F, value: 1, category: 'Choice', id: 'InspectThigh' }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8056,6 +8152,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8070,6 +8167,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 532
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8086,6 +8184,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8100,6 +8199,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 534
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8116,6 +8216,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8130,6 +8231,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 536
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8146,6 +8248,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8162,6 +8265,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8176,6 +8280,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 539
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8190,6 +8295,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 540
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8204,6 +8310,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 541
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8218,6 +8325,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 542
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8234,6 +8342,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8248,6 +8357,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 544
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8264,6 +8374,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8278,6 +8389,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 546
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8292,6 +8404,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 547
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8306,6 +8419,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 548
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8320,6 +8434,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 549
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8334,6 +8449,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 550
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8348,6 +8464,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 551
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8362,6 +8479,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 552
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8378,6 +8496,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8392,6 +8511,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 554
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8406,6 +8526,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 555
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8422,6 +8543,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Pants.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8438,6 +8560,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel_Confused.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8452,6 +8575,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 558
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8466,6 +8590,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 559
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8480,6 +8605,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 560
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8494,6 +8620,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 561
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8510,6 +8637,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel_Confused.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8524,6 +8652,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 563
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8540,6 +8669,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Pants.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8554,6 +8684,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 565
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8570,6 +8701,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel_Confused.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8582,6 +8714,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     cutScene: { video: require('../../../../Media/Images/F/CutScenes/Hero_Alice_Bathroom.mp4'), goTo: 567 },
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8596,6 +8729,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 568
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8610,6 +8744,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 569
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8624,6 +8759,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 570
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8638,6 +8774,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 571
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8652,6 +8789,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 572
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8666,6 +8804,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 573
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8680,6 +8819,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 574
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8694,6 +8834,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 575
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8708,6 +8849,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 576
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8724,6 +8866,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel_Confused.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8740,6 +8883,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Pants.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8758,6 +8902,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     stats: [
       { story: EStoriesEn.F, value: +1, category: 'Person', id: 'Alice' }],
     achievement: { story: EStoriesEn.F, name: 'Witch_Hug' },
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8774,6 +8919,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8788,6 +8934,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 581
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8804,6 +8951,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Towel.png'),
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8818,6 +8966,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 583
       }],
+    effect: 'Дымка',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
   },
 
@@ -8830,6 +8979,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 584 },
+    ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
   },
 
@@ -14122,7 +14272,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 928,
     text:
       `
-        Далее <p>И снова я остался один: без цели, без прошлого. 
+        И снова я остался один: без цели, без прошлого. 
       `,
     buttons: [
       {

@@ -1,0 +1,41 @@
+.slide_fogInfinite:after{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../../Media/Images/UI/effects/Fog01.png");
+  background-size: cover;
+  background-repeat: repeat;
+  transform: scale(230%);
+  animation: 55s fogMoveForward linear infinite;
+}
+
+.slide_fogInfinite:before{
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url("../../../Media/Images/UI/effects/Fog02.png");
+  background-size: cover;
+  background-repeat: repeat;
+  transform: scale(230%);
+  animation: 50s fogMoveBack linear infinite;
+}
+
+@keyframes fogMoveForward {
+  from { transform: rotate(0deg) scale(230%); }
+  to { transform: rotate(360deg) scale(230%); }
+}
+
+@keyframes fogMoveBack{
+  from { transform: rotate(360deg) scale(230%); }
+  to { transform: rotate(0deg) scale(230%); }
+}

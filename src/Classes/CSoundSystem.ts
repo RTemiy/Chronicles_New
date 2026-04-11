@@ -48,6 +48,7 @@ export default class CSoundSystem {
         this[type].pause()
         if (type !== 'menu') {
           type === 'music' && saveData(['LastSave_SoundInfo'], [path!])
+          type === 'ambient' && saveData(['LastSave_SoundInfoAmbient'], [path!])
           this.inMenu = false
           this[type] = new Audio(path)
           this[type].currentTime = 0
