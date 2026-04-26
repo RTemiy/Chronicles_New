@@ -1,4 +1,3 @@
-import { whiteFlash } from '../../../../Components/Slide/Slide'
 import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 
@@ -5693,9 +5692,232 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
     buttons: [
       {
         text: '',
-        goTo: 370
+        goTo: 800
       }],
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Lectionhall_02.jpg')
+  },
+
+  {
+    id: 800,
+    text:
+      `
+        Холодная вода коснулась щиколоток, отзываясь дрожью по телу. Звездная россыпь отражалась в зеркальной поверхности, пытаясь пробиться сквозь завесу ночи.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 801
+      }],
+    ambient: require('../../../../Media/Audio/ITLH/Ambient/Mystic.mp3'),
+    music: require('../../../../Media/Audio/Common/Silence.mp3'),
+    effect: 'Красная вспышка',
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 801,
+    text:
+      `
+        Открывшееся передо мной пространство было словно разорвано невидимым черным слоем, сталкивая мерцание и влагу.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 802
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 802,
+    text:
+      `
+        «Где я?»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 803
+      }],
+    speakerL: '$Имя Игрока$',
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 803,
+    text:
+      `
+        Темнота окутывала с головы до ног. Местами она казалась живой, выдавая вдалеке до боли знакомые силуэты.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 804
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 804,
+    text:
+      `
+        — Я держу… Всем оставаться на своих местах. $Имя Игрока$, ты меня слышишь?
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 805
+      }],
+    speakerR: 'Нэйтан?',
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Neitan.png'),
+    darkSilhouette: true,
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 805,
+    text:
+      `
+        Образ растворился, накрыв беспокойной волной.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 806
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 806,
+    text:
+      `
+        Шаг за шагом я все больше погружалась в неизведанное — оно затягивало, как водоворот, кружило мысли в безумном танце.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 807
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 807,
+    text:
+      `
+        «Страшно. Но если остановлюсь, что тогда случится?»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 808
+      }],
+    speakerL: '$Имя Игрока$',
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 808,
+    text:
+      `
+        Я почувствовала теплое прикосновение к плечу — легкое, почти невесомое.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 809
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 809,
+    text:
+      `
+        — С ней же все будет в порядке?
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 810
+      }],
+    speakerR: 'Скарлетт?',
+    fullscreenObjectR: require('../../../../Media/Images/ITLH/Persons/Scarlett.png'),
+    darkSilhouette: true,
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 810,
+    text:
+      `
+        Но ощущение быстро исчезло под натиском гнетущей обстановки. Мое дыхание участилось, воздух стал невыносимо тяжелым.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 811
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 811,
+    text:
+      `
+        Сливаясь с тьмой, я наконец увидела робкий мерцающий огонек надежды.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 812
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 812,
+    text:
+      `
+        «Это еще не конец!»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 813
+      }],
+    speakerL: '$Имя Игрока$',
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.ITLH, 'Hero_Chapter01_Part01') },
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 813,
+    text:
+      `
+        Сквозь неимоверное усилие я разорвала удушающие оковы, вступая на новый неизведанный путь.
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 666
+      }],
+    imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Stars_Darkness.jpg')
+  },
+
+  {
+    id: 666,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 370 },
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {

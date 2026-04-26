@@ -9,10 +9,10 @@
   z-index: 5;
   background-image: url("../../../Media/Images/UI/effects/Snow_01.png");
   background-size: 300px;
-  animation: 35s lightsMoveBlinkForward linear infinite;
+  animation: 35s snowMoveBlinkForward linear infinite;
 }
 
-@keyframes lightsMoveBlinkForward {
+@keyframes snowMoveBlinkForward {
   0% { transform: rotate(0deg) scale(230%); opacity: 1; }
   25% { opacity: 0.5; }
   50% { opacity: 1; }
@@ -32,10 +32,10 @@
   background-image: url("../../../Media/Images/UI/effects/Snow_02.png");
   background-size: 160px 320px;
   background-repeat: repeat;
-  animation: 20s lightsMoveBlinkForwardBack linear infinite;
+  animation: 20s snowMoveBlinkForwardBack linear infinite;
 }
 
-@keyframes lightsMoveBlinkForwardBack {
+@keyframes snowMoveBlinkForwardBack {
   0% { transform: rotate(360deg) scale(220%); background-position: 0 0; opacity: 0.7; }
   25% { transform: scale(220%); }
   50% { opacity: 0.3; transform: scale(220%); }

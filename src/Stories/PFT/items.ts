@@ -1,7 +1,7 @@
 import { statsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
-statsManager.add({
+/*statsManager.add({
   category: 'Item',
   id: 'Letter',
   name: 'Записка',
@@ -9,7 +9,7 @@ statsManager.add({
   title: 'От «любимого» Виктора.',
   description: 'Педантично сложенная бумажка, которая изменила планы Венди.',
   story: EStoriesEn.PFT
-})
+})*/
 
 statsManager.add({
   category: 'Item',

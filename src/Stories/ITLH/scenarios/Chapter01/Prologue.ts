@@ -1186,8 +1186,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       '',
     buttons: [
       {
-        text: '',
-        goTo: 73
+        text: ''
       }],
     cutScene: { video: require('../../../../Media/Images/ITLH/Cutscenes/FaceTheFaith.mp4'), goTo: 73 },
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Tesla_Door.jpg')

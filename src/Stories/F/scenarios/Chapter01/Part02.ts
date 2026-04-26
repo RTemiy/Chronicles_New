@@ -423,7 +423,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 27
       }],
     speakerL: 'Константин',
-    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers_Puzzled.png'),
+    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
     effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
@@ -1065,7 +1065,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1083,7 +1082,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     simple: require('../../../../Media/Audio/F/Sounds/Glitch.mp3'),
     speakerR: 'Ирина',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Swimsuit.png'),
-    effect: ['Желтое сияние', 'VHS'],
+    effect: 'VHS',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1100,7 +1099,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     simple: require('../../../../Media/Audio/F/Sounds/Glitch.mp3'),
     speakerR: 'Неизвестный',
-    effect: ['Желтое сияние', 'VHS'],
+    effect: 'VHS',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Homeless.png'),
     darkSilhouette: true,
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
@@ -1117,7 +1116,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 70
       }],
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1132,7 +1130,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 71
       }],
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1147,7 +1144,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 72
       }],
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1166,7 +1162,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     speakerR: 'Неизвестный',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Homeless.png'),
     darkSilhouette: true,
-    effect: ['Желтое сияние', 'VHS'],
+    effect: 'VHS',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1183,7 +1179,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1198,7 +1193,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 75
       }],
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1213,7 +1207,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 76
       }],
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1230,7 +1223,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Trousers.png'),
-    effect: 'Желтое сияние',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Sunset_Sea.jpg')
   },
 
@@ -1243,7 +1235,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 78 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -2069,15 +2061,29 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 130,
     text:
       `
-        «Он может быть… прав?»<p> <p>Слова ядом вливались в уши, отравляя меня изнутри. 
+        «Он может быть… прав?»
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 1103
+      }],
+    speakerL: 'Константин',
+    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat_Shock.png'),
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
+  },
+
+  {
+    id: 1103,
+    text:
+      `
+        Слова ядом вливались в уши, отравляя меня изнутри. 
       `,
     buttons: [
       {
         text: '',
         goTo: 131
       }],
-    speakerL: 'Константин',
-    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat_Shock.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -2308,7 +2314,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 146
+        goTo: 1300
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat.png'),
@@ -2316,10 +2322,24 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
   },
 
   {
+    id: 1300,
+    text:
+      `
+        Принять собственную беспомощность оказалось на удивление просто. Суровая реальность, что с неё взять?
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 147
+      }],
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
+  },
+
+  {
     id: 146,
     text:
       `
-        Принять собственную беспомощность оказалось на удивление просто. Суровая реальность, что с неё взять?<p> <p>— И я в ней просто никто. 
+        — И я в ней просто никто. 
       `,
     buttons: [
       {
@@ -2406,7 +2426,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 212
+        goTo: 217
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat.png'),
@@ -3530,7 +3550,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 224 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -3803,15 +3823,27 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
   {
     id: 241,
     text:
+      '',
+    buttons: [
+      {
+        text: '',
+        goTo: 1102
+      }],
+    OKMessage: { goTo: 242, image: require('../../../../Media/Images/F/Items/Closed_Box.png'), buttonText: 'Рассмотреть' },
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
+  },
+
+  {
+    id: 1102,
+    text:
       `
-         <p>Внимательно изучив всё от замочка до аккуратной резьбы, я так ничего примечательного и не нашёл. 
+         Внимательно изучив всё от замочка до аккуратной резьбы, я так ничего примечательного и не нашёл. 
       `,
     buttons: [
       {
         text: '',
         goTo: 242
       }],
-    OKMessage: { goTo: 242, image: require('../../../../Media/Images/F/Items/Closed_Box.png'), buttonText: 'Рассмотреть' },
     imageBack: require('../../../../Media/Images/F/Backgrounds/Bus_Inside_Night.jpg')
   },
 
@@ -3915,7 +3947,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 249 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Buses_Night.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -3974,11 +4006,11 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     condition: [
       {
         condition: () => statsManager.get({ story: EStoriesEn.F, category: 'Effect', id: 'PersonalGrowth' }) < 0,
-        goTo: 253
+        goTo: 254
       },
       {
         condition: () => statsManager.get({ story: EStoriesEn.F, category: 'Effect', id: 'PersonalGrowth' }) >= 0,
-        goTo: 257
+        goTo: 258
       }
     ],
     imageBack: require('../../../../Media/Images/F/Backgrounds/Buses_Night.jpg')
@@ -3993,7 +4025,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 254
+        goTo: 255
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat.png'),
@@ -4008,7 +4040,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       {
         text: ''
       }],
-    OKMessage: { goTo: 255, image: require('../../../../Media/Images/F/Objects/Cigarettes.png'), buttonText: 'Взять' },
+    OKMessage: { goTo: 253, image: require('../../../../Media/Images/F/Objects/Cigarettes.png'), buttonText: 'Взять' },
     imageBack: require('../../../../Media/Images/F/Backgrounds/Buses_Night.jpg')
   },
 
@@ -4050,7 +4082,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 258
+        goTo: 259
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat.png'),
@@ -4065,7 +4097,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       {
         text: ''
       }],
-    OKMessage: { goTo: 259, image: require('../../../../Media/Images/F/Objects/Cigarettes.png'), buttonText: 'Отказаться' },
+    OKMessage: { goTo: 257, image: require('../../../../Media/Images/F/Objects/Cigarettes.png'), buttonText: 'Отказаться' },
     imageBack: require('../../../../Media/Images/F/Backgrounds/Buses_Night.jpg')
   },
 
@@ -4306,7 +4338,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 275
       }],
     speakerR: 'Водитель',
-    effect: 'Снег',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Bus_Driver.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Buses_Night.jpg')
   },
@@ -4394,7 +4425,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 281 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Christmas_Market_Morning.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -4509,7 +4540,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 289 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Inside_Tent_Morning.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -4539,7 +4570,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 291
       }],
     speakerR: 'Старушка',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Witch_Angry.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Witch.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Inside_Tent_Morning.jpg')
   },
 
@@ -4547,15 +4578,29 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 291,
     text:
       `
-        — Неужто счастье оказалось не таким, каким ты его представлял?<p> <p>Я напрягся. Инстинкты внезапно забили тревогу. Тело вопило: отсюда следует убираться, и как можно скорее.
+        — Неужто счастье оказалось не таким, каким ты его представлял?
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 1101
+      }],
+    speakerR: 'Старушка',
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Witch_Angry.png'),
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Inside_Tent_Morning.jpg')
+  },
+
+  {
+    id: 1101,
+    text:
+      `
+        Я напрягся. Инстинкты внезапно забили тревогу. Тело вопило: отсюда следует убираться, и как можно скорее.
       `,
     buttons: [
       {
         text: '',
         goTo: 292
       }],
-    speakerR: 'Старушка',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Witch_Angry.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Inside_Tent_Morning.jpg')
   },
 
@@ -5228,7 +5273,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 339 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Christmas_Market_Morning.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -5703,7 +5748,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 370 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Christmas_Market_Morning.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -6409,6 +6454,18 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
 
   {
     id: 416,
+    text:
+     '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 1500 },
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
+  },
+
+  {
+    id: 1500,
     text:
       `
         Ярмарка постепенно заполнялась людьми, но мы успели урвать билеты вне очереди и занять лучшие места. 
@@ -7143,7 +7200,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 465 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Christmas_Market_Morning.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -7622,23 +7679,37 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 497 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
     id: 497,
     text:
       `
-        — Чувствуй себя как дома!<p> <p>Когда мы вошли, Алиса провела коротенькую экскурсию: показала кухню, санузел и зал — место, где мне предстояло спать. 
+        — Чувствуй себя как дома!
+      `,
+    buttons: [
+      {
+        text: '',
+        goTo: 1100
+      }],
+    music: require('../../../../Media/Audio/F/Music/Theme_Daily.mp3'),
+    speakerR: 'Алиса',
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Coat.png'),
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
+  },
+
+  {
+    id: 1100,
+    text:
+      `
+        Когда мы вошли, Алиса провела коротенькую экскурсию: показала кухню, санузел и зал — место, где мне предстояло спать. 
       `,
     buttons: [
       {
         text: '',
         goTo: 498
       }],
-    music: require('../../../../Media/Audio/F/Music/Theme_Daily.mp3'),
-    speakerR: 'Алиса',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Coat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
   },
 
@@ -7920,7 +7991,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 517 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Bathroom_Alice.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -8980,7 +9051,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     interruptiveFrame: { goTo: 584 },
     ambient: require('../../../../Media/Audio/Common/Silence.mp3'),
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -9754,7 +9825,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 634 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Bedroom_Alice.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -9895,7 +9966,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 644
       }],
     interruptiveFrame: { goTo: 644 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -9993,7 +10064,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 651 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Room_Witch.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -10028,7 +10099,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 653,
     text:
       `
-        (можно выбрать только 2 любых варианта)<p>«У меня не так много времени. Что осмотреть в первую очередь?»
+        «У меня не так много времени. Что осмотреть в первую очередь?»
       `,
     buttons: [
       {
@@ -10627,7 +10698,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 689
       }],
-    speakerR: 'Девушка',
+    speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Coat.png'),
     ghostSilhouette: true,
     effect: 'Белая вспышка',
@@ -10645,7 +10716,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 690
       }],
-    speakerR: 'Девушка',
+    speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Coat.png'),
     ghostSilhouette: true,
     imageBack: require('../../../../Media/Images/F/Backgrounds/Street_Near_Evening.jpg')
@@ -10662,7 +10733,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 691
       }],
-    speakerR: 'Девушка',
+    speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Coat.png'),
     ghostSilhouette: true,
     imageBack: require('../../../../Media/Images/F/Backgrounds/Street_Near_Evening.jpg')
@@ -11054,6 +11125,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 716
       }],
+    simple: require('../../../../Media/Audio/F/Sounds/Hard_Man_Breath.mp3'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Room_Witch.jpg')
   },
 
@@ -11095,7 +11167,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 719 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Petersburg_Moring.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -11457,7 +11529,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 743 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Office_Hall_Morning.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -12504,7 +12576,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 921
       }],
     speakerL: 'Константин',
-    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.F, 'Konstantin_Part02') },
     imageBack: require('../../../../Media/Images/F/Backgrounds/Office_Hall_Morning.jpg')
   },
 
@@ -12519,8 +12591,6 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 813
       }],
-    speakerL: 'Константин',
-    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Office_Hall_Morning.jpg')
   },
 
@@ -12607,7 +12677,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: ''
       }],
     interruptiveFrame: { goTo: 819 },
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Office_Cafe.jpg')
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -14176,7 +14246,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     music: require('../../../../Media/Audio/F/Music/Theme_Daily.mp3'),
     ambient: require('../../../../Media/Audio/F/Ambients/Office_Noise.mp3'),
     speakerL: 'Константин',
-    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.F, 'Konstantin_Part02') },
     imageBack: require('../../../../Media/Images/F/Backgrounds/Office_Hall_Morning.jpg')
   },
 
@@ -14236,7 +14306,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 926
       }],
     speakerL: 'Константин',
-    fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Office.png'),
+    fullscreenObjectL: () => { return wardrobe.getCurrentEntityImage(EStoriesEn.F, 'Konstantin_Part02') },
     imageBack: require('../../../../Media/Images/F/Backgrounds/Office_Hall_Morning.jpg')
   },
 
@@ -14270,6 +14340,18 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
 
   {
     id: 928,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 1501 },
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
+  },
+
+  {
+    id: 1501,
     text:
       `
         И снова я остался один: без цели, без прошлого. 
@@ -14718,9 +14800,21 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     buttons: [
       {
         text: '',
-        goTo: 958
+        goTo: 1502
       }],
     imageBack: require('../../../../Media/Images/F/Backgrounds/Street_Near_Home_Day.jpg')
+  },
+
+  {
+    id: 1502,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 958 },
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
   },
 
   {
@@ -14853,7 +14947,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 967
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -14957,7 +15051,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 974
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -15003,7 +15097,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 977
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -15049,7 +15143,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 980
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -15095,7 +15189,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 983
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -15111,7 +15205,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 984
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -15133,7 +15227,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
     id: 985,
     text:
       `
-        ! Таблица: Ирина, будучи в другой реальности, продолжает верить в вас. А ты?<p>Горло сдавило комом.
+        Горло сдавило комом.
       `,
     buttons: [
       {
@@ -15142,6 +15236,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     stats: [
       { story: EStoriesEn.F, value: +1, category: 'Person', id: 'Irina' }],
+    message: 'Ирина, будучи в другой реальности, продолжает верить в вас. А ты?',
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -15351,7 +15446,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 999
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
   },
 
@@ -15366,7 +15461,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 1000
       }],
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Kitchen.jpg')
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Livingroom.jpg')
   },
 
   {
@@ -15426,7 +15521,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 1004
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Livingroom.jpg')
   },
 
@@ -15456,7 +15551,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         goTo: 1006
       }],
     speakerR: 'Ирина',
-    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_Brandnew.png'),
+    fullscreenObjectR: require('../../../../Media/Images/F/Persons/Irina_NoCoat.png'),
     imageBack: require('../../../../Media/Images/F/Backgrounds/Flat_Livingroom.jpg')
   },
 
@@ -15565,6 +15660,18 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
 
   {
     id: 1013,
+    text:
+      '',
+    buttons: [
+      {
+        text: ''
+      }],
+    interruptiveFrame: { goTo: 1504 },
+    imageBack: require('../../../../Media/Images/UI/background_black.jpg')
+  },
+
+  {
+    id: 1504,
     text:
       `
         Вариантов было немного. Необходимо принять решение сию секунду, ибо дальше так продолжаться просто не может. 

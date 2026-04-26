@@ -22,6 +22,9 @@
   height: 100vh;
   justify-self: center;
   transition: transform 1.2s 0.3s ease-in-out;
+  @container style(--pixelMode: true) {
+    filter: url(#pixelate);
+  }
 }
 
 
@@ -35,6 +38,9 @@
   width: auto;
   transition: all .5s ease-in-out;
   pointer-events: none;
+  @container style(--pixelMode: true) {
+    filter: url(#pixelate);
+  }
 }
 
 .slide__background_hide {

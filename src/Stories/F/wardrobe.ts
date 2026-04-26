@@ -49,7 +49,7 @@ wardrobe.addEntity('Market_Food', [
   {
     image: require('../../Media/Images/F/Objects/Pancakes.png'),
     title: 'Блины',
-    description: 'Сладкая масляная выпечка.',
+    description: 'Традиционная сладкая выпечка.',
     cost: 'short',
     unlocked: () => { return true }
   },

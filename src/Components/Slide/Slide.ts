@@ -152,6 +152,10 @@ export function snow (): void {
   Slide.self.classList.add('slide_snowInfinite')
 }
 
+export function stars (): void {
+  Slide.self.classList.add('slide_starsInfinite')
+}
+
 export const slideEffects = [
   {
     name: 'Выключить',
@@ -200,6 +204,10 @@ export const slideEffects = [
   {
     name: 'Снег',
     func: snow
+  },
+  {
+    name: 'Мерцание звезд',
+    func: stars
   }
 ]
 

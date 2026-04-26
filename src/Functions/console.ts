@@ -39,6 +39,9 @@ export function doCommand (input: string): void {
         commands.shift()
         console.log(tsv2array(commands.join('\n')))
         break
+      case 'pixelate':
+        document.body.style.setProperty('--pixelMode', 'true')
+        break
       case 'skip':
         // eslint-disable-next-line no-case-declarations
         const skipInterval = setInterval(() => {

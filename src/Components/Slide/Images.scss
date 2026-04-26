@@ -25,6 +25,9 @@ $maxHeightShort: 583px;
   image-rendering: high-quality;
   image-resolution: from-image;
   z-index: 1;
+  @container style(--pixelMode: true) {
+    filter: url(#pixelate);
+  }
   /*filter: url(#innershadow)*/
 }
 
