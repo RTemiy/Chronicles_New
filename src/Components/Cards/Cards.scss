@@ -1,0 +1,171 @@
+@import '../Common/Common';
+
+.cards {
+  display: none;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  @extend %show;
+}
+
+.cards__back-button {
+  top: 15px;
+  left: 15px;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  position: fixed;
+  background-image: url(../../Media/Images/UI/icon_back.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-color: $additionalColor;
+  z-index: 2;
+  @extend %button-tap;
+  @extend %styled-border;
+}
+
+.cards_block {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  overflow-y: visible;
+}
+
+.cards__menu{
+  padding: 5px 0;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius
+}
+
+.cards__amount {
+  text-align: center;
+  padding: 0 0 5px 0;
+  margin-bottom: 5px;
+  border-bottom: 5px double rgba(255, 255, 255, 0.2);
+}
+
+.cards__buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow: scroll;
+  padding-bottom: 5px;
+}
+
+.cards__buttons::-webkit-scrollbar:horizontal {
+  height: 8px;
+}
+
+.cards__button {
+  font-size: var(--smalltext);
+  min-width: 120px;
+  padding: 5px;
+  @extend %button-tap;
+  @extend %styled-background;
+  @extend %styled-border;
+  @extend %styled-radius;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 50px 1fr; /* Колонка для картинки и колонка для заголовка */
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 0 10px;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  @extend %styled-border;
+  @extend %show;
+  @extend %styled-radius;
+}
+
+.card_unlocked:hover{
+  grid-template-columns: 1fr; /* Одна колонка для всего */
+  grid-template-rows: auto auto auto; /* Строки для заголовка, картинки и текста */
+  gap: 10px 0;
+
+  .card__image{
+    width: 100%; /* Увеличиваем картинку */
+    height: auto;
+    max-height: 420px; /* Ограничиваем максимальную высоту */
+    object-fit: contain; /* Показываем картинку полностью, без обрезки */
+    justify-self: center; /* Центрируем картинку по горизонтали */
+    grid-row: 2; /* Картинка теперь во второй строке */
+    grid-column: 1;
+    border-radius: 15px;
+  }
+
+  .card__title{
+    grid-row: 1; /* Заголовок в первой строке */
+    grid-column: 1;
+    text-align: center;
+    margin: 0;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+  }
+
+  .card__text{
+    visibility: visible;
+    opacity: 1;
+    grid-row: 3; /* Текст в третьей строке */
+    grid-column: 1;
+    height: auto;
+    max-height: 500px; /* Даем пространство для появления */
+    margin-top: 10px; /* Возвращаем отступ в раскрытом виде */
+    padding: 10px 5px 0 5px; /* Возвращаем padding */
+    border-top: 1px white solid; /* Возвращаем границу */
+  }
+}
+
+.card:last-of-type {
+  margin-bottom: 90px;
+}
+
+.card__image {
+  grid-row: 1;
+  grid-column: 1;
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  @extend %styled-radius;
+  object-position: top;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__title {
+  grid-row: 1;
+  grid-column: 2;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__text {
+  grid-column: 1 / -1; /* Растягиваем на все колонки */
+  border-top: 0px solid white; /* Убираем границу в свернутом виде */
+  padding: 0 5px; /* Убираем вертикальные padding */
+  margin: 0; /* Убираем отступ в свернутом виде */
+  width: 80vw;
+  max-width: 360px;
+  visibility: hidden;
+  opacity: 0;
+  height: 0; /* Схлопываем по умолчанию, чтобы не занимало места */
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+}

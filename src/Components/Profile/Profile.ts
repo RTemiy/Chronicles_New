@@ -4,11 +4,11 @@ import './Avatars.scss'
 import './Events.scss'
 import './Promocodes.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
-import { achievementsManager, storiesManager, tabManagerMenu } from '../../index'
+import { achievementsManager, cardsManager, storiesManager, tabManagerMenu } from '../../index';
 import Achievements from '../Achievements/Achievements'
 import CProfile from '../../Classes/CProfile'
 import { addBook } from '../Books/Books'
-import checkPromoCode, { getUsedPromoCodes } from '../../Functions/checkPromoCode';
+import checkPromoCode, { getUsedPromoCodes } from '../../Functions/checkPromoCode'
 import { showMessage } from '../MenuMessage/MenuMessage'
 import { getEventsHTML } from './events'
 import { sendActivity } from '../../Functions/GSAPI'
@@ -17,8 +17,9 @@ import saveScreenshot from '../../Functions/screenshot'
 import makeExplosion from '../../Functions/explosion'
 import { transformMinutes } from '../../Functions/transformMinutes'
 import { DEVMODE } from '../../Utils/technicalConsts'
-import { changeState } from '../../Functions/backEventActions';
-import { getCurrentEventImageSVG } from '../../Utils/eventManager';
+import { changeState } from '../../Functions/backEventActions'
+import { getCurrentEventImageSVG } from '../../Utils/eventManager'
+import Cards from '../Cards/Cards';
 
 export const Profile = new CContainer(
   'profile',
@@ -54,6 +55,9 @@ export const Profile = new CContainer(
 	<div class="profile__container">
 		<button id="achievementsButton" class="profile__button" type="button"></button>
 	</div>
+	<div class="profile__container">
+		<button id="cardsButton" class="profile__button" type="button">Коллекция</button>
+	</div>
 	<div class="profile__category">
 	  <p class="profile__category-title">Награды за события</p>
 	  <div class="profile__events"></div>
@@ -82,6 +86,7 @@ export const Profile = new CContainer(
 	{ name: 'spentTime', selector: '#spentTime' },
 	{ name: 'wastedBooks', selector: '#wastedBooks' },
 	{ name: 'achievementsButton', selector: '#achievementsButton' },
+  { name: 'cardsButton', selector: '#cardsButton' },
 	{ name: 'avatar', selector: '.profile__image' },
 	{ name: 'banner', selector: '.profile__banner' },
 	{ name: 'screenshotButton', selector: '.profile__screenshot' },
@@ -102,6 +107,7 @@ export function renderProfile (): void {
   const partsInfo = storiesManager.getPartsInfo()
   Profile.completedParts.innerHTML = String(partsInfo.beginnedStories) + '/' + String(partsInfo.allStories)
   Profile.achievementsButton.innerHTML = `<img class="books__icon" src="${getCurrentEventImageSVG('icon_achievements')}"/>` + 'Достижения: ' + achievementsManager.getAchievementsAmount() + `<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>`
+  Profile.cardsButton.innerHTML = `<img class="books__icon" src="${getCurrentEventImageSVG('icon_cards')}"/>` + 'Коллекция: ' + cardsManager.getCardsAmount() + `<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>`
   Profile.spentTime.innerHTML = transformMinutes(parseInt(loadData(['Profile', 'TimeSpent'])!))
   Profile.wastedBooks.innerHTML = String(loadData(['Profile', 'BooksWasted'])!)
   Profile.events.innerHTML = getEventsHTML()
@@ -121,6 +127,12 @@ Profile.name.onblur = () => {
 Profile.achievementsButton.onclick = () => {
   tabManagerMenu.open(Achievements.self)
   achievementsManager.render()
+  changeState('achievements')
+}
+
+Profile.cardsButton.onclick = () => {
+  tabManagerMenu.open(Cards.self)
+  cardsManager.render()
   changeState('achievements')
 }
 
