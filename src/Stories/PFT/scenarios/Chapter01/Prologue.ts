@@ -1,6 +1,5 @@
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { whiteFlash, vhs } from '../../../../Components/Slide/Slide'
 import { firstChoiceMessage, inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
 scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глава 1', partName: 'Пролог', code: '0' }, [
   {
@@ -3282,7 +3281,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.PFT, chapterName: 'Глав�
     buttons: [
       {
         text: '',
-        goTo: 163
+        goTo: 162
       }],
     message: 'Вы хотите сохранять связи, несмотря ни на что.',
     achievement: { story: EStoriesEn.PFT, name: 'FriendshipKeeper' },

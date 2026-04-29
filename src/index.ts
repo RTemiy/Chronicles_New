@@ -48,15 +48,15 @@ import { initTapTap } from './Functions/tapTap'
 import { showOKMessage } from './Components/OKMessage/OKMessage'
 import { getCurrentEventImageJPG } from './Utils/eventManager'
 import menuToolbar from './Components/MenuToolbar/MenuToolbar'
-import { makeDevErrorAlerts } from './Functions/devErrorsAlert';
-import Cards, { renderCards } from './Components/Cards/Cards';
-import CCardsManager from './Classes/CCardsManager';
+import { makeDevErrorAlerts } from './Functions/devErrorsAlert'
+import Collection, { renderCollection } from './Components/Collection/Collection'
+import CCollectionManager from './Classes/CCollectionManager'
 
 require('./sevice-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
 addlistenerandroidbackbutton()
 
-export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self, Profile.self, Shop.self, Cards.self)
+export const tabManagerMenu = new CElementManager(Settings.self, Achievements.self, Stories.self, Chapters.self, Parts.self, Credits.self, Profile.self, Shop.self, Collection.self)
 tabManagerMenu.addElementTo(Chapters.self, Books.self)
 tabManagerMenu.addElementTo(Stories.self, Books.self)
 tabManagerMenu.addElementTo(Parts.self, Books.self)
@@ -64,7 +64,7 @@ tabManagerMenu.open(Stories.self)
 
 export const storiesManager = new CStoriesManager(renderStories)
 export const achievementsManager = new CAchievementsManager(renderAchievements)
-export const cardsManager = new CCardsManager(renderCards)
+export const cardsManager = new CCollectionManager(renderCollection)
 export const statsManager = new CStatsManager()
 export const soundManager = new CSoundSystem(require('./Media/Audio/Common/Silence.mp3'), require('./Media/Audio/Common/Notification.mp3'), [require('./Media/Audio/Common/Menu01.mp3'), require('./Media/Audio/Common/Menu02.mp3'), require('./Media/Audio/Common/Menu03.mp3'), require('./Media/Audio/Common/Menu04.mp3')])
 export const wardrobe = new CWardrobe(Wardrobe)

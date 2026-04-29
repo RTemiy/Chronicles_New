@@ -19,7 +19,7 @@ import { transformMinutes } from '../../Functions/transformMinutes'
 import { DEVMODE } from '../../Utils/technicalConsts'
 import { changeState } from '../../Functions/backEventActions'
 import { getCurrentEventImageSVG } from '../../Utils/eventManager'
-import Cards from '../Cards/Cards';
+import Collection from '../Collection/Collection';
 
 export const Profile = new CContainer(
   'profile',
@@ -131,7 +131,7 @@ Profile.achievementsButton.onclick = () => {
 }
 
 Profile.cardsButton.onclick = () => {
-  tabManagerMenu.open(Cards.self)
+  tabManagerMenu.open(Collection.self)
   cardsManager.render()
   changeState('achievements')
 }

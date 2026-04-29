@@ -50,7 +50,7 @@ achievementsManager.add({
 })
 
 achievementsManager.add({
-  name: 'NoTime',
+  name: 'Chapter01Part01Completed',
   image: require('../../Media/Images/F/Achievements/NoTime.png'),
   title: 'Времени нет',
   text: 'Тик-так, выбирай: либо эдак, либо так',

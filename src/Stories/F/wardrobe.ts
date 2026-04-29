@@ -32,14 +32,14 @@ wardrobe.addEntity('Konstantin_Part02', [
   {
     image: require('../../Media/Images/F/Persons/Konstantin_Retro_Loose.png'),
     title: 'Ретро-стиль (распущенные)',
-    description: 'Харизматичность и утончённость с нотками винтажа…',
+    description: 'Харизматичность и утончённость с нотками винтажа.',
     cost: 'long',
     unlocked: () => { return true }
   },
   {
     image: require('../../Media/Images/F/Persons/Konstantin_Retro_Ponytail.png'),
     title: 'Ретро-стиль (хвост)',
-    description: 'Харизматичность и утончённость с нотками винтажа…',
+    description: 'Харизматичность и утончённость с нотками винтажа.',
     cost: 'long',
     unlocked: () => { return true }
   }

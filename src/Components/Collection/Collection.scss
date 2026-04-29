@@ -4,7 +4,7 @@
   display: none;
   flex-direction: column;
   max-width: 400px;
-  margin: 0 auto;
+  margin: auto;
   @extend %show;
 }
 
@@ -74,8 +74,7 @@
 
 .cards__container {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
 }
 
@@ -86,9 +85,7 @@
   align-items: center;
   gap: 0 10px;
   padding: 10px;
-  margin: 10px;
   position: relative;
-  overflow: hidden;
   transition: all 0.3s ease-in-out;
   @extend %styled-border;
   @extend %show;
@@ -168,4 +165,33 @@
   height: 0; /* Схлопываем по умолчанию, чтобы не занимало места */
   max-height: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.card__description{
+  position: absolute;
+  font-size: var(--smalltext);
+  bottom: 10px; /* 50px (высота картинки) + 10px (отступ) */
+  left: 10px; /* Отступ слева, как у карточки */
+  width: calc(100% - 20px); /* Ширина карточки минус отступы */
+  padding: 10px;
+  font-style: italic;
+  box-sizing: border-box; /* Включаем padding в общие размеры */
+  background-color: rgba(20, 52, 56, 0.6);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease-in-out;
+  pointer-events: none; /* Чтобы не мешать другим hover-эффектам */
+  @extend %styled-radius;
+}
+
+.card__image:hover ~ .card__description {
+  visibility: visible;
+  opacity: 1;
 }

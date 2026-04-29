@@ -22,7 +22,7 @@ export enum EStoriesEn {
 
 export enum EStoriesAvailable {
   Aurora = 1,
-  ROR = 1,
+  ROR = 0,
   FOF = 1,
   AEP = 1,
   MM = 1,

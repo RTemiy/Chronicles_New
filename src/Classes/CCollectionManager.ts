@@ -1,8 +1,8 @@
 import { EStoriesAvailable, type EStoriesEn } from '../Utils/EStoriesNames'
 import { getCurrentEventImageSVG } from '../Utils/eventManager'
-import type ICard from '../Types/ICards'
+import type ICard from '../Types/ICard'
 
-export default class CCardsManager {
+export default class CCollectionManager {
   #cards: Record<string, ICard> = {}
   readonly render: () => void
 
@@ -43,6 +43,7 @@ export default class CCardsManager {
         <p class="card__title">${this.#cards[prop].title}</p>
         <img class="card__image ${this.#cards[prop].unlockCondition() && 'shimmering_image'} " src="${this.#cards[prop].unlockCondition() ? this.#cards[prop].image : getCurrentEventImageSVG('icon_lock')}">
         <p class="card__text">${this.#cards[prop].text}</p>
+        <p class="card__description">${this.#cards[prop].description}</p>
       </div>
       `)
       }

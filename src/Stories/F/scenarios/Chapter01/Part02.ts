@@ -1,6 +1,7 @@
-import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
-import { EStoriesEn } from '../../../../Utils/EStoriesNames'
-import { askedAmount, choiceDone, getChoice, resetChoices } from '../../../../Functions/5Choices'
+import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index';
+import { EStoriesEn } from '../../../../Utils/EStoriesNames';
+import { askedAmount, choiceDone, getChoice, resetChoices } from '../../../../Functions/5Choices';
+import { saveToCollection } from '../../../../Functions/saveToCollection';
 
 scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл', partName: 'Часть 2', code: '0' }, [
   {
@@ -9925,7 +9926,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerR: 'Алиса',
     fullscreenObjectR: require('../../../../Media/Images/F/Persons/Alice_Home.png'),
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Bedroom_Alice.jpg')
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
   },
 
   {
@@ -9939,7 +9940,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 642
       }],
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Bedroom_Alice.jpg')
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
   },
 
   {
@@ -9953,7 +9954,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         text: '',
         goTo: 643
       }],
-    imageBack: require('../../../../Media/Images/F/Backgrounds/Bedroom_Alice.jpg')
+    imageBack: require('../../../../Media/Images/F/Backgrounds/Livingroom_Alice_Night.jpg')
   },
 
   {
@@ -10108,6 +10109,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         func: () => {
           choiceDone(0)
           scenarioManager.changeSceneButtonStatus(653, 0, getChoice(0))
+          saveToCollection(EStoriesEn.F, 'Photo')
           if (askedAmount(2)) {
             choiceDone(0)
             choiceDone(1)
@@ -10122,6 +10124,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         func: () => {
           choiceDone(1)
           scenarioManager.changeSceneButtonStatus(653, 1, getChoice(1))
+          saveToCollection(EStoriesEn.F, 'Shelf')
           if (askedAmount(2)) {
             choiceDone(0)
             choiceDone(1)
@@ -10136,6 +10139,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         func: () => {
           choiceDone(2)
           scenarioManager.changeSceneButtonStatus(653, 2, getChoice(2))
+          saveToCollection(EStoriesEn.F, 'Window')
           if (askedAmount(2)) {
             choiceDone(0)
             choiceDone(1)
@@ -10150,6 +10154,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
         func: () => {
           choiceDone(3)
           scenarioManager.changeSceneButtonStatus(653, 3, getChoice(3))
+          saveToCollection(EStoriesEn.F, 'Bed')
           if (askedAmount(2)) {
             choiceDone(0)
             choiceDone(1)
@@ -15785,7 +15790,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.F, chapterName: 'Спешл'
       }],
     speakerL: 'Константин',
     fullscreenObjectL: require('../../../../Media/Images/F/Persons/Konstantin_Coat.png'),
-    achievement: { story: EStoriesEn.F, name: 'NoTime' },
+    achievement: { story: EStoriesEn.F, name: 'Chapter01Part01Completed' },
     imageBack: require('../../../../Media/Images/F/Backgrounds/Street_Near_Home_Day.jpg')
   }
 ])

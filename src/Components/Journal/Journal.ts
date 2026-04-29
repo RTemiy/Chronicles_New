@@ -26,7 +26,8 @@ Journal.closeJournalButton.onclick = () => {
 export function renderJournal (): void {
   const data = loadData(['LastSave_ScenarioInfo'])!.split('_')
   const storyName = EStoriesEn[data[0]]
-  const chapter = parseInt(data[1].split(' ')[1])
+  let chapter: any = data[1]
+  chapter === 'Спешл' ? (chapter = 1) : chapter = parseInt(data[1].split(' ')[1])
   let part: any = data[2]
   part === 'Пролог' ? (part = 0) : part = parseInt(part.split(' ')[1])
   Journal.journal.innerHTML = journal.getHTML(storyName, chapter, part)

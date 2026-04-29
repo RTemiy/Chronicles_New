@@ -6,5 +6,6 @@ export default interface ICard {
   title: string
   text: string
   image: string
+  description: string
   unlockCondition: () => boolean
 }

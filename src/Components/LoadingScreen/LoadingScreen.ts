@@ -45,6 +45,7 @@ export function setIsShowingLoadingScreenFalse (): void {
 
 export function hideLoadingScreen (): void {
   LoadingScreen.self.style.zIndex = '-1000'
+  LoadingScreen.self.style.display = 'none'
   LoadingScreen.backgroundImage.src = require('../../Media/Images/UI/transparent_placeholder.png')
   LoadingScreen.backgroundBlurredImage.src = require('../../Media/Images/UI/transparent_placeholder.png')
   LoadingScreen.backgroundBlurredImage.style.display = 'none'
@@ -60,6 +61,7 @@ export function showBlurredBackground (backgroundImage: string): void {
     LoadingScreen.self.onclick = () => {}
     LoadingScreen.backgroundBlurredImage.style.display = 'block'
     LoadingScreen.self.style.zIndex = '-1000'
+    LoadingScreen.self.style.display = 'none'
     LoadingScreen.backgroundImage.style.display = 'none'
     LoadingScreen.loadingPercent.style.display = 'none'
     LoadingScreen.continueButton.style.display = 'none'

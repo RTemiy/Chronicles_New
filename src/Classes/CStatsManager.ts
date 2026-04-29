@@ -54,6 +54,11 @@ export default class CStatsManager {
         } else if (code !== undefined) {
           saveData([storyName, chapterName, partName, code, 'Unlocked'], [1])
           saveData([storyName, chapterName, partName, code, stat.category, stat.id], [stat.value, stat.show])
+          if (stat.category === 'Person') {
+            const presentValue = loadData([storyName, stat.category, stat.id])
+            presentValue !== null && (parseInt(presentValue) < stat.value!) && saveData(['Collection', storyName, stat.category, stat.id], [stat.value])
+            presentValue === null && saveData(['Collection', storyName, stat.category, stat.id], [stat.value])
+          }
         }
       }
     })

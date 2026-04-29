@@ -7,7 +7,7 @@ storiesManager.add({
   title: require('../../Media/Images/UL/Covers/Title.png'),
   description: 'Прогулка с подругой заканчивается для героини в больнице. Но это еще не все: каждое лицо кажется теперь чужим. Кто ее друг, а кто враг — неизвестно. Что же ей делать: пытаться вернуть прошлую жизнь или обрести новую?',
   genre: 'Романтика, Драма',
-  status: 'Временная история',
+  status: 'Старый формат',
   chapters: [{
     name: 'Глава 1',
     image: require('../../Media/Images/UL/Backgrounds/Rooftop.jpg'),
