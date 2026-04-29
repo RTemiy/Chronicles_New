@@ -55,7 +55,7 @@ profileManager.addAvatars([
   {
     id: 'F_Irina_Coat',
     image: require('../../Media/Images/F/Persons/Irina_Coat_Avatar.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'NoTime')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Chapter01Part01Completed')
   }
 ])
 
@@ -63,6 +63,6 @@ profileManager.addAvatars([
   {
     id: 'F_Konstantin_Trousers',
     image: require('../../Media/Images/F/Persons/Konstantin_Trousers_Avatar.png'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'NoTime')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Chapter01Part01Completed')
   }
 ])

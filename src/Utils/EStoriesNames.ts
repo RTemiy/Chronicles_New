@@ -3,8 +3,8 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
-  F = 'F',
   PFT = 'PFT',
+  F = 'F',
   ITLH = 'ITLH',
   TDP = 'TDP',
   MM = 'MM',

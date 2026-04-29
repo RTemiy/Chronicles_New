@@ -45,6 +45,13 @@ wardrobe.addEntity('Chapter01_Part01_Dress', [
     description: 'Соответствует настроению.',
     cost: 'long',
     unlocked: () => { return true }
+  },
+  {
+    image: require('../../Media/Images/PFT/Persons/Wendy_Princess.png'),
+    title: 'Принцесса',
+    description: 'Образ с характером, вдохновлённый стариной.',
+    cost: 'long',
+    unlocked: () => { return true }
   }
 ])
 
@@ -137,6 +144,36 @@ wardrobe.addVariation('Chapter01_Part01_Dress', [
     image: require('../../Media/Images/PFT/Persons/Wendy_Behaviour_Puzzled.png'),
     variation: 'Puzzled',
     originalId: 3,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/PFT/Persons/Wendy_Princess.png'),
+    variation: 'Tears',
+    originalId: 4,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/PFT/Persons/Wendy_Princess.png'),
+    variation: 'Alert',
+    originalId: 4,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/PFT/Persons/Wendy_Princess.png'),
+    variation: 'Confused',
+    originalId: 4,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/PFT/Persons/Wendy_Princess.png'),
+    variation: 'Smirk',
+    originalId: 4,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/PFT/Persons/Wendy_Princess.png'),
+    variation: 'Puzzled',
+    originalId: 4,
     unlocked: () => { return false }
   }
 ])

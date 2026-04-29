@@ -53,6 +53,6 @@ profileManager.addBanners([
   {
     id: 'F_WitchRoom',
     image: require('../../Media/Images/F/Backgrounds/Room_Witch.jpg'),
-    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'NoTime')
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.F, 'Chapter01Part01Completed')
   }
 ])

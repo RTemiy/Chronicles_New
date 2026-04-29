@@ -43,6 +43,11 @@ export const promoCodes = [
     code: 'vcbdfrtyhjk',
     description: '<b>Memento Mori</b> <p>- <i>Закрытый комплект</i></p>',
     innerCode: 'Shop_ShopId7'
+  },
+  {
+    code: 'ptktyfzghbywtccf',
+    description: '<b>Пациентка из 307</b> <p>- <i>Принцесса</i></p>',
+    innerCode: 'Shop_ShopId8'
   }
   /* {
     code: 'qly52axc',

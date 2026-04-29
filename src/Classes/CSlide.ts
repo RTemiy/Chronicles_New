@@ -5,14 +5,13 @@ import type CContainer from './CContainer'
 import { type IButton } from '../Types/IScene'
 import { loadData } from '../Functions/localStorageManager'
 import { showAd } from '../Functions/advertisement'
-import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from '../Utils/technicalConsts';
+import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from '../Utils/technicalConsts'
 import { hideLoadingScreen } from '../Components/LoadingScreen/LoadingScreen'
-
 import { changeState } from '../Functions/backEventActions'
 import { doVibrate } from '../Functions/doVibrate'
-import typingText from '../Functions/typingText';
-import menuToolbar from '../Components/MenuToolbar/MenuToolbar';
-import { disableAll } from '../Components/Slide/Slide';
+import typingText from '../Functions/typingText'
+import menuToolbar from '../Components/MenuToolbar/MenuToolbar'
+import { disableAll } from '../Components/Slide/Slide'
 
 export default class CSlide {
   private previousSlideText = ''
@@ -39,7 +38,7 @@ export default class CSlide {
   showOKMessage (OKMessageInfo: { image: string, buttonText: string, goTo: () => void }): void {
     this.showOKMessageFunc(OKMessageInfo)
     setTimeout(() => {
-      this.soundManager.play('simple', require('../Media/Audio/Common/Notification.mp3'))
+      this.soundManager.play('simple', require('../Media/Audio/Common/Notification_New.mp3'))
       doVibrate('short')
     }, 2500)
   }

@@ -13,6 +13,17 @@ export const shopItems = [
     available: true
   },
   {
+    id: 0,
+    category: 'Гардероб',
+    title: 'Принцесса',
+    description: 'Пациентка из 307 <p>Глава 1 Часть 1.</p><p>⠀</p><i>Образ с характером, вдохновлённый стариной.</i>',
+    cost: '39',
+    image: require('../Media/Images/PFT/Persons/Wendy_Princess_Avatar.png'),
+    free: true,
+    action: () => { checkPromoCode('ptktyfzghbywtccf') },
+    available: true
+  },
+  {
     id: 2,
     category: 'Интерьер',
     title: 'Уединение',
