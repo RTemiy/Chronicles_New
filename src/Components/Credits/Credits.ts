@@ -84,7 +84,7 @@ export const Credits = new CContainer(
 <p class="credits__name">Ксюша Энтелис</p>
 
 
-<h2 class="credits__subtitle">Пациантка из 307</h2>
+<h2 class="credits__subtitle">Пациентка из 307</h2>
 
 <p class="credits__role">АВТОР СЦЕНАРИЯ</p>
 <p class="credits__name">Мари Ам</p>

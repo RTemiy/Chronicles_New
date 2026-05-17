@@ -1,9 +1,9 @@
 import type IStory from '../Types/IStory'
 import { loadData } from '../Functions/localStorageManager'
 import { EStoriesAvailable } from '../Utils/EStoriesNames'
-import { ANDROIDMODE, DESKTOPMODE } from '../Utils/technicalConsts';
-import { achievementsManager } from '../index';
-import { getCurrentEventImageSVG } from '../Utils/eventManager';
+import { ANDROIDMODE, DESKTOPMODE } from '../Utils/technicalConsts'
+import { achievementsManager } from '../index'
+import { getCurrentEventImageSVG } from '../Utils/eventManager'
 
 export default class CStoriesManager {
   #stories: IStory[] = []
@@ -93,7 +93,7 @@ export default class CStoriesManager {
         EStoriesAvailable[story.name] === 1 && (result += `
       <div class="story">
         <div class="story__image-container">
-            <video autoplay muted loop playsinline class="story__image"><source src="${story.video}" type="video/mp4"/></video>
+            <video muted loop playsinline class="story__image" poster="${story.image}"><source src="${story.video}"  type="video/mp4"/></video>
             ${(story.mature === true) ? '<p class="story__mature">18+</p>' : ''}
             ${(story.status !== undefined) ? '<p class="story__status">' + story.status + '</p>' : ''}
             <div class="story__achievements-amount"><img src="${getCurrentEventImageSVG('icon_achievements')}" class="icon_span"><p>${achievementsManager.getAchievementsAmount(story.name)}</p></div>

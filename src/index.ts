@@ -51,8 +51,10 @@ import menuToolbar from './Components/MenuToolbar/MenuToolbar'
 import { makeDevErrorAlerts } from './Functions/devErrorsAlert'
 import Collection, { renderCollection } from './Components/Collection/Collection'
 import CCollectionManager from './Classes/CCollectionManager'
+import { Auth, handleSuccessfulLogin } from './Components/Auth/Auth'
+import { checkAuthStatus, getGameDataFromLocalStorage, updateUserData } from './Functions/chroniclesServerAPI'
 
-require('./sevice-worker')
+require('./service-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
 addlistenerandroidbackbutton()
 
@@ -129,6 +131,49 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
 startBooksTimer()
 initTapTap()
 
+/**
+ * Проверяет, нужно ли синхронизировать данные, и выполняет синхронизацию или предлагает авторизоваться.
+ */
+async function handleDailySync (): Promise<void> {
+  const LAST_SYNC_KEY = 'lastDataSyncTimestamp'
+  const now = new Date().getTime()
+  const lastSync = localStorage.getItem(LAST_SYNC_KEY)
+  const oneDay = 24 * 60 * 60 * 1000 // 24 часа в миллисекундах
+
+  // Синхронизируемся, если записи нет или прошел день
+  if (!lastSync || (now - parseInt(lastSync, 10)) > oneDay) {
+    console.log('Требуется ежедневная синхронизация данных.')
+
+    const authData = await checkAuthStatus()
+
+    if (authData) {
+      // Пользователь авторизован, отправляем данные в фоне
+      console.log('Пользователь авторизован. Синхронизация данных...')
+      const localData = getGameDataFromLocalStorage()
+      const success = await updateUserData(localData)
+      if (success) {
+        localStorage.setItem(LAST_SYNC_KEY, now.toString())
+        console.log('Синхронизация завершена успешно.')
+      }
+      // Инициализируем данные пользователя в любом случае
+      handleSuccessfulLogin(authData)
+    } else {
+      // Пользователь не авторизован, показываем окно входа с флагом для синхронизации
+      console.log('Пользователь не авторизован. Отображение окна входа для синхронизации.')
+      Auth.self.dataset.shouldSync = 'true' // Устанавливаем флаг
+      document.body.appendChild(Auth.self)
+      Auth.self.style.display = 'flex'
+    }
+  } else {
+    // Синхронизация не требуется, просто проверяем статус входа
+    // const authData = await checkAuthStatus()
+    // if (authData){
+    handleSuccessfulLogin({})
+    // }
+  }
+}
+
+handleDailySync()
 DESKTOPMODE && document.body.classList.add('main-bg-anim')
 DESKTOPMODE && document.body.style.setProperty('--desktopmode', 'true')
 

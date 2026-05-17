@@ -1,7 +1,6 @@
 import type IStat from '../Types/IStat'
 import { type EStoriesEn } from '../Utils/EStoriesNames'
 import { loadData, saveData } from '../Functions/localStorageManager'
-import { sendActivity } from '../Functions/GSAPI'
 
 export default class CStatsManager {
   #stats: Record<string, IStat> = {}
@@ -30,7 +29,6 @@ export default class CStatsManager {
         statInfo.value! !== -100500 && (stat.show = 1)
       }
     }
-    sendActivity(`Выбирает ${stat.story} ${stat.id} ${stat.value}`)
   }
 
   get (statInfo: IStat): number {

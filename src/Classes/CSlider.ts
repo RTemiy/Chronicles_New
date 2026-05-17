@@ -86,6 +86,7 @@ export default class CSlider {
       if (DESKTOPMODE || ANDROIDMODE) {
         const video = child.querySelector('.' + this.videoSelector)!
         video.pause()
+        video.currentTime = 0
         index === 0 && video.play()
       }
       child.setAttribute('style', `z-index: ${-index};`)
@@ -151,6 +152,7 @@ export default class CSlider {
 
   #getContainerChildren (containerElement: HTMLElement): HTMLElement[] {
     const array = []
+    // @ts-ignore
     for (const child of containerElement.children as HTMLCollectionOf<HTMLElement>) {
       array.push(child)
     }

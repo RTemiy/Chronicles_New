@@ -1,6 +1,5 @@
 import CContainer from '../../Classes/CContainer'
 import './Rate.scss'
-import { sendActivity } from '../../Functions/GSAPI'
 import makeExplosion from '../../Functions/explosion'
 
 const Rate = new CContainer('rate',
@@ -57,7 +56,7 @@ function renderRating (): void {
 }
 
 function sendRating (): void {
-  sendActivity(`Отзыв на ${storyData}. Звезды: ${rating + 1}. Комментарий: ${Rate.input.value}`)
+
 }
 
 Rate.sendButton.onclick = () => {

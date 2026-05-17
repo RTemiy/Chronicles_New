@@ -2,9 +2,7 @@ import CContainer from '../../Classes/CContainer'
 import './Policy.scss'
 import { loadData, saveData } from '../../Functions/localStorageManager'
 import { route } from '../../Utils/textConsts'
-import { checkUser, sendActivity } from '../../Functions/GSAPI'
-import generateUserToken from '../../Functions/generateUserToken'
-import { ANDROIDMODE, DESKTOPMODE, DEVMODE } from '../../Utils/technicalConsts';
+import { DESKTOPMODE } from '../../Utils/technicalConsts'
 
 const Policy = new CContainer('policy',
 	`
@@ -23,12 +21,6 @@ export function showPolicy (): void {
     localStorage.clear()
     Policy.self.style.display = 'flex'
     DESKTOPMODE && (accept())
-  } else {
-    if (loadData(['Profile', 'ID']) === null) {
-      validateUser()
-    } else {
-      sendActivity('Запускает игру')
-    }
   }
 }
 
@@ -45,18 +37,5 @@ function accept (): void {
   saveData(['Profile', 'Banner'], ['Default'])
   saveData(['Profile', 'TimeSpent'], [0])
   saveData(['Profile', 'BooksWasted'], [0])
-  !DESKTOPMODE && !DEVMODE && !ANDROIDMODE && validateUser()
-  sendActivity('Подтверждает ПК')
 }
 
-function validateUser (): void {
-  const timer = setInterval(() => {
-    const user = generateUserToken()
-    checkUser(user).then((res: { userFound: string }) => {
-      if (res.userFound !== user) {
-        clearInterval(timer)
-        saveData(['Profile', 'ID'], [user])
-      }
-    })
-  }, 5000)
-}

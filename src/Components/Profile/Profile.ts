@@ -11,7 +11,6 @@ import { addBook } from '../Books/Books'
 import checkPromoCode, { getUsedPromoCodes } from '../../Functions/checkPromoCode'
 import { showMessage } from '../MenuMessage/MenuMessage'
 import { getEventsHTML } from './events'
-import { sendActivity } from '../../Functions/GSAPI'
 import { Slide } from '../Slide/Slide'
 import saveScreenshot from '../../Functions/screenshot'
 import makeExplosion from '../../Functions/explosion'
@@ -121,7 +120,7 @@ Profile.name.oninput = () => {
 }
 
 Profile.name.onblur = () => {
-  sendActivity(`Установил имя ${Profile.name.value}`)
+
 }
 
 Profile.achievementsButton.onclick = () => {

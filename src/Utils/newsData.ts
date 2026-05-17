@@ -1,4 +1,4 @@
-export const newsDate = '25.12.2025'
+export const newsDate = '30.04.2026'
 
 export const news = {
   '10.09.2025': `

@@ -1,8 +1,7 @@
 import type IAchievement from '../Types/IAchievement'
 import { EStoriesAvailable, type EStoriesEn } from '../Utils/EStoriesNames'
 import { loadData, saveData } from '../Functions/localStorageManager'
-import { sendActivity } from '../Functions/GSAPI'
-import { getCurrentEventImageSVG } from '../Utils/eventManager';
+import { getCurrentEventImageSVG } from '../Utils/eventManager'
 
 export default class CAchievementsManager {
   #achievements: Record<string, IAchievement> = {}
@@ -62,7 +61,6 @@ export default class CAchievementsManager {
     const achievement = this.#achievements[story + '_' + name]
     achievement.unlocked = true
     saveData(['Achievements', story, name], [true])
-    sendActivity(`Открывает достижение ${achievement.story}:${achievement.name}`)
     return {
       title: achievement.title,
       text: achievement.text,

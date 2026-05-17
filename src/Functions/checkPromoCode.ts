@@ -1,6 +1,5 @@
 import { promoCodes } from '../Utils/promoCodes'
 import { showMessage } from '../Components/MenuMessage/MenuMessage'
-import { sendActivity } from './GSAPI'
 import { loadData, saveData } from './localStorageManager';
 
 export default function checkPromoCode (code: string): void {
@@ -14,7 +13,6 @@ export default function checkPromoCode (code: string): void {
     }
   })
   if (result) {
-    sendActivity(`Применяет промокод ${code}`)
     showMessage(`Получилось!<p>${des}`, 'Принять')
   } else {
     showMessage('Такого промокода нет', 'Ок')

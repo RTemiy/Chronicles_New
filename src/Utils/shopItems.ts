@@ -13,7 +13,7 @@ export const shopItems = [
     available: true
   },
   {
-    id: 0,
+    id: 8,
     category: 'Гардероб',
     title: 'Принцесса',
     description: 'Пациентка из 307 <p>Глава 1 Часть 1.</p><p>⠀</p><i>Образ с характером, вдохновлённый стариной.</i>',
@@ -99,5 +99,5 @@ export const shopItems = [
     free: true,
     action: () => { checkPromoCode('vcbdfrtyhjk') },
     available: false
-  },
+  }
 ]

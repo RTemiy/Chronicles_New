@@ -9,12 +9,17 @@ import { route } from '../../Utils/textConsts'
 import { MenuMessage, showMessage } from '../MenuMessage/MenuMessage'
 import { showAd } from '../../Functions/advertisement'
 import makeExplosion from '../../Functions/explosion'
-import downloadProgress from '../../Functions/downloadProgress'
 import { setWindowScale, toggleFullscreen } from '../../Functions/desktopFuncs'
 import { ANDROIDMODE, DESKTOPMODE } from '../../Utils/technicalConsts'
 import { SlideStatAlert } from '../SlideStatAlert/SlideStatAlert'
 import { showNews } from '../../Functions/showNews'
 import { doVibrate } from '../../Functions/doVibrate'
+import {
+  checkAuthStatus,
+  getGameDataFromLocalStorage, getUserData,
+  logoutUser,
+  updateUserData,
+} from '../../Functions/chroniclesServerAPI';
 
 const Settings = new CContainer(
   'settings',
@@ -143,7 +148,7 @@ const Settings = new CContainer(
 		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 	<div class="settings__block">
-		<a href="mailto:mvagamesofficial@gmail.com">Помощь | Сотрудничество</a>
+		<a href="mailto:support@chroniclesgame.ru">Помощь | Сотрудничество</a>
 		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
@@ -157,7 +162,7 @@ const Settings = new CContainer(
 		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
-<div class="settings__container" ${ANDROIDMODE && 'style="display: none"'}>
+<div class="settings__container">
 	<div class="settings__block">
 		<a id="downloadFile">Скачать сохранение</a>
 		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
@@ -173,8 +178,16 @@ const Settings = new CContainer(
 		<a href=".">Проверить обновление</a>
 		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
-	<div class="settings__block">
+	<div class="settings__block" style='display: none'>
 		<a onclick='localStorage.clear(); window.location.reload();' >Удалить все сохранения и настройки</a>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+	</div>
+	<div class="settings__block" style="display: none">
+		<a id="sync-button">Загрузить из облака</a>
+		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
+	</div>
+	<div class="settings__block">
+		<a id="logout-button">Выйти из аккаунта</a>
 		<img src="${require('../../Media/Images/UI/icon_go-right.svg')}" class="icon_span_next"/>
 	</div>
 </div>
@@ -196,7 +209,9 @@ const Settings = new CContainer(
   { name: 'downloadButton', selector: '#downloadFile' },
   { name: 'uploadButton', selector: '#uploadFile' },
   { name: 'uploadInput', selector: '#uploadInput' },
-  { name: 'newsButton', selector: '#news-button' }
+  { name: 'newsButton', selector: '#news-button' },
+  // { name: 'syncButton', selector: '#sync-button' },
+  { name: 'logoutButton', selector: '#logout-button' }
 )
 
 Settings.checkBoxSound.addEventListener('click', () => {
@@ -256,7 +271,7 @@ Settings.checkBoxFont.addEventListener('click', () => {
 })
 
 Settings.creatorsButton.addEventListener('click', () => {
-  document.body.scrollTop = document.documentElement.scrollTop = 0;
+  document.body.scrollTop = document.documentElement.scrollTop = 0
   tabManagerMenu.open(Credits.self)
 })
 
@@ -313,8 +328,30 @@ Settings.req02.onclick = () => {
   })
 }
 
+Settings.logoutButton.onclick = () => {
+  // const localData = getGameDataFromLocalStorage()
+  // updateUserData(localData)
+  logoutUser()
+}
+
+/* Settings.syncButton.onclick = async () => {
+  const authData: any = await getUserData()
+  if (authData) {
+    const userData = JSON.parse(JSON.parse(authData.client_data))
+    console.log(userData)
+    localStorage.clear()
+    for (const key in userData) {
+      localStorage.setItem(key, userData[key])
+    }
+    location.reload()
+  }
+} */
+
 Settings.downloadButton.onclick = () => {
-  downloadProgress()
+  // downloadProgress()
+  navigator.clipboard.writeText(JSON.stringify(localStorage)).then(() => {
+    showMessage('Сохранение успешно скопировано в буфер обмена!', 'Принять')
+  })
 }
 
 function readFile (): void {
@@ -341,12 +378,24 @@ function changeScale (value: 'normal' | 'small'): void {
   }
 }
 
-Settings.uploadButton.addEventListener('click', () => {
-  Settings.uploadInput.click()
+Settings.uploadButton.addEventListener('click', async () => {
+  // Settings.uploadInput.click()
+  let saveText = ''
+  try {
+    saveText = await navigator.clipboard.readText()
+  } catch (err) {
+    console.error('Не удалось получить данные из буфера обмена: ', err)
+  }
+  localStorage.clear()
+  const newSave = JSON.parse(saveText)
+  for (let newSaveKey in newSave) {
+    localStorage.setItem(newSaveKey, newSave[newSaveKey])
+  }
+  location.reload()
 })
 
 Settings.uploadInput.addEventListener('change', () => {
-  readFile()
+  // readFile()
 })
 
 function setFontSize (): void {
