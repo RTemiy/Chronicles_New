@@ -88,8 +88,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       '',
     buttons: [
       {
-        text: '',
-        goTo: 6
+        text: ''
       }],
     wardrobe: { story: EStoriesEn.ITLH, personId: 'Hero_Room', goTo: 6 },
     effect: 'Желтое сияние',
@@ -3110,8 +3109,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.ITLH, chapterName: 'Глав
       '',
     buttons: [
       {
-        text: '',
-        goTo: 205
+        text: ''
       }],
     wardrobe: { story: EStoriesEn.ITLH, personId: 'Breakfast_Chapter01_Part01', goTo: 205 },
     imageBack: require('../../../../Media/Images/ITLH/Backgrounds/Kitchen.png')

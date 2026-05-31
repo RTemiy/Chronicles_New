@@ -109,6 +109,7 @@ preCacheImages(LoadingScreen.loadingPercent, () => {
       LoadingScreen.tapButton.classList.remove('loading-screen__tapImage_start')
       LoadingScreen.tapButton.classList.add('loading-screen__tapImage_after')
       menuToolbar.storiesButton.click()
+      handleDailySync()
     }
   }, DEVMODE ? 1000 : 9000)
 })
@@ -173,7 +174,6 @@ async function handleDailySync (): Promise<void> {
   }
 }
 
-handleDailySync()
 DESKTOPMODE && document.body.classList.add('main-bg-anim')
 DESKTOPMODE && document.body.style.setProperty('--desktopmode', 'true')
 

@@ -212,9 +212,12 @@ Auth.registerForm.addEventListener('submit', async (e: Event) => {
 
   const success = await registerUser(emailInput.value, passwordInput.value)
   if (success) {
-    showMessage('Регистрация прошла успешно! Теперь вы можете войти.', false)
-    // Можно автоматически входить или просто переключить на вкладку входа
-    tabButtons[0].click() // Имитируем клик на вкладку "Вход"
+    showMessage('Подтверждение отправлено на вашу почту. Пожалуйста, проверьте свой email.', false)
+    // Очищаем поля после успешной отправки
+    emailInput.value = ''
+    passwordInput.value = ''
+    emailInput.classList.remove('valid', 'invalid')
+    passwordInput.classList.remove('valid', 'invalid')
   } else {
     showMessage('Ошибка регистрации. Возможно, этот email уже занят.', true)
   }

@@ -3,9 +3,8 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
-  PFT = 'PFT',
-  F = 'F',
   ITLH = 'ITLH',
+  PFT = 'PFT',
   TDP = 'TDP',
   MM = 'MM',
   UA = 'UA',
@@ -15,6 +14,7 @@ export enum EStoriesEn {
   // ISML = 'ISML',
   OTV = 'OTV',
   //
+  F = 'F',
   Katarina = 'Katarina',
   UL = 'UL',
   ROR = 'ROR',
@@ -36,7 +36,7 @@ export enum EStoriesAvailable {
   Katarina = 0,
   UL = 0,
 
-  F = 1
+  F = 0
 
 }
 

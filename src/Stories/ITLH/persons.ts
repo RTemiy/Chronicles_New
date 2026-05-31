@@ -52,25 +52,28 @@ statsManager.add({
   story: EStoriesEn.ITLH
 })
 
-/*statsManager.add({
-  category: 'Person',
-  id: 'Leon',
-  name: 'Леон',
-  image: require('../../Images/ITLH/Persons/Leon_Avatar.png'),
-  title: 'Мы снова общаемся с ним, как в старые добрые времена…',
-  description: 'Мой хороший друг, одногруппник, брат профессора Нэйтана. Леон всегда был очень заботлив и внимателен к окружающим. У него большие планы на жизнь, которые он хочет воплотить в ближайшее время.',
-  story: EStoriesEn.Immortals
-})
-
 statsManager.add({
   category: 'Person',
   id: 'Nicola',
   name: 'Никола',
-  image: require('../../Images/ITLH/Persons/Nicola.png'),
-  title: 'Это он? Великий ученый? Я не схожу с ума?',
-  description: 'Инженер и учёный-физик, изобретатель в области электротехники и радиотехники. «Я не тружусь более для настоящего, я тружусь для будущего».',
-  story: EStoriesEn.Immortals
+  image: require('../../Media/Images/ITLH/Persons/Nicola_Avatar.png'),
+  title: 'Неужели это он — великий ученый?',
+  description: 'Инженер и физик-изобретатель в области электротехники и радиотехники. В прошлом был другом Катарины и имеет определенное отношение к происходящим событиям.',
+  story: EStoriesEn.ITLH
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Leon',
+  name: 'Леон',
+  image: require('../../Media/Images/ITLH/Persons/Leon_Avatar.png'),
+  title: 'Я рада, что Леон вернулся, и мы снова общаемся.',
+  description: 'Лучший друг и брат профессора Нэйтана. Авантюрист с отличным чувством юмора. Внешне легкомыслен, но внутренне сдержан. Всегда готов поддержать близких, независимо от обстоятельств.',
+  story: EStoriesEn.ITLH
+})
+
+
+/*
 
 statsManager.add({
   category: 'Person',
@@ -90,4 +93,5 @@ statsManager.add({
   title: 'Странный мужчина, который одержим Катариной.',
   description: 'Я ничего о нем не знаю. Он определенно внушает страх, но я не могу избавиться от чувства заинтересованности. Мне хочется докопаться до его мотивов. Что я найду в общении с ним? Ответы или только боль?',
   story: EStoriesEn.Immortals
-})*/
+})
+*/

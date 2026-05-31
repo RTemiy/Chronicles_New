@@ -1,0 +1,2188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Chronicles Editor</title>
+	<link rel="icon" type="image/png" href="./src/Images/UI/editor/editor_icon.png" />
+	<meta
+		name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+	/>
+	<style>
+    :root{
+      --main-editor-color: 128, 128, 128;
+      --main-font-size: 18px
+    }
+    * {
+      font-family: SansSerif, sans-serif;
+      font-size: var(--main-font-size);
+    }
+
+    html{
+      scroll-behavior: smooth;
+    }
+
+    body{
+      background-size: 40px 40px;
+      background-image:
+              linear-gradient(to right, rgba(var(--main-editor-color), 1) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(var(--main-editor-color), 1) 1px, transparent 1px);
+      background-attachment: fixed;
+    }
+
+    button, a{
+      border: 0;
+      padding: 10px;
+      margin: 0;
+      cursor: pointer;
+      border-radius: 15px;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:disabled{
+      filter: brightness(70%);
+      cursor: no-drop;
+    }
+
+    button:disabled:hover{
+      background-color: transparent;
+    }
+
+    label{
+      margin: 5px 0 5px 0;
+      padding: 0 0 2px 5px;
+      border-bottom: 1px solid rgba(var(--main-editor-color), 1);
+    }
+
+    input{
+      border: 0;
+      border-radius: 15px;
+      max-width: 250px;
+      padding: 10px;
+      background-color: rgba(var(--main-editor-color), 0.2);
+    }
+
+    select {
+      border: 0;
+      border-radius: 15px;
+      max-width: 270px;
+      padding: 10px;
+      background-color: rgba(var(--main-editor-color), 0.2);
+      cursor: pointer;
+    }
+
+    textarea{
+      border: 1px solid #757575;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+    }
+
+    hr{
+      width: 90%;
+      border: none;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    #uploadInput{
+      display: none;
+    }
+
+    #gammaInput{
+      justify-self: right;
+      width: 25px;
+      height: 25px;
+      padding: 0;
+      margin: 0 0 0 auto;
+    }
+
+    #fontSizeInput{
+      background-color: white;
+      color: black;
+      width: 50px;
+      margin: 0 0 0 auto;
+    }
+
+    #scenarioToTransform, #chatsToTransform{
+      width: 250px;
+      height: 250px;
+    }
+
+    .toolbar-menu{
+      position: fixed;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      left: 0;
+      right: 0;
+      top: 0;
+      background-color: rgba(var(--main-editor-color), 1);
+      padding: 5px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+    }
+
+    .toolbar-button{
+      position: relative;
+    }
+
+    .toolbar-button:hover>.toolbar-category{
+      opacity: 1;
+      visibility: visible;
+      top: 45px;
+    }
+
+    .toolbar-button:hover > .sub-menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0;
+    }
+
+    .toolbar-category-opener{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      text-align: center;
+      margin: 0;
+      border-radius: 15px;
+      color: white;
+      background-color: transparent;
+    }
+
+    .toolbar-category-opener:hover{
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .toolbar-category-opener:hover .toolbar-category{
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .toolbar-category:hover{
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .toolbar-category{
+      position: absolute;
+      top: -50%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      visibility: hidden;
+      opacity: 0;
+      background-color: rgba(var(--main-editor-color), 1);
+      padding: 5px;
+      border-radius: 0 0 15px 15px;
+      min-width: 250px;
+      box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
+      transition: all .2s ease-in-out;
+    }
+
+    .sub-menu {
+      top: 0;
+      left: 100%;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.25) 5px 5px 10px;
+    }
+
+    .toolbar-category-button{
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      text-align: left;
+      border-radius: 15px;
+      background-color: transparent;
+      color: white;
+    }
+
+    .toolbar-category-button:hover{
+      background-color: rgba(0, 0, 0, 0.15);
+    }
+
+    .toolbar-category-button> input{
+
+    }
+
+    .blueprint{
+      padding: 50px 0;
+    }
+
+    .storyInfo{
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      border-radius: 15px;
+      padding: 10px;
+      max-width: fit-content;
+      gap: 10px;
+    }
+
+    .storyInfo-block{
+      display: flex;
+      flex-direction: column;
+      background-color: white;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+    }
+
+    .slides{
+      margin: 10px 0 0 0;
+      gap: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .slide{
+
+    }
+
+    .toTransformScenarioWindow, .toTransformChatsWindow{
+      position: fixed;
+      display: flex;
+      opacity: 0;
+      visibility: hidden;
+      align-items: center;
+      justify-content: center;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: all .5s ease-in-out;
+    }
+
+    .fullscreenWindow{
+      position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.2);
+      transition: all .5s ease-in-out;
+    }
+
+    .fullscreenBlock{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      justify-content: center;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+    }
+
+    .generator-block {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px 15px;
+      align-items: center;
+      min-width: 500px;
+    }
+
+    .generator-block > h3 {
+      grid-column: 1 / -1;
+      text-align: center;
+      margin: 5px 0 15px 0;
+      padding-bottom: 10px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .generator-block > label {
+      border-bottom: none;
+      justify-self: end;
+    }
+
+    .wardrobe-items-container {
+      grid-column: 1 / -1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-height: 40vh;
+      overflow-y: auto;
+      padding: 5px;
+    }
+
+    .wardrobe-item-block {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px 15px;
+      align-items: center;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .add-item-button {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+
+    .generator-block > button {
+      grid-column: 1 / -1;
+      justify-self: center;
+      width: 50%;
+    }
+
+    .returnButton{
+      position: fixed;
+      right: 15px;
+      bottom: 15px;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+    }
+
+    .returnButton>img{
+      width: 60px;
+      height: 60px;
+    }
+
+    .span_icon{
+      width: 25px;
+      height: 25px;
+      margin: 0 10px 0 0;
+    }
+
+    .context-menu{
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(var(--main-editor-color), 1);
+      padding: 5px;
+      border-radius: 15px;
+      gap: 5px;
+      min-width: 200px;
+      box-shadow: rgba(0, 0, 0, 0.25) 5px 10px 10px;
+      transition: all .2s ease-in-out;
+    }
+
+    .full-width-submenu-container {
+      display: contents; /* Allows children to be direct flex items of the parent */
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 0;
+      background-color: rgba(var(--main-editor-color), 1);
+      box-shadow: rgba(0, 0, 0, 0.25) 0 0 15px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: rgba(var(--main-editor-color), 1);
+      border-radius: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: white;
+      border-radius: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.8);
+    }
+	</style>
+</head>
+<body>
+<div class="toolbar-menu">
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Файл</button>
+		<div class="toolbar-category">
+			<button id="recentButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_recent.svg"/>Последний</button>
+			<hr>
+			<button id="uploadButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_open.svg"/>Открыть</button>
+			<button id="downloadButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_save.svg"/>Сохранить</button>
+			<hr>
+			<button id="transformButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_parse.svg"/>Парсинг</button>
+			<button id="transformChatsButton" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_chats.svg"/>Парсинг чата</button>
+			<hr>
+			<div class="toolbar-button">
+				<button class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_entities.svg"/>Сущности</button>
+				<div class="toolbar-category sub-menu">
+					<button id="manageJournal" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/create_journal.svg"/>Журнал</button>
+					<button id="manageStat" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/create_stat.svg"/>Стат</button>
+					<button id="manageWardrobe" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/create_wardrobe.svg"/>Гардероб</button>
+					<button id="manageAchievement" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/create_achievement.svg"/>Достижение</button>
+					<button id="manageProfile" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/create_profile.svg"/>Профиль</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Правка</button>
+		<div class="toolbar-category">
+			<button id="replaceButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_replace.svg"/>Заменить всё</button>
+			<hr>
+			<button id="findSlideButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_find.svg"/>Найти слайд</button>
+			<button id="moveButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_move.svg"/>Переместить слайд</button>
+
+			<button id="addSlideButton" class="toolbar-category-button" disabled><img class="span_icon" src="./src/Images/UI/editor/editor_add.svg"/>Добавить слайд</button>
+		</div>
+	</div>
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Префабы</button>
+		<div class="toolbar-category">
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_stat.svg"/>Стат
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Добавить статы]: [{ value: ЗНАЧЕНИЕ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_achievement.svg"/>Достижение
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Перед началом слайда]: СОБЫТИЕ,')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_before.svg"/>Престарт
+			</button>
+			<hr>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Условие]: [\n'+
+'      {\n'+
+'        [Условие]: () => {\n'+
+'          return statsManager.get({ story: EStoriesEn.КОД_ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
+'        },\n'+
+'        [Переход на слайд]: НОМЕР_СЛАЙДА\n'+
+'      },\n'+
+'      {\n'+
+'        [Условие]: () => {\n'+
+'          return statsManager.get({ story: EStoriesEn.КОД_ИСТОРИИ, category: \'КАТЕГОРИЯ\', [Идентификатор]: \'НАЗВАНИЕ\' }) < ЗНАЧЕНИЕ\n'+
+'        },\n'+
+'        [Переход на слайд]: НОМЕР_СЛАЙДА\n'+
+'      }\n'+
+'    ],')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_condition.svg"/>Условие
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('      установить таймер(ВРЕМЯ_ТАЙМЕРА, () => { scenarioManager.beginScene(НОМЕР_СЛАЙДА) })')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_timer.svg"/>Таймер
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('остановить таймер()')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_timer-stop.svg"/>Таймер стоп
+			</button>
+			<hr/>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Музыка | Эмбиент]: файл(\'../../../../Media/Audio/КОД_ИСТОРИИ/Music/НАЗВАНИЕ.mp3\'),')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_music.svg"/>Музыка | Эмбиент
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Музыка | Эмбиент]: файл(\'../../../../Media/Audio/Common/Silence.mp3\'),')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_cross.svg"/>Беззвучно
+			</button>
+			<hr/>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Параллакс]: \'Лево | Право\',')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_parallax.svg"/>Параллакс
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Кат-сцена]: { [Видео]: файл(\'../../../../Media/Images/КОД_ИСТОРИИ/CutScenes/НАЗВАНИЕ.mp4\'), [Переход на слайд]: НОМЕР_СЛАЙДА },')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_cutscene.svg"/>Кат-сцена
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Гардероб]: { story: EStoriesEn.КОД_ИСТОРИИ, personId: \'ИДЕНТИФИКАТОР\', [Переход на слайд]: НОМЕР_СЛАЙДА },')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_wardrobe.svg"/>Гардероб
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('() => { return wardrobe.getCurrentClothesImage(EStoriesEn.КОД_ИСТОРИИ, \'ИДЕНТИФИКАТОР\') },')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_wardrobe.svg"/>Гардероб персонажа
+			</button>
+			<hr/>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Реплика]: \'НАЗВАНИЕ\',')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_speaker.svg"/>Реплика
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Силуэт]: true,')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_code.svg"/>Силуэт
+			</button>
+			<button class="toolbar-category-button" disabled
+							onclick="navigator.clipboard.writeText('    [Призрак]: true,')">
+				<img class="span_icon" src="./src/Images/UI/editor/editor_code.svg"/>Призрак
+			</button>
+		</div>
+	</div>
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Настройки</button>
+		<div class="toolbar-category">
+			<button class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_paint.svg"/>Оформление <input id="gammaInput" type="color" value="#f6b73c"></button>
+			<button class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_font.svg"/>Шрифт<input id="fontSizeInput" type="number" value="20"></button>
+		</div>
+	</div>
+	<div class="toolbar-button">
+		<button class="toolbar-category-opener">Инфо</button>
+		<div class="toolbar-category">
+			<button class="toolbar-category-button" id="showButton"><img class="span_icon" src="./src/Images/UI/editor/editor_show.svg"/>Посмотреть файл</button>
+			<hr>
+			<a target='_blank' href="http://rtemiy.github.io/Chronicles_New/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_beta.svg"/>Бета</a>
+			<a target='_blank' href="https://chroniclesgame.ru/" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_release.svg"/>Релиз</a>
+			<a target='_blank' href="https://github.com/RTemiy/Chronicles_New/tree/master/src" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_directory.svg"/>Исходники</a>
+			<a target='_blank' href="https://drive.google.com/drive/folders/1X2oIGak235my8hE5eavVWQDIENykHSSl?usp=drive_link" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_google.svg"/>Гугл диск</a>
+			<a target='_blank' href="https://t.me/RTemiy" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_author.svg"/>Создатель</a>
+			<a target='_blank' href="./ChroniclesPathFinder.html" class="toolbar-category-button"><img class="span_icon" src="./src/Images/UI/editor/editor_condition.svg"/>Path Finder</a>
+		</div>
+	</div>
+</div>
+<div class="blueprint">
+	<div class="storyInfo">
+		<div class="storyInfo-block">
+			<label for="storyCode">Код истории</label><input id="storyCode" type="text">
+		</div>
+		<div class="storyInfo-block">
+			<label for="chapterName">Название главы</label><input id="chapterName" type="text"></div>
+		<div class="storyInfo-block">
+			<label for="partName">Название части</label><input id="partName" type="text"></div>
+		<div class="storyInfo-block">
+			<label for="partCode">Код части</label><input id="partCode" type="text">
+		</div>
+		<div class="storyInfo-block">
+			<label for="slidesAmount">Количество слайдов</label><input id="slidesAmount" disabled type="number">
+		</div>
+	</div>
+	<div class="slides">
+	</div>
+</div>
+<div id="replaceWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="whatToReplace">Заменить:</label><input id="whatToReplace" placeholder="Введите текст" type="text">
+		<label for="ToWhatToReplace">На:</label><input id="ToWhatToReplace" placeholder="Введите текст" type="text">
+		<button id="makeReplaceButton">Заменить всё</button>
+	</div>
+</div>
+<div id="findWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="slideNumberToFind">Номер слайда:</label><input id="slideNumberToFind" type="number">
+		<button id="doFindButton">Найти</button>
+	</div>
+</div>
+<div id="showWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="showInput">Введите путь до файла:</label><input id="showInput" type="text">
+	</div>
+</div>
+<div id="moveWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label for="showInput">Переместить слайд №:</label><input id="moveWhatInput" type="number">
+		<label for="showInput">После слайда №:</label><input id="moveWhereInput" type="number">
+		<button id="doMoveButton">Переместить</button>
+	</div>
+</div>
+
+<div id="wardrobeGeneratorWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock generator-block">
+		<h3>Правка гардероба</h3>
+		<label for="wardrobeEntrySelect">Выберите гардероб</label><select id="wardrobeEntrySelect"></select>
+		<label for="wardrobeStoryCode">Код истории</label><input id="wardrobeStoryCode" type="text">
+		<label for="wardrobeId">id</label><input id="wardrobeId" type="text">
+		<div class="wardrobe-items-container" id="wardrobeItemsContainer"></div>
+		<button id="addWardrobeItemButton" class="add-item-button">+</button>
+		<button id="createWardrobeButton">ОК</button>
+	</div>
+</div>
+
+<template id="wardrobeItemTemplate">
+	<div class="wardrobe-item-block">
+		<label>Изображение</label><input class="wardrobe-image" type="text" placeholder="Название файла с расширением">
+		<label>Название</label><input class="wardrobe-title" type="text">
+		<label>Описание</label><input class="wardrobe-description" type="text">
+		<label>Цена</label><select class="wardrobe-cost"><option value="short">short</option><option value="medium">medium</option><option value="long">long</option></select>
+	</div>
+</template>
+
+<div id="profileGeneratorWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock generator-block">
+		<h3>Правка элемента профиля</h3>
+		<label for="profileEntrySelect">Выберите элемент</label><select id="profileEntrySelect"></select>
+		<label for="profileStoryCode">Код истории</label><input id="profileStoryCode" type="text">
+		<label for="profileId">id</label><input id="profileId" type="text">
+		<label for="profileType">Тип</label>
+		<select id="profileType">
+			<option value="Avatar">Аватар</option>
+			<option value="Banner">Баннер</option>
+		</select>
+		<label for="profileImage">Изображение</label>
+		<input id="profileImage" type="text" placeholder="Название файла с расширением">
+		<label for="profileAchievementSelect">Достижение</label>
+		<select id="profileAchievementSelect" disabled></select>
+		<button id="loadAchievementsForProfileButton" style="grid-column: 1 / -1; justify-self: center; width: 50%; margin-top: 10px;">Загрузить файл достижений</button>
+		<button id="createProfileButton">ОК</button>
+	</div>
+</div>
+
+<div id="journalGeneratorWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock generator-block">
+		<h3>Правка журнала</h3>
+		<label for="journalEntrySelect">Выберите запись</label><select id="journalEntrySelect"></select>
+		<label for="journalStoryCode">Код истории</label><input id="journalStoryCode" type="text">
+		<label for="journalChapter">Глава</label><input id="journalChapter" type="number">
+		<label for="journalPart">Часть</label><input id="journalPart" type="number">
+		<label for="journalText">Текст</label><textarea id="journalText" rows="4"></textarea>
+		<button id="createJournalButton">ОК</button>
+	</div>
+</div>
+
+<div id="achievementGeneratorWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock generator-block">
+		<h3>Правка достижения</h3>
+		<label for="achievementEntrySelect">Выберите достижение</label><select id="achievementEntrySelect"></select>
+		<label for="achievementStoryId">Код истории</label><input id="achievementStoryId" type="text">
+		<label for="achievementId">id</label><input id="achievementId" type="text">
+		<label for="achievementTitle">Название</label><input id="achievementTitle" type="text">
+		<label for="achievementDescription">Описание</label><input id="achievementDescription" type="text">
+		<button id="createAchievementButton">ОК</button>
+	</div>
+</div>
+
+<div id="statsGeneratorWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock generator-block">
+		<h3>Правка стата</h3>
+		<label for="statEntrySelect">Выберите стат</label><select id="statEntrySelect"></select>
+		<label for="statsStoryId">Код истории</label><input id="statsStoryId" type="text">
+		<label for="statsId">id</label><input id="statsId" type="text">
+		<label for="statsCategory">Категория</label>
+		<select id="statsCategory">
+			<option value="Person">Person</option>
+			<option value="Item">Item</option>
+			<option value="Effect">Effect</option>
+			<option value="Choice">Choice</option>
+		</select>
+		<label for="statsName">Название</label><input id="statsName" type="text">
+		<label for="statsTitle">Кратко</label><input id="statsTitle" type="text">
+		<label for="statsDescription">Описание</label><input id="statsDescription" type="text">
+		<label for="statsIdDescription">Тех. Описание</label><input id="statsIdDescription" type="text">
+		<label for="statsImage">Изображение</label><input id="statsImage" type="text" placeholder="Название файла с расширением">
+		<button id="createStatButton">ОК</button>
+	</div>
+</div>
+<div id="promptWindow" class="fullscreenWindow">
+	<div class="fullscreenBlock">
+		<label id="promptLabel" for="promptInput">Label</label>
+		<input id="promptInput" type="text">
+		<button id="promptConfirmButton">OK</button>
+	</div>
+</div>
+
+<a href="#" class="returnButton"><img src="./src/Images/UI/editor/editor_up.svg"/></a>
+
+<div class="toTransformScenarioWindow">
+	<textarea id="scenarioToTransform" placeholder="Вставьте текст сценария"></textarea>
+</div>
+
+<div class="toTransformChatsWindow">
+	<textarea id="chatsToTransform" placeholder="Вставьте заготовку чата"></textarea>
+</div>
+
+<input id="uploadInput" type="file">
+<script>
+  const cssVariables = document.querySelector(':root')
+
+  const uploadButton = document.querySelector('#uploadButton')
+  const uploadInput = document.querySelector('#uploadInput')
+  const downloadButton = document.querySelector('#downloadButton')
+  const transformButton = document.querySelector('#transformButton')
+  const transformChatsButton = document.querySelector('#transformChatsButton')
+  const addSlideButton = document.querySelector('#addSlideButton')
+  const manageAchievement = document.querySelector('#manageAchievement')
+  const manageJournal = document.querySelector('#manageJournal')
+  const manageStat = document.querySelector('#manageStat')
+  const manageWardrobe = document.querySelector('#manageWardrobe')
+  const manageProfile = document.querySelector('#manageProfile')
+  const replaceButton = document.querySelector('#replaceButton')
+  const makeReplaceButton = document.querySelector('#makeReplaceButton')
+  const findSlideButton = document.querySelector('#findSlideButton')
+  const doFindButton = document.querySelector('#doFindButton')
+  const recentButton = document.querySelector('#recentButton')
+  const showButton = document.querySelector('#showButton')
+  const moveButton = document.querySelector('#moveButton')
+  const doMoveButton = document.querySelector('#doMoveButton')
+
+  const transformWindow = document.querySelector('.toTransformScenarioWindow')
+  const transformChatsWindow = document.querySelector('.toTransformChatsWindow')
+  const replaceWindow = document.querySelector('#replaceWindow')
+  const findWindow = document.querySelector('#findWindow')
+  const showWindow = document.querySelector('#showWindow')
+  const moveWindow = document.querySelector('#moveWindow')
+  const achievementGeneratorWindow = document.querySelector('#achievementGeneratorWindow')
+  const journalGeneratorWindow = document.querySelector('#journalGeneratorWindow')
+  const wardrobeGeneratorWindow = document.querySelector('#wardrobeGeneratorWindow')
+  const profileGeneratorWindow = document.querySelector('#profileGeneratorWindow')
+  const statsGeneratorWindow = document.querySelector('#statsGeneratorWindow')
+
+  const promptWindow = document.querySelector('#promptWindow')
+  const promptLabel = document.querySelector('#promptLabel')
+  const promptInput = document.querySelector('#promptInput')
+  const promptConfirmButton = document.querySelector('#promptConfirmButton')
+
+  const storyInfo = document.querySelector('.storyInfo')
+  const transformInput = document.querySelector('#scenarioToTransform')
+  const transformChatsInput = document.querySelector('#chatsToTransform')
+  const slideNumberToFind = document.querySelector('#slideNumberToFind')
+  const storyCode = document.querySelector('#storyCode')
+  const chapterName = document.querySelector('#chapterName')
+  const partName = document.querySelector('#partName')
+  const partCode = document.querySelector('#partCode')
+  const slidesAmount = document.querySelector('#slidesAmount')
+  const gammaColor = document.querySelector('#gammaInput')
+  const showInput = document.querySelector('#showInput')
+  const whatToReplace = document.querySelector('#whatToReplace')
+  const ToWhatToReplace = document.querySelector('#ToWhatToReplace')
+  const slidesField = document.querySelector('.slides')
+  const moveWhatInput = document.querySelector('#moveWhatInput')
+  const moveWhereInput = document.querySelector('#moveWhereInput')
+  const fontSizeInput = document.querySelector('#fontSizeInput')
+
+  const achievementStoryId = document.querySelector('#achievementStoryId')
+  const achievementId = document.querySelector('#achievementId')
+  const achievementTitle = document.querySelector('#achievementTitle')
+  const achievementDescription = document.querySelector('#achievementDescription')
+  const createAchievementButton = document.querySelector('#createAchievementButton')
+
+  const statsStoryId = document.querySelector('#statsStoryId')
+  const statsId = document.querySelector('#statsId')
+  const statsCategory = document.querySelector('#statsCategory')
+  const statsName = document.querySelector('#statsName')
+  const statsTitle = document.querySelector('#statsTitle')
+  const statsDescription = document.querySelector('#statsDescription')
+  const statsIdDescription = document.querySelector('#statsIdDescription')
+  const statsImage = document.querySelector('#statsImage')
+  const createStatButton = document.querySelector('#createStatButton')
+
+  const journalStoryCode = document.querySelector('#journalStoryCode')
+  const journalChapter = document.querySelector('#journalChapter')
+  const journalPart = document.querySelector('#journalPart')
+  const journalText = document.querySelector('#journalText')
+  const createJournalButton = document.querySelector('#createJournalButton')
+
+  const wardrobeId = document.querySelector('#wardrobeId');
+  const wardrobeStoryCode = document.querySelector('#wardrobeStoryCode');
+  const wardrobeItemsContainer = document.querySelector('#wardrobeItemsContainer');
+  const addWardrobeItemButton = document.querySelector('#addWardrobeItemButton');
+  const createWardrobeButton = document.querySelector('#createWardrobeButton');
+
+  const profileId = document.querySelector('#profileId')
+  const profileStoryCode = document.querySelector('#profileStoryCode')
+  const profileType = document.querySelector('#profileType')
+  const profileImage = document.querySelector('#profileImage')
+  const profileAchievementSelect = document.querySelector('#profileAchievementSelect')
+  const createProfileButton = document.querySelector('#createProfileButton')
+
+  const journalEntrySelect = document.querySelector('#journalEntrySelect')
+  const statEntrySelect = document.querySelector('#statEntrySelect')
+  const achievementEntrySelect = document.querySelector('#achievementEntrySelect')
+  const profileEntrySelect = document.querySelector('#profileEntrySelect')
+  const wardrobeEntrySelect = document.querySelector('#wardrobeEntrySelect')
+
+  const loadAchievementsForProfileButton = document.querySelector('#loadAchievementsForProfileButton')
+
+  const dictionary = new Map()
+
+  const chatsDictionary = new Map()
+
+  let journalFileHandle = null
+  let journalEntries = []
+
+  let statFileHandle = null
+  let statEntries = []
+  let achievementFileHandle = null
+  let achievementEntries = []
+  let profileFileHandle = null
+  let profileEntries = []
+  let wardrobeFileHandle = null
+  let wardrobeEntries = []
+
+  let profileAchievementsFileHandle = null
+  let profileAchievementEntries = []
+
+  let currentFile = ''
+
+  onStart()
+
+  function onStart() {
+    addListeners()
+    initDictionary()
+    initChatsDictionary()
+    loadFromLocalStorage()
+  }
+
+  function loadFromLocalStorage() {
+    localStorage.getItem('UIColor') && cssVariables.style.setProperty('--main-editor-color', `${localStorage.getItem('UIColor')}`)
+    localStorage.getItem('recentFile') && (recentButton.disabled = false)
+
+    if (localStorage.getItem('fontSize')){
+      cssVariables.style.setProperty('--main-font-size', `${localStorage.getItem('fontSize')}px`)
+      fontSizeInput.value = localStorage.getItem('fontSize')
+    }
+
+  }
+
+  function addListeners() {
+
+    uploadInput.onchange = () => {
+      const FR = new FileReader()
+      FR.readAsText(uploadInput.files[uploadInput.files.length-1])
+      FR.onload = () => {
+        currentFile = FR.result
+        makeStructure()
+        enableButtons()
+      }
+    }
+
+    uploadButton.onclick = () => {
+      uploadInput.click()
+    }
+
+    transformInput.onchange = async () => {
+      transformWindow.style.opacity = '0'
+      transformWindow.style.visibility = 'hidden'
+      const storyCode = await showPrompt('Укажите код истории')
+      currentFile = await makeScenario(storyCode, transformInput.value)
+      makeStructure()
+      enableButtons()
+    }
+
+    transformButton.onclick = () => {
+      transformInput.value = ''
+      transformWindow.style.opacity = '1'
+      transformWindow.style.visibility = 'visible'
+    }
+
+    transformChatsInput.onchange = () => {
+      transformChatsWindow.style.opacity = '0'
+      transformChatsWindow.style.visibility = 'hidden'
+      makeChats(transformChatsInput.value)
+    }
+
+    transformChatsButton.onclick = () => {
+      transformChatsInput.value = ''
+      transformChatsWindow.style.opacity = '1'
+      transformChatsWindow.style.visibility = 'visible'
+    }
+
+    downloadButton.onclick = async () => {
+      await saveFile(saveFromEditor())
+    }
+
+    replaceButton.onclick = () => {
+      whatToReplace.value = ''
+      ToWhatToReplace.value = ''
+      replaceWindow.style.opacity = '1'
+      replaceWindow.style.visibility = 'visible'
+    }
+
+    makeReplaceButton.onclick = () => {
+      const slides = document.querySelectorAll('.slide')
+      slides.forEach(slide => {
+        slide.value = slide.value.replaceAll(whatToReplace.value, ToWhatToReplace.value)
+      })
+      replaceWindow.style.opacity = '0'
+      replaceWindow.style.visibility = 'hidden'
+    }
+
+    addSlideButton.onclick = () => {
+      const newSlide = document.createElement('textarea')
+      newSlide.value =
+        `
+				  {
+    [Идентификатор]: НОМЕР_СЛАЙДА,
+    [Текст]:
+      \`
+        ТЕКСТ_СЛАЙДА
+      \`,
+    [Кнопки слайда]: [
+      {
+        [Текст]: '',
+        [Переход на слайд]: НОМЕР_СЛАЙДА
+      }],
+    [Фон]: файл('../../../../Media/Images/КОД_ИСТОРИИ/Backgrounds/НАЗВАНИЕ.jpg')
+  }
+`
+      newSlide.classList.add('slide')
+      slidesField.appendChild(newSlide)
+      newSlide.style.height = '5px'
+      newSlide.style.height = newSlide.scrollHeight + 'px'
+    }
+
+    findSlideButton.onclick = () => {
+      slideNumberToFind.value = ''
+      findWindow.style.opacity = '1'
+      findWindow.style.visibility = 'visible'
+    }
+
+    doFindButton.onclick = () => {
+      findWindow.style.opacity = '0'
+      findWindow.style.visibility = 'hidden'
+      window.location.href = `#slide_${slideNumberToFind.value}`
+    }
+
+    gammaColor.oninput = () => {
+      const rgbColor = hexToRgb(gammaColor.value)
+      cssVariables.style.setProperty('--main-editor-color', `${rgbColor}`)
+      localStorage.setItem('UIColor', rgbColor)
+    }
+
+    recentButton.onclick = () => {
+      currentFile = localStorage.getItem('recentFile')
+      enableButtons()
+      makeStructure()
+    }
+
+    showButton.onclick = () => {
+      showWindow.style.opacity = '1'
+      showWindow.style.visibility = 'visible'
+      showInput.value = ''
+    }
+
+    showInput.onchange = () => {
+      showWindow.style.opacity = '0'
+      showWindow.style.visibility = 'hidden'
+      openGHRawFile(showInput.value)
+    }
+
+    moveButton.onclick = () => {
+      moveWindow.style.opacity = '1'
+      moveWindow.style.visibility = 'visible'
+      moveWhatInput.value = ''
+      moveWhereInput.value = ''
+    }
+
+    doMoveButton.onclick = () => {
+      let allSlides = Array.from(slidesField.querySelectorAll('.slide'))
+      let whatIndex = 0
+      let whereIndex = 0
+      allSlides.forEach((slide, index) => {
+        slide.id.split('_')[1] === moveWhatInput.value && (whatIndex = index)
+        slide.id.split('_')[1] === moveWhereInput.value && (whereIndex = index)
+      })
+      allSlides.splice(whereIndex, 0, allSlides.splice(whatIndex, 1)[0])
+      slidesField.innerHTML = ''
+      allSlides.forEach(slide => {
+        slidesField.appendChild(slide)
+
+      })
+      moveWindow.style.opacity = '0'
+      moveWindow.style.visibility = 'hidden'
+    }
+
+    fontSizeInput.oninput = () => {
+      cssVariables.style.setProperty('--main-font-size', `${fontSizeInput.value}px`)
+      localStorage.setItem('fontSize', fontSizeInput.value)
+    }
+
+    manageAchievement.onclick = async () => {
+      try {
+        [achievementFileHandle] = await window.showOpenFilePicker({ types: [{ description: 'JavaScript Files', accept: { 'text/javascript': ['.js', '.ts'] } }] });
+        const file = await achievementFileHandle.getFile();
+        const fileContent = await file.text();
+        const entryRegex = /achievementsManager\.add\({[\s\S]*?}\)/g;
+        const matches = fileContent.match(entryRegex);
+        achievementEntries = [];
+        if (matches) {
+          achievementEntries = matches.map((entry, index) => {
+            const getValue = (key) => (entry.match(new RegExp(`${key}: '([^']*)'`)) || [])[1] || '';
+            return { original: entry, name: getValue('name'), title: getValue('title'), text: getValue('text'), index };
+          });
+        }
+        achievementEntrySelect.innerHTML = '<option value="-1">--- Создать новое достижение ---</option>' + achievementEntries.map(e => `<option value="${e.index}">${e.title} (${e.name})</option>`).join('');
+        achievementEntrySelect.onchange();
+        achievementGeneratorWindow.style.opacity = '1';
+        achievementGeneratorWindow.style.visibility = 'visible';
+      } catch (err) {
+        if (err.name !== 'AbortError') console.error(err.name, err.message);
+      }
+    }
+
+    achievementGeneratorWindow.onclick = (e) => {
+      if (e.target === achievementGeneratorWindow) {
+        achievementGeneratorWindow.style.opacity = '0'
+        achievementGeneratorWindow.style.visibility = 'hidden'
+      }
+    }
+
+    achievementEntrySelect.onchange = () => {
+      const selectedIndex = achievementEntrySelect.value;
+      if (selectedIndex < 0) {
+        achievementStoryId.value = '';
+        achievementId.value = '';
+        achievementTitle.value = '';
+        achievementDescription.value = '';
+        achievementStoryId.readOnly = false;
+        achievementId.readOnly = false;
+      } else {
+        const selected = achievementEntries[selectedIndex];
+        const storyMatch = selected.original.match(/story: EStoriesEn\.([^,}]*)/);
+        achievementStoryId.value = storyMatch ? storyMatch[1].trim() : '';
+        achievementId.value = selected.name;
+        achievementTitle.value = selected.title;
+        achievementDescription.value = selected.text;
+        achievementStoryId.readOnly = true;
+        achievementId.readOnly = true;
+      }
+    }
+
+    journalGeneratorWindow.onclick = (e) => {
+      if (e.target === journalGeneratorWindow) {
+        journalGeneratorWindow.style.opacity = '0';
+        journalGeneratorWindow.style.visibility = 'hidden';
+      }
+    }
+
+    manageWardrobe.onclick = async () => {
+      try {
+        [wardrobeFileHandle] = await window.showOpenFilePicker({ types: [{ description: 'JavaScript Files', accept: { 'text/javascript': ['.js', '.ts'] } }] });
+        const file = await wardrobeFileHandle.getFile();
+        const fileContent = await file.text();
+        const entryRegex = /wardrobe\.addEntity\('([^']*)', \[\s*([\s\S]*?)\s*\]\)/g;
+        wardrobeEntries = [];
+        const matches = [...fileContent.matchAll(entryRegex)];
+        if (matches.length > 0) {
+          wardrobeEntries = matches.map((match, index) => {
+            const itemsString = match[2];
+            const itemRegex = /{\s*image: require\('..\/..\/Media\/Images\/([^/]+)\/([^']+)'\),\s*title: '([^']*)',\s*description: '([^']*)',\s*cost: '([^']*)'[\s\S]*?}/g;
+            const items = [...itemsString.matchAll(itemRegex)].map(itemMatch => ({
+              story: itemMatch[1],
+              image: itemMatch[2],
+              title: itemMatch[3],
+              description: itemMatch[4],
+              cost: itemMatch[5]
+            }));
+            return { original: match[0], id: match[1], items, index };
+          });
+        }
+        wardrobeEntrySelect.innerHTML = '<option value="-1">--- Создать новый гардероб ---</option>' + wardrobeEntries.map(e => `<option value="${e.index}">${e.id}</option>`).join('');
+        wardrobeEntrySelect.onchange();
+        wardrobeGeneratorWindow.style.opacity = '1';
+        wardrobeGeneratorWindow.style.visibility = 'visible';
+      } catch (err) {
+        if (err.name !== 'AbortError') console.error(err.name, err.message);
+      }
+    }
+
+    wardrobeGeneratorWindow.onclick = (e) => {
+      if (e.target === wardrobeGeneratorWindow) {
+        wardrobeGeneratorWindow.style.opacity = '0'
+        wardrobeGeneratorWindow.style.visibility = 'hidden'
+      }
+    }
+
+    const renderWardrobeItems = (container, items, storyCode) => {
+      container.innerHTML = '';
+      items.forEach((item, itemIndex) => {
+        const template = document.getElementById('wardrobeItemTemplate');
+        const clone = template.content.cloneNode(true);
+        clone.querySelector('.wardrobe-image').value = item.image;
+        clone.querySelector('.wardrobe-title').value = item.title;
+        clone.querySelector('.wardrobe-description').value = item.description;
+        clone.querySelector('.wardrobe-cost').value = item.cost;
+        const removeBtn = document.createElement('button');
+        removeBtn.textContent = 'Удалить';
+        removeBtn.onclick = () => {
+          items.splice(itemIndex, 1);
+          renderWardrobeItems(container, items, storyCode);
+        };
+        const itemBlock = clone.querySelector('.wardrobe-item-block');
+        itemBlock.appendChild(removeBtn);
+        container.appendChild(clone);
+      });
+    }
+
+    wardrobeEntrySelect.onchange = () => {
+      const selectedIndex = wardrobeEntrySelect.value;
+      if (selectedIndex < 0) {
+        wardrobeStoryCode.value = '';
+        wardrobeId.value = '';
+        wardrobeItemsContainer.innerHTML = '';
+        wardrobeStoryCode.readOnly = false;
+        wardrobeId.readOnly = false;
+      } else {
+        const selected = wardrobeEntries[selectedIndex];
+        wardrobeId.value = selected.id;
+        wardrobeStoryCode.value = selected.items[0]?.story || '';
+        wardrobeId.readOnly = true;
+        wardrobeStoryCode.readOnly = true;
+        renderWardrobeItems(wardrobeItemsContainer, selected.items, wardrobeStoryCode.value);
+      }
+    }
+
+    addWardrobeItemButton.onclick = () => {
+      const selectedIndex = wardrobeEntrySelect.value;
+      if (selectedIndex < 0) {
+        // new item for new wardrobe
+        const template = document.getElementById('wardrobeItemTemplate');
+        const clone = template.content.cloneNode(true);
+        wardrobeItemsContainer.appendChild(clone);
+      } else {
+        // new item for existing wardrobe
+        const selected = wardrobeEntries[selectedIndex];
+        selected.items.push({ story: selected.items[0]?.story || '', image: '', title: '', description: '', cost: 'short' });
+        renderWardrobeItems(wardrobeItemsContainer, selected.items, wardrobeStoryCode.value);
+      }
+    }
+
+    createWardrobeButton.onclick = async () => {
+      const selectedIndex = wardrobeEntrySelect.value;
+      const file = await wardrobeFileHandle.getFile();
+      let fileContent = await file.text();
+      const id = wardrobeId.value.trim();
+      const storyCode = wardrobeStoryCode.value.trim();
+
+      const itemBlocks = wardrobeItemsContainer.querySelectorAll('.wardrobe-item-block');
+      const newItems = Array.from(itemBlocks).map(block => {
+        const image = block.querySelector('.wardrobe-image').value;
+        const title = block.querySelector('.wardrobe-title').value;
+        const description = block.querySelector('.wardrobe-description').value;
+        const cost = block.querySelector('.wardrobe-cost').value;
+        return { image, title, description, cost };
+      });
+
+      const itemsCode = newItems
+          .map(item => `  {\n    image: require('../../Media/Images/${storyCode}/${item.image}'),\n    title: '${item.title}',\n    description: '${item.description}',\n    cost: '${item.cost}',\n    unlocked: () => { return true }\n  }`)
+          .join(',\n');
+
+      const newEntry = `wardrobe.addEntity('${id}', [\n${itemsCode}\n])`;
+
+      if (selectedIndex < 0) {
+        fileContent += (fileContent.trim() ? '\n\n' : '') + newEntry;
+      } else {
+        const selected = wardrobeEntries[selectedIndex];
+        fileContent = fileContent.replace(selected.original, newEntry);
+      }
+
+      const writable = await wardrobeFileHandle.createWritable();
+      await writable.write(fileContent);
+      await writable.close();
+      alert('Файл успешно сохранен!');
+      wardrobeGeneratorWindow.style.opacity = '0';
+      wardrobeGeneratorWindow.style.visibility = 'hidden';
+    }
+
+    manageStat.onclick = () => {
+      statsGeneratorWindow.style.opacity = '1'
+      statsGeneratorWindow.style.visibility = 'visible'
+    }
+
+    statsGeneratorWindow.onclick = (e) => {
+      if (e.target === statsGeneratorWindow) {
+        statsGeneratorWindow.style.opacity = '0'
+        statsGeneratorWindow.style.visibility = 'hidden'
+      }
+    }
+
+    manageProfile.onclick = async () => {
+      try {
+        [profileFileHandle] = await window.showOpenFilePicker({ types: [{ description: 'JavaScript Files', accept: { 'text/javascript': ['.js', '.ts'] } }] });
+        const file = await profileFileHandle.getFile();
+        const fileContent = await file.text();
+        const entryRegex = /{\s*id: '([^']*)',[\s\S]*?image: require\('..\/..\/Media\/Images\/([^/]+)\/([^']*)'\),[\s\S]*?condition: \(\) => achievementsManager\.isUnlocked\(EStoriesEn\.[^,]+, '([^']*)'\)[\s\S]*?}/g;
+        profileEntries = [];
+        const matches = [...fileContent.matchAll(entryRegex)];
+        if (matches.length > 0) {
+          profileEntries = matches.map((match, index) => ({
+            original: match[0],
+            id: match[1],
+            story: match[2].trim(),
+            image: match[3],
+            achievement: match[4],
+            index
+          }));
+        }
+        profileEntrySelect.innerHTML = '<option value="-1">--- Создать новый элемент ---</option>' + profileEntries.map(e => `<option value="${e.index}">${e.id}</option>`).join('');
+        profileEntrySelect.onchange();
+        profileGeneratorWindow.style.opacity = '1';
+        profileGeneratorWindow.style.visibility = 'visible';
+      } catch (err) {
+        if (err.name !== 'AbortError') console.error(err.name, err.message);
+      }
+    }
+
+    profileGeneratorWindow.onclick = (e) => {
+      if (e.target === profileGeneratorWindow) {
+        profileGeneratorWindow.style.opacity = '0';
+        profileGeneratorWindow.style.visibility = 'hidden';
+      }
+    }
+
+    profileEntrySelect.onchange = () => {
+      const selectedIndex = profileEntrySelect.value;
+      if (selectedIndex < 0) {
+        profileStoryCode.value = '';
+        profileId.value = '';
+        profileImage.value = '';
+        profileAchievementSelect.value = '';
+        profileStoryCode.readOnly = false;
+        profileId.readOnly = false;
+      } else {
+        const selected = profileEntries[selectedIndex];
+        profileStoryCode.value = selected.story;
+        profileId.value = selected.id;
+        profileImage.value = selected.image;
+        profileAchievementSelect.value = selected.achievement;
+        profileStoryCode.readOnly = true;
+        profileId.readOnly = true;
+      }
+    }
+
+    loadAchievementsForProfileButton.onclick = async () => {
+      try {
+        [profileAchievementsFileHandle] = await window.showOpenFilePicker({ types: [{ description: 'JavaScript Files', accept: { 'text/javascript': ['.js', '.ts'] } }] });
+        const file = await profileAchievementsFileHandle.getFile();
+        const fileContent = await file.text();
+        const entryRegex = /achievementsManager\.add\({[\s\S]*?}\)/g;
+        const matches = fileContent.match(entryRegex);
+        profileAchievementEntries = [];
+        if (matches) {
+          profileAchievementEntries = matches.map(entry => (entry.match(/name: '([^']*)'/) || [])[1] || null).filter(Boolean);
+        }
+        profileAchievementSelect.innerHTML = profileAchievementEntries.map(id => `<option value="${id}">${id}</option>`).join('');
+        profileAchievementSelect.disabled = false;
+        alert(`Загружено ${profileAchievementEntries.length} достижений.`);
+      } catch (err) {
+        if (err.name !== 'AbortError') console.error(err.name, err.message);
+      }
+    }
+
+    createProfileButton.onclick = async () => {
+      const selectedIndex = profileEntrySelect.value;
+      const file = await profileFileHandle.getFile();
+      let fileContent = await file.text();
+
+      const id = profileId.value.trim();
+      const storyCode = profileStoryCode.value.trim();
+      const type = profileType.value;
+      const image = profileImage.value.trim();
+      const achievement = profileAchievementSelect.value;
+
+      if (!id || !storyCode || !type || !image || !achievement) {
+        alert('Пожалуйста, заполните все поля и выберите итоговый файл.')
+        return
+      }
+
+      const imagePath = `../../Media/Images/${storyCode}/${image}`;
+      const newEntryObject = `{\n    id: '${id}',\n    image: require('${imagePath}'),\n    condition: () => achievementsManager.isUnlocked(EStoriesEn.${storyCode}, '${achievement}')\n  }`;
+
+      if (selectedIndex < 0) {
+        const manager = type === 'Avatar' ? 'addAvatars' : 'addBanners';
+        const codeToCopy = `profileManager.${manager}([\n${newEntryObject}\n])`;
+        fileContent += (fileContent.trim() ? '\n\n' : '') + codeToCopy;
+      } else {
+        const selected = profileEntries[selectedIndex];
+        fileContent = fileContent.replace(selected.original, newEntryObject);
+      }
+
+      const writable = await profileFileHandle.createWritable();
+      await writable.write(fileContent);
+      await writable.close();
+      alert('Файл успешно сохранен!');
+      profileGeneratorWindow.style.opacity = '0';
+      profileGeneratorWindow.style.visibility = 'hidden';
+    }
+
+    createStatButton.onclick = async () => {
+      const storyId = statsStoryId.value
+      const id = statsId.value
+      const category = statsCategory.value
+      const name = statsName.value
+      const title = statsTitle.value
+      const description = statsDescription.value
+      const idDescription = statsIdDescription.value
+      const imageFileName = statsImage.value
+
+      if (!storyId || !id || !category || !name || !title || !description || !idDescription || !imageFileName) {
+        alert('Пожалуйста, заполните все поля и выберите итоговый файл.')
+        return
+      }
+
+      const imagePath = `../../Media/Images/${storyId}/${imageFileName}`
+      const codeToCopy = `statsManager.add({
+  category: '${category}',
+  id: '${id}',
+  story: EStoriesEn.${storyId},
+  name: '${name}',
+  image: require('${imagePath}'),
+  title: '${title}',
+  description: '${description}',
+  idDescription: '${idDescription}'
+})`
+      navigator.clipboard.writeText(codeToCopy)
+
+      try {
+        const writable = await statsFileHandle.createWritable({ keepExistingData: true });
+        const file = await statsFileHandle.getFile();
+        const currentContent = await file.text();
+        const contentToAdd = (currentContent.trim() ? '\n\n' : '') + codeToCopy;
+
+        await writable.write({ type: 'write', position: file.size, data: contentToAdd });
+        await writable.close();
+        alert(`Код успешно добавлен в файл ${statsFileHandle.name}!`);
+      } catch (err) {
+        if (err.name !== 'AbortError') console.error(err.name, err.message);
+      }
+    }
+
+    createAchievementButton.onclick = async () => {
+      const selectedIndex = achievementEntrySelect.value;
+      const file = await achievementFileHandle.getFile();
+      let fileContent = await file.text();
+
+      const storyId = achievementStoryId.value.trim();
+      const id = achievementId.value.trim();
+      const title = achievementTitle.value.trim();
+      const description = achievementDescription.value.trim();
+
+      if (!storyId || !id || !title || !description) {
+        alert('Пожалуйста, заполните все поля и выберите итоговый файл.')
+        return
+      }
+
+      const newEntry = `achievementsManager.add({
+  name: '${id}',
+  image: require('../../Media/Images/${storyId}/Achievements/${id}.png'),
+  title: '${title}',
+  text: '${description}',
+  story: EStoriesEn.${storyId}
+})`;
+
+      if (selectedIndex < 0) {
+        fileContent += (fileContent.trim() ? '\n\n' : '') + newEntry;
+      } else {
+        const selected = achievementEntries[selectedIndex];
+        fileContent = fileContent.replace(selected.original, newEntry);
+      }
+
+      const writable = await achievementFileHandle.createWritable();
+      await writable.write(fileContent);
+      await writable.close();
+      alert('Файл успешно сохранен!');
+      achievementGeneratorWindow.style.opacity = '0';
+      achievementGeneratorWindow.style.visibility = 'hidden';
+    }
+
+    const openJournalWindow = async () => {
+      try {
+        [journalFileHandle] = await window.showOpenFilePicker({
+          types: [{ description: 'JavaScript Files', accept: { 'text/javascript': ['.js', '.ts'] } }]
+        });
+
+        const file = await journalFileHandle.getFile();
+        const fileContent = await file.text();
+
+        const entryRegex = /journal\.add\({[\s\S]*?}\)/g;
+        const matches = fileContent.match(entryRegex);
+
+        journalEntries = [];
+        if (!matches) {
+          console.log('Записи журнала в файле не найдены. Можно создать новую.');
+        } else {
+          journalEntries = matches.map((entry, index) => {
+            const chapterMatch = entry.match(/chapter: (\d+)/);
+            const partMatch = entry.match(/part: (\d+)/);
+            const textMatch = entry.match(/text: `([\s\S]*?)`/);
+
+            return {
+              original: entry,
+              chapter: chapterMatch ? chapterMatch[1] : '',
+              part: partMatch ? partMatch[1] : '',
+              text: textMatch ? textMatch[1].trim() : '',
+              index: index
+            };
+          });
+        }
+
+        journalEntrySelect.innerHTML = '<option value="-1">--- Создать новую запись ---</option>' + journalEntries.map(entry =>
+            `<option value="${entry.index}">Глава ${entry.chapter}, Часть ${entry.part}</option>`
+        ).join('');
+
+        journalEntrySelect.onchange(); // Trigger change to load first item
+
+        journalGeneratorWindow.style.opacity = '1';
+        journalGeneratorWindow.style.visibility = 'visible';
+
+      } catch (err) {
+        if (err.name !== 'AbortError') {
+          console.error(err.name, err.message);
+          alert('Не удалось открыть файл.');
+        }
+      }
+    }
+
+    manageJournal.onclick = openJournalWindow;
+
+    journalEntrySelect.onchange = () => {
+      const selectedIndex = journalEntrySelect.value;
+      if (selectedIndex < 0) { // New entry
+        journalStoryCode.value = '';
+        journalChapter.value = '';
+        journalPart.value = '';
+        journalText.value = '';
+        journalStoryCode.readOnly = false;
+      } else {
+        const selectedEntry = journalEntries[selectedIndex];
+        const storyMatch = selectedEntry.original.match(/story: EStoriesEn\.([^,}]*)/);
+        journalStoryCode.value = storyMatch ? storyMatch[1].trim() : '';
+        journalStoryCode.readOnly = true;
+        journalChapter.value = selectedEntry.chapter;
+        journalPart.value = selectedEntry.part;
+        journalText.value = selectedEntry.text;
+      }
+    }
+
+    createJournalButton.onclick = async () => {
+      const selectedIndex = journalEntrySelect.value;
+      const file = await journalFileHandle.getFile();
+      let fileContent = await file.text();
+
+      if (selectedIndex < 0) { // Create new
+        const codeToCopy = `journal.add({
+  story: EStoriesEn.${journalStoryCode.value.trim()},
+  chapter: ${journalChapter.value},
+  part: ${journalPart.value},
+  text: \`${journalText.value.trim()}\`
+})`;
+        fileContent += (fileContent.trim() ? '\n\n' : '') + codeToCopy;
+      } else { // Update existing
+        const selectedEntry = journalEntries[selectedIndex];
+        const newText = `text: \`${journalText.value.trim()}\``;
+        const updatedEntryString = selectedEntry.original
+            .replace(/chapter: \d+/, `chapter: ${journalChapter.value}`)
+            .replace(/part: \d+/, `part: ${journalPart.value}`)
+            .replace(/text: `[\s\S]*?`/, newText);
+
+        fileContent = fileContent.replace(selectedEntry.original, updatedEntryString);
+      }
+
+      const writable = await journalFileHandle.createWritable();
+      await writable.write(fileContent);
+      await writable.close();
+      alert('Файл успешно сохранен!');
+      journalGeneratorWindow.style.opacity = '0';
+      journalGeneratorWindow.style.visibility = 'hidden';
+    }
+
+    manageStat.onclick = async () => {
+      try {
+        [statFileHandle] = await window.showOpenFilePicker({ types: [{ description: 'JavaScript Files', accept: { 'text/javascript': ['.js', '.ts'] } }] });
+        const file = await statFileHandle.getFile();
+        const fileContent = await file.text();
+        const entryRegex = /statsManager\.add\({[\s\S]*?}\)/g;
+        const matches = fileContent.match(entryRegex);
+        statEntries = [];
+        if (!matches) {
+          console.log('Записи статов в файле не найдены. Можно создать новую.');
+        } else {
+          statEntries = matches.map((entry, index) => {
+            const getValue = (key) => (entry.match(new RegExp(`${key}: '([^']*)'`)) || [])[1] || '';
+            const id = getValue('id');
+            const name = getValue('name');
+            return {
+              original: entry,
+              id,
+              name,
+              category: getValue('category'),
+              title: getValue('title'),
+              description: getValue('description'),
+              idDescription: getValue('idDescription'),
+              image: (entry.match(/image: require\('..\/..\/Media\/Images\/[^/]+\/([^']*)'\)/) || [])[1] || '',
+              index
+            };
+          });
+        }
+        statEntrySelect.innerHTML = '<option value="-1">--- Создать новый стат ---</option>' + statEntries.map(e => `<option value="${e.index}">${e.name} (${e.id})</option>`).join('');
+        statEntrySelect.onchange();
+        statsGeneratorWindow.style.opacity = '1';
+        statsGeneratorWindow.style.visibility = 'visible';
+      } catch (err) {
+        if (err.name !== 'AbortError') console.error(err.name, err.message);
+      }
+    }
+
+    statEntrySelect.onchange = () => {
+      const selectedIndex = statEntrySelect.value;
+      if (selectedIndex < 0) {
+        statsStoryId.value = '';
+        statsId.value = '';
+        statsName.value = '';
+        statsTitle.value = '';
+        statsDescription.value = '';
+        statsIdDescription.value = '';
+        statsImage.value = '';
+        statsStoryId.readOnly = false;
+        statsId.readOnly = false;
+      } else {
+        const selected = statEntries[selectedIndex];
+        const storyMatch = selected.original.match(/story: EStoriesEn\.([^,}]*)/);
+        statsStoryId.value = storyMatch ? storyMatch[1].trim() : '';
+        statsId.value = selected.id;
+        statsStoryId.readOnly = true;
+        statsId.readOnly = true;
+        statsCategory.value = selected.category;
+        statsName.value = selected.name;
+        statsTitle.value = selected.title;
+        statsDescription.value = selected.description;
+        statsIdDescription.value = selected.idDescription;
+        statsImage.value = selected.image;
+      }
+    }
+
+    createStatButton.onclick = async () => {
+      const selectedIndex = statEntrySelect.value;
+      const file = await statFileHandle.getFile();
+      let fileContent = await file.text();
+      const storyId = statsStoryId.value.trim();
+      const imagePath = `../../Media/Images/${storyId}/${statsImage.value.trim()}`;
+
+      if (selectedIndex < 0) { // Create
+        const codeToCopy = `statsManager.add({
+  category: '${statsCategory.value}',
+  id: '${statsId.value.trim()}',
+  story: EStoriesEn.${storyId},
+  name: '${statsName.value.trim()}',
+  image: require('${imagePath}'),
+  title: '${statsTitle.value.trim()}',
+  description: '${statsDescription.value.trim()}',
+  idDescription: '${statsIdDescription.value.trim()}'
+})`;
+        fileContent += (fileContent.trim() ? '\n\n' : '') + codeToCopy;
+      } else { // Update
+        const selected = statEntries[selectedIndex];
+        const newEntry = selected.original
+            .replace(/category: '([^']*)'/, `category: '${statsCategory.value}'`)
+            .replace(/name: '([^']*)'/, `name: '${statsName.value}'`)
+            .replace(/title: '([^']*)'/, `title: '${statsTitle.value.trim()}'`)
+            .replace(/description: '([^']*)'/, `description: '${statsDescription.value.trim()}'`)
+            .replace(/idDescription: '([^']*)'/, `idDescription: '${statsIdDescription.value.trim()}'`)
+            .replace(/image: require\('[^']+'\)/, `image: require('${imagePath}')`);
+        fileContent = fileContent.replace(selected.original, newEntry);
+      }
+
+      const writable = await statFileHandle.createWritable();
+      await writable.write(fileContent);
+      await writable.close();
+      alert('Файл успешно сохранен!');
+      statsGeneratorWindow.style.opacity = '0';
+      statsGeneratorWindow.style.visibility = 'hidden';
+    }
+   }
+
+  function openGHRawFile (path) {
+    window.open(`https://raw.githubusercontent.com/RTemiy/Chronicles_New/master/src/${path}`, '_blank');
+  }
+
+  function showPrompt(message) {
+    return new Promise(resolve => {
+      promptLabel.textContent = message;
+      promptInput.value = '';
+      promptWindow.style.opacity = '1';
+      promptWindow.style.visibility = 'visible';
+      promptInput.focus();
+
+      const onConfirm = () => {
+        promptWindow.style.opacity = '0';
+        promptWindow.style.visibility = 'hidden';
+        promptConfirmButton.removeEventListener('click', onConfirm);
+        document.removeEventListener('keydown', onKeydown);
+        resolve(promptInput.value);
+      };
+
+      const onKeydown = (e) => {
+        if (e.key === 'Enter') {
+          onConfirm();
+        }
+      };
+
+      promptConfirmButton.addEventListener('click', onConfirm);
+      document.addEventListener('keydown', onKeydown);
+    });
+  }
+
+  async function saveFile(text) {
+    const a = document.createElement('a')
+    const file = new Blob([text], { type: 'application/text' })
+    a.href = URL.createObjectURL(file)
+    a.download = `${await showPrompt('Введите название файла')}.ts`
+    a.click()
+  }
+
+  function makeChats(text) {
+    let result = text
+    for (const [key, value] of chatsDictionary) {
+      result = result.replaceAll(`${value}`, `${key}`)
+    }
+
+    saveFile(result)
+  }
+
+  function makeStructure () {
+    const storyData = currentFile.match(/scenarioManager.addScenario\({ [\s\S]* }, \[/)[0].match(/{ [\s\S]* }/)[0]
+    storyCode.value = storyData.match(/storyName: [\s\S]*, /)[0].split(': ')[1].split(',')[0]
+    chapterName.value = storyData.match(/chapterName: [\s\S]*, /)[0].split(': ')[1].split(',')[0]
+    partName.value = storyData.match(/partName: [\s\S]*, /)[0].split(': ')[1].split(',')[0]
+    partCode.value = storyData.match(/code: [\s\S]* }/)[0].split(': ')[1].split('}')[0]
+    let slides = currentFile.split('  {\n    id: ')
+    slides.forEach((slide,index) => {
+      slides[index] = '  {\n    id: ' + slides[index]
+    })
+    storyInfo.style.opacity = '1'
+    storyInfo.style.visibility = 'visible'
+    slides.shift()
+    slidesField.innerHTML = ''
+    let result = ''
+    slidesAmount.value = '0'
+    slides.forEach(slide => {
+
+      result+=`<textarea id="slide_${slide.match(/id: [-0-9]+/)[0].split(' ')[1]}" class="slide">${slide}</textarea>`
+      slidesAmount.value = parseInt(slidesAmount.value) + 1
+    })
+
+    for (const [key, value] of dictionary) {
+      result = result.replaceAll(`${key}`, `${value}`)
+    }
+
+    slidesField.innerHTML = result
+
+    slidesField.querySelectorAll('.slide').forEach(slide => {
+      slide.style.height = '5px'
+      slide.style.height = slide.scrollHeight + 'px'
+      slide.oncontextmenu = (e) => {
+        e.preventDefault()
+        const contextMenu = document.createElement('div')
+        contextMenu.classList.add('context-menu')
+        contextMenu.style.left = `${e.clientX}px`
+        contextMenu.style.top = `${e.clientY}px`
+        document.body.appendChild(contextMenu)
+        const allImagePathsSlide = slide.value.match(/\('..\/..\/..\/..\/([^\s]+)\/([^\s]+)\/([^\s]+)\/([^\s]+)/g)
+        contextMenu.onmouseleave = () => {
+          contextMenu.remove()
+        }
+        allImagePathsSlide === null && contextMenu.remove()
+        ;(allImagePathsSlide[0].includes('Border') && allImagePathsSlide.length <= 1) && contextMenu.remove()
+
+        allImagePathsSlide.forEach(path => {
+          if (!path.includes('Border')) {
+            const contextButton = document.createElement('button')
+            contextButton.classList.add('toolbar-category-button')
+            contextButton.innerHTML = `${path.split('/')[7].replaceAll(`')`,'').replaceAll(`,`,'')}`
+            contextButton.onclick = () => { openGHRawFile(path.replaceAll(`('../../../../`,'').replaceAll(`')`,'').replaceAll(`,`,''))}
+            contextMenu.appendChild(contextButton)
+          }
+        })
+      }
+
+    })
+    setInterval(saveRecent, 30000)
+  }
+
+  function saveFromEditor () {
+    const fileBeginning = currentFile.split('scenarioManager.addScenario({')[0]
+    let result = `${fileBeginning}scenarioManager.addScenario({ storyName: ${storyCode.value}, chapterName: ${chapterName.value}, partName: ${partName.value}, code: ${partCode.value}}, [\n`
+    const slides = document.querySelectorAll('.slide')
+    slides.forEach(slide => {
+      result+=slide.value
+    })
+    for (const [key, value] of dictionary) {
+      result = result.replaceAll(`${value}`, `${key}`)
+    }
+    return result
+  }
+
+  function enableButtons() {
+    document.querySelectorAll('.toolbar-category-button').forEach(button => {
+      button.disabled = false
+    })
+  }
+
+  async function makeScenario(name, text){
+    // Массив со всеми "сырыми" слайдами
+    let rawSlides = text.split(/\n\n\n+/g);
+    // Заготовка кода одного слайда
+    const scenePrefab = '' +
+      '  {' +
+      '\n    id: $INDEX$,' +
+      '\n    text: \n      `\n        $TEXT$\n      `, ' +
+      '\n    buttons: [\n      {\n        text: \'\',\n        goTo: $INDEXPLUS$\n      }],' +
+      '$MESSAGE$' +
+      '$MUSIC$' +
+      '$AMBIENT$' +
+      '$SIMPLE$' +
+      '$SPEAKER$' +
+      '$SPEAKERL$' +
+      '$SPEAKERR$' +
+      '$PICTUREFRONT$' +
+      '$PICTUREFULLSCREEN$' +
+      '$PICTUREFULLSCREENL$' +
+      '$PICTUREFULLSCREENR$' +
+      '$PARALLAXL$' +
+      '$PARALLAXR$' +
+      '$CUTSCENE$' +
+      '$DARKS$' +
+      '$GHOSTS$' +
+			'$INTERRUPTIVE$' +
+			'$OKMESSAGE$' +
+			'$CHAT$' +
+			'$WARDROBE$' +
+      '$DISABLEMUSIC$' +
+      '$DISABLEAMBIENT$' +
+      '$EFFECT$' +
+      '\n    stats: [$STAT$$ITEM$$PERSON$$CHOICE$],' +
+      '\n    achievement: $ACHIEVEMENT$' +
+      '\n    imageBack: require(\'../../../../Media/Images/$NAME$/-$PICTURE$-\')' +
+      '  \n  },';
+
+    // --- Новая логика для обработки выборов ---
+    const choiceStartRegex = /^! ?Начало выбора: (.*)/m;
+    const choiceBranchRegex = /^! ?Выбор: (.*)/m;
+    const choiceEndRegex = /^Далее/m;
+
+    const choiceMap = new Map(); // slideIndex -> { buttons: [], endSlideIndex: -1 }
+    let currentChoiceStartIndex = -1;
+    const branchEndMap = new Map(); // choiceStartIndex -> last slide index of each branch
+
+    for (let i = 0; i < rawSlides.length; i++) {
+      const slideText = rawSlides[i];
+
+      if (choiceStartRegex.test(slideText)) {
+        currentChoiceStartIndex = i;
+        const choices = choiceStartRegex.exec(slideText)[1].split('/').map(c => c.trim());
+        choiceMap.set(i, { buttons: choices.map(c => ({ text: c, goTo: -1 })), endSlideIndex: -1, lastBranchSlide: -1 });
+        branchEndMap.set(i, []);
+      } else if (choiceBranchRegex.test(slideText) && currentChoiceStartIndex !== -1) {
+        const branchName = choiceBranchRegex.exec(slideText)[1].trim();
+        const choiceInfo = choiceMap.get(currentChoiceStartIndex);
+        const button = choiceInfo.buttons.find(b => b.text === branchName);
+        if (button) {
+          button.goTo = i;
+        }
+        // The slide before this new branch was the end of the previous branch
+        if (i > 0) {
+          branchEndMap.get(currentChoiceStartIndex).push(i - 1);
+        }
+      } else if (choiceEndRegex.test(slideText) && currentChoiceStartIndex !== -1) {
+        // This is the common continuation slide
+        choiceMap.get(currentChoiceStartIndex).endSlideIndex = i;
+        // The slide before this was the end of the last branch
+        if (i > 0) {
+          branchEndMap.get(currentChoiceStartIndex).push(i - 1);
+        }
+        currentChoiceStartIndex = -1; // Завершаем текущий блок выбора
+      }
+    }
+
+    const scenes = { [name]: rawSlides.map(slide => slide.split('\n')) };
+    // Сэты с уникальными названиями
+    const allPictures = new Set();
+    const allMusic = new Set();
+    const allItems = new Set();
+    const allStats = new Set();
+    const allPersons = new Set();
+    const allChoices = new Set();
+    const allWardrobes = new Set();
+    const allChats = new Set();
+    const allAchievements = new Set();
+    // Выводимый результат
+    let result = ``;
+    // Кэшируем последнюю используемую картинку
+    let picture = '';
+    // Проходимся по всем созданным слайдам
+    for(let x = 0; x<scenes[name].length;x++){
+      // Проверяем, является ли этот слайд последним в какой-либо ветке выбора
+      const isBranchEnd = Array.from(branchEndMap.values()).flat().includes(x);
+
+      // Копируем заготовку кода одного слайда
+      let value = scenePrefab.slice();
+      // Проходимся по всем абзацам в слайде
+      for(let y =0; y<scenes[name][x].length;y++){
+
+        if (choiceStartRegex.test(scenes[name][x][y])) {
+          const choiceInfo = choiceMap.get(x);
+          if (choiceInfo) {
+            const buttonsCode = choiceInfo.buttons.map(b => `      {\n        text: '${b.text}',\n        goTo: ${b.goTo}\n      }`).join(',\n');
+            value = value.replace(/buttons: \[\s*\{\s*text: '',\s*goTo: \$INDEXPLUS\$\s*\}\s*\]/, `buttons: [\n${buttonsCode}\n    ]`);
+          }
+          // Удаляем строку с директивой выбора из текста слайда
+          scenes[name][x].splice(y, 1);
+          y -= 1;
+        } else if (choiceBranchRegex.test(scenes[name][x][y])) {
+          // Удаляем строку с директивой ветки выбора
+          scenes[name][x].splice(y, 1);
+          y -= 1;
+        } else if (choiceEndRegex.test(scenes[name][x][y])) {
+          // Удаляем строку "Далее"
+          scenes[name][x].splice(y, 1);
+          y -= 1;
+        } else if(/! Фон:* /.test(scenes[name][x][y])) {
+          // Заменяем картинку пустой строкой
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Фон:* /, '').trim().toUpperCase();
+          // Добавляем название картинки в сэт
+          allPictures.add(scenes[name][x][y]);
+          // Вырезаем и кешируем значение картинки
+          picture = scenes[name][x].splice(y,1);
+          // Обязательно откатываем шаг назад т.к. ВЫРЕЗАЛИ элемент массива
+          y-=1;
+        } else if (/! Объект:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Объект:* /, '').trim().toUpperCase();
+          // Добавляем название картинки в сэт
+          allPictures.add(scenes[name][x][y]);
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$PICTUREFRONT$',`\n    imageFront: require('../../../../Media/Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),\n    imageBorder: require(\'../../../../Media/Images/$NAME$/UI/Border.png\'),`);
+          y-=1;
+        } else if (/! Полнэкран:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Полнэкран:* /, '').trim().toUpperCase();
+          // Добавляем название картинки в сэт
+          allPictures.add(scenes[name][x][y]);
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$PICTUREFULLSCREEN$',`\n    fullscreenObject: require('../../../../Media/Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
+          y-=1;
+        } else if (/! ОбъектОК:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! ОбъектОК:* /, '').trim().toUpperCase();
+          const parts = scenes[name][x][y].split(' / ')
+          // Добавляем название картинки в сэт
+          allPictures.add(parts[0]);
+          scenes[name][x].splice(y,1)
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$OKMESSAGE$',`\n    OKMessage: { goTo: $INDEXPLUS$, image: require('../../../../Media/Images/$NAME$/-${parts[0]}-'), buttonText: '${parts[1].charAt(0) + parts[1].slice(1).toLowerCase()}' },`);
+          y-=1;
+        } else if (/! ПолнэкранЛ:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! ПолнэкранЛ:* /, '').trim().toUpperCase();
+          // Добавляем название картинки в сэт
+          allPictures.add(scenes[name][x][y]);
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$PICTUREFULLSCREENL$',`\n    fullscreenObjectL: require('../../../../Media/Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
+          y-=1;
+        } else if (/! ПолнэкранП:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! ПолнэкранП:* /, '').trim().toUpperCase();
+          // Добавляем название картинки в сэт
+          allPictures.add(scenes[name][x][y]);
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$PICTUREFULLSCREENR$',`\n    fullscreenObjectR: require('../../../../Media/Images/$NAME$/-${scenes[name][x].splice(y,1)}-'),`);
+          y-=1;
+        } else if (/! Табличка:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Табличка:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$MESSAGE$',`\n    message: '${scenes[name][x].splice(y,1)}',`);
+          y-=1;
+        } else if (/! Спецэффект:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Спецэффект:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$EFFECT$',`\n    effect: '${scenes[name][x].splice(y,1)}',`);
+          y-=1;
+        } else if (/! Реплика:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Реплика:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$SPEAKER$',`\n    speaker: '${scenes[name][x].splice(y,1)}',`);
+          y-=1;
+        } else if (/! РепликаЛ:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! РепликаЛ:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$SPEAKERL$',`\n    speakerL: '${scenes[name][x].splice(y,1)}',`);
+          y-=1;
+        } else if (/! РепликаП:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! РепликаП:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$SPEAKERR$',`\n    speakerR: '${scenes[name][x].splice(y,1)}',`);
+          y-=1;
+        } else if (/! Кат-Сцена:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Кат-Сцена:* /, '');
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$CUTSCENE$',`\n    cutScene: {video: require('../../../../Media/Images/$NAME$/-${scenes[name][x].splice(y,1)}-') goTo: $INDEXPLUS$,}`);
+          y-=1;
+        } else if (/! Достижение:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Достижение:* /, '');
+          allAchievements.add(scenes[name][x][y]);
+          // Заменяем ключевое слово на значение
+          value = value.replaceAll('$ACHIEVEMENT$',`{ story: EStoriesEn.${name}, name: '${scenes[name][x].splice(y,1)}' },`);
+          y-=1;
+        } else if (/! Силуэт/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Силуэт/, '');
+          value = value.replaceAll('$DARKS$',`darkSilhouette: true,`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Параллакс: Лево/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Параллакс: Лево/, '');
+          value = value.replaceAll('$PARALLAXL$',`\n    parallax: 'left',`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Параллакс: Право/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Параллакс: Право/, '');
+          value = value.replaceAll('$PARALLAXR$',`\n    parallax: 'right',`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        }
+        else if (/! Призрак/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Призрак/, '');
+          value = value.replaceAll('$GHOSTS$',`ghostSilhouette: true,`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Перебивка/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Перебивка/, '');
+          value = value.replaceAll('$INTERRUPTIVE$',`interruptiveFrame: { goTo: $INDEXPLUS$ },`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Музыка:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Музыка:* /, '');
+          // Добавляем название музыки в сэт
+          allMusic.add(scenes[name][x][y]);
+          value = value.replaceAll('$MUSIC$',`\n    music: require('../../../../Media/Audio/${name}/Music/=${scenes[name][x].splice(y,1)}='),`);
+          y-=1;
+        } else if (/! Эмбиент:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Эмбиент:* /, '');
+          // Добавляем название музыки в сэт
+          allMusic.add(scenes[name][x][y]);
+          value = value.replaceAll('$AMBIENT$',`\n    ambient: require('../../../../Media/Audio/${name}/Ambient/=${scenes[name][x].splice(y,1)}='),`);
+          y-=1;
+        } else if (/! Звук:* /.test(scenes[name][x][y])) {
+					scenes[name][x][y] = scenes[name][x][y].replace(/! Звук:* /, '');
+					// Добавляем название музыки в сэт
+					allMusic.add(scenes[name][x][y]);
+					value = value.replaceAll('$SIMPLE$',`\n    simple: require('../../../../Media/Audio/${name}/Sounds/=${scenes[name][x].splice(y,1)}='),`);
+					y-=1;
+      	} else if (/! Выключить музыку/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Выключить музыку/, '');
+          value = value.replaceAll('$DISABLEMUSIC$',`music: require('../../../../Media/Audio/Common/Silence.mp3'),`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Выключить эмбиент/.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Выключить эмбиент/, '');
+          value = value.replaceAll('$DISABLEAMBIENT$',`ambient: require('../../../../Media/Audio/Common/Silence.mp3'),`);
+          scenes[name][x].splice(y,1)
+          y-=1;
+        } else if (/! Предмет:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Предмет:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
+          const itemAmount = word.pop();
+          word = word.join(' ');
+          allItems.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$ITEM$',`\n          { story: EStoriesEn.${name}, value: ${itemAmount}, category: 'Item', id: '&${word}&' },$ITEM$`);
+          y-=1;
+        } else if (/! Стат:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Стат:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
+          const statAmount = word.pop();
+          word = word.join(' ');
+          allStats.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$STAT$',`\n          { story: EStoriesEn.${name}, value: ${statAmount}, category: 'Effect', id: '*${word}*' },$STAT$`);
+          y-=1;
+        } else if (/! Персонаж:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Персонаж:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
+          const statAmount = word.pop();
+          word = word.join(' ');
+          allPersons.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$PERSON$',`\n          { story: EStoriesEn.${name}, value: ${statAmount}, category: 'Person', id: '*${word}*' },$PERSON$`);
+          y-=1;
+        } else if (/! Запомнить:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Запомнить:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
+          word = word.join(' ');
+          allChoices.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$CHOICE$',`\n          { story: EStoriesEn.${name}, value: 1, category: 'Choice', id: '*${word}*' },$CHOICE$`);
+          y-=1;
+        } else if (/! Гардероб:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Гардероб:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
+          word = word.join(' ');
+          allWardrobes.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$WARDROBE$',`wardrobe: { story: EStoriesEn.${name}, personId: *${word}*, goTo: $INDEXPLUS$ },`);
+          y-=1;
+        } else if (/! Чат:* /.test(scenes[name][x][y])) {
+          scenes[name][x][y] = scenes[name][x][y].replace(/! Чат:* /, '').trim().toUpperCase().split(' ');
+          let word = scenes[name][x][y];
+          word = word.join(' ');
+          allChats.add(word);
+          scenes[name][x][y] = '';
+          value = value.replaceAll('$CHAT$',`smartphone: { chatID: *${word}*, goTo: $INDEXPLUS$ },`);
+          y-=1;
+        }
+
+        // Удаление пустого абзаца
+        else if(scenes[name][x][y]===''){
+          scenes[name][x].splice(y,1);
+          y-=1;
+        }
+      }
+
+      // Если слайд является концом ветки, устанавливаем правильный переход на общий слайд
+      if (isBranchEnd) {
+        const choiceEntry = Array.from(branchEndMap.entries()).find(([, ends]) => ends.includes(x));
+        const choiceStartIndex = choiceEntry[0];
+        const endSlideIndex = choiceMap.get(choiceStartIndex).endSlideIndex;
+        value = value.replace(/goTo: \$INDEXPLUS\$/, `goTo: ${endSlideIndex}`);
+      }
+      // Соединяем абзацы при помощи <p>
+      scenes[name][x] = scenes[name][x].join('<p>');
+      // Удаляем <p> в начале
+      if (scenes[name][x].startsWith('<p>')) scenes[name][x] = scenes[name][x].replace('<p>', '');
+      // Заменяем ключевые слова на значения
+      value = value.replaceAll('$NAME$',name);
+      value = value.replaceAll('$PICTURE$', picture);
+      value = value.replaceAll('$INDEX$', x + '');
+      value = value.replaceAll('$INDEXPLUS$', x + 1 + '');
+      value = value.replaceAll('$TEXT$', `${scenes[name][x]}`);
+      // Удаляем ключевые слова, если не использовались
+      value = value.replaceAll('$ITEM$','');
+      value = value.replaceAll('$STAT$','');
+      value = value.replaceAll('$PERSON$','');
+      value = value.replaceAll('$CHOICE$','');
+      value = value.replaceAll('$MESSAGE$','');
+      value = value.replaceAll('$OKMESSAGE$','');
+      value = value.replaceAll('$CHAT$','');
+      value = value.replaceAll('$MUSIC$','');
+      value = value.replaceAll('$AMBIENT$','');
+      value = value.replaceAll('$SIMPLE$','');
+      value = value.replaceAll('$EFFECT$','');
+      value = value.replaceAll('$INTERRUPTIVE$','');
+      value = value.replaceAll('$DISABLEAMBIENT$','');
+      value = value.replaceAll('$DISABLEMUSIC$','');
+      value = value.replaceAll('$SPEAKER$','');
+      value = value.replaceAll('$SPEAKERL$','');
+      value = value.replaceAll('$SPEAKERR$','');
+      value = value.replaceAll('$CUTSCENE$','');
+      value = value.replaceAll('$PICTUREFRONT$','');
+      value = value.replaceAll('$PICTUREFULLSCREEN$','');
+      value = value.replaceAll('$PICTUREFULLSCREENL$','');
+      value = value.replaceAll('$PICTUREFULLSCREENR$','');
+      value = value.replaceAll('$DARKS$','');
+      value = value.replaceAll('$WARDROBE$','');
+      value = value.replaceAll('$GHOSTS$','');
+      value = value.replaceAll('$PARALLAXL$','');
+      value = value.replaceAll('$PARALLAXR$','');
+			value = value.replaceAll('\n    stats: [],','');
+      value = value.replaceAll('\n    achievement: $ACHIEVEMENT$','');
+
+      // Добавляем код слайда в строку
+			value = makeFormation(value)
+      result += value + '\n\n';
+    }
+
+    // Добавляем уникальные имена картинок и музыки в начало кода всех слайдов (чтобы можно было потом проверить все ли заменилось)
+    const storyCode = await showPrompt('Укажите код истории');
+    const chapterName = await showPrompt('Укажите название главы');
+    const partName = await showPrompt('Укажите название части');
+    const partCode = await showPrompt('Укажите код части');
+    const initConst = `scenarioManager.addScenario({ storyName: EStoriesEn.${storyCode}, chapterName: '${chapterName}', partName: '${partName}', code: '${partCode}' }, [`;
+    const resultImages = '\n\n// Картинки: ' + JSON.stringify([...allPictures]) + '\n\n';
+    const resultMusic = '// Музыка:' + JSON.stringify([...allMusic]) + '\n\n';
+    const resultItems = '// Предметы:' + JSON.stringify([...allItems]) + '\n\n';
+    const resultStats = '// Статы:' + JSON.stringify([...allStats]) + '\n\n';
+    const resultPersons = '// Персонажи:' + JSON.stringify([...allPersons]) + '\n\n';
+    const resultChoices = '// Запомнить выборы:' + JSON.stringify([...allPersons]) + '\n\n';
+    const resultAchievements = '// Достижения:' + JSON.stringify([...allAchievements]) + '\n\n';
+    const standartImports = `
+			import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
+			import { EStoriesEn } from '../../../../Utils/EStoriesNames'
+			import { musicPlayer } from '../../../../Functions/musicPlayer'
+			import { loadData } from '../../../../Functions/localStorageManager'
+			import { blackFlash, redFlash, whiteFlash } from '../../../../Components/Slide/Slide'`
+
+    // Функция замены указанных названий картинок, музыки и тд на пути до файлов
+    async function setCodeNames(set, message, brackets = '', additional = '') {
+      for (const element of set) { result = result.replaceAll(`${brackets}${element}${brackets}`,  (await showPrompt(`${message} [ ${element} ] :`)) + additional) }
+    }
+
+    await setCodeNames(allPictures, 'Укажите путь до картинки для', '-');
+    await setCodeNames(allMusic, 'Укажите название звукового файла для', '=', '.mp3');
+    await setCodeNames(allItems, 'Укажите название предмета для', '&');
+    await setCodeNames(allStats, 'Укажите название стата для', '*');
+    await setCodeNames(allPersons, 'Укажите название персонажа для', '*');
+    await setCodeNames(allChoices, 'Укажите название выбора для', '*');
+    await setCodeNames(allWardrobes, 'Укажите название гардероба для', '*');
+    await setCodeNames(allChats, 'Укажите название чата для', '*');
+    await setCodeNames(allAchievements, 'Укажите название достижения для');
+
+    result = standartImports + initConst + result + '])\n';
+    /*resultImages + resultMusic + resultPersons + resultItems + resultStats + resultChoices + resultAchievements*/
+    // Возвращаем результат
+    return result;
+  }
+
+  function hexToRgb(hex) {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return `${parseInt(result[1], 16)}, ${parseInt(result[2], 16)}, ${parseInt(result[3], 16)}`
+  }
+
+  function saveRecent () {
+    localStorage.setItem("recentFile", saveFromEditor())
+  }
+
+  function initDictionary() {
+    dictionary.set('id:', '[Идентификатор]:')
+    dictionary.set('text:', '[Текст]:')
+    dictionary.set('buttons:', '[Кнопки слайда]:')
+    dictionary.set('gift:', '[Выбор за рекламу]:')
+    dictionary.set('goTo:', '[Переход на слайд]:')
+    dictionary.set('func:', '[Событие при нажатии]:')
+    dictionary.set('speaker:', '[Реплика]:')
+    dictionary.set('message:', '[Табличка]:')
+    dictionary.set('music:', '[Музыка]:')
+    dictionary.set('simple:', '[Звук]:')
+    dictionary.set('ambient:', '[Эмбиент]:')
+    dictionary.set('beforeBegin:', '[Перед началом слайда]:')
+    dictionary.set('stats:', '[Добавить статы]:')
+    dictionary.set('timer.set(', 'установить таймер(')
+    dictionary.set('timer.stop(', 'остановить таймер(')
+    dictionary.set('condition:', '[Условие]:')
+    dictionary.set('effect:', '[Эффект]:')
+    dictionary.set('imageFront:', '[Объект]:')
+    dictionary.set('imageLeft:', '[Объект слева]:')
+    dictionary.set('imageBorder:', '[Рамка]:')
+    dictionary.set('imageBack:', '[Фон]:')
+    dictionary.set('darkSilhouette:', '[Силуэт]:')
+    dictionary.set('ghostSilhouette:', '[Призрак]:')
+    dictionary.set('OKMessage:', '[ОбъектОК]:')
+    dictionary.set('parallax:', '[Параллакс]:')
+    dictionary.set('\'left\'', '\'Лево\'')
+    dictionary.set('\'right\'', '\'Право\'')
+    dictionary.set('achievement:', '[Достижение]:')
+    dictionary.set('cutScene:', '[Кат-сцена]:')
+    dictionary.set('video:', '[Видео]:')
+    dictionary.set('wardrobe:', '[Гардероб]:')
+    dictionary.set('video:', '[Видео]:')
+    dictionary.set('return wardrobe.getCurrentClothesImage(', 'гардероб персонажа(')
+    dictionary.set('saveEndProgress(', 'сохранение в следующую часть(')
+    dictionary.set('require(', 'файл(')
+  }
+
+  function initChatsDictionary() {
+    chatsDictionary.set('smartphone.addChat', 'НовыйЧат')
+    chatsDictionary.set('avatar:', '[Аватарка]:')
+    chatsDictionary.set('title:', '[Имя]:')
+    chatsDictionary.set('text:', '[Сообщение]:')
+    chatsDictionary.set('messages:', '[Сообщения]:')
+    chatsDictionary.set('fellow:', '[Собеседник]:')
+    chatsDictionary.set('answers:', '[ВариантыОтветов]:')
+    chatsDictionary.set('anchor:', '[Якорь]:')
+    chatsDictionary.set('senderName:', '[ИмяОтправителя]:')
+    chatsDictionary.set('goToAnchor:', '[ПерейтиНаЯкорь]:')
+    chatsDictionary.set('false', '*Нет*')
+    chatsDictionary.set('true', '*Да*')
+    chatsDictionary.set('end:', '[Конец]:')
+  }
+
+  function makeFormation (text) {
+    let result = text
+    result = result.replaceAll('      `\n' + '        \n' + '      `, ','      \'\',');
+    result = result.replaceAll(/    text: \n      '',\n    buttons: \[\n      \{\n        text: '',\n        goTo: \d+/g, '      text:\n' + '      \'\',\n' + '    buttons: [\n' + '      {\n' + '        text: \'\'');
+		return result
+  }
+
+</script>
+</body>
+</html>

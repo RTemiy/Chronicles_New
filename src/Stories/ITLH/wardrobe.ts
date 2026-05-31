@@ -31,6 +31,33 @@ wardrobe.addEntity('Hero_Room', [{
 }
 ])
 
+wardrobe.addVariation('Hero_Room', [
+  {
+    image: require('../../Media/Images/ITLH/Backgrounds/Hero_Room_Poor_Night.jpg'),
+    variation: 'Night',
+    originalId: 1,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/ITLH/Backgrounds/Hero_Room_Medium_Night.jpg'),
+    variation: 'Night',
+    originalId: 2,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/ITLH/Backgrounds/Hero_Room_Rich_Night.jpg'),
+    variation: 'Night',
+    originalId: 3,
+    unlocked: () => { return false }
+  },
+  {
+    image: require('../../Media/Images/ITLH/Backgrounds/Hero_Room_Shop_1_Night.jpg'),
+    variation: 'Night',
+    originalId: 4,
+    unlocked: () => { return false }
+  }
+])
+
 wardrobe.addEntity('Hero_Chapter01_Part01', [{
   image: require('../../Media/Images/ITLH/Persons/Hero_Comfort_Loose.png'),
   title: 'Удобство (распущенные)',
@@ -145,6 +172,52 @@ wardrobe.addEntity('Breakfast_Chapter01_Part01', [{
   image: require('../../Media/Images/ITLH/Objects/Salad.png'),
   title: 'Фруктовый салат',
   description: 'Бодрящая свежесть.',
+  cost: 'short',
+  unlocked: () => { return true }
+}
+])
+
+wardrobe.addEntity('Hero_Chapter01_Part02', [{
+  image: require('../../Media/Images/ITLH/Persons/Hero_Home_Cozy.png'),
+  title: 'Домашний шик',
+  description: 'Легкость и непринужденность: вязаный свитер кремового оттенка и свободные брюки с забавным рисунком.',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Media/Images/ITLH/Persons/Hero_Home_Lilac.png'),
+  title: 'Сиреневая безмятежность',
+  description: 'Свободный топ и шорты с изящной отделкой создают уютный, но стильный образ.',
+  cost: 'medium',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Media/Images/ITLH/Persons/Hero_Home_Bordo.png'),
+  title: 'Бордовая гармония',
+  description: 'Укороченный топ и широкие брюки в едином оттенке создают цельный и комфортный лук.',
+  cost: 'long',
+  unlocked: () => { return true }
+}
+])
+
+wardrobe.addEntity('CafeNy_Chapter01_Part02', [{
+  image: require('../../Media/Images/ITLH/Objects/Brownie.png'),
+  title: 'Брауни',
+  description: 'Плотный шоколадный кекс, нарезанный на квадратные куски.',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Media/Images/ITLH/Objects/Parfe.png'),
+  title: 'Парфе',
+  description: 'Нежное фруктовое мороженое, чередующееся с воздушными слоями взбитых сливок.',
+  cost: 'short',
+  unlocked: () => { return true }
+},
+{
+  image: require('../../Media/Images/ITLH/Objects/Rainbow_Cookies.png'),
+  title: 'Радужное печенье',
+  description: 'Трехслойное кондитерское изделие со вкусом малинового джема и шоколадной глазури.',
   cost: 'short',
   unlocked: () => { return true }
 }

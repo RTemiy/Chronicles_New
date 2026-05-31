@@ -35,6 +35,16 @@ storiesManager.add({
           }
         },
         {
+          name: 'Часть 2',
+          code: '0',
+          image: require('../../Media/Images/ITLH/Backgrounds/Goddess_Cage.jpg'),
+          loadingImage: require('../../Media/Images/ITLH/Covers/Chapter01Part02.jpg'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
           name: 'Скоро',
           code: '0',
           image: require('../../Media/Images/UI/background.png'),
