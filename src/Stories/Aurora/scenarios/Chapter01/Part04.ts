@@ -1,3 +1,4 @@
+/*
 import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { blackFlash, whiteFlash } from '../../../../Components/Slide/Slide'
@@ -6627,3 +6628,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   }
 ])
+*/

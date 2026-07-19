@@ -40,3 +40,33 @@ statsManager.add({
   description: 'Государственная валюта страны Крейс.',
   story: EStoriesEn.TDP
 })
+
+statsManager.add({
+  category: 'Item',
+  id: 'Letter',
+  name: 'Письмо',
+  image: require('../../Media/Images/TDP/Items/Letter.png'),
+  title: 'Приглашение на бал.',
+  description: 'Новая зацепка на пути к побегу из этого городка.',
+  story: EStoriesEn.TDP
+})
+
+statsManager.add({
+  category: 'Item',
+  id: 'Envelope',
+  name: 'Конверт',
+  image: require('../../Media/Images/TDP/Items/Envelope.png'),
+  title: 'Послание от незнакомца.',
+  description: 'При одном взгляде на него чувствуется влияние и статус отправителя.',
+  story: EStoriesEn.TDP
+})
+
+statsManager.add({
+  category: 'Item',
+  id: 'Poiton',
+  name: 'Флакон',
+  image: require('../../Media/Images/TDP/Items/Poiton.png'),
+  title: 'Бутыль с темной жидкостью.',
+  description: 'Необычайно редкие духи, как их нахваливал продавец.',
+  story: EStoriesEn.TDP
+})

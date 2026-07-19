@@ -1,6 +1,7 @@
 import CContainer from '../../Classes/CContainer'
 import './Rate.scss'
 import makeExplosion from '../../Functions/explosion'
+import { submitReview } from '../../Functions/chroniclesServerAPI';
 
 const Rate = new CContainer('rate',
 `
@@ -28,8 +29,17 @@ const Rate = new CContainer('rate',
 let storyData: string
 let rating: number
 
-export function showRate (data: string): void {
-  storyData = data
+export function showRate (storyName: string, chapterName: string, partName: string, code: string): void {
+  if (partName.split(' ')[1] === '1' && chapterName.split(' ')[1] === '1') {
+    storyData = storyName + '_' + chapterName + '_' + 'Пролог' + '_' + code
+  } else if (partName.split(' ')[1] === '1') {
+    storyData = storyName + '_' + (parseInt(chapterName.split(' ')[1]) - 1).toString() + '_' + 'Последняя часть' + '_' + code
+  } else {
+    storyData = storyName + '_' + chapterName + '_' + 'Часть' + (parseInt(partName.split(' ')[1]) - 1).toString() + '_' + code
+  }
+
+  // console.log(storyData)
+
   rating = -1
   Rate.input.value = ''
   Rate.sendButton.style.display = 'none'
@@ -56,7 +66,7 @@ function renderRating (): void {
 }
 
 function sendRating (): void {
-
+  submitReview(storyData, rating + 1, Rate.input.value)
 }
 
 Rate.sendButton.onclick = () => {

@@ -9,6 +9,7 @@ storiesManager.add({
     'Страну Крейс поразила страшная болезнь — чума. В условиях эпидемии Генрих работает контрабандистом, переправляя нуждающихся за границу. Но все меняется, когда к нему за помощью обращается группа беженцев. Начавшееся приключение перевернет не только судьбы героев, но и всего мира. ',
   genre: 'Фэнтези, Приключение',
   mature: true,
+  status: 'Новая часть',
   chapters: [
     {
       name: 'Глава 1',
@@ -26,8 +27,18 @@ storiesManager.add({
         {
           name: 'Часть 1',
           code: '0',
-          image: require('../../Media/Images/TDP/Backgrounds/City_Gates_Closed.png'),
+          image: require('../../Media/Images/TDP/Backgrounds/City_Gates_Closed.jpg'),
           loadingImage: require('../../Media/Images/TDP/Covers/Chapter01Part01.jpg'),
+          event: (storyName: string, chapterName: string, partName: string, code: string) => {
+            scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
+            statsManager.loadStats(false, storyName, chapterName, partName, code)
+          }
+        },
+        {
+          name: 'Часть 2',
+          code: '0',
+          image: require('../../Media/Images/TDP/Backgrounds/Chapel.jpg'),
+          loadingImage: require('../../Media/Images/TDP/Covers/Chapter01Part02.jpg'),
           event: (storyName: string, chapterName: string, partName: string, code: string) => {
             scenarioManager.setCurrentScenarioName(storyName, chapterName, partName, code, true)
             statsManager.loadStats(false, storyName, chapterName, partName, code)

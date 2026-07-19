@@ -1,3 +1,4 @@
+/*
 import { saveEndProgress, scenarioManager, statsManager, timer, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { musicPlayer } from '../../../../Functions/musicPlayer'
@@ -5585,7 +5586,7 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
         text: '',
         goTo: 365
       }],
-/*    music: musicPlayer[`AuroraDaily${loadData(['Aurora', 'Daily', 'Music'])}`],*/
+/!*    music: musicPlayer[`AuroraDaily${loadData(['Aurora', 'Daily', 'Music'])}`],*!/
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Aurora_Room.jpg')
   },
 
@@ -5792,3 +5793,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Aurora_Room.jpg')
   }
 ])
+*/

@@ -3,6 +3,7 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 /*statsManager.add({
   category: 'Choice',
-  id: 'WakeUp',
-  story: EStoriesEn.Immortals
+  id: 'GoSleep',
+  story: EStoriesEn.ITLH,
+  idDescription: 'Поспать еще'
 })*/

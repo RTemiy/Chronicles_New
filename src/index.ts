@@ -53,6 +53,8 @@ import Collection, { renderCollection } from './Components/Collection/Collection
 import CCollectionManager from './Classes/CCollectionManager'
 import { Auth, handleSuccessfulLogin } from './Components/Auth/Auth'
 import { checkAuthStatus, getGameDataFromLocalStorage, updateUserData } from './Functions/chroniclesServerAPI'
+import { CMiniGameMemory } from './Classes/CMiniGameMemory';
+import { MiniGameMemory } from './Components/MiniGameMemory/MiniGameMemory';
 
 require('./service-worker')
 document.addEventListener('contextmenu', e => { e.preventDefault() })
@@ -75,6 +77,7 @@ export const slide = new CSlide(Slide, showBlurredBackground, soundManager, tabM
 export const scenarioManager = new CScenarioManager(statsManager, soundManager, achievementsManager, slide, slideEffects, wardrobe, smartphone)
 export const timer = new CTimer(soundManager, Slide.timer, Slide.timerLeft)
 export const journal = new CJournal()
+export const miniGameMemory = new CMiniGameMemory(MiniGameMemory.self)
 
 loadStories(EStoriesEn)
 
@@ -120,13 +123,16 @@ export function saveEndProgress (storyName: string, chapterName: string, partNam
   MenuToolbar.self.style.display = 'flex'
   tabManagerMenu.open(Stories.self)
   soundManager.play('menu')
-  !DESKTOPMODE && !DEVMODE && !ANDROIDMODE && showRate(storyName + chapterName + partName + code)
+  showRate(storyName, chapterName, partName, code)
   localStorage.removeItem('LastSave_ScenarioInfo')
   MenuToolbar.continueButton.setAttribute('style', 'display: none')
   hideLoadingScreen()
   changeState('menu')
   menuToolbar.storiesButton.click()
-  setTimeout(() => { hideLoadingScreen() }, 1100)
+  setTimeout(() => {
+    hideLoadingScreen()
+    updateUserData(getGameDataFromLocalStorage())
+  }, 1100)
 }
 
 startBooksTimer()

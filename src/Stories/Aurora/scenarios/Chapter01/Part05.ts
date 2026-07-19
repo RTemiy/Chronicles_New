@@ -1,3 +1,4 @@
+/*
 import { saveEndProgress, scenarioManager, statsManager, wardrobe } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { musicPlayer } from '../../../../Functions/musicPlayer'
@@ -5070,3 +5071,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Streets.jpg')
   }
 ])
+*/

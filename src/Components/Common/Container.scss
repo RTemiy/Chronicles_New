@@ -21,9 +21,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100vw;
+  width: 95vw;
   height: 100px;
-  max-width: 500px;
+  max-width: 485px;
   justify-self: center;
   max-height: 100px;
   overflow: scroll;
@@ -31,6 +31,7 @@
   border-top: 1px solid white;
   border-bottom: 1px solid white;
   background-color: rgba(0, 0, 0, 0.3);
+  @extend %styled-radius;
   @extend %styled-border;
 }
 

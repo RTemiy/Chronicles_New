@@ -3,8 +3,9 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 /*achievementsManager.add({
   name: 'PrologueCompleted',
-  image: require('../../Images/Immortals/Backgrounds/Guides_World.jpg'),
+  image: require('../../Media/Images/ITLH/Achievements/PrologueCompleted.png'),
   title: 'Начало начал',
   text: 'Пройти пролог',
-  story: EStoriesEn.Immortals
+  story: EStoriesEn.ITLH
 })*/
+

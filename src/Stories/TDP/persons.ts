@@ -60,3 +60,33 @@ statsManager.add({
   description: 'Легкий на подъем, он всегда спешит вперед, полагаясь на судьбу и собственную удачу. Шутливо отбрасывая трудности, порой недооценивает возможные риски и последствия своих поступков.',
   story: EStoriesEn.TDP
 })
+
+statsManager.add({
+  category: 'Person',
+  id: 'Emil',
+  name: 'Эмиль',
+  image: require('../../Media/Images/TDP/Persons/Emil_Avatar.png'),
+  title: 'Охранник часовни.',
+  description: 'Огромная туша на страже покоя покойных. Ему не важно кто перед ним, приказ есть приказ.',
+  story: EStoriesEn.TDP
+})
+
+statsManager.add({
+  category: 'Person',
+  id: 'Hugo',
+  name: 'Хьюго',
+  image: require('../../Media/Images/TDP/Persons/Hugo_Avatar.png'),
+  title: 'Уличный торговец.',
+  description: 'Появившийся из неоткуда со своей лавкой, взбесил своей гоблинской мордой.',
+  story: EStoriesEn.TDP
+})
+
+statsManager.add({
+  category: 'Person',
+  id: 'Unknown',
+  name: 'Неизвестный',
+  image: require('../../Media/Images/TDP/Persons/Unknown_Avatar.png'),
+  title: 'Загадочная фигура.',
+  description: 'Скрытный человек, дающий таинственное приглашение. Неизвестно, какого пола, его имя и статус. Понятно одно - он опасен.',
+  story: EStoriesEn.TDP
+})

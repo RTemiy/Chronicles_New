@@ -42,5 +42,37 @@ profileManager.addAvatars([
     image: require('../../Media/Images/ITLH/Persons/Scarlett_Avatar.png'),
     condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'Chapter01Part01Completed')
   }
+])
 
+profileManager.addAvatars([
+  {
+    id: 'ITLH_Katarina',
+    image: require('../../Media/Images/ITLH/Persons/Katarina_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'Actress')
+  },
+  {
+    id: 'ITLH_Nicola',
+    image: require('../../Media/Images/ITLH/Persons/Nicola_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'KnowledgePower')
+  },
+  {
+    id: 'ITLH_Monster',
+    image: require('../../Media/Images/ITLH/Persons/Monster_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'Monster')
+  },
+  {
+    id: 'ITLH_Hugh',
+    image: require('../../Media/Images/ITLH/Persons/Hugh_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'Helper')
+  },
+  {
+    id: 'ITLH_Leon',
+    image: require('../../Media/Images/ITLH/Persons/Leon_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'Chapter01Part02Completed')
+  },
+  {
+    id: 'ITLH_Cheryl',
+    image: require('../../Media/Images/ITLH/Persons/Cheryl_Avatar.png'),
+    condition: () => achievementsManager.isUnlocked(EStoriesEn.ITLH, 'Chapter01Part02Completed')
+  }
 ])

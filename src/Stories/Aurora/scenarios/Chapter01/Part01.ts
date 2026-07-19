@@ -1,3 +1,4 @@
+/*
 import { saveEndProgress, scenarioManager, statsManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { firstChoiceMessage } from '../../../../Utils/textConsts'
@@ -2471,3 +2472,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     imageBack: require('../../../../Media/Images/Aurora/Backgrounds/Lighthouse.jpg')
   }
 ])
+*/

@@ -1,3 +1,4 @@
+/*
 import { statsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
@@ -20,3 +21,4 @@ statsManager.add({
   image: require('../../Media/Images/Aurora/Items/Mother_Photo.png'),
   story: EStoriesEn.Aurora
 })
+*/

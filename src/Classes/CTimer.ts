@@ -27,7 +27,7 @@ export default class CTimer {
       leftTime -= 1
       leftTime <= 3
         ? (this.timerNumberElement.style.color = 'red')
-        : (this.timerNumberElement.style.color = 'black')
+        : (this.timerNumberElement.style.color = 'white')
       this.timerNumberElement.innerText = String(leftTime)
     }, 1000)
   }

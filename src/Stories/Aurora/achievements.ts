@@ -1,3 +1,4 @@
+/*
 import { achievementsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
@@ -120,3 +121,4 @@ achievementsManager.add({
   text: 'Завершите пятую часть с новыми ощущениями',
   story: EStoriesEn.Aurora
 })
+*/

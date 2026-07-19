@@ -1,11 +1,10 @@
-import { achievementsManager, scenarioManager, statsManager } from '../index'
+import { achievementsManager, miniGameMemory, scenarioManager, statsManager } from '../index'
 import { EStoriesEn } from '../Utils/EStoriesNames'
 import showDebugger from '../Components/Debugger/Debugger'
-import { beginMiniGameMemory } from '../Components/MiniGameMemory/MiniGameMemory'
 import { showCaseSimulator } from '../Components/CaseSimulator/CaseSimulator'
 import { tsv2array } from './tsv2array'
 import { Slide } from '../Components/Slide/Slide'
-import { currentState } from './backEventActions';
+import { currentState } from './backEventActions'
 
 export function doCommand (input: string): void {
   const commands = input.split(' ')
@@ -27,7 +26,20 @@ export function doCommand (input: string): void {
         showDebugger()
         break
       case 'MiniGameMemory':
-        beginMiniGameMemory({ roundsInARowToWin: 3, beginningPathAmount: 3, lives: 3 })
+        miniGameMemory.startNew(
+          3,
+          3,
+          () => {},
+          () => {},
+          () => {},
+          [
+            require('../Media/Images/TDP/UI/MiniGameMemory/Tile01.png'),
+            require('../Media/Images/TDP/UI/MiniGameMemory/Tile02.png'),
+            require('../Media/Images/TDP/UI/MiniGameMemory/Tile03.png'),
+            require('../Media/Images/TDP/UI/MiniGameMemory/Tile04.png')
+          ],
+          require('../Media/Images/TDP/UI/MiniGameMemory/BG.jpg')
+        )
         break
       case 'CaseSimulator':
         showCaseSimulator()

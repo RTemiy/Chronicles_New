@@ -3,11 +3,10 @@ import { EStoriesEn } from '../../Utils/EStoriesNames'
 
 /*statsManager.add({
   category: 'Effect',
-  id: 'BrokenHand',
-  name: 'Перелом',
-  image: require('../../Images/Immortals/Effects/bone.svg'),
-  title: 'Сломанная рука',
-  description: 'Ранение, которое я получила после стычки с монстром при похищении.',
-  showValue: false,
-  story: EStoriesEn.Immortals
+  id: 'Knowledge',
+  name: 'Знание',
+  image: require('../../Media/Images/ITLH/Effects/Knowledge.png'),
+  title: 'Чем лучше учусь, тем шире возможности.',
+  description: 'Повышая успеваемость, я могу глубже погрузиться в исторические эпохи, открывать новые грани и обрести способность изменять окружающий мир.',
+  story: EStoriesEn.ITLH
 })*/

@@ -56,3 +56,51 @@ achievementsManager.add({
   text: 'Столкнуться с первыми трудностями',
   story: EStoriesEn.TDP
 })
+
+achievementsManager.add({
+  name: 'ChapelNoHelp',
+  image: require('../../Media/Images/TDP/Achievements/ChapelNoHelp.png'),
+  title: 'Не подведите свои желания',
+  text: 'Пройти в часовню без помощи Мортимера',
+  story: EStoriesEn.TDP
+})
+
+achievementsManager.add({
+  name: 'MiniGameExpert',
+  image: require('../../Media/Images/TDP/Achievements/MiniGameExpert.png'),
+  title: 'Глаз-алмаз',
+  text: 'Победить в мини-игре с первого раза',
+  story: EStoriesEn.TDP
+})
+
+achievementsManager.add({
+  name: 'KillChapel',
+  image: require('../../Media/Images/TDP/Achievements/KillChapel.png'),
+  title: 'Вынужденная необходимость',
+  text: 'Убить незнакомца',
+  story: EStoriesEn.TDP
+})
+
+achievementsManager.add({
+  name: 'MarthaPresent',
+  image: require('../../Media/Images/TDP/Achievements/MarthaPresent.png'),
+  title: 'Подарок для прекрасных дам',
+  text: 'Купить у Хьюго духи',
+  story: EStoriesEn.TDP
+})
+
+achievementsManager.add({
+  name: 'NurseGarden',
+  image: require('../../Media/Images/TDP/Achievements/NurseGarden.png'),
+  title: 'Монахиня в саду',
+  text: 'Отдаться близости',
+  story: EStoriesEn.TDP
+})
+
+achievementsManager.add({
+  name: 'Chapter01Part02Completed',
+  image: require('../../Media/Images/TDP/Achievements/Chapter01Part02Completed.png'),
+  title: 'Одной тайной меньше',
+  text: 'Переживите ночь в Гласвере',
+  story: EStoriesEn.TDP
+})

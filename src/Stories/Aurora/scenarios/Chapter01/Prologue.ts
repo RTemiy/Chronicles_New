@@ -1,3 +1,4 @@
+/*
 import { saveEndProgress, scenarioManager } from '../../../../index'
 import { EStoriesEn } from '../../../../Utils/EStoriesNames'
 import { inventoryMessage, previousSlideMessage } from '../../../../Utils/textConsts'
@@ -212,3 +213,4 @@ scenarioManager.addScenario({ storyName: EStoriesEn.Aurora, chapterName: 'Гла
     achievement: { story: EStoriesEn.Aurora, name: 'PrologueCompleted' }
   }
 ])
+*/

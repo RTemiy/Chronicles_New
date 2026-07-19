@@ -45,6 +45,13 @@ statsManager.add({
 
 statsManager.add({
   category: 'Choice',
+  id: 'HelpFromNobody',
+  story: EStoriesEn.ITLH,
+  idDescription: 'Пойти одной'
+})
+
+statsManager.add({
+  category: 'Choice',
   id: 'TellTruth',
   story: EStoriesEn.ITLH,
   idDescription: 'Рассказала правду'

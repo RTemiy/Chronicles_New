@@ -1,3 +1,4 @@
+/*
 import { statsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
@@ -65,3 +66,4 @@ statsManager.add({
   image: require('../../Media/Images/Aurora/Effects/Spirit.svg'),
   story: EStoriesEn.Aurora
 })
+*/

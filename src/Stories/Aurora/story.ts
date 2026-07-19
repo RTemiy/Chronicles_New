@@ -1,3 +1,4 @@
+/*
 import { scenarioManager, statsManager, storiesManager } from '../../index'
 
 storiesManager.add({
@@ -87,3 +88,4 @@ storiesManager.add({
     }
   ]
 })
+*/

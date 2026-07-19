@@ -56,6 +56,7 @@ export const Slide = new CContainer('slide',
         <button type="button" class="slide__hide-button"></button>
     </div>
     <div class="pie" style="--duration: 10s;">
+    <img class="pie__image" src="${require('../../Media/Images/UI/clock_ui.png')}"/>
     <p class="pie__leftTime">0</p>
     </div>
     <div class='slide__achievement'>

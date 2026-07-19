@@ -1,3 +1,4 @@
+/*
 import { wardrobe } from '../../index'
 import { loadData } from '../../Functions/localStorageManager'
 
@@ -53,3 +54,4 @@ wardrobe.addEntity('Aurora_Part04', [{
   unlocked: () => { return true }
 }
 ])
+*/

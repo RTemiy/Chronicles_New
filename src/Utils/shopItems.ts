@@ -34,7 +34,7 @@ export const shopItems = [
     action: () => { checkPromoCode('vfufpbyid1') },
     available: true
   },
-  {
+/*  {
     id: 1,
     category: 'Гардероб',
     title: 'Цветочная',
@@ -44,7 +44,7 @@ export const shopItems = [
     free: true,
     action: () => { checkPromoCode('gjtlbntkmrjyrehcfhtgjcnjd') },
     available: false
-  },
+  },*/
   {
     id: 3,
     category: 'Гардероб',

@@ -24,6 +24,7 @@
   flex-direction: column;
   filter: blur(15px);
   transition: all 1s ease-in-out;
+  pointer-events: none;
 }
 
 .okmessage-image{
@@ -108,6 +109,7 @@
   opacity: 1;
   visibility: visible;
   filter: blur(0);
+  pointer-events: auto;
 }
 
 .okmessage_show{

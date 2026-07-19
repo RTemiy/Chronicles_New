@@ -1,3 +1,4 @@
+/*
 import { achievementsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 import { profileManager } from '../../Components/Profile/Profile'
@@ -44,3 +45,4 @@ profileManager.addAvatars([
     condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Chapter01Part01Completed')
   }
 ])
+*/

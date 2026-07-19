@@ -1,3 +1,4 @@
+/*
 import { achievementsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 import { profileManager } from '../../Components/Profile/Profile'
@@ -49,3 +50,4 @@ profileManager.addBanners([
     condition: () => achievementsManager.isUnlocked(EStoriesEn.Aurora, 'Chapter01Part01Completed')
   }
 ])
+*/

@@ -31,3 +31,40 @@
     align-items: center;
   }
 }
+
+.slide__button:has(.SBC-Yellow){
+  &:before{
+    // border-color: rgb(255 255 255 / 0.25);
+  }
+  font-weight: 800;
+}
+
+.SBC-Yellow {
+  /* 1. Создаем более мягкий и плавный золотой градиент */
+  background: linear-gradient(110deg, #c5c5c5 25%, #ffffc9 50%, #c5c5c5 75%);
+
+  /* 2. Увеличиваем размер фона, чтобы было что анимировать */
+  background-size: 300% auto;
+
+  /* 3. "Обрезаем" фон по форме текста */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* 4. Делаем сам текст прозрачным, чтобы был виден фон */
+  color: transparent;
+
+  /* Задаем начальное положение фона, чтобы избежать "прыжка" в начале анимации */
+  background-position: 200% center;
+
+  /* 5. Запускаем более медленную и плавную анимацию */
+  animation: shimmer-text 7s infinite linear;
+}
+
+@keyframes shimmer-text {
+  from {
+    background-position: 200% center;
+  }
+  to {
+    background-position: -200% center; /* Двигаем фон на всю его ширину */
+  }
+}

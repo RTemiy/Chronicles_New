@@ -10,7 +10,7 @@ profileManager.addBanners([
   },
   {
     id: 'TDP_Glaswer_Street_Evening',
-    image: require('../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.png'),
+    image: require('../../Media/Images/TDP/Backgrounds/Glaswer_Street_Evening.jpg'),
     condition: () => achievementsManager.isUnlocked(EStoriesEn.TDP, 'Chapter01Part01Completed')
   }
 ])

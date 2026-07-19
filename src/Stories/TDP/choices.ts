@@ -49,3 +49,10 @@ statsManager.add({
   story: EStoriesEn.TDP,
   idDescription: 'Помочь'
 })
+
+statsManager.add({
+  category: 'Choice',
+  id: 'KillHealer',
+  story: EStoriesEn.TDP,
+  idDescription: 'Убить незнакомца'
+})

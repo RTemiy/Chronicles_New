@@ -1,1 +1,0 @@
-import { wardrobe } from '../../index'

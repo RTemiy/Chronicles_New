@@ -3,12 +3,13 @@
 // Влияет на порядок историй и достижений
 
 export enum EStoriesEn {
+  SFA = 'SFA',
   ITLH = 'ITLH',
-  PFT = 'PFT',
+  A = 'A',
   TDP = 'TDP',
+  PFT = 'PFT',
   MM = 'MM',
   UA = 'UA',
-  Aurora = 'Aurora',
   FOF = 'FOF',
   AEP = 'AEP',
   // ISML = 'ISML',
@@ -17,12 +18,10 @@ export enum EStoriesEn {
   F = 'F',
   Katarina = 'Katarina',
   UL = 'UL',
-  ROR = 'ROR',
 }
 
 export enum EStoriesAvailable {
-  Aurora = 1,
-  ROR = 0,
+  A = 1,
   FOF = 1,
   AEP = 1,
   MM = 1,
@@ -32,6 +31,7 @@ export enum EStoriesAvailable {
   TDP = 1,
   PFT = 1,
   ITLH = 1,
+  SFA = 1,
 
   Katarina = 0,
   UL = 0,
@@ -41,8 +41,7 @@ export enum EStoriesAvailable {
 }
 
 export enum EStoriesRu {
-  Aurora = 'Аврора',
-  ROR = 'Время крыс',
+  A = 'Аврора',
   FOF = 'Осколки чужой судьбы',
   AEP = 'Amore e passione',
   MM = 'Memento mori',
@@ -54,5 +53,6 @@ export enum EStoriesRu {
   F = 'Счастье',
   TDP = 'Бремя проклятого пути',
   PFT = 'Пациентка из 307',
-  ITLH = 'Бессмертные: Последняя надежда'
+  ITLH = 'Бессмертные: Последняя надежда',
+  SFA = 'Тлеющий саван ангела',
 }

@@ -1,3 +1,4 @@
+/*
 import { statsManager } from '../../index'
 import { EStoriesEn } from '../../Utils/EStoriesNames'
 
@@ -69,4 +70,4 @@ statsManager.add({
   title: 'Милый итальянец, который владеет пекарней. ',
   description: 'Мы стали общаться ближе, благодаря моему решению устроиться к нему на работу. У него золотые руки и доброе сердце.',
   story: EStoriesEn.Aurora
-})
+})*/
